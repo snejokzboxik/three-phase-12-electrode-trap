@@ -6,6 +6,7 @@ from pathlib import Path
 import csv
 import json
 import shutil
+from dataclasses import replace
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import numpy as np
 import matplotlib
@@ -306,6 +307,175 @@ def publication_pseudopotential_diagnostic(output_dir: Path, interpolator: FEMIn
     probe_radius = min(0.003, central_radius * 0.75)
     probe_values = np.asarray([np.interp(probe_radius, radii, values) for values in profiles.values()])
     return {"full_axis": full_axis, "full_effective": full_effective, "central_axis": central_axis, "central_effective": central_effective, "central_min": central_min, "central_delta": central_delta, "radii": radii, "profiles": profiles, "probe_radius": probe_radius, "probe_spread_J": float(np.ptp(probe_values)), "probe_mean_J": float(np.mean(probe_values))}
+
+
+def _effective_grid(interpolator: FEMInterpolator, config: ProjectConfig, radius: float, size: int, recovered: bool = False) -> tuple[np.ndarray, np.ndarray]:
+    if recovered:
+        axis = np.linspace(-radius, radius, size)
+        xx, yy = np.meshgrid(axis, axis, indexing="xy")
+        flat = np.column_stack((xx.ravel(), yy.ravel()))
+        ids = np.asarray(interpolator._finder(flat[:, 0], flat[:, 1]), dtype=int)
+        mask = ids >= 0
+        basis_field = np.full((3, len(flat), 2), np.nan)
+        for i, phase in enumerate(("A", "B", "C")):
+            basis_field[i, mask] = interpolator.field_basis_recovered(flat[mask], phase)
+        basis_field = basis_field.reshape((3,) + xx.shape + (2,))
+    else:
+        axis, _, _, _, _, basis_field = prepare_grid(interpolator, radius, size)
+    fields = {phase: basis_field[i] for i, phase in enumerate(("A", "B", "C"))}
+    mean_squared = mean_square_field_from_basis(fields, config.rf.U0)
+    values = effective_potential_from_mean_square(mean_squared, config.particle.charge, config.particle.mass, config.rf.omega)
+    return axis, values
+
+
+def pseudopotential_mesh_convergence(output_dir: Path, config: ProjectConfig) -> dict[str, object]:
+    """Measure central angular irregularity as the P2 mesh is refined."""
+    from .pipeline import make_state
+    radii = np.array([0.001, 0.002, 0.003], dtype=float)
+    angles = np.linspace(0.0, 2.0 * np.pi, 48, endpoint=False)
+    resolutions = (0.00095, 0.00065, 0.00045)
+    records = []
+    profiles = {}
+    for resolution in resolutions:
+        mesh_config = replace(config.mesh, resolution=resolution)
+        mesh_configured = replace(config, mesh=mesh_config)
+        _, _, _, interpolator = make_state(mesh_configured)
+        values_by_radius = []
+        for radius in radii:
+            points = np.column_stack((radius * np.cos(angles), radius * np.sin(angles)))
+            fields = {phase: interpolator.field_basis_recovered(points, phase) for phase in ("A", "B", "C")}
+            values = effective_potential_from_mean_square(
+                mean_square_field_from_basis(fields, config.rf.U0), config.particle.charge, config.particle.mass, config.rf.omega,
+            )
+            values_by_radius.append(values)
+            records.append({"mesh_resolution_m": resolution, "radius_m": radius, "mean_pseudopotential_J": float(np.mean(values)), "angular_spread_J": float(np.ptp(values)), "relative_angular_spread": float(np.ptp(values) / max(abs(float(np.mean(values))), 1.0e-300)), "angular_std_J": float(np.std(values))})
+        profiles[resolution] = np.asarray(values_by_radius)
+    with (output_dir / "pseudopotential_mesh_convergence.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(records[0]))
+        writer.writeheader(); writer.writerows(records)
+    fig, axes = plt.subplots(1, 2, figsize=(12.0, 4.8), constrained_layout=True)
+    for resolution in resolutions:
+        subset = [r for r in records if r["mesh_resolution_m"] == resolution]
+        axes[0].plot(radii * 1000.0, [r["relative_angular_spread"] for r in subset], "o-", label=f"h={resolution * 1000:g} mm")
+        axes[1].plot(angles * 180.0 / np.pi, (profiles[resolution][-1] - np.mean(profiles[resolution][-1])) * 1.0e9, linewidth=1.0, label=f"h={resolution * 1000:g} mm")
+    axes[0].set(xlabel="Radius (mm)", ylabel="Angular spread / mean", title="Mesh convergence of angular irregularity")
+    axes[0].grid(alpha=0.25); axes[0].legend(fontsize=8)
+    axes[1].set(xlabel="Angle (deg)", ylabel="ΨRF − angular mean (nJ)", title="Angular residual at r = 3 mm")
+    axes[1].grid(alpha=0.25); axes[1].legend(fontsize=8)
+    save_figure(fig, output_dir, "pseudopotential_mesh_convergence")
+    fine = [r for r in records if r["mesh_resolution_m"] == min(resolutions)]
+    coarse = [r for r in records if r["mesh_resolution_m"] == max(resolutions)]
+    return {"records": records, "resolutions": resolutions, "radii": radii, "angles": angles, "profiles": profiles, "coarse_to_fine_spread_ratio": float(fine[-1]["angular_spread_J"] / max(coarse[-1]["angular_spread_J"], 1.0e-300))}
+
+
+def publication_pseudopotential_refined(output_dir: Path, interpolator: FEMInterpolator, geometry: TrapGeometry, config: ProjectConfig) -> dict[str, object]:
+    """Generate interpretation-first pseudopotential figures on regular grids."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    full_axis, full_effective = _effective_grid(interpolator, config, min(0.019, geometry.outer_domain_radius * 0.80), 501, recovered=True)
+    central_axis, central_effective = _effective_grid(interpolator, config, min(0.0042, 0.48 * (geometry.electrode_orbit_radius - geometry.electrode_radius)), 601, recovered=True)
+    central_min = float(np.nanmin(central_effective))
+    central_delta = np.maximum(central_effective - central_min, 0.0)
+    center_indices = np.flatnonzero(np.abs(central_axis) <= 0.0035)
+    center_axis = central_axis[center_indices]
+    center_slice = np.ix_(center_indices, center_indices)
+    center_effective = central_effective[center_slice]
+    center_delta = central_delta[center_slice]
+    delta_max = max(float(np.nanpercentile(center_delta, 99.5)), 1.0e-30)
+    delta_ref = 1.0e-10
+    transformed = np.power(center_delta / delta_ref, 1.0 / 6.0)
+
+    for name, axis, values in (("full", full_axis, full_effective), ("central", central_axis, central_effective)):
+        with (output_dir / f"pseudopotential_refined_recovered_{name}_grid.csv").open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle); writer.writerow(("x_m", "y_m", "effective_potential_J"))
+            for yi, y in enumerate(axis):
+                writer.writerows((float(x), float(y), float(values[yi, xi])) for xi, x in enumerate(axis))
+
+    angles_deg = np.arange(0.0, 360.0, 15.0)
+    radii_full = np.linspace(0.0, min(0.0040, abs(central_axis[-1]) * 0.96), 300)
+    profiles = {}
+    for angle_deg in angles_deg:
+        angle = np.deg2rad(angle_deg)
+        points = np.column_stack((radii_full * np.cos(angle), radii_full * np.sin(angle)))
+        fields = {phase: interpolator.field_basis_recovered(points, phase) for phase in ("A", "B", "C")}
+        profiles[angle_deg] = effective_potential_from_mean_square(mean_square_field_from_basis(fields, config.rf.U0), config.particle.charge, config.particle.mass, config.rf.omega)
+    with (output_dir / "pseudopotential_refined_radial_cuts.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle); writer.writerow(("angle_deg", "radius_m", "effective_potential_J"))
+        for angle_deg, values in profiles.items():
+            writer.writerows((float(angle_deg), float(radius), float(value)) for radius, value in zip(radii_full, values))
+
+    zoom_limit = 0.0018
+    zoom_mask = radii_full <= zoom_limit
+    profile_matrix = np.asarray([profiles[angle] for angle in angles_deg])
+    profile_mean = np.mean(profile_matrix, axis=0)
+    anisotropy_radii = (0.001, 0.002, 0.003)
+    anisotropy = {}
+    for radius in anisotropy_radii:
+        j = int(np.argmin(abs(radii_full - radius)))
+        anisotropy[radius] = profile_matrix[:, j]
+    with (output_dir / "pseudopotential_refined_angular_anisotropy.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle); writer.writerow(("radius_m", "angle_deg", "effective_potential_J", "deviation_from_angular_mean_J"))
+        for radius, values in anisotropy.items():
+            mean = float(np.mean(values))
+            writer.writerows((float(radius), float(angle), float(value), float(value - mean)) for angle, value in zip(angles_deg, values))
+
+    extent_full = (_mm(full_axis[0]), _mm(full_axis[-1]), _mm(full_axis[0]), _mm(full_axis[-1]))
+    extent_center = (_mm(center_axis[0]), _mm(center_axis[-1]), _mm(center_axis[0]), _mm(center_axis[-1]))
+    full_norm = PowerNorm(gamma=0.45, vmin=0.0, vmax=float(np.nanpercentile(full_effective, 99.5)))
+    center_norm = Normalize(vmin=float(np.nanmin(center_effective)), vmax=float(np.nanpercentile(center_effective, 99.5)))
+    transformed_norm = Normalize(vmin=0.0, vmax=float(np.nanpercentile(transformed, 99.5)))
+    fig = plt.figure(figsize=(16.0, 11.5), constrained_layout=True)
+    axes = fig.subplot_mosaic([["A", "B", "C"], ["D", "E", "F"]])
+    image = axes["A"].imshow(full_effective, origin="lower", extent=extent_full, cmap="magma", norm=full_norm, interpolation="bicubic")
+    axes["A"].set(xlabel="x (mm)", ylabel="y (mm)", title="A  Full ΨRF (501 × 501 regular grid; recovered P2 field)"); axes["A"].set_aspect("equal"); fig.colorbar(image, ax=axes["A"], label="ΨRF (J)")
+    image = axes["B"].imshow(center_effective, origin="lower", extent=extent_center, cmap="magma", norm=center_norm, interpolation="bicubic")
+    axes["B"].set(xlabel="x (mm)", ylabel="y (mm)", title="B  Central zoom (local scale; recovered P2 field)"); axes["B"].set_aspect("equal"); fig.colorbar(image, ax=axes["B"], label="ΨRF (J)")
+    image = axes["C"].imshow(transformed, origin="lower", extent=extent_center, cmap="viridis", norm=transformed_norm, interpolation="bicubic")
+    axes["C"].set(xlabel="x (mm)", ylabel="y (mm)", title=r"C  $[(\Psi_{RF}-\Psi_{min})/(10^{-10}\,J)]^{1/6}$"); axes["C"].set_aspect("equal"); fig.colorbar(image, ax=axes["C"], label="Dimensionless sixth-root scale")
+    contour_levels = np.linspace(0.0, float(np.nanpercentile(transformed, 99.5)), 90)[1:]
+    contour = axes["D"].contourf(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=contour_levels, cmap="cividis", extend="max")
+    axes["D"].contour(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=np.linspace(0.0, contour_levels[-1], 55)[1:], colors="black", linewidths=0.25, alpha=0.55)
+    axes["D"].set(xlabel="x (mm)", ylabel="y (mm)", title="D  Dense transformed contours (90 levels)"); axes["D"].set_aspect("equal"); fig.colorbar(contour, ax=axes["D"], label="Sixth-root scale")
+    for angle_deg, values in profiles.items():
+        axes["E"].plot(radii_full[zoom_mask] * 1000.0, (values[zoom_mask] - central_min) * 1.0e9, linewidth=0.8, alpha=0.8)
+    axes["E"].set(xlabel="Radius (mm)", ylabel="ΨRF − Ψmin (nJ)", title="E  Central radial cuts (0–1.8 mm)"); axes["E"].grid(alpha=0.25)
+    for radius, values in anisotropy.items():
+        axes["F"].plot(angles_deg, (values - np.mean(values)) * 1.0e9, "o-", linewidth=1.0, ms=2.5, label=f"r={radius * 1000:g} mm")
+    axes["F"].axhline(0.0, color="black", linewidth=0.5); axes["F"].set(xlabel="Angle (deg)", ylabel="ΨRF − angular mean (nJ)", title="F  Angular anisotropy at fixed radii"); axes["F"].grid(alpha=0.25); axes["F"].legend(fontsize=8)
+    fig.suptitle("Regular-grid pseudopotential structure: flatness, sixth-root well shape, and anisotropy", fontsize=16)
+    save_figure(fig, output_dir, "fig_pseudopotential_refined_summary")
+
+    individual = [
+        ("pseudopotential_refined_full_map", lambda ax: ax.imshow(full_effective, origin="lower", extent=extent_full, cmap="magma", norm=full_norm, interpolation="bicubic", aspect="equal")),
+        ("pseudopotential_refined_center_zoom", lambda ax: ax.imshow(center_effective, origin="lower", extent=extent_center, cmap="magma", norm=center_norm, interpolation="bicubic", aspect="equal")),
+        ("pseudopotential_refined_transformed_center", lambda ax: ax.imshow(transformed, origin="lower", extent=extent_center, cmap="viridis", norm=transformed_norm, interpolation="bicubic", aspect="equal")),
+        ("pseudopotential_refined_dense_contours", lambda ax: ax.contourf(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=contour_levels, cmap="cividis", extend="max")),
+    ]
+    for stem, draw in individual:
+        one, ax = plt.subplots(figsize=(7.0, 5.5), constrained_layout=True); draw(ax); ax.set(xlabel="x (mm)", ylabel="y (mm)"); save_figure(one, output_dir, stem)
+    for stem, radial_mask in (("pseudopotential_refined_radial_full", np.ones_like(radii_full, dtype=bool)), ("pseudopotential_refined_radial_center", zoom_mask)):
+        one, ax = plt.subplots(figsize=(7.0, 5.0), constrained_layout=True)
+        for angle_deg, values in profiles.items(): ax.plot(radii_full[radial_mask] * 1000.0, (values[radial_mask] - central_min) * 1.0e9, linewidth=0.8, alpha=0.75)
+        ax.set(xlabel="Radius (mm)", ylabel="ΨRF − Ψmin (nJ)", title="Radial pseudopotential cuts"); ax.grid(alpha=0.25); save_figure(one, output_dir, stem)
+    one, ax = plt.subplots(figsize=(7.0, 5.0), constrained_layout=True)
+    for radius, values in anisotropy.items(): ax.plot(angles_deg, (values - np.mean(values)) * 1.0e9, "o-", ms=2.5, linewidth=1.0, label=f"r={radius * 1000:g} mm")
+    ax.axhline(0.0, color="black", linewidth=0.5); ax.set(xlabel="Angle (deg)", ylabel="ΨRF − angular mean (nJ)", title="Angular anisotropy at fixed radii"); ax.grid(alpha=0.25); ax.legend(fontsize=8); save_figure(one, output_dir, "pseudopotential_refined_angular_anisotropy")
+    convergence = pseudopotential_mesh_convergence(output_dir, config)
+    coarse = {float(r["radius_m"]): r for r in convergence["records"] if r["mesh_resolution_m"] == max(convergence["resolutions"])}
+    fine = {float(r["radius_m"]): r for r in convergence["records"] if r["mesh_resolution_m"] == min(convergence["resolutions"])}
+    report_lines = [
+        "# Refined pseudopotential visualization report", "",
+        "The publication maps use dense Cartesian regular grids and an area-weighted nodal recovery of the discontinuous elementwise P2 gradient. The FEM solution and direct elementwise field are unchanged; recovered-grid values are a labeled visualization postprocessing projection.", "",
+        f"Grid sizes: full={len(full_axis)}x{len(full_axis)}, central={len(central_axis)}x{len(central_axis)}. The transformed map is [(ΨRF-Ψmin)/(10^-10 J)]^(1/6), a monotonic display coordinate that makes an r^6 well approximately linear in radius.", "",
+        f"Central minimum on the recovered grid: {central_min:.8e} J. At r=3 mm, the coarse-to-fine angular-spread ratio is {convergence['coarse_to_fine_spread_ratio']:.6f}.", "",
+        "## Mesh convergence", "",
+        "| radius | coarse relative spread | fine relative spread | fine/coarse absolute spread |", "|---:|---:|---:|---:|",
+    ]
+    for radius in sorted(coarse):
+        ratio = fine[radius]["angular_spread_J"] / max(coarse[radius]["angular_spread_J"], 1.0e-300)
+        report_lines.append(f"| {radius * 1000:g} mm | {coarse[radius]['relative_angular_spread']:.6g} | {fine[radius]['relative_angular_spread']:.6g} | {ratio:.6g} |")
+    report_lines.extend(["", "The angular irregularity decreases clearly at 2 mm and modestly at 3 mm as the mesh is refined, but it remains nonzero. The refined figures therefore support a central low/flat-bottom region with residual anisotropy that is still partly mesh-sensitive; they do not by themselves establish a converged physical higher-multipole coefficient.", ""])
+    (output_dir / "pseudopotential_refined_report.md").write_text("\n".join(report_lines), encoding="utf-8")
+    return {"central_min_J": central_min, "full_axis": full_axis, "full_effective": full_effective, "central_axis": central_axis, "central_effective": central_effective, "transformed": transformed, "profiles": profiles, "anisotropy": anisotropy, "mesh_convergence": convergence, "central_delta_max_J": delta_max, "sixth_root_reference_J": delta_ref}
 
 
 def _localization_row(result, metrics: dict[str, float | str], U0: float, frequency: float, radius: float, angle_deg: float, velocity: tuple[float, float]) -> dict[str, float | int | str]:

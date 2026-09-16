@@ -38,10 +38,10 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Effective-potential analysis complete: center is {result['classification']}")
     elif args.command == "pseudopotential":
         from .pipeline import make_state
-        from .publication import publication_dir, publication_pseudopotential_diagnostic
+        from .publication import publication_dir, publication_pseudopotential_refined
         state = make_state(config)
-        result = publication_pseudopotential_diagnostic(publication_dir(root), state[3], state[0], config)
-        print(f"Pseudopotential visualization complete: central anisotropy spread={result['probe_spread_J']:.6e} J at r={result['probe_radius']:.6e} m")
+        result = publication_pseudopotential_refined(publication_dir(root), state[3], state[0], config)
+        print(f"Pseudopotential visualization complete: central minimum={result['central_min_J']:.6e} J; mesh spread ratio coarse-to-fine={result['mesh_convergence']['coarse_to_fine_spread_ratio']:.6g}")
     elif args.command == "trajectory":
         state = run_fem(config, root)
         result = run_trajectory(config, root, (state["geometry"], state["trap_mesh"], state["solutions"], state["interpolator"]))

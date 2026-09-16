@@ -138,6 +138,55 @@ class FEMInterpolator:
         flat, ids = self._query_triangles(points)
         return self._field_values(flat, ids, phase).reshape(np.asarray(points).shape[:-1] + (2,))
 
+    def _recovered_vertex_field(self, phase: str) -> np.ndarray:
+        """Return an area-weighted continuous nodal recovery of the P2 gradient.
+
+        The FEM solution remains unchanged. This is a standard postprocessing
+        projection used only for regular-grid visualization, replacing the
+        discontinuous elementwise gradient by shared vertex values.
+        """
+        cache_name = f"_recovered_{phase}"
+        cached = getattr(self, cache_name, None)
+        if cached is not None:
+            return cached
+        vertices = self._triangles
+        points = np.column_stack((self._x, self._y))
+        accumulated = np.zeros((len(points), 2), dtype=float)
+        weights_accumulated = np.zeros(len(points), dtype=float)
+        for triangle_id, triangle in enumerate(vertices):
+            p = points[triangle]
+            area = 0.5 * abs(float(np.cross(p[1] - p[0], p[2] - p[0])))
+            gradients_lambda = self._gradients_lambda[triangle_id]
+            dofs = self._element_dofs[triangle_id]
+            values = self.solutions.potentials[phase][dofs]
+            for local_vertex in range(3):
+                barycentric = np.zeros(3, dtype=float)
+                barycentric[local_vertex] = 1.0
+                l1, l2, l3 = barycentric
+                shape_gradients = np.stack((
+                    (4 * l1 - 1) * gradients_lambda[0],
+                    (4 * l2 - 1) * gradients_lambda[1],
+                    (4 * l3 - 1) * gradients_lambda[2],
+                    4 * (l2 * gradients_lambda[0] + l1 * gradients_lambda[1]),
+                    4 * (l3 * gradients_lambda[1] + l2 * gradients_lambda[2]),
+                    4 * (l1 * gradients_lambda[2] + l3 * gradients_lambda[0]),
+                ), axis=0)
+                field = -np.einsum("k,kd->d", values, shape_gradients)
+                vertex = int(triangle[local_vertex])
+                accumulated[vertex] += area * field
+                weights_accumulated[vertex] += area
+        recovered = accumulated / np.maximum(weights_accumulated[:, None], 1.0e-300)
+        setattr(self, cache_name, recovered)
+        return recovered
+
+    def field_basis_recovered(self, points: np.ndarray, phase: str) -> np.ndarray:
+        """Evaluate the area-weighted continuous nodal-gradient recovery."""
+        flat, ids = self._query_triangles(points)
+        weights = self._barycentric(flat, ids)
+        recovered = self._recovered_vertex_field(phase)
+        values = recovered[self._triangles[ids]]
+        return np.einsum("nk,nkd->nd", weights, values).reshape(np.asarray(points).shape[:-1] + (2,))
+
     def potential(self, points: np.ndarray, t: float, U0: float, frequency: float) -> np.ndarray:
         values = sum(float(phase_voltages(t, U0, frequency)[phase]) * self.potential_basis(points, phase) for phase in ("A", "B", "C"))
         return values
@@ -147,6 +196,14 @@ class FEMInterpolator:
         voltages = phase_voltages(t, U0, frequency)
         phase_fields = self._field_values_all_phases(flat, ids)
         values = np.einsum("p,pnd->nd", np.array([voltages[phase] for phase in ("A", "B", "C")], dtype=float), phase_fields)
+        return values.reshape(np.asarray(points).shape[:-1] + (2,))
+
+    def field_recovered(self, points: np.ndarray, t: float, U0: float, frequency: float) -> np.ndarray:
+        """Evaluate the continuous recovered field for visualization only."""
+        flat, ids = self._query_triangles(points)
+        weights = self._barycentric(flat, ids)
+        vertex_fields = np.stack([self._recovered_vertex_field(phase)[self._triangles[ids]] for phase in ("A", "B", "C")], axis=0)
+        values = np.einsum("p,pnd->nd", np.array([phase_voltages(t, U0, frequency)[phase] for phase in ("A", "B", "C")], dtype=float), np.einsum("nk,pnkd->pnd", weights, vertex_fields))
         return values.reshape(np.asarray(points).shape[:-1] + (2,))
 
     def valid(self, points: np.ndarray) -> bool:

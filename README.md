@@ -91,6 +91,8 @@ python -m three_phase_trap.cli all
 
 Use another TOML file with `--config path/to/config.toml`. The all-in-one command runs the basis FEM solve, direct validation, voltage diagnostics, snapshots, GIF animation, optional MP4 animation when ffmpeg is installed, multipole spectrum and rotation, radial scaling, effective potential, conservative and damped trajectory examples, stability scan, mesh convergence, and a generated `final_report.md`. The `publication` command additionally creates P2-based high-resolution figures, a checkpointed staged localization scan (50-period Stage A, 1000-period Stage B survivors, and 10000-period Stage C candidates), finite-flight mass transmission, and a mass-frequency survival map in `outputs/publication_study/`. Stage-A results are screening-only; stability conclusions use Stage B/C trajectories.
 
+The `pseudopotential` command creates dense regular-grid pseudopotential maps, a monotonic sixth-root central transform, full and central radial cuts, fixed-radius angular anisotropy plots, and a dedicated central mesh-convergence report. Publication maps use an explicitly labeled area-weighted nodal recovery of the P2 gradient for readability; direct elementwise grids remain available for numerical audit.
+
 ## Outputs
 
 Results are written to `outputs/three_phase_12_electrode/`:

@@ -1,0 +1,42 @@
+[geometry]
+electrode_count = 12
+electrode_orbit_radius = 0.010
+electrode_radius = 0.0015
+outer_domain_radius = 0.025
+
+[mesh]
+resolution = 0.00065
+boundary_points_per_electrode = 18
+outer_boundary_points = 180
+interior_seed = 12345
+
+[rf]
+U0 = 1000.0
+frequency = 10000.0
+
+[particle]
+mass = 1.0e-15
+charge = 1.0e-12
+gamma = 0.0
+gravity_enabled = false
+gravity = 9.81
+initial_position = [0.0010, 0.0000]
+initial_velocity = [0.0, 0.0]
+
+[simulation]
+frames_per_period = 180
+animation_periods = 2
+trajectory_periods = 40
+escape_radius = 0.020
+grid_size = 121
+trajectory_rtol = 2.0e-7
+trajectory_atol = 1.0e-11
+
+[stability]
+U0_values = [500.0, 1000.0, 1500.0]
+frequency_values = [5000.0, 10000.0, 20000.0]
+initial_positions = [[0.0005, 0.0], [0.0010, 0.0]]
+
+[outputs]
+directory = "outputs/three_phase_12_electrode"
+

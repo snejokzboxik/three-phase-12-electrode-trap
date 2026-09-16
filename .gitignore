@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+outputs/three_phase_12_electrode/*
+!outputs/three_phase_12_electrode/.gitkeep
+

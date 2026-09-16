@@ -80,6 +80,7 @@ python -m three_phase_trap.cli fem
 python -m three_phase_trap.cli animate
 python -m three_phase_trap.cli multipoles
 python -m three_phase_trap.cli effective-potential
+python -m three_phase_trap.cli pseudopotential
 python -m three_phase_trap.cli trajectory
 python -m three_phase_trap.cli stability
 python -m three_phase_trap.cli convergence

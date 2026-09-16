@@ -16,7 +16,7 @@ def project_root() -> Path:
 def main(argv: list[str] | None = None) -> int:
     root = project_root()
     parser = argparse.ArgumentParser(description="FEM and particle-dynamics study of a three-phase 12-electrode trap")
-    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "trajectory", "stability", "convergence", "mass-filter", "publication", "all"))
+    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "pseudopotential", "trajectory", "stability", "convergence", "mass-filter", "publication", "all"))
     parser.add_argument("--config", type=Path, default=root / "configs" / "default.toml")
     args = parser.parse_args(argv)
     config = load_config(args.config)
@@ -36,6 +36,12 @@ def main(argv: list[str] | None = None) -> int:
         state = run_fem(config, root)
         result = run_effective_potential(config, root, (state["geometry"], state["trap_mesh"], state["solutions"], state["interpolator"]))
         print(f"Effective-potential analysis complete: center is {result['classification']}")
+    elif args.command == "pseudopotential":
+        from .pipeline import make_state
+        from .publication import publication_dir, publication_pseudopotential_diagnostic
+        state = make_state(config)
+        result = publication_pseudopotential_diagnostic(publication_dir(root), state[3], state[0], config)
+        print(f"Pseudopotential visualization complete: central anisotropy spread={result['probe_spread_J']:.6e} J at r={result['probe_radius']:.6e} m")
     elif args.command == "trajectory":
         state = run_fem(config, root)
         result = run_trajectory(config, root, (state["geometry"], state["trap_mesh"], state["solutions"], state["interpolator"]))

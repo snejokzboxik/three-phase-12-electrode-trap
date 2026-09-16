@@ -12,7 +12,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
-from matplotlib.colors import Normalize
+from matplotlib.colors import Normalize, PowerNorm, SymLogNorm
 from matplotlib.lines import Line2D
 from matplotlib.patches import Circle, Patch
 
@@ -179,6 +179,133 @@ def publication_effective_potential(output_dir: Path, interpolator: FEMInterpola
     save_figure(fig, output_dir, "fig03_effective_potential")
     np.savetxt(output_dir / "effective_potential_fit.csv", np.column_stack((radii, radial_values, fit_values)), delimiter=",", header="radius_m,effective_potential_J,fit_J", comments="")
     return {"A6": A6, "radii": radii, "radial_values": radial_values, "fit_values": fit_values, "effective": effective, "axis": axis}
+
+
+def publication_pseudopotential_diagnostic(output_dir: Path, interpolator: FEMInterpolator, geometry: TrapGeometry, config: ProjectConfig) -> dict[str, object]:
+    """Create a dense, multi-view diagnostic of the central pseudopotential.
+
+    Display transforms affect only color/vertical presentation. The raw dense
+    grid and radial samples are exported unchanged so small asymmetries can be
+    checked numerically rather than inferred from a stretched image.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    full_radius = min(0.019, geometry.outer_domain_radius * 0.80)
+    central_radius = min(0.0045, 0.48 * (geometry.electrode_orbit_radius - geometry.electrode_radius))
+    full_axis, _, _, _, _, full_basis_field = prepare_grid(interpolator, full_radius, 321)
+    full_effective = effective_potential_from_mean_square(
+        mean_square_field_from_basis({phase: full_basis_field[i] for i, phase in enumerate(("A", "B", "C"))}, config.rf.U0),
+        config.particle.charge, config.particle.mass, config.rf.omega,
+    )
+    central_axis, _, _, _, _, central_basis_field = prepare_grid(interpolator, central_radius, 321)
+    central_effective = effective_potential_from_mean_square(
+        mean_square_field_from_basis({phase: central_basis_field[i] for i, phase in enumerate(("A", "B", "C"))}, config.rf.U0),
+        config.particle.charge, config.particle.mass, config.rf.omega,
+    )
+    central_min = float(np.nanmin(central_effective))
+    central_delta = central_effective - central_min
+    display_radius = min(0.0035, central_radius * 0.90)
+    display_indices = np.flatnonzero(np.abs(central_axis) <= display_radius)
+    display_axis = central_axis[display_indices]
+    display_slice = np.ix_(display_indices, display_indices)
+    display_effective = central_effective[display_slice]
+    display_delta = central_delta[display_slice]
+    finite_delta = display_delta[np.isfinite(display_delta)]
+    positive_delta = finite_delta[finite_delta > 0]
+    delta_floor = max(float(np.percentile(positive_delta, 0.5)) * 0.1 if positive_delta.size else 1.0e-30, 1.0e-30)
+    delta_top = max(float(np.percentile(finite_delta, 99.7)), delta_floor * 10.0)
+    central_norm = Normalize(vmin=float(np.nanmin(display_effective)), vmax=float(np.percentile(display_effective, 99.7)))
+    contrast_norm = PowerNorm(gamma=0.30, vmin=0.0, vmax=delta_top)
+    topo_norm = SymLogNorm(linthresh=max(delta_top * 1.0e-4, delta_floor), vmin=0.0, vmax=delta_top)
+
+    # Export raw values on both dense maps.
+    for name, axis, values in (("full", full_axis, full_effective), ("central", central_axis, central_effective)):
+        with (output_dir / f"pseudopotential_{name}_grid.csv").open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(("x_m", "y_m", "effective_potential_J"))
+            for y_index, y in enumerate(axis):
+                writer.writerows((float(x), float(y), float(values[y_index, x_index])) for x_index, x in enumerate(axis))
+
+    angles_deg = (0.0, 15.0, 30.0, 45.0, 60.0, 75.0, 90.0, 120.0, 135.0)
+    radii = np.linspace(0.0, central_radius * 0.96, 240)
+    profiles: dict[float, np.ndarray] = {}
+    for angle_deg in angles_deg:
+        angle = np.deg2rad(angle_deg)
+        points = np.column_stack((radii * np.cos(angle), radii * np.sin(angle)))
+        fields = {phase: interpolator.field_basis(points, phase) for phase in ("A", "B", "C")}
+        profiles[angle_deg] = effective_potential_from_mean_square(
+            mean_square_field_from_basis(fields, config.rf.U0), config.particle.charge, config.particle.mass, config.rf.omega,
+        )
+    with (output_dir / "pseudopotential_radial_cuts.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(("angle_deg", "radius_m", "effective_potential_J"))
+        for angle_deg, values in profiles.items():
+            writer.writerows((float(angle_deg), float(radius), float(value)) for radius, value in zip(radii, values))
+
+    extent_full = (_mm(full_axis[0]), _mm(full_axis[-1]), _mm(full_axis[0]), _mm(full_axis[-1]))
+    extent_central = (_mm(display_axis[0]), _mm(display_axis[-1]), _mm(display_axis[0]), _mm(display_axis[-1]))
+    fig = plt.figure(figsize=(16.0, 11.5), constrained_layout=True)
+    axes = fig.subplot_mosaic([["A", "B", "C"], ["D", "D", "E"]])
+    image = axes["A"].imshow(full_effective, origin="lower", extent=extent_full, cmap="magma", norm=PowerNorm(gamma=0.42, vmin=0.0, vmax=float(np.nanpercentile(full_effective, 99.5))))
+    axes["A"].set(xlabel="x (mm)", ylabel="y (mm)", title="A  Full pseudopotential map")
+    axes["A"].set_aspect("equal")
+    fig.colorbar(image, ax=axes["A"], label="ΨRF (J)", fraction=0.046)
+    image = axes["B"].imshow(display_effective, origin="lower", extent=extent_central, cmap="magma", norm=central_norm)
+    axes["B"].set(xlabel="x (mm)", ylabel="y (mm)", title=f"B  Central zoom (local ΨRF scale; Ψmin={central_min:.3e} J)")
+    axes["B"].set_aspect("equal")
+    fig.colorbar(image, ax=axes["B"], label="ΨRF (J)", fraction=0.046)
+    image = axes["C"].imshow(display_delta, origin="lower", extent=extent_central, cmap="viridis", norm=contrast_norm)
+    axes["C"].contour(display_axis * 1000.0, display_axis * 1000.0, display_delta, levels=np.linspace(0.0, delta_top, 35)[1:], colors="white", linewidths=0.25, alpha=0.55)
+    axes["C"].set(xlabel="x (mm)", ylabel="y (mm)", title="C  Contrast-enhanced ΔΨRF = ΨRF − Ψmin")
+    axes["C"].set_aspect("equal")
+    fig.colorbar(image, ax=axes["C"], label="ΔΨRF (J; nonlinear)", fraction=0.046)
+
+    topo_levels = np.unique(np.r_[0.0, np.geomspace(delta_floor, delta_top, 95)])
+    topo = axes["D"].contourf(display_axis * 1000.0, display_axis * 1000.0, display_delta, levels=topo_levels, cmap="cividis", norm=topo_norm, extend="max")
+    axes["D"].contour(display_axis * 1000.0, display_axis * 1000.0, display_delta, levels=np.geomspace(delta_floor, delta_top, 64), colors="black", linewidths=0.22, alpha=0.58)
+    axes["D"].set(xlabel="x (mm)", ylabel="y (mm)", title="D  Dense contour/topographic view (96 levels; local nonlinear contrast)")
+    axes["D"].set_aspect("equal")
+    fig.colorbar(topo, ax=axes["D"], label="ΔΨRF (J; SymLogNorm)", fraction=0.026)
+
+    for angle_deg, values in profiles.items():
+        axes["E"].plot(radii * 1000.0, values - central_min, linewidth=1.0, label=f"{angle_deg:g}°")
+    axes["E"].set(xlabel="Radius (mm)", ylabel="ΨRF − Ψmin (J)", title="E  Radial cuts: angular anisotropy and higher multipoles")
+    axes["E"].grid(alpha=0.25)
+    axes["E"].legend(ncol=3, fontsize=7, frameon=True)
+    fig.suptitle("Central pseudopotential diagnostic: flatness, anisotropy, and higher-order structure", fontsize=16)
+    save_figure(fig, output_dir, "fig_pseudopotential_diagnostic")
+
+    individual = [
+        ("pseudopotential_full_map", lambda ax: (ax.imshow(full_effective, origin="lower", extent=extent_full, cmap="magma", norm=PowerNorm(gamma=0.42, vmin=0.0, vmax=float(np.nanpercentile(full_effective, 99.5))), aspect="equal"), ax.set_title("Full RF pseudopotential"))),
+        ("pseudopotential_central_zoom", lambda ax: (ax.imshow(display_effective, origin="lower", extent=extent_central, cmap="magma", norm=central_norm, aspect="equal"), ax.set_title("Central zoom: local normalization"))),
+        ("pseudopotential_central_contrast", lambda ax: (ax.imshow(display_delta, origin="lower", extent=extent_central, cmap="viridis", norm=contrast_norm, aspect="equal"), ax.set_title("Central contrast: ΔΨRF"))),
+        ("pseudopotential_dense_contours", lambda ax: (ax.contourf(display_axis * 1000.0, display_axis * 1000.0, display_delta, levels=topo_levels, cmap="cividis", norm=topo_norm), ax.contour(display_axis * 1000.0, display_axis * 1000.0, display_delta, levels=np.geomspace(delta_floor, delta_top, 64), colors="black", linewidths=0.25), ax.set_title("Dense topographic contours"))),
+        ("pseudopotential_radial_cuts", lambda ax: ([ax.plot(radii * 1000.0, values - central_min, label=f"{angle_deg:g}°", linewidth=1.0) for angle_deg, values in profiles.items()], ax.set_title("Radial cuts"), ax.legend(ncol=3, fontsize=7))),
+    ]
+    for stem, draw in individual:
+        one, ax = plt.subplots(figsize=(7.0, 5.5), constrained_layout=True)
+        draw(ax)
+        ax.set_xlabel("Radius (mm)" if "radial" in stem else "x (mm)")
+        if "radial" in stem:
+            ax.set_ylabel("ΨRF − Ψmin (J)")
+        else:
+            ax.set_ylabel("y (mm)")
+        save_figure(one, output_dir, stem)
+
+    surface_step = max(1, len(central_axis) // 121)
+    surface_axis = display_axis[::surface_step]
+    surface_delta = display_delta[::surface_step, ::surface_step]
+    xx, yy = np.meshgrid(surface_axis * 1000.0, surface_axis * 1000.0, indexing="xy")
+    surface_fig = plt.figure(figsize=(9.0, 7.0), constrained_layout=True)
+    surface_ax = surface_fig.add_subplot(111, projection="3d")
+    surface = surface_ax.plot_surface(xx, yy, surface_delta * 1.0e9, cmap="viridis", linewidth=0, antialiased=True, rcount=121, ccount=121)
+    surface_ax.set(xlabel="x (mm)", ylabel="y (mm)", zlabel="ΔΨRF (nJ)", title="Central pseudopotential surface (raw ΔΨRF values)")
+    surface_ax.view_init(elev=32, azim=-55)
+    surface_fig.colorbar(surface, ax=surface_ax, shrink=0.62, pad=0.10, label="ΔΨRF (nJ)")
+    save_figure(surface_fig, output_dir, "pseudopotential_3d_surface")
+
+    probe_radius = min(0.003, central_radius * 0.75)
+    probe_values = np.asarray([np.interp(probe_radius, radii, values) for values in profiles.values()])
+    return {"full_axis": full_axis, "full_effective": full_effective, "central_axis": central_axis, "central_effective": central_effective, "central_min": central_min, "central_delta": central_delta, "radii": radii, "profiles": profiles, "probe_radius": probe_radius, "probe_spread_J": float(np.ptp(probe_values)), "probe_mean_J": float(np.mean(probe_values))}
 
 
 def _localization_row(result, metrics: dict[str, float | str], U0: float, frequency: float, radius: float, angle_deg: float, velocity: tuple[float, float]) -> dict[str, float | int | str]:

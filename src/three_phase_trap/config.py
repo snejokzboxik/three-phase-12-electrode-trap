@@ -53,7 +53,7 @@ class SimulationConfig:
     frames_per_period: int = 180
     animation_periods: int = 2
     trajectory_periods: int = 40
-    escape_radius: float = 0.020
+    escape_radius: float = 0.008
     grid_size: int = 121
     trajectory_rtol: float = 2.0e-7
     trajectory_atol: float = 1.0e-11
@@ -127,7 +127,7 @@ def load_config(path: str | Path) -> ProjectConfig:
         frames_per_period=int(si.get("frames_per_period", 180)),
         animation_periods=int(si.get("animation_periods", 2)),
         trajectory_periods=int(si.get("trajectory_periods", 40)),
-        escape_radius=float(si.get("escape_radius", 0.020)),
+        escape_radius=float(si.get("escape_radius", 0.008)),
         grid_size=int(si.get("grid_size", 121)),
         trajectory_rtol=float(si.get("trajectory_rtol", 2.0e-7)),
         trajectory_atol=float(si.get("trajectory_atol", 1.0e-11)),
@@ -155,6 +155,7 @@ def validate_config(config: ProjectConfig) -> None:
         raise ValueError("RF frequency must be positive and U0 must be non-negative.")
     if config.particle.mass <= 0:
         raise ValueError("Particle mass must be positive.")
+    if config.simulation.escape_radius >= g.electrode_orbit_radius - g.electrode_radius:
+        raise ValueError("escape_radius must stay inside the free central region, below the electrode inner radius.")
     if config.simulation.frames_per_period < 12:
         raise ValueError("At least 12 frames per RF period are required.")
-

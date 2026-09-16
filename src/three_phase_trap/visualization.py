@@ -104,7 +104,7 @@ def save_static_snapshots(output_dir: Path, interpolator: FEMInterpolator, geome
             image = _plot_frame(ax, magnitude_frames[i], axis, geometry, f"t/T = {i}/12", cmap="viridis")
             vectors = field_frames[i, ::step, ::step]
             good = np.isfinite(vectors).all(axis=-1)
-            ax.quiver(qx[good], qy[good], vectors[..., 0][good], vectors[..., 1][good], color="white", alpha=0.75, scale=1.0e6, width=0.002)
+            ax.quiver(qx[good], qy[good], vectors[..., 0][good], vectors[..., 1][good], color="white", alpha=0.75, scale_units="xy", scale=4.0e8, width=0.002)
         else:
             ax.axis("off")
     fig.colorbar(image, ax=axes.ravel().tolist(), label="Electric-field magnitude (V/m)")

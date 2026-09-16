@@ -44,7 +44,6 @@ def build_mesh(geometry: TrapGeometry, resolution: float, boundary_points_per_el
     if resolution <= 0:
         raise ValueError("Mesh resolution must be positive.")
     R = geometry.outer_domain_radius
-    rng = np.random.default_rng(seed)
     coordinates: list[np.ndarray] = []
     electrode_source: dict[int, list[int]] = {}
     outer_source: list[int] = []
@@ -67,10 +66,10 @@ def build_mesh(geometry: TrapGeometry, resolution: float, boundary_points_per_el
             electrode_source[electrode.index].append(len(coordinates))
             coordinates.append(point)
 
-    grid_axis = np.arange(-R + resolution, R, resolution)
+    half_count = int(np.ceil(R / resolution))
+    grid_axis = np.arange(-half_count, half_count + 1, dtype=float) * resolution
     gx, gy = np.meshgrid(grid_axis, grid_axis, indexing="xy")
     interior = np.column_stack((gx.ravel(), gy.ravel()))
-    interior += rng.uniform(-0.12 * resolution, 0.12 * resolution, size=interior.shape)
     in_outer = np.sum(interior**2, axis=1) < (R - 0.5 * resolution) ** 2
     interior = interior[in_outer]
     interior = interior[~electrode_mask(interior, geometry)]
@@ -110,4 +109,3 @@ def build_mesh(geometry: TrapGeometry, resolution: float, boundary_points_per_el
         for phase, indices in phase_node_sets.items()
     }
     return TrapMesh(mesh, electrode_nodes, phase_nodes, outer_nodes)
-

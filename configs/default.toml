@@ -27,7 +27,7 @@ initial_velocity = [0.0, 0.0]
 frames_per_period = 180
 animation_periods = 2
 trajectory_periods = 40
-escape_radius = 0.020
+escape_radius = 0.008
 grid_size = 121
 trajectory_rtol = 2.0e-7
 trajectory_atol = 1.0e-11
@@ -39,4 +39,3 @@ initial_positions = [[0.0005, 0.0], [0.0010, 0.0]]
 
 [outputs]
 directory = "outputs/three_phase_12_electrode"
-

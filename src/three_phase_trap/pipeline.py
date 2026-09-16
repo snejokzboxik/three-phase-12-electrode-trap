@@ -123,7 +123,17 @@ def run_rotation(config: ProjectConfig, project_root: Path, multipole_result: di
         coefficient = fit_multipoles(points, potential, (dominant_order,), reference_radius)[dominant_order]
         orientations.append(harmonic_orientation(coefficient))
         amplitudes.append(coefficient.amplitude)
-    fit = fit_rotation(times, np.asarray(orientations))
+    # The physical orientation is periodic modulo 2π/m.  Unwrap the harmonic
+    # phase first, then divide by m; unwrapping the physical angle directly
+    # would miss the shorter π/2 branch period for m=4.
+    phase_fit = fit_rotation(times, np.asarray(orientations) * dominant_order)
+    fit = dict(phase_fit)
+    fit["angular_rate"] = phase_fit["angular_rate"] / dominant_order
+    fit["intercept"] = phase_fit["intercept"] / dominant_order
+    fit["rate_uncertainty"] = phase_fit["rate_uncertainty"] / dominant_order
+    fit["residual_rms"] = phase_fit["residual_rms"] / dominant_order
+    fit["unwrapped_orientation"] = phase_fit["unwrapped_orientation"] / dominant_order
+    fit["residuals"] = phase_fit["residuals"] / dominant_order
     unwrapped = fit["unwrapped_orientation"]
     residuals = fit["residuals"]
     rows = np.column_stack((times / config.rf.period, times, orientations, unwrapped, amplitudes, residuals))
@@ -269,12 +279,11 @@ def run_mesh_convergence(config: ProjectConfig, project_root: Path) -> dict[str,
         solutions = solve_basis(trap_mesh)
         interpolator = FEMInterpolator(solutions)
         coefficients = fit_multipoles(points, interpolator.potential(points, 0.0, config.rf.U0, config.rf.frequency), tuple(range(1, 7)), 0.004)
-        maximum = max(item.amplitude for item in coefficients.values())
-        rows.append((resolution, len(trap_mesh.points), len(trap_mesh.triangles), coefficients[4].amplitude / max(maximum, 1e-30)))
-    np.savetxt(output_dir / "mesh_convergence.csv", np.asarray(rows), delimiter=",", header="resolution_m,vertices,triangles,relative_m4_amplitude", comments="")
+        rows.append((resolution, len(trap_mesh.points), len(trap_mesh.triangles), coefficients[4].amplitude))
+    np.savetxt(output_dir / "mesh_convergence.csv", np.asarray(rows), delimiter=",", header="resolution_m,vertices,triangles,m4_amplitude_at_reference_V", comments="")
     fig, ax = plt.subplots(figsize=(7, 4.5), constrained_layout=True)
     ax.plot([row[1] for row in rows], [row[3] for row in rows], "o-")
-    ax.set(xlabel="Mesh vertices", ylabel="Relative m=4 amplitude", title="Basic mesh-convergence check")
+    ax.set(xlabel="Mesh vertices", ylabel="m=4 amplitude at reference radius (V)", title="Basic mesh-convergence check")
     ax.grid(alpha=0.25)
     fig.savefig(output_dir / "mesh_convergence.png", dpi=150)
     plt.close(fig)
@@ -288,6 +297,11 @@ def write_final_report(output_dir: Path, config: ProjectConfig, fem_result: dict
     base: TrajectoryResult = trajectories["base"]
     damped: TrajectoryResult = trajectories["damped"]
     convergence_rows = convergence["rows"]
+    bounded_rows = [row for row in stability["rows"] if row.bounded]
+    if bounded_rows:
+        bounded_examples = "; ".join(f"U0={row.U0:g} V, f={row.f_rf:g} Hz, start=({row.initial_x:g},{row.initial_y:g}) m" for row in bounded_rows)
+    else:
+        bounded_examples = "none"
     convergence_relative_change = (max(row[3] for row in convergence_rows) - min(row[3] for row in convergence_rows)) / max(np.mean([row[3] for row in convergence_rows]), 1e-30)
     lines = [
         "# Three-phase 12-electrode trap simulation report", "",
@@ -303,7 +317,9 @@ def write_final_report(output_dir: Path, config: ProjectConfig, fem_result: dict
         f"- Base full-dynamics trajectory: {'bounded' if base.bounded else 'escaped'}, r_max={base.max_radius:.6g} m, simulated {base.periods_simulated:.3g} RF periods, gamma={config.particle.gamma:.6g}.",
         f"- Damped comparison: {'bounded' if damped.bounded else 'escaped'}, r_max={damped.max_radius:.6g} m, gamma={damped_gamma_text(damped, trajectories)}.",
         f"- Stability scan bounded cells (all tested initial positions): {sum(bool(row) for row in np.asarray(stability['matrix']).ravel())}/{np.asarray(stability['matrix']).size}.",
-        f"- Mesh convergence: relative m=4 amplitude range {min(row[3] for row in convergence_rows):.6g} to {max(row[3] for row in convergence_rows):.6g}; fractional range {convergence_relative_change:.3g}.", "",
+        f"- Individual bounded starts in the scan (not a global-stability claim): {bounded_examples}.",
+        f"- Undamped base result: {'bounded' if base.bounded else 'escaped'}; damping comparison: {'bounded' if damped.bounded else 'escaped'}.",
+        f"- Mesh convergence: m=4 amplitude at the reference radius ranges from {min(row[3] for row in convergence_rows):.6g} to {max(row[3] for row in convergence_rows):.6g} V; fractional range {convergence_relative_change:.3g}.", "",
         "These numerical results describe this discretization and parameter set. A bounded trajectory is reported only when the entire integrated path stays below `escape_radius`; damping-assisted localization is listed separately from the gamma=0 case.", "",
         "## Main limitations", "", "The circular electrode surfaces are represented by sampled boundaries and a Delaunay triangulation; the outer boundary is finite and grounded; P1 element fields are piecewise constant; interpolation is not extrapolated into electrodes or outside the mesh; the parameter scan is intentionally small; and trajectory conclusions depend on the chosen particle charge-to-mass ratio, RF frequency, duration, tolerances, and escape criterion.", "",
     ]
@@ -333,4 +349,3 @@ def run_all(config: ProjectConfig, project_root: Path) -> dict[str, object]:
     convergence = run_mesh_convergence(config, project_root)
     report = write_final_report(ensure_output_dir(config, project_root), config, fem, multipoles, rotation, radial, effective, trajectories, stability, convergence)
     return {"fem": fem, "multipoles": multipoles, "rotation": rotation, "radial": radial, "effective": effective, "trajectories": trajectories, "stability": stability, "convergence": convergence, "report": report}
-

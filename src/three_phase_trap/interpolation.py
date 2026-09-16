@@ -8,6 +8,7 @@ import matplotlib.tri as mtri
 
 from .fem import FEMBasisSolutions
 from .fields import field_at_time, potential_at_time
+from .voltages import phase_voltages
 
 
 class InterpolationDomainError(ValueError):
@@ -77,4 +78,3 @@ class FEMInterpolator:
         except InterpolationDomainError:
             return False
         return True
-

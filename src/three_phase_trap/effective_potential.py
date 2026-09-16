@@ -60,15 +60,19 @@ def classify_center(field_squared_grid: np.ndarray, x_axis: np.ndarray, y_axis: 
     dyy = (values[iy + 1, ix] - 2 * values[iy, ix] + values[iy - 1, ix]) / dy**2
     dxy = (values[iy + 1, ix + 1] - values[iy + 1, ix - 1] - values[iy - 1, ix + 1] + values[iy - 1, ix - 1]) / (4 * dx * dy)
     eigenvalues = np.linalg.eigvalsh(np.array([[dxx, dxy], [dxy, dyy]]))
-    scale = max(abs(values[iy, ix]) / max(dx, dy) ** 2, 1.0e-30)
-    tolerance = 1.0e-5 * scale
-    if np.all(eigenvalues > tolerance):
+    # P1 gradients are piecewise constant, so a Hessian assembled from four
+    # neighboring pixels can be dominated by triangle-edge jumps.  Use the
+    # local directional stencil for the categorical decision and retain the
+    # Hessian eigenvalues as a diagnostic rather than over-interpreting them.
+    center = float(values[iy, ix])
+    neighbors = np.array([values[iy, ix - 1], values[iy, ix + 1], values[iy - 1, ix], values[iy + 1, ix]])
+    tolerance = max(abs(center) * 1.0e-6, np.nanmax(np.abs(values)) * 1.0e-12, 1.0e-30)
+    if np.all(neighbors > center + tolerance):
         classification = "local minimum"
-    elif np.all(eigenvalues < -tolerance):
+    elif np.all(neighbors < center - tolerance):
         classification = "local maximum"
-    elif eigenvalues[0] < -tolerance < eigenvalues[1]:
+    elif np.any(neighbors < center - tolerance) and np.any(neighbors > center + tolerance):
         classification = "saddle"
     else:
         classification = "approximately flat"
     return classification, (float(eigenvalues[0]), float(eigenvalues[1]))
-

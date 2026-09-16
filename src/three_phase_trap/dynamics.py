@@ -93,6 +93,19 @@ def integrate_trajectory(
         raise ValueError("escape_radius must be positive.")
 
     def rhs(time: float, state: np.ndarray) -> np.ndarray:
+        # DOP853 evaluates internal Runge--Kutta stages beyond an event before
+        # it can localize the root.  Keep those provisional stages inside the
+        # explicitly defined confinement disk so an otherwise valid escape is
+        # not confused with an invalid FEM interpolation query.  The accepted
+        # solution is still terminated by escape_event below.
+        if field_function is None and interpolator is not None:
+            radius = float(np.hypot(state[0], state[1]))
+            if radius >= escape_radius:
+                safe_radius = escape_radius * (1.0 - 1.0e-8)
+                safe_position = np.asarray(state[:2], dtype=float) * safe_radius / max(radius, 1.0e-30)
+                guarded_state = np.asarray(state, dtype=float).copy()
+                guarded_state[:2] = safe_position
+                return particle_rhs(time, guarded_state, particle, U0, frequency, interpolator, field_function)
         return particle_rhs(time, state, particle, U0, frequency, interpolator, field_function)
 
     def escape_event(time: float, state: np.ndarray) -> float:
@@ -111,7 +124,14 @@ def integrate_trajectory(
         # This is an explicit failure mode.  Callers can distinguish it from
         # a physically bounded integration and choose a smaller escape radius.
         raise
-    radii = np.hypot(solution.y[0], solution.y[1])
+    time_values = solution.t
+    state_values = solution.y
+    if solution.status == 1 and solution.t_events and len(solution.t_events[0]) and solution.y_events and len(solution.y_events[0]):
+        event_time = float(solution.t_events[0][0])
+        event_state = np.asarray(solution.y_events[0][0], dtype=float)
+        if len(time_values) == 0 or event_time > time_values[-1] + 1.0e-15:
+            time_values = np.append(time_values, event_time)
+            state_values = np.column_stack((state_values, event_state))
+    radii = np.hypot(state_values[0], state_values[1])
     escaped = bool(termination == "escape_radius" or np.any(radii >= escape_radius * (1.0 - 1e-8)))
-    return TrajectoryResult(solution.t, solution.y, float(np.max(radii)), float(radii[-1]), escaped, not escaped, float(solution.t[-1]), float(solution.t[-1] * frequency), termination)
-
+    return TrajectoryResult(time_values, state_values, float(np.max(radii)), float(radii[-1]), escaped, not escaped, float(time_values[-1]), float(time_values[-1] * frequency), termination)

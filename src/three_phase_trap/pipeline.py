@@ -51,7 +51,7 @@ def run_fem(config: ProjectConfig, project_root: Path, state: tuple[object, obje
         direct = solve_instantaneous(trap_mesh, phase)
         basis = superpose_potential(solutions, phase)
         difference = direct - basis
-        direct_field = element_electric_field(trap_mesh, direct)
+        direct_field = element_electric_field(trap_mesh, direct, basis=solutions.basis)
         basis_field = superpose_field(solutions, phase)
         field_difference = direct_field - basis_field
         rms = float(np.sqrt(np.mean(difference**2)))

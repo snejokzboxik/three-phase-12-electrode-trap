@@ -16,7 +16,7 @@ def project_root() -> Path:
 def main(argv: list[str] | None = None) -> int:
     root = project_root()
     parser = argparse.ArgumentParser(description="FEM and particle-dynamics study of a three-phase 12-electrode trap")
-    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "trajectory", "stability", "convergence", "all"))
+    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "trajectory", "stability", "convergence", "mass-filter", "publication", "all"))
     parser.add_argument("--config", type=Path, default=root / "configs" / "default.toml")
     args = parser.parse_args(argv)
     config = load_config(args.config)
@@ -47,6 +47,20 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "convergence":
         result = run_mesh_convergence(config, root)
         print(f"Mesh-convergence check complete: {len(result['rows'])} resolutions")
+    elif args.command == "mass-filter":
+        from .pipeline import make_state
+        from .publication import run_mass_frequency_map, run_mass_transmission_scan
+        from .mass_filter import write_mass_transmission_csv
+        state = make_state(config)
+        output_dir = root / "outputs" / "publication_study"
+        output_dir.mkdir(parents=True, exist_ok=True)
+        transmission = run_mass_transmission_scan(state[3], config)
+        write_mass_transmission_csv(transmission, output_dir / "mass_transmission.csv")
+        print(f"Mass-filter transmission scan complete: {len(transmission)} masses")
+    elif args.command == "publication":
+        from .publication import run_publication_study
+        result = run_publication_study(config, root)
+        print(f"Publication study complete. Report: {result['report']}")
     else:
         result = run_all(config, root)
         print(f"Complete analysis finished. Report: {result['report']}")
@@ -55,4 +69,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

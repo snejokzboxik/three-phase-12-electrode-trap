@@ -37,5 +37,30 @@ U0_values = [500.0, 1000.0, 1500.0]
 frequency_values = [5000.0, 10000.0, 20000.0]
 initial_positions = [[0.0005, 0.0], [0.0010, 0.0]]
 
+[localization]
+U0_values = [500.0, 1000.0, 2000.0, 3000.0, 5000.0, 7500.0, 10000.0]
+frequency_values = [5000.0, 10000.0, 20000.0, 30000.0, 50000.0, 75000.0, 100000.0]
+initial_radii = [0.0001, 0.00025, 0.0005, 0.00075, 0.001, 0.0015, 0.002]
+initial_angles_deg = [0.0, 45.0, 90.0, 135.0]
+transverse_velocity_scales = [0.0, 0.02]
+stage_a_periods = 50
+stage_b_periods = 1000
+stage_c_periods = 10000
+stage_c_candidates = 6
+max_step_per_period = 10
+workers = 8
+
+[mass_filter]
+length = 0.020
+axial_velocity = 2.0
+entrance_aperture = 0.008
+exit_aperture = 0.008
+reference_frequency = 10000.0
+mass_multipliers = [0.10, 0.15, 0.22, 0.32, 0.46, 0.68, 1.0, 1.47, 2.15, 3.16, 4.64, 6.81, 10.0]
+map_frequencies = [5000.0, 10000.0, 20000.0, 30000.0, 50000.0, 75000.0, 100000.0]
+ensemble_radii = [0.0001, 0.0005, 0.001]
+ensemble_angles_deg = [0.0, 90.0, 180.0, 270.0]
+ensemble_velocity_scales = [0.0, 0.02]
+
 [outputs]
 directory = "outputs/three_phase_12_electrode"

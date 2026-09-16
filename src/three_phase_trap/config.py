@@ -67,6 +67,35 @@ class StabilityConfig:
 
 
 @dataclass(frozen=True)
+class LocalizationConfig:
+    U0_values: tuple[float, ...] = (500.0, 1000.0, 2000.0, 3000.0, 5000.0, 7500.0, 10000.0)
+    frequency_values: tuple[float, ...] = (5000.0, 10000.0, 20000.0, 30000.0, 50000.0, 75000.0, 100000.0)
+    initial_radii: tuple[float, ...] = (0.0001, 0.00025, 0.0005, 0.00075, 0.001, 0.0015, 0.002)
+    initial_angles_deg: tuple[float, ...] = (0.0, 45.0, 90.0, 135.0)
+    transverse_velocity_scales: tuple[float, ...] = (0.0, 0.02)
+    stage_a_periods: int = 50
+    stage_b_periods: int = 1000
+    stage_c_periods: int = 10000
+    stage_c_candidates: int = 6
+    max_step_per_period: int = 10
+    workers: int = 8
+
+
+@dataclass(frozen=True)
+class MassFilterConfig:
+    length: float = 0.020
+    axial_velocity: float = 2.0
+    entrance_aperture: float = 0.008
+    exit_aperture: float = 0.008
+    reference_frequency: float = 10000.0
+    mass_multipliers: tuple[float, ...] = (0.10, 0.15, 0.22, 0.32, 0.46, 0.68, 1.0, 1.47, 2.15, 3.16, 4.64, 6.81, 10.0)
+    map_frequencies: tuple[float, ...] = (5000.0, 10000.0, 20000.0, 30000.0, 50000.0, 75000.0, 100000.0)
+    ensemble_radii: tuple[float, ...] = (0.0001, 0.0005, 0.001)
+    ensemble_angles_deg: tuple[float, ...] = (0.0, 90.0, 180.0, 270.0)
+    ensemble_velocity_scales: tuple[float, ...] = (0.0, 0.02)
+
+
+@dataclass(frozen=True)
 class OutputConfig:
     directory: str = "outputs/three_phase_12_electrode"
 
@@ -79,6 +108,8 @@ class ProjectConfig:
     particle: ParticleConfig = field(default_factory=ParticleConfig)
     simulation: SimulationConfig = field(default_factory=SimulationConfig)
     stability: StabilityConfig = field(default_factory=StabilityConfig)
+    localization: LocalizationConfig = field(default_factory=LocalizationConfig)
+    mass_filter: MassFilterConfig = field(default_factory=MassFilterConfig)
     outputs: OutputConfig = field(default_factory=OutputConfig)
 
     def output_dir(self, project_root: Path | None = None) -> Path:
@@ -100,6 +131,8 @@ def load_config(path: str | Path) -> ProjectConfig:
     pa = raw.get("particle", {})
     si = raw.get("simulation", {})
     st = raw.get("stability", {})
+    lo = raw.get("localization", {})
+    mf = raw.get("mass_filter", {})
     out = raw.get("outputs", {})
     geometry = GeometryConfig(
         electrode_count=int(g.get("electrode_count", 12)),
@@ -137,7 +170,25 @@ def load_config(path: str | Path) -> ProjectConfig:
         tuple(float(v) for v in st.get("frequency_values", [5000.0, 10000.0, 20000.0])),
         tuple(_tuple2(v) for v in st.get("initial_positions", [[0.0005, 0.0], [0.001, 0.0]])),
     )
-    result = ProjectConfig(geometry, mesh, rf_config, particle, simulation, stability, OutputConfig(str(out.get("directory", "outputs/three_phase_12_electrode"))))
+    localization = LocalizationConfig(
+        tuple(float(v) for v in lo.get("U0_values", [500, 1000, 2000, 3000, 5000, 7500, 10000])),
+        tuple(float(v) for v in lo.get("frequency_values", [5000, 10000, 20000, 30000, 50000, 75000, 100000])),
+        tuple(float(v) for v in lo.get("initial_radii", [0.0001, 0.00025, 0.0005, 0.00075, 0.001, 0.0015, 0.002])),
+        tuple(float(v) for v in lo.get("initial_angles_deg", [0, 45, 90, 135])),
+        tuple(float(v) for v in lo.get("transverse_velocity_scales", [0.0, 0.02])),
+        int(lo.get("stage_a_periods", 50)), int(lo.get("stage_b_periods", 1000)), int(lo.get("stage_c_periods", 10000)), int(lo.get("stage_c_candidates", 6)), int(lo.get("max_step_per_period", 10)), int(lo.get("workers", 8)),
+    )
+    mass_filter = MassFilterConfig(
+        length=float(mf.get("length", 0.020)), axial_velocity=float(mf.get("axial_velocity", 2.0)),
+        entrance_aperture=float(mf.get("entrance_aperture", 0.008)), exit_aperture=float(mf.get("exit_aperture", 0.008)),
+        reference_frequency=float(mf.get("reference_frequency", 10000.0)),
+        mass_multipliers=tuple(float(v) for v in mf.get("mass_multipliers", [0.10, 0.15, 0.22, 0.32, 0.46, 0.68, 1.0, 1.47, 2.15, 3.16, 4.64, 6.81, 10.0])),
+        map_frequencies=tuple(float(v) for v in mf.get("map_frequencies", [5000, 10000, 20000, 30000, 50000, 75000, 100000])),
+        ensemble_radii=tuple(float(v) for v in mf.get("ensemble_radii", [0.0001, 0.0005, 0.001])),
+        ensemble_angles_deg=tuple(float(v) for v in mf.get("ensemble_angles_deg", [0, 90, 180, 270])),
+        ensemble_velocity_scales=tuple(float(v) for v in mf.get("ensemble_velocity_scales", [0.0, 0.02])),
+    )
+    result = ProjectConfig(geometry, mesh, rf_config, particle, simulation, stability, localization, mass_filter, OutputConfig(str(out.get("directory", "outputs/three_phase_12_electrode"))))
     validate_config(result)
     return result
 
@@ -159,3 +210,11 @@ def validate_config(config: ProjectConfig) -> None:
         raise ValueError("escape_radius must stay inside the free central region, below the electrode inner radius.")
     if config.simulation.frames_per_period < 12:
         raise ValueError("At least 12 frames per RF period are required.")
+    if config.localization.stage_a_periods < 50 or config.localization.stage_a_periods > 100:
+        raise ValueError("Stage A must screen the full grid for 50 to 100 RF periods.")
+    if config.localization.stage_b_periods < 1000:
+        raise ValueError("Stage B must run for at least 1000 RF periods.")
+    if config.localization.stage_c_periods < 10000:
+        raise ValueError("Stage C must run for at least 10000 RF periods.")
+    if config.localization.workers < 1:
+        raise ValueError("Localization workers must be positive.")

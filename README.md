@@ -28,7 +28,7 @@ where \(\Omega=2\pi f_{RF}\). No switching-state approximation is used.
 
 ## FEM and field reconstruction
 
-The free-space region is triangulated with a sampled circular outer boundary and sampled circular electrode surfaces. A linear triangular scikit-fem solve enforces Laplace's equation, with the outer boundary held at 0 V as a finite far-field approximation. Three independent solves set one phase to 1 V and the other two to 0 V. Every time-dependent potential and electric field is then reconstructed by linear superposition. Direct instantaneous FEM solves are run only at seven validation phases.
+The free-space region is triangulated with a sampled circular outer boundary and sampled circular electrode surfaces. A quadratic triangular P2 scikit-fem solve enforces Laplace's equation, with the outer boundary held at 0 V as a finite far-field approximation. Three independent solves set one phase to 1 V and the other two to 0 V. Every time-dependent potential and electric field is then reconstructed by linear superposition. Direct instantaneous FEM solves are run only at seven validation phases. The P2 interpolator evaluates quadratic shape functions and their within-element gradients directly; it does not blur or cosmetically smooth the field.
 
 Near-center potentials are fitted to
 
@@ -83,10 +83,12 @@ python -m three_phase_trap.cli effective-potential
 python -m three_phase_trap.cli trajectory
 python -m three_phase_trap.cli stability
 python -m three_phase_trap.cli convergence
+python -m three_phase_trap.cli mass-filter
+python -m three_phase_trap.cli publication
 python -m three_phase_trap.cli all
 ```
 
-Use another TOML file with `--config path/to/config.toml`. The all-in-one command runs the basis FEM solve, direct validation, voltage diagnostics, snapshots, GIF animation, optional MP4 animation when ffmpeg is installed, multipole spectrum and rotation, radial scaling, effective potential, conservative and damped trajectory examples, stability scan, mesh convergence, and a generated `final_report.md`.
+Use another TOML file with `--config path/to/config.toml`. The all-in-one command runs the basis FEM solve, direct validation, voltage diagnostics, snapshots, GIF animation, optional MP4 animation when ffmpeg is installed, multipole spectrum and rotation, radial scaling, effective potential, conservative and damped trajectory examples, stability scan, mesh convergence, and a generated `final_report.md`. The `publication` command additionally creates P2-based high-resolution figures, a checkpointed staged localization scan (50-period Stage A, 1000-period Stage B survivors, and 10000-period Stage C candidates), finite-flight mass transmission, and a mass-frequency survival map in `outputs/publication_study/`. Stage-A results are screening-only; stability conclusions use Stage B/C trajectories.
 
 ## Outputs
 
@@ -117,5 +119,4 @@ final_report.md
 
 ## Numerical limitations
 
-The electrode and outer circles are represented by sampled boundaries in a Delaunay mesh, so a resolution study is necessary. P1 fields are piecewise constant per triangle and interpolation is valid only within the free-space triangulation. The outer grounded circle is finite rather than an exact open boundary. The stability scan is intentionally modest, and trajectory conclusions depend on charge-to-mass ratio, RF frequency, damping, simulation duration, tolerances, initial state, and the explicit escape criterion. The generated report distinguishes damping-assisted localization from the `gamma=0` case and does not declare a stable trap without full-duration bounded trajectories.
-
+The electrode and outer circles are represented by sampled boundaries in a Delaunay mesh, so a resolution study is necessary. P2 gradients are smooth within each element but remain C0 finite-element gradients across element boundaries; interpolation is valid only within the free-space triangulation. The outer grounded circle is finite rather than an exact open boundary. The localization scan and mass-filter map are exploratory ensembles, and trajectory conclusions depend on charge-to-mass ratio, RF frequency, damping, interaction time, tolerances, initial state, and the explicit escape criterion. The quasi-2D filter keeps axial velocity constant and omits axial fringe fields. The generated reports distinguish damping-assisted localization from the `gamma=0` case and do not declare a stable trap or mass filter without convergence evidence.

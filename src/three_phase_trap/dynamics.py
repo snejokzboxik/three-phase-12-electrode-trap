@@ -67,6 +67,8 @@ def integrate_trajectory(
     escape_radius: float = 0.020,
     rtol: float = 2.0e-7,
     atol: float = 1.0e-11,
+    max_step_per_period: int = 30,
+    output_samples_per_period: float = 60.0,
     field_function: FieldFunction | None = None,
 ) -> TrajectoryResult:
     """Integrate the full RF equation and classify confinement explicitly.
@@ -115,10 +117,10 @@ def integrate_trajectory(
     escape_event.terminal = True
     escape_event.direction = 1
     period = 1.0 / frequency
-    sample_count = max(1001, int(np.ceil(float(periods) * 60.0)) + 1)
+    sample_count = max(1001, int(np.ceil(float(periods) * output_samples_per_period)) + 1)
     t_eval = np.linspace(0.0, simulation_duration, sample_count)
     try:
-        solution = solve_ivp(rhs, (0.0, simulation_duration), y0, t_eval=t_eval, events=escape_event, rtol=rtol, atol=atol, max_step=period / 30.0, method="DOP853")
+        solution = solve_ivp(rhs, (0.0, simulation_duration), y0, t_eval=t_eval, events=escape_event, rtol=rtol, atol=atol, max_step=period / max(int(max_step_per_period), 1), method="DOP853")
         termination = "escape_radius" if solution.status == 1 else "completed"
     except InterpolationDomainError:
         # This is an explicit failure mode.  Callers can distinguish it from
@@ -135,3 +137,33 @@ def integrate_trajectory(
     radii = np.hypot(state_values[0], state_values[1])
     escaped = bool(termination == "escape_radius" or np.any(radii >= escape_radius * (1.0 - 1e-8)))
     return TrajectoryResult(time_values, state_values, float(np.max(radii)), float(radii[-1]), escaped, not escaped, float(time_values[-1]), float(time_values[-1] * frequency), termination)
+
+
+def trajectory_metrics(result: TrajectoryResult, particle: ParticleConfig, aperture: float | None = None) -> dict[str, float | str]:
+    """Calculate quantitative localization metrics from an integrated path."""
+    position = result.state[:2]
+    velocity = result.state[2:4]
+    radius = np.hypot(position[0], position[1])
+    rms_radius = float(np.sqrt(np.mean(radius**2)))
+    kinetic_energy = 0.5 * particle.mass * np.sum(velocity * velocity, axis=0)
+    metric_aperture = result.max_radius if aperture is None else aperture
+    if result.escaped:
+        classification = "escaped"
+    elif rms_radius <= 0.25 * metric_aperture:
+        classification = "strongly localized"
+    elif rms_radius <= 0.60 * metric_aperture:
+        classification = "weakly localized"
+    else:
+        classification = "marginal"
+    return {
+        "max_radius_m": float(result.max_radius),
+        "rms_radius_m": rms_radius,
+        "median_radius_m": float(np.median(radius)),
+        "final_radius_m": float(result.final_radius),
+        "escape_time_s": float(result.time[-1]) if result.escaped else float("nan"),
+        "periods_survived": float(result.periods_simulated),
+        "max_kinetic_energy_J": float(np.max(kinetic_energy)),
+        "rms_kinetic_energy_J": float(np.sqrt(np.mean(kinetic_energy**2))),
+        "micromotion_amplitude_m": float(0.25 * (np.ptp(position[0]) + np.ptp(position[1]))) if len(result.time) > 4 else float("nan"),
+        "classification": classification,
+    }

@@ -1,0 +1,7 @@
+{
+  "cases": 18.0,
+  "max_potential_error_V": 5.6843418860808015e-12,
+  "rms_potential_error_V": 2.1286732816352618e-13,
+  "max_electric_field_error_V_per_m": 4.9585001478266494e-08,
+  "rms_electric_field_error_V_per_m": 8.354675680215251e-10
+}

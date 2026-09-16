@@ -35,6 +35,7 @@ def particle_rhs(
     frequency: float,
     interpolator: FEMInterpolator | None = None,
     field_function: FieldFunction | None = None,
+    Udc: float = 0.0,
 ) -> np.ndarray:
     """Evaluate m r¨ = q E(r,t) - γ r˙ + m g."""
     position = np.asarray(state[:2], dtype=float)
@@ -43,7 +44,10 @@ def particle_rhs(
         electric_field = np.asarray(field_function(position, time), dtype=float)
     elif interpolator is not None:
         try:
-            electric_field = np.asarray(interpolator.field(position.reshape(1, 2), time, U0, frequency)[0], dtype=float)
+            if Udc == 0.0:
+                electric_field = np.asarray(interpolator.field(position.reshape(1, 2), time, U0, frequency)[0], dtype=float)
+            else:
+                electric_field = np.asarray(interpolator.field_with_dc(position.reshape(1, 2), time, Udc, U0, frequency)[0], dtype=float)
         except InterpolationDomainError as error:
             raise InterpolationDomainError("Particle reached an invalid FEM interpolation region.") from error
     else:
@@ -70,6 +74,7 @@ def integrate_trajectory(
     max_step_per_period: int = 30,
     output_samples_per_period: float = 60.0,
     field_function: FieldFunction | None = None,
+    Udc: float = 0.0,
 ) -> TrajectoryResult:
     """Integrate the full RF equation and classify confinement explicitly.
 
@@ -107,8 +112,8 @@ def integrate_trajectory(
                 safe_position = np.asarray(state[:2], dtype=float) * safe_radius / max(radius, 1.0e-30)
                 guarded_state = np.asarray(state, dtype=float).copy()
                 guarded_state[:2] = safe_position
-                return particle_rhs(time, guarded_state, particle, U0, frequency, interpolator, field_function)
-        return particle_rhs(time, state, particle, U0, frequency, interpolator, field_function)
+                return particle_rhs(time, guarded_state, particle, U0, frequency, interpolator, field_function, Udc)
+        return particle_rhs(time, state, particle, U0, frequency, interpolator, field_function, Udc)
 
     def escape_event(time: float, state: np.ndarray) -> float:
         del time

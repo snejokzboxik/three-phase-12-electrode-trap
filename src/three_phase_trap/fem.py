@@ -62,12 +62,14 @@ def solve_dirichlet(trap_mesh: TrapMesh, electrode_voltages: dict[int, float]) -
 
 
 def solve_basis(trap_mesh: TrapMesh) -> FEMBasisSolutions:
-    """Calculate the three independent 1-V phase basis solutions exactly once."""
+    """Calculate the RF phase bases and the common 1-V DC basis once."""
     potentials: dict[str, np.ndarray] = {}
     basis: Basis | None = None
     for phase in ("A", "B", "C"):
         voltages = {index: float(phase == electrode_phase) for index, electrode_phase in _electrode_phase_map(trap_mesh).items()}
         potentials[phase], basis = solve_dirichlet(trap_mesh, voltages)
+    dc_voltages = {index: 1.0 for index in trap_mesh.electrode_nodes}
+    potentials["DC"], basis = solve_dirichlet(trap_mesh, dc_voltages)
     if basis is None:
         raise RuntimeError("No FEM basis was calculated.")
     fields = {phase: element_electric_field(trap_mesh, values, basis=basis) for phase, values in potentials.items()}

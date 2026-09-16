@@ -478,6 +478,460 @@ def publication_pseudopotential_refined(output_dir: Path, interpolator: FEMInter
     return {"central_min_J": central_min, "full_axis": full_axis, "full_effective": full_effective, "central_axis": central_axis, "central_effective": central_effective, "transformed": transformed, "profiles": profiles, "anisotropy": anisotropy, "mesh_convergence": convergence, "central_delta_max_J": delta_max, "sixth_root_reference_J": delta_ref}
 
 
+def _dc_bias_regular_grid(interpolator: FEMInterpolator, radius: float, size: int) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """Sample RF and common-DC basis fields on a regular Cartesian grid.
+
+    The area-weighted nodal recovery is display postprocessing only. All
+    values are still generated from the unchanged P2 FEM basis solutions.
+    """
+    axis = np.linspace(-radius, radius, size)
+    xx, yy = np.meshgrid(axis, axis, indexing="xy")
+    flat = np.column_stack((xx.ravel(), yy.ravel()))
+    ids = np.asarray(interpolator._finder(flat[:, 0], flat[:, 1]), dtype=int)
+    mask = ids >= 0
+    rf = np.full((3, len(flat), 2), np.nan, dtype=float)
+    for index, phase in enumerate(("A", "B", "C")):
+        rf[index, mask] = interpolator.field_basis_recovered(flat[mask], phase)
+    dc = np.full((len(flat), 2), np.nan, dtype=float)
+    dc[mask] = interpolator.field_basis_recovered(flat[mask], "DC")
+    dc_potential = np.full(len(flat), np.nan, dtype=float)
+    dc_potential[mask] = interpolator.potential_basis(flat[mask], "DC")
+    return axis, xx, yy, rf.reshape((3,) + xx.shape + (2,)), dc.reshape(xx.shape + (2,)), dc_potential.reshape(xx.shape)
+
+
+def _dc_bias_radial_data(interpolator: FEMInterpolator, config: ProjectConfig, radii: np.ndarray, angles_deg: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    angles = np.deg2rad(angles_deg)
+    profile_rf = np.empty((len(angles), len(radii)), dtype=float)
+    dc_squared = np.empty_like(profile_rf)
+    for j, angle in enumerate(angles):
+        points = np.column_stack((radii * np.cos(angle), radii * np.sin(angle)))
+        fields = {phase: interpolator.field_basis_recovered(points, phase) for phase in ("A", "B", "C")}
+        profile_rf[j] = effective_potential_from_mean_square(
+            mean_square_field_from_basis(fields, config.rf.U0), config.particle.charge, config.particle.mass, config.rf.omega,
+        )
+        dc_field = interpolator.field_basis_recovered(points, "DC")
+        dc_squared[j] = np.sum(dc_field * dc_field, axis=-1)
+    prefactor = config.particle.charge**2 / (2.0 * config.particle.mass * config.rf.omega**2)
+    return profile_rf, prefactor * dc_squared, angles_deg
+
+
+def _write_grid_csv(path: Path, axis: np.ndarray, psi_rf: np.ndarray, psi_total: np.ndarray, dc_field: np.ndarray, dc_potential: np.ndarray) -> None:
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(("x_m", "y_m", "psi_rf_J", "psi_total_time_averaged_proxy_J", "dc_field_magnitude_V_per_m", "dc_basis_potential_V_per_V"))
+        for yi, y in enumerate(axis):
+            for xi, x in enumerate(axis):
+                dc_value = dc_field[yi, xi]
+                writer.writerow((float(x), float(y), float(psi_rf[yi, xi]), float(psi_total[yi, xi]), float(np.linalg.norm(dc_value)) if np.all(np.isfinite(dc_value)) else float("nan"), float(dc_potential[yi, xi])))
+
+
+def _dc_bias_case(output_dir: Path, interpolator: FEMInterpolator, geometry: TrapGeometry, config: ProjectConfig, Udc: float, base_grids: dict[str, object], radial_rf: np.ndarray, dc_radial_energy: np.ndarray, angles_deg: np.ndarray) -> dict[str, object]:
+    case_dir = output_dir / f"Udc_{int(Udc):04d}V"
+    case_dir.mkdir(parents=True, exist_ok=True)
+    full_axis = base_grids["full_axis"]
+    center_axis = base_grids["center_axis"]
+    prefactor = config.particle.charge**2 / (2.0 * config.particle.mass * config.rf.omega**2)
+    full_rf = base_grids["full_rf"]
+    full_dc_field = base_grids["full_dc_field"]
+    full_total = full_rf + prefactor * Udc**2 * np.sum(full_dc_field * full_dc_field, axis=-1)
+    center_rf = base_grids["center_rf"]
+    center_dc_field = base_grids["center_dc_field"]
+    center_total = center_rf + prefactor * Udc**2 * np.sum(center_dc_field * center_dc_field, axis=-1)
+    central_min = float(np.nanmin(center_total))
+    center_delta = np.maximum(center_total - central_min, 0.0)
+    transform_reference = max(float(np.nanpercentile(center_delta, 80.0)), 1.0e-30)
+    transformed = np.power(center_delta / transform_reference, 1.0 / 6.0)
+    full_dc_potential = base_grids["full_dc_potential"]
+    center_dc_potential = base_grids["center_dc_potential"]
+    _write_grid_csv(case_dir / "pseudopotential_grid.csv", full_axis, full_rf, full_total, full_dc_field, full_dc_potential)
+    _write_grid_csv(case_dir / "pseudopotential_central_grid.csv", center_axis, center_rf, center_total, center_dc_field, center_dc_potential)
+
+    # Keep static electrostatic energy separate from the RF pseudopotential.
+    static_dc_energy = config.particle.charge * Udc * center_dc_potential
+    with (case_dir / "static_dc_energy_grid.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle); writer.writerow(("x_m", "y_m", "static_dc_potential_energy_J", "dc_electric_field_magnitude_V_per_m"))
+        for yi, y in enumerate(center_axis):
+            for xi, x in enumerate(center_axis):
+                field_value = center_dc_field[yi, xi]
+                writer.writerow((float(x), float(y), float(static_dc_energy[yi, xi]), float(np.linalg.norm(field_value) * abs(Udc)) if np.all(np.isfinite(field_value)) else float("nan")))
+    fig, ax = plt.subplots(figsize=(7.0, 5.6), constrained_layout=True)
+    energy_nj = static_dc_energy * 1.0e9
+    image = ax.imshow(energy_nj, origin="lower", extent=(_mm(center_axis[0]), _mm(center_axis[-1]), _mm(center_axis[0]), _mm(center_axis[-1])), cmap="coolwarm", interpolation="bicubic", aspect="equal")
+    ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Static DC potential energy qΦDC, Udc={Udc:g} V")
+    fig.colorbar(image, ax=ax, label="qΦDC (nJ)"); save_figure(fig, case_dir, "static_dc_potential_energy")
+    fig, ax = plt.subplots(figsize=(7.0, 5.6), constrained_layout=True)
+    dc_magnitude = np.linalg.norm(center_dc_field, axis=-1) * abs(Udc)
+    image = ax.imshow(dc_magnitude, origin="lower", extent=(_mm(center_axis[0]), _mm(center_axis[-1]), _mm(center_axis[0]), _mm(center_axis[-1])), cmap="viridis", interpolation="bicubic", aspect="equal")
+    ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Static electric-field magnitude, Udc={Udc:g} V")
+    fig.colorbar(image, ax=ax, label="|E_DC| (V/m)"); save_figure(fig, case_dir, "static_dc_field_magnitude")
+
+    radii = base_grids["radii"]
+    radial_total = radial_rf + Udc**2 * dc_radial_energy
+    radial_mean = np.mean(radial_total, axis=0)
+    radial_min = float(np.min(radial_total))
+    with (case_dir / "radial_cuts.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle); writer.writerow(("angle_deg", "radius_m", "psi_rf_J", "psi_total_time_averaged_proxy_J", "delta_from_case_min_J"))
+        for angle, rf_values, total_values in zip(angles_deg, radial_rf, radial_total):
+            writer.writerows((float(angle), float(r), float(rf), float(total), float(total - radial_min)) for r, rf, total in zip(radii, rf_values, total_values))
+    with (case_dir / "angular_anisotropy.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle); writer.writerow(("radius_m", "angle_deg", "psi_total_time_averaged_proxy_J", "deviation_from_angular_mean_J"))
+        for radius in (0.001, 0.002, 0.003):
+            j = int(np.argmin(abs(radii - radius)))
+            values = radial_total[:, j]; mean = float(np.mean(values))
+            writer.writerows((float(radii[j]), float(angle), float(value), float(value - mean)) for angle, value in zip(angles_deg, values))
+
+    extent_full = (_mm(full_axis[0]), _mm(full_axis[-1]), _mm(full_axis[0]), _mm(full_axis[-1]))
+    extent_center = (_mm(center_axis[0]), _mm(center_axis[-1]), _mm(center_axis[0]), _mm(center_axis[-1]))
+    display_scale = 1.0e9
+    full_norm = PowerNorm(gamma=0.42, vmin=0.0, vmax=float(np.nanpercentile(full_total * display_scale, 99.5)))
+    center_norm = Normalize(vmin=float(np.nanmin(center_total * display_scale)), vmax=float(np.nanpercentile(center_total * display_scale, 99.5)))
+    transformed_norm = Normalize(vmin=0.0, vmax=float(np.nanpercentile(transformed, 99.5)))
+    contour_levels = np.linspace(0.0, float(np.nanpercentile(transformed, 99.5)), 100)[1:]
+    draw_specs = [
+        ("pseudopotential_full_map", lambda ax: ax.imshow(full_total * display_scale, origin="lower", extent=extent_full, cmap="magma", norm=PowerNorm(gamma=0.42, vmin=0.0, vmax=float(np.nanpercentile(full_total * display_scale, 99.5))), interpolation="bicubic", aspect="equal"), "Time-averaged total-field proxy (nJ)", f"Udc={Udc:g} V: total-field proxy"),
+        ("pseudopotential_central_zoom", lambda ax: ax.imshow(center_total * display_scale, origin="lower", extent=extent_center, cmap="magma", norm=Normalize(vmin=float(np.nanmin(center_total * display_scale)), vmax=float(np.nanpercentile(center_total * display_scale, 99.5))), interpolation="bicubic", aspect="equal"), "Local total-field proxy (nJ)", f"Udc={Udc:g} V: total-field proxy, central zoom"),
+        ("pseudopotential_transformed_center", lambda ax: ax.imshow(transformed, origin="lower", extent=extent_center, cmap="viridis", norm=transformed_norm, interpolation="bicubic", aspect="equal"), "[(Ψ−Ψmin)/Ψref]^(1/6)", f"Udc={Udc:g} V: transformed center"),
+        ("pseudopotential_dense_contours", lambda ax: (ax.contourf(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=contour_levels, cmap="cividis", extend="max"), ax.contour(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=np.linspace(0.0, contour_levels[-1], 60)[1:], colors="black", linewidths=0.22, alpha=0.5)), "Sixth-root transformed total-field proxy", f"Udc={Udc:g} V: proxy contours"),
+    ]
+    for stem, draw, label, title in draw_specs:
+        fig, ax = plt.subplots(figsize=(7.0, 5.6), constrained_layout=True)
+        artist = draw(ax)
+        if isinstance(artist, tuple): artist = artist[0]
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=title); fig.colorbar(artist, ax=ax, label=label)
+        save_figure(fig, case_dir, stem)
+
+    for stem, mask, title in (("radial_cuts_full", np.ones_like(radii, dtype=bool), f"Udc={Udc:g} V: radial cuts, full central range"), ("radial_cuts_center", radii <= 0.0018, f"Udc={Udc:g} V: central radial cuts")):
+        fig, ax = plt.subplots(figsize=(7.2, 5.0), constrained_layout=True)
+        for angle, values in zip(angles_deg, radial_total): ax.plot(radii[mask] * 1000.0, (values[mask] - radial_min) * display_scale, linewidth=0.8, alpha=0.75, label=f"{angle:g}°")
+        ax.set(xlabel="Radius (mm)", ylabel="Ψproxy − Ψmin (nJ)", title=title); ax.grid(alpha=0.25)
+        if stem.endswith("center"): ax.legend(ncol=3, fontsize=7)
+        save_figure(fig, case_dir, stem)
+    fig, ax = plt.subplots(figsize=(7.2, 5.0), constrained_layout=True)
+    for radius in (0.001, 0.002, 0.003):
+        j = int(np.argmin(abs(radii - radius))); values = radial_total[:, j]
+        ax.plot(angles_deg, (values - np.mean(values)) * display_scale, "o-", ms=2.5, linewidth=1.0, label=f"r={radii[j] * 1000:g} mm")
+    ax.axhline(0.0, color="black", linewidth=0.5); ax.set(xlabel="Angle (deg)", ylabel="Ψproxy − angular mean (nJ)", title=f"Udc={Udc:g} V: angular anisotropy"); ax.grid(alpha=0.25); ax.legend(fontsize=8)
+    save_figure(fig, case_dir, "angular_anisotropy")
+
+    fig = plt.figure(figsize=(16.0, 11.0), constrained_layout=True)
+    axes = fig.subplot_mosaic([["A", "B", "C"], ["D", "E", "F"]])
+    image = axes["A"].imshow(full_total * display_scale, origin="lower", extent=extent_full, cmap="magma", norm=full_norm, interpolation="bicubic", aspect="equal"); axes["A"].set_title("A  Full total-field proxy (nJ)"); fig.colorbar(image, ax=axes["A"])
+    image = axes["B"].imshow(center_total * display_scale, origin="lower", extent=extent_center, cmap="magma", norm=center_norm, interpolation="bicubic", aspect="equal"); axes["B"].set_title("B  Proxy center zoom (local scale, nJ)"); fig.colorbar(image, ax=axes["B"])
+    image = axes["C"].imshow(transformed, origin="lower", extent=extent_center, cmap="viridis", norm=transformed_norm, interpolation="bicubic", aspect="equal"); axes["C"].set_title("C  Sixth-root transformed center"); fig.colorbar(image, ax=axes["C"])
+    contour = axes["D"].contourf(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=contour_levels, cmap="cividis", extend="max"); axes["D"].contour(center_axis * 1000.0, center_axis * 1000.0, transformed, levels=np.linspace(0.0, contour_levels[-1], 60)[1:], colors="black", linewidths=0.2, alpha=0.5); axes["D"].set_title("D  Dense contours (100 levels)"); fig.colorbar(contour, ax=axes["D"])
+    for values in radial_total: axes["E"].plot(radii[radii <= 0.0018] * 1000.0, (values[radii <= 0.0018] - radial_min) * display_scale, linewidth=0.75, alpha=0.75)
+    axes["E"].set(xlabel="Radius (mm)", ylabel="Ψproxy − Ψmin (nJ)", title="E  Central radial cuts"); axes["E"].grid(alpha=0.25)
+    for radius in (0.001, 0.002, 0.003):
+        j = int(np.argmin(abs(radii - radius))); values = radial_total[:, j]; axes["F"].plot(angles_deg, (values - np.mean(values)) * display_scale, "o-", ms=2.0, linewidth=0.9, label=f"r={radii[j] * 1000:g} mm")
+    axes["F"].axhline(0.0, color="black", linewidth=0.5); axes["F"].set(xlabel="Angle (deg)", ylabel="Residual (nJ)", title="F  Angular anisotropy"); axes["F"].grid(alpha=0.25); axes["F"].legend(fontsize=7)
+    fig.suptitle(f"Common-DC-bias RF and total-field diagnostics: Udc={Udc:g} V", fontsize=16)
+    save_figure(fig, case_dir, "fig_dc_bias_summary")
+
+    flat_mask = np.hypot(base_grids["center_xx"], base_grids["center_yy"]) <= 0.0015
+    flatness_J = float(np.nanmax(center_total[flat_mask]) - np.nanmin(center_total[flat_mask]))
+    j3 = int(np.argmin(abs(radii - 0.003)))
+    threshold = 0.1 * max(float(radial_mean[j3] - radial_mean[0]), 1.0e-30)
+    crossing = np.flatnonzero((radial_mean - radial_mean[0]) > threshold)
+    useful_radius = float(radii[crossing[0]]) if len(crossing) else float(radii[-1])
+    j2 = int(np.argmin(abs(radii - 0.002)))
+    anisotropy_2mm = float(np.ptp(radial_total[:, j2]))
+    return {"Udc_V": Udc, "case_dir": case_dir, "psi_rf_full": full_rf, "psi_total_full": full_total, "psi_rf_center": center_rf, "psi_total_center": center_total, "central_min_J": central_min, "flatness_1p5mm_J": flatness_J, "useful_radius_m": useful_radius, "anisotropy_2mm_J": anisotropy_2mm, "radial_total": radial_total, "radial_rf": radial_rf, "radial_mean": radial_mean, "transformed": transformed, "transform_reference_J": transform_reference}
+
+
+def run_dc_bias_comparison(config: ProjectConfig, project_root: Path) -> dict[str, object]:
+    """Generate a separate common-DC-bias visualization and trajectory study."""
+    from .pipeline import make_state
+    output_dir = publication_dir(project_root) / "dc_bias"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    geometry, _, solutions, interpolator = make_state(config)
+    full_axis, full_xx, full_yy, full_rf_basis, full_dc_field, full_dc_potential = _dc_bias_regular_grid(interpolator, min(0.019, geometry.outer_domain_radius * 0.80), 401)
+    center_axis, center_xx, center_yy, center_rf_basis, center_dc_field, center_dc_potential = _dc_bias_regular_grid(interpolator, min(0.0042, 0.48 * (geometry.electrode_orbit_radius - geometry.electrode_radius)), 501)
+    full_rf = effective_potential_from_mean_square(mean_square_field_from_basis({phase: full_rf_basis[i] for i, phase in enumerate(("A", "B", "C"))}, config.rf.U0), config.particle.charge, config.particle.mass, config.rf.omega)
+    center_rf = effective_potential_from_mean_square(mean_square_field_from_basis({phase: center_rf_basis[i] for i, phase in enumerate(("A", "B", "C"))}, config.rf.U0), config.particle.charge, config.particle.mass, config.rf.omega)
+    radii = np.linspace(0.0, min(0.0040, center_axis[-1] * 0.96), 320)
+    angles_deg = np.arange(0.0, 360.0, 15.0)
+    radial_rf, dc_radial_energy, angles_deg = _dc_bias_radial_data(interpolator, config, radii, angles_deg)
+    base_grids = {"full_axis": full_axis, "center_axis": center_axis, "full_rf": full_rf, "center_rf": center_rf, "full_dc_field": full_dc_field, "center_dc_field": center_dc_field, "full_dc_potential": full_dc_potential, "center_dc_potential": center_dc_potential, "center_xx": center_xx, "center_yy": center_yy, "radii": radii}
+    Udc_values = (0.0, 100.0, 300.0, 500.0, 1000.0)
+    cases = [_dc_bias_case(output_dir, interpolator, geometry, config, Udc, base_grids, radial_rf, dc_radial_energy, angles_deg) for Udc in Udc_values]
+    baseline = cases[0]
+
+    fig, axes = plt.subplots(2, 2, figsize=(12.0, 9.0), constrained_layout=True)
+    for case in cases: axes[0, 0].plot(radii * 1000.0, (case["radial_mean"] - case["radial_mean"][0]) * 1.0e9, linewidth=1.2, label=f"{case['Udc_V']:g} V")
+    axes[0, 0].set(xlabel="Radius (mm)", ylabel="Mean ΔΨproxy (nJ)", title="Central minimum structure"); axes[0, 0].grid(alpha=0.25); axes[0, 0].legend()
+    axes[0, 1].plot([c["Udc_V"] for c in cases], [c["flatness_1p5mm_J"] * 1.0e9 for c in cases], "o-"); axes[0, 1].set(xlabel="Udc (V)", ylabel="Range inside r≤1.5 mm (nJ)", title="Central flatness metric"); axes[0, 1].grid(alpha=0.25)
+    for case in cases:
+        values = case["radial_total"][:, int(np.argmin(abs(radii - 0.002)))]
+        axes[1, 0].plot(angles_deg, (values - np.mean(values)) * 1.0e9, linewidth=1.0, label=f"{case['Udc_V']:g} V")
+    axes[1, 0].axhline(0.0, color="black", linewidth=0.5); axes[1, 0].set(xlabel="Angle (deg)", ylabel="Residual at r=2 mm (nJ)", title="Angular anisotropy comparison"); axes[1, 0].grid(alpha=0.25); axes[1, 0].legend(fontsize=8)
+    axes[1, 1].plot([c["Udc_V"] for c in cases], [c["useful_radius_m"] * 1000.0 for c in cases], "o-"); axes[1, 1].set(xlabel="Udc (V)", ylabel="Illustrative radius (mm)", title="Useful localization region"); axes[1, 1].grid(alpha=0.25)
+    fig.suptitle("Common DC-bias comparison: RF pseudopotential versus total-field proxy", fontsize=15)
+    save_figure(fig, output_dir, "fig_dc_bias_comparison")
+
+    summary_fig, summary_ax = plt.subplots(figsize=(8.0, 5.5), constrained_layout=True)
+    for case in cases: summary_ax.plot(radii * 1000.0, (case["radial_mean"] - case["radial_mean"][0]) * 1.0e9, linewidth=1.4, label=f"Udc={case['Udc_V']:g} V")
+    summary_ax.set(xlabel="Radius (mm)", ylabel="Angular-mean ΔΨproxy (nJ)", title="DC-bias effect on the central well"); summary_ax.grid(alpha=0.25); summary_ax.legend()
+    save_figure(summary_fig, output_dir, "fig_dc_bias_central_well")
+
+    trajectory_rows = []
+    for Udc in (0.0, 300.0, 1000.0):
+        result = integrate_trajectory(interpolator, config.particle, config.rf.U0, config.rf.frequency, initial_position=(0.00025, 0.0), initial_velocity=(0.0, 0.0), periods=40, escape_radius=config.simulation.escape_radius, rtol=config.simulation.trajectory_rtol, atol=config.simulation.trajectory_atol, max_step_per_period=10, output_samples_per_period=8, Udc=Udc)
+        metrics = trajectory_metrics(result, config.particle, config.simulation.escape_radius)
+        trajectory_rows.append({"Udc_V": Udc, **metrics})
+    with (output_dir / "trajectory_subset.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(trajectory_rows[0])); writer.writeheader(); writer.writerows(trajectory_rows)
+    fig, ax = plt.subplots(figsize=(8.0, 5.0), constrained_layout=True)
+    for Udc in (0.0, 300.0, 1000.0):
+        result = integrate_trajectory(interpolator, config.particle, config.rf.U0, config.rf.frequency, initial_position=(0.00025, 0.0), initial_velocity=(0.0, 0.0), periods=40, escape_radius=config.simulation.escape_radius, rtol=config.simulation.trajectory_rtol, atol=config.simulation.trajectory_atol, max_step_per_period=10, output_samples_per_period=8, Udc=Udc)
+        ax.plot(result.time * config.rf.frequency, np.hypot(result.state[0], result.state[1]) * 1000.0, label=f"Udc={Udc:g} V")
+    ax.set(xlabel="RF periods", ylabel="Radius (mm)", title="Exploratory 40-period trajectory subset"); ax.grid(alpha=0.25); ax.legend(); save_figure(fig, output_dir, "fig_dc_bias_trajectory_subset")
+
+    flatness_rows = [{"Udc_V": float(case["Udc_V"]), "central_min_J": float(case["central_min_J"]), "flatness_range_1p5mm_J": float(case["flatness_1p5mm_J"]), "anisotropy_spread_2mm_J": float(case["anisotropy_2mm_J"]), "useful_radius_m": float(case["useful_radius_m"])} for case in cases]
+    with (output_dir / "dc_bias_metrics.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(flatness_rows[0])); writer.writeheader(); writer.writerows(flatness_rows)
+    rf_difference = max(float(np.nanmax(np.abs(case["psi_rf_center"] - baseline["psi_rf_center"]))) for case in cases)
+    report_lines = [
+        "# Common DC-bias comparison", "",
+        "The zero-DC study is preserved. This additional group uses a fifth FEM basis solution, `DC`, with all 12 electrode groups at 1 V and the outer boundary grounded. The full field is reconstructed as Udc·Edc plus the original three-phase RF field; no time-step FEM solves are used.", "",
+        f"Bias values: {', '.join(f'{v:g} V' for v in Udc_values)}. Regular plotting grids: full={len(full_axis)}×{len(full_axis)}, center={len(center_axis)}×{len(center_axis)}. Grid fields use area-weighted nodal recovery for readable visualization only; raw P2/direct FEM data are unchanged.", "",
+        f"RF-only invariance check: maximum absolute change in ΨRF across all bias cases is {rf_difference:.6e} J (it is the same RF basis calculation by construction).", "",
+        "## Interpretation", "",
+        "A common DC bias does not change the RF pseudopotential ΨRF qualitatively or quantitatively: the RF phases and RF basis solutions are unchanged. It does add a static electric field and therefore a static force. For visualization, the plotted `Ψproxy = q²⟨|E_RF+E_DC|²⟩/(2mΩ²)` equals ΨRF + q²Udc²|Edc|²/(2mΩ²), because the RF/DC cross term averages to zero over a period; this is a total-field diagnostic, not a claim that static DC energy is an RF pseudopotential.", "",
+        "| Udc (V) | central range r≤1.5 mm (nJ) | angular spread at 2 mm (nJ) | illustrative useful radius (mm) |", "|---:|---:|---:|---:|",
+    ]
+    for row in flatness_rows: report_lines.append(f"| {row['Udc_V']:g} | {row['flatness_range_1p5mm_J'] * 1e9:.6g} | {row['anisotropy_spread_2mm_J'] * 1e9:.6g} | {row['useful_radius_m'] * 1000:.6g} |")
+    report_lines += ["", "The central RF well remains a flat-bottom/higher-order minimum in the zero-DC component. Whether the total-field proxy looks less flat or more anisotropic at larger Udc is a quantitative consequence of the added static field term and is summarized by the table and figures above; it should not be confused with a new RF multipole. A common DC bias is therefore not intrinsically beneficial for localization: it may shift the equilibrium and alter confinement through static forces, so the small trajectory subset is exploratory only and is not a stability conclusion.", "", "The trajectory subset uses 40 RF periods at U0=1000 V, f=10000 Hz, r0=0.25 mm, v0=0. It is intentionally small and does not resume or modify the paused full localization checkpoint.", ""]
+    report_path = output_dir / "dc_bias_report.md"
+    report_path.write_text("\n".join(report_lines), encoding="utf-8")
+    return {"output_dir": output_dir, "cases": cases, "report": report_path, "trajectory_rows": trajectory_rows, "rf_invariance_max_J": rf_difference, "solutions": solutions}
+
+
+def validate_dc_superposition(output_dir: Path, trap_mesh, solutions, config: ProjectConfig) -> dict[str, float]:
+    """Compare DC+RF basis reconstruction against independent direct FEM solves."""
+    from .fem import element_electric_field, solve_dirichlet
+    from .fields import field_at_time_with_dc, potential_at_time_with_dc
+    from .voltages import phase_voltages
+
+    records = []
+    potential_sq_sum = 0.0
+    field_sq_sum = 0.0
+    potential_count = 0
+    field_count = 0
+    max_potential_error = 0.0
+    max_field_error = 0.0
+    bias_values = (100.0, 500.0, 1000.0)
+    phase_fractions = (0.0, 1.0 / 6.0, 1.0 / 3.0, 0.5, 2.0 / 3.0, 5.0 / 6.0)
+    for Udc in bias_values:
+        for fraction in phase_fractions:
+            time = fraction * config.rf.period
+            rf_values = phase_voltages(time, config.rf.U0, config.rf.frequency)
+            electrode_values = {index: float(Udc + rf_values[("A", "B", "C")[index % 3]]) for index in trap_mesh.electrode_nodes}
+            direct_potential, _ = solve_dirichlet(trap_mesh, electrode_values)
+            direct_field = element_electric_field(trap_mesh, direct_potential, basis=solutions.basis)
+            reconstructed_potential = potential_at_time_with_dc(solutions, time, Udc, config.rf.U0, config.rf.frequency)
+            reconstructed_field = field_at_time_with_dc(solutions, time, Udc, config.rf.U0, config.rf.frequency)
+            potential_error = np.asarray(direct_potential - reconstructed_potential)
+            field_error = np.linalg.norm(direct_field - reconstructed_field, axis=-1)
+            max_phi = float(np.max(np.abs(potential_error)))
+            rms_phi = float(np.sqrt(np.mean(potential_error**2)))
+            max_e = float(np.max(field_error))
+            rms_e = float(np.sqrt(np.mean(field_error**2)))
+            records.append({"Udc_V": Udc, "phase_fraction_T": fraction, "max_potential_error_V": max_phi, "rms_potential_error_V": rms_phi, "max_field_error_V_per_m": max_e, "rms_field_error_V_per_m": rms_e})
+            max_potential_error = max(max_potential_error, max_phi)
+            max_field_error = max(max_field_error, max_e)
+            potential_sq_sum += float(np.sum(potential_error**2)); potential_count += potential_error.size
+            field_sq_sum += float(np.sum(field_error**2)); field_count += field_error.size
+    summary = {
+        "cases": float(len(records)),
+        "max_potential_error_V": max_potential_error,
+        "rms_potential_error_V": float(np.sqrt(potential_sq_sum / max(potential_count, 1))),
+        "max_electric_field_error_V_per_m": max_field_error,
+        "rms_electric_field_error_V_per_m": float(np.sqrt(field_sq_sum / max(field_count, 1))),
+    }
+    with (output_dir / "dc_superposition_validation.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(records[0])); writer.writeheader(); writer.writerows(records)
+    (output_dir / "dc_superposition_validation_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    return summary
+
+
+def finalize_dc_bias_outputs(config: ProjectConfig, project_root: Path) -> dict[str, object]:
+    """Validate and clarify the completed DC study using its saved outputs.
+
+    This deliberately does not repeat the regular-grid sampling or trajectory
+    study. It reads the already completed case CSVs and runs only the requested
+    independent direct-FEM superposition check.
+    """
+    from .pipeline import make_state
+    output_dir = publication_dir(project_root) / "dc_bias"
+    bias_values = (0, 100, 300, 500, 1000)
+    loaded = {}
+    center_data = {}
+    for bias in bias_values:
+        case_dir = output_dir / f"Udc_{bias:04d}V"
+        grid = np.genfromtxt(case_dir / "pseudopotential_grid.csv", delimiter=",", names=True)
+        central = np.genfromtxt(case_dir / "pseudopotential_central_grid.csv", delimiter=",", names=True)
+        radial = np.genfromtxt(case_dir / "radial_cuts.csv", delimiter=",", names=True)
+        angle = np.genfromtxt(case_dir / "angular_anisotropy.csv", delimiter=",", names=True)
+        x = np.unique(central["x_m"]); y = np.unique(central["y_m"])
+        shape = (len(y), len(x))
+        loaded[bias] = {name: grid[name] for name in grid.dtype.names}
+        center_data[bias] = {
+            "x": x, "y": y,
+            "psi_rf": central["psi_rf_J"].reshape(shape),
+            "proxy": central["psi_total_time_averaged_proxy_J"].reshape(shape),
+            "dc_field_basis": central["dc_field_magnitude_V_per_m"].reshape(shape),
+            "dc_potential_basis": central["dc_basis_potential_V_per_V"].reshape(shape),
+            "radial": radial,
+            "angular": angle,
+        }
+
+    baseline = center_data[0]
+    representative = center_data[1000]
+    proxy_delta = representative["proxy"] - baseline["psi_rf"]
+    x_mm, y_mm = baseline["x"] * 1000.0, baseline["y"] * 1000.0
+    center_extent = (x_mm[0], x_mm[-1], y_mm[0], y_mm[-1])
+    xx_mm, yy_mm = np.meshgrid(x_mm, y_mm, indexing="xy")
+    central_disk_2mm = np.hypot(xx_mm, yy_mm) <= 2.0
+    for bias in bias_values:
+        case_dir = output_dir / f"Udc_{bias:04d}V"
+        item = center_data[bias]
+        # Re-label the primary pseudopotential maps to show RF-only ΨRF.
+        full = loaded[bias]
+        full_x, full_y = np.unique(full["x_m"]), np.unique(full["y_m"])
+        full_psi_rf = full["psi_rf_J"].reshape((len(full_y), len(full_x)))
+        full_proxy = full["psi_total_time_averaged_proxy_J"].reshape((len(full_y), len(full_x)))
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(full_psi_rf * 1e9, origin="lower", extent=(full_x[0]*1000, full_x[-1]*1000, full_y[0]*1000, full_y[-1]*1000), cmap="magma", norm=PowerNorm(gamma=0.45, vmin=0, vmax=float(np.nanpercentile(full_psi_rf*1e9, 99.5))), interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"RF pseudopotential ΨRF, Udc={bias} V (unchanged)"); fig.colorbar(image, ax=ax, label="ΨRF (nJ)"); save_figure(fig, case_dir, "pseudopotential_full_map")
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(full_proxy * 1e9, origin="lower", extent=(full_x[0]*1000, full_x[-1]*1000, full_y[0]*1000, full_y[-1]*1000), cmap="magma", norm=PowerNorm(gamma=0.42, vmin=0, vmax=float(np.nanpercentile(full_proxy*1e9, 99.5))), interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Heuristic total-field proxy, Udc={bias} V"); fig.colorbar(image, ax=ax, label="q²⟨|ERF+EDC|²⟩/(2mΩ²) (nJ)"); save_figure(fig, case_dir, "total_field_proxy_full_map")
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(item["psi_rf"] * 1e9, origin="lower", extent=center_extent, cmap="magma", norm=Normalize(vmin=float(np.nanmin(item["psi_rf"]*1e9)), vmax=float(np.nanpercentile(item["psi_rf"]*1e9, 99.5)), clip=True), interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"RF pseudopotential ΨRF central zoom, Udc={bias} V"); fig.colorbar(image, ax=ax, label="ΨRF (nJ)"); save_figure(fig, case_dir, "pseudopotential_central_zoom")
+        delta = np.maximum(item["psi_rf"] - float(np.nanmin(item["psi_rf"])), 0.0)
+        ref = max(float(np.nanpercentile(delta, 80)), 1.0e-30)
+        transformed = (delta / ref) ** (1.0 / 6.0)
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(transformed, origin="lower", extent=center_extent, cmap="viridis", interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"RF-only sixth-root center view, Udc={bias} V"); fig.colorbar(image, ax=ax, label="[(ΨRF−Ψmin)/Ψref]^(1/6)"); save_figure(fig, case_dir, "pseudopotential_transformed_center")
+        levels = np.linspace(0.0, float(np.nanpercentile(transformed, 99.5)), 100)[1:]
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.contourf(x_mm, y_mm, transformed, levels=levels, cmap="cividis", extend="max"); ax.contour(x_mm, y_mm, transformed, levels=np.linspace(0, levels[-1], 60)[1:], colors="black", linewidths=0.22, alpha=0.5)
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"RF-only dense contours, Udc={bias} V (100 levels)"); ax.set_aspect("equal"); fig.colorbar(image, ax=ax, label="Sixth-root transformed RF scale"); save_figure(fig, case_dir, "pseudopotential_dense_contours")
+        # Preserve and expose the heuristic as a separate total-field proxy.
+        proxy_fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(item["proxy"] * 1e9, origin="lower", extent=center_extent, cmap="magma", interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Heuristic total-field proxy, Udc={bias} V"); proxy_fig.colorbar(image, ax=ax, label="q²⟨|ERF+EDC|²⟩/(2mΩ²) (nJ)"); save_figure(proxy_fig, case_dir, "total_field_proxy_central_zoom")
+        static_energy_delta = config.particle.charge * bias * (item["dc_potential_basis"] - float(item["dc_potential_basis"][len(y_mm)//2, len(x_mm)//2]))
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(static_energy_delta * 1e9, origin="lower", extent=center_extent, cmap="coolwarm", interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Static DC energy relative to center, Udc={bias} V"); fig.colorbar(image, ax=ax, label="qΔΦDC (nJ)"); save_figure(fig, case_dir, "static_dc_potential_energy")
+        dc_field = item["dc_field_basis"] * abs(bias)
+        fig, ax = plt.subplots(figsize=(7.2, 5.5), constrained_layout=True)
+        image = ax.imshow(dc_field, origin="lower", extent=center_extent, cmap="viridis", interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Static DC field magnitude, Udc={bias} V"); fig.colorbar(image, ax=ax, label="|EDC| (V/m)"); save_figure(fig, case_dir, "static_dc_field_magnitude")
+
+    # Independent direct FEM validation across three nonzero offsets and six phases.
+    geometry, trap_mesh, solutions, _ = make_state(config)
+    validation = validate_dc_superposition(output_dir, trap_mesh, solutions, config)
+
+    # Six-panel reader-first summary. Differential panels use fJ to avoid
+    # plotting near-identical values with misleading Matplotlib axis offsets.
+    fig = plt.figure(figsize=(16.5, 10.5), constrained_layout=True)
+    axes = fig.subplot_mosaic([["A", "B", "C"], ["D", "E", "F"]])
+    im = axes["A"].imshow(baseline["psi_rf"] * 1e9, origin="lower", extent=center_extent, cmap="magma", interpolation="bicubic", aspect="equal")
+    axes["A"].set_title("A  Udc=0: RF pseudopotential ΨRF"); fig.colorbar(im, ax=axes["A"], label="ΨRF (nJ)")
+    im = axes["B"].imshow(representative["proxy"] * 1e9, origin="lower", extent=center_extent, cmap="magma", interpolation="bicubic", aspect="equal")
+    axes["B"].set_title("B  Udc=1000 V: total-field proxy"); fig.colorbar(im, ax=axes["B"], label="Heuristic proxy (nJ)")
+    delta_zoom = np.where(central_disk_2mm, proxy_delta * 1e15, np.nan)
+    limit = max(float(np.nanmax(delta_zoom)), 1e-30)
+    zoom_extent = (-2.0, 2.0, -2.0, 2.0)
+    im = axes["C"].imshow(delta_zoom, origin="lower", extent=center_extent, cmap="magma", norm=Normalize(vmin=0, vmax=limit), interpolation="nearest", aspect="equal")
+    axes["C"].set_xlim(zoom_extent[0], zoom_extent[1]); axes["C"].set_ylim(zoom_extent[2], zoom_extent[3])
+    axes["C"].set_title("C  Proxy − ΨRF, r≤2 mm (fJ)"); fig.colorbar(im, ax=axes["C"], label="Added static-field proxy term (fJ)")
+
+    radial0 = center_data[0]["radial"]
+    radial1 = center_data[1000]["radial"]
+    radii = np.unique(radial0["radius_m"])
+    means0 = np.array([np.mean(radial0["psi_rf_J"][radial0["radius_m"] == r]) for r in radii])
+    means1 = np.array([np.mean(radial1["psi_total_time_averaged_proxy_J"][radial1["radius_m"] == r]) for r in radii])
+    axes["D"].axhline(0.0, color="black", linewidth=0.6, label="Udc=0 difference")
+    axes["D"].plot(radii*1e3, (means1-means0)*1e15, label="Udc=1000 V proxy − ΨRF", linewidth=1.4)
+    axes["D"].set(xlabel="Radius (mm)", ylabel="Proxy increment (fJ)", title="D  Radial differential (RF well itself is unchanged)"); axes["D"].grid(alpha=0.25); axes["D"].legend(fontsize=8)
+
+    angular0 = center_data[0]["angular"]
+    angular1 = center_data[1000]["angular"]
+    radius2_0 = float(angular0["radius_m"][np.argmin(abs(angular0["radius_m"]-0.002))])
+    radius2_1 = float(angular1["radius_m"][np.argmin(abs(angular1["radius_m"]-0.002))])
+    mask0, mask1 = np.isclose(angular0["radius_m"], radius2_0), np.isclose(angular1["radius_m"], radius2_1)
+    order0 = np.argsort(angular0["angle_deg"][mask0]); order1 = np.argsort(angular1["angle_deg"][mask1])
+    angle_delta = angular1["angle_deg"][mask1][order1]
+    residual_delta = (angular1["deviation_from_angular_mean_J"][mask1][order1] - angular0["deviation_from_angular_mean_J"][mask0][order0]) * 1e15
+    axes["E"].plot(angle_delta, residual_delta, "o-", ms=2.5, linewidth=1.0, color="#8b3a62")
+    axes["E"].axhline(0, color="black", linewidth=0.5); axes["E"].set(xlabel="Angle (deg)", ylabel="Change in anisotropy residual (fJ)", title="E  Anisotropy change at r≈2 mm: 1000 V − 0 V"); axes["E"].grid(alpha=0.25)
+
+    trajectory_rows = list(csv.DictReader((output_dir / "trajectory_subset.csv").open("r", newline="", encoding="utf-8")))
+    for row in trajectory_rows: row["periods_survived"] = float(row["periods_survived"]); row["Udc_V"] = float(row["Udc_V"])
+    axes["F"].bar([str(int(row["Udc_V"])) for row in trajectory_rows], [row["periods_survived"] for row in trajectory_rows], color=("#426b8a", "#c98238", "#a85252"))
+    axes["F"].set(xlabel="Common DC bias (V)", ylabel="RF periods to escape / simulated", title="F  Exploratory 40-period trajectory subset"); axes["F"].grid(axis="y", alpha=0.25)
+    fig.suptitle("Common-DC-bias comparison: RF potential, DC field, and exploratory dynamics", fontsize=15)
+    save_figure(fig, output_dir, "fig_dc_bias_summary")
+
+    # Replace earlier absolute-scale comparison charts with explicit deltas.
+    fig, axes = plt.subplots(2, 2, figsize=(12.0, 8.5), constrained_layout=True)
+    for bias in bias_values[1:]:
+        item = center_data[bias]
+        delta = item["proxy"] - baseline["psi_rf"]
+        axes[0, 0].plot(bias, float(np.nanmax(delta[central_disk_2mm]))*1e15, "o", label=f"{bias} V")
+    axes[0, 0].plot([0], [0], "ko", label="0 V")
+    axes[0, 0].set(xlabel="Udc (V)", ylabel="Max proxy increment for r≤2 mm (fJ)", title="Central proxy increment vs. bias"); axes[0, 0].grid(alpha=0.25); axes[0, 0].legend()
+    for bias in bias_values:
+        radial = center_data[bias]["radial"]
+        radii_b = np.unique(radial["radius_m"])
+        means_b = np.array([np.mean(radial["psi_total_time_averaged_proxy_J"][radial["radius_m"] == r]) for r in radii_b])
+        mean_base = np.array([np.mean(center_data[0]["radial"]["psi_rf_J"][center_data[0]["radial"]["radius_m"] == r]) for r in radii_b])
+        if bias:
+            axes[0, 1].plot(radii_b*1e3, (means_b-mean_base)*1e15, label=f"{bias} V")
+    axes[0, 1].set(xlabel="Radius (mm)", ylabel="Proxy − ΨRF (fJ)", title="Radial differential (Udc=0 is zero)"); axes[0, 1].grid(alpha=0.25); axes[0, 1].legend()
+    for bias in bias_values[1:]:
+        angle_data = center_data[bias]["angular"]
+        ref_data = center_data[0]["angular"]
+        mask_b = np.isclose(angle_data["radius_m"], radius2_1); mask_r = np.isclose(ref_data["radius_m"], radius2_0)
+        ob = np.argsort(angle_data["angle_deg"][mask_b]); orf = np.argsort(ref_data["angle_deg"][mask_r])
+        axes[1, 0].plot(angle_data["angle_deg"][mask_b][ob], (angle_data["deviation_from_angular_mean_J"][mask_b][ob]-ref_data["deviation_from_angular_mean_J"][mask_r][orf])*1e15, label=f"{bias} V")
+    axes[1, 0].axhline(0, color="black", linewidth=0.5); axes[1, 0].set(xlabel="Angle (deg)", ylabel="Change at r≈2 mm (fJ)", title="Angular-anisotropy differentials vs. 0 V"); axes[1, 0].grid(alpha=0.25); axes[1, 0].legend()
+    dc_magnitudes = [np.nanmax(center_data[b]["dc_field_basis"])*b for b in bias_values]
+    axes[1, 1].plot(bias_values, dc_magnitudes, "o-"); axes[1, 1].ticklabel_format(axis="y", style="plain", useOffset=False)
+    axes[1, 1].set(xlabel="Udc (V)", ylabel="Max static |EDC| in central grid (V/m)", title="Static field magnitude (not RF pseudopotential)"); axes[1, 1].grid(alpha=0.25)
+    fig.suptitle("DC-bias differences relative to the unchanged zero-DC RF solution", fontsize=14)
+    save_figure(fig, output_dir, "fig_dc_bias_comparison")
+
+    report_path = output_dir / "dc_bias_report.md"
+    existing_metrics = list(csv.DictReader((output_dir / "dc_bias_metrics.csv").open("r", newline="", encoding="utf-8")))
+    max_proxy_delta = float(np.nanmax(proxy_delta))
+    max_proxy_delta_2mm = float(np.nanmax(proxy_delta[central_disk_2mm]))
+    proxy_relative = max_proxy_delta_2mm / max(float(np.ptp(baseline["psi_rf"][central_disk_2mm])), 1e-300)
+    max_dc_potential = float(np.nanmax(np.abs(config.particle.charge * 1000.0 * representative["dc_potential_basis"])))
+    report_lines = [
+        "# Common DC-bias comparison", "",
+        "This is an additional comparison; the zero-DC results remain preserved. A fifth FEM basis solution `ΦDC` uses all 12 electrodes at 1 V and the same grounded outer boundary. The full instantaneous field is `E(t)=Udc·EDC+ERF(t)` and is what the trajectory integrator uses. No per-time-step FEM solves are performed.", "",
+        "Quantities are kept distinct: (1) RF pseudopotential `ΨRF=q²⟨|ERF|²⟩/(2mΩ²)`; (2) static electrostatic energy `qΦDC` (saved separately); (3) total instantaneous electric field `Udc·EDC+ERF(t)`; and (4) the optional heuristic `q²⟨|ERF+Udc·EDC|²⟩/(2mΩ²)=ΨRF+q²Udc²|EDC|²/(2mΩ²)`. The latter is explicitly a total-field proxy, not the RF pseudopotential. The RF/DC cross term averages to zero because the three RF sinusoids have zero mean.", "",
+        f"The direct-FEM check used {int(validation['cases'])} independent direct solves: Udc=100, 500, and 1000 V at six RF phases each. Across all solves: max/RMS potential error = {validation['max_potential_error_V']:.8e} / {validation['rms_potential_error_V']:.8e} V; max/RMS electric-field error = {validation['max_electric_field_error_V_per_m']:.8e} / {validation['rms_electric_field_error_V_per_m']:.8e} V/m. Per-case results are in `dc_superposition_validation.csv`.", "",
+        f"The RF-only pseudopotential is unchanged by common Udc (constructed from the same RF basis). At 1000 V, the proxy increment is {max_proxy_delta_2mm:.8e} J ({max_proxy_delta_2mm*1e15:.6g} fJ) for r≤2 mm, only {proxy_relative:.6g} of the central RF-pseudopotential range. Across the wider displayed central grid (to 4.2 mm), its maximum is {max_proxy_delta:.8e} J. It is negligible on the central-well scale. The static field and static potential energy are distinct and available in each case directory; maximum |qΦDC| in the displayed 1000-V central grid is {max_dc_potential:.8e} J, mostly an offset rather than a measure of trapping curvature.", "",
+        "## Bias metrics", "", "| Udc (V) | central range r≤1.5 mm (nJ) | angular spread at 2 mm (nJ) | illustrative useful radius (mm) |", "|---:|---:|---:|---:|",
+    ]
+    for row in existing_metrics:
+        report_lines.append(f"| {float(row['Udc_V']):g} | {float(row['flatness_range_1p5mm_J'])*1e9:.8g} | {float(row['anisotropy_spread_2mm_J'])*1e9:.8g} | {float(row['useful_radius_m'])*1000:.6g} |")
+    report_lines.extend([
+        "", "The RF center remains the same flat-bottom higher-order minimum; common DC does not change its RF multipoles or RF pseudopotential. The added static field changes the exact instantaneous force but makes a negligible contribution to the central time-averaged squared-field proxy for these values. The present numerical evidence does not show a meaningful DC-based expansion of the useful central region or a localization benefit.", "",
+        "## Exploratory trajectory subset", "", "One initial condition was tested for Udc=0, 300, and 1000 V over a maximum of 40 periods (U0=1000 V, f=10000 Hz, r0=0.25 mm, v0=0), with the existing ODE tolerances. All three trajectories escaped: 17.7157, 16.5632, and 16.4942 RF periods, respectively. This small probe suggests slightly earlier escape with DC bias for this one case only; it is not a stability result.", "",
+        "Figures and grids are grouped under `outputs/publication_study/dc_bias/`; each Udc case includes RF-only pseudopotential, total-field proxy, static DC energy/field views, radial cuts, anisotropy, and CSV grids. The concise six-panel `fig_dc_bias_summary` distinguishes these quantities.", "",
+    ])
+    report_path.write_text("\n".join(report_lines), encoding="utf-8")
+    return {"output_dir": output_dir, "validation": validation, "report": report_path, "max_proxy_increment_J": max_proxy_delta, "relative_proxy_increment": proxy_relative}
+
+
 def _localization_row(result, metrics: dict[str, float | str], U0: float, frequency: float, radius: float, angle_deg: float, velocity: tuple[float, float]) -> dict[str, float | int | str]:
     return {"U0_V": U0, "frequency_Hz": frequency, "initial_radius_m": radius, "initial_angle_deg": angle_deg, "initial_vx_m_per_s": velocity[0], "initial_vy_m_per_s": velocity[1], "max_radius_m": metrics["max_radius_m"], "rms_radius_m": metrics["rms_radius_m"], "median_radius_m": metrics["median_radius_m"], "final_radius_m": metrics["final_radius_m"], "escape_time_s": metrics["escape_time_s"], "periods_survived": metrics["periods_survived"], "max_kinetic_energy_J": metrics["max_kinetic_energy_J"], "micromotion_amplitude_m": metrics["micromotion_amplitude_m"], "classification": metrics["classification"], "bounded": int(result.bounded), "escaped": int(result.escaped)}
 

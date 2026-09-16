@@ -14,6 +14,12 @@ def phase_voltages(t: float | np.ndarray, U0: float, frequency: float) -> dict[s
     return {phase: U0 * np.sin(omega * np.asarray(t) + offset) for phase, offset in PHASE_OFFSETS.items()}
 
 
+def phase_voltages_with_dc(t: float | np.ndarray, Udc: float, U0: float, frequency: float) -> dict[str, np.ndarray | float]:
+    """Evaluate the unchanged three-phase RF waveform plus a common DC offset."""
+    rf_values = phase_voltages(t, U0, frequency)
+    return {phase: np.asarray(value) + float(Udc) for phase, value in rf_values.items()}
+
+
 def voltage_matrix(times: np.ndarray, U0: float, frequency: float) -> np.ndarray:
     values = phase_voltages(times, U0, frequency)
     return np.column_stack([values[p] for p in ("A", "B", "C")])
@@ -24,4 +30,3 @@ def phase_periodicity_error(t: np.ndarray, U0: float, frequency: float) -> float
     first = voltage_matrix(t, U0, frequency)
     shifted = voltage_matrix(t + T, U0, frequency)
     return float(np.max(np.abs(first - shifted)))
-

@@ -206,6 +206,25 @@ class FEMInterpolator:
         values = np.einsum("p,pnd->nd", np.array([phase_voltages(t, U0, frequency)[phase] for phase in ("A", "B", "C")], dtype=float), np.einsum("nk,pnkd->pnd", weights, vertex_fields))
         return values.reshape(np.asarray(points).shape[:-1] + (2,))
 
+    def field_with_dc(self, points: np.ndarray, t: float, Udc: float, U0: float, frequency: float) -> np.ndarray:
+        """Evaluate the full RF+common-DC P2 field without a new FEM solve."""
+        flat, ids = self._query_triangles(points)
+        voltages = phase_voltages(t, U0, frequency)
+        phase_fields = self._field_values_all_phases(flat, ids)
+        rf_field = np.einsum("p,pnd->nd", np.array([voltages[phase] for phase in ("A", "B", "C")], dtype=float), phase_fields)
+        dc_field = self._field_values(flat, ids, "DC")
+        return (rf_field + float(Udc) * dc_field).reshape(np.asarray(points).shape[:-1] + (2,))
+
+    def field_recovered_with_dc(self, points: np.ndarray, t: float, Udc: float, U0: float, frequency: float) -> np.ndarray:
+        """Evaluate the recovered display field with a common DC contribution."""
+        flat, ids = self._query_triangles(points)
+        weights = self._barycentric(flat, ids)
+        recovered = np.stack([self._recovered_vertex_field(phase)[self._triangles[ids]] for phase in ("A", "B", "C", "DC")], axis=0)
+        interpolated = np.einsum("nk,pnkd->pnd", weights, recovered)
+        voltages = phase_voltages(t, U0, frequency)
+        rf_field = np.einsum("p,pnd->nd", np.array([voltages[phase] for phase in ("A", "B", "C")], dtype=float), interpolated[:3])
+        return (rf_field + float(Udc) * interpolated[3]).reshape(np.asarray(points).shape[:-1] + (2,))
+
     def valid(self, points: np.ndarray) -> bool:
         try:
             self._query_triangles(points)

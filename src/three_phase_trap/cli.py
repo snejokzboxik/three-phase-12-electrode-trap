@@ -16,7 +16,7 @@ def project_root() -> Path:
 def main(argv: list[str] | None = None) -> int:
     root = project_root()
     parser = argparse.ArgumentParser(description="FEM and particle-dynamics study of a three-phase 12-electrode trap")
-    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "pseudopotential", "trajectory", "stability", "convergence", "mass-filter", "publication", "all"))
+    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "pseudopotential", "dc-bias", "finalize-dc-bias", "trajectory", "stability", "convergence", "mass-filter", "publication", "all"))
     parser.add_argument("--config", type=Path, default=root / "configs" / "default.toml")
     args = parser.parse_args(argv)
     config = load_config(args.config)
@@ -42,6 +42,14 @@ def main(argv: list[str] | None = None) -> int:
         state = make_state(config)
         result = publication_pseudopotential_refined(publication_dir(root), state[3], state[0], config)
         print(f"Pseudopotential visualization complete: central minimum={result['central_min_J']:.6e} J; mesh spread ratio coarse-to-fine={result['mesh_convergence']['coarse_to_fine_spread_ratio']:.6g}")
+    elif args.command == "dc-bias":
+        from .publication import run_dc_bias_comparison
+        result = run_dc_bias_comparison(config, root)
+        print(f"DC-bias comparison complete: {len(result['cases'])} bias cases; report={result['report']}")
+    elif args.command == "finalize-dc-bias":
+        from .publication import finalize_dc_bias_outputs
+        result = finalize_dc_bias_outputs(config, root)
+        print(f"DC-bias validation and figure finalization complete: {result['report']}")
     elif args.command == "trajectory":
         state = run_fem(config, root)
         result = run_trajectory(config, root, (state["geometry"], state["trap_mesh"], state["solutions"], state["interpolator"]))

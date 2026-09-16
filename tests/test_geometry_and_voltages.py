@@ -1,7 +1,7 @@
 import numpy as np
 
 from three_phase_trap.geometry import build_geometry, phase_for_electrode
-from three_phase_trap.voltages import PHASE_OFFSETS, phase_periodicity_error, voltage_matrix
+from three_phase_trap.voltages import PHASE_OFFSETS, phase_periodicity_error, phase_voltages, phase_voltages_with_dc, voltage_matrix
 
 
 def test_geometry_has_twelve_equidistant_electrodes():
@@ -31,3 +31,9 @@ def test_three_phase_identity_and_periodicity():
     assert np.max(np.abs(values.sum(axis=1))) < 1.0e-10
     assert phase_periodicity_error(times, 1000.0, 10000.0) < 1.0e-10
 
+
+def test_common_dc_bias_preserves_rf_waveforms():
+    t = 1.7e-5
+    rf = phase_voltages(t, 1000.0, 10000.0)
+    biased = phase_voltages_with_dc(t, 300.0, 1000.0, 10000.0)
+    assert all(np.isclose(float(biased[p]) - 300.0, float(rf[p])) for p in "ABC")

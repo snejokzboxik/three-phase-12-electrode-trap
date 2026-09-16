@@ -81,6 +81,8 @@ python -m three_phase_trap.cli animate
 python -m three_phase_trap.cli multipoles
 python -m three_phase_trap.cli effective-potential
 python -m three_phase_trap.cli pseudopotential
+python -m three_phase_trap.cli dc-bias
+python -m three_phase_trap.cli finalize-dc-bias
 python -m three_phase_trap.cli trajectory
 python -m three_phase_trap.cli stability
 python -m three_phase_trap.cli convergence
@@ -92,6 +94,10 @@ python -m three_phase_trap.cli all
 Use another TOML file with `--config path/to/config.toml`. The all-in-one command runs the basis FEM solve, direct validation, voltage diagnostics, snapshots, GIF animation, optional MP4 animation when ffmpeg is installed, multipole spectrum and rotation, radial scaling, effective potential, conservative and damped trajectory examples, stability scan, mesh convergence, and a generated `final_report.md`. The `publication` command additionally creates P2-based high-resolution figures, a checkpointed staged localization scan (50-period Stage A, 1000-period Stage B survivors, and 10000-period Stage C candidates), finite-flight mass transmission, and a mass-frequency survival map in `outputs/publication_study/`. Stage-A results are screening-only; stability conclusions use Stage B/C trajectories.
 
 The `pseudopotential` command creates dense regular-grid pseudopotential maps, a monotonic sixth-root central transform, full and central radial cuts, fixed-radius angular anisotropy plots, and a dedicated central mesh-convergence report. Publication maps use an explicitly labeled area-weighted nodal recovery of the P2 gradient for readability; direct elementwise grids remain available for numerical audit.
+
+The `dc-bias` command adds a common 1-V FEM basis with all 12 electrodes biased together and creates a comparative study at Udc=0, 100, 300, 500, and 1000 V. After an existing run, `finalize-dc-bias` validates linear superposition against independent direct FEM solves at multiple nonzero biases and RF phases, writes the concise differential summary, and separates RF pseudopotential, static DC energy/field, total instantaneous field reconstruction, and the optional total-field proxy. It reads the existing DC-bias grids/trajectory CSVs and does not rerun the main DC study. Outputs are stored in `outputs/publication_study/dc_bias/`. The 40-period trajectory subset is exploratory only; it is not a stability conclusion.
+
+In the completed comparison, common Udc leaves the RF pseudopotential unchanged. At 1000 V, the heuristic proxy increment inside r≤2 mm is about 3.16×10⁻²⁰ J (3.16×10⁻⁵ fJ), negligible relative to the RF-well range; the added field is static and is retained separately in the trajectory force. The one exploratory initial condition escaped after 17.72 periods at 0 V, 16.56 periods at 300 V, and 16.49 periods at 1000 V; these short runs do not establish stability or general localization behavior. See `outputs/publication_study/dc_bias/dc_bias_report.md` for direct-FEM errors and per-bias metrics.
 
 ## Outputs
 

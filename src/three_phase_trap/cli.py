@@ -16,7 +16,7 @@ def project_root() -> Path:
 def main(argv: list[str] | None = None) -> int:
     root = project_root()
     parser = argparse.ArgumentParser(description="FEM and particle-dynamics study of a three-phase 12-electrode trap")
-    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "pseudopotential", "dc-bias", "finalize-dc-bias", "trajectory", "stability", "convergence", "mass-filter", "publication", "all"))
+    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "pseudopotential", "dc-bias", "finalize-dc-bias", "combined-effective-potential", "trajectory", "stability", "stability-study", "convergence", "mass-filter", "publication", "all"))
     parser.add_argument("--config", type=Path, default=root / "configs" / "default.toml")
     args = parser.parse_args(argv)
     config = load_config(args.config)
@@ -50,6 +50,10 @@ def main(argv: list[str] | None = None) -> int:
         from .publication import finalize_dc_bias_outputs
         result = finalize_dc_bias_outputs(config, root)
         print(f"DC-bias validation and figure finalization complete: {result['report']}")
+    elif args.command == "combined-effective-potential":
+        from .publication import generate_combined_secular_effective_potential
+        result = generate_combined_secular_effective_potential(config, root)
+        print(f"Combined secular effective-potential figures complete: {result['report']}")
     elif args.command == "trajectory":
         state = run_fem(config, root)
         result = run_trajectory(config, root, (state["geometry"], state["trap_mesh"], state["solutions"], state["interpolator"]))
@@ -58,6 +62,10 @@ def main(argv: list[str] | None = None) -> int:
         state = run_fem(config, root)
         result = run_stability(config, root, (state["geometry"], state["trap_mesh"], state["solutions"], state["interpolator"]))
         print(f"Stability scan complete: {len(result['rows'])} integrations")
+    elif args.command == "stability-study":
+        from .stability_study import run_stability_study
+        result = run_stability_study(config, root)
+        print(f"Stability study complete: {result['case_count']} trajectory rows; report={result['report']}")
     elif args.command == "convergence":
         result = run_mesh_convergence(config, root)
         print(f"Mesh-convergence check complete: {len(result['rows'])} resolutions")

@@ -140,7 +140,11 @@ def element_electric_field(trap_mesh: TrapMesh, nodal_potential: np.ndarray, bas
     ])
     # The first two solves are gradients of the barycentric weights at
     # vertices p1 and p2; the p0 gradient is their negative sum.
-    gradients_lambda = np.concatenate(((-gradients_p1_p2[:, [0]] - gradients_p1_p2[:, [1]]), gradients_p1_p2), axis=1)
+    # The solve results are arranged as (element, coordinate, local shape);
+    # shape-gradient formulas below require (element, local shape, coordinate).
+    gradients_lambda_12 = np.swapaxes(gradients_p1_p2, 1, 2)
+    gradients_lambda_0 = -gradients_lambda_12[:, [0]] - gradients_lambda_12[:, [1]]
+    gradients_lambda = np.concatenate((gradients_lambda_0, gradients_lambda_12), axis=1)
     l = np.full((len(p), 3), 1.0 / 3.0)
     shape_gradients = np.stack((
         (4 * l[:, 0] - 1)[:, None] * gradients_lambda[:, 0],

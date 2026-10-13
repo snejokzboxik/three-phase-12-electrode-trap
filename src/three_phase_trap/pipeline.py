@@ -13,7 +13,8 @@ from .config import ParticleConfig, ProjectConfig
 from .dynamics import TrajectoryResult, integrate_trajectory
 from .effective_potential import classify_center, effective_potential_from_mean_square, mean_square_field_from_basis, time_average_field_squared
 from .fields import field_at_time, potential_at_time
-from .fem import FEMBasisSolutions, element_electric_field, solve_basis, solve_instantaneous, superpose_field, superpose_potential
+from .fem import FEMBasisSolutions, element_electric_field, solve_instantaneous, superpose_field, superpose_potential
+from .fem_cache import load_or_build_fem_state
 from .geometry import build_geometry
 from .interpolation import FEMInterpolator
 from .mesh import build_mesh
@@ -23,16 +24,10 @@ from .visualization import save_phase_voltage_diagnostics, save_potential_animat
 from .voltages import phase_voltages, voltage_matrix
 
 
-def make_state(config: ProjectConfig) -> tuple[object, object, FEMBasisSolutions, FEMInterpolator]:
-    geometry = build_geometry(
-        config.geometry.electrode_count,
-        config.geometry.electrode_orbit_radius,
-        config.geometry.electrode_radius,
-        config.geometry.outer_domain_radius,
-    )
-    trap_mesh = build_mesh(geometry, config.mesh.resolution, config.mesh.boundary_points_per_electrode, config.mesh.outer_boundary_points, config.mesh.interior_seed)
-    solutions = solve_basis(trap_mesh)
-    return geometry, trap_mesh, solutions, FEMInterpolator(solutions)
+def make_state(config: ProjectConfig, project_root: Path | None = None) -> tuple[object, object, FEMBasisSolutions, FEMInterpolator]:
+    """Load the exact fingerprinted P2 cache, creating it only when absent."""
+    root = Path.cwd() if project_root is None else Path(project_root)
+    return load_or_build_fem_state(config, root)
 
 
 def ensure_output_dir(config: ProjectConfig, project_root: Path) -> Path:
@@ -43,7 +38,7 @@ def ensure_output_dir(config: ProjectConfig, project_root: Path) -> Path:
 
 def run_fem(config: ProjectConfig, project_root: Path, state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    geometry, trap_mesh, solutions, interpolator = state or make_state(config)
+    geometry, trap_mesh, solutions, interpolator = state or make_state(config, project_root)
     times = np.arange(7, dtype=float) / 12.0 * config.rf.period
     rows = []
     for t_over_T, time in zip(np.arange(7, dtype=float) / 12.0, times):
@@ -65,7 +60,7 @@ def run_fem(config: ProjectConfig, project_root: Path, state: tuple[object, obje
 
 def run_visuals(config: ProjectConfig, project_root: Path, state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    geometry, _, _, interpolator = state or make_state(config)
+    geometry, _, _, interpolator = state or make_state(config, project_root)
     voltage_summary = save_phase_voltage_diagnostics(output_dir, config.rf)
     snapshots = save_static_snapshots(output_dir, interpolator, geometry, config.rf, config.simulation.grid_size)
     animation = save_potential_animation(output_dir, interpolator, geometry, config.rf, config.simulation.frames_per_period, config.simulation.animation_periods, max(81, config.simulation.grid_size // 2))
@@ -82,7 +77,7 @@ def _multipole_samples(interpolator: FEMInterpolator, geometry, config: ProjectC
 
 def run_multipoles(config: ProjectConfig, project_root: Path, state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    geometry, _, _, interpolator = state or make_state(config)
+    geometry, _, _, interpolator = state or make_state(config, project_root)
     points, _, reference_radius = _multipole_samples(interpolator, geometry, config)
     times = np.linspace(0.0, config.rf.period, 25, endpoint=False)
     rows = []
@@ -111,7 +106,7 @@ def run_multipoles(config: ProjectConfig, project_root: Path, state: tuple[objec
 
 def run_rotation(config: ProjectConfig, project_root: Path, multipole_result: dict[str, object], state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    geometry, _, _, interpolator = state or make_state(config)
+    geometry, _, _, interpolator = state or make_state(config, project_root)
     points = multipole_result["points"]
     reference_radius = float(multipole_result["reference_radius"])
     dominant_order = int(multipole_result["dominant_order"])
@@ -152,7 +147,7 @@ def run_rotation(config: ProjectConfig, project_root: Path, multipole_result: di
 
 def run_radial_scaling(config: ProjectConfig, project_root: Path, state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    geometry, _, _, interpolator = state or make_state(config)
+    geometry, _, _, interpolator = state or make_state(config, project_root)
     radii = np.linspace(0.0007, min(0.0048, 0.56 * (geometry.electrode_orbit_radius - geometry.electrode_radius)), 18)
     angles = np.linspace(0.0, 2.0 * np.pi, 16, endpoint=False)
     times = np.linspace(0.0, config.rf.period, 16, endpoint=False)
@@ -183,7 +178,7 @@ def run_radial_scaling(config: ProjectConfig, project_root: Path, state: tuple[o
 
 def run_effective_potential(config: ProjectConfig, project_root: Path, state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    geometry, _, solutions, interpolator = state or make_state(config)
+    geometry, _, solutions, interpolator = state or make_state(config, project_root)
     display_radius = min(0.020, geometry.outer_domain_radius * 0.84)
     axis, xx, yy, mask, basis_potential, basis_field = __import__("three_phase_trap.visualization", fromlist=["prepare_grid"]).prepare_grid(interpolator, display_radius, config.simulation.grid_size)
     basis_fields = {phase: basis_field[i] for i, phase in enumerate(("A", "B", "C"))}
@@ -234,7 +229,7 @@ def _write_trajectory_summary(output_dir: Path, rows: list[dict[str, object]]) -
 
 def run_trajectory(config: ProjectConfig, project_root: Path, state: tuple[object, object, FEMBasisSolutions, FEMInterpolator] | None = None) -> dict[str, object]:
     output_dir = ensure_output_dir(config, project_root)
-    _, _, _, interpolator = state or make_state(config)
+    _, _, _, interpolator = state or make_state(config, project_root)
     base = integrate_trajectory(interpolator, config.particle, config.rf.U0, config.rf.frequency, periods=config.simulation.trajectory_periods, escape_radius=config.simulation.escape_radius, rtol=config.simulation.trajectory_rtol, atol=config.simulation.trajectory_atol)
     damped_gamma = max(config.particle.gamma, 0.02 * config.particle.mass * config.rf.omega)
     damped_particle = replace(config.particle, gamma=damped_gamma)
@@ -337,7 +332,7 @@ def damped_gamma_text(damped: TrajectoryResult, trajectories: dict[str, object])
 
 
 def run_all(config: ProjectConfig, project_root: Path) -> dict[str, object]:
-    state = make_state(config)
+    state = make_state(config, project_root)
     fem = run_fem(config, project_root, state)
     run_visuals(config, project_root, state)
     multipoles = run_multipoles(config, project_root, state)

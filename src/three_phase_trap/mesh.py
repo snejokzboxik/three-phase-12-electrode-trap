@@ -95,7 +95,11 @@ def build_mesh(geometry: TrapGeometry, resolution: float, boundary_points_per_el
     electrode_nodes: dict[int, np.ndarray] = {}
     for electrode in geometry.electrodes:
         distance = np.linalg.norm(points - np.asarray(electrode.center), axis=1)
-        electrode_nodes[electrode.index] = np.flatnonzero(np.isclose(distance, geometry.electrode_radius, rtol=0.0, atol=max(resolution * 0.12, 1e-12)))
+        # Only the explicitly sampled circular-boundary points receive the
+        # electrode Dirichlet value. A mesh-spacing-scaled tolerance also
+        # captured nearby interior grid points, displacing the effective
+        # boundary by O(h) and introducing angular asymmetry.
+        electrode_nodes[electrode.index] = np.flatnonzero(np.isclose(distance, geometry.electrode_radius, rtol=0.0, atol=1e-10))
         if len(electrode_nodes[electrode.index]) < 6:
             raise RuntimeError(f"Too few boundary nodes identified for electrode {electrode.index}.")
     outer_distance = np.linalg.norm(points, axis=1)

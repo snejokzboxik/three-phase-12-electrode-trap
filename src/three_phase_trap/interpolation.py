@@ -33,7 +33,12 @@ class FEMInterpolator:
             ))
             for p_i in triangle_points
         ])
-        self._gradients_lambda = np.concatenate(((-gradients_p1_p2[:, [0]] - gradients_p1_p2[:, [1]]), gradients_p1_p2), axis=1)
+        # ``gradients_p1_p2`` is stored as (element, coordinate, local shape).
+        # The evaluator consumes (element, local shape, coordinate), so move
+        # the final axis before constructing grad(lambda_0).
+        gradients_lambda_12 = np.swapaxes(gradients_p1_p2, 1, 2)
+        gradients_lambda_0 = -gradients_lambda_12[:, [0]] - gradients_lambda_12[:, [1]]
+        self._gradients_lambda = np.concatenate((gradients_lambda_0, gradients_lambda_12), axis=1)
         self._triangulation = mtri.Triangulation(self._x, self._y, self._triangles)
         self._finder = self._triangulation.get_trifinder()
         self._neighbors = np.full((len(self._triangles), 3), -1, dtype=int)

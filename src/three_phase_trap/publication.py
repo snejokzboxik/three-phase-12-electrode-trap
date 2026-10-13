@@ -14,6 +14,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
 from matplotlib.colors import Normalize, PowerNorm, SymLogNorm
+from scipy.interpolate import RegularGridInterpolator
 from matplotlib.lines import Line2D
 from matplotlib.patches import Circle, Patch
 
@@ -930,6 +931,315 @@ def finalize_dc_bias_outputs(config: ProjectConfig, project_root: Path) -> dict[
     ])
     report_path.write_text("\n".join(report_lines), encoding="utf-8")
     return {"output_dir": output_dir, "validation": validation, "report": report_path, "max_proxy_increment_J": max_proxy_delta, "relative_proxy_increment": proxy_relative}
+
+
+def generate_combined_secular_effective_potential(config: ProjectConfig, project_root: Path) -> dict[str, object]:
+    """Build physically combined RF+DC potential figures from saved basis grids.
+
+    No FEM solve or field resampling is performed here. The saved zero-DC RF
+    pseudopotential and common-DC unit-voltage basis potential are composed as
+    U_eff = Psi_RF + q*Udc*Phi_dc_basis.
+    """
+    source_dir = publication_dir(project_root) / "dc_bias" / "Udc_0000V"
+    output_dir = publication_dir(project_root) / "dc_bias" / "combined_effective_potential"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    charge = float(config.particle.charge)
+    aperture = float(config.simulation.escape_radius)
+    biases = (0, 300, 500, 1000)
+
+    def load_grid(path: Path):
+        data = np.genfromtxt(path, delimiter=",", names=True)
+        x, y = np.unique(data["x_m"]), np.unique(data["y_m"])
+        shape = (len(y), len(x))
+        return x, y, data["psi_rf_J"].reshape(shape), data["dc_basis_potential_V_per_V"].reshape(shape)
+
+    full_x, full_y, full_psi, full_phi = load_grid(source_dir / "pseudopotential_grid.csv")
+    center_x, center_y, center_psi, center_phi = load_grid(source_dir / "pseudopotential_central_grid.csv")
+    full_extent = (full_x[0] * 1e3, full_x[-1] * 1e3, full_y[0] * 1e3, full_y[-1] * 1e3)
+    center_extent = (center_x[0] * 1e3, center_x[-1] * 1e3, center_y[0] * 1e3, center_y[-1] * 1e3)
+    full_xx, full_yy = np.meshgrid(full_x, full_y, indexing="xy")
+    center_xx, center_yy = np.meshgrid(center_x, center_y, indexing="xy")
+    full_radius = np.hypot(full_xx, full_yy)
+    center_radius = np.hypot(center_xx, center_yy)
+    interp_full_psi = RegularGridInterpolator((full_y, full_x), full_psi, bounds_error=False, fill_value=np.nan)
+    interp_full_phi = RegularGridInterpolator((full_y, full_x), full_phi, bounds_error=False, fill_value=np.nan)
+    interp_center_psi = RegularGridInterpolator((center_y, center_x), center_psi, bounds_error=False, fill_value=np.nan)
+    interp_center_phi = RegularGridInterpolator((center_y, center_x), center_phi, bounds_error=False, fill_value=np.nan)
+
+    def sample_polar(radii: np.ndarray, angles: np.ndarray, bias: float) -> np.ndarray:
+        rr, aa = np.meshgrid(radii, angles, indexing="xy")
+        xx, yy = rr * np.cos(aa), rr * np.sin(aa)
+        points = np.column_stack((yy.ravel(), xx.ravel()))
+        use_center = rr.ravel() <= min(center_x[-1], center_y[-1]) * 0.98
+        psi = np.empty(len(points), dtype=float)
+        phi = np.empty(len(points), dtype=float)
+        psi[use_center] = interp_center_psi(points[use_center])
+        phi[use_center] = interp_center_phi(points[use_center])
+        psi[~use_center] = interp_full_psi(points[~use_center])
+        phi[~use_center] = interp_full_phi(points[~use_center])
+        return (psi + charge * bias * phi).reshape(rr.shape).T
+
+    # Resolve the central region with the denser saved grid and use the full
+    # grid only outside it when locating the minimum within the aperture.
+    center_search = (center_radius <= min(aperture, center_x[-1])) & np.isfinite(center_psi) & np.isfinite(center_phi)
+    outer_search = (full_radius <= aperture) & (full_radius > min(center_x[-1], center_y[-1]) * 0.98) & np.isfinite(full_psi) & np.isfinite(full_phi)
+    center_value = float(interp_center_psi([[0.0, 0.0]])[0])
+    central_radii_for_test = np.array([0.0001, 0.00025, 0.0005])
+    angles_dense = np.linspace(0.0, 2.0 * np.pi, 360, endpoint=False)
+    measurement_radii = np.array([0.0005, 0.001, 0.002, 0.003])
+    measurement_angles = np.linspace(0.0, 2.0 * np.pi, 360, endpoint=False)
+    aperture_angles = np.linspace(0.0, 2.0 * np.pi, 720, endpoint=False)
+    radial_radii = np.linspace(0.0, aperture, 321)
+    radial_angles = np.deg2rad(np.arange(0.0, 180.0, 15.0))
+    results: dict[int, dict[str, object]] = {}
+    metrics_rows: list[dict[str, object]] = []
+
+    for bias in biases:
+        case_dir = output_dir / f"Udc_{bias:04d}V"
+        case_dir.mkdir(parents=True, exist_ok=True)
+        central_eff = center_psi + charge * bias * center_phi
+        full_eff = full_psi + charge * bias * full_phi
+        central_minimum = float(np.nanmin(central_eff[center_search]))
+        central_min_index = np.nanargmin(np.where(center_search, central_eff, np.nan))
+        ciy, cix = np.unravel_index(central_min_index, central_eff.shape)
+        central_min_xy = (float(center_x[cix]), float(center_y[ciy]))
+        if np.any(outer_search):
+            outer_values = np.where(outer_search, full_eff, np.nan)
+            outer_idx = np.nanargmin(outer_values)
+            oiy, oix = np.unravel_index(outer_idx, full_eff.shape)
+            outer_minimum = float(full_eff[oiy, oix])
+            if outer_minimum < central_minimum:
+                min_value = outer_minimum
+                min_xy = (float(full_x[oix]), float(full_y[oiy]))
+            else:
+                min_value, min_xy = central_minimum, central_min_xy
+        else:
+            min_value, min_xy = central_minimum, central_min_xy
+
+        ring_values = sample_polar(central_radii_for_test, angles_dense, bias)
+        center_phi_value = float(interp_center_phi([[0.0, 0.0]])[0])
+        center_energy = center_value + charge * bias * center_phi_value
+        local_margin = float(np.min(ring_values - center_energy))
+        half_mm_values = sample_polar(np.array([0.0005]), measurement_angles, bias)[0]
+        local_tol = max(abs(float(np.mean(half_mm_values) - center_energy)) * 1.0e-7, 1.0e-30)
+        center_is_local_min = bool(local_margin > local_tol)
+
+        point_data = sample_polar(measurement_radii, measurement_angles, bias)
+        aperture_values = sample_polar(np.array([aperture]), aperture_angles, bias)[0]
+        aperture_barrier = float(np.min(aperture_values))
+        well_depth = aperture_barrier - min_value
+        radial_data = sample_polar(radial_radii, radial_angles, bias)
+        radial_mean = np.mean(radial_data, axis=1)
+        radial_min = np.min(radial_data, axis=1)
+        radial_max = np.max(radial_data, axis=1)
+        radial_center = float(sample_polar(np.array([0.0]), np.array([0.0]), bias)[0, 0])
+
+        # Exact sampled export: absolute Ueff and center-referenced differences
+        # are both retained; all display transforms are explicitly secondary.
+        with (case_dir / "combined_secular_effective_potential_radial.csv").open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(("radius_m", "Ueff_angular_mean_J", "Ueff_angular_min_J", "Ueff_angular_max_J", "Ueff_mean_minus_center_J"))
+            writer.writerows((float(r), float(m), float(lo), float(hi), float(m-radial_center)) for r, m, lo, hi in zip(radial_radii, radial_mean, radial_min, radial_max))
+        with (case_dir / "combined_secular_effective_potential_point_values.csv").open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(("radius_m", "Ueff_angular_mean_J", "Ueff_angular_min_J", "Ueff_angular_max_J", "Ueff_mean_minus_center_J"))
+            for r, vals in zip(measurement_radii, point_data):
+                writer.writerow((float(r), float(np.mean(vals)), float(np.min(vals)), float(np.max(vals)), float(np.mean(vals)-radial_center)))
+        with (case_dir / "combined_secular_effective_potential_angular_anisotropy.csv").open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(("radius_m", "angle_deg", "Ueff_J", "deviation_from_angular_mean_J"))
+            for r, values in zip(measurement_radii[1:], point_data[1:]):
+                for angle, value in zip(np.rad2deg(measurement_angles), values):
+                    writer.writerow((float(r), float(angle), float(value), float(value-np.mean(values))))
+
+        result = {"bias": bias, "case_dir": case_dir, "central_eff": central_eff, "full_eff": full_eff,
+                  "minimum_J": min_value, "minimum_xy_m": min_xy, "central_minimum_J": central_minimum,
+                  "center_J": radial_center, "aperture_barrier_J": aperture_barrier, "well_depth_J": well_depth,
+                  "local_minimum": center_is_local_min, "local_margin_J": local_margin,
+                  "radial_radii": radial_radii, "radial_mean": radial_mean, "radial_min": radial_min,
+                  "radial_max": radial_max, "point_data": point_data}
+        results[bias] = result
+
+        full_vmax = float(np.nanpercentile(full_eff, 99.5) * 1e9)
+        full_vmin = float(np.nanmin(full_eff) * 1e9)
+        if full_vmax <= full_vmin:
+            full_vmax = full_vmin + 1e-12
+        center_delta_pj = np.maximum(central_eff - central_minimum, 0.0) * 1e12
+        center_vmax = max(float(np.nanpercentile(center_delta_pj[center_search], 99.5)), 1e-12)
+        transform = np.power(center_delta_pj, 1.0 / 6.0)  # (ΔUeff / 1 pJ)^(1/6)
+        transform_vmax = max(float(np.nanpercentile(transform[center_search], 99.5)), 1e-12)
+        contour_levels = np.linspace(0.0, center_vmax, 101)[1:]
+        x_mm, y_mm = center_x * 1e3, center_y * 1e3
+        styles = {"full": ("magma", PowerNorm(gamma=0.45, vmin=max(0.0, full_vmin), vmax=full_vmax)),
+                  "center": ("magma", Normalize(vmin=0.0, vmax=center_vmax)),
+                  "transform": ("viridis", Normalize(vmin=0.0, vmax=transform_vmax))}
+
+        fig, ax = plt.subplots(figsize=(7.2, 5.6), constrained_layout=True)
+        image = ax.imshow(full_eff * 1e9, origin="lower", extent=full_extent, cmap=styles["full"][0], norm=styles["full"][1], interpolation="bicubic", aspect="equal")
+        ax.add_patch(Circle((0.0, 0.0), aperture * 1e3, fill=False, color="white", linestyle="--", linewidth=0.8, alpha=0.85))
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Combined secular effective potential, Udc={bias} V")
+        fig.colorbar(image, ax=ax, label="Ueff (nJ)"); save_figure(fig, case_dir, "combined_secular_effective_potential_full_map")
+
+        fig, ax = plt.subplots(figsize=(7.2, 5.6), constrained_layout=True)
+        image = ax.imshow(center_delta_pj, origin="lower", extent=center_extent, cmap=styles["center"][0], norm=styles["center"][1], interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Center zoom: Ueff − central minimum, Udc={bias} V")
+        fig.colorbar(image, ax=ax, label="Ueff − central minimum (pJ)"); save_figure(fig, case_dir, "combined_secular_effective_potential_center_zoom")
+
+        fig, ax = plt.subplots(figsize=(7.2, 5.6), constrained_layout=True)
+        image = ax.imshow(transform, origin="lower", extent=center_extent, cmap=styles["transform"][0], norm=styles["transform"][1], interpolation="bicubic", aspect="equal")
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Transformed combined well, Udc={bias} V")
+        fig.colorbar(image, ax=ax, label="[(Ueff − Umin) / 1 pJ]^(1/6)"); save_figure(fig, case_dir, "combined_secular_effective_potential_transformed_center")
+
+        fig, ax = plt.subplots(figsize=(7.2, 5.6), constrained_layout=True)
+        image = ax.contourf(x_mm, y_mm, center_delta_pj, levels=contour_levels, cmap="cividis", extend="max")
+        ax.contour(x_mm, y_mm, center_delta_pj, levels=np.linspace(0.0, center_vmax, 41)[1:], colors="black", linewidths=0.22, alpha=0.5)
+        ax.set(xlabel="x (mm)", ylabel="y (mm)", title=f"Dense combined-effective-potential contours, Udc={bias} V"); ax.set_aspect("equal")
+        fig.colorbar(image, ax=ax, label="Ueff − central minimum (pJ)"); save_figure(fig, case_dir, "combined_secular_effective_potential_dense_contours")
+
+        for suffix, radial_mask, title in (("full", radial_radii <= min(aperture, 0.00408), "Central radial profiles"), ("aperture", radial_radii <= aperture, "Radial profiles to aperture")):
+            fig, ax = plt.subplots(figsize=(7.2, 5.0), constrained_layout=True)
+            for angle_deg, vals in zip(np.arange(0.0, 180.0, 15.0), radial_data.T):
+                ax.plot(radial_radii[radial_mask]*1e3, (vals[radial_mask]-radial_center)*1e12, linewidth=0.8, alpha=0.78, label=f"{angle_deg:g}°")
+            ax.set(xlabel="Radius (mm)", ylabel="Ueff(r) − Ueff(0) (pJ)", title=f"{title}, Udc={bias} V"); ax.grid(alpha=0.25)
+            if suffix == "full": ax.legend(ncol=3, fontsize=7)
+            save_figure(fig, case_dir, f"combined_secular_effective_potential_radial_{suffix}")
+
+        fig, ax = plt.subplots(figsize=(7.2, 5.0), constrained_layout=True)
+        for r_idx in (1, 2, 3):
+            vals = point_data[r_idx]
+            ax.plot(np.rad2deg(measurement_angles), (vals-np.mean(vals))*1e15, linewidth=1.0, label=f"r={measurement_radii[r_idx]*1e3:g} mm")
+        ax.axhline(0.0, color="black", linewidth=0.5)
+        ax.set(xlabel="Angle (degrees)", ylabel="Ueff − angular mean (fJ)", title=f"Angular anisotropy of combined well, Udc={bias} V"); ax.grid(alpha=0.25); ax.legend(fontsize=8)
+        save_figure(fig, case_dir, "combined_secular_effective_potential_angular_anisotropy")
+
+        # Six-panel summary retains the established visual grammar.
+        fig = plt.figure(figsize=(16.0, 11.0), constrained_layout=True)
+        axes = fig.subplot_mosaic([["A", "B", "C"], ["D", "E", "F"]])
+        im = axes["A"].imshow(full_eff*1e9, origin="lower", extent=full_extent, cmap=styles["full"][0], norm=styles["full"][1], interpolation="bicubic", aspect="equal")
+        axes["A"].add_patch(Circle((0.0, 0.0), aperture*1e3, fill=False, color="white", linestyle="--", linewidth=0.8)); axes["A"].set_title("A  Full combined potential")
+        fig.colorbar(im, ax=axes["A"], label="Ueff (nJ)")
+        im = axes["B"].imshow(center_delta_pj, origin="lower", extent=center_extent, cmap=styles["center"][0], norm=styles["center"][1], interpolation="bicubic", aspect="equal")
+        axes["B"].set_title("B  Central zoom (local scale)"); fig.colorbar(im, ax=axes["B"], label="Ueff − Umin (pJ)")
+        im = axes["C"].imshow(transform, origin="lower", extent=center_extent, cmap=styles["transform"][0], norm=styles["transform"][1], interpolation="bicubic", aspect="equal")
+        axes["C"].set_title("C  Sixth-root transformed center"); fig.colorbar(im, ax=axes["C"], label="[(ΔUeff)/(1 pJ)]^(1/6)")
+        im = axes["D"].contourf(x_mm, y_mm, center_delta_pj, levels=contour_levels, cmap="cividis", extend="max")
+        axes["D"].contour(x_mm, y_mm, center_delta_pj, levels=np.linspace(0.0, center_vmax, 41)[1:], colors="black", linewidths=0.2, alpha=0.5)
+        axes["D"].set_title("D  Dense contours (100 filled levels)"); axes["D"].set_aspect("equal"); fig.colorbar(im, ax=axes["D"], label="ΔUeff (pJ)")
+        for angle_deg, vals in zip(np.arange(0.0, 180.0, 15.0), radial_data.T):
+            mask = radial_radii <= min(0.002, 0.00408)
+            axes["E"].plot(radial_radii[mask]*1e3, (vals[mask]-radial_center)*1e12, linewidth=0.75, alpha=0.75, label=f"{angle_deg:g}°")
+        axes["E"].set(xlabel="Radius (mm)", ylabel="Ueff(r) − Ueff(0) (pJ)", title="E  Central radial cuts (r≤2 mm)"); axes["E"].grid(alpha=0.25)
+        for r_idx in (1, 2, 3):
+            vals = point_data[r_idx]
+            axes["F"].plot(np.rad2deg(measurement_angles), (vals-np.mean(vals))*1e15, linewidth=0.9, label=f"r={measurement_radii[r_idx]*1e3:g} mm")
+        axes["F"].axhline(0, color="black", linewidth=0.5); axes["F"].set(xlabel="Angle (degrees)", ylabel="Residual (fJ)", title="F  Angular anisotropy"); axes["F"].grid(alpha=0.25); axes["F"].legend(fontsize=7)
+        fig.suptitle(f"Combined secular effective potential: Udc={bias} V; q={charge:+.3g} C", fontsize=16)
+        save_figure(fig, case_dir, "fig_combined_secular_effective_potential_summary")
+
+        row: dict[str, object] = {"Udc_V": bias, "minimum_x_m": min_xy[0], "minimum_y_m": min_xy[1], "minimum_radius_m": float(np.hypot(*min_xy)),
+                                  "Ueff_minimum_J": min_value, "Ueff_center_J": radial_center,
+                                  "aperture_radius_m": aperture, "minimum_aperture_energy_J": aperture_barrier,
+                                  "well_depth_to_aperture_J": well_depth, "center_is_local_minimum": center_is_local_min,
+                                  "minimum_centered_ring_rise_J": local_margin}
+        for idx, r in enumerate(measurement_radii):
+            label = f"r_{r*1e3:g}mm"
+            row[f"Ueff_{label}_angular_mean_J"] = float(np.mean(point_data[idx]))
+            row[f"Ueff_{label}_angular_min_J"] = float(np.min(point_data[idx]))
+            row[f"Ueff_{label}_angular_max_J"] = float(np.max(point_data[idx]))
+        metrics_rows.append(row)
+
+    baseline_depth = float(results[0]["well_depth_J"])
+    for row in metrics_rows:
+        bias = int(row["Udc_V"])
+        depth = float(row["well_depth_to_aperture_J"])
+        delta_pct = 0.0 if baseline_depth == 0.0 else 100.0 * (depth-baseline_depth)/abs(baseline_depth)
+        row["well_depth_change_vs_0DC_percent"] = delta_pct
+        row["confinement_change_vs_0DC"] = (
+            "reference" if bias == 0 else
+            "stronger" if delta_pct > 1.0 else
+            "weaker" if delta_pct < -1.0 else
+            "slightly stronger (negligible, <1%)" if delta_pct > 0.0 else
+            "slightly weaker (negligible, <1%)" if delta_pct < 0.0 else
+            "no change"
+        )
+    fields = list(metrics_rows[0])
+    with (output_dir / "combined_secular_effective_potential_metrics.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields); writer.writeheader(); writer.writerows(metrics_rows)
+
+    # Compare center-referenced radial curves so the arbitrary DC energy
+    # offset does not hide real shape changes.
+    fig, axes = plt.subplots(2, 1, figsize=(9.5, 8.5), constrained_layout=True)
+    palette = {0: "#202020", 300: "#2878b5", 500: "#e07a19", 1000: "#b23a48"}
+    for bias in biases:
+        item = results[bias]
+        rel = (item["radial_mean"]-item["center_J"])
+        axes[0].plot(item["radial_radii"]*1e3, rel*1e9, color=palette[bias], linewidth=1.6, label=f"Udc={bias} V")
+        axes[1].plot(item["radial_radii"]*1e3, rel*1e12, color=palette[bias], linewidth=1.6, label=f"Udc={bias} V")
+    axes[0].axvline(aperture*1e3, linestyle="--", linewidth=0.8, color="#666666", label="aperture")
+    axes[0].set(xlim=(0, aperture*1e3), xlabel="Radius (mm)", ylabel="Angular mean Ueff(r) - Ueff(0) (nJ)", title="Full radial comparison (center-referenced)"); axes[0].grid(alpha=0.25); axes[0].legend(ncol=3, fontsize=8)
+    central_values_pj = np.concatenate([
+        (item["radial_mean"][item["radial_radii"] <= 0.002] - item["center_J"]) * 1e12
+        for item in results.values()
+    ])
+    central_low, central_high = float(np.nanmin(central_values_pj)), float(np.nanmax(central_values_pj))
+    central_pad = max((central_high-central_low)*0.08, 1e-6)
+    axes[1].set(xlim=(0, 2.0), ylim=(central_low-central_pad, central_high+central_pad), xlabel="Radius (mm)", ylabel="Angular mean Ueff(r) - Ueff(0) (pJ)", title="Central zoom (r≤2 mm)"); axes[1].grid(alpha=0.25); axes[1].legend(ncol=2, fontsize=8)
+    fig.suptitle("Combined secular effective potential: radial comparison", fontsize=14)
+    save_figure(fig, output_dir, "fig_combined_secular_effective_potential_radial_comparison")
+
+    # Small DC-induced shape differences are shown separately from the large
+    # common energy offset and the almost-overlapping absolute radial curves.
+    fig, axes = plt.subplots(2, 1, figsize=(9.5, 8.0), constrained_layout=True)
+    base = results[0]
+    central_difference_values_zj = []
+    for bias in biases[1:]:
+        item = results[bias]
+        delta_shape = (item["radial_mean"]-item["center_J"]) - (base["radial_mean"]-base["center_J"])
+        axes[0].plot(item["radial_radii"]*1e3, delta_shape*1e15, color=palette[bias], linewidth=1.5, label=f"Udc={bias} V")
+        axes[1].plot(item["radial_radii"]*1e3, delta_shape*1e21, color=palette[bias], linewidth=1.5, label=f"Udc={bias} V")
+        central_mask = item["radial_radii"] <= 0.002
+        central_difference_values_zj.append(delta_shape[central_mask]*1e21)
+    axes[0].axhline(0.0, color="black", linewidth=0.6); axes[0].set(xlim=(0, aperture*1e3), xlabel="Radius (mm)", ylabel="Change in center-referenced Ueff (fJ)", title="Full-range DC-induced shape difference from 0 V"); axes[0].grid(alpha=0.25); axes[0].legend(ncol=3, fontsize=8)
+    central_diff = np.concatenate(central_difference_values_zj)
+    diff_low, diff_high = float(np.nanmin(central_diff)), float(np.nanmax(central_diff))
+    diff_pad = max((diff_high-diff_low)*0.08, 1e-9)
+    axes[1].axhline(0.0, color="black", linewidth=0.6); axes[1].set(xlim=(0, 2.0), ylim=(diff_low-diff_pad, diff_high+diff_pad), xlabel="Radius (mm)", ylabel="Change in center-referenced Ueff (zJ)", title="Central zoom: small differences in zeptojoules"); axes[1].grid(alpha=0.25); axes[1].legend(ncol=3, fontsize=8)
+    fig.suptitle("Effect of common DC on combined secular-well shape", fontsize=14)
+    save_figure(fig, output_dir, "fig_combined_secular_effective_potential_radial_differences")
+
+    report_lines = [
+        "# Combined secular effective potential with common DC bias", "",
+        "The plotted quantity is the physically combined secular energy `Ueff(x,y) = Psi_RF(x,y) + q*Phi_DC(x,y)`, with `Phi_DC(x,y) = Udc*Phi_dc_basis(x,y)`. `Psi_RF` remains the RF pseudopotential; the static energy contribution is exactly `q*Phi_DC`. The old time-averaged total-field proxy is not used in any figure or metric here. This post-processing reuses the saved, validated RF and common-DC basis grids and does not rerun FEM.", "",
+        f"Configured particle charge: `q = {charge:+.8e} C` ({'positive' if charge > 0 else 'negative' if charge < 0 else 'zero'}). The chosen escape/aperture radius is `{aperture*1e3:.6g} mm`. Absolute `Ueff` values include the DC energy offset; radial comparison plots use `Ueff(r)-Ueff(0)` to remove that spatially irrelevant constant while retaining the exact absolute values in the CSV files. Values at fixed radii are angular means, with the full sampled angular range reported in brackets below. The minimum is the lowest saved-grid value inside the aperture (central high-resolution grid for r≤4.08 mm, full grid outside); its location is therefore grid-resolved, not a continuous optimizer estimate.", "",
+        "| Udc (V) | min position (mm) | Ueff,min (nJ) | Ueff at 0.5 mm (nJ; min–max) | 1 mm (nJ; min–max) | 2 mm (nJ; min–max) | 3 mm (nJ; min–max) | Ueff(0) (nJ) | aperture well depth (nJ) | center local min? | depth vs 0 DC | confinement |",
+        "|---:|---:|---:|---:|---:|---:|---:|---:|---:|:---:|---:|:---|"
+    ]
+    for row in metrics_rows:
+        bias = int(row["Udc_V"])
+        coords = f"({float(row['minimum_x_m'])*1e3:.4g}, {float(row['minimum_y_m'])*1e3:.4g})"
+        cells = []
+        for r in (0.5, 1.0, 2.0, 3.0):
+            key = f"Ueff_r_{r:g}mm"
+            mean, lo, hi = (float(row[f"{key}_{stat}_J"]) for stat in ("angular_mean", "angular_min", "angular_max"))
+            cells.append(f"{mean*1e9:.7g} ({lo*1e9:.7g}–{hi*1e9:.7g})")
+        report_lines.append(f"| {bias} | {coords} | {float(row['Ueff_minimum_J'])*1e9:.8g} | {cells[0]} | {cells[1]} | {cells[2]} | {cells[3]} | {float(row['Ueff_center_J'])*1e9:.8g} | {float(row['well_depth_to_aperture_J'])*1e9:.8g} | {'yes' if row['center_is_local_minimum'] else 'no'} | {float(row['well_depth_change_vs_0DC_percent']):+.5g}% | {row['confinement_change_vs_0DC']} |")
+    base_row = metrics_rows[0]
+    strongest_bias_row = metrics_rows[-1]
+    shape_changes = []
+    for r in (0.5, 1.0, 2.0, 3.0):
+        key = f"Ueff_r_{r:g}mm_angular_mean_J"
+        base_rise = float(base_row[key]) - float(base_row["Ueff_center_J"])
+        biased_rise = float(strongest_bias_row[key]) - float(strongest_bias_row["Ueff_center_J"])
+        percent = 100.0 * (biased_rise-base_rise)/max(abs(base_rise), 1e-300)
+        shape_changes.append(f"{r:g} mm: {biased_rise-base_rise:+.4e} J ({percent:+.4g}% of the zero-DC radial rise)")
+    report_lines.extend(["", "A local minimum is tested by comparing the center with all angles on 0.10, 0.25, and 0.50 mm rings of the saved central grid. Aperture well depth is the minimum energy on the escape-radius circumference minus the minimum energy in the aperture; it is the conservative barrier over the sampled escape directions. The confinement comparison uses this barrier and marks changes within 1% of the zero-DC depth as not meaningful.", "",
+        "## Physical interpretation", "",
+        "A common DC offset does not change `Psi_RF`; that RF-only pseudopotential remains exactly the same saved basis-derived quantity. It does change the combined secular effective potential by adding the static term `q*Udc*Phi_dc_basis`, which includes a large nearly constant offset plus any position-dependent variation. Only the latter changes the well shape/confinement. At Udc=1000 V, the aperture well-depth change relative to 0 V is " + f"{float(strongest_bias_row['well_depth_change_vs_0DC_percent']):+.5g}% (below the stated 1% practical-significance threshold). Center-referenced radial-shape changes at the requested radii are: " + "; ".join(shape_changes) + ". The absolute DC energy offset itself is not a confinement effect. On this basis, common DC has a numerically measurable but not physically meaningful confinement effect for this configuration and bias range.", "",
+        "## Outputs", "",
+        "Each `Udc_XXXXV` directory contains the full map, local-normalized center zoom, sixth-root transformed center, dense contours, radial profiles, angular anisotropy, six-panel summary, and CSV data. The all-bias radial comparison is `fig_combined_secular_effective_potential_radial_comparison.png/.pdf`; the DC-induced center-referenced differences are isolated in `fig_combined_secular_effective_potential_radial_differences.png/.pdf`. Summary metrics are `combined_secular_effective_potential_metrics.csv`. Existing proxy outputs in the parent directories were not changed.", ""])
+    report_path = output_dir / "combined_secular_effective_potential_report.md"
+    report_path.write_text("\n".join(report_lines), encoding="utf-8")
+    return {"output_dir": output_dir, "report": report_path, "metrics": metrics_rows, "biases": biases}
 
 
 def _localization_row(result, metrics: dict[str, float | str], U0: float, frequency: float, radius: float, angle_deg: float, velocity: tuple[float, float]) -> dict[str, float | int | str]:

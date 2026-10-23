@@ -21,6 +21,11 @@ class MeshConfig:
     boundary_points_per_electrode: int = 18
     outer_boundary_points: int = 180
     interior_seed: int = 12345
+    backend: str = "delaunay"
+    mesh_file: str = "outputs/meshes/gmsh_70um/trap.msh"
+    fine_radius: float = 0.008
+    transition_radius: float = 0.014
+    outer_resolution: float = 0.00035
 
 
 @dataclass(frozen=True)
@@ -145,6 +150,11 @@ def load_config(path: str | Path) -> ProjectConfig:
         boundary_points_per_electrode=int(me.get("boundary_points_per_electrode", 18)),
         outer_boundary_points=int(me.get("outer_boundary_points", 180)),
         interior_seed=int(me.get("interior_seed", 12345)),
+        backend=str(me.get("backend", "delaunay")),
+        mesh_file=str(me.get("mesh_file", "outputs/meshes/gmsh_70um/trap.msh")),
+        fine_radius=float(me.get("fine_radius", 0.008)),
+        transition_radius=float(me.get("transition_radius", 0.014)),
+        outer_resolution=float(me.get("outer_resolution", 0.00035)),
     )
     rf_config = RFConfig(float(rf.get("U0", 1000.0)), float(rf.get("frequency", 10000.0)))
     particle = ParticleConfig(
@@ -196,6 +206,15 @@ def load_config(path: str | Path) -> ProjectConfig:
 def validate_config(config: ProjectConfig) -> None:
     """Raise a clear error for invalid physical or numerical parameters."""
     g = config.geometry
+    if config.mesh.backend not in ("delaunay", "gmsh"):
+        raise ValueError("mesh.backend must be delaunay or gmsh.")
+    if config.mesh.resolution <= 0:
+        raise ValueError("Mesh resolution must be positive.")
+    if config.mesh.backend == "gmsh":
+        if not 0 < config.mesh.fine_radius < config.mesh.transition_radius <= g.outer_domain_radius:
+            raise ValueError("Require 0 < fine_radius < transition_radius <= outer_domain_radius.")
+        if config.mesh.outer_resolution < config.mesh.resolution:
+            raise ValueError("outer_resolution must be at least resolution.")
     if g.electrode_count != 12:
         raise ValueError("This model requires exactly 12 electrodes.")
     if g.electrode_orbit_radius <= g.electrode_radius:

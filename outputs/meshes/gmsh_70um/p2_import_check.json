@@ -1,0 +1,7 @@
+{
+  "p2_dofs": 334141,
+  "sample_points": 167,
+  "manufactured_potential_max_abs_error_V": 1.3322676295501878e-15,
+  "manufactured_gradient_max_abs_error_V_per_m": 1.6711965145077556e-11,
+  "laplace_solved": false
+}

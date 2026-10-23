@@ -1,0 +1,288 @@
+{
+  "created_utc": "2026-10-23T08:32:13.379030+00:00",
+  "git_head": "4dba800a40fc691c9a6460ad69f64575088e3a7e",
+  "working_tree_status": "M README.md\n M pyproject.toml\n M src/three_phase_trap/cli.py\n M src/three_phase_trap/config.py\n M src/three_phase_trap/fem_cache.py\n M src/three_phase_trap/pipeline.py\n M src/three_phase_trap/publication.py\n?? configs/gmsh_70um.toml\n?? docs/\n?? outputs/fem_cache/\n?? outputs/gmsh_70um/\n?? outputs/meshes/\n?? scripts/archive_fem_run.py\n?? src/three_phase_trap/gmsh_mesh.py\n?? tests/test_gmsh_mesh.py",
+  "python": "3.14.3",
+  "resolved_configuration": {
+    "geometry": {
+      "electrode_count": 12,
+      "electrode_orbit_radius": 0.01,
+      "electrode_radius": 0.0015,
+      "outer_domain_radius": 0.025
+    },
+    "mesh": {
+      "resolution": 7e-05,
+      "boundary_points_per_electrode": 18,
+      "outer_boundary_points": 180,
+      "interior_seed": 12345,
+      "backend": "gmsh",
+      "mesh_file": "outputs/meshes/gmsh_70um/trap.msh",
+      "fine_radius": 0.008,
+      "transition_radius": 0.014,
+      "outer_resolution": 0.00035
+    },
+    "rf": {
+      "U0": 1000.0,
+      "frequency": 10000.0
+    },
+    "particle": {
+      "mass": 1e-15,
+      "charge": 1e-12,
+      "gamma": 0.0,
+      "gravity_enabled": false,
+      "gravity": 9.81,
+      "initial_position": [
+        0.001,
+        0.0
+      ],
+      "initial_velocity": [
+        0.0,
+        0.0
+      ]
+    },
+    "simulation": {
+      "frames_per_period": 180,
+      "animation_periods": 2,
+      "trajectory_periods": 40,
+      "escape_radius": 0.008,
+      "grid_size": 121,
+      "trajectory_rtol": 2e-07,
+      "trajectory_atol": 1e-11
+    },
+    "stability": {
+      "U0_values": [
+        500.0,
+        1000.0,
+        1500.0
+      ],
+      "frequency_values": [
+        5000.0,
+        10000.0,
+        20000.0
+      ],
+      "initial_positions": [
+        [
+          0.0005,
+          0.0
+        ],
+        [
+          0.001,
+          0.0
+        ]
+      ]
+    },
+    "localization": {
+      "U0_values": [
+        500.0,
+        1000.0,
+        2000.0,
+        3000.0,
+        5000.0,
+        7500.0,
+        10000.0
+      ],
+      "frequency_values": [
+        5000.0,
+        10000.0,
+        20000.0,
+        30000.0,
+        50000.0,
+        75000.0,
+        100000.0
+      ],
+      "initial_radii": [
+        0.0001,
+        0.00025,
+        0.0005,
+        0.00075,
+        0.001,
+        0.0015,
+        0.002
+      ],
+      "initial_angles_deg": [
+        0.0,
+        45.0,
+        90.0,
+        135.0
+      ],
+      "transverse_velocity_scales": [
+        0.0,
+        0.02
+      ],
+      "stage_a_periods": 50,
+      "stage_b_periods": 1000,
+      "stage_c_periods": 10000,
+      "stage_c_candidates": 6,
+      "max_step_per_period": 10,
+      "workers": 8
+    },
+    "mass_filter": {
+      "length": 0.02,
+      "axial_velocity": 2.0,
+      "entrance_aperture": 0.008,
+      "exit_aperture": 0.008,
+      "reference_frequency": 10000.0,
+      "mass_multipliers": [
+        0.1,
+        0.15,
+        0.22,
+        0.32,
+        0.46,
+        0.68,
+        1.0,
+        1.47,
+        2.15,
+        3.16,
+        4.64,
+        6.81,
+        10.0
+      ],
+      "map_frequencies": [
+        5000.0,
+        10000.0,
+        20000.0,
+        30000.0,
+        50000.0,
+        75000.0,
+        100000.0
+      ],
+      "ensemble_radii": [
+        0.0001,
+        0.0005,
+        0.001
+      ],
+      "ensemble_angles_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "ensemble_velocity_scales": [
+        0.0,
+        0.02
+      ]
+    },
+    "outputs": {
+      "directory": "outputs/gmsh_70um"
+    }
+  },
+  "basis_units": {
+    "applied_boundary_voltage_V": 1.0,
+    "coordinates": "m",
+    "potentials": "V",
+    "fields": "V/m"
+  },
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.18.1",
+    "scikit-fem": "12.0.2",
+    "gmsh": "4.15.2",
+    "meshio": "5.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "reproduce": "python -m three_phase_trap.cli fem --config configs/gmsh_70um.toml",
+  "source_files_sha256": {
+    ".gitignore": "5978a34bcfea395a140da461300b9bfd58b8e86f7994660ff53db6bfc8be3146",
+    "configs/default.toml": "3f51ffaf9d51d8f05cf0c3cdc0ad811b96d812e8f20400ada1b294e775a6d49c",
+    "configs/gmsh_70um.toml": "36e9a4c66b72a13509a9cb2c16e6e42753329647c163ebf8c05379c198e52a1f",
+    "docs/FEM_GMSH_70UM.md": "0edbbd2e260433b42726eacc8b89c486d4cae70198e5a420805b4824b63b0c46",
+    "pyproject.toml": "c775fa6ae650d79956e47ca6992b402c071bb608f31343912701e6f4dd23a128",
+    "README.md": "e6d1af6e6fb9c14e6b2a2825647ea52a3c6001110c47966232407f6d3912c77f",
+    "scripts/archive_fem_run.py": "52080cc05838970ac8031b7046071edaba2efc5daba1b4c7a6fab0a50fc29b64",
+    "src/three_phase_trap/__init__.py": "58f9387040921c9fc3b34957df2b314719cf2a3e0184a2a7e7db137be36f6250",
+    "src/three_phase_trap/accelerated_p2.py": "390cf8037da964c9b6a53ffe954eb8df62beee1d9c20f3b9a9d5402c4d2a95fd",
+    "src/three_phase_trap/cli.py": "7ac8bd6c810ff80606142a643259600a454fe00441e964d8486ccb8e603b6dd8",
+    "src/three_phase_trap/config.py": "419576dbedd49b321986d55b3bc478b8ada1ac8ea1647483a0f01cc6380f980c",
+    "src/three_phase_trap/dynamics.py": "c63f3b2a37864c12e3671220032184790b5464f6d55cc57e04f84cd0fa5cf674",
+    "src/three_phase_trap/effective_potential.py": "452e4a7b073f41bddad0a3c0f524b18247065ba9a393d90a69c6182fb08b746e",
+    "src/three_phase_trap/fem.py": "0688e8ccc7ccc60c1e9dad369a02ac3100c20245b36d4930e41387a80d1f920d",
+    "src/three_phase_trap/fem_cache.py": "3bef631ec0d115b73d5d07e51d56e17759738547ed66c6f6e916751e01b3ea83",
+    "src/three_phase_trap/fields.py": "da4b8a7d79c979ceda83bb5550a7120b1882799a5c6a8714d90a058f15b4bce8",
+    "src/three_phase_trap/geometry.py": "37e9eb9b348eefc5c7c492766fc2ba87c2ecbe3171239dacaea9c28bb3827adc",
+    "src/three_phase_trap/gmsh_mesh.py": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d",
+    "src/three_phase_trap/interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+    "src/three_phase_trap/mass_filter.py": "c37932e6a53219ead84af893b1c5a5c8878bee8903231a389fe37fd0dfe0fa60",
+    "src/three_phase_trap/mesh.py": "116c22c92731f6712c5270b7ce5baae1f7154e162f66d5abf6947237df446931",
+    "src/three_phase_trap/multipoles.py": "6cef335ff83207a85f101d362e2a9f1952cbf61143f0604e3b76861b5e35356a",
+    "src/three_phase_trap/pipeline.py": "a217967607f7c0806748b1754125143a2e40f61e2c4589bd20497cb2892525cd",
+    "src/three_phase_trap/publication.py": "c8ff53452b64432c1ccac11e0338bd5e47653d773eeb04f5ae896465f974939b",
+    "src/three_phase_trap/stability.py": "2cf8c094ed211bbd2435a55ff84f293c19aeffd15cd2df7cb059ad296c82f97a",
+    "src/three_phase_trap/stability_study.py": "307eec3962111d84fb5ffefb7d67023f5d1beb53da037e732e1f007e03a8ce9e",
+    "src/three_phase_trap/visualization.py": "bbd9f782f2db9e300634b9f2ff369fed24403f74a676e825ebf0b03cf14dfcc1",
+    "src/three_phase_trap/voltages.py": "ea4f84910baf2aeed4a941f6acab17d02e60a2da22d7c488ee3aaa1fdf614641",
+    "tests/test_dynamics.py": "4fa57e38cf9106ffbeec0dfa476b0e78f0595bae5d10b0594e6cdcefa4e47e5b",
+    "tests/test_fem_cache.py": "6e1cc24d9a195e38562339fa41ce47d79873b53e9d0728796c72399a834d3061",
+    "tests/test_geometry_and_voltages.py": "f312b2f761948ab47fc676da0b3cd8d1c5fd0f5d27c1406d98a8efa3bb343333",
+    "tests/test_gmsh_mesh.py": "24f643e166f2c2968c7696f482837624898c9352cfc7b134a7006e5a63770fb5",
+    "tests/test_mesh_boundary_selection.py": "a6bd509893a5e9c716c0fba40de5d469308b5ec87642e7014fd4cf40516e4802",
+    "tests/test_multipoles_and_effective.py": "6c4f33eaa036a6300d45d43776e1865d81d8f8ccbf76bfe7cab056764b8de162",
+    "tests/test_p2_gradient_consistency.py": "679bfe32776890defde2fdee0c83a1d0197177c6c25229324a54e967b50cdb25",
+    "tests/test_stability_study.py": "5ab786cd09c48b5daa6ae52c88ea1f3b72505351553c8ec8fe88e4950c9ad8c0"
+  },
+  "data_files": {
+    "outputs/fem_cache/p2_basis.npz": {
+      "bytes": 28978212,
+      "sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063"
+    },
+    "outputs/fem_cache/metadata.json": {
+      "bytes": 3781,
+      "sha256": "89eafcd235d11344ac40494749a331fe580fa1356473b150ab75c23453f8d8c9"
+    },
+    "outputs/fem_cache/basis_integrity_checks.json": {
+      "bytes": 7540,
+      "sha256": "887890e8e4926f6f36c8be1cd99ea91ff3b5edaafb8238a20b6f008c86b9f4b2"
+    },
+    "outputs/fem_cache/calculation_config.toml": {
+      "bytes": 522,
+      "sha256": "36e9a4c66b72a13509a9cb2c16e6e42753329647c163ebf8c05379c198e52a1f"
+    },
+    "outputs/fem_cache/source_snapshot.zip": {
+      "bytes": 122417,
+      "sha256": "b67b5de3aa51971e5a00a810cadaaf327feddc95d3b1825ce5609ff580cda333"
+    },
+    "outputs/fem_cache/direct_fem_cache_validation.csv": {
+      "bytes": 2125,
+      "sha256": "b77350f41ab5f0c9277a498351dbfa99fa63c611b64ab0f7e256c71b461eed79"
+    },
+    "outputs/fem_cache/direct_fem_cache_validation_summary.json": {
+      "bytes": 609,
+      "sha256": "ea61ce060a1760df6ed6329fb15b12036d617df5e4667f16096da0920cbdb516"
+    },
+    "outputs/gmsh_70um/direct_fem_validation.csv": {
+      "bytes": 1196,
+      "sha256": "f80a5cb906352b01e0228b228c5a897fa1536541b4e4c62b1b917d17029b1027"
+    },
+    "outputs/gmsh_70um/fem_summary.json": {
+      "bytes": 153,
+      "sha256": "9899ed49f69302c623fe5934ef5be7803844d20ca53c36b45eb773d36032b0d6"
+    },
+    "outputs/meshes/gmsh_70um/p2_import_check.json": {
+      "bytes": 223,
+      "sha256": "9f57702b9af6d7d8c3bb4e9b437554502bef3aa77d05b0a47db46a0ebd78c08d"
+    },
+    "outputs/meshes/gmsh_70um/sector.geo": {
+      "bytes": 1638,
+      "sha256": "ec991e9906868301d9b34edb4c57d2d57ab0f523933776ffb4f6634ac20bce3a"
+    },
+    "outputs/meshes/gmsh_70um/sector.msh": {
+      "bytes": 677114,
+      "sha256": "7c93381ce1bf21f7468d61037ba7b477a6d0c58e977cb59ddb026ee6bedf5cdf"
+    },
+    "outputs/meshes/gmsh_70um/trap.json": {
+      "bytes": 1923,
+      "sha256": "645dd35e00cdfd670ee7ac2f809a5069d31b1c16086437d48edfdd67fd5fda54"
+    },
+    "outputs/meshes/gmsh_70um/trap.msh": {
+      "bytes": 6380648,
+      "sha256": "a288593ff9c2ca61c606c4e83c1b7e5104fbdafec3ffcafe98693dfeac7bf4b6"
+    },
+    "outputs/meshes/gmsh_70um/trap.png": {
+      "bytes": 1642188,
+      "sha256": "4989e1ada607a8a738f3c71abb9f6d52371e00b5761c1648fa84362394baadef"
+    },
+    "outputs/fem_cache/FEM_RUN_REPORT.md": {
+      "bytes": 20895,
+      "sha256": "68fada4db8346c9c9fde4d24ecac04279d71575e1ba94f4e58b5deb571481f6e"
+    }
+  }
+}

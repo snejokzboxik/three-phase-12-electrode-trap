@@ -1,0 +1,49 @@
+{
+  "user_step": 6,
+  "detailed_plan_stage": 5,
+  "reference_field": "amplitude-scaled B reconstruction",
+  "selected_transform": "drift_corrected",
+  "leading_transform_retained_as_benchmark": true,
+  "full_IC_reference_for_A_and_A_smooth": "same smooth B field, same full state; isolate spatial representation error",
+  "short_RF_periods": 32,
+  "short_output_samples_per_RF_period": 128,
+  "short_max_steps_per_RF_period": [
+    50,
+    100
+  ],
+  "short_rtol": [
+    2e-09,
+    2e-11
+  ],
+  "short_atol_SI": [
+    2e-13,
+    2e-15
+  ],
+  "window_RF_periods": [
+    1,
+    2,
+    3
+  ],
+  "output_resolution_samples": [
+    32,
+    64,
+    128
+  ],
+  "default_filter": "centred one-RF-period trapezoid mean, no endpoint extrapolation",
+  "alternative_filter": "local quadratic trend + RF quadratures and linear RF drift over 2 periods",
+  "poincare_target_RF_phase_rad": 0.0,
+  "coordinate_diagnostic_budget": 0.001,
+  "velocity_benchmark_budget_on_R_omega_slow": 0.001,
+  "benchmark_frequencies": [
+    20,
+    40,
+    80
+  ],
+  "benchmark_amplitudes": [
+    2,
+    4,
+    8
+  ],
+  "approximation_order": "leading xi plus delta_xi=-2q/(m Omega^4)*(partial_t J)*V and its full material derivative using A_B; not a complete next-order averaging Hamiltonian",
+  "scope": "Short A_smooth diagnostics and exact/synthetic benchmarks only; no raw FEM A trajectory or long pilot"
+}

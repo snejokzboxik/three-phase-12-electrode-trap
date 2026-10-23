@@ -1,0 +1,480 @@
+{
+  "status": "implemented_diagnostics_passed_long_pilot_unverified",
+  "algorithm_checks_passed": true,
+  "benchmark_initialization_budget_passed": true,
+  "short_filter_budget_passed": true,
+  "coordinate_diagnostic_budget": 0.001,
+  "benchmark_filter_budget_passed": true,
+  "RF_phase_adapter_relative_max_error": 2.4302389219188157e-16,
+  "quadrupole_benchmarks": [
+    {
+      "transform": "leading",
+      "frequency_multiplier": 1,
+      "phase_rad": 0.0,
+      "initial_slow_position_remainder_relative": 3.193052262241393e-05,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.0030229700358239135,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 0.0001518371531378301,
+        "relative_max": 0.0001960699144229937
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 4.0096236538822854e-06,
+        "relative_max": 4.666735549062438e-06
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 0.00010695308124115732,
+        "relative_max": 0.00017060472274907273
+      }
+    },
+    {
+      "transform": "drift_corrected",
+      "frequency_multiplier": 1,
+      "phase_rad": 0.0,
+      "initial_slow_position_remainder_relative": 2.9306441705503854e-06,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.00029475083098925314,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 0.00015190468850132896,
+        "relative_max": 0.00019617895241884567
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 4.011365801308386e-06,
+        "relative_max": 4.667539005987737e-06
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 2.6041702944341904e-06,
+        "relative_max": 3.1092881316303897e-06
+      }
+    },
+    {
+      "transform": "leading",
+      "frequency_multiplier": 1,
+      "phase_rad": 1.5707963267948966,
+      "initial_slow_position_remainder_relative": 3.287697793936045e-05,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.00308677761476249,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 0.00015213436620237051,
+        "relative_max": 0.00019619027502939512
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 4.018075911446916e-06,
+        "relative_max": 4.673936737894531e-06
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 0.00010667708535609012,
+        "relative_max": 0.00016895730822949424
+      }
+    },
+    {
+      "transform": "drift_corrected",
+      "frequency_multiplier": 1,
+      "phase_rad": 1.5707963267948966,
+      "initial_slow_position_remainder_relative": 3.0026568406744574e-06,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.00029952417971590103,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 0.00015202119757855298,
+        "relative_max": 0.00019619403665994823
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 4.0127226809181226e-06,
+        "relative_max": 4.672954838775427e-06
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 2.605450188807551e-06,
+        "relative_max": 3.109839928609314e-06
+      }
+    },
+    {
+      "transform": "leading",
+      "frequency_multiplier": 2,
+      "phase_rad": 0.0,
+      "initial_slow_position_remainder_relative": 7.723270052101475e-06,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.001502258356886895,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 4.038042912051985e-05,
+        "relative_max": 4.868850847557922e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 5.555932122839653e-07,
+        "relative_max": 5.78849931503187e-07
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 1.547574050724044e-05,
+        "relative_max": 2.456423336651676e-05
+      }
+    },
+    {
+      "transform": "drift_corrected",
+      "frequency_multiplier": 2,
+      "phase_rad": 0.0,
+      "initial_slow_position_remainder_relative": 3.7054139681232727e-07,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 7.433239539180447e-05,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 4.038616610681727e-05,
+        "relative_max": 4.870144761431756e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 5.556434915704823e-07,
+        "relative_max": 5.788758037468944e-07
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 3.62468105019463e-07,
+        "relative_max": 3.817381435352494e-07
+      }
+    },
+    {
+      "transform": "leading",
+      "frequency_multiplier": 2,
+      "phase_rad": 1.5707963267948966,
+      "initial_slow_position_remainder_relative": 7.838340961712957e-06,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.0015176890487550478,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 4.046303920153593e-05,
+        "relative_max": 4.8766438759313475e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 5.55860979871119e-07,
+        "relative_max": 5.790387756864363e-07
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 1.5450398803498915e-05,
+        "relative_max": 2.4353855096670912e-05
+      }
+    },
+    {
+      "transform": "drift_corrected",
+      "frequency_multiplier": 2,
+      "phase_rad": 1.5707963267948966,
+      "initial_slow_position_remainder_relative": 3.7498999466347326e-07,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 7.492383931135062e-05,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 4.0454255624759955e-05,
+        "relative_max": 4.877034824393111e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 5.55664602194881e-07,
+        "relative_max": 5.790074197293367e-07
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 3.624876616331074e-07,
+        "relative_max": 3.8173205068621563e-07
+      }
+    },
+    {
+      "transform": "leading",
+      "frequency_multiplier": 4,
+      "phase_rad": 0.0,
+      "initial_slow_position_remainder_relative": 1.8982980368762312e-06,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.0007487341945973685,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 1.0269208639893539e-05,
+        "relative_max": 1.16985420582933e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 7.121694584012308e-08,
+        "relative_max": 7.20238365023249e-08
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 2.4968530562961707e-06,
+        "relative_max": 3.4646788429263188e-06
+      }
+    },
+    {
+      "transform": "drift_corrected",
+      "frequency_multiplier": 4,
+      "phase_rad": 0.0,
+      "initial_slow_position_remainder_relative": 4.6592399435715875e-08,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 1.8665815222746752e-05,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 1.0269769089821213e-05,
+        "relative_max": 1.170107240973584e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 7.121842617318648e-08,
+        "relative_max": 7.202465660720565e-08
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 4.6546114635706944e-08,
+        "relative_max": 4.729325556922745e-08
+      }
+    },
+    {
+      "transform": "leading",
+      "frequency_multiplier": 4,
+      "phase_rad": 1.5707963267948966,
+      "initial_slow_position_remainder_relative": 1.9124847160584206e-06,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 0.0007525282433388712,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 1.0281216947960666e-05,
+        "relative_max": 1.1731029437195875e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 7.122517898946012e-08,
+        "relative_max": 7.20276060431405e-08
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 2.4975576020918634e-06,
+        "relative_max": 3.4484344098495263e-06
+      }
+    },
+    {
+      "transform": "drift_corrected",
+      "frequency_multiplier": 4,
+      "phase_rad": 1.5707963267948966,
+      "initial_slow_position_remainder_relative": 4.686888441443536e-08,
+      "initial_slow_velocity_remainder_on_R_omega_slow": 1.8739438583806166e-05,
+      "box_mean_vs_exact_slow": {
+        "relative_rms": 1.0280635563577097e-05,
+        "relative_max": 1.1733161592480368e-05
+      },
+      "local_rf_trend_vs_exact_slow": {
+        "relative_rms": 7.12187471801593e-08,
+        "relative_max": 7.202661525917528e-08
+      },
+      "inverse_micromotion_vs_exact_slow": {
+        "relative_rms": 4.654639061146967e-08,
+        "relative_max": 4.7293789262020115e-08
+      }
+    }
+  ],
+  "synthetic_filter_checks": [
+    {
+      "samples_per_RF_period": 32,
+      "box_vs_known_slow": {
+        "relative_rms": 3.0251671327732048e-06,
+        "relative_max": 3.3654136037070784e-06
+      },
+      "local_rf_trend_vs_known_slow": {
+        "relative_rms": 4.576485557629832e-16,
+        "relative_max": 8.711650476514995e-16
+      }
+    },
+    {
+      "samples_per_RF_period": 64,
+      "box_vs_known_slow": {
+        "relative_rms": 3.020818801943042e-06,
+        "relative_max": 3.3622049613157157e-06
+      },
+      "local_rf_trend_vs_known_slow": {
+        "relative_rms": 2.59760350577791e-16,
+        "relative_max": 6.555838024382534e-16
+      }
+    },
+    {
+      "samples_per_RF_period": 128,
+      "box_vs_known_slow": {
+        "relative_rms": 3.019721955361421e-06,
+        "relative_max": 3.3615692845334504e-06
+      },
+      "local_rf_trend_vs_known_slow": {
+        "relative_rms": 2.573052000810082e-16,
+        "relative_max": 6.555838024382534e-16
+      }
+    }
+  ],
+  "short_smooth_checks": [
+    {
+      "phase_rad": 0.0,
+      "duration_s": 0.00032,
+      "RF_periods": 32,
+      "ode_coordinate_change": {
+        "relative_rms": 2.37496820723674e-15,
+        "relative_max": 4.33743383865443e-15
+      },
+      "output_resolution_checks": [
+        {
+          "samples_per_RF_period": 32,
+          "relative_rms": 1.0081490133018418e-09,
+          "relative_max": 1.1764871374024771e-09
+        },
+        {
+          "samples_per_RF_period": 64,
+          "relative_rms": 2.0162101414557177e-10,
+          "relative_max": 2.3526355712978156e-10
+        }
+      ],
+      "window_checks": [
+        {
+          "window_RF_periods": 1,
+          "mean_vs_B_at_centre": {
+            "relative_rms": 7.491821048055426e-07,
+            "relative_max": 1.2079588229980731e-06
+          },
+          "mean_vs_identically_filtered_B": {
+            "relative_rms": 3.639612113371793e-07,
+            "relative_max": 9.465710959855164e-07
+          }
+        },
+        {
+          "window_RF_periods": 2,
+          "mean_vs_B_at_centre": {
+            "relative_rms": 2.330201951933037e-06,
+            "relative_max": 2.5703849890886696e-06
+          },
+          "mean_vs_identically_filtered_B": {
+            "relative_rms": 3.5207492210289075e-07,
+            "relative_max": 9.067858710223085e-07
+          }
+        },
+        {
+          "window_RF_periods": 3,
+          "mean_vs_B_at_centre": {
+            "relative_rms": 5.052286601293907e-06,
+            "relative_max": 5.177190890040554e-06
+          },
+          "mean_vs_identically_filtered_B": {
+            "relative_rms": 3.4079601013025595e-07,
+            "relative_max": 8.686347633759782e-07
+          }
+        }
+      ],
+      "window_change_vs_one_period": [
+        {
+          "window_RF_periods": 2,
+          "relative_rms": 1.6427260758068099e-06,
+          "relative_max": 1.7351423654780406e-06
+        },
+        {
+          "window_RF_periods": 3,
+          "relative_rms": 4.376602708497544e-06,
+          "relative_max": 4.4234623888488655e-06
+        }
+      ],
+      "mean_vs_inverse_micromotion": {
+        "relative_rms": 5.4830246577072e-07,
+        "relative_max": 5.999343445589246e-07
+      },
+      "trend_vs_inverse_micromotion": {
+        "relative_rms": 5.359550926374312e-10,
+        "relative_max": 6.571807762507471e-10
+      },
+      "trend_vs_B": {
+        "relative_rms": 3.4880124194879633e-07,
+        "relative_max": 8.65551104986771e-07
+      },
+      "inverse_micromotion_vs_B": {
+        "relative_rms": 3.7369221296687094e-07,
+        "relative_max": 9.462208369192054e-07
+      },
+      "poincare_interpolation_64_vs_128": {
+        "relative_rms": 8.440502716922518e-17,
+        "relative_max": 2.1684044095944932e-16
+      },
+      "poincare_count": 33
+    },
+    {
+      "phase_rad": 1.5707963267948966,
+      "duration_s": 0.00032,
+      "RF_periods": 32,
+      "ode_coordinate_change": {
+        "relative_rms": 2.681837341804325e-15,
+        "relative_max": 5.655699670511334e-15
+      },
+      "output_resolution_checks": [
+        {
+          "samples_per_RF_period": 32,
+          "relative_rms": 1.009011037080627e-09,
+          "relative_max": 1.1755024615019517e-09
+        },
+        {
+          "samples_per_RF_period": 64,
+          "relative_rms": 2.0180169007293688e-10,
+          "relative_max": 2.3510461237098104e-10
+        }
+      ],
+      "window_checks": [
+        {
+          "window_RF_periods": 1,
+          "mean_vs_B_at_centre": {
+            "relative_rms": 6.988397566115146e-07,
+            "relative_max": 1.1972763129925509e-06
+          },
+          "mean_vs_identically_filtered_B": {
+            "relative_rms": 4.255416714395552e-07,
+            "relative_max": 1.0588748782087588e-06
+          }
+        },
+        {
+          "window_RF_periods": 2,
+          "mean_vs_B_at_centre": {
+            "relative_rms": 2.23376735425154e-06,
+            "relative_max": 2.4219771301552807e-06
+          },
+          "mean_vs_identically_filtered_B": {
+            "relative_rms": 4.1251179590695495e-07,
+            "relative_max": 1.0167258714364402e-06
+          }
+        },
+        {
+          "window_RF_periods": 3,
+          "mean_vs_B_at_centre": {
+            "relative_rms": 4.947184135245549e-06,
+            "relative_max": 4.995090150459488e-06
+          },
+          "mean_vs_identically_filtered_B": {
+            "relative_rms": 4.001150665120954e-07,
+            "relative_max": 9.761977726509137e-07
+          }
+        }
+      ],
+      "window_change_vs_one_period": [
+        {
+          "window_RF_periods": 2,
+          "relative_rms": 1.642098250112509e-06,
+          "relative_max": 1.7349584054768682e-06
+        },
+        {
+          "window_RF_periods": 3,
+          "relative_rms": 4.376605123853928e-06,
+          "relative_max": 4.423462359575941e-06
+        }
+      ],
+      "mean_vs_inverse_micromotion": {
+        "relative_rms": 5.479890995677672e-07,
+        "relative_max": 5.997127540304559e-07
+      },
+      "trend_vs_inverse_micromotion": {
+        "relative_rms": 5.3589244251555e-10,
+        "relative_max": 6.57158388725889e-10
+      },
+      "trend_vs_B": {
+        "relative_rms": 4.1036446585575365e-07,
+        "relative_max": 9.933195425196651e-07
+      },
+      "inverse_micromotion_vs_B": {
+        "relative_rms": 4.375829543354698e-07,
+        "relative_max": 1.0805397108954217e-06
+      },
+      "poincare_interpolation_64_vs_128": {
+        "relative_rms": 1.0141782798127002e-16,
+        "relative_max": 4.3368087222537604e-16
+      },
+      "poincare_count": 32
+    }
+  ],
+  "scope": "Short A_smooth diagnostics and exact/synthetic benchmarks only; no raw FEM A trajectory or long pilot",
+  "raw_FEM_A_trajectory_computed": false,
+  "long_physical_pilot_computed": false,
+  "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+  "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+  "python": "3.14.3",
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.18.1",
+    "scikit-fem": "12.0.2",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": {
+    "scripts/run_abc_initial_conditions.py": "14d8f64c10af8e1d58b34dd7e191fdafea8f9d128690582b6c1bd2a7066caaf5",
+    "src/three_phase_trap/micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+    "src/three_phase_trap/slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb",
+    "src/three_phase_trap/validation_benchmarks.py": "50561dd6de3d5cc4f5ed768bd970e49084f8355fb34d2c681a97f96f2cd2109f",
+    "src/three_phase_trap/rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "src/three_phase_trap/dynamics.py": "9419498c4cf3ee865071f6d68ec303b4eb490d6a178d5bde125ead3b1cf73b2a",
+    "src/three_phase_trap/averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40"
+  },
+  "input_sha256": {
+    "outputs/abc_validation/protocol.json": "0dc8b48e9c7e82d6ff7061d696e5afce6bc97c3c81cec6df3f0ce4e6c7f59d55",
+    "outputs/abc_validation/model_b/reconstruction.json": "47892bac73e2b0e6bec3db899c3f54d88cbdb071ecb9aaa9045ed875d4c707a6",
+    "outputs/abc_validation/model_c/coefficients.json": "be84773fe2f22b0465ed7cafa16ee59d70dbb31833bd19662f6a46ec9898b304"
+  }
+}

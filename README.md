@@ -1,5 +1,19 @@
 # Three-phase 12-electrode trap
 
+**Продолжение расчёта Gmsh 70 мкм:** начните с
+[контекста для другого чата](docs/FEM_GMSH_70UM.md) и
+[отчёта готового FEM-расчёта](outputs/fem_cache/FEM_RUN_REPORT.md).
+Там указаны параметры, готовые файлы, загрузка без пересчёта и план проверки траекторий.
+Подробный порядок следующего этапа: [план проверки моделей A/B/C](docs/ABC_VALIDATION_PLAN.md).
+Выполненные первые проверки: [протокол, гладкие эталоны и аудит поля](outputs/abc_validation/INITIAL_CHECKS_REPORT.md).
+Пункт 4 выполнен: [модель B, сила и проверки интегратора](outputs/abc_validation/model_b/MODEL_B_REPORT.md).
+Пункт 5 выполнен: [коэффициенты октупольной модели C и сравнение B–C](outputs/abc_validation/model_c/MODEL_C_REPORT.md).
+Пункт 6 выполнен: [общие начальные условия и проверка фильтров](outputs/abc_validation/filter_checks/INITIAL_CONDITIONS_REPORT.md).
+Пункт 7 рассчитан: [длительный пилот и ограничения вывода](outputs/abc_validation/pilot/PILOT_REPORT.md).
+A_smooth–B проходит критерии за 3,25 медленного периода, но не за 10,25.
+Сравнения с исходным FEM A пока неопределённы из-за несходимости его траекторий;
+сходимость FEM по сетке ещё не установлена.
+
 This is a standalone scientific Python project for investigating the transverse electric field, multipole content, RF effective potential, and full charged-particle dynamics of a 12-electrode electrodynamic trap. It is intentionally independent of any earlier codebase and does not assume that the `ABCABCABCABC` arrangement produces a stable trap.
 
 ## Physical model
@@ -97,9 +111,66 @@ The `pseudopotential` command creates dense regular-grid pseudopotential maps, a
 
 The `dc-bias` command adds a common 1-V FEM basis with all 12 electrodes biased together and creates a comparative study at Udc=0, 100, 300, 500, and 1000 V. After an existing run, `finalize-dc-bias` validates linear superposition against independent direct FEM solves at multiple nonzero biases and RF phases, writes the concise differential summary, and separates RF pseudopotential, static DC energy/field, total instantaneous field reconstruction, and the optional total-field proxy. It reads the existing DC-bias grids/trajectory CSVs and does not rerun the main DC study. Outputs are stored in `outputs/publication_study/dc_bias/`. The 40-period trajectory subset is exploratory only; it is not a stability conclusion.
 
+## Symmetric Gmsh mesh
+
+Install optional meshing dependencies: `python -m pip install -e ".[gmsh]"`.
+From the repository root run:
+
+```bash
+python -m three_phase_trap.cli mesh --config configs/gmsh_70um.toml
+```
+
+This creates `outputs/meshes/gmsh_70um/trap.msh`, `trap.json`, the preview
+`trap.png`, and reproducible sector files `sector.geo` and `sector.msh`.
+All coordinates are in metres. A 30-degree sector with a circular electrode
+hole is meshed with matching radial interfaces, rotated twelve times and
+welded. Sector interfaces are interior edges with no artificial FEM boundary
+conditions. Physical tags identify every electrode and the outer boundary;
+untagged external edges (including unwelded seams) are rejected on import.
+
+The target size is 70 micrometres at r <= 8 mm and near electrodes, increasing
+continuously towards 350 micrometres outside. Targets are not strict bounds on
+individual edges. `trap.json` reports measured edge quantiles, triangle quality,
+area error relative to exact circles, 12-fold symmetry, and topology. Circular
+CAD boundaries are approximated by straight mesh edges. The imported geometry
+is affine; the existing solver constructs quadratic solution DOFs using
+`ElementTriP2`. Curved P2 geometry is not used.
+
+The `mesh` command does **not** solve Laplace's equation. A later explicit
+field calculation uses exactly this saved mesh:
+
+```bash
+python -m three_phase_trap.cli fem --config configs/gmsh_70um.toml
+```
+
+The FEM fingerprint includes the MSH checksum and Gmsh version. The default
+configuration keeps the old Delaunay generator. Legacy automatic convergence
+commands reject Gmsh configurations; generate separate mesh files/configs at
+each resolution before comparing them.
+
 ## Reusable P2 FEM cache
 
 The validated mesh and four P2 basis solutions (`A`, `B`, `C`, and common `DC`) are cached under `outputs/fem_cache/`. `metadata.json` includes a deterministic fingerprint of geometry, mesh settings, element/solver formulation, boundary conditions, phase protocol, FEM source hashes, dependency version, and the creating Git revision. Cached data include mesh/connectivity, electrode/phase boundary-node sets, P2 DOF coordinates/order, basis potentials, and element fields. Normal trajectory, localization, and mass-filter runs load this cache. A changed FEM fingerprint is never silently substituted; mesh-refinement configurations use separate fingerprinted variant directories. The cache was round-trip loaded and checked against independent direct RF+DC FEM solves before the stability scan.
+
+### Verify and archive a completed Gmsh FEM calculation
+
+After `python -m three_phase_trap.cli fem --config configs/gmsh_70um.toml`
+has completed, run:
+
+```bash
+python scripts/archive_fem_run.py --config configs/gmsh_70um.toml
+```
+
+This reads the existing cache without rebuilding any basis. It checks the
+P2 Dirichlet values (including edge DOFs), weak Laplace residuals, saved field
+reconstruction, exact array reload, and relative RMS errors in the independent
+direct RF/RF+DC solves. It saves `basis_integrity_checks.json`, a copy of the
+configuration, library versions and SHA-256 manifests, the actual working-tree
+source snapshot (including uncommitted changes), and a portable
+`gmsh_70um_fem_bundle.zip` with mesh, basis, sources and validation reports.
+The bundle checksum is saved separately as `bundle_checksum.json`.
+These checks establish discrete-solve and serialization consistency, not
+spatial convergence or the validity of averaged particle dynamics.
 
 ## Full-dynamics stability study
 

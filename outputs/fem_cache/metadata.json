@@ -1,0 +1,129 @@
+{
+  "arrays_file": "p2_basis.npz",
+  "arrays_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+  "basis_definitions": {
+    "A": {
+      "electrodes_modulo_3": 0,
+      "other_electrodes_V": 0.0,
+      "voltage_V": 1.0
+    },
+    "B": {
+      "electrodes_modulo_3": 1,
+      "other_electrodes_V": 0.0,
+      "voltage_V": 1.0
+    },
+    "C": {
+      "electrodes_modulo_3": 2,
+      "other_electrodes_V": 0.0,
+      "voltage_V": 1.0
+    },
+    "DC": {
+      "all_electrodes_V": 1.0
+    }
+  },
+  "code_version": "repository source hashes; see fingerprint_payload.solver_source_sha256",
+  "element_type": "ElementTriP2",
+  "fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+  "fingerprint_payload": {
+    "basis_definitions": {
+      "A": {
+        "electrodes_modulo_3": 0,
+        "other_electrodes_V": 0.0,
+        "voltage_V": 1.0
+      },
+      "B": {
+        "electrodes_modulo_3": 1,
+        "other_electrodes_V": 0.0,
+        "voltage_V": 1.0
+      },
+      "C": {
+        "electrodes_modulo_3": 2,
+        "other_electrodes_V": 0.0,
+        "voltage_V": 1.0
+      },
+      "DC": {
+        "all_electrodes_V": 1.0
+      }
+    },
+    "cache_format_version": 1,
+    "element": {
+      "family": "triangle",
+      "polynomial_order": 2,
+      "type": "ElementTriP2"
+    },
+    "geometry": {
+      "electrode_count": 12,
+      "electrode_orbit_radius": 0.01,
+      "electrode_radius": 0.0015,
+      "outer_domain_radius": 0.025
+    },
+    "laplace_form": "integral(dot(grad(u), grad(v)))",
+    "mesh": {
+      "backend": "gmsh",
+      "boundary_points_per_electrode": 18,
+      "fine_radius": 0.008,
+      "interior_seed": 12345,
+      "mesh_file": "outputs/meshes/gmsh_70um/trap.msh",
+      "outer_boundary_points": 180,
+      "outer_resolution": 0.00035,
+      "resolution": 7e-05,
+      "transition_radius": 0.014
+    },
+    "mesh_artifact": {
+      "geometry_order": 1,
+      "gmsh_version": "4.15.2",
+      "sha256": "a288593ff9c2ca61c606c4e83c1b7e5104fbdafec3ffcafe98693dfeac7bf4b6",
+      "solution_order": 2
+    },
+    "outer_boundary": {
+      "sampled_circle": true,
+      "type": "Dirichlet",
+      "voltage_V": 0.0
+    },
+    "phase_voltage_law": {
+      "A": "sin(Omega*t)",
+      "B": "sin(Omega*t-2*pi/3)",
+      "C": "sin(Omega*t+2*pi/3)"
+    },
+    "scikit_fem_version": "12.0.2",
+    "solver_source_sha256": {
+      "fem.py": "0688e8ccc7ccc60c1e9dad369a02ac3100c20245b36d4930e41387a80d1f920d",
+      "geometry.py": "37e9eb9b348eefc5c7c492766fc2ba87c2ecbe3171239dacaea9c28bb3827adc",
+      "gmsh_mesh.py": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d",
+      "mesh.py": "116c22c92731f6712c5270b7ce5baae1f7154e162f66d5abf6947237df446931"
+    }
+  },
+  "geometry_parameters": {
+    "electrode_count": 12,
+    "electrode_orbit_radius": 0.01,
+    "electrode_radius": 0.0015,
+    "outer_domain_radius": 0.025
+  },
+  "git_commit": "4dba800a40fc691c9a6460ad69f64575088e3a7e",
+  "mesh_parameters": {
+    "backend": "gmsh",
+    "boundary_points_per_electrode": 18,
+    "fine_radius": 0.008,
+    "interior_seed": 12345,
+    "mesh_file": "outputs/meshes/gmsh_70um/trap.msh",
+    "outer_boundary_points": 180,
+    "outer_resolution": 0.00035,
+    "resolution": 7e-05,
+    "transition_radius": 0.014
+  },
+  "mesh_triangles": 166032,
+  "mesh_vertices": 84049,
+  "outer_boundary_condition": {
+    "sampled_circle": true,
+    "type": "Dirichlet",
+    "voltage_V": 0.0
+  },
+  "p2_dofs": 334141,
+  "phase_voltage_law": {
+    "A": "sin(Omega*t)",
+    "B": "sin(Omega*t-2*pi/3)",
+    "C": "sin(Omega*t+2*pi/3)"
+  },
+  "polynomial_order": 2,
+  "scikit_fem_version": "12.0.2"
+}

@@ -1,0 +1,39 @@
+{
+  "case": {
+    "model": "B",
+    "phase_index": 0,
+    "level": "fine",
+    "extent": "pilot"
+  },
+  "signature": "45229b019a37a02e6d8504d59f46f96e363f373069d174d46b9c462160769905",
+  "status": "completed",
+  "nfev_this_segment": 9797,
+  "wall_seconds_including_load": 3.5683891999997286,
+  "start_time_this_segment_s": 0.0,
+  "end_time_s": 0.07506,
+  "exit_time_s": null,
+  "max_radius_m": 0.001,
+  "parent_arrays_sha256": null,
+  "arrays_sha256": "09a41db66f1abd92fe60299396934fc2e0a22c959c4c994802901ea61ba6284b",
+  "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+  "controls": {
+    "RF_steps_per_period": 100,
+    "RF_rtol": 2e-11,
+    "RF_atol_SI": [
+      2e-15,
+      2e-15,
+      2e-13,
+      2e-13
+    ],
+    "slow_steps_per_period": 200,
+    "slow_rtol": 2e-12,
+    "slow_dimensionless_atol": 2e-14
+  },
+  "RF_phase_rad": null,
+  "state_order": [
+    "x_m",
+    "y_m",
+    "vx_m_per_s",
+    "vy_m_per_s"
+  ]
+}

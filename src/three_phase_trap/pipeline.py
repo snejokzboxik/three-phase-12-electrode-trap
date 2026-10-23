@@ -264,6 +264,8 @@ def run_stability(config: ProjectConfig, project_root: Path, state: tuple[object
 
 
 def run_mesh_convergence(config: ProjectConfig, project_root: Path) -> dict[str, object]:
+    if config.mesh.backend == "gmsh":
+        raise ValueError("Gmsh convergence requires separately generated meshes/configurations at each resolution.")
     output_dir = ensure_output_dir(config, project_root)
     resolutions = np.array([1.35, 1.0, 0.78]) * config.mesh.resolution
     rows = []

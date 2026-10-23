@@ -1,0 +1,14 @@
+{
+  "cases": 18,
+  "max_potential_error_V": 1.2505552149377763e-11,
+  "rms_potential_error_V": 4.567715160841365e-13,
+  "max_electric_field_error_V_per_m": 3.489278042164319e-07,
+  "rms_electric_field_error_V_per_m": 6.629103723706788e-09,
+  "previous_validated": {
+    "max_potential_error_V": 5.6843418860808015e-12,
+    "rms_potential_error_V": 2.1286732816352618e-13,
+    "max_electric_field_error_V_per_m": 4.9585001478266494e-08,
+    "rms_electric_field_error_V_per_m": 8.354675680215251e-10
+  },
+  "cache_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0"
+}

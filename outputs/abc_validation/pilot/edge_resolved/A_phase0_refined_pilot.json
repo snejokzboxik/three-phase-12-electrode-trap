@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "provenance": {
+    "raw_pilot_numerical_provenance": {
+      "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+      "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+      "kernel_source_sha256": {
+        "src/three_phase_trap/pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+        "src/three_phase_trap/validation_field_audit.py": "67498fcebc66c9b543851b146fd7171f7c04cdd466bcf4dbb1503c1a1aeca3b5",
+        "src/three_phase_trap/interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+        "src/three_phase_trap/rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+        "src/three_phase_trap/dynamics.py": "9419498c4cf3ee865071f6d68ec303b4eb490d6a178d5bde125ead3b1cf73b2a",
+        "src/three_phase_trap/averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+        "src/three_phase_trap/octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7"
+      },
+      "worker_source_sha256": "37bb30ae9118adb2dfbb60f68c88afbc23c1b1f3d2f0365399c07b377cbe2f02",
+      "input_sha256": {
+        "outputs/abc_validation/protocol.json": "0dc8b48e9c7e82d6ff7061d696e5afce6bc97c3c81cec6df3f0ce4e6c7f59d55",
+        "outputs/abc_validation/initial_conditions.json": "0edba3b900994e8f7365e3fd6a333978a85d3e36a96ca40d30b7f6c60f121c7d",
+        "outputs/abc_validation/model_b/reconstruction.json": "47892bac73e2b0e6bec3db899c3f54d88cbdb071ecb9aaa9045ed875d4c707a6",
+        "outputs/abc_validation/model_c/coefficients.json": "be84773fe2f22b0465ed7cafa16ee59d70dbb31833bd19662f6a46ec9898b304"
+      },
+      "python": "3.14.3",
+      "numpy": "2.4.3",
+      "scipy": "1.18.1"
+    },
+    "edge_resolved_source_sha256": "e79cc4e828ad5ffc19bda44e114ec10dc03db30bf54f4515216fbea43c5ea26a",
+    "driver_sha256": "95747e177690f99bcaa79596058ef21c724ffd12c7f10f51e2260f4d8695bd1b"
+  },
+  "arrays_sha256": "a8dee24deea519d97b8d9910c453ff6eb283408c4321b9f9fec26688240378c7",
+  "triangle_crossings": 524,
+  "nfev": 22523130,
+  "wall_seconds": 223.95139990000098,
+  "controls": {
+    "RF_steps_per_period": 200,
+    "RF_rtol": 2e-13,
+    "RF_atol_SI": [
+      2e-17,
+      2e-17,
+      2e-15,
+      2e-15
+    ]
+  },
+  "phase_index": 0,
+  "level": "refined",
+  "extent": "pilot"
+}

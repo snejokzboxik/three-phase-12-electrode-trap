@@ -126,6 +126,8 @@ def integrate_trajectory(
     t_eval = np.linspace(0.0, simulation_duration, sample_count)
     try:
         solution = solve_ivp(rhs, (0.0, simulation_duration), y0, t_eval=t_eval, events=escape_event, rtol=rtol, atol=atol, max_step=period / max(int(max_step_per_period), 1), method="DOP853")
+        if not solution.success:
+            raise RuntimeError(f"Trajectory integration failed: {solution.message}")
         termination = "escape_radius" if solution.status == 1 else "completed"
     except InterpolationDomainError:
         # This is an explicit failure mode.  Callers can distinguish it from

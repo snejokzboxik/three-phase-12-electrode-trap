@@ -331,6 +331,8 @@ def _effective_grid(interpolator: FEMInterpolator, config: ProjectConfig, radius
 
 def pseudopotential_mesh_convergence(output_dir: Path, config: ProjectConfig) -> dict[str, object]:
     """Measure central angular irregularity as the P2 mesh is refined."""
+    if config.mesh.backend == "gmsh":
+        raise ValueError("Gmsh convergence requires separately generated meshes/configurations at each resolution.")
     from .pipeline import make_state
     radii = np.array([0.001, 0.002, 0.003], dtype=float)
     angles = np.linspace(0.0, 2.0 * np.pi, 48, endpoint=False)

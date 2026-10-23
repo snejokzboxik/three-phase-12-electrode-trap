@@ -16,11 +16,15 @@ def project_root() -> Path:
 def main(argv: list[str] | None = None) -> int:
     root = project_root()
     parser = argparse.ArgumentParser(description="FEM and particle-dynamics study of a three-phase 12-electrode trap")
-    parser.add_argument("command", choices=("fem", "animate", "multipoles", "effective-potential", "pseudopotential", "dc-bias", "finalize-dc-bias", "combined-effective-potential", "trajectory", "stability", "stability-study", "convergence", "mass-filter", "publication", "all"))
+    parser.add_argument("command", choices=("mesh", "fem", "animate", "multipoles", "effective-potential", "pseudopotential", "dc-bias", "finalize-dc-bias", "combined-effective-potential", "trajectory", "stability", "stability-study", "convergence", "mass-filter", "publication", "all"))
     parser.add_argument("--config", type=Path, default=root / "configs" / "default.toml")
     args = parser.parse_args(argv)
     config = load_config(args.config)
-    if args.command == "fem":
+    if args.command == "mesh":
+        from .gmsh_mesh import generate_mesh_artifacts
+        result = generate_mesh_artifacts(config, root)
+        print(f"Mesh complete (no Laplace solve): {result}")
+    elif args.command == "fem":
         result = run_fem(config, root)
         print(f"FEM complete: {result['summary']}")
     elif args.command == "animate":

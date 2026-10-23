@@ -1,0 +1,19 @@
+# Mesh-only generation: python -m three_phase_trap.cli mesh --config configs/gmsh_70um.toml
+# Coordinates and element sizes are in metres. Physics uses ProjectConfig defaults.
+[geometry]
+electrode_count = 12
+electrode_orbit_radius = 0.010
+electrode_radius = 0.0015
+outer_domain_radius = 0.025
+
+[mesh]
+backend = "gmsh"
+mesh_file = "outputs/meshes/gmsh_70um/trap.msh"
+resolution = 70e-6
+fine_radius = 0.008
+transition_radius = 0.014
+outer_resolution = 350e-6
+interior_seed = 12345
+
+[outputs]
+directory = "outputs/gmsh_70um"

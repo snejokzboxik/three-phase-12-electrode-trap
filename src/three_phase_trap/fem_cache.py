@@ -19,6 +19,7 @@ from .fem import element_electric_field, solve_instantaneous
 from .geometry import build_geometry
 from .interpolation import FEMInterpolator
 from .mesh import TrapMesh, build_mesh
+from .gmsh_mesh import configured_mesh, mesh_path, sha256
 from .voltages import phase_voltages
 
 
@@ -48,17 +49,24 @@ def _sha256_file(path: Path) -> str:
 def _solver_source_hashes() -> dict[str, str]:
     package = Path(__file__).resolve().parent
     result = {}
-    for name in ("fem.py", "mesh.py", "geometry.py"):
+    for name in ("fem.py", "mesh.py", "geometry.py", "gmsh_mesh.py"):
         result[name] = hashlib.sha256((package / name).read_bytes()).hexdigest()
     return result
 
 
 def fem_fingerprint_payload(config: ProjectConfig) -> dict[str, object]:
     """Return only geometry/FEM inputs that determine the cached basis."""
+    mesh_artifact = None
+    if config.mesh.backend == "gmsh":
+        path = mesh_path(config.mesh, Path(__file__).resolve().parents[2])
+        metadata = json.loads(path.with_suffix(".json").read_text(encoding="utf-8"))
+        mesh_artifact = {"sha256": sha256(path), "gmsh_version": metadata["gmsh_version"],
+                         "geometry_order": 1, "solution_order": 2}
     return {
         "cache_format_version": CACHE_FORMAT_VERSION,
         "geometry": asdict(config.geometry),
         "mesh": asdict(config.mesh),
+        "mesh_artifact": mesh_artifact,
         "element": {"family": "triangle", "type": "ElementTriP2", "polynomial_order": 2},
         "laplace_form": "integral(dot(grad(u), grad(v)))",
         "outer_boundary": {"type": "Dirichlet", "voltage_V": 0.0, "sampled_circle": True},
@@ -231,10 +239,7 @@ def load_or_build_fem_state(config: ProjectConfig, project_root: Path) -> tuple[
             config.geometry.electrode_count, config.geometry.electrode_orbit_radius,
             config.geometry.electrode_radius, config.geometry.outer_domain_radius,
         )
-        trap_mesh = build_mesh(
-            geometry, config.mesh.resolution, config.mesh.boundary_points_per_electrode,
-            config.mesh.outer_boundary_points, config.mesh.interior_seed,
-        )
+        trap_mesh = configured_mesh(geometry, config.mesh, project_root)
         solutions = solve_basis(trap_mesh)
         save_fem_cache(config, project_root, solutions)
         state = load_fem_cache(config, project_root)

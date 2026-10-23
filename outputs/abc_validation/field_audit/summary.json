@@ -1,0 +1,314 @@
+{
+  "status": "audit_complete_spatial_convergence_unverified",
+  "U0_V": 250.0,
+  "frequency_Hz": 100000.0,
+  "mass_kg": 1e-15,
+  "charge_C": 1e-12,
+  "quadrature_reconstruction_max_abs_error_V_per_m": 5.820766091346741e-11,
+  "radii": [
+    {
+      "radius_m": 2.5e-05,
+      "rf_vector_rms_V_per_m": 0.0066638274445033445,
+      "rotation_90deg_relative_rms": 3.4768138355444155e-07,
+      "C4_amplitude_from_potential_V_per_m4": 16211628403.285242,
+      "forbidden_potential_mode_fraction": 0.0003776858192719571,
+      "eta_elementwise_cycle_sample_max": 3.879212794162757e-06,
+      "micromotion_amplitude_max_m": 3.2763583228485385e-11
+    },
+    {
+      "radius_m": 5e-05,
+      "rf_vector_rms_V_per_m": 0.021029054648393358,
+      "rotation_90deg_relative_rms": 1.0074904298304161e-07,
+      "C4_amplitude_from_potential_V_per_m4": 47908811660.639244,
+      "forbidden_potential_mode_fraction": 1.1423724381196835e-05,
+      "eta_elementwise_cycle_sample_max": 3.879212794162757e-06,
+      "micromotion_amplitude_max_m": 7.14438226988651e-11
+    },
+    {
+      "radius_m": 0.0001,
+      "rf_vector_rms_V_per_m": 0.13678998313749852,
+      "rotation_90deg_relative_rms": 1.555976853725819e-08,
+      "C4_amplitude_from_potential_V_per_m4": 32743486449.58168,
+      "forbidden_potential_mode_fraction": 4.91704116668208e-06,
+      "eta_elementwise_cycle_sample_max": 1.4691335496389605e-05,
+      "micromotion_amplitude_max_m": 3.893146847642905e-10
+    },
+    {
+      "radius_m": 0.00025,
+      "rf_vector_rms_V_per_m": 2.0768323426030557,
+      "rotation_90deg_relative_rms": 9.491760912143479e-10,
+      "C4_amplitude_from_potential_V_per_m4": 33099279733.468178,
+      "forbidden_potential_mode_fraction": 2.8035699489029008e-05,
+      "eta_elementwise_cycle_sample_max": 7.045062578514719e-05,
+      "micromotion_amplitude_max_m": 5.6476148910893995e-09
+    },
+    {
+      "radius_m": 0.0005,
+      "rf_vector_rms_V_per_m": 16.5285463241328,
+      "rotation_90deg_relative_rms": 1.4881415563390715e-10,
+      "C4_amplitude_from_potential_V_per_m4": 33044314200.47862,
+      "forbidden_potential_mode_fraction": 4.440181143070734e-06,
+      "eta_elementwise_cycle_sample_max": 0.0002957252499768493,
+      "micromotion_amplitude_max_m": 4.284899449424025e-08
+    },
+    {
+      "radius_m": 0.001,
+      "rf_vector_rms_V_per_m": 132.14645814151487,
+      "rotation_90deg_relative_rms": 1.7426125916814576e-11,
+      "C4_amplitude_from_potential_V_per_m4": 33037464611.173775,
+      "forbidden_potential_mode_fraction": 1.5306127872433294e-06,
+      "eta_elementwise_cycle_sample_max": 0.0011072230261744136,
+      "micromotion_amplitude_max_m": 3.3612396062746167e-07
+    },
+    {
+      "radius_m": 0.002,
+      "rf_vector_rms_V_per_m": 1057.2478150243112,
+      "rotation_90deg_relative_rms": 2.3937862558105588e-12,
+      "C4_amplitude_from_potential_V_per_m4": 33038439272.36949,
+      "forbidden_potential_mode_fraction": 4.869607117229876e-07,
+      "eta_elementwise_cycle_sample_max": 0.004257321957530457,
+      "micromotion_amplitude_max_m": 2.6877190036658824e-06
+    },
+    {
+      "radius_m": 0.004,
+      "rf_vector_rms_V_per_m": 8465.067011778736,
+      "rotation_90deg_relative_rms": 4.4411672645560196e-13,
+      "C4_amplitude_from_potential_V_per_m4": 33038358907.019444,
+      "forbidden_potential_mode_fraction": 1.1999374406632785e-07,
+      "eta_elementwise_cycle_sample_max": 0.018175040405869553,
+      "micromotion_amplitude_max_m": 2.231113981447042e-05
+    },
+    {
+      "radius_m": 0.006,
+      "rf_vector_rms_V_per_m": 29159.02352749017,
+      "rotation_90deg_relative_rms": 1.8853860817519242e-13,
+      "C4_amplitude_from_potential_V_per_m4": 33038355737.185917,
+      "forbidden_potential_mode_fraction": 3.4989729769295873e-07,
+      "eta_elementwise_cycle_sample_max": 0.055261656718657744,
+      "micromotion_amplitude_max_m": 8.744265888828078e-05
+    },
+    {
+      "radius_m": 0.008,
+      "rf_vector_rms_V_per_m": 81108.10765860193,
+      "rotation_90deg_relative_rms": 1.2972471601662314e-13,
+      "C4_amplitude_from_potential_V_per_m4": 33038354674.592068,
+      "forbidden_potential_mode_fraction": 6.58038864629598e-08,
+      "eta_elementwise_cycle_sample_max": 0.19209854134058163,
+      "micromotion_amplitude_max_m": 0.0002940917054824204
+    }
+  ],
+  "order32_holdout": [
+    {
+      "radius_m": 2.5e-05,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 63.015021110928664,
+      "field_relative_rms_discrepancy": 0.8777506952146891,
+      "field_absolute_rms_discrepancy_V_per_m": 0.005849179172203536,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 5e-05,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 4.21897956751833,
+      "field_relative_rms_discrepancy": 0.2647104463240747,
+      "field_absolute_rms_discrepancy_V_per_m": 0.005566610441749564,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.0001,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 0.38640458900790214,
+      "field_relative_rms_discrepancy": 0.08236571656705251,
+      "field_absolute_rms_discrepancy_V_per_m": 0.011266804980315093,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.00025,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 0.011297245779839938,
+      "field_relative_rms_discrepancy": 0.028695793515272607,
+      "field_absolute_rms_discrepancy_V_per_m": 0.059596352069177176,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.0005,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 0.0008908985182298152,
+      "field_relative_rms_discrepancy": 0.007523913871076513,
+      "field_absolute_rms_discrepancy_V_per_m": 0.1243593589568735,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.001,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 8.239890815498972e-05,
+      "field_relative_rms_discrepancy": 0.0016478100754673953,
+      "field_absolute_rms_discrepancy_V_per_m": 0.21775226516291862,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.002,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 9.976976792370832e-06,
+      "field_relative_rms_discrepancy": 0.00041591208831427055,
+      "field_absolute_rms_discrepancy_V_per_m": 0.4397221466124609,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.004,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 1.4290609368737665e-06,
+      "field_relative_rms_discrepancy": 0.00011394125527191172,
+      "field_absolute_rms_discrepancy_V_per_m": 0.9645203612829198,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.006,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 7.880438819024494e-07,
+      "field_relative_rms_discrepancy": 8.403478590090137e-05,
+      "field_absolute_rms_discrepancy_V_per_m": 2.4503722992119825,
+      "field_vs_order32_relative_rms": 0.0
+    },
+    {
+      "radius_m": 0.008,
+      "fit_order": 32,
+      "design_condition": 27.321821013508337,
+      "potential_relative_rms_discrepancy": 6.838322544290315e-05,
+      "field_relative_rms_discrepancy": 0.0006122615871496569,
+      "field_absolute_rms_discrepancy_V_per_m": 49.65937872576086,
+      "field_vs_order32_relative_rms": 0.0
+    }
+  ],
+  "candidate_radii_below_1percent_fit_discrepancy_m": [
+    0.0005,
+    0.001,
+    0.002,
+    0.004,
+    0.006,
+    0.008
+  ],
+  "eta_scope": "max over 64 RF phases of the within-element Jacobian; interelement jumps excluded",
+  "fit_scope": "Potential-based harmonic reconstruction audit, not independent FEM truth and not completed model B",
+  "jump_radial_bins": [
+    {
+      "r_min_mm": 0.0,
+      "r_max_mm": 0.075,
+      "sampled_facets": 24,
+      "relative_jump_median": 0.3069807313493566,
+      "relative_jump_p95": 0.5099661929813507,
+      "absolute_jump_rms_V_per_m": 0.005398392162162818
+    },
+    {
+      "r_min_mm": 0.075,
+      "r_max_mm": 0.15,
+      "sampled_facets": 72,
+      "relative_jump_median": 0.07651939539150379,
+      "relative_jump_p95": 0.15674657124800187,
+      "absolute_jump_rms_V_per_m": 0.015180223046033883
+    },
+    {
+      "r_min_mm": 0.15,
+      "r_max_mm": 0.375,
+      "sampled_facets": 288,
+      "relative_jump_median": 0.01338357404317371,
+      "relative_jump_p95": 0.05399573764093784,
+      "absolute_jump_rms_V_per_m": 0.044789521690883426
+    },
+    {
+      "r_min_mm": 0.375,
+      "r_max_mm": 0.75,
+      "sampled_facets": 77,
+      "relative_jump_median": 0.0012398085730492298,
+      "relative_jump_p95": 0.00685375193856775,
+      "absolute_jump_rms_V_per_m": 0.061601652966090485
+    },
+    {
+      "r_min_mm": 0.75,
+      "r_max_mm": 1.5,
+      "sampled_facets": 301,
+      "relative_jump_median": 0.00029739437131895695,
+      "relative_jump_p95": 0.0015734496859456323,
+      "absolute_jump_rms_V_per_m": 0.12742615072094157
+    },
+    {
+      "r_min_mm": 1.5,
+      "r_max_mm": 3.0,
+      "sampled_facets": 1177,
+      "relative_jump_median": 1.3800723955557115e-05,
+      "relative_jump_p95": 0.00029283698935610294,
+      "absolute_jump_rms_V_per_m": 0.1616510701907415
+    },
+    {
+      "r_min_mm": 3.0,
+      "r_max_mm": 5.0,
+      "sampled_facets": 2754,
+      "relative_jump_median": 3.500058024736617e-06,
+      "relative_jump_p95": 6.971919190827177e-05,
+      "absolute_jump_rms_V_per_m": 0.226569107912142
+    },
+    {
+      "r_min_mm": 5.0,
+      "r_max_mm": 7.0,
+      "sampled_facets": 4150,
+      "relative_jump_median": 3.6990127693394185e-06,
+      "relative_jump_p95": 3.0300199990484972e-05,
+      "absolute_jump_rms_V_per_m": 0.5404982342269834
+    },
+    {
+      "r_min_mm": 7.0,
+      "r_max_mm": 8.0,
+      "sampled_facets": 2583,
+      "relative_jump_median": 6.007200060950324e-06,
+      "relative_jump_p95": 2.9928770311101698e-05,
+      "absolute_jump_rms_V_per_m": 1.0065511633247626
+    }
+  ],
+  "pilot_1mm_representation_discrepancy": 0.0016478100754673953,
+  "spatial_accuracy_status": "inconclusive until refined-mesh comparison",
+  "provenance": {
+    "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+    "python": "3.14.3",
+    "versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.18.1",
+      "scikit-fem": "12.0.2",
+      "matplotlib": "3.10.8"
+    },
+    "source_sha256": {
+      "scripts/run_abc_initial_checks.py": "66183be413909fb8b85fa2c4dc63a4495a921b07855b3852c58588bcb0645aaa",
+      "src/three_phase_trap/accelerated_p2.py": "390cf8037da964c9b6a53ffe954eb8df62beee1d9c20f3b9a9d5402c4d2a95fd",
+      "src/three_phase_trap/cli.py": "7ac8bd6c810ff80606142a643259600a454fe00441e964d8486ccb8e603b6dd8",
+      "src/three_phase_trap/config.py": "419576dbedd49b321986d55b3bc478b8ada1ac8ea1647483a0f01cc6380f980c",
+      "src/three_phase_trap/dynamics.py": "9419498c4cf3ee865071f6d68ec303b4eb490d6a178d5bde125ead3b1cf73b2a",
+      "src/three_phase_trap/effective_potential.py": "452e4a7b073f41bddad0a3c0f524b18247065ba9a393d90a69c6182fb08b746e",
+      "src/three_phase_trap/fem.py": "0688e8ccc7ccc60c1e9dad369a02ac3100c20245b36d4930e41387a80d1f920d",
+      "src/three_phase_trap/fem_cache.py": "3bef631ec0d115b73d5d07e51d56e17759738547ed66c6f6e916751e01b3ea83",
+      "src/three_phase_trap/fields.py": "da4b8a7d79c979ceda83bb5550a7120b1882799a5c6a8714d90a058f15b4bce8",
+      "src/three_phase_trap/geometry.py": "37e9eb9b348eefc5c7c492766fc2ba87c2ecbe3171239dacaea9c28bb3827adc",
+      "src/three_phase_trap/gmsh_mesh.py": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d",
+      "src/three_phase_trap/interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+      "src/three_phase_trap/mass_filter.py": "c37932e6a53219ead84af893b1c5a5c8878bee8903231a389fe37fd0dfe0fa60",
+      "src/three_phase_trap/mesh.py": "116c22c92731f6712c5270b7ce5baae1f7154e162f66d5abf6947237df446931",
+      "src/three_phase_trap/multipoles.py": "6cef335ff83207a85f101d362e2a9f1952cbf61143f0604e3b76861b5e35356a",
+      "src/three_phase_trap/pipeline.py": "a217967607f7c0806748b1754125143a2e40f61e2c4589bd20497cb2892525cd",
+      "src/three_phase_trap/publication.py": "c8ff53452b64432c1ccac11e0338bd5e47653d773eeb04f5ae896465f974939b",
+      "src/three_phase_trap/stability.py": "2cf8c094ed211bbd2435a55ff84f293c19aeffd15cd2df7cb059ad296c82f97a",
+      "src/three_phase_trap/stability_study.py": "307eec3962111d84fb5ffefb7d67023f5d1beb53da037e732e1f007e03a8ce9e",
+      "src/three_phase_trap/validation_benchmarks.py": "41c46df8443e89e2a889f7083a808f408589a3a52b0d2c172f68fcaf90cec4f9",
+      "src/three_phase_trap/validation_field_audit.py": "d94c1ea93955c9abd3b4a187b1067841acf4ae511dfb0c0e608085f258be82c7",
+      "src/three_phase_trap/visualization.py": "bbd9f782f2db9e300634b9f2ff369fed24403f74a676e825ebf0b03cf14dfcc1",
+      "src/three_phase_trap/voltages.py": "ea4f84910baf2aeed4a941f6acab17d02e60a2da22d7c488ee3aaa1fdf614641",
+      "src/three_phase_trap/__init__.py": "58f9387040921c9fc3b34957df2b314719cf2a3e0184a2a7e7db137be36f6250"
+    }
+  }
+}

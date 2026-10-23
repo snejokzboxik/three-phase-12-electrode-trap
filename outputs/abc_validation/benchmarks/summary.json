@@ -1,0 +1,636 @@
+{
+  "status": "passed",
+  "scope": "Smooth analytic benchmarks, not FEM trajectory validation",
+  "normalization_checks": [
+    {
+      "order": 2,
+      "fixed_point_time_average_relative_error": 8.36873319135838e-15,
+      "force_vs_energy_gradient_relative_error": 5.077555279534537e-11
+    },
+    {
+      "order": 4,
+      "fixed_point_time_average_relative_error": 1.1056727507348182e-14,
+      "force_vs_energy_gradient_relative_error": 3.6931459237124865e-11
+    }
+  ],
+  "cases": [
+    {
+      "order": 2,
+      "phase_rad": 0.0,
+      "frequency_multiplier": 1,
+      "omega": 20.0,
+      "amplitude": 2.0,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 31.41592653589793,
+      "slow_period_estimate": 31.41592653589793,
+      "slow_initial_state": [
+        1.0,
+        0.1,
+        0.0,
+        0.03
+      ],
+      "full_initial_state": [
+        1.01,
+        0.099,
+        0.02,
+        0.2297
+      ],
+      "ic_inverse_max_error": 2.0816681711721685e-17,
+      "ode_step_convergence": {
+        "relative_rms": 1.8239878125032242e-13,
+        "relative_max": 3.694465009865e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.028890054113695943,
+        "relative_max": 0.06307309873962025
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 0.00011709413277339349,
+        "relative_max": 0.00016458413536202243
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.028889901948155387,
+        "relative_max": 0.0630603880041706
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 2.4466817231947724e-07,
+        "relative_max": 3.459186926371325e-07
+      },
+      "quadrupole_exact_error": {
+        "relative_rms": 8.158731046202054e-12,
+        "relative_max": 2.8234546599725534e-11
+      },
+      "slow_energy_relative_drift": 6.720478357295137e-16
+    },
+    {
+      "order": 2,
+      "phase_rad": 0.0,
+      "frequency_multiplier": 2,
+      "omega": 40.0,
+      "amplitude": 4.0,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 31.41592653589793,
+      "slow_period_estimate": 31.41592653589793,
+      "slow_initial_state": [
+        1.0,
+        0.1,
+        0.0,
+        0.03
+      ],
+      "full_initial_state": [
+        1.005,
+        0.0995,
+        0.02,
+        0.22985
+      ],
+      "ic_inverse_max_error": 1.0408340855860843e-17,
+      "ode_step_convergence": {
+        "relative_rms": 8.929599667206279e-14,
+        "relative_max": 2.0338154028017503e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.014453339563832098,
+        "relative_max": 0.031483657310065485
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 2.9345057951307864e-05,
+        "relative_max": 4.114756267939405e-05
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.014453321334540793,
+        "relative_max": 0.03148064758501837
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 6.104911787966058e-08,
+        "relative_max": 8.633664178941637e-08
+      },
+      "quadrupole_exact_error": {
+        "relative_rms": 7.120496547187308e-11,
+        "relative_max": 2.767964684950198e-10
+      },
+      "slow_energy_relative_drift": 6.720478357295137e-16
+    },
+    {
+      "order": 2,
+      "phase_rad": 0.0,
+      "frequency_multiplier": 4,
+      "omega": 80.0,
+      "amplitude": 8.0,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 31.41592653589793,
+      "slow_period_estimate": 31.41592653589793,
+      "slow_initial_state": [
+        1.0,
+        0.1,
+        0.0,
+        0.03
+      ],
+      "full_initial_state": [
+        1.0025,
+        0.09975,
+        0.02,
+        0.229925
+      ],
+      "ic_inverse_max_error": 2.0816681711721685e-17,
+      "ode_step_convergence": {
+        "relative_rms": 1.1157203678795934e-12,
+        "relative_max": 2.2036395937488764e-12
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.007229067012969906,
+        "relative_max": 0.015729196995422676
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 7.345063957174988e-06,
+        "relative_max": 1.0286985961007968e-05
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.0072290647825082625,
+        "relative_max": 0.01572841709003228
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 1.524752788984691e-08,
+        "relative_max": 2.15628145965837e-08
+      },
+      "quadrupole_exact_error": {
+        "relative_rms": 5.427898108045197e-10,
+        "relative_max": 1.8090088746520758e-09
+      },
+      "slow_energy_relative_drift": 6.720478357295137e-16
+    },
+    {
+      "order": 2,
+      "phase_rad": 1.5707963267948966,
+      "frequency_multiplier": 1,
+      "omega": 20.0,
+      "amplitude": 2.0,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 31.41592653589793,
+      "slow_period_estimate": 31.41592653589793,
+      "slow_initial_state": [
+        1.0,
+        0.1,
+        0.0,
+        0.03
+      ],
+      "full_initial_state": [
+        1.001,
+        0.11,
+        -0.1997,
+        0.05000000000000002
+      ],
+      "ic_inverse_max_error": 2.2442984970449942e-17,
+      "ode_step_convergence": {
+        "relative_rms": 1.6819741656336295e-13,
+        "relative_max": 3.3804560006439447e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.027836693243818753,
+        "relative_max": 0.06291782382323967
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 0.00011709413277339349,
+        "relative_max": 0.00016458413536202243
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.02783660428311426,
+        "relative_max": 0.06293429215059278
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 2.448244843974787e-07,
+        "relative_max": 3.461584007145672e-07
+      },
+      "quadrupole_exact_error": {
+        "relative_rms": 8.270800471041825e-12,
+        "relative_max": 3.023702371070718e-11
+      },
+      "slow_energy_relative_drift": 6.720478357295137e-16
+    },
+    {
+      "order": 2,
+      "phase_rad": 1.5707963267948966,
+      "frequency_multiplier": 2,
+      "omega": 40.0,
+      "amplitude": 4.0,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 31.41592653589793,
+      "slow_period_estimate": 31.41592653589793,
+      "slow_initial_state": [
+        1.0,
+        0.1,
+        0.0,
+        0.03
+      ],
+      "full_initial_state": [
+        1.0005,
+        0.10500000000000001,
+        -0.19985,
+        0.05000000000000002
+      ],
+      "ic_inverse_max_error": 1.1102230246251565e-16,
+      "ode_step_convergence": {
+        "relative_rms": 9.042528298870545e-14,
+        "relative_max": 2.063619502271493e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.013952610336185887,
+        "relative_max": 0.031441867730061836
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 2.9345057951307864e-05,
+        "relative_max": 4.114756267939405e-05
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.013952598910709173,
+        "relative_max": 0.03144577681721472
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 6.106617101280976e-08,
+        "relative_max": 8.635048359673955e-08
+      },
+      "quadrupole_exact_error": {
+        "relative_rms": 6.983349634881958e-11,
+        "relative_max": 2.2721777477261977e-10
+      },
+      "slow_energy_relative_drift": 6.720478357295137e-16
+    },
+    {
+      "order": 2,
+      "phase_rad": 1.5707963267948966,
+      "frequency_multiplier": 4,
+      "omega": 80.0,
+      "amplitude": 8.0,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 31.41592653589793,
+      "slow_period_estimate": 31.41592653589793,
+      "slow_initial_state": [
+        1.0,
+        0.1,
+        0.0,
+        0.03
+      ],
+      "full_initial_state": [
+        1.00025,
+        0.10250000000000001,
+        -0.199925,
+        0.05000000000000002
+      ],
+      "ic_inverse_max_error": 1.9488534050426942e-17,
+      "ode_step_convergence": {
+        "relative_rms": 1.0853930241659047e-12,
+        "relative_max": 2.146429569071925e-12
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.006985085377775909,
+        "relative_max": 0.015715017390225017
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 7.345063957174988e-06,
+        "relative_max": 1.0286985961007968e-05
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.006985083930177039,
+        "relative_max": 0.015715969480013157
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 1.5249501809287115e-08,
+        "relative_max": 2.1565701773917656e-08
+      },
+      "quadrupole_exact_error": {
+        "relative_rms": 5.7252902373807e-10,
+        "relative_max": 1.945273248857742e-09
+      },
+      "slow_energy_relative_drift": 6.720478357295137e-16
+    },
+    {
+      "order": 4,
+      "phase_rad": 0.0,
+      "frequency_multiplier": 1,
+      "omega": 20.0,
+      "amplitude": 1.6666666666666667,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 14.765485471872028,
+      "slow_period_estimate": 14.57190388732549,
+      "slow_initial_state": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_initial_state": [
+        1.0,
+        -0.016666666666666666,
+        0.33333333333333337,
+        0.0
+      ],
+      "ic_inverse_max_error": 4.4023254361053735e-18,
+      "ode_step_convergence": {
+        "relative_rms": 3.226825686377377e-14,
+        "relative_max": 7.52336675189503e-14
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.09838959824769823,
+        "relative_max": 0.22387587047294533
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 0.0005907231982420759,
+        "relative_max": 0.0013686317828239813
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.09838954158327165,
+        "relative_max": 0.22384818557205283
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 1.1080685631300448e-06,
+        "relative_max": 2.5083087456991415e-06
+      },
+      "quadrupole_exact_error": null,
+      "slow_energy_relative_drift": 4.4676762289697076e-13
+    },
+    {
+      "order": 4,
+      "phase_rad": 0.0,
+      "frequency_multiplier": 2,
+      "omega": 40.0,
+      "amplitude": 3.3333333333333335,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 14.765485471872028,
+      "slow_period_estimate": 14.57190388732549,
+      "slow_initial_state": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_initial_state": [
+        1.0,
+        -0.008333333333333333,
+        0.33333333333333337,
+        0.0
+      ],
+      "ic_inverse_max_error": 1.1836050913466738e-18,
+      "ode_step_convergence": {
+        "relative_rms": 1.1233272199565248e-13,
+        "relative_max": 2.625896569377431e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.0494929233739851,
+        "relative_max": 0.11201841127265896
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 0.00015109708437178917,
+        "relative_max": 0.00034268560138583926
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.04949296807682119,
+        "relative_max": 0.11201849372038891
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 2.7954835837335826e-07,
+        "relative_max": 6.254080890804423e-07
+      },
+      "quadrupole_exact_error": null,
+      "slow_energy_relative_drift": 4.4676762289697076e-13
+    },
+    {
+      "order": 4,
+      "phase_rad": 0.0,
+      "frequency_multiplier": 4,
+      "omega": 80.0,
+      "amplitude": 6.666666666666667,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 14.765485471872028,
+      "slow_period_estimate": 14.57190388732549,
+      "slow_initial_state": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_initial_state": [
+        1.0,
+        -0.004166666666666667,
+        0.33333333333333337,
+        0.0
+      ],
+      "ic_inverse_max_error": 1.5686363771898467e-19,
+      "ode_step_convergence": {
+        "relative_rms": 2.584887121560357e-13,
+        "relative_max": 5.483836530105475e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.02483322448561293,
+        "relative_max": 0.05601253729304495
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 3.818204709081906e-05,
+        "relative_max": 8.570445475530875e-05
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.02483323345198162,
+        "relative_max": 0.05601189771763984
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 7.024520458113934e-08,
+        "relative_max": 1.5621446014381164e-07
+      },
+      "quadrupole_exact_error": null,
+      "slow_energy_relative_drift": 4.4676762289697076e-13
+    },
+    {
+      "order": 4,
+      "phase_rad": 1.5707963267948966,
+      "frequency_multiplier": 1,
+      "omega": 20.0,
+      "amplitude": 1.6666666666666667,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 14.765485471872028,
+      "slow_period_estimate": 14.57190388732549,
+      "slow_initial_state": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_initial_state": [
+        1.0166666666666666,
+        -1.020538999289461e-18,
+        2.0410779985789222e-17,
+        0.33333333333333337
+      ],
+      "ic_inverse_max_error": 1.7529837230923522e-16,
+      "ode_step_convergence": {
+        "relative_rms": 4.035439175525981e-14,
+        "relative_max": 8.263487468623017e-14
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.10076277786158802,
+        "relative_max": 0.22910624922867698
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 0.0005907231982420759,
+        "relative_max": 0.0013686317828239813
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.10076178635206025,
+        "relative_max": 0.22907395584833076
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 1.1070967997619943e-06,
+        "relative_max": 2.5023398712850995e-06
+      },
+      "quadrupole_exact_error": null,
+      "slow_energy_relative_drift": 4.4676762289697076e-13
+    },
+    {
+      "order": 4,
+      "phase_rad": 1.5707963267948966,
+      "frequency_multiplier": 2,
+      "omega": 40.0,
+      "amplitude": 3.3333333333333335,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 14.765485471872028,
+      "slow_period_estimate": 14.57190388732549,
+      "slow_initial_state": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_initial_state": [
+        1.0083333333333333,
+        -5.102694996447305e-19,
+        2.0410779985789222e-17,
+        0.33333333333333337
+      ],
+      "ic_inverse_max_error": 1.8037978015724358e-32,
+      "ode_step_convergence": {
+        "relative_rms": 1.6015974432647733e-13,
+        "relative_max": 3.2255360503129253e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.05009453127012274,
+        "relative_max": 0.11324744493473857
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 0.00015109708437178917,
+        "relative_max": 0.00034268560138583926
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.050094444906014966,
+        "relative_max": 0.1132537027702835
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 2.7965305603493853e-07,
+        "relative_max": 6.255510617843328e-07
+      },
+      "quadrupole_exact_error": null,
+      "slow_energy_relative_drift": 4.4676762289697076e-13
+    },
+    {
+      "order": 4,
+      "phase_rad": 1.5707963267948966,
+      "frequency_multiplier": 4,
+      "omega": 80.0,
+      "amplitude": 6.666666666666667,
+      "mass": 1.0,
+      "charge": 1.0,
+      "dimensionless_benchmark": true,
+      "duration": 14.765485471872028,
+      "slow_period_estimate": 14.57190388732549,
+      "slow_initial_state": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_initial_state": [
+        1.0041666666666667,
+        -2.5513474982236525e-19,
+        2.0410779985789222e-17,
+        0.33333333333333337
+      ],
+      "ic_inverse_max_error": 4.4027810758262646e-35,
+      "ode_step_convergence": {
+        "relative_rms": 1.478042291576266e-13,
+        "relative_max": 3.353058561646643e-13
+      },
+      "averaged_vs_slow": {
+        "relative_rms": 0.024984770536550713,
+        "relative_max": 0.05632275385531822
+      },
+      "filter_bias_on_slow": {
+        "relative_rms": 3.818204709081906e-05,
+        "relative_max": 8.570445475530875e-05
+      },
+      "micromotion_subtraction_vs_slow": {
+        "relative_rms": 0.024984761735279432,
+        "relative_max": 0.05632285114240118
+      },
+      "filter_64_vs_32_samples": {
+        "relative_rms": 7.026931409735546e-08,
+        "relative_max": 1.56336848158839e-07
+      },
+      "quadrupole_exact_error": null,
+      "slow_energy_relative_drift": 4.4676762289697076e-13
+    }
+  ],
+  "provenance": {
+    "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+    "python": "3.14.3",
+    "versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.18.1",
+      "scikit-fem": "12.0.2",
+      "matplotlib": "3.10.8"
+    },
+    "source_sha256": {
+      "scripts/run_abc_initial_checks.py": "f30e02a61b56fbadf91ae006110e2b7a5050f321911e07a6f0d6c7304f5cea34",
+      "src/three_phase_trap/accelerated_p2.py": "390cf8037da964c9b6a53ffe954eb8df62beee1d9c20f3b9a9d5402c4d2a95fd",
+      "src/three_phase_trap/cli.py": "7ac8bd6c810ff80606142a643259600a454fe00441e964d8486ccb8e603b6dd8",
+      "src/three_phase_trap/config.py": "419576dbedd49b321986d55b3bc478b8ada1ac8ea1647483a0f01cc6380f980c",
+      "src/three_phase_trap/dynamics.py": "9419498c4cf3ee865071f6d68ec303b4eb490d6a178d5bde125ead3b1cf73b2a",
+      "src/three_phase_trap/effective_potential.py": "452e4a7b073f41bddad0a3c0f524b18247065ba9a393d90a69c6182fb08b746e",
+      "src/three_phase_trap/fem.py": "0688e8ccc7ccc60c1e9dad369a02ac3100c20245b36d4930e41387a80d1f920d",
+      "src/three_phase_trap/fem_cache.py": "3bef631ec0d115b73d5d07e51d56e17759738547ed66c6f6e916751e01b3ea83",
+      "src/three_phase_trap/fields.py": "da4b8a7d79c979ceda83bb5550a7120b1882799a5c6a8714d90a058f15b4bce8",
+      "src/three_phase_trap/geometry.py": "37e9eb9b348eefc5c7c492766fc2ba87c2ecbe3171239dacaea9c28bb3827adc",
+      "src/three_phase_trap/gmsh_mesh.py": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d",
+      "src/three_phase_trap/interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+      "src/three_phase_trap/mass_filter.py": "c37932e6a53219ead84af893b1c5a5c8878bee8903231a389fe37fd0dfe0fa60",
+      "src/three_phase_trap/mesh.py": "116c22c92731f6712c5270b7ce5baae1f7154e162f66d5abf6947237df446931",
+      "src/three_phase_trap/multipoles.py": "6cef335ff83207a85f101d362e2a9f1952cbf61143f0604e3b76861b5e35356a",
+      "src/three_phase_trap/pipeline.py": "a217967607f7c0806748b1754125143a2e40f61e2c4589bd20497cb2892525cd",
+      "src/three_phase_trap/publication.py": "c8ff53452b64432c1ccac11e0338bd5e47653d773eeb04f5ae896465f974939b",
+      "src/three_phase_trap/stability.py": "2cf8c094ed211bbd2435a55ff84f293c19aeffd15cd2df7cb059ad296c82f97a",
+      "src/three_phase_trap/stability_study.py": "307eec3962111d84fb5ffefb7d67023f5d1beb53da037e732e1f007e03a8ce9e",
+      "src/three_phase_trap/validation_benchmarks.py": "41c46df8443e89e2a889f7083a808f408589a3a52b0d2c172f68fcaf90cec4f9",
+      "src/three_phase_trap/validation_field_audit.py": "7c00521954f4b496f9a7e672aeae9216f661daabc6214f451f6ce9ad4625dc80",
+      "src/three_phase_trap/visualization.py": "bbd9f782f2db9e300634b9f2ff369fed24403f74a676e825ebf0b03cf14dfcc1",
+      "src/three_phase_trap/voltages.py": "ea4f84910baf2aeed4a941f6acab17d02e60a2da22d7c488ee3aaa1fdf614641",
+      "src/three_phase_trap/__init__.py": "58f9387040921c9fc3b34957df2b314719cf2a3e0184a2a7e7db137be36f6250"
+    }
+  }
+}

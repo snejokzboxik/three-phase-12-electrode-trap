@@ -1,0 +1,215 @@
+{
+  "round_trip_arrays_equal": true,
+  "laplace_solved": true,
+  "boundary_dofs": 4176,
+  "interior_dofs": 329965,
+  "dc_minus_abc_max_error_V": 8.881784197001252e-15,
+  "bases": {
+    "A": {
+      "potential_min_V": 0.0,
+      "potential_max_V": 1.0,
+      "boundary_max_error_V": 0.0,
+      "relative_weak_Laplace_residual_l2": 1.7276543055176351e-16,
+      "centroid_field_vs_interpolator_max_error_V_per_m": 1.5688783605583012e-11
+    },
+    "B": {
+      "potential_min_V": 0.0,
+      "potential_max_V": 1.0,
+      "boundary_max_error_V": 0.0,
+      "relative_weak_Laplace_residual_l2": 1.7374252063604664e-16,
+      "centroid_field_vs_interpolator_max_error_V_per_m": 1.2278178473934531e-11
+    },
+    "C": {
+      "potential_min_V": 0.0,
+      "potential_max_V": 1.0,
+      "boundary_max_error_V": 0.0,
+      "relative_weak_Laplace_residual_l2": 1.7125476165186458e-16,
+      "centroid_field_vs_interpolator_max_error_V_per_m": 1.0913936421275139e-11
+    },
+    "DC": {
+      "potential_min_V": 0.0,
+      "potential_max_V": 1.0,
+      "boundary_max_error_V": 0.0,
+      "relative_weak_Laplace_residual_l2": 1.7679025964780589e-16,
+      "centroid_field_vs_interpolator_max_error_V_per_m": 1.8189894035458565e-11
+    }
+  },
+  "direct_superposition_cases": [
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.0,
+      "Udc_V": 100.0,
+      "relative_rms_potential_error": 6.862907500563499e-16,
+      "relative_rms_field_error": 1.525709844002882e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.16666666666666666,
+      "Udc_V": 100.0,
+      "relative_rms_potential_error": 7.895744730670538e-16,
+      "relative_rms_field_error": 1.5447763262199018e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.3333333333333333,
+      "Udc_V": 100.0,
+      "relative_rms_potential_error": 8.457074271955432e-16,
+      "relative_rms_field_error": 1.5286625329457286e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.5,
+      "Udc_V": 100.0,
+      "relative_rms_potential_error": 8.607644449853213e-16,
+      "relative_rms_field_error": 1.5513672784375e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.6666666666666666,
+      "Udc_V": 100.0,
+      "relative_rms_potential_error": 8.751010760427288e-16,
+      "relative_rms_field_error": 1.522818077304052e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.8333333333333334,
+      "Udc_V": 100.0,
+      "relative_rms_potential_error": 8.443522535458531e-16,
+      "relative_rms_field_error": 1.5332710796754147e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.0,
+      "Udc_V": 500.0,
+      "relative_rms_potential_error": 6.771151899037012e-16,
+      "relative_rms_field_error": 2.2905117624163193e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.16666666666666666,
+      "Udc_V": 500.0,
+      "relative_rms_potential_error": 7.096046113059387e-16,
+      "relative_rms_field_error": 2.3284846415088133e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.3333333333333333,
+      "Udc_V": 500.0,
+      "relative_rms_potential_error": 7.195823281667608e-16,
+      "relative_rms_field_error": 2.3267637611573868e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.5,
+      "Udc_V": 500.0,
+      "relative_rms_potential_error": 6.899018754719111e-16,
+      "relative_rms_field_error": 2.353179760932384e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.6666666666666666,
+      "Udc_V": 500.0,
+      "relative_rms_potential_error": 8.37768086761526e-16,
+      "relative_rms_field_error": 2.3247270505836603e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.8333333333333334,
+      "Udc_V": 500.0,
+      "relative_rms_potential_error": 6.797011881988706e-16,
+      "relative_rms_field_error": 2.3132286258610027e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.0,
+      "Udc_V": 1000.0,
+      "relative_rms_potential_error": 6.570022174091889e-16,
+      "relative_rms_field_error": 3.774503002534246e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.16666666666666666,
+      "Udc_V": 1000.0,
+      "relative_rms_potential_error": 6.365955313265334e-16,
+      "relative_rms_field_error": 3.764289646749796e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.3333333333333333,
+      "Udc_V": 1000.0,
+      "relative_rms_potential_error": 6.478709337289923e-16,
+      "relative_rms_field_error": 3.747932507464689e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.5,
+      "Udc_V": 1000.0,
+      "relative_rms_potential_error": 6.082006595821225e-16,
+      "relative_rms_field_error": 3.726109864933344e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.6666666666666666,
+      "Udc_V": 1000.0,
+      "relative_rms_potential_error": 7.513139691438153e-16,
+      "relative_rms_field_error": 3.758458620937835e-14
+    },
+    {
+      "source": "direct_fem_cache_validation.csv",
+      "fraction_T": 0.8333333333333334,
+      "Udc_V": 1000.0,
+      "relative_rms_potential_error": 6.294907809539515e-16,
+      "relative_rms_field_error": 3.740098699624783e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.0,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 7.776851014215509e-16,
+      "relative_rms_field_error": 1.0733845733615416e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.08333333333333333,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 7.6386158540535e-16,
+      "relative_rms_field_error": 1.0540859650925327e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.16666666666666666,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 8.719847231197905e-16,
+      "relative_rms_field_error": 1.0681930776602936e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.25,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 7.361971485483626e-16,
+      "relative_rms_field_error": 1.0620599495372913e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.3333333333333333,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 8.146609874865435e-16,
+      "relative_rms_field_error": 1.072133738555388e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.4166666666666667,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 8.827777882097207e-16,
+      "relative_rms_field_error": 1.0872178739348656e-14
+    },
+    {
+      "source": "direct_fem_validation.csv",
+      "fraction_T": 0.5,
+      "Udc_V": 0.0,
+      "relative_rms_potential_error": 7.770486249637911e-16,
+      "relative_rms_field_error": 1.0708848532194887e-14
+    }
+  ],
+  "scope": "Discrete-system residual, boundary conditions, field reconstruction and serialization; not spatial convergence or trajectory validation."
+}

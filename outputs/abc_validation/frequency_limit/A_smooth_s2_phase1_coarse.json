@@ -1,0 +1,38 @@
+{
+  "case": {
+    "s": 2,
+    "phase_index": 1,
+    "level": "coarse"
+  },
+  "status": "completed",
+  "signature": "6acc9114b22830ba9e818753c5ba30d00c17b21cac4a116058f84e5f3c6509da",
+  "arrays_sha256": "39878c65cbdb6a0bb19e28712e35cad714cfe01c8de681e975a6ef389b01bd0e",
+  "nfev": 11259017,
+  "wall_seconds": 265.416068,
+  "frequency_Hz": 200000.0,
+  "amplitude_V": 500.0,
+  "full_initial_state": [
+    0.0010001674011776282,
+    1.4609910966254995e-14,
+    -3.420538457901273e-08,
+    0.2102947477987773
+  ],
+  "slow_initial_position_m": [
+    0.001,
+    0.0
+  ],
+  "slow_initial_velocity_m_per_s": [
+    0.0,
+    0.0
+  ],
+  "RF_phase_rad": 1.5707963267948966,
+  "exit_time_s": null,
+  "end_time_s": 0.07506,
+  "max_radius_m": 0.0010001674011776282,
+  "state_order": [
+    "x_m",
+    "y_m",
+    "vx_m_per_s",
+    "vy_m_per_s"
+  ]
+}

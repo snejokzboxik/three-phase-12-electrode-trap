@@ -10,6 +10,8 @@
 Пункт 5 выполнен: [коэффициенты октупольной модели C и сравнение B–C](outputs/abc_validation/model_c/MODEL_C_REPORT.md).
 Пункт 6 выполнен: [общие начальные условия и проверка фильтров](outputs/abc_validation/filter_checks/INITIAL_CONDITIONS_REPORT.md).
 Пункт 7 рассчитан: [длительный пилот и ограничения вывода](outputs/abc_validation/pilot/PILOT_REPORT.md).
+Пункт 8: [контролируемый высокочастотный предел](outputs/abc_validation/frequency_limit/FREQUENCY_LIMIT_REPORT.md)
+при одновременном масштабировании частоты и напряжения ×1,2,4.
 A_smooth–B проходит критерии за 3,25 медленного периода, но не за 10,25.
 Сравнения с исходным FEM A пока неопределённы из-за несходимости его траекторий;
 сходимость FEM по сетке ещё не установлена.

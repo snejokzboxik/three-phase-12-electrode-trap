@@ -5,5 +5,6 @@
   "user_step_4_model_b": "implemented_checks_passed_spatial_accuracy_unverified",
   "user_step_5_model_c": "implemented_spatial_comparison_complete_FEM_and_dynamics_unverified",
   "user_step_6_initial_conditions_and_filters": "implemented_diagnostics_passed_long_pilot_unverified",
-  "user_step_7_long_pilot": "pilot_computed_raw_FEM_inconclusive"
+  "user_step_7_long_pilot": "pilot_computed_raw_FEM_inconclusive",
+  "user_step_8_frequency_limit": "smooth_high_frequency_trend_verified_raw_FEM_unresolved"
 }

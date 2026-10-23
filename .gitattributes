@@ -2,3 +2,5 @@
 # Preserve original source/data line endings on every platform: automatic
 # LF/CRLF conversion would invalidate the saved FEM fingerprint and manifests.
 * -text
+# A preserved CRLF line ending is not trailing source whitespace.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

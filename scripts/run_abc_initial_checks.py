@@ -139,7 +139,9 @@ def write_report(output,protocol,progress):
             lines.append(f"| {row['r_min_mm']:g}–{row['r_max_mm']:g} | {row['sampled_facets']} | {row['relative_jump_median']:.5g} | {row['relative_jump_p95']:.5g} |")
     else:
         lines.append("Ещё не выполнено.")
-    if str(progress.get("user_step_7_long_pilot", "")).startswith("pilot_computed_"):
+    if progress.get("user_step_8_frequency_limit") in ("smooth_high_frequency_trend_verified_raw_FEM_unresolved", "frequency_limit_inconclusive"):
+        next_stage = "Пункт 8 рассчитан: см. `frequency_limit/FREQUENCY_LIMIT_REPORT.md`. Серия f и U ×1,2,4 использует одно физическое время и общие медленные начальные условия; вывод по гладкому A_smooth не заменяет нерешённую проверку исходного FEM A. Далее — пространственная сходимость и разрешение неопределённости raw P2/FEM."
+    elif str(progress.get("user_step_7_long_pilot", "")).startswith("pilot_computed_"):
         next_stage = "Пункт 7 рассчитан: см. `pilot/PILOT_REPORT.md`. Гладкое A_smooth–B проходит критерии за 3,25 медленного периода, но не за 10,25; сравнения с исходным FEM A пока inconclusive из-за несходимости его траекторий. Далее требуется контроль высокочастотного предела и отдельное разрешение неопределённости raw P2/FEM."
     elif progress.get("user_step_6_initial_conditions_and_filters") == "implemented_diagnostics_passed_long_pilot_unverified":
         next_stage = "Пункт 6 выполнен: см. `filter_checks/INITIAL_CONDITIONS_REPORT.md` и `initial_conditions.json`. Далее — длительный пилот A/A_smooth/B/C. Пока выполнены только короткие RF-диагностики A_smooth, без траектории исходного FEM A."

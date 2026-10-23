@@ -1,0 +1,31 @@
+{
+  "script_sha256": "a60190b9b06341b642d6b269f5a38796bad4377b2cc59980a89e4e39b09f54bc",
+  "artifacts": {
+    "A_smooth_s2_phase0_coarse.json": "4507f0056207a5e07883a03747c1b16377c3dab73c7a7f6d24aada31243a623c",
+    "A_smooth_s2_phase0_coarse.npz": "0fdff900588862081cc84617fe1b298d118b2e4809a672024c88d870665ed23d",
+    "A_smooth_s2_phase0_fine.json": "de5cc2ccd716c500ef31a426908c2ce41256627d7f03a3b278b0d80c1680a1dd",
+    "A_smooth_s2_phase0_fine.npz": "cde27488beefecc23162c8ff2e3750f24ba38e8e6951d9db568d57afeda482ba",
+    "A_smooth_s2_phase1_coarse.json": "5a7c6fb3d411a903e6c7cdc21773e7b63b43e6c8bc5a53b40a9f8852fa9bc412",
+    "A_smooth_s2_phase1_coarse.npz": "39878c65cbdb6a0bb19e28712e35cad714cfe01c8de681e975a6ef389b01bd0e",
+    "A_smooth_s2_phase1_fine.json": "c38633694f33f467d89bf7d5f748dbf155e60a0b9ef87a15d7e133d11276595c",
+    "A_smooth_s2_phase1_fine.npz": "9898e5d3c9f1bcfbf8f3a4317951895949b70453007f486d804b8fefdaafaf77",
+    "A_smooth_s4_phase0_coarse.json": "42540fefd6c84c5bfa3181d51ad0d1e0d877022193271ed02914ba7379d3b7d4",
+    "A_smooth_s4_phase0_coarse.npz": "e258d5e12de0e34827926e49344034bdf79c36f259d9a3e739676f0983c781f2",
+    "A_smooth_s4_phase0_fine.json": "863ee21624404ba95b191bbd32a400d51f48d07c1dfe3fea642f5c2525133f0e",
+    "A_smooth_s4_phase0_fine.npz": "ce03541c7cb76238661237c8d211bee5ef82afa13bf45c9163b58e1093e99032",
+    "A_smooth_s4_phase1_coarse.json": "b48d74822d7316ff54bbff6558bb733cc8d073a41a6b568820b040e8e452e483",
+    "A_smooth_s4_phase1_coarse.npz": "cf48acc83018ada67ef53892982e1598662a78c9656aa6bd35ec4ee44443e06b",
+    "A_smooth_s4_phase1_fine.json": "b004dc8a7e7ab2d021404741e9db2cc63b7cbf0b2bb3a45ff0eee5f49034029a",
+    "A_smooth_s4_phase1_fine.npz": "a55354672f6ab0095289b0bf0057c689c6a6479fe18b62d5cd90456a0569f563",
+    "comparison.npz": "c3dd8d29e79ba7138796e27f5e3526d1691b941417cfd8d459162c27320587d2",
+    "filter_checks.csv": "7fd299a750935510e1ae63ea9d971d1f99755fa6e18ccec3c019e5cd582a4c81",
+    "frequency_limit.png": "0412e23e7d40ccfd32132320000ac3114c1eba01d28abf301efa8e8f6b14075e",
+    "FREQUENCY_LIMIT_REPORT.md": "14e5f4bd2519f3d6241ae279ca1a74a2ac3c2a31b175122e78e10dba1bcb4b70",
+    "initial_conditions.json": "e3fe40dc892734c1fbc68f8677fedd8e7de53c8d6c465486a3022596ec414866",
+    "metrics.csv": "c3355d19365bf1962ed02ac8fbe5d4e1526f01f8933e3cb7fb828f041261f386",
+    "numerical_checks.csv": "21a7a7ab51b1350e4fa462cf639f119d81842cf34261f40ecc67a432c24b2791",
+    "scaling_checks.csv": "53dc8ea19b3c334bcf02316ae9417020a90db1b409737b16a8349a061192cde9",
+    "settings.json": "10fd9d0f835795398d844cce3089487c33d622bde8663fde5099bb696be325e7",
+    "summary.json": "67ea1e0a503b5b1e45ab4a5139a1ff28c8fb03bbf8acf19b1f0bb34a423f77f5"
+  }
+}

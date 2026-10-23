@@ -1,0 +1,4 @@
+s,frequency_Hz,amplitude_V,potential_relative_change,force_relative_change,micromotion_leading_amplitude_at_R0_m,eta_J_sampled_at_R0,raw_fit_vector_RMS_relative_at_1mm,raw_fit_potential_RMS_relative_at_1mm,raw_A_trajectory_status
+1,100000.0,250.0,0.0,0.0,3.3480235525648017e-07,0.0020092449072649896,0.001654074503913526,0.0015648033223435616,inconclusive_from_step7_not_recomputed
+2,200000.0,500.0,0.0,0.0,1.6740117762824009e-07,0.0010046224536324948,0.001654074503913526,0.0015648033223435616,inconclusive_from_step7_not_recomputed
+4,400000.0,1000.0,0.0,0.0,8.370058881412004e-08,0.0005023112268162474,0.001654074503913526,0.0015648033223435616,inconclusive_from_step7_not_recomputed

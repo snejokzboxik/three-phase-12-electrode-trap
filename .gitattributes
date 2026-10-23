@@ -1,0 +1,4 @@
+# Scientific checkpoints and provenance use byte-for-byte SHA-256 hashes.
+# Preserve original source/data line endings on every platform: automatic
+# LF/CRLF conversion would invalidate the saved FEM fingerprint and manifests.
+* -text

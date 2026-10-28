@@ -1,0 +1,26 @@
+{
+  "protocol_sha256": "0dc8b48e9c7e82d6ff7061d696e5afce6bc97c3c81cec6df3f0ce4e6c7f59d55",
+  "initial_conditions_sha256": "0edba3b900994e8f7365e3fd6a333978a85d3e36a96ca40d30b7f6c60f121c7d",
+  "physical_parameters": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063"
+}

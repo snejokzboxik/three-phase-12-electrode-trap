@@ -1,0 +1,21 @@
+{
+  "signature": "5afca40d3b818f8d856ece4529375ef5acd7f6492a7ad2ebc6f8d162041045f8",
+  "arrays_sha256": "e15b8b4898f64367dcf914cfd973aec70b22f8d6fece45cc7a1653db86c6f5ae",
+  "status": "completed",
+  "initial_state": [
+    0.001,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_representation_difference": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model": "B35",
+  "level": "coarse",
+  "evaluations": 75071,
+  "wall_seconds": 19.553747199999634
+}

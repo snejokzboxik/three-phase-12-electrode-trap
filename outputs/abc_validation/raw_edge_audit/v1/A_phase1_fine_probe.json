@@ -1,0 +1,62 @@
+{
+  "case": {
+    "phase_index": 1,
+    "level": "fine",
+    "extent": "probe"
+  },
+  "controls": {
+    "RF_steps_per_period": 100,
+    "RF_rtol": 2e-11,
+    "RF_atol_SI": [
+      2e-15,
+      2e-15,
+      2e-13,
+      2e-13
+    ],
+    "slow_steps_per_period": 200,
+    "slow_rtol": 2e-12,
+    "slow_dimensionless_atol": 2e-14
+  },
+  "periods": 64,
+  "provenance": {
+    "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+    "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+    "sources": {
+      "audited_rf.py": "058421c29aa128bb317800de4804a3ffd3f9217eb6e4d3a9a45d398808c7d58a",
+      "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+      "interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+      "event_resolved_rf.py": "e79cc4e828ad5ffc19bda44e114ec10dc03db30bf54f4515216fbea43c5ea26a"
+    },
+    "initial_conditions_sha256": "0edba3b900994e8f7365e3fd6a333978a85d3e36a96ca40d30b7f6c60f121c7d",
+    "worker_sha256": "42f90ae732419bfec295568f3ca510bb93d8c03e1f2b25b9fc18ba31d71ae315",
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.18.1"
+  },
+  "signature": "c4e16281e29cc65340e46aef731f247c70ffdd5712ffd935b32ab342ab94cd84",
+  "status": "completed",
+  "arrays_sha256": "f406d625e6bd36fc23b7674f2e7edcf5f7ac12ee8c07c3524f62b4b0a1eb403a",
+  "crossings_sha256": "1b5c74ecd46956c3d0778b3485c17fd47079583213d72e42bd790d68467b1e34",
+  "diagnostics": {
+    "checked_RK_steps": 6401,
+    "steps_requiring_root_checks": 1,
+    "crossings": 1,
+    "endpoint_misses_detected": 0,
+    "vertex_crossings": 0,
+    "minimum_certified_barycentric_bound": 1.6940658945086007e-21,
+    "minimum_output_barycentric": 0.00010935797297573907,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "no_position_or_velocity_nudging": true,
+    "scope": "Numerical dense-curve membership audit, not exact-ODE or FEM spatial convergence"
+  },
+  "nfev": 96019,
+  "wall_seconds": 1.6531454999994821,
+  "max_radius_m": 0.0010003348023552565,
+  "end_time_s": 0.00064,
+  "initial_state": [
+    0.0010003348023552565,
+    2.921982193250999e-14,
+    -3.420533285626352e-08,
+    0.2102944297406035
+  ]
+}

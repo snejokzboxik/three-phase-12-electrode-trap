@@ -1,0 +1,14 @@
+{
+  "driver_sha256": "f030a388b07d418a5e06bdce4c12ff381170d44b09125d6eaeb7d175fe1d627b",
+  "artifacts": {
+    "A_phase0_fine_pilot.json": "0326bd4b7f791216510c6f0e3aad7199f1657b7375d9fac4e7e2fe7252614da8",
+    "A_phase0_fine_pilot.npz": "8593fac4c9c67ea9452e66f0a15eb21d40f3c447248f99664e8161323be44dcd",
+    "A_phase0_fine_pilot_crossings.jsonl": "985e2173f864b759ae7d6860041eb2b4c441d6c9bca4be5ccf7a2cb0957a75fb",
+    "A_phase1_fine_probe.json": "7b41b787f7d9cb701bfae37fadef56b34e68d4d1e342f4ecef43f3453e58d2b3",
+    "A_phase1_fine_probe.npz": "f406d625e6bd36fc23b7674f2e7edcf5f7ac12ee8c07c3524f62b4b0a1eb403a",
+    "A_phase1_fine_probe_crossings.jsonl": "1b5c74ecd46956c3d0778b3485c17fd47079583213d72e42bd790d68467b1e34",
+    "EDGE_AUDIT_REPORT.md": "f08441401b6fb916528af2373b81f38402a0a45216ea88b7a4739c098c15f6ee",
+    "inputs.json": "ef0e5e9d8b2b3887f928132b66b2d80593d9a0421f374f17eae9b7daf764a906",
+    "integrity.json": "4f7c8929cb7e84dcb5b035e84cc7ef8259819cee1f2afa1595b9496a8e61d610"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "signature": "be5be04b4e121cf2b7e2093ef3c4c6bb77495182ffcacd9a48dc3a52ff0d321c",
+  "index": 8,
+  "RF_bounds": [
+    16000,
+    18000
+  ],
+  "status": "completed",
+  "arrays_sha256": "7932a6bd607cfc254f32a73bf5ef1c8dda9f8ddc6fe01bdf769a873f20b19176",
+  "crossings_sha256": "f5fd254b4362a0ac920285dec5bd00e7e1d200f06a769a82634f584e57a0e995",
+  "final_state": [
+    0.00021912836926622184,
+    8.646363322126103e-06,
+    0.21241622722400821,
+    0.007082201716240092
+  ],
+  "initial_state": [
+    0.0008433358240324053,
+    2.64667382569343e-05,
+    0.29390554567832977,
+    -0.006692795449153913
+  ],
+  "integration_wall_seconds": 69.34190760000001,
+  "nfev": 3002666,
+  "diagnostics": {
+    "method": "DOP853",
+    "checked_steps": 200142,
+    "crossings": 267,
+    "minimum_barycentric_bound": -1.9525339268731923e-14,
+    "minimum_sample_barycentric": 1.3369518845527525e-06,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "position_nudges": 0,
+    "velocity_nudges": 0,
+    "maximum_clock_aware_barycentric_tolerance": 5.880145068139339e-13,
+    "clock_envelope_physical_distance_m": 7.45983404031681e-18,
+    "hidden_exits_detected": 0,
+    "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+  }
+}

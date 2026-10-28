@@ -1,0 +1,235 @@
+2026-10-28T15:01:21.759430+00:00 [PREPARING]   0.00% | 0.000 slow periods | checkpoints 0/58 | ETA estimating Loading existing P4 field; initial trajectory starts at t=0.
+2026-10-28T15:01:34.297545+00:00 [RUNNING]   0.00% | 0.000 slow periods | checkpoints 0/58 | ETA estimating segment 1
+2026-10-28T15:02:04.334478+00:00 [RUNNING]   0.73% | 0.367 slow periods | checkpoints 0/58 | ETA 95.9 min 
+2026-10-28T15:02:34.334584+00:00 [RUNNING]   1.45% | 0.725 slow periods | checkpoints 0/58 | ETA 82.3 min 
+2026-10-28T15:02:46.051786+00:00 [CHECKPOINT_SAVED]   1.73% | 0.866 slow periods | checkpoints 1/58 | ETA 79.7 min 
+2026-10-28T15:02:46.056376+00:00 [RUNNING]   1.73% | 0.866 slow periods | checkpoints 1/58 | ETA 79.7 min segment 2
+2026-10-28T15:03:16.089036+00:00 [RUNNING]   2.46% | 1.232 slow periods | checkpoints 1/58 | ETA 75.4 min 
+2026-10-28T15:03:46.089301+00:00 [RUNNING]   3.20% | 1.602 slow periods | checkpoints 1/58 | ETA 72.7 min 
+2026-10-28T15:03:56.820061+00:00 [CHECKPOINT_SAVED]   3.46% | 1.732 slow periods | checkpoints 2/58 | ETA 72.0 min 
+2026-10-28T15:03:56.821194+00:00 [RUNNING]   3.46% | 1.732 slow periods | checkpoints 2/58 | ETA 72.0 min segment 3
+2026-10-28T15:04:26.852692+00:00 [RUNNING]   4.21% | 2.106 slow periods | checkpoints 2/58 | ETA 70.2 min 
+2026-10-28T15:04:56.852863+00:00 [RUNNING]   4.96% | 2.481 slow periods | checkpoints 2/58 | ETA 68.7 min 
+2026-10-28T15:05:06.383013+00:00 [CHECKPOINT_SAVED]   5.20% | 2.598 slow periods | checkpoints 3/58 | ETA 68.3 min 
+2026-10-28T15:05:06.384162+00:00 [RUNNING]   5.20% | 2.598 slow periods | checkpoints 3/58 | ETA 68.3 min segment 4
+2026-10-28T15:05:36.424505+00:00 [RUNNING]   5.94% | 2.972 slow periods | checkpoints 3/58 | ETA 67.2 min 
+2026-10-28T15:06:06.424751+00:00 [RUNNING]   6.69% | 3.343 slow periods | checkpoints 3/58 | ETA 66.2 min 
+2026-10-28T15:06:16.302439+00:00 [CHECKPOINT_SAVED]   6.93% | 3.464 slow periods | checkpoints 4/58 | ETA 65.9 min 
+2026-10-28T15:06:16.303540+00:00 [RUNNING]   6.93% | 3.464 slow periods | checkpoints 4/58 | ETA 65.9 min segment 5
+2026-10-28T15:06:46.338012+00:00 [RUNNING]   7.68% | 3.838 slow periods | checkpoints 4/58 | ETA 65.1 min 
+2026-10-28T15:07:16.338213+00:00 [RUNNING]   8.43% | 4.215 slow periods | checkpoints 4/58 | ETA 64.2 min 
+2026-10-28T15:07:27.549415+00:00 [CHECKPOINT_SAVED]   8.66% | 4.330 slow periods | checkpoints 5/58 | ETA 64.3 min 
+2026-10-28T15:07:27.550559+00:00 [RUNNING]   8.66% | 4.330 slow periods | checkpoints 5/58 | ETA 64.3 min segment 6
+2026-10-28T15:07:57.588052+00:00 [RUNNING]   9.36% | 4.679 slow periods | checkpoints 5/58 | ETA 63.9 min 
+2026-10-28T15:08:27.588094+00:00 [RUNNING]  10.07% | 5.037 slow periods | checkpoints 5/58 | ETA 63.4 min 
+2026-10-28T15:08:40.901423+00:00 [CHECKPOINT_SAVED]  10.39% | 5.196 slow periods | checkpoints 6/58 | ETA 63.1 min 
+2026-10-28T15:08:40.902914+00:00 [RUNNING]  10.39% | 5.196 slow periods | checkpoints 6/58 | ETA 63.1 min segment 7
+2026-10-28T15:09:10.940060+00:00 [RUNNING]  11.13% | 5.566 slow periods | checkpoints 6/58 | ETA 62.4 min 
+2026-10-28T15:09:40.940088+00:00 [RUNNING]  11.88% | 5.940 slow periods | checkpoints 6/58 | ETA 61.7 min 
+2026-10-28T15:09:50.871791+00:00 [CHECKPOINT_SAVED]  12.12% | 6.062 slow periods | checkpoints 7/58 | ETA 61.5 min 
+2026-10-28T15:09:50.872902+00:00 [RUNNING]  12.12% | 6.062 slow periods | checkpoints 7/58 | ETA 61.5 min segment 8
+2026-10-28T15:10:20.910094+00:00 [RUNNING]  12.87% | 6.435 slow periods | checkpoints 7/58 | ETA 60.8 min 
+2026-10-28T15:10:50.910356+00:00 [RUNNING]  13.62% | 6.808 slow periods | checkpoints 7/58 | ETA 60.2 min 
+2026-10-28T15:11:00.686110+00:00 [CHECKPOINT_SAVED]  13.86% | 6.928 slow periods | checkpoints 8/58 | ETA 60.0 min 
+2026-10-28T15:11:00.687334+00:00 [RUNNING]  13.86% | 6.928 slow periods | checkpoints 8/58 | ETA 60.0 min segment 9
+2026-10-28T15:11:30.723672+00:00 [RUNNING]  14.61% | 7.305 slow periods | checkpoints 8/58 | ETA 59.3 min 
+2026-10-28T15:12:00.723884+00:00 [RUNNING]  15.36% | 7.678 slow periods | checkpoints 8/58 | ETA 58.7 min 
+2026-10-28T15:12:10.323844+00:00 [CHECKPOINT_SAVED]  15.59% | 7.794 slow periods | checkpoints 9/58 | ETA 58.5 min 
+2026-10-28T15:12:10.325129+00:00 [RUNNING]  15.59% | 7.794 slow periods | checkpoints 9/58 | ETA 58.5 min segment 10
+2026-10-28T15:12:40.358762+00:00 [RUNNING]  16.34% | 8.172 slow periods | checkpoints 9/58 | ETA 57.9 min 
+2026-10-28T15:13:10.358949+00:00 [RUNNING]  17.09% | 8.543 slow periods | checkpoints 9/58 | ETA 57.3 min 
+2026-10-28T15:13:20.188028+00:00 [CHECKPOINT_SAVED]  17.32% | 8.660 slow periods | checkpoints 10/58 | ETA 57.2 min 
+2026-10-28T15:13:20.189214+00:00 [RUNNING]  17.32% | 8.660 slow periods | checkpoints 10/58 | ETA 57.2 min segment 11
+2026-10-28T15:13:50.223142+00:00 [RUNNING]  18.08% | 9.042 slow periods | checkpoints 10/58 | ETA 56.5 min 
+2026-10-28T15:14:20.223347+00:00 [RUNNING]  18.83% | 9.416 slow periods | checkpoints 10/58 | ETA 55.9 min 
+2026-10-28T15:14:29.315682+00:00 [CHECKPOINT_SAVED]  19.05% | 9.526 slow periods | checkpoints 11/58 | ETA 55.8 min 
+2026-10-28T15:14:29.317136+00:00 [RUNNING]  19.05% | 9.526 slow periods | checkpoints 11/58 | ETA 55.8 min segment 12
+2026-10-28T15:14:59.351184+00:00 [RUNNING]  19.81% | 9.906 slow periods | checkpoints 11/58 | ETA 55.2 min 
+2026-10-28T15:15:29.351251+00:00 [RUNNING]  20.57% | 10.286 slow periods | checkpoints 11/58 | ETA 54.5 min 
+2026-10-28T15:15:37.906561+00:00 [CHECKPOINT_SAVED]  20.78% | 10.392 slow periods | checkpoints 12/58 | ETA 54.4 min 
+2026-10-28T15:15:37.907756+00:00 [RUNNING]  20.78% | 10.392 slow periods | checkpoints 12/58 | ETA 54.4 min segment 13
+2026-10-28T15:16:07.941433+00:00 [RUNNING]  21.53% | 10.767 slow periods | checkpoints 12/58 | ETA 53.8 min 
+2026-10-28T15:16:37.941654+00:00 [RUNNING]  22.28% | 11.141 slow periods | checkpoints 12/58 | ETA 53.3 min 
+2026-10-28T15:16:47.447886+00:00 [CHECKPOINT_SAVED]  22.52% | 11.258 slow periods | checkpoints 13/58 | ETA 53.1 min 
+2026-10-28T15:16:47.449557+00:00 [RUNNING]  22.52% | 11.258 slow periods | checkpoints 13/58 | ETA 53.1 min segment 14
+2026-10-28T15:17:17.483482+00:00 [RUNNING]  23.24% | 11.619 slow periods | checkpoints 13/58 | ETA 52.6 min 
+2026-10-28T15:17:47.483734+00:00 [RUNNING]  23.98% | 11.988 slow periods | checkpoints 13/58 | ETA 52.1 min 
+2026-10-28T15:17:58.995862+00:00 [CHECKPOINT_SAVED]  24.25% | 12.124 slow periods | checkpoints 14/58 | ETA 51.9 min 
+2026-10-28T15:17:58.997112+00:00 [RUNNING]  24.25% | 12.124 slow periods | checkpoints 14/58 | ETA 51.9 min segment 15
+2026-10-28T15:18:29.030013+00:00 [RUNNING]  24.97% | 12.483 slow periods | checkpoints 14/58 | ETA 51.5 min 
+2026-10-28T15:18:59.030143+00:00 [RUNNING]  25.71% | 12.853 slow periods | checkpoints 14/58 | ETA 50.9 min 
+2026-10-28T15:19:10.236088+00:00 [CHECKPOINT_SAVED]  25.98% | 12.990 slow periods | checkpoints 15/58 | ETA 50.7 min 
+2026-10-28T15:19:10.237244+00:00 [RUNNING]  25.98% | 12.990 slow periods | checkpoints 15/58 | ETA 50.7 min segment 16
+2026-10-28T15:19:40.274434+00:00 [RUNNING]  26.71% | 13.354 slow periods | checkpoints 15/58 | ETA 50.2 min 
+2026-10-28T15:20:10.274452+00:00 [RUNNING]  27.44% | 13.723 slow periods | checkpoints 15/58 | ETA 49.7 min 
+2026-10-28T15:20:21.283090+00:00 [CHECKPOINT_SAVED]  27.71% | 13.856 slow periods | checkpoints 16/58 | ETA 49.5 min 
+2026-10-28T15:20:21.285671+00:00 [RUNNING]  27.71% | 13.856 slow periods | checkpoints 16/58 | ETA 49.5 min segment 17
+2026-10-28T15:20:51.320899+00:00 [RUNNING]  28.47% | 14.236 slow periods | checkpoints 16/58 | ETA 49.0 min 
+2026-10-28T15:21:21.321111+00:00 [RUNNING]  29.21% | 14.606 slow periods | checkpoints 16/58 | ETA 48.4 min 
+2026-10-28T15:21:30.991602+00:00 [CHECKPOINT_SAVED]  29.44% | 14.723 slow periods | checkpoints 17/58 | ETA 48.3 min 
+2026-10-28T15:21:30.992994+00:00 [RUNNING]  29.44% | 14.723 slow periods | checkpoints 17/58 | ETA 48.3 min segment 18
+2026-10-28T15:22:01.027564+00:00 [RUNNING]  30.19% | 15.096 slow periods | checkpoints 17/58 | ETA 47.8 min 
+2026-10-28T15:22:31.027690+00:00 [RUNNING]  30.92% | 15.458 slow periods | checkpoints 17/58 | ETA 47.3 min 
+2026-10-28T15:22:42.330675+00:00 [CHECKPOINT_SAVED]  31.18% | 15.589 slow periods | checkpoints 18/58 | ETA 47.1 min 
+2026-10-28T15:22:42.332676+00:00 [RUNNING]  31.18% | 15.589 slow periods | checkpoints 18/58 | ETA 47.1 min segment 19
+2026-10-28T15:23:12.369792+00:00 [RUNNING]  31.88% | 15.941 slow periods | checkpoints 18/58 | ETA 46.7 min 
+2026-10-28T15:23:42.369794+00:00 [RUNNING]  32.61% | 16.307 slow periods | checkpoints 18/58 | ETA 46.2 min 
+2026-10-28T15:23:54.391177+00:00 [CHECKPOINT_SAVED]  32.91% | 16.455 slow periods | checkpoints 19/58 | ETA 46.0 min 
+2026-10-28T15:23:54.392813+00:00 [RUNNING]  32.91% | 16.455 slow periods | checkpoints 19/58 | ETA 46.0 min segment 20
+2026-10-28T15:24:24.428259+00:00 [RUNNING]  33.65% | 16.823 slow periods | checkpoints 19/58 | ETA 45.4 min 
+2026-10-28T15:24:54.428259+00:00 [RUNNING]  34.34% | 17.168 slow periods | checkpoints 19/58 | ETA 45.0 min 
+2026-10-28T15:25:06.823054+00:00 [CHECKPOINT_SAVED]  34.64% | 17.321 slow periods | checkpoints 20/58 | ETA 44.8 min 
+2026-10-28T15:25:06.824325+00:00 [RUNNING]  34.64% | 17.321 slow periods | checkpoints 20/58 | ETA 44.8 min segment 21
+2026-10-28T15:25:36.858629+00:00 [RUNNING]  35.39% | 17.694 slow periods | checkpoints 20/58 | ETA 44.3 min 
+2026-10-28T15:26:06.858874+00:00 [RUNNING]  36.13% | 18.067 slow periods | checkpoints 20/58 | ETA 43.7 min 
+2026-10-28T15:26:16.787342+00:00 [CHECKPOINT_SAVED]  36.37% | 18.187 slow periods | checkpoints 21/58 | ETA 43.6 min 
+2026-10-28T15:26:16.788635+00:00 [RUNNING]  36.37% | 18.187 slow periods | checkpoints 21/58 | ETA 43.6 min segment 22
+2026-10-28T15:26:46.823385+00:00 [RUNNING]  37.09% | 18.545 slow periods | checkpoints 21/58 | ETA 43.1 min 
+2026-10-28T15:27:16.823617+00:00 [RUNNING]  37.81% | 18.906 slow periods | checkpoints 21/58 | ETA 42.6 min 
+2026-10-28T15:27:29.063861+00:00 [CHECKPOINT_SAVED]  38.11% | 19.053 slow periods | checkpoints 22/58 | ETA 42.4 min 
+2026-10-28T15:27:29.065324+00:00 [RUNNING]  38.11% | 19.053 slow periods | checkpoints 22/58 | ETA 42.4 min segment 23
+2026-10-28T15:27:59.101158+00:00 [RUNNING]  38.83% | 19.417 slow periods | checkpoints 22/58 | ETA 41.9 min 
+2026-10-28T15:28:29.101469+00:00 [RUNNING]  39.57% | 19.784 slow periods | checkpoints 22/58 | ETA 41.4 min 
+2026-10-28T15:28:40.341876+00:00 [CHECKPOINT_SAVED]  39.84% | 19.919 slow periods | checkpoints 23/58 | ETA 41.2 min 
+2026-10-28T15:28:40.343995+00:00 [RUNNING]  39.84% | 19.919 slow periods | checkpoints 23/58 | ETA 41.2 min segment 24
+2026-10-28T15:29:10.379946+00:00 [RUNNING]  40.56% | 20.280 slow periods | checkpoints 23/58 | ETA 40.8 min 
+2026-10-28T15:29:40.380173+00:00 [RUNNING]  41.27% | 20.635 slow periods | checkpoints 23/58 | ETA 40.3 min 
+2026-10-28T15:29:53.365578+00:00 [CHECKPOINT_SAVED]  41.57% | 20.785 slow periods | checkpoints 24/58 | ETA 40.1 min 
+2026-10-28T15:29:53.366722+00:00 [RUNNING]  41.57% | 20.785 slow periods | checkpoints 24/58 | ETA 40.1 min segment 25
+2026-10-28T15:30:23.406086+00:00 [RUNNING]  42.29% | 21.145 slow periods | checkpoints 24/58 | ETA 39.6 min 
+2026-10-28T15:30:53.406318+00:00 [RUNNING]  43.02% | 21.510 slow periods | checkpoints 24/58 | ETA 39.1 min 
+2026-10-28T15:31:05.658809+00:00 [CHECKPOINT_SAVED]  43.30% | 21.651 slow periods | checkpoints 25/58 | ETA 38.9 min 
+2026-10-28T15:31:05.660205+00:00 [RUNNING]  43.30% | 21.651 slow periods | checkpoints 25/58 | ETA 38.9 min segment 26
+2026-10-28T15:31:35.697989+00:00 [RUNNING]  44.03% | 22.015 slow periods | checkpoints 25/58 | ETA 38.4 min 
+2026-10-28T15:32:05.698099+00:00 [RUNNING]  44.74% | 22.369 slow periods | checkpoints 25/58 | ETA 38.0 min 
+2026-10-28T15:32:18.157561+00:00 [CHECKPOINT_SAVED]  45.03% | 22.517 slow periods | checkpoints 26/58 | ETA 37.8 min 
+2026-10-28T15:32:18.159130+00:00 [RUNNING]  45.03% | 22.517 slow periods | checkpoints 26/58 | ETA 37.8 min segment 27
+2026-10-28T15:32:48.193707+00:00 [RUNNING]  45.75% | 22.876 slow periods | checkpoints 26/58 | ETA 37.3 min 
+2026-10-28T15:33:18.194005+00:00 [RUNNING]  46.47% | 23.237 slow periods | checkpoints 26/58 | ETA 36.8 min 
+2026-10-28T15:33:30.500188+00:00 [CHECKPOINT_SAVED]  46.77% | 23.383 slow periods | checkpoints 27/58 | ETA 36.6 min 
+2026-10-28T15:33:30.501359+00:00 [RUNNING]  46.77% | 23.383 slow periods | checkpoints 27/58 | ETA 36.6 min segment 28
+2026-10-28T15:34:00.538420+00:00 [RUNNING]  47.45% | 23.724 slow periods | checkpoints 27/58 | ETA 36.2 min 
+2026-10-28T15:34:30.538646+00:00 [RUNNING]  48.16% | 24.082 slow periods | checkpoints 27/58 | ETA 35.7 min 
+2026-10-28T15:34:44.553044+00:00 [CHECKPOINT_SAVED]  48.50% | 24.249 slow periods | checkpoints 28/58 | ETA 35.4 min 
+2026-10-28T15:34:44.554685+00:00 [RUNNING]  48.50% | 24.249 slow periods | checkpoints 28/58 | ETA 35.4 min segment 29
+2026-10-28T15:35:14.587338+00:00 [RUNNING]  49.22% | 24.608 slow periods | checkpoints 28/58 | ETA 35.0 min 
+2026-10-28T15:35:44.587493+00:00 [RUNNING]  49.94% | 24.970 slow periods | checkpoints 28/58 | ETA 34.5 min 
+2026-10-28T15:35:56.598631+00:00 [CHECKPOINT_SAVED]  50.23% | 25.115 slow periods | checkpoints 29/58 | ETA 34.3 min 
+2026-10-28T15:35:56.600214+00:00 [RUNNING]  50.23% | 25.115 slow periods | checkpoints 29/58 | ETA 34.3 min segment 30
+2026-10-28T15:36:26.633395+00:00 [RUNNING]  50.96% | 25.479 slow periods | checkpoints 29/58 | ETA 33.8 min 
+2026-10-28T15:36:56.633619+00:00 [RUNNING]  51.67% | 25.837 slow periods | checkpoints 29/58 | ETA 33.3 min 
+2026-10-28T15:37:08.753815+00:00 [CHECKPOINT_SAVED]  51.96% | 25.981 slow periods | checkpoints 30/58 | ETA 33.1 min 
+2026-10-28T15:37:08.755493+00:00 [RUNNING]  51.96% | 25.981 slow periods | checkpoints 30/58 | ETA 33.1 min segment 31
+2026-10-28T15:37:38.791187+00:00 [RUNNING]  52.69% | 26.343 slow periods | checkpoints 30/58 | ETA 32.6 min 
+2026-10-28T15:38:08.791284+00:00 [RUNNING]  53.41% | 26.703 slow periods | checkpoints 30/58 | ETA 32.1 min 
+2026-10-28T15:38:20.891179+00:00 [CHECKPOINT_SAVED]  53.69% | 26.847 slow periods | checkpoints 31/58 | ETA 31.9 min 
+2026-10-28T15:38:20.892546+00:00 [RUNNING]  53.69% | 26.847 slow periods | checkpoints 31/58 | ETA 31.9 min segment 32
+2026-10-28T15:38:50.928432+00:00 [RUNNING]  54.42% | 27.209 slow periods | checkpoints 31/58 | ETA 31.4 min 
+2026-10-28T15:39:20.928438+00:00 [RUNNING]  55.15% | 27.573 slow periods | checkpoints 31/58 | ETA 30.9 min 
+2026-10-28T15:39:32.801903+00:00 [CHECKPOINT_SAVED]  55.43% | 27.713 slow periods | checkpoints 32/58 | ETA 30.7 min 
+2026-10-28T15:39:32.804041+00:00 [RUNNING]  55.43% | 27.713 slow periods | checkpoints 32/58 | ETA 30.7 min segment 33
+2026-10-28T15:40:02.839571+00:00 [RUNNING]  56.14% | 28.070 slow periods | checkpoints 32/58 | ETA 30.2 min 
+2026-10-28T15:40:32.839656+00:00 [RUNNING]  56.86% | 28.431 slow periods | checkpoints 32/58 | ETA 29.7 min 
+2026-10-28T15:40:45.531673+00:00 [CHECKPOINT_SAVED]  57.16% | 28.579 slow periods | checkpoints 33/58 | ETA 29.5 min 
+2026-10-28T15:40:45.532930+00:00 [RUNNING]  57.16% | 28.579 slow periods | checkpoints 33/58 | ETA 29.5 min segment 34
+2026-10-28T15:41:15.567188+00:00 [RUNNING]  57.87% | 28.936 slow periods | checkpoints 33/58 | ETA 29.0 min 
+2026-10-28T15:41:45.567423+00:00 [RUNNING]  58.61% | 29.304 slow periods | checkpoints 33/58 | ETA 28.5 min 
+2026-10-28T15:41:57.076774+00:00 [CHECKPOINT_SAVED]  58.89% | 29.445 slow periods | checkpoints 34/58 | ETA 28.3 min 
+2026-10-28T15:41:57.077942+00:00 [RUNNING]  58.89% | 29.445 slow periods | checkpoints 34/58 | ETA 28.3 min segment 35
+2026-10-28T15:42:27.111865+00:00 [RUNNING]  59.62% | 29.812 slow periods | checkpoints 34/58 | ETA 27.8 min 
+2026-10-28T15:42:57.111919+00:00 [RUNNING]  60.34% | 30.172 slow periods | checkpoints 34/58 | ETA 27.3 min 
+2026-10-28T15:43:08.901863+00:00 [CHECKPOINT_SAVED]  60.62% | 30.311 slow periods | checkpoints 35/58 | ETA 27.1 min 
+2026-10-28T15:43:08.905104+00:00 [RUNNING]  60.62% | 30.311 slow periods | checkpoints 35/58 | ETA 27.1 min segment 36
+2026-10-28T15:43:38.940505+00:00 [RUNNING]  61.34% | 30.668 slow periods | checkpoints 35/58 | ETA 26.7 min 
+2026-10-28T15:44:08.940613+00:00 [RUNNING]  62.02% | 31.009 slow periods | checkpoints 35/58 | ETA 26.2 min 
+2026-10-28T15:44:22.906986+00:00 [CHECKPOINT_SAVED]  62.35% | 31.177 slow periods | checkpoints 36/58 | ETA 26.0 min 
+2026-10-28T15:44:22.908060+00:00 [RUNNING]  62.35% | 31.177 slow periods | checkpoints 36/58 | ETA 26.0 min segment 37
+2026-10-28T15:44:52.943861+00:00 [RUNNING]  63.09% | 31.546 slow periods | checkpoints 36/58 | ETA 25.5 min 
+2026-10-28T15:45:22.944207+00:00 [RUNNING]  63.82% | 31.910 slow periods | checkpoints 36/58 | ETA 25.0 min 
+2026-10-28T15:45:34.159111+00:00 [CHECKPOINT_SAVED]  64.09% | 32.043 slow periods | checkpoints 37/58 | ETA 24.8 min 
+2026-10-28T15:45:34.160280+00:00 [RUNNING]  64.09% | 32.043 slow periods | checkpoints 37/58 | ETA 24.8 min segment 38
+2026-10-28T15:46:04.198339+00:00 [RUNNING]  64.80% | 32.401 slow periods | checkpoints 37/58 | ETA 24.3 min 
+2026-10-28T15:46:34.198695+00:00 [RUNNING]  65.53% | 32.763 slow periods | checkpoints 37/58 | ETA 23.8 min 
+2026-10-28T15:46:46.834351+00:00 [CHECKPOINT_SAVED]  65.82% | 32.909 slow periods | checkpoints 38/58 | ETA 23.6 min 
+2026-10-28T15:46:46.835503+00:00 [RUNNING]  65.82% | 32.909 slow periods | checkpoints 38/58 | ETA 23.6 min segment 39
+2026-10-28T15:47:16.875524+00:00 [RUNNING]  66.52% | 33.258 slow periods | checkpoints 38/58 | ETA 23.1 min 
+2026-10-28T15:47:46.875731+00:00 [RUNNING]  67.23% | 33.614 slow periods | checkpoints 38/58 | ETA 22.6 min 
+2026-10-28T15:48:00.655416+00:00 [CHECKPOINT_SAVED]  67.55% | 33.775 slow periods | checkpoints 39/58 | ETA 22.4 min 
+2026-10-28T15:48:00.657065+00:00 [RUNNING]  67.55% | 33.775 slow periods | checkpoints 39/58 | ETA 22.4 min segment 40
+2026-10-28T15:48:30.693961+00:00 [RUNNING]  68.28% | 34.139 slow periods | checkpoints 39/58 | ETA 21.9 min 
+2026-10-28T15:49:00.694390+00:00 [RUNNING]  68.97% | 34.487 slow periods | checkpoints 39/58 | ETA 21.4 min 
+2026-10-28T15:49:14.195371+00:00 [CHECKPOINT_SAVED]  69.28% | 34.641 slow periods | checkpoints 40/58 | ETA 21.2 min 
+2026-10-28T15:49:14.196647+00:00 [RUNNING]  69.28% | 34.641 slow periods | checkpoints 40/58 | ETA 21.2 min segment 41
+2026-10-28T15:49:44.242126+00:00 [RUNNING]  69.99% | 34.995 slow periods | checkpoints 40/58 | ETA 20.7 min 
+2026-10-28T15:50:14.242488+00:00 [RUNNING]  70.72% | 35.362 slow periods | checkpoints 40/58 | ETA 20.2 min 
+2026-10-28T15:50:26.323927+00:00 [CHECKPOINT_SAVED]  71.01% | 35.507 slow periods | checkpoints 41/58 | ETA 20.0 min 
+2026-10-28T15:50:26.328991+00:00 [RUNNING]  71.01% | 35.507 slow periods | checkpoints 41/58 | ETA 20.0 min segment 42
+2026-10-28T15:50:56.364141+00:00 [RUNNING]  71.74% | 35.870 slow periods | checkpoints 41/58 | ETA 19.5 min 
+2026-10-28T15:51:26.364377+00:00 [RUNNING]  72.45% | 36.223 slow periods | checkpoints 41/58 | ETA 19.0 min 
+2026-10-28T15:51:39.667811+00:00 [CHECKPOINT_SAVED]  72.75% | 36.373 slow periods | checkpoints 42/58 | ETA 18.8 min 
+2026-10-28T15:51:39.669172+00:00 [RUNNING]  72.75% | 36.373 slow periods | checkpoints 42/58 | ETA 18.8 min segment 43
+2026-10-28T15:52:09.707076+00:00 [RUNNING]  73.45% | 36.725 slow periods | checkpoints 42/58 | ETA 18.4 min 
+2026-10-28T15:52:39.707172+00:00 [RUNNING]  74.16% | 37.081 slow periods | checkpoints 42/58 | ETA 17.9 min 
+2026-10-28T15:52:53.153592+00:00 [CHECKPOINT_SAVED]  74.48% | 37.239 slow periods | checkpoints 43/58 | ETA 17.7 min 
+2026-10-28T15:52:53.154982+00:00 [RUNNING]  74.48% | 37.239 slow periods | checkpoints 43/58 | ETA 17.7 min segment 44
+2026-10-28T15:53:23.191143+00:00 [RUNNING]  75.19% | 37.595 slow periods | checkpoints 43/58 | ETA 17.2 min 
+2026-10-28T15:53:53.191257+00:00 [RUNNING]  75.91% | 37.957 slow periods | checkpoints 43/58 | ETA 16.7 min 
+2026-10-28T15:54:05.514264+00:00 [CHECKPOINT_SAVED]  76.21% | 38.105 slow periods | checkpoints 44/58 | ETA 16.5 min 
+2026-10-28T15:54:05.515580+00:00 [RUNNING]  76.21% | 38.105 slow periods | checkpoints 44/58 | ETA 16.5 min segment 45
+2026-10-28T15:54:35.551650+00:00 [RUNNING]  76.92% | 38.460 slow periods | checkpoints 44/58 | ETA 16.0 min 
+2026-10-28T15:55:05.551714+00:00 [RUNNING]  77.65% | 38.824 slow periods | checkpoints 44/58 | ETA 15.5 min 
+2026-10-28T15:55:17.823617+00:00 [CHECKPOINT_SAVED]  77.94% | 38.971 slow periods | checkpoints 45/58 | ETA 15.3 min 
+2026-10-28T15:55:17.825992+00:00 [RUNNING]  77.94% | 38.971 slow periods | checkpoints 45/58 | ETA 15.3 min segment 46
+2026-10-28T15:55:47.862447+00:00 [RUNNING]  78.65% | 39.328 slow periods | checkpoints 45/58 | ETA 14.8 min 
+2026-10-28T15:56:17.862551+00:00 [RUNNING]  79.40% | 39.699 slow periods | checkpoints 45/58 | ETA 14.3 min 
+2026-10-28T15:56:29.193491+00:00 [CHECKPOINT_SAVED]  79.67% | 39.837 slow periods | checkpoints 46/58 | ETA 14.1 min 
+2026-10-28T15:56:29.194746+00:00 [RUNNING]  79.67% | 39.837 slow periods | checkpoints 46/58 | ETA 14.1 min segment 47
+2026-10-28T15:56:59.231137+00:00 [RUNNING]  80.42% | 40.209 slow periods | checkpoints 46/58 | ETA 13.5 min 
+2026-10-28T15:57:29.231206+00:00 [RUNNING]  81.13% | 40.564 slow periods | checkpoints 46/58 | ETA 13.1 min 
+2026-10-28T15:57:41.169711+00:00 [CHECKPOINT_SAVED]  81.41% | 40.703 slow periods | checkpoints 47/58 | ETA 12.9 min 
+2026-10-28T15:57:41.170918+00:00 [RUNNING]  81.41% | 40.703 slow periods | checkpoints 47/58 | ETA 12.9 min segment 48
+2026-10-28T15:58:11.207790+00:00 [RUNNING]  82.11% | 41.056 slow periods | checkpoints 47/58 | ETA 12.4 min 
+2026-10-28T15:58:41.208164+00:00 [RUNNING]  82.82% | 41.409 slow periods | checkpoints 47/58 | ETA 11.9 min 
+2026-10-28T15:58:55.539683+00:00 [CHECKPOINT_SAVED]  83.14% | 41.569 slow periods | checkpoints 48/58 | ETA 11.7 min 
+2026-10-28T15:58:55.541362+00:00 [RUNNING]  83.14% | 41.569 slow periods | checkpoints 48/58 | ETA 11.7 min segment 49
+2026-10-28T15:59:25.587258+00:00 [RUNNING]  83.83% | 41.915 slow periods | checkpoints 48/58 | ETA 11.2 min 
+2026-10-28T15:59:55.587570+00:00 [RUNNING]  84.54% | 42.271 slow periods | checkpoints 48/58 | ETA 10.7 min 
+2026-10-28T16:00:09.308933+00:00 [CHECKPOINT_SAVED]  84.87% | 42.435 slow periods | checkpoints 49/58 | ETA 10.5 min 
+2026-10-28T16:00:09.310248+00:00 [RUNNING]  84.87% | 42.435 slow periods | checkpoints 49/58 | ETA 10.5 min segment 50
+2026-10-28T16:00:39.346557+00:00 [RUNNING]  85.60% | 42.802 slow periods | checkpoints 49/58 | ETA 10.0 min 
+2026-10-28T16:01:09.346898+00:00 [RUNNING]  86.32% | 43.163 slow periods | checkpoints 49/58 | ETA 9.5 min 
+2026-10-28T16:01:21.321568+00:00 [CHECKPOINT_SAVED]  86.60% | 43.301 slow periods | checkpoints 50/58 | ETA 9.3 min 
+2026-10-28T16:01:21.322967+00:00 [RUNNING]  86.60% | 43.301 slow periods | checkpoints 50/58 | ETA 9.3 min segment 51
+2026-10-28T16:01:51.362069+00:00 [RUNNING]  87.33% | 43.663 slow periods | checkpoints 50/58 | ETA 8.8 min 
+2026-10-28T16:02:21.362400+00:00 [RUNNING]  88.05% | 44.026 slow periods | checkpoints 50/58 | ETA 8.3 min 
+2026-10-28T16:02:33.186869+00:00 [CHECKPOINT_SAVED]  88.33% | 44.168 slow periods | checkpoints 51/58 | ETA 8.1 min 
+2026-10-28T16:02:33.188007+00:00 [RUNNING]  88.33% | 44.168 slow periods | checkpoints 51/58 | ETA 8.1 min segment 52
+2026-10-28T16:03:03.222966+00:00 [RUNNING]  89.06% | 44.530 slow periods | checkpoints 51/58 | ETA 7.6 min 
+2026-10-28T16:03:33.223170+00:00 [RUNNING]  89.79% | 44.896 slow periods | checkpoints 51/58 | ETA 7.1 min 
+2026-10-28T16:03:44.826599+00:00 [CHECKPOINT_SAVED]  90.07% | 45.034 slow periods | checkpoints 52/58 | ETA 6.9 min 
+2026-10-28T16:03:44.827890+00:00 [RUNNING]  90.07% | 45.034 slow periods | checkpoints 52/58 | ETA 6.9 min segment 53
+2026-10-28T16:04:14.863086+00:00 [RUNNING]  90.80% | 45.398 slow periods | checkpoints 52/58 | ETA 6.4 min 
+2026-10-28T16:04:44.863315+00:00 [RUNNING]  91.52% | 45.761 slow periods | checkpoints 52/58 | ETA 5.9 min 
+2026-10-28T16:04:56.600513+00:00 [CHECKPOINT_SAVED]  91.80% | 45.900 slow periods | checkpoints 53/58 | ETA 5.7 min 
+2026-10-28T16:04:56.601709+00:00 [RUNNING]  91.80% | 45.900 slow periods | checkpoints 53/58 | ETA 5.7 min segment 54
+2026-10-28T16:05:26.636931+00:00 [RUNNING]  92.53% | 46.263 slow periods | checkpoints 53/58 | ETA 5.2 min 
+2026-10-28T16:05:56.636956+00:00 [RUNNING]  93.25% | 46.626 slow periods | checkpoints 53/58 | ETA 4.7 min 
+2026-10-28T16:06:08.829131+00:00 [CHECKPOINT_SAVED]  93.53% | 46.766 slow periods | checkpoints 54/58 | ETA 4.5 min 
+2026-10-28T16:06:08.830575+00:00 [RUNNING]  93.53% | 46.766 slow periods | checkpoints 54/58 | ETA 4.5 min segment 55
+2026-10-28T16:06:38.866370+00:00 [RUNNING]  94.25% | 47.124 slow periods | checkpoints 54/58 | ETA 4.0 min 
+2026-10-28T16:07:08.866648+00:00 [RUNNING]  94.96% | 47.479 slow periods | checkpoints 54/58 | ETA 3.5 min 
+2026-10-28T16:07:21.561085+00:00 [CHECKPOINT_SAVED]  95.26% | 47.632 slow periods | checkpoints 55/58 | ETA 3.3 min 
+2026-10-28T16:07:21.562313+00:00 [RUNNING]  95.26% | 47.632 slow periods | checkpoints 55/58 | ETA 3.3 min segment 56
+2026-10-28T16:07:51.597479+00:00 [RUNNING]  95.99% | 47.995 slow periods | checkpoints 55/58 | ETA 2.8 min 
+2026-10-28T16:08:21.597656+00:00 [RUNNING]  96.71% | 48.357 slow periods | checkpoints 55/58 | ETA 2.3 min 
+2026-10-28T16:08:33.372980+00:00 [CHECKPOINT_SAVED]  96.99% | 48.498 slow periods | checkpoints 56/58 | ETA 2.1 min 
+2026-10-28T16:08:33.374168+00:00 [RUNNING]  96.99% | 48.498 slow periods | checkpoints 56/58 | ETA 2.1 min segment 57
+2026-10-28T16:09:03.410054+00:00 [RUNNING]  97.72% | 48.858 slow periods | checkpoints 56/58 | ETA 1.6 min 
+2026-10-28T16:09:33.410121+00:00 [RUNNING]  98.41% | 49.207 slow periods | checkpoints 56/58 | ETA 1.1 min 
+2026-10-28T16:09:46.820112+00:00 [CHECKPOINT_SAVED]  98.73% | 49.364 slow periods | checkpoints 57/58 | ETA 0.9 min 
+2026-10-28T16:09:46.821319+00:00 [RUNNING]  98.73% | 49.364 slow periods | checkpoints 57/58 | ETA 0.9 min segment 58
+2026-10-28T16:10:16.855659+00:00 [RUNNING]  99.44% | 49.718 slow periods | checkpoints 57/58 | ETA 0.4 min 
+2026-10-28T16:10:41.578142+00:00 [CHECKPOINT_SAVED] 100.00% | 50.000 slow periods | checkpoints 58/58 | ETA 0.0 min 
+2026-10-28T16:10:41.579934+00:00 [POSTPROCESSING] 100.00% | 50.000 slow periods | checkpoints 58/58 | ETA 0.0 min Joining and checking all samples; no completion marker yet.
+2026-10-28T16:10:52.252731+00:00 [VERIFYING] 100.00% | 50.000 slow periods | checkpoints 58/58 | ETA 0.0 min Checking final checksums and checkpoint chain.
+2026-10-28T16:10:54.951311+00:00 [COMPLETED] 100.00% | 50.000 slow periods | checkpoints 58/58 | ETA 0.0 min COMPLETED.json written; result files verified.

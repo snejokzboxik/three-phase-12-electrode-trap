@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "model": "A: direct unsmoothed native FEM P4",
+  "start_time_s": 0.0,
+  "mesh_um": 35,
+  "FEM_degree": 4,
+  "phase_index": 0,
+  "phase_rad": 0.0,
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "initial_state": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "requested_slow_periods": null,
+  "reference_slow_period_s": 0.023093891788417812,
+  "RF_periods": 64,
+  "chunk_RF_periods": 32,
+  "samples_per_RF_period": 64,
+  "control": {
+    "method": "DOP853",
+    "steps": 100,
+    "rtol": 2e-11,
+    "atol": [
+      2e-15,
+      2e-15,
+      2e-13,
+      2e-13
+    ]
+  },
+  "R_scale_m": 0.001,
+  "RF_clock": "Exact integer RF cycles; local segment clock with unchanged phi0; absolute sample times from integer RF sample indices",
+  "smoke_test": true,
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.18.1"
+  },
+  "source_sha256": {
+    "src/three_phase_trap/direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "src/three_phase_trap/direct_fem_dynamics.py": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b",
+    "src/three_phase_trap/audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "src/three_phase_trap/restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+    "src/three_phase_trap/pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "src/three_phase_trap/rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "src/three_phase_trap/averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+    "src/three_phase_trap/octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+    "src/three_phase_trap/micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+    "src/three_phase_trap/slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb",
+    "src/three_phase_trap/long_rf_run.py": "faa3c0b2c440f03d622961e12f2e0810fc0423cc164743bc6a6895176d693d1c",
+    "scripts/run_long_fem_a.py": "fb0b468c8613ff9cae7f84cdfefbd2a657de9ad61f4eba45a526f8b4d705c224",
+    "scripts/build_direct_fem.py": "8d30d5075fa65edba6425e81a107477cf2f94a8acb4c0947586cff2213a1956c"
+  },
+  "input_sha256": {
+    "outputs/abc_validation/direct_fem_validation/v2/validation_settings.json": "251b65a20226b2f287b2e1f2414fc2d20b6c4e3b5977349248c420be7fb347ce",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/complete.json": "5e4b4ff0358e1eceaa8c74ce2558f55aeaa501df1ca133350bcdcd92c9497796",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/common_samples.npz": "34015be312e3c2dc7314a7817737722f53e2d0f5dc91e7539fe2ff111df645eb",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/native_reconstruction_discrepancy.csv": "0c41908039657a14d6843406303d7d87c51ce3e2282aeebb0c14f277f444fd01",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/origin_limits.json": "2f186225f77e7a658080a466a0306c3908eddcfc42b677165fa0f741d916692d",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/solver_diagnostics.json": "e0479f9f3f29058f7cab5756aa8516ed6e399e14904ab72ee62ed1edc5f4a203",
+    "outputs/meshes/gmsh_35um/trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "outputs/meshes/gmsh_35um/sector.msh": "36f696c7ab01a9a36571cf8adcde0bf3e52e6eca5a11408bf577eeddfd417158"
+  },
+  "numerical_validation_status": "Not yet established for the new long time horizon"
+}

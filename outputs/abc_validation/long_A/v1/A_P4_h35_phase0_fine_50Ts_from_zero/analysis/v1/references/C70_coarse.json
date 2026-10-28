@@ -1,0 +1,21 @@
+{
+  "signature": "5afca40d3b818f8d856ece4529375ef5acd7f6492a7ad2ebc6f8d162041045f8",
+  "arrays_sha256": "87684229c24f10e8d9b56d64314b252d8722e8267f112e7c304f37c94f797c4d",
+  "status": "completed",
+  "initial_state": [
+    0.001,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_representation_difference": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model": "C70",
+  "level": "coarse",
+  "evaluations": 75056,
+  "wall_seconds": 3.4966561000001093
+}

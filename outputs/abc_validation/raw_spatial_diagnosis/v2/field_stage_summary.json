@@ -1,0 +1,58 @@
+{
+  "status": "field_stage_analyzed_without_trajectory_status",
+  "smooth_pilot_disk_max_mesh_difference": 7.389716568523787e-05,
+  "fine_reconstruction_pilot_disk_max_sensitivity": 1.6010409226767102e-07,
+  "raw_pilot_disk_max_mesh_field_difference": 0.6473732218350096,
+  "levels": [
+    {
+      "mesh_um": 70,
+      "triangles": 166032,
+      "P2_dofs": 334141,
+      "C4_per_volt_per_m4": 132153412.75827593,
+      "fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+      "discrete_scaled_residual_max": 2.7275505832798113e-15,
+      "DC_superposition_max_V": 8.881784197001252e-15
+    },
+    {
+      "mesh_um": 50,
+      "triangles": 319956,
+      "P2_dofs": 642841,
+      "C4_per_volt_per_m4": 132163022.60508299,
+      "fingerprint": "915052d897401e5b84c6efabd5916154949dab581441d339fce45ef1ee323978",
+      "discrete_scaled_residual_max": 4.330827697716954e-15,
+      "DC_superposition_max_V": 1.0547118733938987e-14
+    },
+    {
+      "mesh_um": 35,
+      "triangles": 647484,
+      "P2_dofs": 1299121,
+      "C4_per_volt_per_m4": 132167901.54732376,
+      "fingerprint": "4169ae3c40d920944fc1486ac85251ecea45c58f2333b2a12db72d598798dda9",
+      "discrete_scaled_residual_max": 7.354346511345442e-15,
+      "DC_superposition_max_V": 1.5987211554602254e-14
+    }
+  ],
+  "origins": [
+    {
+      "mesh_um": 70,
+      "incident_elements": 12,
+      "max_one_sided_origin_RF_rms_V_per_m": 0.018865523521783566,
+      "max_pairwise_origin_RF_rms_difference_V_per_m": 0.037731044718947546,
+      "smooth_origin_RF_rms_V_per_m": 7.598568450243007e-10
+    },
+    {
+      "mesh_um": 50,
+      "incident_elements": 12,
+      "max_one_sided_origin_RF_rms_V_per_m": 0.0069082986854829016,
+      "max_pairwise_origin_RF_rms_difference_V_per_m": 0.013816594488990436,
+      "smooth_origin_RF_rms_V_per_m": 3.0594189567882075e-09
+    },
+    {
+      "mesh_um": 35,
+      "incident_elements": 12,
+      "max_one_sided_origin_RF_rms_V_per_m": 0.002378114309550104,
+      "max_pairwise_origin_RF_rms_difference_V_per_m": 0.004756220057761677,
+      "smooth_origin_RF_rms_V_per_m": 6.869841702552425e-09
+    }
+  ]
+}

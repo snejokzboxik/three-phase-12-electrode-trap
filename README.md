@@ -1,5 +1,12 @@
 # Three-phase 12-electrode trap
 
+**Код и выбранные данные:** [состав опубликованного набора](docs/GITHUB_DATA.md),
+[список крупных файлов, оставленных локально](docs/LOCAL_ONLY_DATA.md).
+Новые данные доступны обычным `git clone` / `git pull`, Git LFS не требуется.
+`python scripts/verify_repository_data.py` проверяет опубликованный набор
+по `outputs/REPOSITORY_DATA_MANIFEST.json`; `--full-local` дополнительно
+проверяет исключённые массивы на исходном компьютере.
+
 **Продолжение расчёта Gmsh 70 мкм:** начните с
 [контекста для другого чата](docs/FEM_GMSH_70UM.md) и
 [отчёта готового FEM-расчёта](outputs/fem_cache/FEM_RUN_REPORT.md).
@@ -12,9 +19,28 @@
 Пункт 7 рассчитан: [длительный пилот и ограничения вывода](outputs/abc_validation/pilot/PILOT_REPORT.md).
 Пункт 8: [контролируемый высокочастотный предел](outputs/abc_validation/frequency_limit/FREQUENCY_LIMIT_REPORT.md)
 при одновременном масштабировании частоты и напряжения ×1,2,4.
-A_smooth–B проходит критерии за 3,25 медленного периода, но не за 10,25.
-Сравнения с исходным FEM A пока неопределённы из-за несходимости его траекторий;
-сходимость FEM по сетке ещё не установлена.
+Дополнительная диагностика исходного A: [аудит переходов между FEM-элементами](docs/RAW_FEM_EDGE_AUDIT.md)
+и [отчёт проверок](outputs/abc_validation/raw_edge_audit/v2/EDGE_AUDIT_REPORT.md).
+Пункт 2 диагностики: [перезапуски из общего состояния и чувствительность траекторий](outputs/abc_validation/raw_restart_diagnosis/v1/RESTART_DIAGNOSIS_REPORT.md).
+Пункт 3 диагностики: [FEM 70/50/35 мкм, поля и траектории](outputs/abc_validation/raw_spatial_diagnosis/v2/SPATIAL_DIAGNOSIS_REPORT.md),
+[описание данных и воспроизведения](docs/RAW_FEM_SPATIAL_DIAGNOSIS.md).
+**Прямая проверка FEM A завершена 24.10.2026:**
+[результат и контекст для продолжения](docs/DIRECT_FEM_A_RESULTS.md),
+[полный отчёт P4](outputs/abc_validation/direct_fem_validation/v2/DIRECT_FEM_A_REPORT.md).
+Решена та же физическая задача с прямым несглаженным градиентом P4
+на сетках 50/35 мкм; временные, межсеточные и фильтрационные контроли пройдены.
+A–B/C проходят допуски на 3,25 медленного периода (RMS 0,555–0,597%),
+но не на 10,25 (RMS 1,749%, max 4,500%). Это определённый результат проверки.
+Исторические несходящиеся траектории P2 не объявляются точными.
+Новый эталон P4 запускается отдельно; исходный P2-кэш и обычный CLI сохранены.
+
+Подготовлен [отдельный запуск A с t=0 до 50 медленных периодов](docs/RUN_A_50_PERIODS.md):
+`scripts/run_A_50_periods.ps1`, контрольные сохранения, продолжение после остановки,
+проверка результата и маркер `COMPLETED.json`. Пользователь завершил этот
+расчёт; [анализ 50 периодов](docs/LONG_A_50_RESULTS.md) выполнен.
+Наблюдаемое A–B35/C35: RMS 8,5225%, max 22,4521%; линия колебаний поворачивается
+примерно на 13° при почти постоянной радиальной амплитуде. Это результат
+одной траектории: глобальная сходимость A по сетке/шагу на 50 Ts ещё не проверена.
 
 This is a standalone scientific Python project for investigating the transverse electric field, multipole content, RF effective potential, and full charged-particle dynamics of a 12-electrode electrodynamic trap. It is intentionally independent of any earlier codebase and does not assume that the `ABCABCABCABC` arrangement produces a stable trap.
 
@@ -45,6 +71,12 @@ where \(\Omega=2\pi f_{RF}\). No switching-state approximation is used.
 ## FEM and field reconstruction
 
 The free-space region is triangulated with a sampled circular outer boundary and sampled circular electrode surfaces. A quadratic triangular P2 scikit-fem solve enforces Laplace's equation, with the outer boundary held at 0 V as a finite far-field approximation. Three independent solves set one phase to 1 V and the other two to 0 V. Every time-dependent potential and electric field is then reconstructed by linear superposition. Direct instantaneous FEM solves are run only at seven validation phases. The P2 interpolator evaluates quadratic shape functions and their within-element gradients directly; it does not blur or cosmetically smooth the field.
+
+The separate direct-A validation uses P4 FE solutions of this same physical
+boundary problem, an exact complex cyclic sector reduction, and native element
+gradients. It does not substitute the harmonic reconstruction in A's force.
+See [the frozen protocol](docs/DIRECT_FEM_A_PROTOCOL.md) and
+[the completed numerical/physical comparison](docs/DIRECT_FEM_A_RESULTS.md).
 
 Near-center potentials are fitted to
 

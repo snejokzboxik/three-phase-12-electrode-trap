@@ -1,0 +1,847 @@
+{
+  "case": {
+    "window": "early",
+    "control": "dop400",
+    "initial": "minus"
+  },
+  "signature": "787a41a9ea1a9fdb4c632bec0d05a9ffb03611a68a943d3cb2e2703679090904",
+  "status": "completed",
+  "arrays_sha256": "fbca18bc470baa56c0984176a35c1633f92ee7490ea8457ca9dfe8992c98354c",
+  "initial_state": [
+    -0.0008600188200895435,
+    2.1495304292278607e-05,
+    -0.29464862115131024,
+    -0.009216274164270365
+  ],
+  "start_s": 0.01,
+  "end_s": 0.015120000000000001,
+  "global_RF_phase_at_start_rad": 6.283185307179188,
+  "diagnostics": {
+    "checked_RK_steps": 204817,
+    "steps_requiring_root_checks": 29,
+    "crossings": 29,
+    "endpoint_misses_detected": 0,
+    "vertex_crossings": 0,
+    "minimum_certified_barycentric_bound": -4.440892098500626e-15,
+    "minimum_output_barycentric": 9.095228051037019e-06,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "no_position_or_velocity_nudging": true,
+    "scope": "Numerical dense-curve membership audit, not exact-ODE or FEM spatial convergence"
+  },
+  "crossings": [
+    {
+      "time_s": 0.010019754900652314,
+      "from_triangle": 88851,
+      "to_triangle": 89112,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0008631560260746996,
+        2.1516007676094642e-05,
+        -0.2947031256574085,
+        0.01154455726550047
+      ],
+      "from_barycentric": [
+        0.8945509347104362,
+        0.10544906528956594,
+        -2.149322386735264e-15
+      ],
+      "to_barycentric": [
+        0.8945509347104341,
+        2.1614654510671016e-15,
+        0.10544906528956376
+      ],
+      "acceleration_jump_m_per_s2": 747.8837728630353,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.010117588034216288,
+      "from_triangle": 89112,
+      "to_triangle": 88592,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0008782712916488068,
+        2.13889424416038e-05,
+        -0.1717227884111437,
+        0.14233263740623553
+      ],
+      "from_barycentric": [
+        0.7509281443842205,
+        0.24907185561577788,
+        1.609823385706477e-15
+      ],
+      "to_barycentric": [
+        -1.7763568394002505e-15,
+        0.2490718556157795,
+        0.7509281443842221
+      ],
+      "acceleration_jump_m_per_s2": 170.6613234420978,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.010439873022578525,
+      "from_triangle": 88592,
+      "to_triangle": 88333,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009240167288868535,
+        2.1949671379739542e-05,
+        -0.29381816201915023,
+        0.002476192535883845
+      ],
+      "from_barycentric": [
+        0.32979275955139264,
+        0.6702072404486099,
+        -2.7200464103316335e-15
+      ],
+      "to_barycentric": [
+        2.6645352591003757e-15,
+        0.670207240448607,
+        0.32979275955139004
+      ],
+      "acceleration_jump_m_per_s2": 349.6329968901528,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.010742715982245141,
+      "from_triangle": 88333,
+      "to_triangle": 89012,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.000958620619262616,
+        2.19415886527248e-05,
+        -0.059606491085443254,
+        -0.18012378611833546
+      ],
+      "from_barycentric": [
+        0.5703751484196824,
+        0.4296248515803177,
+        -1.942890293094024e-16
+      ],
+      "to_barycentric": [
+        0.5703751484196823,
+        1.942890293094024e-16,
+        0.42962485158031755
+      ],
+      "acceleration_jump_m_per_s2": 80.3572890481929,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.010746316296269078,
+      "from_triangle": 89012,
+      "to_triangle": 88333,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009584507392187924,
+        2.1823650129453203e-05,
+        0.018705522430082708,
+        0.14653783299176448
+      ],
+      "from_barycentric": [
+        0.567420156469303,
+        4.996003610813204e-16,
+        0.4325798435306965
+      ],
+      "to_barycentric": [
+        0.5674201564693034,
+        0.432579843530697,
+        -4.996003610813204e-16
+      ],
+      "acceleration_jump_m_per_s2": 59.675965894891874,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.010750269938182407,
+      "from_triangle": 88333,
+      "to_triangle": 89012,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.000959135850945473,
+        2.2299286134142914e-05,
+        -0.2773317070133048,
+        -0.0430685684293205
+      ],
+      "from_barycentric": [
+        0.5793373869566814,
+        0.4206626130433182,
+        3.608224830031759e-16
+      ],
+      "to_barycentric": [
+        0.5793373869566818,
+        -3.3306690738754696e-16,
+        0.42066261304331853
+      ],
+      "acceleration_jump_m_per_s2": 162.1288162356787,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.011071910204385178,
+      "from_triangle": 89012,
+      "to_triangle": 88956,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009847297820444864,
+        2.2240377531423692e-05,
+        -0.12094954285109448,
+        -0.192259301643971
+      ],
+      "from_barycentric": [
+        0.7584114850201613,
+        0.24158851497983833,
+        4.128641872824801e-16
+      ],
+      "to_barycentric": [
+        -2.220446049250313e-16,
+        0.2415885149798387,
+        0.7584114850201618
+      ],
+      "acceleration_jump_m_per_s2": 45.01911652522041,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.011073643142750406,
+      "from_triangle": 88956,
+      "to_triangle": 89012,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009847567759361903,
+        2.1917912843629916e-05,
+        0.08056636393280513,
+        -0.14250618733432363
+      ],
+      "from_barycentric": [
+        3.3306690738754696e-16,
+        0.2462123678836823,
+        0.7537876321163175
+      ],
+      "to_barycentric": [
+        0.7537876321163177,
+        0.24621236788368253,
+        -1.8388068845354155e-16
+      ],
+      "acceleration_jump_m_per_s2": 474.56081268847043,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.011079126524467912,
+      "from_triangle": 89012,
+      "to_triangle": 88956,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009847144170486806,
+        2.2423925299553936e-05,
+        -0.2378781581114356,
+        0.09225953885393069
+      ],
+      "from_barycentric": [
+        0.7610433945370423,
+        0.2389566054629531,
+        4.631711680858075e-15
+      ],
+      "to_barycentric": [
+        -4.440892098500626e-15,
+        0.2389566054629577,
+        0.7610433945370468
+      ],
+      "acceleration_jump_m_per_s2": 557.1869708853313,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.011965791362488497,
+      "from_triangle": 88956,
+      "to_triangle": 89012,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009850627460230585,
+        1.8262843407239385e-05,
+        0.22973792922930478,
+        0.09855977516409697
+      ],
+      "from_barycentric": [
+        8.881784197001252e-16,
+        0.29862276836143475,
+        0.7013772316385646
+      ],
+      "to_barycentric": [
+        0.7013772316385651,
+        0.29862276836143553,
+        -6.765421556309548e-16
+      ],
+      "acceleration_jump_m_per_s2": 309.68095995129573,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.011970121489522574,
+      "from_triangle": 89012,
+      "to_triangle": 88956,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009850160082967888,
+        1.8821164766569083e-05,
+        -0.13969555896571587,
+        -0.033706338042913224
+      ],
+      "from_barycentric": [
+        0.7093830565748618,
+        0.2906169434251377,
+        5.238864897449957e-16
+      ],
+      "to_barycentric": [
+        -2.220446049250313e-16,
+        0.2906169434251382,
+        0.7093830565748622
+      ],
+      "acceleration_jump_m_per_s2": 429.7213987614802,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.011973284341078683,
+      "from_triangle": 88956,
+      "to_triangle": 89012,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009850584003305966,
+        1.831475635029746e-05,
+        0.16404006716880096,
+        -0.17848633099217603
+      ],
+      "from_barycentric": [
+        -1.1102230246251565e-15,
+        0.29787838356027047,
+        0.7021216164397308
+      ],
+      "to_barycentric": [
+        0.7021216164397295,
+        0.2978783835602692,
+        1.2975731600306517e-15
+      ],
+      "acceleration_jump_m_per_s2": 318.72857789978957,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.012406127601095022,
+      "from_triangle": 89012,
+      "to_triangle": 88333,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009481825456699976,
+        1.4694998896767778e-05,
+        0.23822958773895622,
+        0.1140490229871568
+      ],
+      "from_barycentric": [
+        0.38880924609578105,
+        2.220446049250313e-16,
+        0.6111907539042188
+      ],
+      "to_barycentric": [
+        0.38880924609578116,
+        0.611190753904219,
+        -1.6653345369377348e-16
+      ],
+      "acceleration_jump_m_per_s2": 134.44589780547196,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.01260603035974174,
+      "from_triangle": 88333,
+      "to_triangle": 88592,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0009247411868372114,
+        1.285240236894963e-05,
+        0.2558400920211774,
+        0.09688449023265931
+      ],
+      "from_barycentric": [
+        2.220446049250313e-15,
+        0.8019534120001306,
+        0.19804658799986707
+      ],
+      "to_barycentric": [
+        0.1980465879998693,
+        0.8019534120001328,
+        -2.2065682614424986e-15
+      ],
+      "acceleration_jump_m_per_s2": 386.5075902529598,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.012792982839237004,
+      "from_triangle": 88592,
+      "to_triangle": 89112,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0008997839515215815,
+        1.1341657188389591e-05,
+        0.19428654283241403,
+        -0.15329171473883643
+      ],
+      "from_barycentric": [
+        -2.220446049250313e-16,
+        0.5887443649337917,
+        0.41125563506620844
+      ],
+      "to_barycentric": [
+        0.4112556350662083,
+        0.5887443649337916,
+        5.551115123125783e-17
+      ],
+      "acceleration_jump_m_per_s2": 85.2187515859106,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.013025114454191624,
+      "from_triangle": 89112,
+      "to_triangle": 88851,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0008642869683822675,
+        9.096860453988043e-06,
+        0.29462739706426033,
+        0.004561051031754061
+      ],
+      "from_barycentric": [
+        0.7136765171147467,
+        1.0269562977782698e-15,
+        0.2863234828852523
+      ],
+      "to_barycentric": [
+        0.7136765171147477,
+        0.2863234828852534,
+        -1.0200174038743626e-15
+      ],
+      "acceleration_jump_m_per_s2": 384.2805290462135,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.013224985371698852,
+      "from_triangle": 88851,
+      "to_triangle": 88921,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0008311931263551549,
+        7.1817124978860965e-06,
+        0.29230471636788646,
+        -0.007409778113004285
+      ],
+      "from_barycentric": [
+        0.45483105562457316,
+        1.4988010832439613e-15,
+        0.5451689443754253
+      ],
+      "to_barycentric": [
+        0.4548310556245746,
+        0.5451689443754268,
+        -1.5543122344752192e-15
+      ],
+      "acceleration_jump_m_per_s2": 91.69649497360291,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.013382001728864371,
+      "from_triangle": 88921,
+      "to_triangle": 89265,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0008038527367135815,
+        5.883203231899468e-06,
+        0.14723861964636323,
+        -0.11417434455957708
+      ],
+      "from_barycentric": [
+        -4.440892098500626e-16,
+        0.7647114276636051,
+        0.23528857233639533
+      ],
+      "to_barycentric": [
+        0.235288572336395,
+        0.7647114276636047,
+        4.440892098500626e-16
+      ],
+      "acceleration_jump_m_per_s2": 44.91390945162425,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.013554960883558724,
+      "from_triangle": 89265,
+      "to_triangle": 89526,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0007722497844754908,
+        4.04278140726968e-06,
+        0.2822251247204286,
+        -0.010705148842067509
+      ],
+      "from_barycentric": [
+        -1.3322676295501878e-15,
+        0.4698484304801278,
+        0.5301515695198734
+      ],
+      "to_barycentric": [
+        0.5301515695198722,
+        0.46984843048012653,
+        1.27675647831893e-15
+      ],
+      "acceleration_jump_m_per_s2": 13.049959179605674,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.013704244593291318,
+      "from_triangle": 89526,
+      "to_triangle": 89013,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0007442838691514344,
+        2.661769354758278e-06,
+        0.2674700630867998,
+        -0.04842774645426894
+      ],
+      "from_barycentric": [
+        0.7814041403652755,
+        2.4875934645507414e-15,
+        0.21859585963472203
+      ],
+      "to_barycentric": [
+        0.7814041403652782,
+        0.2185958596347244,
+        -2.5049406993105094e-15
+      ],
+      "acceleration_jump_m_per_s2": 379.7334921291249,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.013846275868460656,
+      "from_triangle": 89013,
+      "to_triangle": 89348,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0007168171749181672,
+        1.3214915373773249e-06,
+        0.24788204095393915,
+        0.04648615436956638
+      ],
+      "from_barycentric": [
+        0.5352603263214878,
+        -1.3600232051658168e-15,
+        0.4647396736785136
+      ],
+      "to_barycentric": [
+        0.5352603263214863,
+        0.4647396736785123,
+        1.304512053934559e-15
+      ],
+      "acceleration_jump_m_per_s2": 48.146547684392274,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.014007181121127078,
+      "from_triangle": 89348,
+      "to_triangle": 89138,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0006852457540421848,
+        -1.717343659147931e-07,
+        0.21182504520320286,
+        0.056687283382290586
+      ],
+      "from_barycentric": [
+        -8.881784197001252e-16,
+        0.7569908134705728,
+        0.24300918652942802
+      ],
+      "to_barycentric": [
+        0.24300918652942727,
+        0.756990813470572,
+        8.187894806610529e-16
+      ],
+      "acceleration_jump_m_per_s2": 27.893246564717483,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.014174066791442503,
+      "from_triangle": 89138,
+      "to_triangle": 95838,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0006520380953085658,
+        -1.8184495471423325e-06,
+        0.2497113919377644,
+        -0.04258691706736794
+      ],
+      "from_barycentric": [
+        -8.881784197001252e-16,
+        0.4323319117701144,
+        0.5676680882298866
+      ],
+      "to_barycentric": [
+        0.5676680882298857,
+        0.4323319117701132,
+        1.1102230246251565e-15
+      ],
+      "acceleration_jump_m_per_s2": 98.85164292337754,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.014293759587915024,
+      "from_triangle": 95838,
+      "to_triangle": 94330,
+      "face": 1,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0006278359134775525,
+        -2.939245506989797e-06,
+        0.23944844206146904,
+        -0.04671456719418763
+      ],
+      "from_barycentric": [
+        0.8003385482284848,
+        -9.645062526431047e-16,
+        0.1996614517715161
+      ],
+      "to_barycentric": [
+        8.881784197001252e-16,
+        0.8003385482284837,
+        0.19966145177151523
+      ],
+      "acceleration_jump_m_per_s2": 328.83738824390457,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.01440680411247836,
+      "from_triangle": 94330,
+      "to_triangle": 96081,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0006046465068262109,
+        -4.004440945374398e-06,
+        0.22523184890767572,
+        0.03223265755401177
+      ],
+      "from_barycentric": [
+        0.37185605620701245,
+        0.6281439437929855,
+        1.887379141862766e-15
+      ],
+      "to_barycentric": [
+        0.6281439437929879,
+        0.371856056207014,
+        -2.0261570199409107e-15
+      ],
+      "acceleration_jump_m_per_s2": 15.732220888392291,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.014576676119388282,
+      "from_triangle": 96081,
+      "to_triangle": 95371,
+      "face": 0,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0005697409137272663,
+        -5.6207985742110736e-06,
+        0.2266700598569517,
+        0.023664052667691535
+      ],
+      "from_barycentric": [
+        1.7763568394002505e-15,
+        0.6674168728772363,
+        0.33258312712276183
+      ],
+      "to_barycentric": [
+        0.6674168728772378,
+        -1.4693107841523556e-15,
+        0.33258312712276367
+      ],
+      "acceleration_jump_m_per_s2": 47.368720745005454,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.014783807007438352,
+      "from_triangle": 95371,
+      "to_triangle": 83493,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0005268672103682873,
+        -7.574773731101365e-06,
+        0.22962904777444254,
+        -0.03154268474302968
+      ],
+      "from_barycentric": [
+        0.37791213054725215,
+        0.622087869452746,
+        1.887379141862766e-15
+      ],
+      "to_barycentric": [
+        -1.5543122344752192e-15,
+        0.622087869452747,
+        0.3779121305472546
+      ],
+      "acceleration_jump_m_per_s2": 265.99676975386853,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.01489189918178401,
+      "from_triangle": 83493,
+      "to_triangle": 83171,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0005043625934556392,
+        -8.513778607221307e-06,
+        0.1976053421246259,
+        -0.03388628147261498
+      ],
+      "from_barycentric": [
+        0.15816071675362764,
+        0.8418392832463703,
+        2.1094237467877974e-15
+      ],
+      "to_barycentric": [
+        -1.9984014443252818e-15,
+        0.841839283246372,
+        0.15816071675362997
+      ],
+      "acceleration_jump_m_per_s2": 176.14315851456928,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    },
+    {
+      "time_s": 0.014955259370928098,
+      "from_triangle": 83171,
+      "to_triangle": 83901,
+      "face": 2,
+      "endpoint_sign_test_would_miss": false,
+      "at_vertex": false,
+      "equivalent_forward_cells": 1,
+      "state": [
+        -0.0004910485755809036,
+        -9.166954435341822e-06,
+        0.23472097193921845,
+        -0.006510661687602462
+      ],
+      "from_barycentric": [
+        0.2135516746407402,
+        0.7864483253592596,
+        1.6653345369377348e-16
+      ],
+      "to_barycentric": [
+        0.7864483253592598,
+        0.21355167464074049,
+        -2.498001805406602e-16
+      ],
+      "acceleration_jump_m_per_s2": 101.81298912962814,
+      "position_jump_m": 0.0,
+      "velocity_jump_m_per_s": 0.0
+    }
+  ],
+  "nfev": 3072315,
+  "wall_seconds": 49.83337729999948
+}

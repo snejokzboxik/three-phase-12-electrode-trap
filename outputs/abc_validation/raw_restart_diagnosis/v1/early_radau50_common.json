@@ -1,0 +1,381 @@
+{
+  "case": {
+    "window": "early",
+    "control": "radau50",
+    "initial": "common"
+  },
+  "signature": "8a67e48312f2227c48a8d1eea25a78977cb0dafad95434d6402f2ad75b75c206",
+  "status": "completed",
+  "arrays_sha256": "98284e11c756f2d3a9a3aeb4eebd1c7746405ff1444e62c526b770fffc039259",
+  "initial_state": [
+    -0.0008600188201501915,
+    2.1495304335742015e-05,
+    -0.29464862123723673,
+    -0.00921627412497242
+  ],
+  "start_s": 0.01,
+  "end_s": 0.015120000000000001,
+  "global_RF_phase_at_start_rad": 6.283185307179188,
+  "diagnostics": {
+    "method": "Radau",
+    "checked_RK_steps": 132701,
+    "crossings": 29,
+    "minimum_certified_barycentric_bound": -2.220446049250313e-15,
+    "minimum_output_barycentric": 9.089499061532003e-06,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "endpoint_misses_detected": 0,
+    "geometry_checker_shared_with_DOP853": true
+  },
+  "crossings": [
+    {
+      "time_s": 0.010019754900429558,
+      "from_triangle": 88851,
+      "to_triangle": 89112,
+      "state": [
+        -0.0008631560260708764,
+        2.1516007718077007e-05,
+        -0.2947031241105285,
+        0.011544576210826756
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.010117588033902464,
+      "from_triangle": 89112,
+      "to_triangle": 88592,
+      "state": [
+        -0.0008782712916408364,
+        2.1388942445326304e-05,
+        -0.17172276035515685,
+        0.14233264105400698
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.010439873022547102,
+      "from_triangle": 88592,
+      "to_triangle": 88333,
+      "state": [
+        -0.000924016728879551,
+        2.1949671471436605e-05,
+        -0.2938181618183253,
+        0.0024761958944424494
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.01074271598298604,
+      "from_triangle": 88333,
+      "to_triangle": 89012,
+      "state": [
+        -0.0009586206192582691,
+        2.1941588649706872e-05,
+        -0.05960640620256737,
+        -0.1801237681556838
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.010746316295234669,
+      "from_triangle": 89012,
+      "to_triangle": 88333,
+      "state": [
+        -0.0009584507391892356,
+        2.1823650108933474e-05,
+        0.018705616755360945,
+        0.14653775809387143
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.010750269938883044,
+      "from_triangle": 88333,
+      "to_triangle": 89012,
+      "state": [
+        -0.0009591358510906973,
+        2.2299286234964297e-05,
+        -0.2773316872733017,
+        -0.043068647743744734
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.011071910205304469,
+      "from_triangle": 89012,
+      "to_triangle": 88956,
+      "state": [
+        -0.0009847297820439786,
+        2.2240377537491708e-05,
+        -0.12094943206849393,
+        -0.19225933611511908
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.011073643141704725,
+      "from_triangle": 88956,
+      "to_triangle": 89012,
+      "state": [
+        -0.000984756775908389,
+        2.1917913175739632e-05,
+        0.08056627112136448,
+        -0.14250628047485758
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.011079126524874122,
+      "from_triangle": 89012,
+      "to_triangle": 88956,
+      "state": [
+        -0.0009847144170301847,
+        2.2423925520506448e-05,
+        -0.23787818134533045,
+        0.09225949333193044
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.011965791360924776,
+      "from_triangle": 88956,
+      "to_triangle": 89012,
+      "state": [
+        -0.000985062746016124,
+        1.8262843490079553e-05,
+        0.22973803275078242,
+        0.09855960712146385
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.011970121492072239,
+      "from_triangle": 89012,
+      "to_triangle": 88956,
+      "state": [
+        -0.0009850160082842346,
+        1.8821164916540346e-05,
+        -0.1396955159932118,
+        -0.0337066572410606
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.011973284339133172,
+      "from_triangle": 88956,
+      "to_triangle": 89012,
+      "state": [
+        -0.0009850584002817342,
+        1.8314756934001014e-05,
+        0.16403985775304125,
+        -0.17848645881064296
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.012406127599191647,
+      "from_triangle": 89012,
+      "to_triangle": 88333,
+      "state": [
+        -0.0009481825457143301,
+        1.4694998927545503e-05,
+        0.23822973519567947,
+        0.11404886741678688
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.012606030357978793,
+      "from_triangle": 88333,
+      "to_triangle": 88592,
+      "state": [
+        -0.0009247411868262971,
+        1.285240250599891e-05,
+        0.2558402084291001,
+        0.09688434832566066
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.012792982840037983,
+      "from_triangle": 88592,
+      "to_triangle": 89112,
+      "state": [
+        -0.0008997839509874513,
+        1.1341657437850134e-05,
+        0.19428661531962013,
+        -0.15329168850344788
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.013025114453459967,
+      "from_triangle": 89112,
+      "to_triangle": 88851,
+      "state": [
+        -0.0008642869683391427,
+        9.096860927548731e-06,
+        0.29462740302518153,
+        0.004560989641296095
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.0132249853680056,
+      "from_triangle": 88851,
+      "to_triangle": 88921,
+      "state": [
+        -0.0008311931272073399,
+        7.181713085217426e-06,
+        0.2923047214147343,
+        -0.007410057533106246
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.013382001727743523,
+      "from_triangle": 88921,
+      "to_triangle": 89265,
+      "state": [
+        -0.0008038527366549502,
+        5.883204031890313e-06,
+        0.14723854653430485,
+        -0.11417432180573628
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.013554960888490836,
+      "from_triangle": 89265,
+      "to_triangle": 89526,
+      "state": [
+        -0.000772249782852172,
+        4.042782142139185e-06,
+        0.2822251277709893,
+        -0.010704847101529354
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.013704244592618443,
+      "from_triangle": 89526,
+      "to_triangle": 89013,
+      "state": [
+        -0.0007442838690806983,
+        2.661770267995306e-06,
+        0.26747004703924016,
+        -0.048427778314882444
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.013846275862603613,
+      "from_triangle": 89013,
+      "to_triangle": 89348,
+      "state": [
+        -0.0007168171760695448,
+        1.3214922320420191e-06,
+        0.24788224798246894,
+        0.04648595893361937
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.014007181119906039,
+      "from_triangle": 89348,
+      "to_triangle": 89138,
+      "state": [
+        -0.0006852457539717477,
+        -1.7173340717110427e-07,
+        0.21182509561357352,
+        0.05668727333567526
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.01417406679755075,
+      "from_triangle": 89138,
+      "to_triangle": 95838,
+      "state": [
+        -0.0006520380934367865,
+        -1.818448723108963e-06,
+        0.2497115183433035,
+        -0.04258673154566257
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.01429375958701979,
+      "from_triangle": 95838,
+      "to_triangle": 94330,
+      "state": [
+        -0.0006278359133010154,
+        -2.93924440475648e-06,
+        0.23944842195591778,
+        -0.04671458775742062
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.01440680410500384,
+      "from_triangle": 94330,
+      "to_triangle": 96081,
+      "state": [
+        -0.0006046465080402697,
+        -4.004440157391898e-06,
+        0.2252320464606704,
+        0.03223256233277853
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.014576676116604381,
+      "from_triangle": 96081,
+      "to_triangle": 95371,
+      "state": [
+        -0.0005697409137635663,
+        -5.620797640035312e-06,
+        0.22667011780324334,
+        0.023664017154592584
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.01478380701196565,
+      "from_triangle": 95371,
+      "to_triangle": 83493,
+      "state": [
+        -0.0005268672086158647,
+        -7.574772912759058e-06,
+        0.22962911147396586,
+        -0.03154262409147322
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.0148918991787038,
+      "from_triangle": 83493,
+      "to_triangle": 83171,
+      "state": [
+        -0.000504362593236311,
+        -8.513777676455714e-06,
+        0.19760529633070448,
+        -0.03388626112334777
+      ],
+      "endpoint_sign_test_would_miss": false
+    },
+    {
+      "time_s": 0.014955259364434613,
+      "from_triangle": 83171,
+      "to_triangle": 83901,
+      "state": [
+        -0.0004910485761753079,
+        -9.166953653989799e-06,
+        0.23472098454422421,
+        -0.006510763960619335
+      ],
+      "endpoint_sign_test_would_miss": false
+    }
+  ],
+  "nfev": 935097,
+  "wall_seconds": 40.03208590000031
+}

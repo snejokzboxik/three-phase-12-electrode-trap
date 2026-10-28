@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "settings_sha256": "84ad68b1024c65df07e577e7e10722f15e78cd2b530316010dbaac42f8734268",
+  "driver_sha256": "f483ca8162af4f5ecc1267376d07a7793e2b251e257c2615077c58dbe3e6f8a3",
+  "artifacts": {
+    "outputs/fem_cache/p2_basis.npz": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+    "outputs/fem_cache/metadata.json": "89eafcd235d11344ac40494749a331fe580fa1356473b150ab75c23453f8d8c9",
+    "outputs/meshes/gmsh_70um/trap.msh": "a288593ff9c2ca61c606c4e83c1b7e5104fbdafec3ffcafe98693dfeac7bf4b6",
+    "outputs/meshes/gmsh_70um/trap.json": "645dd35e00cdfd670ee7ac2f809a5069d31b1c16086437d48edfdd67fd5fda54",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/reconstruction_N40.json": "a8ecf636661c3c0adfa9923339f2d5d0810efc5a6adcb757d238c0ff5937f6dd",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/reconstruction_N48.json": "87a8c73faab6ef44f6ac97c4d32220f9746bb109a5f15d487f1b0ef75ac7e88d",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/reconstruction_N56.json": "d0b690c220b724a15fc2c6bbf311c2ef4c6cd1cc74c0aa799d4075f68adb9d44",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/alternative_N48.json": "e56c7b572a6f156272b7ed05baa1ecc29b8b977105fe2bbdbba586aafdbece08",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/common_samples.npz": "e56aa383dc36bb965569f9e3e7c876300f9c4c0b93a61f522e1b962ca5212f14",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/facet_samples.npz": "a956473463ae48a2ff8c42079c8b1b62872872e2759e0e85db8a5644d5cfdc4d",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/origin_limits.npz": "a7f3feb58510154cc93fbcd2870c9ca9ede31dadc72cc42ed49412a0e955c593"
+  },
+  "mesh_um": 70,
+  "fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+  "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+  "basis_path": "outputs/fem_cache/p2_basis.npz",
+  "triangles": 166032,
+  "dofs": 334141,
+  "condition": {
+    "40": 45.78672315103382,
+    "48": 76.73073454434721,
+    "56": 128.5876160031878
+  },
+  "alternative_condition": 21.694776061185628,
+  "discrete_scaled_residuals": {
+    "A": 2.3594149217328427e-15,
+    "B": 1.794661350041471e-15,
+    "C": 1.895061985008826e-15,
+    "DC": 2.7275505832798113e-15
+  },
+  "DC_superposition_max_V": 8.881784197001252e-15,
+  "repeated_70um_field_max_difference_V_per_m": 0.0,
+  "wall_seconds": 11.702059900000677
+}

@@ -1,0 +1,108 @@
+{
+  "status": "completed",
+  "settings_sha256": "84ad68b1024c65df07e577e7e10722f15e78cd2b530316010dbaac42f8734268",
+  "driver_sha256": "f483ca8162af4f5ecc1267376d07a7793e2b251e257c2615077c58dbe3e6f8a3",
+  "artifacts": {
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/A_smooth_coarse.npz": "b82b1bfe52957fefdcd56532a0551239c7f699af69302e99062e8764604fd6d9",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/B_coarse.npz": "221ac0d78bb63d38359d1813253cbd98487a8a523362fefbe0931df389635c7b",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/A_smooth_fine.npz": "d72a9e7855c4be72c160b49eb9b71b9c8b3dba2760310c15547397797869daba",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/B_fine.npz": "38673d9e41ba57c4f71891084ae41b4d74a66f98ab07471ec17ff5e50b981c61",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/local_smooth_100.npz": "4b9ec50071dea4759a33767cc67770f93305ac38ad60fb3d720977333fe90175",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/local_smooth_200.npz": "19e874020559407e449aacafc4b1ae4f418bc4be249e162d0bda538f27a69768",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/local_raw_dop200.npz": "e08d80e16946604a77dc540562d2ac5abc6366a6524529ad36a920dcdb31f8ee",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h35/local_raw_dop400.npz": "2ef5d9f35d744eaadcfe14e86a3a796d4bf5712b3ad3f2c0daa7ddbc48c027af"
+  },
+  "records": {
+    "A_smooth_coarse": {
+      "status": "completed",
+      "nfev": 5629517
+    },
+    "B_coarse": {
+      "status": "completed",
+      "nfev": 4922
+    },
+    "A_smooth_fine": {
+      "status": "completed",
+      "nfev": 10448369
+    },
+    "B_fine": {
+      "status": "completed",
+      "nfev": 9797
+    },
+    "local_smooth_100": {
+      "status": "completed",
+      "nfev": 712709
+    },
+    "local_smooth_200": {
+      "status": "completed",
+      "nfev": 1327109
+    },
+    "local_raw_dop200": {
+      "status": "completed",
+      "diagnostics": {
+        "checked_RK_steps": 102428,
+        "steps_requiring_root_checks": 55,
+        "crossings": 55,
+        "endpoint_misses_detected": 0,
+        "vertex_crossings": 0,
+        "minimum_certified_barycentric_bound": -2.886579864025407e-14,
+        "minimum_output_barycentric": 3.6623537704449927e-06,
+        "barycentric_tolerance": 5.684341886080802e-14,
+        "no_position_or_velocity_nudging": true,
+        "scope": "Numerical dense-curve membership audit, not exact-ODE or FEM spatial convergence"
+      },
+      "nfev": 1536532
+    },
+    "local_raw_dop400": {
+      "status": "completed",
+      "diagnostics": {
+        "checked_RK_steps": 204827,
+        "steps_requiring_root_checks": 55,
+        "crossings": 55,
+        "endpoint_misses_detected": 0,
+        "vertex_crossings": 0,
+        "minimum_certified_barycentric_bound": -2.6423307986078726e-14,
+        "minimum_output_barycentric": 3.6623298742821664e-06,
+        "barycentric_tolerance": 5.684341886080802e-14,
+        "no_position_or_velocity_nudging": true,
+        "scope": "Numerical dense-curve membership audit, not exact-ODE or FEM spatial convergence"
+      },
+      "nfev": 3072517
+    }
+  },
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "full_initial_state_common_to_all_meshes": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "local_initial_state_common_to_all_meshes": [
+    -0.0002583706503131553,
+    2.0292476775718266e-05,
+    -0.21367161492701695,
+    0.012080559593375376
+  ],
+  "local_start_time_s": 0.030000000000000002,
+  "local_end_time_s": 0.035120000000000005
+}

@@ -1,0 +1,50 @@
+{
+  "frozen_inputs_checked": 53,
+  "reused_v1_cases": [
+    {
+      "model": "A",
+      "mesh": 50,
+      "phase": 0,
+      "extent": "pilot",
+      "level": "coarse"
+    },
+    {
+      "model": "A",
+      "mesh": 50,
+      "phase": 0,
+      "extent": "pilot",
+      "level": "fine"
+    },
+    {
+      "model": "A",
+      "mesh": 50,
+      "phase": 1,
+      "extent": "pilot",
+      "level": "coarse"
+    },
+    {
+      "model": "A",
+      "mesh": 50,
+      "phase": 1,
+      "extent": "pilot",
+      "level": "fine"
+    },
+    {
+      "model": "A_fit",
+      "mesh": 35,
+      "phase": 0,
+      "extent": "pilot",
+      "level": "fine"
+    },
+    {
+      "model": "A_fit",
+      "mesh": 35,
+      "phase": 1,
+      "extent": "pilot",
+      "level": "fine"
+    }
+  ],
+  "RF_cases_checked": 17,
+  "all_initial_states_and_clocks_preserved": true,
+  "kernels_match_frozen_settings": true
+}

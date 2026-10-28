@@ -1,0 +1,44 @@
+{
+  "signature": {
+    "mesh_um": 70,
+    "degree": 2,
+    "full_mesh_sha256": "a288593ff9c2ca61c606c4e83c1b7e5104fbdafec3ffcafe98693dfeac7bf4b6",
+    "sector_mesh_sha256": "7c93381ce1bf21f7468d61037ba7b477a6d0c58e977cb59ddb026ee6bedf5cdf",
+    "direct_module_sha256": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "skfem": "12.0.2",
+    "rho": [
+      -0.5,
+      -0.8660254037844386
+    ],
+    "intorder": 4,
+    "geometry_order": 1,
+    "boundary": "electrode H=1, outer H=0, H(R30*x)=rho*H(x), H(0)=0; direct gradient"
+  },
+  "diagnostics": {
+    "max_seam_DOF_mismatch_m": 8.605808476718736e-15,
+    "matched_seam_dofs": 363,
+    "central_DOF": 0,
+    "sector_dofs": 28208,
+    "reduced_dofs": 27846,
+    "free_dofs": 27497,
+    "scaled_discrete_residual_max": 4.94682917069218e-16,
+    "nodal_polynomial_error_V": 2.2887833992611187e-16,
+    "degree": 2,
+    "sector_triangles": 13836,
+    "RF_encoding": "Phi/U0=Im(H*exp(i*chi)), H(R30 x)=rho H(x), rho=exp(-2pi i/3)",
+    "all_FE_content_retained": true,
+    "harmonic_fit_used": false
+  },
+  "full_mapping_max_error_m": 4.913806957664251e-15,
+  "wall_seconds": 4.730897000001278,
+  "artifacts": {
+    "common_samples.npz": "3656e9e980c4bb0c489c0fd173a776d1aaa12d8cfde3af2558525fae16cfcc86",
+    "diagnostic_N48.json": "ea5d3049faad0d12bed21fe1609898040bf12baec0ee8412219f4dca53ac8832",
+    "direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "full_P2_equivalence.json": "a3a24d802bd50545c8256a18a4708caa882d7ca7766292939e007950a6004a7e",
+    "native_reconstruction_discrepancy.csv": "849794a3a182b2021561750806341f8d306439440cfecfa0107029647278b66e",
+    "origin_limits.json": "b5895761e31ee0f30a0315513324ddd4a76e8be0897bb00d116d3d466623b1f0",
+    "sector_solution.npz": "31d916830a0e769bbf0f43daab53cb0a0ddd71bb97361908bf6ff9718a1d5eda",
+    "solver_diagnostics.json": "6d061a69258964bc622e658297c6072edf25d956927e2c1698e9ef55749e960e"
+  }
+}

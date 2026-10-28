@@ -1,0 +1,98 @@
+{
+  "run": "outputs/abc_validation/long_A/v1/A_P4_h35_phase0_fine_50Ts_from_zero",
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "full_initial_state": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "phase_rad": 0.0,
+  "reference_slow_period_s": 0.023093891788417812,
+  "RF_periods": 115470,
+  "duration_s": 1.1547,
+  "samples_per_RF_period": 64,
+  "R_scale_m": 0.001,
+  "physical_tolerances": {
+    "relative_position_rms": 0.01,
+    "relative_position_max": 0.03,
+    "relative_period": 0.01,
+    "numerical_budget_fraction": 0.1
+  },
+  "windows_slow_periods": [
+    3.25,
+    10.25,
+    20.0,
+    25.0,
+    30.0,
+    40.0,
+    50.0
+  ],
+  "reference_sampling": "two intervals per RF period; cubic interpolation to all RF-filtered A nodes, with nested-grid control",
+  "reference_controls": {
+    "coarse": {
+      "rtol": 2e-10,
+      "atol": 2e-12,
+      "steps_per_slow_period": 100
+    },
+    "fine": {
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "steps_per_slow_period": 200
+    }
+  },
+  "input_sha256": {
+    "outputs/abc_validation/long_A/v1/A_P4_h35_phase0_fine_50Ts_from_zero/settings.json": "5696a1fcedfcb62b711cff066700191b78f087c72090b999075e077842fade9c",
+    "outputs/abc_validation/long_A/v1/A_P4_h35_phase0_fine_50Ts_from_zero/COMPLETED.json": "5a7301ded125f214bb0b52afe38de797542878403eff0766847e1fdb932dc716",
+    "outputs/abc_validation/long_A/v1/A_P4_h35_phase0_fine_50Ts_from_zero/summary.json": "3f0a51d9233c3e5f778a07a928ed04ca4267bc281dc54acf8986db966cd05738",
+    "outputs/abc_validation/long_A/v1/A_P4_h35_phase0_fine_50Ts_from_zero/trajectory.npz": "436afc5d6b9afa9a1833c6576531492b8bb94a9e6e45ebccc60f7da0edea5de9",
+    "outputs/abc_validation/long_A/v1/A_P4_h35_phase0_fine_50Ts_from_zero/slow_samples.npz": "36a471055a93567d308cd84010510d1c61ac59edde1c6c7c00dd2bf425f401ee",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/native_C_calibration.json": "4300f092e88f3e9f8c315ff93beec83958a9e60484c924e87bd6b181c269cb3b",
+    "outputs/abc_validation/model_b/reconstruction.json": "47892bac73e2b0e6bec3db899c3f54d88cbdb071ecb9aaa9045ed875d4c707a6",
+    "outputs/abc_validation/model_c/coefficients.json": "be84773fe2f22b0465ed7cafa16ee59d70dbb31833bd19662f6a46ec9898b304",
+    "outputs/abc_validation/direct_fem_validation/v2/validation_settings.json": "251b65a20226b2f287b2e1f2414fc2d20b6c4e3b5977349248c420be7fb347ce",
+    "outputs/abc_validation/direct_fem_validation/v2/runs/A_h35_phase0_fine_pilot.npz": "5a233e79d631e746cbbcfd80cdf1e3cae6de8d491b2fd57ad1b43120397c7d6d",
+    "outputs/abc_validation/direct_fem_validation/v2/runs/A_h35_phase0_fine_pilot.json": "205887fcacdd57a0ccb908abf2833f654b73b0c79aa7ecd559e78ed2d140d084",
+    "outputs/abc_validation/direct_fem_validation/v2/runs/A_h35_phase0_fine_extended.npz": "f5a4287af425c9574ed30da6a1f31670e43b1ea47e74af4f3531fa0b2cd70321",
+    "outputs/abc_validation/direct_fem_validation/v2/runs/A_h35_phase0_fine_extended.json": "9b950ee5d690c755bada55fed1280a645a82cd88d558064d23786432f14aed06"
+  },
+  "source_sha256": {
+    "src/three_phase_trap/direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "src/three_phase_trap/direct_fem_dynamics.py": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b",
+    "src/three_phase_trap/audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "src/three_phase_trap/restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+    "src/three_phase_trap/pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "src/three_phase_trap/rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "src/three_phase_trap/averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+    "src/three_phase_trap/octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+    "src/three_phase_trap/micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+    "src/three_phase_trap/slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb",
+    "src/three_phase_trap/long_rf_run.py": "685858ed3c1ebf7b96344f2d726d9fc8c6faa0b4a25c9598b63d85ee376a1cfa",
+    "scripts/run_long_fem_a.py": "d636403860f25a0f3eb862c2984d12eba6e6267bf16a2633bec997f469283f1f",
+    "scripts/build_direct_fem.py": "8d30d5075fa65edba6425e81a107477cf2f94a8acb4c0947586cff2213a1956c",
+    "src/three_phase_trap/trajectory_diagnostics.py": "2d29b55c9d4617144b0cb74a032a46068dba8b213edfd454ec0237459f24b956"
+  },
+  "analysis_source_sha256": "7d82d378de7d41cda2d82f3f2fafc5baab91496598da1f2b7839123b8cf0ec78",
+  "A_global_convergence_50Ts_verified": false
+}

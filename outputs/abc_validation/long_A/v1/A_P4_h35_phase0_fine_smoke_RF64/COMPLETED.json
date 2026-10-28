@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "signature": "98d486a7bd1293f98ccdc49e81e13eda45021036231483d4c6aa8c6f3693eea8",
+  "completed_utc": "2026-10-28T14:53:29.160553+00:00",
+  "start_time_s": 0.0,
+  "end_time_s": 0.00064,
+  "RF_periods": 64,
+  "segments": 2,
+  "artifacts": {
+    "trajectory.npz": "5ef78935969cf0c7a27bde730448be05d690f07d969a51740121c67ab93a9dfe",
+    "slow_samples.npz": "9d723210a517916a357623fa38166ea6ffb7096a98435c7dc40118c46d82a765",
+    "summary.json": "4ff743f126f948f9208b29bbd9f659ba95059eec9ea6b759347750c873e49c46",
+    "settings.json": "aa56f45ff3127b5d6347e91680cbbd7e321af706a994b99f7e8e4e520db058a3",
+    "source_manifest.json": "21f3601e7c0f3144d3a1189e6edffb879fd9d18b02d89ed0438ce9317cf7820d",
+    "trajectory_overview.png": "eb404db968da4d5e3df5ba695c9325ce389ac870c84514c6588198c20ea0bdcc",
+    "smoke_comparison.json": "ab5c2186e6234e34e7439fa104c61533656c658669669a032097a183ad81461e"
+  },
+  "convergence_status": "not_assessed_for_this_duration"
+}

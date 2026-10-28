@@ -1,0 +1,221 @@
+{
+  "diagnostic_step": 2,
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+  "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+  "windows": {
+    "early": {
+      "start_s": 0.01,
+      "RF_periods": 512,
+      "end_s": 0.015120000000000001,
+      "history_index": 64000,
+      "initial_states": {
+        "common": [
+          -0.0008600188201501915,
+          2.1495304335742015e-05,
+          -0.29464862123723673,
+          -0.00921627412497242
+        ],
+        "plus": [
+          -0.0008600188202108395,
+          2.1495304379205424e-05,
+          -0.2946486213231632,
+          -0.009216274085674474
+        ],
+        "minus": [
+          -0.0008600188200895435,
+          2.1495304292278607e-05,
+          -0.29464862115131024,
+          -0.009216274164270365
+        ]
+      }
+    },
+    "onset": {
+      "start_s": 0.024,
+      "RF_periods": 512,
+      "end_s": 0.02912,
+      "history_index": 153600,
+      "initial_states": {
+        "common": [
+          0.0009372155984136618,
+          -5.607034400884128e-05,
+          0.05199212771808255,
+          0.03869115843405383
+        ],
+        "plus": [
+          0.0009372158164327294,
+          -5.607022825224934e-05,
+          0.05199231819608502,
+          0.038691106547352985
+        ],
+        "minus": [
+          0.0009372153803945941,
+          -5.607045976543322e-05,
+          0.05199193724008008,
+          0.038691210320754676
+        ]
+      }
+    },
+    "rapid": {
+      "start_s": 0.030000000000000002,
+      "RF_periods": 512,
+      "end_s": 0.035120000000000005,
+      "history_index": 192000,
+      "initial_states": {
+        "common": [
+          -0.0002583706503131553,
+          2.0292476775718266e-05,
+          -0.21367161492701695,
+          0.012080559593375376
+        ],
+        "plus": [
+          -0.00025836803002873566,
+          2.0308879035575367e-05,
+          -0.2136644371286456,
+          0.0120840357014703
+        ],
+        "minus": [
+          -0.0002583732705975749,
+          2.0276074515861164e-05,
+          -0.21367879272538828,
+          0.012077083485280452
+        ]
+      }
+    },
+    "long": {
+      "start_s": 0.02,
+      "RF_periods": 2048,
+      "end_s": 0.04048,
+      "history_index": 128000,
+      "initial_states": {
+        "common": [
+          0.0005721853556442827,
+          -5.3271289630842955e-05,
+          0.24519888307267837,
+          0.002888912123200564
+        ],
+        "plus": [
+          0.0005721853483669789,
+          -5.327129495879112e-05,
+          0.24519887272310376,
+          0.002888908183082662
+        ],
+        "minus": [
+          0.0005721853629215865,
+          -5.327128430289479e-05,
+          0.24519889342225298,
+          0.002888916063318466
+        ]
+      }
+    }
+  },
+  "controls": {
+    "dop100": {
+      "method": "DOP853",
+      "steps": 100,
+      "rtol": 2e-11,
+      "atol": [
+        2e-15,
+        2e-15,
+        2e-13,
+        2e-13
+      ]
+    },
+    "dop200": {
+      "method": "DOP853",
+      "steps": 200,
+      "rtol": 2e-13,
+      "atol": [
+        2e-17,
+        2e-17,
+        2e-15,
+        2e-15
+      ]
+    },
+    "dop400": {
+      "method": "DOP853",
+      "steps": 400,
+      "rtol": 4e-14,
+      "atol": [
+        2e-18,
+        2e-18,
+        2e-16,
+        2e-16
+      ]
+    },
+    "radau50": {
+      "method": "Radau",
+      "steps": 50,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ]
+    },
+    "radau100": {
+      "method": "Radau",
+      "steps": 100,
+      "rtol": 2e-11,
+      "atol": [
+        2e-15,
+        2e-15,
+        2e-13,
+        2e-13
+      ]
+    }
+  },
+  "output_samples_per_RF_period": 64,
+  "R_scale_m": 0.001,
+  "V_scale_m_per_s": 0.2103286915983988,
+  "coordinate_budgets": {
+    "relative_rms": 0.001,
+    "relative_max": 0.003
+  },
+  "history_replay_relative_tolerance": 0.1,
+  "minimum_signal_to_numerical_change": 10.0,
+  "source_sha256": {
+    "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+    "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+    "validation_field_audit.py": "67498fcebc66c9b543851b146fd7171f7c04cdd466bcf4dbb1503c1a1aeca3b5",
+    "fem_cache.py": "3bef631ec0d115b73d5d07e51d56e17759738547ed66c6f6e916751e01b3ea83"
+  },
+  "input_sha256": {
+    "raw_edge_audit/v2/A_phase0_fine_pilot.npz": "8593fac4c9c67ea9452e66f0a15eb21d40f3c447248f99664e8161323be44dcd",
+    "pilot/edge_resolved/A_phase0_fine_pilot.npz": "520c64a0a1defa29d286aad992fec5449b5a4708c0646c714ff842423e367e85",
+    "pilot/edge_resolved/A_phase0_refined_pilot.npz": "a8dee24deea519d97b8d9910c453ff6eb283408c4321b9f9fec26688240378c7",
+    "raw_edge_audit/v2/A_phase0_fine_pilot.json": "0326bd4b7f791216510c6f0e3aad7199f1657b7375d9fac4e7e2fe7252614da8",
+    "pilot/edge_resolved/A_phase0_fine_pilot.json": "492aebeffbbdbe3f664e41ef88f855a74181f29f01c39cbb97c57e7480567aa3",
+    "pilot/edge_resolved/A_phase0_refined_pilot.json": "b7a3acaf2c30183e48d35e3ada56e94bad6a420002a1353b48ee335c0081cf12",
+    "raw_edge_audit/v2/A_phase0_fine_pilot_crossings.jsonl": "985e2173f864b759ae7d6860041eb2b4c441d6c9bca4be5ccf7a2cb0957a75fb"
+  },
+  "protocol_sha256": "0dc8b48e9c7e82d6ff7061d696e5afce6bc97c3c81cec6df3f0ce4e6c7f59d55",
+  "worker_sha256": "3af8e427b62d17e2cdedd8d20a83e2e701d8beb606a234a2540773f8d08fad28",
+  "python": "3.14.3",
+  "numpy": "2.4.3",
+  "scipy": "1.18.1",
+  "scope": "Phase 0, one 70um P2 field; local restart accuracy and sensitivity, no mesh/chaos/global-convergence claim"
+}

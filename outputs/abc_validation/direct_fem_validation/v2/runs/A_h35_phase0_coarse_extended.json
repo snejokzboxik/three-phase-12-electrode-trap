@@ -1,0 +1,39 @@
+{
+  "case": {
+    "model": "A",
+    "mesh": 35,
+    "phase": 0,
+    "extent": "extended",
+    "level": "coarse"
+  },
+  "signature": "d7a26d49f0d44ca87cf7d3a53a4ef6f35148d7edc13dcfac8234c376fca4eaf8",
+  "status": "completed",
+  "arrays_sha256": "2f24409937b04483e00e3af82d02e22d64b731a29644194abcbc2203f4229f18",
+  "crossings_sha256": "2d6a60c54623946678460b1f666b2ca433f7d07cdfef4d623f7b4fb2fcc752d3",
+  "segment_start_s": 0.07506,
+  "end_s": 0.23672,
+  "parent_arrays_sha256": "58ff49f96d885c0118b04e7be99b607c6bdd015e043c195d8ba9aa222778be67",
+  "initial_state_this_segment": [
+    -2.8089129846086122e-06,
+    -1.0453482856069788e-06,
+    -0.21032923723339766,
+    -0.0030762388988715317
+  ],
+  "global_phase_rad": 0.0,
+  "nfev_segment": 12144689,
+  "wall_seconds_including_load": 334.6053898,
+  "diagnostics_this_segment": {
+    "method": "DOP853",
+    "checked_steps": 809361,
+    "crossings": 2136,
+    "minimum_barycentric_bound": -1.443510330315815e-13,
+    "minimum_sample_barycentric": 3.6200796327268137e-07,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "position_nudges": 0,
+    "velocity_nudges": 0,
+    "maximum_clock_aware_barycentric_tolerance": 4.760408135109463e-12,
+    "clock_envelope_physical_distance_m": 6.60574586548302e-17,
+    "hidden_exits_detected": 0,
+    "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+  }
+}

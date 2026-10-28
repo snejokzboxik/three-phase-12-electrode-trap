@@ -1,0 +1,21 @@
+{
+  "signature": "5afca40d3b818f8d856ece4529375ef5acd7f6492a7ad2ebc6f8d162041045f8",
+  "arrays_sha256": "d27bc1fa239f832696b53a84755fda5a70216a6b9688b90fefe467c53f962b34",
+  "status": "completed",
+  "initial_state": [
+    0.001,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_representation_difference": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model": "C35",
+  "level": "coarse",
+  "evaluations": 75071,
+  "wall_seconds": 3.1567306999986613
+}

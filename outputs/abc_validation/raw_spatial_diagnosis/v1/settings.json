@@ -1,0 +1,255 @@
+{
+  "diagnostic_step": 3,
+  "meshes_um": [
+    70,
+    50,
+    35
+  ],
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "outer_resolution_scales_with_h": true,
+  "geometry_order": 1,
+  "solution_order": 2,
+  "training_settings": {
+    "user_step": 4,
+    "detailed_plan_stage": 3,
+    "orders": [
+      16,
+      24,
+      32,
+      40,
+      48
+    ],
+    "selected_order": 48,
+    "training_radii_m": [
+      0.0005,
+      0.0015,
+      0.003,
+      0.0045,
+      0.006,
+      0.0075
+    ],
+    "training_angles": 256,
+    "training_angle_offset": 0.317,
+    "alternative_training_radii_m": [
+      0.0007,
+      0.0021,
+      0.0035,
+      0.005,
+      0.0065,
+      0.0077
+    ],
+    "alternative_training_angles": 384,
+    "alternative_training_angle_offset": 0.431,
+    "holdout_radii_m": [
+      0.0001,
+      0.00025,
+      0.0005,
+      0.001,
+      0.002,
+      0.004,
+      0.006,
+      0.007,
+      0.008
+    ],
+    "holdout_angles": 513,
+    "holdout_angle_offset": 0.739,
+    "reference_radius_m": 0.008,
+    "computational_domain_radius_m": 0.008,
+    "fit_input": "RF scalar potential at U0=1 V; all orders retained, no symmetry projection",
+    "force_finite_difference_steps_m": [
+      2e-07,
+      1e-07,
+      5e-08
+    ],
+    "integrator": "DOP853, dimensionless state; no damping/gravity/DC",
+    "energy_drift_tolerance": 1e-08,
+    "force_fd_tolerance": 1e-06,
+    "reconstruction_sensitivity_target": 0.001,
+    "spatial_accuracy": "Single-mesh consistency only; FEM mesh convergence remains unverified"
+  },
+  "orders": [
+    40,
+    48,
+    56
+  ],
+  "selected_order": 48,
+  "holdout_radii_m": [
+    2.5e-05,
+    5e-05,
+    0.0001,
+    0.00025,
+    0.0005,
+    0.001,
+    0.002,
+    0.004,
+    0.006,
+    0.007,
+    0.008
+  ],
+  "holdout_count": 513,
+  "holdout_offset": 0.739,
+  "trajectory_controls": {
+    "coarse": {
+      "RF_steps_per_period": 50,
+      "RF_rtol": 2e-09,
+      "RF_atol_SI": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ],
+      "slow_steps_per_period": 100,
+      "slow_rtol": 2e-10,
+      "slow_dimensionless_atol": 2e-12
+    },
+    "fine": {
+      "RF_steps_per_period": 100,
+      "RF_rtol": 2e-11,
+      "RF_atol_SI": [
+        2e-15,
+        2e-15,
+        2e-13,
+        2e-13
+      ],
+      "slow_steps_per_period": 200,
+      "slow_rtol": 2e-12,
+      "slow_dimensionless_atol": 2e-14
+    }
+  },
+  "pilot_periods": 7506,
+  "estimated_slow_period_s": 0.023093891788417812,
+  "raw_window": {
+    "start_s": 0.030000000000000002,
+    "RF_periods": 512,
+    "end_s": 0.035120000000000005,
+    "history_index": 192000,
+    "initial_states": {
+      "common": [
+        -0.0002583706503131553,
+        2.0292476775718266e-05,
+        -0.21367161492701695,
+        0.012080559593375376
+      ],
+      "plus": [
+        -0.00025836803002873566,
+        2.0308879035575367e-05,
+        -0.2136644371286456,
+        0.0120840357014703
+      ],
+      "minus": [
+        -0.0002583732705975749,
+        2.0276074515861164e-05,
+        -0.21367879272538828,
+        0.012077083485280452
+      ]
+    }
+  },
+  "raw_controls": {
+    "dop200": {
+      "method": "DOP853",
+      "steps": 200,
+      "rtol": 2e-13,
+      "atol": [
+        2e-17,
+        2e-17,
+        2e-15,
+        2e-15
+      ]
+    },
+    "dop400": {
+      "method": "DOP853",
+      "steps": 400,
+      "rtol": 4e-14,
+      "atol": [
+        2e-18,
+        2e-18,
+        2e-16,
+        2e-16
+      ]
+    }
+  },
+  "samples_per_RF_period": 64,
+  "R_scale_m": 0.001,
+  "coordinate_budgets": {
+    "relative_rms": 0.001,
+    "relative_max": 0.003
+  },
+  "field_comparison_target": 0.001,
+  "target_scope": "0.1% common-point relative RMS screening, not a bound on trajectory error or FEM truth",
+  "input_sha256": {
+    "outputs/fem_cache/p2_basis.npz": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+    "outputs/fem_cache/metadata.json": "89eafcd235d11344ac40494749a331fe580fa1356473b150ab75c23453f8d8c9",
+    "outputs/fem_cache/gmsh_70um_fem_bundle.zip": "5b9299eae5a3cb2d07fcdd48cea411dc45d3f22683e9c68a484ef817798b915e",
+    "outputs/abc_validation/protocol.json": "0dc8b48e9c7e82d6ff7061d696e5afce6bc97c3c81cec6df3f0ce4e6c7f59d55",
+    "outputs/abc_validation/initial_conditions.json": "0edba3b900994e8f7365e3fd6a333978a85d3e36a96ca40d30b7f6c60f121c7d",
+    "outputs/abc_validation/model_b/reconstruction.json": "47892bac73e2b0e6bec3db899c3f54d88cbdb071ecb9aaa9045ed875d4c707a6",
+    "outputs/abc_validation/model_b/settings.json": "0c6981ab3282d090ad044e200e28031bf8e6ebda14746a1ddabee09be8baf41d",
+    "outputs/abc_validation/raw_restart_diagnosis/v1/settings.json": "2875fd35680adec18cabddbfb2b8ed75dc1b4a14fa395420369eb1974545c004",
+    "outputs/abc_validation/pilot/settings.json": "db457aacdf8b37f890365915f1b39b4531d0d72fc05a7a52901b218a2a7a8b65",
+    "outputs/abc_validation/raw_edge_audit/v2/A_phase0_fine_pilot.npz": "8593fac4c9c67ea9452e66f0a15eb21d40f3c447248f99664e8161323be44dcd",
+    "outputs/abc_validation/pilot/A_smooth_phase0_coarse_pilot.npz": "bbe556725573864dbc6a0732579cd0f5f5a827f4b0d188d73f8bed72d48177e7",
+    "outputs/abc_validation/pilot/A_smooth_phase0_coarse_pilot.json": "528039fa4367a5328d301ecc49c3a8e7ee63df569f167d3181575f4072a1e761",
+    "outputs/abc_validation/pilot/A_smooth_phase0_fine_pilot.npz": "e7f80963022a73feae8153a3478559b9de79733a45d4a952ba683dd37ccad2a6",
+    "outputs/abc_validation/pilot/A_smooth_phase0_fine_pilot.json": "db5727af37b44fc7bb9f8be2cecb15fd6218e8b3d70572ea41de87bd8c31e0b9",
+    "outputs/abc_validation/pilot/B_phase0_coarse_pilot.npz": "fe1586528a65acd33c984e5216525fe6c3185a852591d5cd8537d2fbf076438f",
+    "outputs/abc_validation/pilot/B_phase0_coarse_pilot.json": "a9828398f8f004099b15060bd0fa021ab97a9a778dc0e41442cb7573982091d5",
+    "outputs/abc_validation/pilot/B_phase0_fine_pilot.npz": "09a41db66f1abd92fe60299396934fc2e0a22c959c4c994802901ea61ba6284b",
+    "outputs/abc_validation/pilot/B_phase0_fine_pilot.json": "39594e56d77f9c7c23e21dae1d38e5c9897579c14beeb2f6634c828dcebb9d1b",
+    "outputs/abc_validation/raw_restart_diagnosis/v1/rapid_dop200_common.npz": "d1b70ec3418f0449bf0c05170aaa8f6450f187fa281cc09dac3d162f67c62ecd",
+    "outputs/abc_validation/raw_restart_diagnosis/v1/rapid_dop200_common.json": "8789f1822796824caa511d8d078d5218a6b498ed994e4decad0ef6d02bb2e019",
+    "outputs/abc_validation/raw_restart_diagnosis/v1/rapid_dop400_common.npz": "3d2f9ff1ceb50c11a9c98aeff46f803cde47288664f451b257869d364acd296e",
+    "outputs/abc_validation/raw_restart_diagnosis/v1/rapid_dop400_common.json": "7c60738d09d8edca3bf2886664bf88e09232c0b36a70f4eb201527989897a42e"
+  },
+  "config_sha256": {
+    "70": "36e9a4c66b72a13509a9cb2c16e6e42753329647c163ebf8c05379c198e52a1f",
+    "50": "9ad548a76721fcaccfc4e405a4788b58551234702324928e75fb0b34623d03e7",
+    "35": "1622e6d27b6b1ce42d669cb03bd4fc0859e0c949ca30da1dd500bf4f9182a4bd"
+  },
+  "kernel_sha256": {
+    "spatial_convergence.py": "82903c0a1429f7e1d1639937dc47a3ebcc8e6f1fccd93d7c0ba0a34a93d4c640",
+    "fem.py": "0688e8ccc7ccc60c1e9dad369a02ac3100c20245b36d4930e41387a80d1f920d",
+    "gmsh_mesh.py": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d",
+    "geometry.py": "37e9eb9b348eefc5c7c492766fc2ba87c2ecbe3171239dacaea9c28bb3827adc",
+    "mesh.py": "116c22c92731f6712c5270b7ce5baae1f7154e162f66d5abf6947237df446931",
+    "fem_cache.py": "3bef631ec0d115b73d5d07e51d56e17759738547ed66c6f6e916751e01b3ea83",
+    "interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+    "validation_field_audit.py": "67498fcebc66c9b543851b146fd7171f7c04cdd466bcf4dbb1503c1a1aeca3b5",
+    "rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+    "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb"
+  },
+  "worker_sha256": {
+    "field_level": "c2bc86bab941577f79b16f089dbf9e9bbb15824c6f152e5ce191dc6b1eaa471a",
+    "trajectory_level": "3f880740ed04790528aada609da5419e5bbf37420bbd10d3de74cbc22f154904"
+  },
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.18.1",
+    "skfem": "12.0.2",
+    "gmsh": "4.15.2"
+  },
+  "scope": "Three nonnested affine-geometry P2 meshes, full RF and averaged smooth pilots phase 0; raw local common-state restart only. No global raw-A convergence claim."
+}

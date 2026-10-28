@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "settings_sha256": "84ad68b1024c65df07e577e7e10722f15e78cd2b530316010dbaac42f8734268",
+  "driver_sha256": "f483ca8162af4f5ecc1267376d07a7793e2b251e257c2615077c58dbe3e6f8a3",
+  "artifacts": {
+    "outputs/fem_cache/variants/915052d897401e5b84c6/p2_basis.npz": "a432a439d5b0d02cdc6547a96d002a7c2fac63059e06b435562df7576b84ca49",
+    "outputs/fem_cache/variants/915052d897401e5b84c6/metadata.json": "21c0389e8e0cac49d1aa4c166d477b2a6e670a59b6d880db893234239621c404",
+    "outputs/meshes/gmsh_50um/trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "outputs/meshes/gmsh_50um/trap.json": "043064ec41aa30d6ec673a51b0a7ccfd7aa81263dc0d1e4d774d92b0bad15d22",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/reconstruction_N40.json": "a1a85d7ea7f34956c925c81eb210def78f7a648219986f8c13fc9fcc82f6be75",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/reconstruction_N48.json": "5bbfa1ac332df89b6582a3d1bbd54a7b4fde840394b00af0e7eed55eabe1f627",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/reconstruction_N56.json": "1eb6df3fb41a82ebe881e0de680d880b28ecdff7047523181368330ed3da4082",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/alternative_N48.json": "e394a8877674c68f2fdcad39c7383ab1c635e890dc0b3122395fb9f37a9d1037",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/common_samples.npz": "e140b896271a32819bfd6ef311d7f5f123f18378eea1ee61a06937c77dbd1844",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/facet_samples.npz": "f272c3f094ec3e2c5bf33f7d147526644a2a71fbafe95118b5f9293c2799206a",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h50/origin_limits.npz": "d3962f6f89c80d797eb4f42184838ec9ccb4cf51cf5ff6c8fd08d6fdcb25e0a1"
+  },
+  "mesh_um": 50,
+  "fingerprint": "915052d897401e5b84c6efabd5916154949dab581441d339fce45ef1ee323978",
+  "basis_sha256": "a432a439d5b0d02cdc6547a96d002a7c2fac63059e06b435562df7576b84ca49",
+  "basis_path": "outputs/fem_cache/variants/915052d897401e5b84c6/p2_basis.npz",
+  "triangles": 319956,
+  "dofs": 642841,
+  "condition": {
+    "40": 45.78672315103382,
+    "48": 76.73073454434721,
+    "56": 128.5876160031878
+  },
+  "alternative_condition": 21.694776061185628,
+  "discrete_scaled_residuals": {
+    "A": 2.3752254283639606e-15,
+    "B": 2.470234445498519e-15,
+    "C": 2.6285828073894495e-15,
+    "DC": 4.330827697716954e-15
+  },
+  "DC_superposition_max_V": 1.0547118733938987e-14,
+  "repeated_70um_field_max_difference_V_per_m": null,
+  "wall_seconds": 363.5152240999996
+}

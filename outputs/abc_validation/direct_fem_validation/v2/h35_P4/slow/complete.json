@@ -1,0 +1,16 @@
+{
+  "settings_sha256": "251b65a20226b2f287b2e1f2414fc2d20b6c4e3b5977349248c420be7fb347ce",
+  "artifacts": {
+    "B_coarse_extended.npz": "35bed8f4e1b6bef7b668b75a5008c65e54501bcd62cd6e1582ca7fda854d02c8",
+    "B_coarse_pilot.npz": "ded699f72213bc147f40b63a5b979c11faadab83f1d66f56dc52b4226e8bfde3",
+    "B_fine_extended.npz": "f65d977be45d5ee38bcf4f429806a7021c3633895bdd5f4fdfb19ca640ae9a83",
+    "B_fine_pilot.npz": "c3ab6efb63f4ebd687c6b90dbd1efe4711cd9774da675636b72fabaa267db9e2",
+    "B_matched_phase0_extended.npz": "4074c4b97603143c1807e734f09878f2ea06ebcc9e4e4f3f61a2c70c35187aa0",
+    "B_matched_phase0_pilot.npz": "817ae2e5f649ee44f935ed1cac6ad7b93c7cbebe7e9395bb5745cd3cc5c33838",
+    "B_matched_phase1_pilot.npz": "1808a283ee925824f3533f63e704a4b8ac5496d31b79c10aff796404c2c75fed",
+    "C_coarse_extended.npz": "e357f9c3ce9237ba1eded60a47f64f2598464ed2d608683843d4ce8321f8a91b",
+    "C_coarse_pilot.npz": "13bb99b6a3f010cbaa3374e696d6c5986a8e3f7835ea67ebe96639890624788e",
+    "C_fine_extended.npz": "ca17a9ee15165b1017115fb3c05f1cd528cd134790f84d0114aa3e6fe6bccc73",
+    "C_fine_pilot.npz": "8788828136db0042308b21aa900d9f45ba12a75466f54ca31f2db0024720387f"
+  }
+}

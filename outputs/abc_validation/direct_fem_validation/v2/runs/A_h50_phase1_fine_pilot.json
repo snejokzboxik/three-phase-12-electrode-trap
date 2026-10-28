@@ -1,0 +1,54 @@
+{
+  "case": {
+    "model": "A",
+    "mesh": 50,
+    "phase": 1,
+    "extent": "pilot",
+    "level": "fine"
+  },
+  "signature": "5335fb94afe72088bdf0e4eabc3b84aa4e8942e426f1369993031ca975560562",
+  "status": "completed",
+  "arrays_sha256": "84ceef9f7f592d329226dc06dedadd8c692ef500bd3b3c5b85e5722bacc67957",
+  "crossings_sha256": "c406463247bee16ebcc291a8126dd1510a3f56ba7e7f9e7b545a34b498d7f5a5",
+  "segment_start_s": 0.0,
+  "end_s": 0.07506,
+  "parent_arrays_sha256": null,
+  "initial_state_this_segment": [
+    0.0010003348023552565,
+    2.921982193250999e-14,
+    -3.420533285626352e-08,
+    0.2102944297406035
+  ],
+  "global_phase_rad": 1.5707963267948966,
+  "nfev_segment": 11265073,
+  "wall_seconds_including_load": 275.53981360000034,
+  "diagnostics_this_segment": {
+    "method": "DOP853",
+    "checked_steps": 750919,
+    "crossings": 643,
+    "minimum_barycentric_bound": -4.350566352984555e-14,
+    "minimum_sample_barycentric": 7.30205698129538e-08,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "position_nudges": 0,
+    "velocity_nudges": 0,
+    "hidden_exits_detected": 0,
+    "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+  },
+  "reused_from_v1": {
+    "metadata_sha256": "9bf91d1c68cb581eb91b9dd1838740f0e3408177946092a67685bc32e78a613c",
+    "settings_sha256": "c9b6441843fa6c3e143ae79b65a9a080670bda226cfaeec099e0474282a49d22",
+    "kernel_sha256": {
+      "direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+      "direct_fem_dynamics.py": "ce0258bed9a973d621486656770f1a7f6c488d6c51cf5f81a7078f8578eda282",
+      "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+      "restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+      "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+      "rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+      "averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+      "octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+      "micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+      "slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb"
+    },
+    "reason": "Completed native trajectories passed original stricter whole-curve geometry check; force, physical IC, drive and temporal controls identical"
+  }
+}

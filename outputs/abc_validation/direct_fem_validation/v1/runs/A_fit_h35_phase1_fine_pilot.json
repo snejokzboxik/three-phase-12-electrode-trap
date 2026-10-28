@@ -1,0 +1,28 @@
+{
+  "case": {
+    "model": "A_fit",
+    "mesh": 35,
+    "phase": 1,
+    "extent": "pilot",
+    "level": "fine"
+  },
+  "signature": "b170b14b6d470d1a160b4eed55f1cf160cfbe5e2c80d4a11de9bc396e22de281",
+  "status": "completed",
+  "arrays_sha256": "d8475328869a3e7f6186197f0ebd8ded5fd0e53b1100e995487465994cdb073a",
+  "crossings_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "segment_start_s": 0.0,
+  "end_s": 0.07506,
+  "parent_arrays_sha256": null,
+  "initial_state_this_segment": [
+    0.0010003348023552565,
+    2.921982193250999e-14,
+    -3.420533285626352e-08,
+    0.2102944297406035
+  ],
+  "global_phase_rad": 1.5707963267948966,
+  "nfev_segment": 10448369,
+  "wall_seconds_including_load": 237.1376022000004,
+  "diagnostics_this_segment": {
+    "diagnostic_only": "A_fit has one temporal level; A is independently controlled at multiple levels/methods"
+  }
+}

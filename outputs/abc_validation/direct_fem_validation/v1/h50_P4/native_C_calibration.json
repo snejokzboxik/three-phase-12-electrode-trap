@@ -1,0 +1,25 @@
+{
+  "source": "Fourier n4 of DIRECT P4 potential at 0.5/1/2 mm, not trajectory fit",
+  "C4_per_volt_per_m4": 132162980.9430561,
+  "phase_rad": -1.7140662704494008e-10,
+  "rings": [
+    {
+      "radius_m": 0.0005,
+      "d_minus_real_per_volt": 132162980.9429785,
+      "d_minus_imag_per_volt": 0.022406327825697864,
+      "counter_rotating_fraction": 4.7540501356796534e-14
+    },
+    {
+      "radius_m": 0.001,
+      "d_minus_real_per_volt": 132162980.94312276,
+      "d_minus_imag_per_volt": 0.022849491487764984,
+      "counter_rotating_fraction": 4.2489254303972674e-15
+    },
+    {
+      "radius_m": 0.002,
+      "d_minus_real_per_volt": 132162980.94306706,
+      "d_minus_imag_per_volt": 0.02270501303749898,
+      "counter_rotating_fraction": 2.4995157096796113e-15
+    }
+  ]
+}

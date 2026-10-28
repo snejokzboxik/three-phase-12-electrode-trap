@@ -1,0 +1,1506 @@
+{
+  "numerical_verification": "passed",
+  "physical_tolerances": {
+    "relative_rms": 0.01,
+    "relative_max": 0.03,
+    "relative_period": 0.01
+  },
+  "numerical_budgets": {
+    "relative_rms": 0.001,
+    "relative_max": 0.003,
+    "relative_period": 0.001
+  },
+  "numerical_controls": [
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "A_h50",
+      "control": "T50-T100",
+      "relative_rms": 9.304582455458108e-11,
+      "relative_max": 3.059212852787164e-10,
+      "relative_period_error": 2.4124443772751933e-11,
+      "elapsed_slow_periods": 3.250236655770491,
+      "full_relative_rms": 9.307367761255913e-11,
+      "full_relative_max": 3.0598332131624734e-10,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "A_h35",
+      "control": "T50-T100",
+      "relative_rms": 5.284455051537082e-11,
+      "relative_max": 1.0183007258817333e-10,
+      "relative_period_error": 3.487581007447606e-12,
+      "elapsed_slow_periods": 3.250357418401008,
+      "full_relative_rms": 5.284326015306508e-11,
+      "full_relative_max": 1.0156052925396484e-10,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "A_h35",
+      "control": "T100-refined",
+      "relative_rms": 1.8288423996900148e-11,
+      "relative_max": 4.450196680503956e-11,
+      "relative_period_error": 1.051743367746564e-12,
+      "elapsed_slow_periods": 3.250357418401008,
+      "full_relative_rms": 1.8290332025966275e-11,
+      "full_relative_max": 4.4475272786343264e-11,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "A_h35",
+      "control": "T100-radau",
+      "relative_rms": 3.778356374135822e-08,
+      "relative_max": 7.397812933267949e-08,
+      "relative_period_error": 5.9086341403791824e-09,
+      "elapsed_slow_periods": 3.250357399195835,
+      "full_relative_rms": 3.7785889703123816e-08,
+      "full_relative_max": 7.399057547761191e-08,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "B_h50",
+      "control": "coarse-fine",
+      "relative_rms": 2.470435037645052e-12,
+      "relative_max": 6.362750563514326e-12,
+      "relative_period_error": 4.869386011610772e-13,
+      "elapsed_slow_periods": 3.2502334126652492,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "C_h50",
+      "control": "coarse-fine",
+      "relative_rms": 2.4699072869934916e-12,
+      "relative_max": 6.367954733942256e-12,
+      "relative_period_error": 9.382695194579549e-13,
+      "elapsed_slow_periods": 3.2502333574199826,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "B_h35",
+      "control": "coarse-fine",
+      "relative_rms": 2.4774407995106573e-12,
+      "relative_max": 6.384165674003283e-12,
+      "relative_period_error": 8.14048523999195e-13,
+      "elapsed_slow_periods": 3.2503540538995614,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "model": "C_h35",
+      "control": "coarse-fine",
+      "relative_rms": 2.486497332512251e-12,
+      "relative_max": 6.4062192355762325e-12,
+      "relative_period_error": 1.4810033526465153e-12,
+      "elapsed_slow_periods": 3.2503539986387024,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "model": "A_h50",
+      "control": "T50-T100",
+      "relative_rms": 3.722631464013537e-11,
+      "relative_max": 8.947132399842768e-11,
+      "relative_period_error": 6.909545516190874e-12,
+      "elapsed_slow_periods": 3.2502359800681577,
+      "full_relative_rms": 3.722884824622493e-11,
+      "full_relative_max": 8.93738331870284e-11,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "model": "A_h35",
+      "control": "T50-T100",
+      "relative_rms": 7.67996967571488e-11,
+      "relative_max": 2.366904854732793e-10,
+      "relative_period_error": 6.784194501667966e-12,
+      "elapsed_slow_periods": 3.250356954864237,
+      "full_relative_rms": 7.680247002579666e-11,
+      "full_relative_max": 2.36922500881363e-10,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "model": "B_h50",
+      "control": "coarse-fine",
+      "relative_rms": 2.470435037645052e-12,
+      "relative_max": 6.362750563514326e-12,
+      "relative_period_error": 4.869386011610772e-13,
+      "elapsed_slow_periods": 3.2502334126652492,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "model": "C_h50",
+      "control": "coarse-fine",
+      "relative_rms": 2.4699072869934916e-12,
+      "relative_max": 6.367954733942256e-12,
+      "relative_period_error": 9.382695194579549e-13,
+      "elapsed_slow_periods": 3.2502333574199826,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "model": "B_h35",
+      "control": "coarse-fine",
+      "relative_rms": 2.4774407995106573e-12,
+      "relative_max": 6.384165674003283e-12,
+      "relative_period_error": 8.14048523999195e-13,
+      "elapsed_slow_periods": 3.2503540538995614,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "model": "C_h35",
+      "control": "coarse-fine",
+      "relative_rms": 2.486497332512251e-12,
+      "relative_max": 6.4062192355762325e-12,
+      "relative_period_error": 1.4810033526465153e-12,
+      "elapsed_slow_periods": 3.2503539986387024,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "model": "A_h50",
+      "control": "T50-T100",
+      "relative_rms": 1.9286059116556543e-09,
+      "relative_max": 6.185120392085655e-09,
+      "relative_period_error": 1.293702853420976e-10,
+      "elapsed_slow_periods": 10.250878842054561,
+      "full_relative_rms": 1.9287748688871945e-09,
+      "full_relative_max": 6.185799743054548e-09,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "model": "A_h35",
+      "control": "T50-T100",
+      "relative_rms": 1.0450656078673727e-09,
+      "relative_max": 3.6542812429447854e-09,
+      "relative_period_error": 3.5409491645417115e-11,
+      "elapsed_slow_periods": 10.251259605617053,
+      "full_relative_rms": 1.0450692062389491e-09,
+      "full_relative_max": 3.657900974462844e-09,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "model": "B_h50",
+      "control": "coarse-fine",
+      "relative_rms": 2.457452817564954e-11,
+      "relative_max": 6.354824622116983e-11,
+      "relative_period_error": 2.1304502821549094e-12,
+      "elapsed_slow_periods": 10.250869392810788,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "model": "C_h50",
+      "control": "coarse-fine",
+      "relative_rms": 2.4670044416118568e-11,
+      "relative_max": 6.376652322354548e-11,
+      "relative_period_error": 2.5240877384954217e-12,
+      "elapsed_slow_periods": 10.250869218576115,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "model": "B_h35",
+      "control": "coarse-fine",
+      "relative_rms": 2.469473272113503e-11,
+      "relative_max": 6.383768161441136e-11,
+      "relative_period_error": 2.5639974274728994e-12,
+      "elapsed_slow_periods": 10.251249881646357,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "model": "C_h35",
+      "control": "coarse-fine",
+      "relative_rms": 2.461241677787741e-11,
+      "relative_max": 6.36287270566532e-11,
+      "relative_period_error": 2.8234772246055354e-12,
+      "elapsed_slow_periods": 10.251249707357049,
+      "full_relative_rms": null,
+      "full_relative_max": null,
+      "passed": true
+    }
+  ],
+  "spatial_controls": [
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A_P4_h50-h35",
+      "relative_rms": 0.0003026361569045011,
+      "relative_max": 0.000598434247202069,
+      "relative_period_error": 3.715500281790383e-05,
+      "elapsed_slow_periods": 3.250236655848901,
+      "full_relative_rms": 0.0003026555637299395,
+      "full_relative_max": 0.000598473292693718,
+      "passed": true
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A_P4_h50-h35",
+      "relative_rms": 0.000323913738616612,
+      "relative_max": 0.0005868491154328748,
+      "relative_period_error": 3.7220318423796756e-05,
+      "elapsed_slow_periods": 3.2502359800681577,
+      "full_relative_rms": 0.00032392774543583616,
+      "full_relative_max": 0.0005869124077784396,
+      "passed": true
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A_P4_h50-h35",
+      "relative_rms": 0.000933662736860409,
+      "relative_max": 0.0018608631463607269,
+      "relative_period_error": 3.7144385875839774e-05,
+      "elapsed_slow_periods": 10.25087884338072,
+      "full_relative_rms": 0.0009336826548244704,
+      "full_relative_max": 0.0018609021817855857,
+      "passed": true
+    }
+  ],
+  "filter_controls": [
+    {
+      "case": "A35_phase0_pilot",
+      "window2_rms": 7.621725819321162e-07,
+      "window2_max": 1.7376584632362105e-06,
+      "window2_period": 2.0004082392796811e-07,
+      "window3_rms": 1.9390163630258232e-06,
+      "window3_max": 4.424761853411828e-06,
+      "window3_period": 1.2814140694519064e-11,
+      "resolution32_rms": 4.4936240829435494e-10,
+      "resolution32_max": 1.0094834342280455e-09,
+      "resolution32_period": 2.4475570657971675e-13,
+      "local_trend_rms": 2.6801926006419764e-07,
+      "local_trend_max": 6.094776575999515e-07,
+      "local_trend_period": 1.2294202856577178e-07,
+      "inverse_rms": 2.6804184541509e-07,
+      "inverse_max": 6.094329624566687e-07,
+      "inverse_period": 8.119847118997218e-08,
+      "phase_slice_error_max_rad": 8.878800104132945e-12,
+      "passed": true
+    },
+    {
+      "case": "A35_phase1_pilot",
+      "window2_rms": 7.621766514023311e-07,
+      "window2_max": 1.7376617869706519e-06,
+      "window2_period": 8.602632982845786e-09,
+      "window3_rms": 1.939027707750911e-06,
+      "window3_max": 4.424759973505048e-06,
+      "window3_period": 8.99540949250019e-12,
+      "resolution32_rms": 4.4936439719608617e-10,
+      "resolution32_max": 1.0094847575554966e-09,
+      "resolution32_period": 5.324825662487443e-13,
+      "local_trend_rms": 2.6802046341998644e-07,
+      "local_trend_max": 6.09476579872127e-07,
+      "local_trend_period": 1.6347911939396359e-09,
+      "inverse_rms": 2.680431772522694e-07,
+      "inverse_max": 6.094302510108452e-07,
+      "inverse_period": 1.9765761874607506e-08,
+      "phase_slice_error_max_rad": 1.1615052623134975e-11,
+      "passed": true
+    },
+    {
+      "case": "A35_phase0_extended",
+      "window2_rms": 7.622820746261676e-07,
+      "window2_max": 1.7376608694760115e-06,
+      "window2_period": 2.7408834562983652e-08,
+      "window3_rms": 1.9394782362738666e-06,
+      "window3_max": 4.424761856753666e-06,
+      "window3_period": 8.894743140503298e-12,
+      "resolution32_rms": 4.49383222580375e-10,
+      "resolution32_max": 1.0094834342280455e-09,
+      "resolution32_period": 1.3522413558190114e-15,
+      "local_trend_rms": 2.680519105158731e-07,
+      "local_trend_max": 6.094776575999515e-07,
+      "local_trend_period": 1.6670580331344157e-08,
+      "inverse_rms": 2.6805920419242334e-07,
+      "inverse_max": 6.094329624566687e-07,
+      "inverse_period": 1.1809940814531378e-08,
+      "phase_slice_error_max_rad": 3.7981362888522917e-11,
+      "passed": true
+    }
+  ],
+  "comparisons": [
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-B70",
+      "relative_rms": 0.005622665747784934,
+      "relative_max": 0.01349969892528133,
+      "relative_period_error": 0.00011054547530224057,
+      "elapsed_slow_periods": 3.2499981060952887,
+      "x_relative_rms": 0.0008988170309245961,
+      "y_relative_rms": 0.00555036017355938,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-C70",
+      "relative_rms": 0.005624433970048689,
+      "relative_max": 0.013499696928122215,
+      "relative_period_error": 0.00011193862739581591,
+      "elapsed_slow_periods": 3.249993577853046,
+      "x_relative_rms": 0.0009098161794797604,
+      "y_relative_rms": 0.0055503596282578714,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-B35",
+      "relative_rms": 0.005550564617483298,
+      "relative_max": 0.01349971079549551,
+      "relative_period_error": 1.035117377444572e-06,
+      "elapsed_slow_periods": 3.2503540538995614,
+      "x_relative_rms": 4.77029254571582e-05,
+      "y_relative_rms": 0.005550359628326809,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-C35",
+      "relative_rms": 0.005550565421943324,
+      "relative_max": 0.013499710795347777,
+      "relative_period_error": 1.0521188489230766e-06,
+      "elapsed_slow_periods": 3.2503539986387024,
+      "x_relative_rms": 4.7796446294326996e-05,
+      "y_relative_rms": 0.0055503596282578714,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-B35_matched",
+      "relative_rms": 0.005551569265734328,
+      "relative_max": 0.01350242805167992,
+      "relative_period_error": 1.0307884318712511e-06,
+      "elapsed_slow_periods": 3.2503540679701817,
+      "x_relative_rms": 3.178852783984997e-05,
+      "y_relative_rms": 0.00555147825373961,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-A_fit35",
+      "relative_rms": 5.06198748791588e-09,
+      "relative_max": 1.126262644818311e-08,
+      "relative_period_error": 1.0344376819825631e-10,
+      "elapsed_slow_periods": 3.250357418401008,
+      "x_relative_rms": 4.791260508309503e-10,
+      "y_relative_rms": 5.039261409694111e-09,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "A35-A_smooth70",
+      "relative_rms": 0.0008928483037566659,
+      "relative_max": 0.0017655300830600306,
+      "relative_period_error": 0.00010970833754244274,
+      "elapsed_slow_periods": 3.2500008270922165,
+      "x_relative_rms": 0.0008927912086470367,
+      "y_relative_rms": 1.009709283573592e-05,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "B35-C35",
+      "relative_rms": 1.3444673114566943e-07,
+      "relative_max": 2.684149829675569e-07,
+      "relative_period_error": 1.7001489077041642e-08,
+      "elapsed_slow_periods": 3.2503539986387024,
+      "x_relative_rms": 1.3444673114564723e-07,
+      "y_relative_rms": 7.477646138113782e-14,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "B70-C70",
+      "relative_rms": 1.100749339832888e-05,
+      "relative_max": 2.199502956105097e-05,
+      "relative_period_error": 1.3933061172623203e-06,
+      "elapsed_slow_periods": 3.249993577853046,
+      "x_relative_rms": 1.1007493383497435e-05,
+      "y_relative_rms": 5.714151090130389e-10,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "B35_matched-B35",
+      "relative_rms": 3.1671156769462966e-05,
+      "relative_max": 3.6581384039470764e-05,
+      "relative_period_error": 4.328950035552403e-09,
+      "elapsed_slow_periods": 3.2503540538995614,
+      "x_relative_rms": 3.165126143462526e-05,
+      "y_relative_rms": 1.1224173523751667e-06,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "B35-B70",
+      "relative_rms": 0.0008652732648125538,
+      "relative_max": 0.0017289457325972135,
+      "relative_period_error": 0.00010951047128098783,
+      "elapsed_slow_periods": 3.2499981060952887,
+      "x_relative_rms": 0.0008652732648123758,
+      "y_relative_rms": 5.71341207430504e-10,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 0,
+      "pair": "C35-C70",
+      "relative_rms": 0.0008761463170447968,
+      "relative_max": 0.0017506723471716334,
+      "relative_period_error": 0.00011088662521280131,
+      "elapsed_slow_periods": 3.249993577853046,
+      "x_relative_rms": 0.0008761463170448037,
+      "y_relative_rms": 0.0,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-B70",
+      "relative_rms": 0.006028895490771437,
+      "relative_max": 0.014503853391165876,
+      "relative_period_error": 0.00011040288681526775,
+      "elapsed_slow_periods": 3.2499981060952887,
+      "x_relative_rms": 0.0008699753714157267,
+      "y_relative_rms": 0.005965796149029451,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-C70",
+      "relative_rms": 0.006030491755466227,
+      "relative_max": 0.014503850372254736,
+      "relative_period_error": 0.0001117960391075125,
+      "elapsed_slow_periods": 3.249993577853046,
+      "x_relative_rms": 0.0008809731163668681,
+      "y_relative_rms": 0.005965795603352952,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-B35",
+      "relative_rms": 0.005965906394162313,
+      "relative_max": 0.014503954330996374,
+      "relative_period_error": 8.925132738291624e-07,
+      "elapsed_slow_periods": 3.2503540538995614,
+      "x_relative_rms": 3.6358246630315196e-05,
+      "y_relative_rms": 0.005965795603422027,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-C35",
+      "relative_rms": 0.005965906491504206,
+      "relative_max": 0.014503954316265633,
+      "relative_period_error": 9.095147477321494e-07,
+      "elapsed_slow_periods": 3.2503539986387024,
+      "x_relative_rms": 3.6374226961647075e-05,
+      "y_relative_rms": 0.005965795603352952,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-B35_matched",
+      "relative_rms": 0.005560736826434925,
+      "relative_max": 0.013524589694986804,
+      "relative_period_error": 9.592079659295334e-07,
+      "elapsed_slow_periods": 3.2503538371180047,
+      "x_relative_rms": 3.623789933179844e-05,
+      "y_relative_rms": 0.0055606187486214485,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-A_fit35",
+      "relative_rms": 5.1082036603696525e-09,
+      "relative_max": 1.145768676319973e-08,
+      "relative_period_error": 2.8586500849865206e-10,
+      "elapsed_slow_periods": 3.250356953957125,
+      "x_relative_rms": 1.4789692299482675e-09,
+      "y_relative_rms": 4.889416596351772e-09,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "A35-A_smooth70",
+      "relative_rms": 0.0009557304891579482,
+      "relative_max": 0.001731453512145941,
+      "relative_period_error": 0.000109466306412237,
+      "elapsed_slow_periods": 3.2500011503159154,
+      "x_relative_rms": 0.0008645992449268869,
+      "y_relative_rms": 0.00040729462748474764,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "B35-C35",
+      "relative_rms": 1.3444673114566943e-07,
+      "relative_max": 2.684149829675569e-07,
+      "relative_period_error": 1.7001489077041642e-08,
+      "elapsed_slow_periods": 3.2503539986387024,
+      "x_relative_rms": 1.3444673114564723e-07,
+      "y_relative_rms": 7.477646138113782e-14,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "B70-C70",
+      "relative_rms": 1.100749339832888e-05,
+      "relative_max": 2.199502956105097e-05,
+      "relative_period_error": 1.3933061172623203e-06,
+      "elapsed_slow_periods": 3.249993577853046,
+      "x_relative_rms": 1.1007493383497435e-05,
+      "y_relative_rms": 5.714151090130389e-10,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "B35_matched-B35",
+      "relative_rms": 0.0004063088538023269,
+      "relative_max": 0.0009812752168169671,
+      "relative_period_error": 6.669475607451221e-08,
+      "elapsed_slow_periods": 3.2503538371180047,
+      "x_relative_rms": 5.318350453031597e-07,
+      "y_relative_rms": 0.0004063085057313528,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "B35-B70",
+      "relative_rms": 0.0008652732648125538,
+      "relative_max": 0.0017289457325972135,
+      "relative_period_error": 0.00010951047128098783,
+      "elapsed_slow_periods": 3.2499981060952887,
+      "x_relative_rms": 0.0008652732648123758,
+      "y_relative_rms": 5.71341207430504e-10,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "pilot",
+      "phase": 1,
+      "pair": "C35-C70",
+      "relative_rms": 0.0008761463170447968,
+      "relative_max": 0.0017506723471716334,
+      "relative_period_error": 0.00011088662521280131,
+      "elapsed_slow_periods": 3.249993577853046,
+      "x_relative_rms": 0.0008761463170448037,
+      "y_relative_rms": 0.0,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-B70",
+      "relative_rms": 0.01770440302324282,
+      "relative_max": 0.04499498631905354,
+      "relative_period_error": 0.0001104589642453012,
+      "elapsed_slow_periods": 10.250127262461758,
+      "x_relative_rms": 0.002786470305454648,
+      "y_relative_rms": 0.017483748729783966,
+      "physical_criteria_passed": false,
+      "status": "failed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-C70",
+      "relative_rms": 0.017709854195610716,
+      "relative_max": 0.044994955918008485,
+      "relative_period_error": 0.00011185211597031099,
+      "elapsed_slow_periods": 10.250112980901754,
+      "x_relative_rms": 0.002820931790911533,
+      "y_relative_rms": 0.01748374329086404,
+      "physical_criteria_passed": false,
+      "status": "failed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-B35",
+      "relative_rms": 0.01748658677215529,
+      "relative_max": 0.044995458216617636,
+      "relative_period_error": 9.485963459133471e-07,
+      "elapsed_slow_periods": 10.251249881672642,
+      "x_relative_rms": 0.00031533704780593104,
+      "y_relative_rms": 0.017483743291595178,
+      "physical_criteria_passed": false,
+      "status": "failed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-C35",
+      "relative_rms": 0.017486587834730293,
+      "relative_max": 0.044995458212003965,
+      "relative_period_error": 9.655978320847307e-07,
+      "elapsed_slow_periods": 10.251249707385993,
+      "x_relative_rms": 0.0003153960065099624,
+      "y_relative_rms": 0.01748374329086404,
+      "physical_criteria_passed": false,
+      "status": "failed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-B35_matched",
+      "relative_rms": 0.01749008635263487,
+      "relative_max": 0.045004599267107204,
+      "relative_period_error": 9.442668246629945e-07,
+      "elapsed_slow_periods": 10.251249926055689,
+      "x_relative_rms": 0.0003126241960620506,
+      "y_relative_rms": 0.017487292149863023,
+      "physical_criteria_passed": false,
+      "status": "failed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-A_fit35",
+      "relative_rms": 1.5135174451266403e-08,
+      "relative_max": 3.5584772472779074e-08,
+      "relative_period_error": 3.7252281104293747e-10,
+      "elapsed_slow_periods": 10.251259605980044,
+      "x_relative_rms": 8.273436200215021e-09,
+      "y_relative_rms": 1.2673742900628653e-08,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "A35-A_smooth70",
+      "relative_rms": 0.0027543446866463185,
+      "relative_max": 0.005489627694196564,
+      "relative_period_error": 0.0001095459782156097,
+      "elapsed_slow_periods": 10.250136621718566,
+      "x_relative_rms": 0.0027525912421205966,
+      "y_relative_rms": 9.82654906756415e-05,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "B35-C35",
+      "relative_rms": 4.2338771272469047e-07,
+      "relative_max": 8.465479577618029e-07,
+      "relative_period_error": 1.700150229894646e-08,
+      "elapsed_slow_periods": 10.251249707385993,
+      "x_relative_rms": 4.233877127240065e-07,
+      "y_relative_rms": 7.580043891127525e-13,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "B70-C70",
+      "relative_rms": 3.468854839984581e-05,
+      "relative_max": 6.936983710232616e-05,
+      "relative_period_error": 1.3933056281063432e-06,
+      "elapsed_slow_periods": 10.250112980901754,
+      "x_relative_rms": 3.4688547943904216e-05,
+      "y_relative_rms": 5.6242242281561055e-09,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "B35_matched-B35",
+      "relative_rms": 3.191249027575572e-05,
+      "relative_max": 3.68495845151715e-05,
+      "relative_period_error": 4.329525338579648e-09,
+      "elapsed_slow_periods": 10.251249881672642,
+      "x_relative_rms": 3.17144206638295e-05,
+      "y_relative_rms": 3.55000810672943e-06,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "B35-B70",
+      "relative_rms": 0.0027268035367170596,
+      "relative_max": 0.00545289972956749,
+      "relative_period_error": 0.00010951047178062123,
+      "elapsed_slow_periods": 10.250127262461758,
+      "x_relative_rms": 0.002726803536711265,
+      "y_relative_rms": 5.623466323662708e-09,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    },
+    {
+      "extent": "extended",
+      "phase": 0,
+      "pair": "C35-C70",
+      "relative_rms": 0.002761068525590624,
+      "relative_max": 0.00552142301870039,
+      "relative_period_error": 0.00011088662521011118,
+      "elapsed_slow_periods": 10.250112980901754,
+      "x_relative_rms": 0.0027610685255906797,
+      "y_relative_rms": 0.0,
+      "physical_criteria_passed": true,
+      "status": "passed"
+    }
+  ],
+  "field_screening_passed": true,
+  "field_diagnostics": {
+    "origin_limits": {
+      "70": {
+        "max_one_sided_RF_rms_V_per_m": 2.1351777142715246e-11,
+        "triangle_ids": [
+          13834,
+          27670,
+          41506,
+          55342,
+          69178,
+          83014,
+          96850,
+          110686,
+          124522,
+          138358,
+          152194,
+          166030
+        ],
+        "quadratures": [
+          [
+            -2.1221934529256048e-14,
+            2.984068684672364e-11,
+            -4.616373625189507e-12,
+            -1.3721152385554963e-13
+          ],
+          [
+            1.08722269649951e-11,
+            -1.0814233894795757e-11,
+            -1.097266735322737e-11,
+            2.358483350674007e-11
+          ],
+          [
+            1.1030662147955276e-11,
+            -1.0972676896038365e-11,
+            2.34843835756968e-11,
+            -1.0872228689523668e-11
+          ],
+          [
+            -2.984068684656928e-11,
+            -2.1221934487891363e-14,
+            1.3721152394371383e-13,
+            -4.616373625165881e-12
+          ],
+          [
+            1.0814233894795762e-11,
+            1.08722269649951e-11,
+            -2.3584833506740074e-11,
+            -1.0972667353227367e-11
+          ],
+          [
+            1.097267689603836e-11,
+            1.1030662147955265e-11,
+            1.0872228689523658e-11,
+            2.3484383575696784e-11
+          ],
+          [
+            2.1221934487895402e-14,
+            -2.984068684656928e-11,
+            4.616373625165881e-12,
+            1.3721152394371222e-13
+          ],
+          [
+            -1.0872226964995096e-11,
+            1.0814233894795763e-11,
+            1.0972667353227365e-11,
+            -2.358483350674007e-11
+          ],
+          [
+            -1.1030662147955267e-11,
+            1.0972676896038367e-11,
+            -2.348438357569679e-11,
+            1.0872228689523674e-11
+          ],
+          [
+            2.9840686846569253e-11,
+            2.1221934487885708e-14,
+            -1.3721152394370899e-13,
+            4.61637362516588e-12
+          ],
+          [
+            -1.0814233894795747e-11,
+            -1.087222696499509e-11,
+            2.3584833506740038e-11,
+            1.097266735322735e-11
+          ],
+          [
+            -1.0972676896151346e-11,
+            -1.1030662148068258e-11,
+            -1.0872228689588204e-11,
+            -2.3484383575761333e-11
+          ]
+        ]
+      },
+      "50": {
+        "max_one_sided_RF_rms_V_per_m": 2.048916102276081e-12,
+        "triangle_ids": [
+          26662,
+          53325,
+          79988,
+          106651,
+          133314,
+          159977,
+          186640,
+          213303,
+          239966,
+          266629,
+          293292,
+          319955
+        ],
+        "quadratures": [
+          [
+            -1.1006783545055756e-14,
+            2.8626580731420473e-12,
+            -4.4285402953928546e-13,
+            -7.114986889577804e-14
+          ],
+          [
+            1.0217623205369811e-12,
+            -9.916917893969081e-13,
+            -1.073848441843633e-12,
+            2.283749782119955e-12
+          ],
+          [
+            1.1039199845276442e-12,
+            -1.073847760327665e-12,
+            2.23166434232927e-12,
+            -1.0217633320809195e-12
+          ],
+          [
+            -2.8626580731207554e-12,
+            -1.1006783539350613e-14,
+            7.114986890737382e-14,
+            -4.428540295361782e-13
+          ],
+          [
+            9.91691789396908e-13,
+            1.0217623205369807e-12,
+            -2.2837497821199544e-12,
+            -1.0738484418436324e-12
+          ],
+          [
+            1.0738477603276642e-12,
+            1.103919984527643e-12,
+            1.0217633320809187e-12,
+            2.231664342329269e-12
+          ],
+          [
+            1.1006783539350866e-14,
+            -2.8626580731207563e-12,
+            4.428540295361781e-13,
+            7.114986890737351e-14
+          ],
+          [
+            -1.0217623205369807e-12,
+            9.916917893969083e-13,
+            1.0738484418436322e-12,
+            -2.2837497821199544e-12
+          ],
+          [
+            -1.1039199845276428e-12,
+            1.0738477603276646e-12,
+            -2.2316643423292693e-12,
+            1.0217633320809199e-12
+          ],
+          [
+            2.862658073120754e-12,
+            1.1006783539350007e-14,
+            -7.114986890737331e-14,
+            4.428540295361781e-13
+          ],
+          [
+            -9.916917893969073e-13,
+            -1.0217623205369801e-12,
+            2.283749782119952e-12,
+            1.0738484418436314e-12
+          ],
+          [
+            -1.073847760343249e-12,
+            -1.1039199845432282e-12,
+            -1.0217633320894076e-12,
+            -2.2316643423377576e-12
+          ]
+        ]
+      },
+      "35": {
+        "max_one_sided_RF_rms_V_per_m": 1.7195708981917434e-13,
+        "triangle_ids": [
+          53956,
+          107913,
+          161870,
+          215827,
+          269784,
+          323741,
+          377698,
+          431655,
+          485612,
+          539569,
+          593526,
+          647483
+        ],
+        "quadratures": [
+          [
+            -5.462861343544165e-15,
+            2.3771759495644004e-13,
+            -3.677520558407753e-14,
+            -3.530676884784483e-14
+          ],
+          [
+            7.408801190202454e-14,
+            -5.916481497335052e-14,
+            -9.993444516508664e-14,
+            2.004047886354704e-13
+          ],
+          [
+            1.148563989181429e-13,
+            -9.993359395051118e-14,
+            1.745592065869837e-13,
+            -7.408676872640684e-14
+          ],
+          [
+            -2.3771759495370657e-13,
+            -5.462861342811723e-15,
+            3.5306768848924343e-14,
+            -3.677520558378826e-14
+          ],
+          [
+            5.916481497335056e-14,
+            7.408801190202456e-14,
+            -2.0040478863547043e-13,
+            -9.993444516508662e-14
+          ],
+          [
+            9.993359395051111e-14,
+            1.1485639891814285e-13,
+            7.408676872640679e-14,
+            1.7455920658698367e-13
+          ],
+          [
+            5.462861342811736e-15,
+            -2.3771759495370667e-13,
+            3.677520558378825e-14,
+            3.530676884892433e-14
+          ],
+          [
+            -7.408801190202453e-14,
+            5.916481497335058e-14,
+            9.993444516508657e-14,
+            -2.004047886354704e-13
+          ],
+          [
+            -1.1485639891814285e-13,
+            9.993359395051115e-14,
+            -1.7455920658698367e-13,
+            7.408676872640689e-14
+          ],
+          [
+            2.3771759495370637e-13,
+            5.462861342811666e-15,
+            -3.530676884892427e-14,
+            3.677520558378826e-14
+          ],
+          [
+            -5.916481497335048e-14,
+            -7.408801190202449e-14,
+            2.004047886354701e-13,
+            9.993444516508647e-14
+          ],
+          [
+            -9.9933593952512e-14,
+            -1.1485639892014375e-13,
+            -7.408676872719704e-14,
+            -1.745592065877739e-13
+          ]
+        ]
+      }
+    },
+    "rows": [
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 2.5e-05,
+        "relative_E_rms": 7.329621016319209e-05,
+        "relative_Psi_rms": 0.0001465870478242981
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 5e-05,
+        "relative_E_rms": 7.32957147663239e-05,
+        "relative_Psi_rms": 0.00014658605720953784
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.0001,
+        "relative_E_rms": 7.32957617523193e-05,
+        "relative_Psi_rms": 0.0001465861511743837
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.00025,
+        "relative_E_rms": 7.329554528643852e-05,
+        "relative_Psi_rms": 0.00014658571826173673
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.0005,
+        "relative_E_rms": 7.329573307833996e-05,
+        "relative_Psi_rms": 0.00014658609380397526
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.001,
+        "relative_E_rms": 7.329582441031509e-05,
+        "relative_Psi_rms": 0.00014658627486409647
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.002,
+        "relative_E_rms": 7.329641367363682e-05,
+        "relative_Psi_rms": 0.0001465870321066299
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.004,
+        "relative_E_rms": 7.346542699815507e-05,
+        "relative_Psi_rms": 0.00014681775559750052
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.006,
+        "relative_E_rms": 7.736397394316651e-05,
+        "relative_Psi_rms": 0.00015228567965302038
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.007,
+        "relative_E_rms": 8.539385990277125e-05,
+        "relative_Psi_rms": 0.00016436907337043352
+      },
+      {
+        "coarse_um": 70,
+        "fine_um": 50,
+        "radius_m": 0.008,
+        "relative_E_rms": 0.0001001645078863859,
+        "relative_Psi_rms": 0.00018780761026984826
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 2.5e-05,
+        "relative_E_rms": 3.7116364112993196e-05,
+        "relative_Psi_rms": 7.423135059957541e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 5e-05,
+        "relative_E_rms": 3.7116351408558816e-05,
+        "relative_Psi_rms": 7.423132519229548e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.0001,
+        "relative_E_rms": 3.7116369810307724e-05,
+        "relative_Psi_rms": 7.423136199482167e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.00025,
+        "relative_E_rms": 3.71163005274494e-05,
+        "relative_Psi_rms": 7.423122343289332e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.0005,
+        "relative_E_rms": 3.7116304160369954e-05,
+        "relative_Psi_rms": 7.423123069408706e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.001,
+        "relative_E_rms": 3.7116297504157935e-05,
+        "relative_Psi_rms": 7.423121653571735e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.002,
+        "relative_E_rms": 3.7116667573648266e-05,
+        "relative_Psi_rms": 7.42317431904684e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.004,
+        "relative_E_rms": 3.720228773990103e-05,
+        "relative_Psi_rms": 7.434864273425395e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.006,
+        "relative_E_rms": 3.91767665143491e-05,
+        "relative_Psi_rms": 7.711806576571067e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.007,
+        "relative_E_rms": 4.3243517931981746e-05,
+        "relative_Psi_rms": 8.323796794197186e-05
+      },
+      {
+        "coarse_um": 50,
+        "fine_um": 35,
+        "radius_m": 0.008,
+        "relative_E_rms": 5.072417647100884e-05,
+        "relative_Psi_rms": 9.510969786225502e-05
+      }
+    ],
+    "native_reconstruction": {
+      "70": [
+        {
+          "radius_m": 2.5e-05,
+          "native_fit_field_relative_rms": 5.4580553687184416e-09,
+          "native_RF_rms_V_per_m": 0.002064895217010804
+        },
+        {
+          "radius_m": 5e-05,
+          "native_fit_field_relative_rms": 6.850903488051175e-10,
+          "native_RF_rms_V_per_m": 0.01651916174484843
+        },
+        {
+          "radius_m": 0.0001,
+          "native_fit_field_relative_rms": 4.218397034527915e-10,
+          "native_RF_rms_V_per_m": 0.1321532939536421
+        },
+        {
+          "radius_m": 0.00025,
+          "native_fit_field_relative_rms": 1.1551029083864153e-09,
+          "native_RF_rms_V_per_m": 2.0648952185735574
+        },
+        {
+          "radius_m": 0.0005,
+          "native_fit_field_relative_rms": 1.403562412056771e-09,
+          "native_RF_rms_V_per_m": 16.519161746252166
+        },
+        {
+          "radius_m": 0.001,
+          "native_fit_field_relative_rms": 1.2623475470778889e-09,
+          "native_RF_rms_V_per_m": 132.15329566291712
+        },
+        {
+          "radius_m": 0.002,
+          "native_fit_field_relative_rms": 1.300083730571676e-09,
+          "native_RF_rms_V_per_m": 1057.229853226599
+        },
+        {
+          "radius_m": 0.004,
+          "native_fit_field_relative_rms": 1.224809673563229e-09,
+          "native_RF_rms_V_per_m": 8464.978982280642
+        },
+        {
+          "radius_m": 0.006,
+          "native_fit_field_relative_rms": 1.2816078010309384e-09,
+          "native_RF_rms_V_per_m": 29158.81121632452
+        },
+        {
+          "radius_m": 0.007,
+          "native_fit_field_relative_rms": 9.465264522091116e-08,
+          "native_RF_rms_V_per_m": 48592.69781076585
+        },
+        {
+          "radius_m": 0.008,
+          "native_fit_field_relative_rms": 5.348379961913696e-05,
+          "native_RF_rms_V_per_m": 81106.98285636742
+        }
+      ],
+      "50": [
+        {
+          "radius_m": 2.5e-05,
+          "native_fit_field_relative_rms": 4.591863262746636e-09,
+          "native_RF_rms_V_per_m": 0.0020650465770985387
+        },
+        {
+          "radius_m": 5e-05,
+          "native_fit_field_relative_rms": 6.08114257459998e-10,
+          "native_RF_rms_V_per_m": 0.016520372617367114
+        },
+        {
+          "radius_m": 0.0001,
+          "native_fit_field_relative_rms": 1.4431471909181302e-10,
+          "native_RF_rms_V_per_m": 0.13216298094000142
+        },
+        {
+          "radius_m": 0.00025,
+          "native_fit_field_relative_rms": 2.7121885438751064e-10,
+          "native_RF_rms_V_per_m": 2.0650465772884012
+        },
+        {
+          "radius_m": 0.0005,
+          "native_fit_field_relative_rms": 3.0686123505823965e-10,
+          "native_RF_rms_V_per_m": 16.520372619073235
+        },
+        {
+          "radius_m": 0.001,
+          "native_fit_field_relative_rms": 3.399933323016336e-10,
+          "native_RF_rms_V_per_m": 132.16298265757612
+        },
+        {
+          "radius_m": 0.002,
+          "native_fit_field_relative_rms": 3.431669433608551e-10,
+          "native_RF_rms_V_per_m": 1057.3073498399187
+        },
+        {
+          "radius_m": 0.004,
+          "native_fit_field_relative_rms": 3.1496586862037333e-10,
+          "native_RF_rms_V_per_m": 8465.60045532111
+        },
+        {
+          "radius_m": 0.006,
+          "native_fit_field_relative_rms": 3.605867596597077e-10,
+          "native_RF_rms_V_per_m": 29161.031682179328
+        },
+        {
+          "radius_m": 0.007,
+          "native_fit_field_relative_rms": 9.459932847608703e-08,
+          "native_RF_rms_V_per_m": 48596.69098974714
+        },
+        {
+          "radius_m": 0.008,
+          "native_fit_field_relative_rms": 5.3489850303722394e-05,
+          "native_RF_rms_V_per_m": 81114.5958304963
+        }
+      ],
+      "35": [
+        {
+          "radius_m": 2.5e-05,
+          "native_fit_field_relative_rms": 4.928689829222953e-09,
+          "native_RF_rms_V_per_m": 0.0020651232269641665
+        },
+        {
+          "radius_m": 5e-05,
+          "native_fit_field_relative_rms": 6.21825173146321e-10,
+          "native_RF_rms_V_per_m": 0.016520985816082266
+        },
+        {
+          "radius_m": 0.0001,
+          "native_fit_field_relative_rms": 1.2144601888556767e-10,
+          "native_RF_rms_V_per_m": 0.13216788653215492
+        },
+        {
+          "radius_m": 0.00025,
+          "native_fit_field_relative_rms": 8.875262501209144e-11,
+          "native_RF_rms_V_per_m": 2.0651232270227187
+        },
+        {
+          "radius_m": 0.0005,
+          "native_fit_field_relative_rms": 9.748121480093789e-11,
+          "native_RF_rms_V_per_m": 16.52098581700779
+        },
+        {
+          "radius_m": 0.001,
+          "native_fit_field_relative_rms": 7.040850161613185e-11,
+          "native_RF_rms_V_per_m": 132.1678882401801
+        },
+        {
+          "radius_m": 0.002,
+          "native_fit_field_relative_rms": 7.307016242504988e-11,
+          "native_RF_rms_V_per_m": 1057.3465949086876
+        },
+        {
+          "radius_m": 0.004,
+          "native_fit_field_relative_rms": 7.773508753030247e-11,
+          "native_RF_rms_V_per_m": 8465.915175822147
+        },
+        {
+          "radius_m": 0.006,
+          "native_fit_field_relative_rms": 9.956157745851438e-11,
+          "native_RF_rms_V_per_m": 29162.156157021414
+        },
+        {
+          "radius_m": 0.007,
+          "native_fit_field_relative_rms": 9.459830054238234e-08,
+          "native_RF_rms_V_per_m": 48598.71321402726
+        },
+        {
+          "radius_m": 0.008,
+          "native_fit_field_relative_rms": 5.349386298832256e-05,
+          "native_RF_rms_V_per_m": 81118.45128398645
+        }
+      ]
+    },
+    "native_C_calibration": {
+      "50": {
+        "source": "Fourier n4 of DIRECT P4 potential at 0.5/1/2 mm, not trajectory fit",
+        "C4_per_volt_per_m4": 132162980.9430561,
+        "phase_rad": -1.7140662704494008e-10,
+        "rings": [
+          {
+            "radius_m": 0.0005,
+            "d_minus_real_per_volt": 132162980.9429785,
+            "d_minus_imag_per_volt": 0.022406327825697864,
+            "counter_rotating_fraction": 4.7540501356796534e-14
+          },
+          {
+            "radius_m": 0.001,
+            "d_minus_real_per_volt": 132162980.94312276,
+            "d_minus_imag_per_volt": 0.022849491487764984,
+            "counter_rotating_fraction": 4.2489254303972674e-15
+          },
+          {
+            "radius_m": 0.002,
+            "d_minus_real_per_volt": 132162980.94306706,
+            "d_minus_imag_per_volt": 0.02270501303749898,
+            "counter_rotating_fraction": 2.4995157096796113e-15
+          }
+        ]
+      },
+      "35": {
+        "source": "Fourier n4 of DIRECT P4 potential at 0.5/1/2 mm, not trajectory fit",
+        "C4_per_volt_per_m4": 132167886.53016192,
+        "phase_rad": -3.5428981934337687e-11,
+        "rings": [
+          {
+            "radius_m": 0.0005,
+            "d_minus_real_per_volt": 132167886.53013816,
+            "d_minus_imag_per_volt": 0.004512658111670941,
+            "counter_rotating_fraction": 3.1782105613664425e-14
+          },
+          {
+            "radius_m": 0.001,
+            "d_minus_real_per_volt": 132167886.53017887,
+            "d_minus_imag_per_volt": 0.004864837270692835,
+            "counter_rotating_fraction": 2.708853303898554e-15
+          },
+          {
+            "radius_m": 0.002,
+            "d_minus_real_per_volt": 132167886.5301687,
+            "d_minus_imag_per_volt": 0.004670225610166324,
+            "counter_rotating_fraction": 1.7381986333599518e-15
+          }
+        ]
+      }
+    }
+  },
+  "scope": "Same original geometry, drive, physical full initial states, two pilot RF phases and one extended phase; P4 direct unsmoothed FE gradients",
+  "caveat": "Empirical numerical verification at specified cases; no universal proof of averaging. P2 historical failures remain historical. Radau and DOP853 share the geometric curve checker."
+}

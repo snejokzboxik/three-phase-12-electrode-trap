@@ -1,0 +1,65 @@
+{
+  "geometry": {
+    "electrode_count": 12,
+    "electrode_orbit_radius": 0.01,
+    "electrode_radius": 0.0015,
+    "outer_domain_radius": 0.025
+  },
+  "mesh_settings": {
+    "resolution": 5e-05,
+    "boundary_points_per_electrode": 18,
+    "outer_boundary_points": 180,
+    "interior_seed": 12345,
+    "backend": "gmsh",
+    "mesh_file": "outputs/meshes/gmsh_50um/trap.msh",
+    "fine_radius": 0.008,
+    "transition_radius": 0.014,
+    "outer_resolution": 0.00025
+  },
+  "gmsh_version": "4.15.2",
+  "meshio_version": "5.3.5",
+  "msh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+  "sector_geo_sha256": "4a5e26a49c9fd27af289f3ee39d1bac2ecfb872b00e9d6db77d02604adcf0f76",
+  "generator_sha256": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d",
+  "diagnostics": {
+    "vertices": 161437,
+    "triangles": 319956,
+    "p2_dofs": 642841,
+    "euler_characteristic": -11,
+    "area_m2": 0.0018786556067672644,
+    "relative_area_error": 8.942527377819864e-06,
+    "min_triangle_quality": 0.7339217239185947,
+    "edge_length_all_m": {
+      "min": 2.580856949658532e-05,
+      "median": 5.000000000013856e-05,
+      "max": 0.0003436121457414061
+    },
+    "edge_length_working_region_m": {
+      "min": 2.580856949658532e-05,
+      "median": 4.9999999999997956e-05,
+      "p95": 5.116340786089714e-05,
+      "max": 6.965252648648043e-05
+    },
+    "rotation_30deg_max_vertex_error_m": 8.778565364955758e-15,
+    "rotation_30deg_triangle_match": true,
+    "electrode_boundary_nodes": {
+      "0": 192,
+      "1": 192,
+      "2": 192,
+      "3": 192,
+      "4": 192,
+      "5": 192,
+      "6": 192,
+      "7": 192,
+      "8": 192,
+      "9": 192,
+      "10": 192,
+      "11": 192
+    },
+    "outer_boundary_nodes": 636
+  },
+  "geometry_order": 1,
+  "solution_order": 2,
+  "laplace_solved": false,
+  "units": "metres"
+}

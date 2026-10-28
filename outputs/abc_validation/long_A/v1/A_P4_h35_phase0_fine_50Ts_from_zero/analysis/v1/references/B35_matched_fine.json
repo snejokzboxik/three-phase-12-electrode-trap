@@ -1,0 +1,21 @@
+{
+  "signature": "5afca40d3b818f8d856ece4529375ef5acd7f6492a7ad2ebc6f8d162041045f8",
+  "arrays_sha256": "d763467e5f919e684bd0f17527c84f849138d08e95a80ff2cad6a42f4b62add6",
+  "status": "completed",
+  "initial_state": [
+    0.0010000000001649403,
+    3.6654664453959307e-11,
+    -2.304089607889117e-05,
+    6.463902437040906e-08
+  ],
+  "initial_representation_difference": [
+    0.0,
+    0.0,
+    -3.3881317890172014e-21,
+    0.0
+  ],
+  "model": "B35_matched",
+  "level": "fine",
+  "evaluations": 150059,
+  "wall_seconds": 34.92185579999932
+}

@@ -1,0 +1,16 @@
+{
+  "settings_sha256": "251b65a20226b2f287b2e1f2414fc2d20b6c4e3b5977349248c420be7fb347ce",
+  "artifacts": {
+    "B_coarse_extended.npz": "d3b408abf6f115336bcfaaf8e7404d75df86fa003913db3deebc917b856c2939",
+    "B_coarse_pilot.npz": "973b14bae6c2b635912dc582b1eaafbe5fbf8e42f366c4422b8859a7e154f19b",
+    "B_fine_extended.npz": "87550bba45c51454a55142e9b95e1ac5035ae6c9a01c19ee332e66f2cd0a32be",
+    "B_fine_pilot.npz": "ff4eac6d08ad088e28ba1056a09def4a45a93b15fbf2e3da3e9273e34024904b",
+    "B_matched_phase0_extended.npz": "ca1e685cdb706ecbcfaf49eb9eafe40450bea73a0406c91717c5b51dea045db2",
+    "B_matched_phase0_pilot.npz": "a8698834f7232c52c55c0a6c95bb30bc00e0373d4dee7d52ad4fbb326f6aa90d",
+    "B_matched_phase1_pilot.npz": "17f43f542d17f49131c82e3b5df04372d0246684ab3749c98b57485cd265d155",
+    "C_coarse_extended.npz": "29cc20fa2fb94aa475c5a0beac5476c7e969512e2ca5c687d7391363c65ce6f2",
+    "C_coarse_pilot.npz": "047d7d5f20644c44a4ef2a975c6876188a9a278a0493297e36b043eaa34d7b23",
+    "C_fine_extended.npz": "d2da1d8b11224e5da792171691c6580ff8ab6240efcb0c6919398f8a606e890c",
+    "C_fine_pilot.npz": "c5c5adec68255fff72ef75dd4632aef41825af7f0f777cfe9dc897a02fc43d28"
+  }
+}

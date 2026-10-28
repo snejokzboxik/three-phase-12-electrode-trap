@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "settings_sha256": "84ad68b1024c65df07e577e7e10722f15e78cd2b530316010dbaac42f8734268",
+  "driver_sha256": "f483ca8162af4f5ecc1267376d07a7793e2b251e257c2615077c58dbe3e6f8a3",
+  "artifacts": {
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/A_smooth_coarse.npz": "897b082307b8fbf62fbebee95b2515bcc537b07731868deb06bf2799adc6339a",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/B_coarse.npz": "57435f09d43446878cd3cf221be578537e45a5dfebb3f4b37bc5e7717895d191",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/A_smooth_fine.npz": "12dc79ec64a9e16ee45fbbda55d928c021f359d7b8a564d301c14f32979ef3a1",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/B_fine.npz": "f6ce12d09cd73000331deb58dfa4cb9c5f974c3ea6c79d7d903255901468ab13",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/local_smooth_100.npz": "9540bf0a696da07de19871300119d2a30636b72700ee0707883bb2b371259c61",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/local_smooth_200.npz": "33e6b61d83519aa5bb05117ccbc89e985840dba77294e68df11e0becfca1336c",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/local_raw_dop200.npz": "57c8b0add71d8b977212099714c173689dfa999263dc81abe362a0163c68cb30",
+    "outputs/abc_validation/raw_spatial_diagnosis/v2/h70/local_raw_dop400.npz": "4610b073af2dbf8126446445ed5fd3650267e781608076eb98962b1b2030537c"
+  },
+  "records": {
+    "A_smooth_coarse": {
+      "reused": "outputs\\abc_validation\\pilot\\A_smooth_phase0_coarse_pilot.npz",
+      "source_sha256": "bbe556725573864dbc6a0732579cd0f5f5a827f4b0d188d73f8bed72d48177e7"
+    },
+    "B_coarse": {
+      "reused": "outputs\\abc_validation\\pilot\\B_phase0_coarse_pilot.npz",
+      "source_sha256": "fe1586528a65acd33c984e5216525fe6c3185a852591d5cd8537d2fbf076438f"
+    },
+    "A_smooth_fine": {
+      "reused": "outputs\\abc_validation\\pilot\\A_smooth_phase0_fine_pilot.npz",
+      "source_sha256": "e7f80963022a73feae8153a3478559b9de79733a45d4a952ba683dd37ccad2a6"
+    },
+    "B_fine": {
+      "reused": "outputs\\abc_validation\\pilot\\B_phase0_fine_pilot.npz",
+      "source_sha256": "09a41db66f1abd92fe60299396934fc2e0a22c959c4c994802901ea61ba6284b"
+    },
+    "local_smooth_100": {
+      "status": "completed",
+      "nfev": 712709
+    },
+    "local_smooth_200": {
+      "status": "completed",
+      "nfev": 1327109
+    },
+    "local_raw_dop200": {
+      "reused": "outputs\\abc_validation\\raw_restart_diagnosis\\v1\\rapid_dop200_common.npz",
+      "source_sha256": "d1b70ec3418f0449bf0c05170aaa8f6450f187fa281cc09dac3d162f67c62ecd"
+    },
+    "local_raw_dop400": {
+      "reused": "outputs\\abc_validation\\raw_restart_diagnosis\\v1\\rapid_dop400_common.npz",
+      "source_sha256": "3d2f9ff1ceb50c11a9c98aeff46f803cde47288664f451b257869d364acd296e"
+    }
+  },
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "full_initial_state_common_to_all_meshes": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "local_initial_state_common_to_all_meshes": [
+    -0.0002583706503131553,
+    2.0292476775718266e-05,
+    -0.21367161492701695,
+    0.012080559593375376
+  ],
+  "local_start_time_s": 0.030000000000000002,
+  "local_end_time_s": 0.035120000000000005
+}

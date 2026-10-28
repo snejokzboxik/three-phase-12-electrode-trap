@@ -1,0 +1,74 @@
+{
+  "case": {
+    "phase_index": 0,
+    "level": "fine",
+    "extent": "pilot"
+  },
+  "controls": {
+    "RF_steps_per_period": 100,
+    "RF_rtol": 2e-11,
+    "RF_atol_SI": [
+      2e-15,
+      2e-15,
+      2e-13,
+      2e-13
+    ],
+    "slow_steps_per_period": 200,
+    "slow_rtol": 2e-12,
+    "slow_dimensionless_atol": 2e-14
+  },
+  "periods": 7506,
+  "provenance": {
+    "fem_fingerprint": "c2788c3895d2e0d43d4110c80af6954fbb51dcff4b294a58c1d01039bdd092d0",
+    "basis_sha256": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+    "sources": {
+      "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+      "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+      "interpolation.py": "fa29279b5803f6548c35fae1b50abfb04d932fa84a136fcf383a3c192fd25bd4",
+      "event_resolved_rf.py": "e79cc4e828ad5ffc19bda44e114ec10dc03db30bf54f4515216fbea43c5ea26a"
+    },
+    "initial_conditions_sha256": "0edba3b900994e8f7365e3fd6a333978a85d3e36a96ca40d30b7f6c60f121c7d",
+    "worker_sha256": "42f90ae732419bfec295568f3ca510bb93d8c03e1f2b25b9fc18ba31d71ae315",
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.18.1"
+  },
+  "signature": "94fe0a4fd8545e0c71836a4eb1e557d7625e080660f4de35c733c3ec371be6d7",
+  "status": "completed",
+  "arrays_sha256": "8593fac4c9c67ea9452e66f0a15eb21d40f3c447248f99664e8161323be44dcd",
+  "crossings_sha256": "985e2173f864b759ae7d6860041eb2b4c441d6c9bca4be5ccf7a2cb0957a75fb",
+  "diagnostics": {
+    "checked_RK_steps": 750862,
+    "steps_requiring_root_checks": 533,
+    "crossings": 533,
+    "endpoint_misses_detected": 0,
+    "vertex_crossings": 0,
+    "minimum_certified_barycentric_bound": -4.0445365011916245e-14,
+    "minimum_output_barycentric": 2.3865325304850415e-07,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "no_position_or_velocity_nudging": true,
+    "scope": "Numerical dense-curve membership audit, not exact-ODE or FEM spatial convergence"
+  },
+  "nfev": 11263998,
+  "wall_seconds": 186.92637100000047,
+  "max_radius_m": 0.001003832199051914,
+  "end_time_s": 0.07506,
+  "initial_state": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "vs_legacy_same_nominal_controls": {
+    "legacy_arrays_sha256": "520c64a0a1defa29d286aad992fec5449b5a4708c0646c714ff842423e367e85",
+    "full_positions": {
+      "relative_rms": 0.016865379251978313,
+      "relative_max": 0.04106190344561689
+    },
+    "centred_slow_positions": {
+      "relative_rms": 0.016865295282988194,
+      "relative_max": 0.04102639255276661
+    },
+    "interpretation": "Difference of numerical methods, not an absolute trajectory error or convergence proof"
+  }
+}

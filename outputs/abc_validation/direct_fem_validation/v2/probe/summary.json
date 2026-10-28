@@ -1,0 +1,59 @@
+{
+  "records": {
+    "DOP853": {
+      "wall_seconds": 4.438448700000663,
+      "diagnostics": {
+        "method": "DOP853",
+        "checked_steps": 12804,
+        "crossings": 8,
+        "minimum_barycentric_bound": -2.520673684412378e-16,
+        "minimum_sample_barycentric": 4.902992818034215e-06,
+        "barycentric_tolerance": 5.684341886080802e-14,
+        "position_nudges": 0,
+        "velocity_nudges": 0,
+        "hidden_exits_detected": 0,
+        "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+      },
+      "sha256": "adc3ea870aa7c668bf0e2635fe4f078bd068a8a1c92c2f515ac87a7fa7f70378"
+    },
+    "Radau": {
+      "wall_seconds": 7.069182200000796,
+      "diagnostics": {
+        "method": "Radau",
+        "checked_steps": 19880,
+        "crossings": 8,
+        "minimum_barycentric_bound": -1.2711339714813491e-15,
+        "minimum_sample_barycentric": 4.9030580469280095e-06,
+        "barycentric_tolerance": 5.684341886080802e-14,
+        "position_nudges": 0,
+        "velocity_nudges": 0,
+        "hidden_exits_detected": 0,
+        "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+      },
+      "sha256": "d43f32771e189cd37332591d7d1c192f8c830190be654b9ea82beb37577a0cfe"
+    },
+    "ordinary_DOP853": {
+      "wall_seconds": 3.2472281999998813,
+      "diagnostics": {
+        "whole_step_geometry": false
+      },
+      "sha256": "0d2655bbb2c0b6f4d6fdd91cbf6d2f6ab8be83805da78faa176df051549eaa9b"
+    }
+  },
+  "comparisons_to_audited_DOP853": {
+    "DOP853": {
+      "relative_rms": 0.0,
+      "relative_max": 0.0
+    },
+    "Radau": {
+      "relative_rms": 3.223759221512817e-10,
+      "relative_max": 5.86536070301032e-10
+    },
+    "ordinary_DOP853": {
+      "relative_rms": 2.3356478984802326e-12,
+      "relative_max": 4.731200261729958e-12
+    }
+  },
+  "scope": "128 RF-period probe; not the long validation",
+  "direct_field_degree": 4
+}

@@ -1,0 +1,8 @@
+{
+  "field_max_abs_V_per_m": 3.1213949114317074e-07,
+  "field_relative_rms": 4.79499795136301e-13,
+  "phi_max_abs_V": 5.855405049715046e-11,
+  "source_samples_sha256": "e56aa383dc36bb965569f9e3e7c876300f9c4c0b93a61f522e1b962ca5212f14",
+  "status": "passed",
+  "scope": "same Galerkin space and BC, different floating-point solve; no fit"
+}

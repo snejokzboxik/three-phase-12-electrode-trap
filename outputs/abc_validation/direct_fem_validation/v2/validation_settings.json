@@ -1,0 +1,186 @@
+{
+  "scope": "Direct, unsmoothed P4 FEM A; same geometry/ABC/physics as original P2; old P2 checkpoints remain historical",
+  "meshes_um": [
+    50,
+    35
+  ],
+  "FEM_degree": 4,
+  "geometry_degree": 1,
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0,
+    "slow_position_m": [
+      0.001,
+      0.0
+    ],
+    "slow_velocity_m_per_s": [
+      0.0,
+      0.0
+    ],
+    "phase_rad": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "RF_periods": {
+    "pilot": 7506,
+    "extended": 23672
+  },
+  "R_scale_m": 0.001,
+  "estimated_slow_period_s": 0.023093891788417812,
+  "full_initial_states": [
+    [
+      0.0010000000000544395,
+      -3.346946549194907e-07,
+      0.21036209953962762,
+      1.8359318543806833e-08
+    ],
+    [
+      0.0010003348023552565,
+      2.921982193250999e-14,
+      -3.420533285626352e-08,
+      0.2102944297406035
+    ]
+  ],
+  "controls": {
+    "coarse": {
+      "method": "DOP853",
+      "steps": 50,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ]
+    },
+    "fine": {
+      "method": "DOP853",
+      "steps": 100,
+      "rtol": 2e-11,
+      "atol": [
+        2e-15,
+        2e-15,
+        2e-13,
+        2e-13
+      ]
+    },
+    "refined": {
+      "method": "DOP853",
+      "steps": 200,
+      "rtol": 2e-13,
+      "atol": [
+        2e-17,
+        2e-17,
+        2e-15,
+        2e-15
+      ]
+    },
+    "radau": {
+      "method": "Radau",
+      "steps": 50,
+      "rtol": 2e-08,
+      "atol": [
+        2e-12,
+        2e-12,
+        2e-10,
+        2e-10
+      ]
+    }
+  },
+  "samples_per_RF_period": 64,
+  "tolerances": {
+    "relative_position_rms": 0.01,
+    "relative_position_max": 0.03,
+    "relative_period": 0.01,
+    "numerical_budget_fraction": 0.1
+  },
+  "field_relative_screening_target": 0.001,
+  "primary_comparisons": [
+    "A_P4 vs frozen B70/C70",
+    "A_P4 vs same-mesh B_P4/C_P4",
+    "A_P4 vs same-mesh diagnostic A_fit"
+  ],
+  "spatial_control": "P4 h50 vs h35, identical physical full IC and global RF clock, all three original cases",
+  "independent_temporal_control": "h35 phase0 pilot: DOP853 T50/T100/T200 and Radau; common geometry audit",
+  "geometry_amendment": "v2 adds eight-global-time-ULP displacement envelope to cell membership; no state/time nudges. v1 successful cases retain their stricter original audit and explicit old-kernel provenance.",
+  "input_sha256": {
+    "outputs/abc_validation/protocol.json": "0dc8b48e9c7e82d6ff7061d696e5afce6bc97c3c81cec6df3f0ce4e6c7f59d55",
+    "outputs/abc_validation/pilot/settings.json": "db457aacdf8b37f890365915f1b39b4531d0d72fc05a7a52901b218a2a7a8b65",
+    "outputs/abc_validation/initial_conditions.json": "0edba3b900994e8f7365e3fd6a333978a85d3e36a96ca40d30b7f6c60f121c7d",
+    "outputs/abc_validation/model_b/reconstruction.json": "47892bac73e2b0e6bec3db899c3f54d88cbdb071ecb9aaa9045ed875d4c707a6",
+    "outputs/abc_validation/model_c/coefficients.json": "be84773fe2f22b0465ed7cafa16ee59d70dbb31833bd19662f6a46ec9898b304",
+    "outputs/fem_cache/p2_basis.npz": "263217fd13abe2060af334e0ec5c28b2abc6bc20cf4f3273f93094dcc65cf063",
+    "outputs/fem_cache/gmsh_70um_fem_bundle.zip": "5b9299eae5a3cb2d07fcdd48cea411dc45d3f22683e9c68a484ef817798b915e",
+    "outputs/abc_validation/direct_fem_validation/v2/h70_P2/full_P2_equivalence.json": "a3a24d802bd50545c8256a18a4708caa882d7ca7766292939e007950a6004a7e",
+    "outputs/abc_validation/direct_fem_validation/v2/probe/summary.json": "9aa057e16082b82ef2c97cf7c1159fab386bd7f315792254b82a064430ea559d",
+    "outputs/abc_validation/pilot/B_phase0_coarse_pilot.json": "a9828398f8f004099b15060bd0fa021ab97a9a778dc0e41442cb7573982091d5",
+    "outputs/abc_validation/pilot/B_phase0_coarse_pilot.npz": "fe1586528a65acd33c984e5216525fe6c3185a852591d5cd8537d2fbf076438f",
+    "outputs/abc_validation/pilot/B_phase0_fine_pilot.json": "39594e56d77f9c7c23e21dae1d38e5c9897579c14beeb2f6634c828dcebb9d1b",
+    "outputs/abc_validation/pilot/B_phase0_fine_pilot.npz": "09a41db66f1abd92fe60299396934fc2e0a22c959c4c994802901ea61ba6284b",
+    "outputs/abc_validation/pilot/B_phase0_coarse_extended.json": "4c6b97c2c75b7e3302c184396254939a224976cb4372d2c770f5bbabfe8ef59b",
+    "outputs/abc_validation/pilot/B_phase0_coarse_extended.npz": "5bda891d175ec82cf4308611114c56ac8563329eba021a568351aab684869ad1",
+    "outputs/abc_validation/pilot/B_phase0_fine_extended.json": "ac0e2a405694b3c079489f3329651df3035462f552158a985dc972a505bb9737",
+    "outputs/abc_validation/pilot/B_phase0_fine_extended.npz": "89973603a3420a3e8d85ee1f4081480bf4dbb06299ed845253f08f367cfe9993",
+    "outputs/abc_validation/pilot/C_phase0_coarse_pilot.json": "b5246fec839658f49861218e649c647c28898c5927e9e2b7078da1855418e4eb",
+    "outputs/abc_validation/pilot/C_phase0_coarse_pilot.npz": "14b42fd3c7dc9ea6231aec47df43934e8fb2758d2cbc360c5794b398bc15ad62",
+    "outputs/abc_validation/pilot/C_phase0_fine_pilot.json": "a95d157736f5890522f73768cb348a94d08f5af1d918f397c2064412e0ba72a7",
+    "outputs/abc_validation/pilot/C_phase0_fine_pilot.npz": "d368b87cfc6adac2384ca14336ec34d2dfbb7b66fcc4bc27b0b18316eb2f0d06",
+    "outputs/abc_validation/pilot/C_phase0_coarse_extended.json": "f64e6471695b9012a910506cc3cdb5b5361948e1e4bed5a1a1ead5ea30b61b6a",
+    "outputs/abc_validation/pilot/C_phase0_coarse_extended.npz": "44f36ab194b0e23e68d3d108d4ce9185a9c612257bfe4e4d4d04fc5e6f6b9c3c",
+    "outputs/abc_validation/pilot/C_phase0_fine_extended.json": "27c6ec116de6098560b73217dcfc7fd1511e41fe05ed59cb02fc5d796f49f74d",
+    "outputs/abc_validation/pilot/C_phase0_fine_extended.npz": "33e4f7f375e94a4b084efe8bfa96b34f0c411604a9be4a716ef0e3c1cef230ab",
+    "outputs/abc_validation/pilot/A_smooth_phase0_coarse_pilot.json": "528039fa4367a5328d301ecc49c3a8e7ee63df569f167d3181575f4072a1e761",
+    "outputs/abc_validation/pilot/A_smooth_phase0_coarse_pilot.npz": "bbe556725573864dbc6a0732579cd0f5f5a827f4b0d188d73f8bed72d48177e7",
+    "outputs/abc_validation/pilot/A_smooth_phase1_coarse_pilot.json": "0bb8eb8a8b6f34381e97c62d58f2a4703a9cc3a700b98ab1f7d18aaca079f999",
+    "outputs/abc_validation/pilot/A_smooth_phase1_coarse_pilot.npz": "26ccc8872645c5eeb71c1fd02a424579b1b0a1572768bec5ee3ccc513303cedd",
+    "outputs/abc_validation/pilot/A_smooth_phase0_fine_pilot.json": "db5727af37b44fc7bb9f8be2cecb15fd6218e8b3d70572ea41de87bd8c31e0b9",
+    "outputs/abc_validation/pilot/A_smooth_phase0_fine_pilot.npz": "e7f80963022a73feae8153a3478559b9de79733a45d4a952ba683dd37ccad2a6",
+    "outputs/abc_validation/pilot/A_smooth_phase1_fine_pilot.json": "832f02b82a4e9ec39674cb0ae46f9d231e94cd449ddcf7b226fbcfeac2bd30aa",
+    "outputs/abc_validation/pilot/A_smooth_phase1_fine_pilot.npz": "ee986dc077304452d818474ded3da1310b6e3c13177b8b68f4940d36cca1571f",
+    "outputs/abc_validation/pilot/A_smooth_phase0_coarse_extended.json": "bd690020ef95145990df35a3564ea2765b2ab5ce58ca0a7fb40060737bebb404",
+    "outputs/abc_validation/pilot/A_smooth_phase0_coarse_extended.npz": "a6fde03b4762366bf1eafbbaf766bfcc2005badbd4b64e0e1a74d7fdf81d6b8f",
+    "outputs/abc_validation/pilot/A_smooth_phase0_fine_extended.json": "faadd6d5646cb07ceace56ec7baefc171f87fab32e8d7ae392c352346515713f",
+    "outputs/abc_validation/pilot/A_smooth_phase0_fine_extended.npz": "a0309e6fa2875dac66f5110bf43368e559e5ae2dae2cd6ac61f60d6e79b8201b",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/complete.json": "5f3356d1f0f0e81497e6c8fcdccdfc7bebe3bbf55fe32c727fe819cf8a2061af",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/common_samples.npz": "eb8d97dda473ad3fe73580ef75b5d2940961d6483ab222c5786b392bec048735",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/diagnostic_N48.json": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/native_reconstruction_discrepancy.csv": "6fbac0f2b869c33fd09c09dfc180e20318b7e8f7055b37e04aea9652e0e0b6ef",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/origin_limits.json": "92a8b2706215d4a5adab285075384d501bcaaf86c690de94ad33df746b5ff6ef",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/solver_diagnostics.json": "aed370f1b172f3f7b29b29c123038afa4f08494dd472405b8be611ca24612d9b",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/complete.json": "5e4b4ff0358e1eceaa8c74ce2558f55aeaa501df1ca133350bcdcd92c9497796",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/common_samples.npz": "34015be312e3c2dc7314a7817737722f53e2d0f5dc91e7539fe2ff111df645eb",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/native_reconstruction_discrepancy.csv": "0c41908039657a14d6843406303d7d87c51ce3e2282aeebb0c14f277f444fd01",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/origin_limits.json": "2f186225f77e7a658080a466a0306c3908eddcfc42b677165fa0f741d916692d",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/solver_diagnostics.json": "e0479f9f3f29058f7cab5756aa8516ed6e399e14904ab72ee62ed1edc5f4a203"
+  },
+  "kernel_sha256": {
+    "direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "direct_fem_dynamics.py": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b",
+    "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+    "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+    "octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+    "micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+    "slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb"
+  },
+  "worker_sha256": "080a47c775f9669c8531c0d4787ae0435af6181a8d8a20c79dc184895089e1c6",
+  "slow_worker_sha256": "fee5c13cf77bce5529186898de07b6000ceee987ae889b520aca16ee401ef7bf",
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.18.1"
+  }
+}

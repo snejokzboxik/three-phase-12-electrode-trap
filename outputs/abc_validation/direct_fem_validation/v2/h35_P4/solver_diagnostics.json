@@ -1,0 +1,15 @@
+{
+  "max_seam_DOF_mismatch_m": 8.777892128756398e-15,
+  "matched_seam_dofs": 1445,
+  "central_DOF": 0,
+  "sector_dofs": 433794,
+  "reduced_dofs": 432350,
+  "free_dofs": 430961,
+  "scaled_discrete_residual_max": 8.994676478418316e-16,
+  "nodal_polynomial_error_V": 6.667118051786499e-16,
+  "degree": 4,
+  "sector_triangles": 53957,
+  "RF_encoding": "Phi/U0=Im(H*exp(i*chi)), H(R30 x)=rho H(x), rho=exp(-2pi i/3)",
+  "all_FE_content_retained": true,
+  "harmonic_fit_used": false
+}

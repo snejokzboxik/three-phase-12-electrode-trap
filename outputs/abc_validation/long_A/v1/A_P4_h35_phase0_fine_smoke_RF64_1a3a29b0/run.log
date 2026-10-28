@@ -1,0 +1,8 @@
+2026-10-28T14:55:37.964344+00:00 [PREPARING]   0.00% | 0.000 slow periods | checkpoints 0/2 | ETA estimating Loading existing P4 field; initial trajectory starts at t=0.
+2026-10-28T14:55:50.818152+00:00 [RUNNING]   0.00% | 0.000 slow periods | checkpoints 0/2 | ETA estimating segment 1
+2026-10-28T14:55:52.033753+00:00 [CHECKPOINT_SAVED]  50.00% | 0.014 slow periods | checkpoints 1/2 | ETA 0.2 min 
+2026-10-28T14:55:52.035735+00:00 [RUNNING]  50.00% | 0.014 slow periods | checkpoints 1/2 | ETA 0.2 min segment 2
+2026-10-28T14:55:53.290238+00:00 [CHECKPOINT_SAVED] 100.00% | 0.028 slow periods | checkpoints 2/2 | ETA 0.0 min 
+2026-10-28T14:55:53.291120+00:00 [POSTPROCESSING] 100.00% | 0.028 slow periods | checkpoints 2/2 | ETA 0.0 min Joining and checking all samples; no completion marker yet.
+2026-10-28T14:55:56.051724+00:00 [VERIFYING] 100.00% | 0.028 slow periods | checkpoints 2/2 | ETA 0.0 min Checking final checksums and checkpoint chain.
+2026-10-28T14:55:56.132214+00:00 [COMPLETED] 100.00% | 0.028 slow periods | checkpoints 2/2 | ETA 0.0 min COMPLETED.json written; result files verified.

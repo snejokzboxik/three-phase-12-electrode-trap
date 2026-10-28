@@ -1,0 +1,18 @@
+# Global refinement of gmsh_70um: same geometry and radial transition.
+[geometry]
+electrode_count = 12
+electrode_orbit_radius = 0.010
+electrode_radius = 0.0015
+outer_domain_radius = 0.025
+
+[mesh]
+backend = "gmsh"
+mesh_file = "outputs/meshes/gmsh_50um/trap.msh"
+resolution = 50e-6
+fine_radius = 0.008
+transition_radius = 0.014
+outer_resolution = 250e-6
+interior_seed = 12345
+
+[outputs]
+directory = "outputs/gmsh_50um"

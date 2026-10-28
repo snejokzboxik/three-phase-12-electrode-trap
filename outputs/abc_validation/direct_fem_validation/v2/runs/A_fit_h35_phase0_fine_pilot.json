@@ -1,0 +1,45 @@
+{
+  "case": {
+    "model": "A_fit",
+    "mesh": 35,
+    "phase": 0,
+    "extent": "pilot",
+    "level": "fine"
+  },
+  "signature": "5c617077e76dc3725c152288509bc22717ace78a27d80e4038c27bb0fc4e3a68",
+  "status": "completed",
+  "arrays_sha256": "072741310604472c9f66eb5b37dcae148ef1fd99e1d9cc02a6de877f1296f40d",
+  "crossings_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "segment_start_s": 0.0,
+  "end_s": 0.07506,
+  "parent_arrays_sha256": null,
+  "initial_state_this_segment": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "global_phase_rad": 0.0,
+  "nfev_segment": 10448369,
+  "wall_seconds_including_load": 237.36734660000002,
+  "diagnostics_this_segment": {
+    "diagnostic_only": "A_fit has one temporal level; A is independently controlled at multiple levels/methods"
+  },
+  "reused_from_v1": {
+    "metadata_sha256": "56d545f36cdccd73155479aeffb7da9c266c6c50d23850c96908499344ffcc24",
+    "settings_sha256": "c9b6441843fa6c3e143ae79b65a9a080670bda226cfaeec099e0474282a49d22",
+    "kernel_sha256": {
+      "direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+      "direct_fem_dynamics.py": "ce0258bed9a973d621486656770f1a7f6c488d6c51cf5f81a7078f8578eda282",
+      "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+      "restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+      "pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+      "rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+      "averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+      "octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+      "micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+      "slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb"
+    },
+    "reason": "Completed native trajectories passed original stricter whole-curve geometry check; force, physical IC, drive and temporal controls identical"
+  }
+}

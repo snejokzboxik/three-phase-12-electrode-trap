@@ -1,0 +1,37 @@
+{
+  "case": {
+    "model": "A",
+    "mesh": 50,
+    "phase": 1,
+    "extent": "pilot",
+    "level": "coarse"
+  },
+  "signature": "f2474c33274b3ff2122144d22631aae83ae88bcca01594569c23f66e644651c5",
+  "status": "completed",
+  "arrays_sha256": "91311d791b38171eef8111b96fe3f21a425859587bf1b37b000685664d07c667",
+  "crossings_sha256": "a6e31fdcd8fd5d1d69f7be7e782e16dc00a82b1b146a4d5409a498b08a393939",
+  "segment_start_s": 0.0,
+  "end_s": 0.07506,
+  "parent_arrays_sha256": null,
+  "initial_state_this_segment": [
+    0.0010003348023552565,
+    2.921982193250999e-14,
+    -3.420533285626352e-08,
+    0.2102944297406035
+  ],
+  "global_phase_rad": 1.5707963267948966,
+  "nfev_segment": 5635453,
+  "wall_seconds_including_load": 135.88757280000027,
+  "diagnostics_this_segment": {
+    "method": "DOP853",
+    "checked_steps": 375611,
+    "crossings": 643,
+    "minimum_barycentric_bound": -4.090509128331706e-14,
+    "minimum_sample_barycentric": 7.302259685815216e-08,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "position_nudges": 0,
+    "velocity_nudges": 0,
+    "hidden_exits_detected": 0,
+    "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+  }
+}

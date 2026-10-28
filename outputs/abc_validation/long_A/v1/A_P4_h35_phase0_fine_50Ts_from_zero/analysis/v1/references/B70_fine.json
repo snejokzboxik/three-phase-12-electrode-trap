@@ -1,0 +1,21 @@
+{
+  "signature": "5afca40d3b818f8d856ece4529375ef5acd7f6492a7ad2ebc6f8d162041045f8",
+  "arrays_sha256": "18428887c055c0e57f3742ea3d21d0e3dcfb3ed8dc5d81d2b44b33e2e0f9e988",
+  "status": "completed",
+  "initial_state": [
+    0.001,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_representation_difference": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model": "B70",
+  "level": "fine",
+  "evaluations": 150083,
+  "wall_seconds": 37.296417100000326
+}

@@ -1,0 +1,39 @@
+{
+  "case": {
+    "model": "A",
+    "mesh": 35,
+    "phase": 0,
+    "extent": "pilot",
+    "level": "radau"
+  },
+  "signature": "c351c32a716aef7634a498cea00a3e956c58fae4cb169fe79a6bd8e47033b261",
+  "status": "completed",
+  "arrays_sha256": "5c01ed86221026d4bc5241aec8895241d5779bda550731ed11b915f0f15ada38",
+  "crossings_sha256": "36f24c1e3789c6243a473969b7e735dfa3a4131a5259d870df939271a0f6bee5",
+  "segment_start_s": 0.0,
+  "end_s": 0.07506,
+  "parent_arrays_sha256": null,
+  "initial_state_this_segment": [
+    0.0010000000000544395,
+    -3.346946549194907e-07,
+    0.21036209953962762,
+    1.8359318543806833e-08
+  ],
+  "global_phase_rad": 0.0,
+  "nfev_segment": 6151306,
+  "wall_seconds_including_load": 375.24959789999957,
+  "diagnostics_this_segment": {
+    "method": "Radau",
+    "checked_steps": 866902,
+    "crossings": 977,
+    "minimum_barycentric_bound": -5.706546346573305e-14,
+    "minimum_sample_barycentric": 1.1207725353066633e-06,
+    "barycentric_tolerance": 5.684341886080802e-14,
+    "position_nudges": 0,
+    "velocity_nudges": 0,
+    "maximum_clock_aware_barycentric_tolerance": 2.408596920137812e-12,
+    "clock_envelope_physical_distance_m": 3.302832405819612e-17,
+    "hidden_exits_detected": 0,
+    "force": "native higher-order FEM polynomial gradient; no harmonic reconstruction"
+  }
+}

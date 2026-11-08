@@ -8,6 +8,23 @@ dist/
 outputs/three_phase_12_electrode/*
 !outputs/three_phase_12_electrode/.gitkeep
 
+# Raw arrays and working checkpoints for the later research reports
+/tmp/pdfs/
+/outputs/effective_reconstruction/**/*.npz
+/outputs/effective_reconstruction/**/*.jsonl
+/outputs/effective_reconstruction/**/*.lock
+/outputs/effective_reconstruction/**/*.log
+/outputs/effective_reconstruction/**/checkpoints/
+/outputs/floquet_orbits/**/*.lock
+/outputs/stability_p4/**/*.npz
+/outputs/stability_p4/**/*.jsonl
+/outputs/stability_p4/**/*.lock
+/outputs/stability_p4/v1/N48/
+/outputs/stability_p4/v1/controls/
+/outputs/stability_p4/p4_recheck_v2/controls/**/RF*.json
+/outputs/stability_p4/extended_v2/N48/
+/outputs/stability_p4/aq_ideal_dc_v1/**/cells/
+
 
 # Large scientific files retained locally; see docs/LOCAL_ONLY_DATA.md
 /outputs/abc_validation/direct_fem_validation/v1/h35_P4/common_samples.npz

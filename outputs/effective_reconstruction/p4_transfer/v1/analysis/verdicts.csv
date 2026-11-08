@@ -1,0 +1,5 @@
+case,converged,measured_rate_deg_s,predicted_rate_deg_s,rate_budget_deg_s,rate_agrees,B_passes,E_passes,E_improves_RMS_over_B_above_resolution,E_improves_rate_over_B_above_resolution,verdict
+r075_ABC,True,3.5324799778889666,3.5333100076353885,0.17666550038176942,True,True,True,True,True,supports_E
+r075_ACB,True,-3.5369395936577965,-3.53331000763432,0.17666550038171602,True,True,True,True,True,supports_E
+r125_ABC,True,27.24812527674418,27.26324194390377,1.3631620971951885,True,False,True,True,True,supports_E
+r125_ACB,True,-27.320633720035453,-27.263241943910767,1.3631620971955385,True,False,True,True,True,supports_E

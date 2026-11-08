@@ -1,0 +1,17 @@
+{
+  "coupling": 0.6775575400689721,
+  "radius_mm": 1.0,
+  "start": 0,
+  "model": "P4_h35_refined",
+  "status": "escaped",
+  "horizon_RF": 10000,
+  "reached_RF": 989.6222324081423,
+  "escape_RF": 989.6222324081423,
+  "error": null,
+  "crossings": 28823,
+  "checked_steps": 212853,
+  "max_zero_time_run": 0,
+  "nfev": 3252123,
+  "sampled_max_radius_m": 0.008,
+  "wall_s": 73.33971199999905
+}

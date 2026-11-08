@@ -1,0 +1,47 @@
+[
+  {
+    "case": "minus",
+    "lambda4": 0.45266249897049887,
+    "period_RF": 28,
+    "horizon_RF": 1000,
+    "initial_state_SI": [
+      0.001010207160059747,
+      -1.6608221046225993e-07,
+      0.07825650135109584,
+      19.278904050596143
+    ],
+    "status": "held",
+    "escape_RF": null,
+    "sampled_max_radius_mm": 1.0102107074899604
+  },
+  {
+    "case": "plus",
+    "lambda4": 0.45266249897049887,
+    "period_RF": 28,
+    "horizon_RF": 1000,
+    "initial_state_SI": [
+      0.0010102122120046499,
+      1.6608221046225993e-07,
+      -0.07825650135109584,
+      19.279208580380445
+    ],
+    "status": "held",
+    "escape_RF": null,
+    "sampled_max_radius_mm": 1.0102122256568806
+  },
+  {
+    "case": "rest_1mm",
+    "lambda4": 0.45266249897049887,
+    "period_RF": 28,
+    "horizon_RF": 1000,
+    "initial_state_SI": [
+      0.001,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "status": "held",
+    "escape_RF": null,
+    "sampled_max_radius_mm": 1.0
+  }
+]

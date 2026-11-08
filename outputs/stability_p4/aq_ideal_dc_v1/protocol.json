@@ -1,0 +1,38 @@
+{
+  "a": [
+    0.0,
+    0.002,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.16,
+    0.22,
+    0.3,
+    0.4
+  ],
+  "q": [
+    0.03957858736028818,
+    0.08867549494686512,
+    0.12,
+    0.19867670699033887,
+    0.3,
+    0.4451335053069291,
+    0.58,
+    0.706,
+    0.82,
+    0.9080463337345775,
+    0.9973179068066051,
+    1.15
+  ],
+  "aperture_m": 0.008,
+  "radius_mm": 1.0,
+  "static": "ideal Udc (x^2-y^2)/R^2 shared by both fields",
+  "hashes": {
+    "outputs/stability_p4/v1/protocol.json": "e0c8371969c496f10022eaacdadfebc5c1ba1e19694a677bcd570153a87ed970",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "scripts/run_stability_aq.py": "48b7928d6e1613bcbf1806de7bf03a1fc32cc5e8d527c8a1a532667878294de8",
+    "scripts/compare_mathieu_stability.py": "0df2c60876848db76843eff7103db1b546cbd21e47c9b284349f591627c9503a",
+    "scripts/run_stability_p4.py": "d9c2c13003a0500f20a53236d5cb5a8961596d6d1e7c0d0f8741113b76cf4998"
+  }
+}

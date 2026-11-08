@@ -1,0 +1,19 @@
+{
+  "a": 0,
+  "horizon_RF": 10000,
+  "aperture_mm": 8.0,
+  "cells": 604,
+  "starts_per_model": 3624,
+  "first_Mathieu_edge": 0.9080463337345775,
+  "unresolved_quadrupole": 0,
+  "quadrupole_step_flags": 2,
+  "full_cells": {
+    "N48": 248,
+    "quadrupole": 91
+  },
+  "input_sha256": {
+    "outputs/stability_p4/extended_v2/extended_cells.csv": "31200e0687322c51c7d7aeddb722947ad6df94a337666758032f471b123947ce",
+    "outputs/stability_p4/extended_v2/protocol.json": "148eb32488018801eee6fa38d0f8ad34a3065113a0dd8ff83f735283817ecce9",
+    "outputs/stability_p4/v1/protocol.json": "e0c8371969c496f10022eaacdadfebc5c1ba1e19694a677bcd570153a87ed970"
+  }
+}

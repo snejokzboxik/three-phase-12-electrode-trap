@@ -1,0 +1,100 @@
+{
+  "case": "r125_ACB",
+  "radius_mm": 1.25,
+  "azimuth_rad": 0.31,
+  "phase_rad": 1.1,
+  "helicity": -1,
+  "sequence": "ACB",
+  "direction": [
+    0.9523335698857134,
+    0.3050586364434435
+  ],
+  "initial_state": [
+    0.0011910028764255784,
+    0.00038103335133607386,
+    -0.18202148089328865,
+    -0.36842194587471216
+  ],
+  "initial_slow_SI": [
+    0.0011904169623571418,
+    0.00038132329555430437,
+    0.0,
+    0.0
+  ],
+  "reference_slow_period_s": 0.014778451830206285,
+  "RF_periods": 4803,
+  "run": "r125_ACB_h50_fine",
+  "mesh_um": 50,
+  "level": "fine",
+  "physical": {
+    "mass_kg": 1e-15,
+    "charge_C": 1e-12,
+    "gamma": 0.0,
+    "gravity": false,
+    "Udc_V": 0.0,
+    "U0_V": 250.0,
+    "frequency_Hz": 100000.0
+  },
+  "R_scale_m": 0.001,
+  "control": {
+    "method": "DOP853",
+    "steps": 100,
+    "rtol": 2e-11,
+    "atol": [
+      2e-15,
+      2e-15,
+      2e-13,
+      2e-13
+    ]
+  },
+  "samples_per_RF_period": 64,
+  "chunk_RF_periods": 1500,
+  "smoke_test": false,
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.18.1"
+  },
+  "input_sha256": {
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/common_samples.npz": "34015be312e3c2dc7314a7817737722f53e2d0f5dc91e7539fe2ff111df645eb",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/complete.json": "5e4b4ff0358e1eceaa8c74ce2558f55aeaa501df1ca133350bcdcd92c9497796",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/native_reconstruction_discrepancy.csv": "0c41908039657a14d6843406303d7d87c51ce3e2282aeebb0c14f277f444fd01",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/origin_limits.json": "2f186225f77e7a658080a466a0306c3908eddcfc42b677165fa0f741d916692d",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/solver_diagnostics.json": "e0479f9f3f29058f7cab5756aa8516ed6e399e14904ab72ee62ed1edc5f4a203",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/common_samples.npz": "eb8d97dda473ad3fe73580ef75b5d2940961d6483ab222c5786b392bec048735",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/complete.json": "5f3356d1f0f0e81497e6c8fcdccdfc7bebe3bbf55fe32c727fe819cf8a2061af",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/diagnostic_N48.json": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/native_reconstruction_discrepancy.csv": "6fbac0f2b869c33fd09c09dfc180e20318b7e8f7055b37e04aea9652e0e0b6ef",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/origin_limits.json": "92a8b2706215d4a5adab285075384d501bcaaf86c690de94ad33df746b5ff6ef",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/solver_diagnostics.json": "aed370f1b172f3f7b29b29c123038afa4f08494dd472405b8be611ca24612d9b",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/native_C_calibration.json": "4300f092e88f3e9f8c315ff93beec83958a9e60484c924e87bd6b181c269cb3b",
+    "outputs/abc_validation/direct_fem_validation/v2/validation_settings.json": "251b65a20226b2f287b2e1f2414fc2d20b6c4e3b5977349248c420be7fb347ce",
+    "outputs/effective_reconstruction/v1/frozen_models.json": "722e364c5c49865d786b69b8ee6d6170eeaf02443ae2962c17a8a55e46c1520d",
+    "outputs/meshes/gmsh_35um/sector.msh": "36f696c7ab01a9a36571cf8adcde0bf3e52e6eca5a11408bf577eeddfd417158",
+    "outputs/meshes/gmsh_35um/trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "outputs/meshes/gmsh_50um/sector.msh": "a43aa8aa13eb660b248701b5b3d195babbb15fa8eaa8f58ad01f3d3de89b2a9b",
+    "outputs/meshes/gmsh_50um/trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "scripts/build_direct_fem.py": "8d30d5075fa65edba6425e81a107477cf2f94a8acb4c0947586cff2213a1956c",
+    "scripts/run_effective_p4_transfer.py": "152393a8bf2327c7e0d2c0ca9482bbaca39ec3cc7a546b3eae3af108a514ef5d",
+    "scripts/run_effective_reconstruction_v1.py": "651de3e11af5b5431cbda99d946315a5262cf0be89646f7c51830b41f018d513",
+    "src/three_phase_trap/audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "src/three_phase_trap/averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+    "src/three_phase_trap/direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "src/three_phase_trap/direct_fem_dynamics.py": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b",
+    "src/three_phase_trap/effective_reconstruction_v1.py": "0ce929cf79bc0203af2de54fa651cad45c18b3ecb20fa218cd832ca2bb1216ae",
+    "src/three_phase_trap/long_rf_run.py": "685858ed3c1ebf7b96344f2d726d9fc8c6faa0b4a25c9598b63d85ee376a1cfa",
+    "src/three_phase_trap/micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+    "src/three_phase_trap/octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+    "src/three_phase_trap/pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "src/three_phase_trap/restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+    "src/three_phase_trap/rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "src/three_phase_trap/slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb",
+    "src/three_phase_trap/trajectory_diagnostics.py": "2d29b55c9d4617144b0cb74a032a46068dba8b213edfd454ec0237459f24b956"
+  }
+}

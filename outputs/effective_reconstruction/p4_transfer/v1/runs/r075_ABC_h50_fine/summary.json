@@ -1,0 +1,25 @@
+{
+  "status": "computed",
+  "start_time_s": 0.0,
+  "end_time_s": 0.13342,
+  "samples": 853889,
+  "simulated_reference_slow_periods": 3.25008333429264,
+  "maximum_full_radius_m": 0.0007501411436313229,
+  "maximum_slow_abs_y_m": 0.0001765757551169929,
+  "slow_x_oscillations": {
+    "positive_peak_times_s": [
+      0.04105287188483153,
+      0.08210563858573612,
+      0.12315840528319734
+    ],
+    "periods_s": [
+      0.04105276670090459,
+      0.04105276669746122
+    ],
+    "mean_period_s": 0.041052766699182903,
+    "period_spread_s": 3.443370588662731e-12,
+    "x_half_range_m": 0.0007301399465739183
+  },
+  "convergence_status": "not_assessed_for_this_duration",
+  "meaning": "Trajectory computation completed; 50-period convergence and B/C comparison require separate controls"
+}

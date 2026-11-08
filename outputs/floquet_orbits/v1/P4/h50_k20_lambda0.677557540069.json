@@ -1,0 +1,95 @@
+{
+  "status": "closed",
+  "lambda4": 0.6775575400689721,
+  "period_RF": 20,
+  "mesh_um": 50,
+  "classification": "linearly_unstable",
+  "spectral_radius": 1.2582620065121308,
+  "initial": [
+    0.12297445216632273,
+    -9.784663915842941e-06,
+    -8.486692832876907e-06,
+    0.034225647553702075
+  ],
+  "displacement_from_N48": 9.784663915842941e-06,
+  "checks": [
+    {
+      "level": "coarse",
+      "finite_difference_step": 5e-07,
+      "closure": 8.019572590490409e-09,
+      "classification": "linearly_unstable",
+      "spectral_radius": 1.2582619659103782,
+      "symplectic_defect": 8.36714636753211e-08,
+      "multipliers": [
+        [
+          0.7947470667842766,
+          0.0
+        ],
+        [
+          0.999902274504902,
+          -0.013980402057661217
+        ],
+        [
+          0.999902274504902,
+          0.013980402057661217
+        ],
+        [
+          1.2582619659103782,
+          0.0
+        ]
+      ]
+    },
+    {
+      "level": "fine",
+      "finite_difference_step": 5e-07,
+      "closure": 8.019574186436006e-09,
+      "classification": "linearly_unstable",
+      "spectral_radius": 1.2582619705689717,
+      "symplectic_defect": 1.194206582353883e-07,
+      "multipliers": [
+        [
+          0.7947470636829974,
+          0.0
+        ],
+        [
+          0.9999022744775033,
+          -0.013980686771900182
+        ],
+        [
+          0.9999022744775033,
+          0.013980686771900182
+        ],
+        [
+          1.2582619705689717,
+          0.0
+        ]
+      ]
+    },
+    {
+      "level": "fine",
+      "finite_difference_step": 2.5e-07,
+      "closure": 8.019574186436006e-09,
+      "classification": "linearly_unstable",
+      "spectral_radius": 1.2582620065121308,
+      "symplectic_defect": 7.727866384407194e-08,
+      "multipliers": [
+        [
+          0.7947470398134189,
+          0.0
+        ],
+        [
+          0.9999022627435923,
+          -0.013980701876402463
+        ],
+        [
+          0.9999022627435923,
+          0.013980701876402463
+        ],
+        [
+          1.2582620065121308,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

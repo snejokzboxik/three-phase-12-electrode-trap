@@ -1,0 +1,55 @@
+{
+  "C": {
+    "p": 6.0,
+    "U_at_1mm_J": 2.2123924019591e-17,
+    "B_SI": 22.123924019590998
+  },
+  "D": {
+    "p": 6.0,
+    "U_at_1mm_J": 2.212401491857386e-17,
+    "B_SI": 22.12401491857386
+  },
+  "train": [
+    "p4_phase0"
+  ],
+  "test": [
+    "p4_phase1"
+  ],
+  "analytic_holdout": [
+    "oct075",
+    "oct100",
+    "oct125",
+    "oct125_reverse"
+  ],
+  "D_diagnostics": {
+    "log_design_rank": 1,
+    "log_design_singular_values": [
+      1.0000000000001519
+    ],
+    "log_period_residuals": [
+      2.2204460492503128e-16
+    ]
+  },
+  "D_filter_sensitivity": [
+    {
+      "filter": "mean",
+      "B6_J_m6": 22.12401491857386
+    },
+    {
+      "filter": "double_mean",
+      "B6_J_m6": 22.124357572218067
+    },
+    {
+      "filter": "strobe",
+      "B6_J_m6": 22.12675216617444
+    },
+    {
+      "filter": "inverse",
+      "B6_J_m6": 22.123965958006085
+    }
+  ],
+  "E_gamma_mm_s_inv": 1.267607472590672,
+  "E_G_mm_kg_per_s": 1.2676074725906722e-15,
+  "E_gamma_r4_m4_s_inv": 1267607472590.6719,
+  "E_fit_to_trajectory": false
+}

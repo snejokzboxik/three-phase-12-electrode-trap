@@ -1,0 +1,10 @@
+{
+  "coupling": 0.6775575400689721,
+  "radius_mm": 1.0,
+  "start": 0,
+  "status": "escaped",
+  "escape_RF": 665.0382732719899,
+  "horizon_RF": 10000,
+  "nfev": 385847,
+  "wall_s": 7.982521399999314
+}

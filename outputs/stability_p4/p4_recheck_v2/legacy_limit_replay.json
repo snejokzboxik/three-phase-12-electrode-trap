@@ -1,0 +1,42 @@
+{
+  "launch": {
+    "coupling": 0.13497692153990556,
+    "radius_mm": 2.0,
+    "start": 0
+  },
+  "mesh_um": 35,
+  "level": "coarse",
+  "legacy_replay": {
+    "reached_RF": 2515.841620416988,
+    "escape_RF": null,
+    "final_state_SI": [
+      -0.0003534655938531259,
+      -0.0010100994016938017,
+      -6.764045109682388,
+      -68.5348493320928
+    ],
+    "crossings": 100001,
+    "checked_steps": 180680,
+    "max_zero_time_run": 0,
+    "sampled_max_radius_m": 0.0023770377401757157,
+    "nfev": 2910202,
+    "from_cell": 455419,
+    "to_cell": 480375,
+    "reason": "legacy_total_crossing_cap"
+  },
+  "continuation_QA": {
+    "reached_RF": 2600.0,
+    "escape_RF": null,
+    "final_state_SI": [
+      -6.352903322209739e-05,
+      0.0003503394092029909,
+      -24.807083644586317,
+      -57.4838064516987
+    ],
+    "crossings": 3345,
+    "checked_steps": 6048,
+    "max_zero_time_run": 0,
+    "sampled_max_radius_m": 0.002376421396009028,
+    "nfev": 97412
+  }
+}

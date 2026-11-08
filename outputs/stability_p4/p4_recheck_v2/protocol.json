@@ -1,0 +1,245 @@
+{
+  "version": 2,
+  "old_inputs_sha256": {
+    "summary.json": "2e0fdaf7aa55013dba8be9c3df17743c38ff21832247a8deb7b3e4ef9d5ca36c",
+    "protocol.json": "e0c8371969c496f10022eaacdadfebc5c1ba1e19694a677bcd570153a87ed970",
+    "N48/refined/r0.5_k2.2722765179768e+00_i0.json": "0cd5fe38b2b1f8ddf886db0482d4ea5752c9514efc36294b3f07bfbe9cfb3e48",
+    "controls/N48_strict/r0.5_k2.2722765179768e+00_i0.json": "eb25fc56e354977902799ab29e6d1ac7218366ccf47de75a27e1e507c05855c7",
+    "controls/P4_h35_coarse/r0.5_k2.2722765179768e+00_i0.json": "665805d9e265aec256a37482ee944d4f999d9f5737e78175e8a36e854feb7bc9",
+    "controls/P4_h35_fine/r0.5_k2.2722765179768e+00_i0.json": "6b56da2c5317acd2a62058c8d1f0a0fa0d0d43d48117e0112e1d82f000e08324",
+    "controls/P4_h50_coarse/r0.5_k2.2722765179768e+00_i0.json": "f53951bde62e5c8bf3d6a15b488e6bf5ff1acd31a8970e65c497084ee43effd4",
+    "controls/P4_h50_fine/r0.5_k2.2722765179768e+00_i0.json": "fa14584a018d9610bd13b347a197dac692c680aa8c7f9711ee4a6eee4676adab",
+    "N48/RF10000/r0.5_k3.4012052939627e+00_i0.json": "afafdd6943d02ed821878713a86a57486a45c25e5c7eea89854124d9f14501c8",
+    "controls/N48_strict/r0.5_k3.4012052939627e+00_i0.json": "7da2e9c2e97bae5ebd13ef512c46a7ef94a1514d46cb024346137e46e40fc177",
+    "controls/P4_h35_coarse/r0.5_k3.4012052939627e+00_i0.json": "417c888a337ccf55190357a016a6c60f942ff6e0de07b3eecf616633586e0d5c",
+    "controls/P4_h35_fine/r0.5_k3.4012052939627e+00_i0.json": "dc83a8e68b90c46bc7b91a633cad7f681aeb44f3a4241ac30b3c0cbd0240aa5c",
+    "controls/P4_h50_coarse/r0.5_k3.4012052939627e+00_i0.json": "a2a7b8e17e40ebcd714725cab38cb5a0b1ad65834ce46c435d27febb8e9dbd7a",
+    "controls/P4_h50_fine/r0.5_k3.4012052939627e+00_i0.json": "7718a31143c0fe7af5a226e025bf7afefff862f3f3f7d4b1a06d8746fd68d937",
+    "N48/refined/r1_k4.5266249897050e-01_i0.json": "7e4608df743acbb58c0817b757ed2d2f7474fd61e291641a26ccbea15882dcd1",
+    "controls/N48_strict/r1_k4.5266249897050e-01_i0.json": "9f0d89ae4b64a4bece97c93937ce00bed543a8351fa4d809b49024325997400b",
+    "controls/P4_h35_coarse/r1_k4.5266249897050e-01_i0.json": "4817192381d4af6bde8f53e37971f3e0f1e48619939cc5760fcb446e28be0c2d",
+    "controls/P4_h35_fine/r1_k4.5266249897050e-01_i0.json": "bb3e1f65911f7f86f8840c91881276582eeb6faff74eb7427778b294aa670efb",
+    "controls/P4_h50_coarse/r1_k4.5266249897050e-01_i0.json": "a0894bfa7a2ff2045f139904d9a44d6070167cee70976832c3accba3fa94ae87",
+    "controls/P4_h50_fine/r1_k4.5266249897050e-01_i0.json": "232f4f54e586c1c95d4a837ec16ba02fa73737853699bcf27666def90d858686",
+    "N48/RF10000/r1_k6.7755754006897e-01_i0.json": "f190dcf68da802707981ffa95c2536a37d170a0da1f62d2ffdf4ced5a7f8f6b9",
+    "controls/N48_strict/r1_k6.7755754006897e-01_i0.json": "8a16f0acee563edda470c68ee64737e2af49afefe7a7e654a1090374eb26b226",
+    "controls/P4_h35_coarse/r1_k6.7755754006897e-01_i0.json": "cb886779d082a1f867bb6e50000e92742b6f90aa742d058586cde1737a5db35e",
+    "controls/P4_h35_fine/r1_k6.7755754006897e-01_i0.json": "3d34e741a1f1516c4b160c2705a802fdaf0bc0d970a272375d425b1ce84aa3ba",
+    "controls/P4_h50_coarse/r1_k6.7755754006897e-01_i0.json": "90eca175cbb9dc279d7f8efd77e62f2fa59a07b66d1c950ced0d4340882dcd08",
+    "controls/P4_h50_fine/r1_k6.7755754006897e-01_i0.json": "b067e484887b2529b82ed62c504849a6b964d106b1e9006c11ab3973d8755a2f",
+    "N48/RF10000/r2_k1.3497692153991e-01_i0.json": "8bef8b12c4fb328af100f918e4288a2432e3070cc68c5735f968e4016f21a7a5",
+    "controls/N48_strict/r2_k1.3497692153991e-01_i0.json": "3613b567df51150151a213c084efea61426363fdd243e3ba537ad81cd8b92886",
+    "controls/P4_h35_coarse/r2_k1.3497692153991e-01_i0.json": "3c692ceeefad28ab27c961bc1d22417cc9b30da2d20d5c7dccd639743535006f",
+    "controls/P4_h35_fine/r2_k1.3497692153991e-01_i0.json": "1c5528571a660e2a450ca77ac7e80f487dcec9285ce221fa623979049cc12246",
+    "controls/P4_h50_coarse/r2_k1.3497692153991e-01_i0.json": "9df0b5c5206491fe03f41b398e79fc14ec3cb5d15488f12ccbc21e6a6906cc77",
+    "controls/P4_h50_fine/r2_k1.3497692153991e-01_i0.json": "cf49cccf5eed201f647d0c4c0f5db30ed424ebbc150ec4ceebe3f5089341bca5",
+    "N48/refined/r2_k2.0203712729165e-01_i0.json": "2d0847d142c662154813c4bf56a0236a3b63f74c56320c502ac802bdd7ad4d6c",
+    "controls/N48_strict/r2_k2.0203712729165e-01_i0.json": "86372cefd8f939c6c6b8e38fa50a6c6764ad5370744954c46f88e8f663129ae7",
+    "controls/P4_h35_coarse/r2_k2.0203712729165e-01_i0.json": "8595cbcc2d0f2c110a5123e6fd053c0eeab7e97e37601c1d951f6d9b4c076632",
+    "controls/P4_h35_fine/r2_k2.0203712729165e-01_i0.json": "cfa5406d963ba9035aa0cc000c4105136d47c2333242fbbe6705fd7c8b575e76",
+    "controls/P4_h50_coarse/r2_k2.0203712729165e-01_i0.json": "c97916373e9759bea70359d3089c6d9f8279d6c242efc565a0988f6e6dbd8334",
+    "controls/P4_h50_fine/r2_k2.0203712729165e-01_i0.json": "b15435cbda4f445f9642ba65b657d51f5dfe258953e86860d3a96bb3699173fb"
+  },
+  "sources_sha256": {
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/common_samples.npz": "34015be312e3c2dc7314a7817737722f53e2d0f5dc91e7539fe2ff111df645eb",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/complete.json": "5e4b4ff0358e1eceaa8c74ce2558f55aeaa501df1ca133350bcdcd92c9497796",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/native_reconstruction_discrepancy.csv": "0c41908039657a14d6843406303d7d87c51ce3e2282aeebb0c14f277f444fd01",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/origin_limits.json": "2f186225f77e7a658080a466a0306c3908eddcfc42b677165fa0f741d916692d",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs/abc_validation/direct_fem_validation/v1/h35_P4/solver_diagnostics.json": "e0479f9f3f29058f7cab5756aa8516ed6e399e14904ab72ee62ed1edc5f4a203",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/common_samples.npz": "eb8d97dda473ad3fe73580ef75b5d2940961d6483ab222c5786b392bec048735",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/complete.json": "5f3356d1f0f0e81497e6c8fcdccdfc7bebe3bbf55fe32c727fe819cf8a2061af",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/diagnostic_N48.json": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/direct_fem_source.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/native_reconstruction_discrepancy.csv": "6fbac0f2b869c33fd09c09dfc180e20318b7e8f7055b37e04aea9652e0e0b6ef",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/origin_limits.json": "92a8b2706215d4a5adab285075384d501bcaaf86c690de94ad33df746b5ff6ef",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs/abc_validation/direct_fem_validation/v1/h50_P4/solver_diagnostics.json": "aed370f1b172f3f7b29b29c123038afa4f08494dd472405b8be611ca24612d9b",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/native_C_calibration.json": "4300f092e88f3e9f8c315ff93beec83958a9e60484c924e87bd6b181c269cb3b",
+    "outputs/abc_validation/direct_fem_validation/v2/validation_settings.json": "251b65a20226b2f287b2e1f2414fc2d20b6c4e3b5977349248c420be7fb347ce",
+    "outputs/meshes/gmsh_35um/sector.msh": "36f696c7ab01a9a36571cf8adcde0bf3e52e6eca5a11408bf577eeddfd417158",
+    "outputs/meshes/gmsh_35um/trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "outputs/meshes/gmsh_50um/sector.msh": "a43aa8aa13eb660b248701b5b3d195babbb15fa8eaa8f58ad01f3d3de89b2a9b",
+    "outputs/meshes/gmsh_50um/trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "scripts/build_direct_fem.py": "8d30d5075fa65edba6425e81a107477cf2f94a8acb4c0947586cff2213a1956c",
+    "scripts/run_effective_reconstruction_v1.py": "651de3e11af5b5431cbda99d946315a5262cf0be89646f7c51830b41f018d513",
+    "scripts/run_stability_p4.py": "d9c2c13003a0500f20a53236d5cb5a8961596d6d1e7c0d0f8741113b76cf4998",
+    "src/three_phase_trap/audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "src/three_phase_trap/averaged_dynamics.py": "6f267e38704b00cb101c3fde955445ac55b8a0c1feb38417fc9f10bdb74b7e40",
+    "src/three_phase_trap/direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "src/three_phase_trap/direct_fem_dynamics.py": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b",
+    "src/three_phase_trap/long_rf_run.py": "685858ed3c1ebf7b96344f2d726d9fc8c6faa0b4a25c9598b63d85ee376a1cfa",
+    "src/three_phase_trap/micromotion.py": "378e10be7abfea768358e287b56952ad847c0f65acc9ebb399d511f9413208d6",
+    "src/three_phase_trap/octupole_model.py": "e1c83ac5f72d884c09ab2f5f23ada0ead963b2d36617b77b53c2cfebacf72fb7",
+    "src/three_phase_trap/pilot_dynamics.py": "390e5096e6516a284c6d049b16a2a412fbc7f80c1ee054c5f7c56a4e25596fa3",
+    "src/three_phase_trap/restart_dynamics.py": "15ae120ccd520d0802f55e25107f9d4466dcfa2062f2428fdfc40cdc7bcc8f39",
+    "src/three_phase_trap/rf_reconstruction.py": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8",
+    "src/three_phase_trap/slow_analysis.py": "98dc617b229f7fbe46240cddd9718a39e8dedcd6fa010dc145689b0afbe7a1cb",
+    "src/three_phase_trap/stability_rf_p4.py": "d24101231cb82a562d7f3996a1fecd7ccc1e5c4e9871ca79abbd14dd08c70d7c",
+    "scripts/recheck_stability_p4.py": "796faff5a84a7e260ca1ab8c4bbdd66bdf2f44853aaa7a78c216aef646eb36e2",
+    "src/three_phase_trap/stability_rf_p4_v2.py": "259d6c5564bfcc8224b92385f6fdf555a1cd31a24f8336ac94ca53b9bd498b5b"
+  },
+  "jobs": [
+    {
+      "launch": {
+        "coupling": 2.2722765179768047,
+        "radius_mm": 0.5,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "coarse",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 2.2722765179768047,
+        "radius_mm": 0.5,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "fine",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.45266249897049887,
+        "radius_mm": 1.0,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "coarse",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.45266249897049887,
+        "radius_mm": 1.0,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "fine",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.45266249897049887,
+        "radius_mm": 1.0,
+        "start": 0
+      },
+      "mesh": 50,
+      "level": "coarse",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.45266249897049887,
+        "radius_mm": 1.0,
+        "start": 0
+      },
+      "mesh": 50,
+      "level": "fine",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.6775575400689721,
+        "radius_mm": 1.0,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "refined",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.6775575400689721,
+        "radius_mm": 1.0,
+        "start": 0
+      },
+      "mesh": 50,
+      "level": "refined",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.13497692153990556,
+        "radius_mm": 2.0,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "coarse",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.13497692153990556,
+        "radius_mm": 2.0,
+        "start": 0
+      },
+      "mesh": 35,
+      "level": "fine",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.13497692153990556,
+        "radius_mm": 2.0,
+        "start": 0
+      },
+      "mesh": 50,
+      "level": "coarse",
+      "horizon": 10000
+    },
+    {
+      "launch": {
+        "coupling": 0.13497692153990556,
+        "radius_mm": 2.0,
+        "start": 0
+      },
+      "mesh": 50,
+      "level": "fine",
+      "horizon": 10000
+    }
+  ],
+  "controls": {
+    "coarse": {
+      "method": "DOP853",
+      "steps": 50,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ]
+    },
+    "fine": {
+      "method": "DOP853",
+      "steps": 100,
+      "rtol": 2e-11,
+      "atol": [
+        2e-15,
+        2e-15,
+        2e-13,
+        2e-13
+      ]
+    },
+    "refined": {
+      "method": "DOP853",
+      "steps": 200,
+      "rtol": 2e-13,
+      "atol": [
+        2e-17,
+        2e-17,
+        2e-15,
+        2e-15
+      ]
+    }
+  },
+  "chunk_RF": 1000,
+  "legacy_diagnostic": false,
+  "N48_refined_steps": 48
+}

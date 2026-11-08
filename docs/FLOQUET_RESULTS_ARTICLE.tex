@@ -1,0 +1,32 @@
+% Fragment for the article. The accompanying methods and source tables are
+% documented in FLOQUET_PILOT_RESULTS.md. The table uses booktabs.
+\paragraph{Local stability of periodic RF orbits.}
+We found 66 noncentral periodic solutions on six branches of the full
+time-dependent N48 field over \(0.40\leq\lambda_4\leq0.72\). Each branch
+was sampled at 11 coupling values. For every computed orbit, at least one
+Floquet multiplier lay outside the unit circle. Native P4 calculations
+on both meshes confirmed the local classification for three selected orbits
+(Table~\ref{tab:floquet-p4}).
+
+\begin{table}[ht]
+\centering
+\caption{Largest Floquet multiplier modulus for three periodic orbits.
+The orbit period is expressed in RF periods.}
+\label{tab:floquet-p4}
+\begin{tabular}{rrrrr}
+\toprule
+\(\lambda_4\) & Period & N48 & P4 h35 & P4 h50 \\
+\midrule
+0.45266 & 28 & 1.0125796 & 1.0125859 & 1.0124558 \\
+0.56511 & 4  & 7228.3484 & 7228.3485 & 7228.3485 \\
+0.67756 & 20 & 1.2582715 & 1.2582714 & 1.2582620 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All six nearby and nominal launches in the separate N48 neighborhood
+test remained inside the aperture for 1000 RF periods. This demonstrates
+that finite-time capture can coexist with local linear instability of
+periodic orbits. No sampled branch changed its linear stability class
+across the investigated coupling interval. The finite-time escape
+mechanism remains unresolved.

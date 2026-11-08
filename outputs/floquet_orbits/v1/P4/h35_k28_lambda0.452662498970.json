@@ -1,0 +1,95 @@
+{
+  "status": "closed",
+  "lambda4": 0.45266249897049887,
+  "period_RF": 28,
+  "mesh_um": 35,
+  "classification": "linearly_unstable",
+  "spectral_radius": 1.012585941450578,
+  "initial": [
+    0.12627621075402481,
+    0.0,
+    0.0,
+    0.024098820394360367
+  ],
+  "displacement_from_N48": 0.0,
+  "checks": [
+    {
+      "level": "coarse",
+      "finite_difference_step": 5e-07,
+      "closure": 1.290052870652683e-11,
+      "classification": "linearly_unstable",
+      "spectral_radius": 1.0125843246444837,
+      "symplectic_defect": 3.22193513164681e-07,
+      "multipliers": [
+        [
+          0.9875720797660467,
+          0.0
+        ],
+        [
+          0.9999419909830005,
+          -0.010773209333224463
+        ],
+        [
+          0.9999419909830005,
+          0.010773209333224463
+        ],
+        [
+          1.0125843246444837,
+          0.0
+        ]
+      ]
+    },
+    {
+      "level": "fine",
+      "finite_difference_step": 5e-07,
+      "closure": 1.2933058715698556e-11,
+      "classification": "linearly_unstable",
+      "spectral_radius": 1.0125833127186332,
+      "symplectic_defect": 2.632238111174588e-07,
+      "multipliers": [
+        [
+          0.9875730831301247,
+          0.0
+        ],
+        [
+          0.9999419766183649,
+          -0.010773937520310705
+        ],
+        [
+          0.9999419766183649,
+          0.010773937520310705
+        ],
+        [
+          1.0125833127186332,
+          0.0
+        ]
+      ]
+    },
+    {
+      "level": "fine",
+      "finite_difference_step": 2.5e-07,
+      "closure": 1.2933058715698556e-11,
+      "classification": "linearly_unstable",
+      "spectral_radius": 1.012585941450578,
+      "symplectic_defect": 5.478733955451726e-08,
+      "multipliers": [
+        [
+          0.9875704716481971,
+          0.0
+        ],
+        [
+          0.999941981186963,
+          -0.010772555359328783
+        ],
+        [
+          0.999941981186963,
+          0.010772555359328783
+        ],
+        [
+          1.012585941450578,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

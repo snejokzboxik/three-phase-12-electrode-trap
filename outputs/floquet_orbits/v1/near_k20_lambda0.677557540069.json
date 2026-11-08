@@ -1,0 +1,47 @@
+[
+  {
+    "case": "minus",
+    "lambda4": 0.6775575400689721,
+    "period_RF": 20,
+    "horizon_RF": 1000,
+    "initial_state_SI": [
+      0.0009837402166012021,
+      -1.508822095262991e-07,
+      0.07840323569453074,
+      27.376617993512703
+    ],
+    "status": "held",
+    "escape_RF": null,
+    "sampled_max_radius_mm": 0.9837715953829878
+  },
+  {
+    "case": "plus",
+    "lambda4": 0.6775575400689721,
+    "period_RF": 20,
+    "horizon_RF": 1000,
+    "initial_state_SI": [
+      0.0009838144689987408,
+      1.508822095262991e-07,
+      -0.07840323569453074,
+      27.38339875298695
+    ],
+    "status": "held",
+    "escape_RF": null,
+    "sampled_max_radius_mm": 0.9838645912185544
+  },
+  {
+    "case": "rest_1mm",
+    "lambda4": 0.6775575400689721,
+    "period_RF": 20,
+    "horizon_RF": 1000,
+    "initial_state_SI": [
+      0.001,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "status": "held",
+    "escape_RF": null,
+    "sampled_max_radius_mm": 1.0
+  }
+]

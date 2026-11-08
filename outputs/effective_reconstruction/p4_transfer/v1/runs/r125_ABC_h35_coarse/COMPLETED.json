@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "signature": "a389102146ef82fbf5465660835c0115cdf1944b81f9b133f75c2e45b18be6c9",
+  "completed_utc": "2026-11-08T08:37:35.009891+00:00",
+  "start_time_s": 0.0,
+  "end_time_s": 0.04803,
+  "RF_periods": 4803,
+  "segments": 4,
+  "artifacts": {
+    "trajectory.npz": "83f652b09c66a50b608d9e1c6927798c6cf981bcb390aacabfa1276d706c26b7",
+    "slow_samples.npz": "b8e815a9b23a7f6beaf2ef6e236a91751ad2907d8205dd69453f50cba14b2a41",
+    "summary.json": "cb71cbc8fb346db6d097f5e2d80a68e33bc97e545dbcddfb99606b0b7ada2fe7",
+    "settings.json": "0ac744b5086c0405491f3eee922d160b434e9335aea03c1e8491c4db2393f935"
+  },
+  "convergence_status": "not_assessed_for_this_duration"
+}

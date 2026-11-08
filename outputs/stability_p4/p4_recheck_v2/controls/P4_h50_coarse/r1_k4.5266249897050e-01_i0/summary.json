@@ -1,0 +1,17 @@
+{
+  "coupling": 0.45266249897049887,
+  "radius_mm": 1.0,
+  "start": 0,
+  "model": "P4_h50_coarse",
+  "status": "held",
+  "horizon_RF": 10000,
+  "reached_RF": 10000.0,
+  "escape_RF": null,
+  "error": null,
+  "crossings": 117914,
+  "checked_steps": 561629,
+  "max_zero_time_run": 0,
+  "nfev": 8660283,
+  "sampled_max_radius_m": 0.0011731509410429627,
+  "wall_s": 221.14878130000034
+}

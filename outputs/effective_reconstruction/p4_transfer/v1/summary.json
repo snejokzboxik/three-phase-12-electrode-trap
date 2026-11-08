@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "case": "r075_ABC",
+      "converged": true,
+      "measured_rate_deg_s": 3.5324799778889666,
+      "predicted_rate_deg_s": 3.5333100076353885,
+      "rate_budget_deg_s": 0.17666550038176942,
+      "rate_agrees": true,
+      "B_passes": true,
+      "E_passes": true,
+      "E_improves_RMS_over_B_above_resolution": true,
+      "E_improves_rate_over_B_above_resolution": true,
+      "verdict": "supports_E"
+    },
+    {
+      "case": "r075_ACB",
+      "converged": true,
+      "measured_rate_deg_s": -3.5369395936577965,
+      "predicted_rate_deg_s": -3.53331000763432,
+      "rate_budget_deg_s": 0.17666550038171602,
+      "rate_agrees": true,
+      "B_passes": true,
+      "E_passes": true,
+      "E_improves_RMS_over_B_above_resolution": true,
+      "E_improves_rate_over_B_above_resolution": true,
+      "verdict": "supports_E"
+    },
+    {
+      "case": "r125_ABC",
+      "converged": true,
+      "measured_rate_deg_s": 27.24812527674418,
+      "predicted_rate_deg_s": 27.26324194390377,
+      "rate_budget_deg_s": 1.3631620971951885,
+      "rate_agrees": true,
+      "B_passes": false,
+      "E_passes": true,
+      "E_improves_RMS_over_B_above_resolution": true,
+      "E_improves_rate_over_B_above_resolution": true,
+      "verdict": "supports_E"
+    },
+    {
+      "case": "r125_ACB",
+      "converged": true,
+      "measured_rate_deg_s": -27.320633720035453,
+      "predicted_rate_deg_s": -27.263241943910767,
+      "rate_budget_deg_s": 1.3631620971955385,
+      "rate_agrees": true,
+      "B_passes": false,
+      "E_passes": true,
+      "E_improves_RMS_over_B_above_resolution": true,
+      "E_improves_rate_over_B_above_resolution": true,
+      "verdict": "supports_E"
+    }
+  ],
+  "helicity_pairs": [
+    {
+      "radius_mm": 0.75,
+      "odd_rate_deg_s": 3.534709785773382,
+      "even_rate_deg_s": -0.0022298078844149583,
+      "sign_reversed": true
+    },
+    {
+      "radius_mm": 1.25,
+      "odd_rate_deg_s": 27.284379498389818,
+      "even_rate_deg_s": -0.03625422164563652,
+      "sign_reversed": true
+    }
+  ],
+  "frequency_sweep": {
+    "fitted_frequency_exponent": -2.999674506441854,
+    "predicted_exponent": -3,
+    "max_relative_gamma_error": 0.0004179676970791357
+  }
+}

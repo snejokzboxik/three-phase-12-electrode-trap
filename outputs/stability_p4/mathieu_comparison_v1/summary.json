@@ -1,0 +1,61 @@
+{
+  "first_mathieu_edge": 0.9080463337345775,
+  "counts": {
+    "N48": {
+      "coarse": {
+        "cells": 65,
+        "starts": 390,
+        "all_held_cells": 32,
+        "held_starts": 202
+      },
+      "all": {
+        "cells": 70,
+        "starts": 420,
+        "all_held_cells": 35,
+        "held_starts": 222
+      }
+    },
+    "quadrupole": {
+      "coarse": {
+        "cells": 65,
+        "starts": 390,
+        "all_held_cells": 20,
+        "held_starts": 120
+      },
+      "all": {
+        "cells": 70,
+        "starts": 420,
+        "all_held_cells": 20,
+        "held_starts": 120
+      }
+    }
+  },
+  "area": {
+    "linear_q": {
+      "N48": {
+        "full_capture_area_fraction": 0.007960922066870392,
+        "mean_capture_fraction": 0.012552046248015584
+      },
+      "quadrupole": {
+        "full_capture_area_fraction": 0.0010764812645072958,
+        "mean_capture_fraction": 0.0010764812645072958
+      }
+    },
+    "log_q": {
+      "N48": {
+        "full_capture_area_fraction": 0.4652777777777778,
+        "mean_capture_fraction": 0.48958333333333337
+      },
+      "quadrupole": {
+        "full_capture_area_fraction": 0.29166666666666663,
+        "mean_capture_fraction": 0.29166666666666663
+      }
+    }
+  },
+  "input_sha256": {
+    "outputs/stability_p4/v1/n48_trajectories.csv": "ee2407561c76b2c30afc382cd896afef691604758ca1128078076b008edddc5c",
+    "outputs/stability_p4/v1/protocol.json": "e0c8371969c496f10022eaacdadfebc5c1ba1e19694a677bcd570153a87ed970",
+    "outputs/stability_p4/p4_recheck_v2/summary.json": "7e15210dc8facd9559d4a1da8c93486bb8cd8f7559422d2a0d6ccce343f1a2cf",
+    "scripts/compare_mathieu_stability.py": "0df2c60876848db76843eff7103db1b546cbd21e47c9b284349f591627c9503a"
+  }
+}

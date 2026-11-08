@@ -34,6 +34,15 @@ A–B/C проходят допуски на 3,25 медленного пери�
 Исторические несходящиеся траектории P2 не объявляются точными.
 Новый эталон P4 запускается отдельно; исходный P2-кэш и обычный CLI сохранены.
 
+**Скоростная поправка проверена на новых стартах P4.**
+При радиусах 0,75 и 1,25 мм модель E без подгонки воспроизводит знак
+и скорость поворота линии колебаний при ABC и ACB. При 1,25 мм векторная
+RMS снижается с 1,084–1,087% для стандартного псевдопотенциала B
+до 0,00162–0,00254% для E относительно P4 h35.
+Проверка на новых радиусах охватывает 3,25 медленного периода.
+[Результаты и численные ограничения](docs/EFFECTIVE_P4_TRANSFER_RESULTS.md) ·
+[Воспроизведение](docs/EFFECTIVE_P4_TRANSFER.md).
+
 Подготовлен [отдельный запуск A с t=0 до 50 медленных периодов](docs/RUN_A_50_PERIODS.md):
 `scripts/run_A_50_periods.ps1`, контрольные сохранения, продолжение после остановки,
 проверка результата и маркер `COMPLETED.json`. Пользователь завершил этот
@@ -207,6 +216,17 @@ These checks establish discrete-solve and serialization consistency, not
 spatial convergence or the validity of averaged particle dynamics.
 
 ## Full-dynamics stability study
+
+[Сводный отчёт по новым результатам с графиками и таблицами](docs/RESEARCH_RESULTS.md) ·
+[PDF](docs/RESEARCH_RESULTS.pdf).
+
+For a new finite-time survival map in the P4 field, use
+[the N48 scan with direct P4 boundary controls](docs/STABILITY_P4.md).
+Its outputs are separate from the legacy P2 stability study below.
+The [extended map](docs/STABILITY_P4_EXTENDED.md) adds radii below 0.5 mm
+and follows the capture boundary toward the 8 mm aperture.
+[Floquet results for the six periodic-orbit branches](docs/FLOQUET_PILOT_RESULTS.md)
+are documented separately with a LaTeX fragment for the article.
 
 Run `python -m three_phase_trap.cli stability-study` to resume the publication stability analysis. It integrates `m r¨ = q E(r,t)` with `gamma=0`, gravity disabled, DOP853, the configured tolerances and maximum RF-period step, and a terminal `r >= 8 mm` escape event. Stage A screens the full 10 × 9 coarse `(U0,f_RF)` grid for 50 periods; Stage B runs 1000 periods only for survivors; Stage C runs 10000 periods on representative robust and near-boundary cases. Each pair includes seven radii × four angles at rest and four nonzero tangential-velocity checks. Log-midpoint parameter refinement is limited to coarse-grid Stage-B transitions. Stage-A survivors are not called stable; strict stability requires all 32 primary and velocity-probe starts to remain bounded for 1000 periods.
 

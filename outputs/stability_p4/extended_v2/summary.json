@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "round": 0,
+      "cells": 446,
+      "trajectories": 2676
+    },
+    {
+      "round": 1,
+      "cells": 510,
+      "trajectories": 3060
+    },
+    {
+      "round": 2,
+      "cells": 576,
+      "trajectories": 3456
+    },
+    {
+      "round": 3,
+      "cells": 604,
+      "trajectories": 3624
+    }
+  ],
+  "reused_trajectories": 420,
+  "held": 2056,
+  "escaped": 1568,
+  "unresolved": 0,
+  "direct_controls": [],
+  "wall_this_run_s": 8639.211394599999
+}

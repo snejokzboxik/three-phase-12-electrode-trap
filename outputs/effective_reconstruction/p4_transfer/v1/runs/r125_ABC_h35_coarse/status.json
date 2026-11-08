@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "updated_utc": "2026-11-08T08:37:35.221277+00:00",
+  "progress_percent": 99.99999999999999,
+  "simulation_time_s": 0.04803,
+  "target_time_s": 0.04803,
+  "slow_periods": 3.2500021349888297,
+  "checkpoint_time_s": 0.04803,
+  "committed_segments": 4,
+  "total_segments": 4,
+  "elapsed_this_launch_s": 110.45177870000043,
+  "accumulated_wall_seconds": 110.45177870000043,
+  "estimated_remaining_s": 0.0,
+  "message": "COMPLETED.json written; result files verified."
+}

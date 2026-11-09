@@ -1,0 +1,127 @@
+{
+  "analysis": "analytical free-flight control; no RF integration performed",
+  "input_audit": {
+    "source_csv": "outputs\\octupole_comparison_home\\v2\\trajectory_results.csv",
+    "source_checkpoint": "outputs\\octupole_comparison_home\\v2\\trajectory_checkpoint.jsonl",
+    "checkpoint_records": 2548,
+    "valid_checkpoint_records_including_repeats": 2548,
+    "unique_valid_job_ids": 2320,
+    "duplicate_valid_checkpoint_rows": 228,
+    "conflicting_duplicate_job_ids": 0,
+    "csv_valid_unique_rows": 2320,
+    "csv_valid_rows_before_job_id_dedup": 2320,
+    "duplicate_valid_csv_rows": 0,
+    "conflicting_duplicate_csv_job_ids": 0,
+    "csv_checkpoint_job_id_sets_equal": true,
+    "csv_status_matches_last_valid_checkpoint_record": true,
+    "unresolved_rows_in_v2_csv": 0,
+    "unresolved_or_failed_checkpoint_rows": 0,
+    "paired_unique_physical_starts": 1160,
+    "all_physical_starts_have_both_rf_models": true,
+    "models": {
+      "standing_equal_peak": 1160,
+      "rotating": 1160
+    },
+    "rf_status_counts": {
+      "escaped": 718,
+      "retained": 1602
+    },
+    "horizons_RF": {
+      "300": 2320
+    },
+    "nonzero_energy_starts": 496,
+    "zero_energy_radial_starts": 664,
+    "max_relative_energy_conversion_error": 4.3368086899420177e-16,
+    "physical_mass_conversion": "m_ion = (m/z in Th) * atomic_mass_unit for charge state +1; V2 speed checked against E=mv^2/2",
+    "unit_error_auxiliary_records_excluded": 2,
+    "v2_field_and_rf_conditions": {
+      "frequency_Hz": 100000,
+      "aperture_radius_m": 0.008,
+      "equal_peak_voltage_V": 250,
+      "charge_state": 1,
+      "source_field": "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json"
+    }
+  },
+  "ballistic_classification_counts_by_RF_model_and_300RF_outcome": {
+    "rotating|escaped|escaped": 240,
+    "rotating|escaped|retained": 114,
+    "rotating|retained|retained": 806,
+    "standing_equal_peak|escaped|escaped": 240,
+    "standing_equal_peak|escaped|retained": 124,
+    "standing_equal_peak|retained|retained": 796
+  },
+  "three_way_outcome_counts_by_model": {
+    "rotating|RF-retained-free-retained": 806,
+    "rotating|RF-retained-free-escaped": 0,
+    "rotating|RF-escaped-free-retained": 114,
+    "rotating|RF-escaped-free-escaped": 240,
+    "standing_equal_peak|RF-retained-free-retained": 796,
+    "standing_equal_peak|RF-retained-free-escaped": 0,
+    "standing_equal_peak|RF-escaped-free-retained": 124,
+    "standing_equal_peak|RF-escaped-free-escaped": 240
+  },
+  "energy_cells": 62,
+  "radial_cells": 132,
+  "energy_launches_matching_ballistic_classification": {
+    "rotating": 496,
+    "standing_equal_peak": 496
+  },
+  "energy_launches_per_model": 496,
+  "energy_retention_delta_cells_all_zero": true,
+  "radial_launch_counts": {
+    "rotating": {
+      "starts": 664,
+      "rf_retained": 550,
+      "rf_escaped_while_free_retained": 114
+    },
+    "standing_equal_peak": {
+      "starts": 664,
+      "rf_retained": 540,
+      "rf_escaped_while_free_retained": 124
+    }
+  },
+  "matched_RF_escape_time_pairs": 480,
+  "escape_time_delay_statistics_for_both_escape_only": {
+    "rotating": {
+      "n_both_escaped": 240,
+      "mean_delay_RF_periods": 0.6503461728374865,
+      "median_delay_RF_periods": 0.5613845323499049,
+      "empirical_95th_percentile_delay_RF_periods_nearest_rank": 2.3959149400060937,
+      "min_delay_RF_periods": 0.08901226337701473,
+      "max_delay_RF_periods": 2.437082490131047
+    },
+    "standing_equal_peak": {
+      "n_both_escaped": 240,
+      "mean_delay_RF_periods": 0.5062652172535226,
+      "median_delay_RF_periods": 0.4403945847138431,
+      "empirical_95th_percentile_delay_RF_periods_nearest_rank": 1.833738739410819,
+      "min_delay_RF_periods": 0.06826842325284588,
+      "max_delay_RF_periods": 1.9301078751661294
+    }
+  },
+  "V2_90_percent_interval_contains_exact_ballistic_cutoff": {
+    "brackets_containing_cutoff": 8,
+    "brackets_total": 8
+  },
+  "RF_retained_but_ballistically_lost_300RF": {
+    "rotating": 0,
+    "standing_equal_peak": 0
+  },
+  "RF_escaped_but_ballistically_retained_300RF": {
+    "rotating": 114,
+    "standing_equal_peak": 124
+  },
+  "ballistic_energy_cutoff_scaling": "Ecrit proportional to T^-2 for fixed mass, radius and launch direction",
+  "v1_valid_1000RF_controls_reused": {
+    "source": "outputs\\octupole_comparison_home\\v1\\mass_velocity_results.csv",
+    "valid_1000RF_rows": 8,
+    "unique_valid_job_ids": 8,
+    "RF_statuses": {
+      "retained": 8
+    },
+    "checkpoint_1000RF_attempt_rows": 16,
+    "failed_checkpoint_attempt_rows_excluded": 8,
+    "scope": "selected zero-energy radial controls at 50 and 100 kTh, r0=0.5/2 mm; separate from V2 energy grid"
+  },
+  "no_10000RF_octupole_trajectories_found": true
+}

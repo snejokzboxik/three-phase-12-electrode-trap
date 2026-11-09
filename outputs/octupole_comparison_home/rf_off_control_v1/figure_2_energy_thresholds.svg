@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="560.0" y="26" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#20252b">V2 energy brackets and exact RF-off ballistic cutoff</text>
+<line x1="162.00" y1="105.00" x2="162.00" y2="588.00" stroke="#34404a" stroke-width="1.2"/>
+<line x1="162.00" y1="588.00" x2="1000.00" y2="588.00" stroke="#34404a" stroke-width="1.2"/>
+<line x1="162.00" y1="588.00" x2="1000.00" y2="588.00" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="588.00" x2="162.00" y2="588.00" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="581.00" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">0</text>
+<line x1="162.00" y1="529.10" x2="1000.00" y2="529.10" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="529.10" x2="162.00" y2="529.10" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="522.10" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">1</text>
+<line x1="162.00" y1="470.20" x2="1000.00" y2="470.20" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="470.20" x2="162.00" y2="470.20" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="463.20" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">2</text>
+<line x1="162.00" y1="411.29" x2="1000.00" y2="411.29" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="411.29" x2="162.00" y2="411.29" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="404.29" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">3</text>
+<line x1="162.00" y1="352.39" x2="1000.00" y2="352.39" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="352.39" x2="162.00" y2="352.39" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="345.39" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">4</text>
+<line x1="162.00" y1="293.49" x2="1000.00" y2="293.49" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="293.49" x2="162.00" y2="293.49" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="286.49" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">5</text>
+<line x1="162.00" y1="234.59" x2="1000.00" y2="234.59" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="234.59" x2="162.00" y2="234.59" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="227.59" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">6</text>
+<line x1="162.00" y1="175.68" x2="1000.00" y2="175.68" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="175.68" x2="162.00" y2="175.68" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="168.68" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">7</text>
+<line x1="162.00" y1="116.78" x2="1000.00" y2="116.78" stroke="#e2e6e9" stroke-width="0.7"/>
+<line x1="158.00" y1="116.78" x2="162.00" y2="116.78" stroke="#34404a" stroke-width="1"/>
+<text x="153.00" y="109.78" text-anchor="end" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">8</text>
+<line x1="211.29" y1="588.00" x2="211.29" y2="592.00" stroke="#34404a" stroke-width="1"/>
+<text x="211.29" y="596.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">50</text>
+<line x1="457.76" y1="588.00" x2="457.76" y2="592.00" stroke="#34404a" stroke-width="1"/>
+<text x="457.76" y="596.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">100</text>
+<line x1="704.24" y1="588.00" x2="704.24" y2="592.00" stroke="#34404a" stroke-width="1"/>
+<text x="704.24" y="596.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">150</text>
+<line x1="950.71" y1="588.00" x2="950.71" y2="592.00" stroke="#34404a" stroke-width="1"/>
+<text x="950.71" y="596.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#303840">200</text>
+<text x="581.00" y="619.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#20252b">Mass-to-charge ratio (kTh)</text>
+<text x="162.00" y="83.00" text-anchor="start" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#20252b">Transverse energy (meV)</text>
+<text x="581.00" y="74.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#20252b">300 RF periods; r0 = 1 mm</text>
+<polyline points="211.29,481.17 950.71,160.66" fill="none" stroke="#252a30" stroke-width="2.0"/>
+<line x1="209.29" y1="499.65" x2="209.29" y2="470.20" stroke="#1769AA" stroke-width="3"/>
+<line x1="204.29" y1="499.65" x2="214.29" y2="499.65" stroke="#1769AA" stroke-width="2"/>
+<line x1="204.29" y1="470.20" x2="214.29" y2="470.20" stroke="#1769AA" stroke-width="2"/>
+<circle cx="211.29" cy="481.17" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="455.76" y1="374.48" x2="455.76" y2="367.12" stroke="#1769AA" stroke-width="3"/>
+<line x1="450.76" y1="374.48" x2="460.76" y2="374.48" stroke="#1769AA" stroke-width="2"/>
+<line x1="450.76" y1="367.12" x2="460.76" y2="367.12" stroke="#1769AA" stroke-width="2"/>
+<circle cx="457.76" cy="374.33" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="702.24" y1="293.49" x2="702.24" y2="219.86" stroke="#1769AA" stroke-width="3"/>
+<line x1="697.24" y1="293.49" x2="707.24" y2="293.49" stroke="#1769AA" stroke-width="2"/>
+<line x1="697.24" y1="219.86" x2="707.24" y2="219.86" stroke="#1769AA" stroke-width="2"/>
+<circle cx="704.24" cy="267.50" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="948.71" y1="219.86" x2="948.71" y2="146.23" stroke="#1769AA" stroke-width="3"/>
+<line x1="943.71" y1="219.86" x2="953.71" y2="219.86" stroke="#1769AA" stroke-width="2"/>
+<line x1="943.71" y1="146.23" x2="953.71" y2="146.23" stroke="#1769AA" stroke-width="2"/>
+<circle cx="950.71" cy="160.66" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="213.29" y1="499.65" x2="213.29" y2="470.20" stroke="#D97904" stroke-width="3"/>
+<line x1="208.29" y1="499.65" x2="218.29" y2="499.65" stroke="#D97904" stroke-width="2"/>
+<line x1="208.29" y1="470.20" x2="218.29" y2="470.20" stroke="#D97904" stroke-width="2"/>
+<circle cx="211.29" cy="481.17" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="459.76" y1="374.48" x2="459.76" y2="367.12" stroke="#D97904" stroke-width="3"/>
+<line x1="454.76" y1="374.48" x2="464.76" y2="374.48" stroke="#D97904" stroke-width="2"/>
+<line x1="454.76" y1="367.12" x2="464.76" y2="367.12" stroke="#D97904" stroke-width="2"/>
+<circle cx="457.76" cy="374.33" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="706.24" y1="293.49" x2="706.24" y2="219.86" stroke="#D97904" stroke-width="3"/>
+<line x1="701.24" y1="293.49" x2="711.24" y2="293.49" stroke="#D97904" stroke-width="2"/>
+<line x1="701.24" y1="219.86" x2="711.24" y2="219.86" stroke="#D97904" stroke-width="2"/>
+<circle cx="704.24" cy="267.50" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="952.71" y1="219.86" x2="952.71" y2="146.23" stroke="#D97904" stroke-width="3"/>
+<line x1="947.71" y1="219.86" x2="957.71" y2="219.86" stroke="#D97904" stroke-width="2"/>
+<line x1="947.71" y1="146.23" x2="957.71" y2="146.23" stroke="#D97904" stroke-width="2"/>
+<circle cx="950.71" cy="160.66" r="4.00" fill="#252a30" stroke="#ffffff" stroke-width="0.8"/>
+<line x1="300.00" y1="690.00" x2="322.00" y2="690.00" stroke="#1769AA" stroke-width="3"/>
+<text x="329.00" y="683.00" text-anchor="start" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#303840">Rotating V2 90% bracket</text>
+<line x1="555.00" y1="690.00" x2="577.00" y2="690.00" stroke="#D97904" stroke-width="3"/>
+<text x="584.00" y="683.00" text-anchor="start" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#303840">Standing V2 90% bracket</text>
+<line x1="810.00" y1="690.00" x2="832.00" y2="690.00" stroke="#252a30" stroke-width="3"/>
+<text x="839.00" y="683.00" text-anchor="start" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#303840">Exact ballistic Ecrit</text>
+<text x="560.00" y="724.00" text-anchor="middle" dominant-baseline="hanging" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#444b52">Both V2 50% and 90% thresholds share these observed intervals; intervals are not point estimates.</text>
+</svg>

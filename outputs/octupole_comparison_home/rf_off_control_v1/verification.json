@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-09",
+  "rf_integrations": 0,
+  "fem_solves": 0,
+  "input_audit_passed": true,
+  "matched_physical_starts": 1160,
+  "energy_cells": 62,
+  "v2_threshold_brackets_with_Ecrit": 8,
+  "unit_tests_passed": 8,
+  "unit_tests_failed": 0,
+  "figures": {
+    "png": 5,
+    "svg": 5,
+    "pdf": 5
+  },
+  "svg_xml_png_pdf_checks": "passed"
+}

@@ -1,0 +1,42 @@
+{
+  "source_csv": "outputs\\octupole_comparison_home\\v2\\trajectory_results.csv",
+  "source_checkpoint": "outputs\\octupole_comparison_home\\v2\\trajectory_checkpoint.jsonl",
+  "checkpoint_records": 2548,
+  "valid_checkpoint_records_including_repeats": 2548,
+  "unique_valid_job_ids": 2320,
+  "duplicate_valid_checkpoint_rows": 228,
+  "conflicting_duplicate_job_ids": 0,
+  "csv_valid_unique_rows": 2320,
+  "csv_valid_rows_before_job_id_dedup": 2320,
+  "duplicate_valid_csv_rows": 0,
+  "conflicting_duplicate_csv_job_ids": 0,
+  "csv_checkpoint_job_id_sets_equal": true,
+  "csv_status_matches_last_valid_checkpoint_record": true,
+  "unresolved_rows_in_v2_csv": 0,
+  "unresolved_or_failed_checkpoint_rows": 0,
+  "paired_unique_physical_starts": 1160,
+  "all_physical_starts_have_both_rf_models": true,
+  "models": {
+    "standing_equal_peak": 1160,
+    "rotating": 1160
+  },
+  "rf_status_counts": {
+    "escaped": 718,
+    "retained": 1602
+  },
+  "horizons_RF": {
+    "300": 2320
+  },
+  "nonzero_energy_starts": 496,
+  "zero_energy_radial_starts": 664,
+  "max_relative_energy_conversion_error": 4.3368086899420177e-16,
+  "physical_mass_conversion": "m_ion = (m/z in Th) * atomic_mass_unit for charge state +1; V2 speed checked against E=mv^2/2",
+  "unit_error_auxiliary_records_excluded": 2,
+  "v2_field_and_rf_conditions": {
+    "frequency_Hz": 100000,
+    "aperture_radius_m": 0.008,
+    "equal_peak_voltage_V": 250,
+    "charge_state": 1,
+    "source_field": "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json"
+  }
+}

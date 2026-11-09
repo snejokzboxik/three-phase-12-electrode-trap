@@ -1,0 +1,24 @@
+{
+  "study": "RF-off analytical control for the completed V2 octupole study",
+  "rf_integration_performed": false,
+  "primary_input_csv": "../v2/trajectory_results.csv",
+  "checkpoint_audit_input": "../v2/trajectory_checkpoint.jsonl",
+  "v2_field_configuration": "../v2/study_config.json",
+  "supplemental_1000_RF_input": "../v1/mass_velocity_results.csv",
+  "frequency_Hz": 100000,
+  "aperture_radius_m": 0.008,
+  "charge_state": 1,
+  "physical_mass_conversion": "m = (m/z in Th) * 1.66053906660e-27 kg for charge state +1",
+  "v2_horizon_RF_periods": 300,
+  "v2_horizon_s": 0.003,
+  "analytical_rf_off_equations": {
+    "x_m": "x0_m + vx0_m_s * t_s",
+    "y_m": "y0_m + vy0_m_s * t_s",
+    "crossing_equation": "(x0+vx*t)^2 + (y0+vy*t)^2 = aperture_radius^2",
+    "classification_rule": "escaped iff first outward crossing time <= observation horizon (floating-point time tolerance); otherwise retained"
+  },
+  "ballistic_tangential_cutoff": "Ecrit = m * (R^2-r0^2) / (2*T^2); valid only for purely tangential launch",
+  "general_velocity_rule": "Use exact line-circle outward root for the stored radial/tangential velocity components; do not apply the tangential cutoff formula to a radial component.",
+  "additional_rf_off_horizons_RF_periods": [1000, 10000],
+  "output_policy": "Preserve RF phase, azimuth, velocity sign and start multiplicity. Deduplicate V2 checkpoint rows by job_id, use only valid retained/escaped outcomes, exclude unit_error auxiliary outputs and failures, and do not interpolate between evaluated cells."
+}

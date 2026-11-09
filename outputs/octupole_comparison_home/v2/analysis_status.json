@@ -1,0 +1,9 @@
+{
+  "valid_unique_jobs": 2320,
+  "journal_lines": 2548,
+  "unresolved_attempts": 0,
+  "paired_initial_conditions": 1160,
+  "all_retention_pairs_equal": false,
+  "retention_summary_rows": 194,
+  "notes": "Direct sample markers only; no interpolation or binary-outcome connecting lines."
+}

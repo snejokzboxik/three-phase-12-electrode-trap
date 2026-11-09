@@ -1,0 +1,164 @@
+{
+  "project": "three-phase-12-electrode-trap",
+  "source_field": "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json",
+  "field_representation": "N48 reconstruction from published P4 h35 FEM; standing wave uses existing sine RF quadrature; no FEM solve",
+  "frequency_Hz": 100000,
+  "period_s": 1e-05,
+  "aperture_radius_m": 0.008,
+  "charge_state": 1,
+  "equal_peak_voltage_V": 250,
+  "normalization_scope": "All new v2 comparisons use equal peak voltage only. Matched pseudopotential pilot remains a separate 16-start result in v1.",
+  "horizon_RF_periods": 300,
+  "models": [
+    "rotating",
+    "standing_equal_peak"
+  ],
+  "mz_values_Th": [
+    50000,
+    100000,
+    150000,
+    200000
+  ],
+  "energy_launch_ensemble": {
+    "radius_m": 0.001,
+    "azimuth_rad": [
+      0,
+      1.5707963267948966,
+      3.141592653589793,
+      4.71238898038469
+    ],
+    "rf_phase_rad": [
+      0,
+      3.141592653589793
+    ],
+    "tangential_velocity_sign": [
+      -1,
+      1
+    ],
+    "states_per_energy_model": 16,
+    "energy_shells_eV": [
+      0.001,
+      0.0015,
+      0.002,
+      0.003,
+      0.0035,
+      0.0036249999999999998,
+      0.00375,
+      0.004,
+      0.0045,
+      0.005,
+      0.00625,
+      0.0075,
+      0.01
+    ]
+  },
+  "radial_launch_ensemble": {
+    "energy_eV": 0,
+    "baseline_azimuth_rad": [
+      0,
+      1.5707963267948966
+    ],
+    "baseline_rf_phase_rad": [
+      0,
+      3.141592653589793
+    ],
+    "baseline_states_per_radius_model": 4,
+    "locally_enriched_boundary_grid": "azimuths [0, pi/2, pi, 3pi/2, pi/4, 3pi/4] crossed with phases [0, pi/2, pi, 3pi/2] at selected mixed radii; n=24",
+    "adaptive_refinement_mm": [
+      7.0625,
+      7.1875,
+      7.3125,
+      7.4375
+    ],
+    "adaptive_refinement_note": "Additional measured points at 0.0625-mm spacing in observed transition neighborhoods; 336 new trajectories in the final refinement stage. Mixed selected nodes use n=24; midpoint screening nodes use n=4.",
+    "outer_extension_mm": [
+      7.625,
+      7.75,
+      7.875
+    ],
+    "outer_extension_note": "Additional 96 baseline launches (n=4 per model/mass/radius) evaluated toward the 8-mm aperture.",
+    "outer_enriched_radii_mm": [
+      7.75,
+      7.875
+    ],
+    "outer_enriched_states_per_model_mass_radius": 24,
+    "outer_enriched_note": "All previously screened baseline launch states are reused by job_id; only missing phases/azimuths were integrated."
+  },
+  "radial_grid_mm": [
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    5.5,
+    6.5,
+    7.0,
+    7.0625,
+    7.125,
+    7.1875,
+    7.25,
+    7.3125,
+    7.375,
+    7.4375,
+    7.5,
+    7.625,
+    7.75,
+    7.875
+  ],
+  "main_solver": {
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "atol_units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ],
+    "max_step_fraction_RF": 0.02,
+    "radial_metric_samples_per_RF": 12
+  },
+  "strict_solver": {
+    "method": "DOP853",
+    "rtol": 2e-11,
+    "atol": [
+      2e-14,
+      2e-14,
+      2e-12,
+      2e-12
+    ],
+    "atol_units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ],
+    "max_step_fraction_RF": 0.01,
+    "representative_cases": 40
+  },
+  "workers": 4,
+  "blas_threads": 1,
+  "seed": "regular deterministic quadrature grid; no random sampling",
+  "note": "Retention means survival for 300 RF periods in 2D transverse N48 dynamics; it is not infinite-time stability or 3D transmission.",
+  "trajectory_geometry_diagnostic": {
+    "mz_Th": 100000,
+    "r0_m": 0.00775,
+    "azimuth_rad": 0.5235987755982988,
+    "rf_phase_rad": 0.7853981633974483,
+    "energy_eV": 0,
+    "horizon_RF_periods": 300,
+    "models": [
+      "rotating",
+      "standing_equal_peak"
+    ],
+    "outside_regular_n24_ensemble": true,
+    "q_over_m_implementation": "q_macro=base.Q; macro_mass=q_macro/(e/(m_z*amu)); acceleration=q_macro/macro_mass=e/m_physical",
+    "primary_diagnostic_script": "trajectory_geometry_pair_corrected.py",
+    "verified_control": "tight_diagnostic_pair.json"
+  },
+  "audit_note_unit_error": "Two superseded auxiliary outputs used q_macro/m_physical and are preserved with unit_error labels; excluded from every scientific analysis and figure."
+}

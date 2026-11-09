@@ -1,0 +1,12 @@
+{
+  "stage": "radial_outer_enrich",
+  "requested": 384,
+  "valid_completed_total": 2320,
+  "new_attempts": 320,
+  "workers": 4,
+  "wall_s": 2209.1567528999876,
+  "throughput_traj_min": 8.691098973288868,
+  "unresolved_total_in_journal": 0,
+  "checkpoint": "trajectory_checkpoint.jsonl",
+  "updated_utc": "2026-11-09T11:25:00Z"
+}

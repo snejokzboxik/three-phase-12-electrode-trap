@@ -1,0 +1,17 @@
+model,mz_Th,threshold_retention,bracket_intervals_eV,nonmonotonic_observed
+rotating,50000.0,0.5,"[[0.0015, 0.002]]",False
+rotating,50000.0,0.9,"[[0.0015, 0.002]]",False
+rotating,100000.0,0.5,"[[0.0036249999999999998, 0.00375]]",False
+rotating,100000.0,0.9,"[[0.0036249999999999998, 0.00375]]",False
+rotating,150000.0,0.5,"[[0.005, 0.00625]]",False
+rotating,150000.0,0.9,"[[0.005, 0.00625]]",False
+rotating,200000.0,0.5,"[[0.00625, 0.0075]]",False
+rotating,200000.0,0.9,"[[0.00625, 0.0075]]",False
+standing_equal_peak,50000.0,0.5,"[[0.0015, 0.002]]",False
+standing_equal_peak,50000.0,0.9,"[[0.0015, 0.002]]",False
+standing_equal_peak,100000.0,0.5,"[[0.0036249999999999998, 0.00375]]",False
+standing_equal_peak,100000.0,0.9,"[[0.0036249999999999998, 0.00375]]",False
+standing_equal_peak,150000.0,0.5,"[[0.005, 0.00625]]",False
+standing_equal_peak,150000.0,0.9,"[[0.005, 0.00625]]",False
+standing_equal_peak,200000.0,0.5,"[[0.00625, 0.0075]]",False
+standing_equal_peak,200000.0,0.9,"[[0.00625, 0.0075]]",False

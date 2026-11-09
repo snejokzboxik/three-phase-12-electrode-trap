@@ -1,0 +1,258 @@
+{
+  "pairs": 1160,
+  "mismatched_pairs": 26,
+  "mismatches_by_condition": [
+    {
+      "mz_Th": 50000.0,
+      "r0_mm": 7.5,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 100000.0,
+      "r0_mm": 7.5,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 100000.0,
+      "r0_mm": 7.125,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 0,
+      "rotating_escapes_standing_retains": 4
+    },
+    {
+      "mz_Th": 200000.0,
+      "r0_mm": 7.375,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 0,
+      "rotating_escapes_standing_retains": 4
+    },
+    {
+      "mz_Th": 50000.0,
+      "r0_mm": 7.25,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 50000.0,
+      "r0_mm": 7.125,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 50000.0,
+      "r0_mm": 7.375,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 50000.0,
+      "r0_mm": 7.75,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 100000.0,
+      "r0_mm": 7.75,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 150000.0,
+      "r0_mm": 7.75,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    },
+    {
+      "mz_Th": 200000.0,
+      "r0_mm": 7.75,
+      "energy_eV": 0.0,
+      "rotating_retains_standing_escapes": 2,
+      "rotating_escapes_standing_retains": 0
+    }
+  ],
+  "100k_energy": [
+    {
+      "energy_eV": 0.0,
+      "n_pairs": 4,
+      "classification_pairs": {
+        "retained|retained": 4
+      },
+      "delta_max_radius_mm_minmax": [
+        -4.4644073735142925e-06,
+        0.0
+      ],
+      "delta_rms_radius_mm_minmax": [
+        -1.4877366994597852e-06,
+        -1.4769064014298616e-06
+      ],
+      "delta_angle_rad_minmax": [
+        2.8318613868598306e-08,
+        2.8318617755917806e-08
+      ],
+      "both_escape_delta_period_minmax": null
+    },
+    {
+      "energy_eV": 0.003,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "retained|retained": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        -0.003020580963568331,
+        -0.0028971990510880813
+      ],
+      "delta_rms_radius_mm_minmax": [
+        -0.0006760912692003324,
+        -0.0006692192580102022
+      ],
+      "delta_angle_rad_minmax": [
+        -0.00015556992218934695,
+        0.00016508699262729465
+      ],
+      "both_escape_delta_period_minmax": null
+    },
+    {
+      "energy_eV": 0.0035,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "retained|retained": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        -0.0036807554211117782,
+        -0.0036114646229049724
+      ],
+      "delta_rms_radius_mm_minmax": [
+        -0.0008749459061326015,
+        -0.0008674020617058589
+      ],
+      "delta_angle_rad_minmax": [
+        -0.00022695431701458268,
+        0.00023768212635655317
+      ],
+      "both_escape_delta_period_minmax": null
+    },
+    {
+      "energy_eV": 0.0036249999999999998,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "retained|retained": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        -0.0038810160171934976,
+        -0.0037513757158765676
+      ],
+      "delta_rms_radius_mm_minmax": [
+        -0.0009245759981799453,
+        -0.0009168840084524885
+      ],
+      "delta_angle_rad_minmax": [
+        -0.0002494384278675099,
+        0.00026017754243023994
+      ],
+      "both_escape_delta_period_minmax": null
+    },
+    {
+      "energy_eV": 0.00375,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "escaped|escaped": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        -0.0012077683835768488,
+        -1.1249026588694422e-05
+      ],
+      "delta_rms_radius_mm_minmax": [
+        0.0003576622853085007,
+        0.0016208813336743635
+      ],
+      "delta_angle_rad_minmax": [
+        -0.00032705525080967135,
+        0.0002481365672712954
+      ],
+      "both_escape_delta_period_minmax": [
+        0.12276656880544579,
+        0.15744784612229523
+      ]
+    },
+    {
+      "energy_eV": 0.004,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "escaped|escaped": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        0.0006258147440749151,
+        0.0014274924815139284
+      ],
+      "delta_rms_radius_mm_minmax": [
+        0.001754353566002509,
+        0.0017619933105773172
+      ],
+      "delta_angle_rad_minmax": [
+        -0.0003019406334749952,
+        0.0003191875231864927
+      ],
+      "both_escape_delta_period_minmax": [
+        0.12071729580645751,
+        0.13416414596304094
+      ]
+    },
+    {
+      "energy_eV": 0.0045,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "escaped|escaped": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        -0.0006369758792472424,
+        -0.0005571559259440195
+      ],
+      "delta_rms_radius_mm_minmax": [
+        0.0006261044408241434,
+        0.0006333649367768618
+      ],
+      "delta_angle_rad_minmax": [
+        -0.00023882405591235667,
+        0.00022369413782752368
+      ],
+      "both_escape_delta_period_minmax": [
+        0.09941754772728473,
+        0.10831718408627466
+      ]
+    },
+    {
+      "energy_eV": 0.005,
+      "n_pairs": 16,
+      "classification_pairs": {
+        "escaped|escaped": 16
+      },
+      "delta_max_radius_mm_minmax": [
+        -2.9852920826328733e-05,
+        0.0019321738194775367
+      ],
+      "delta_rms_radius_mm_minmax": [
+        0.0007772084888949676,
+        0.0022370415804790628
+      ],
+      "delta_angle_rad_minmax": [
+        -0.00026102725729937326,
+        0.0002322942715009546
+      ],
+      "both_escape_delta_period_minmax": [
+        0.07868560167466399,
+        0.10539469980571425
+      ]
+    }
+  ],
+  "outer_radial_pairs": 552
+}

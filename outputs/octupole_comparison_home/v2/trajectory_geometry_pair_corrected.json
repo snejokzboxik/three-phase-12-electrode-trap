@@ -1,0 +1,85 @@
+{
+  "mz_Th": 100000.0,
+  "r0_mm": 7.75,
+  "azimuth_deg": 30,
+  "rf_phase_deg": 45,
+  "energy_eV": 0,
+  "horizon_RF": 300,
+  "aperture_mm": 8,
+  "solver": "DOP853 rtol=2e-11, atol=(2e-14 m,2e-14 m,2e-12 m/s,2e-12 m/s), max_step=T_RF/100; 12 samples/RF; terminal aperture event",
+  "normalization": "equal peak U0=250 V; 100 kHz",
+  "status_interpretation": "Correct physical q/m macro-scaling copied from run_v2.py and convergence_controls.py; this paired diagnostic launch is outside the regular n=24 ensemble.",
+  "wall_s": 74.11994529992808,
+  "results": [
+    {
+      "model": "rotating",
+      "status": "retained",
+      "escape_period": "",
+      "max_radius_m": 0.007751218737784759,
+      "rms_radius_m": 0.007386536946626472,
+      "net_angle_rad": 0.061359070631775925,
+      "nfev": 370817,
+      "wall_s": 52.4098101001
+    },
+    {
+      "model": "standing_equal_peak",
+      "status": "escaped",
+      "escape_period": 124.31208612468413,
+      "max_radius_m": 0.007999999999999998,
+      "rms_radius_m": 0.007878743142599441,
+      "net_angle_rad": 0.016533195112847676,
+      "nfev": 153665,
+      "wall_s": 21.651612299960107
+    }
+  ],
+  "independent_tight_control": {
+    "settings": "DOP853 rtol=2e-11, max_step=T_RF/100; same diagnostic launch as stored trajectory geometry pair",
+    "all_classifications_agree": true,
+    "results": [
+      {
+        "model": "rotating",
+        "mz_Th": 100000.0,
+        "r0_mm": 7.75,
+        "azimuth_rad": 0.5235987755982988,
+        "rf_phase_rad": 0.7853981633974483,
+        "energy_eV": 0.0,
+        "status": "retained",
+        "escape_period": "",
+        "max_radius_m": 0.007751218737784759,
+        "rms_radius_m": 0.007386536946626472,
+        "rtol": 2e-11,
+        "max_step_RF": 0.01,
+        "nfev": 370817,
+        "wall_s": 54.612013400066644,
+        "main_status": "retained",
+        "main_escape_period": "",
+        "classification_agrees": true,
+        "coarse_unit_error_status": "escaped",
+        "coarse_unit_error_escape_period": 0.001452120054726604,
+        "coarse_unit_error_classification_agrees": false
+      },
+      {
+        "model": "standing_equal_peak",
+        "mz_Th": 100000.0,
+        "r0_mm": 7.75,
+        "azimuth_rad": 0.5235987755982988,
+        "rf_phase_rad": 0.7853981633974483,
+        "energy_eV": 0.0,
+        "status": "escaped",
+        "escape_period": 124.31208612468413,
+        "max_radius_m": 0.007999710221141817,
+        "rms_radius_m": 0.007878661245423118,
+        "rtol": 2e-11,
+        "max_step_RF": 0.01,
+        "nfev": 153665,
+        "wall_s": 22.699700800003484,
+        "main_status": "escaped",
+        "main_escape_period": 124.31208612468413,
+        "classification_agrees": true,
+        "coarse_unit_error_status": "escaped",
+        "coarse_unit_error_escape_period": 0.0023961129548982323,
+        "coarse_unit_error_classification_agrees": true
+      }
+    ]
+  }
+}

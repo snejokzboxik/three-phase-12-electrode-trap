@@ -1,0 +1,6 @@
+{
+  "n_cases": 40,
+  "n_new_outer_cases": 8,
+  "all_classifications_agree": true,
+  "settings": "DOP853 rtol=2e-11, atol=(2e-14 m,2e-14 m,2e-12 m/s,2e-12 m/s), max_step=T_RF/100; includes original, inner-boundary and outer n=24 transition controls."
+}

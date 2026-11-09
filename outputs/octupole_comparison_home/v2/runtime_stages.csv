@@ -1,0 +1,17 @@
+stage,new_valid_trajectory_jobs,wall_s,throughput_traj_per_min
+energy,640,4894.2311396,7.846
+refine_primary,192,1323.7835483,8.702
+refine_adaptive,160,1254.3184513,7.654
+radial_coarse,192,1408.1065,8.181
+radius_1mm_anchor,32,249.1629681,7.706
+radial_refine_outer_first,64,499.0433068,7.695
+radial_refine_midpoint_and_angles,160,1151.7412489,8.335
+radial_refine_mixed_nodes,128,906.966214,8.468
+tight_convergence_controls,0,1336.7785575,
+radial_refine_outer_completion,336,2403.0034163,8.3895
+tight_boundary_controls_added,0,282.7640981,
+radial_outer_extension,96,439.2282794,13.11391
+radial_outer_enriched_n24,320,2209.1567529,8.6911
+tight_outer_boundary_controls,0,341.6173672,
+corrected_geometry_pair_strict,0,77.3139576,
+corrected_geometry_pair_timeseries,0,74.1199453,

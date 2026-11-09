@@ -1,0 +1,77 @@
+{
+  "audited_utc": "2026-11-09T15:41:35.171811+00:00",
+  "field_files": {
+    "h35": {
+      "path": "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\diagnostic_N48.json",
+      "exists": true,
+      "bytes": 6229,
+      "sha256": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c",
+      "expected_sha256": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c"
+    },
+    "h50": {
+      "path": "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\diagnostic_N48.json",
+      "exists": true,
+      "bytes": 6210,
+      "sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+      "expected_sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1"
+    }
+  },
+  "journal_lines_by_status": {
+    "retained": 378,
+    "escaped": 14,
+    "numerical_failure": 2
+  },
+  "unique_successful_job_horizons": 392,
+  "journal_parse_failures": 0,
+  "auxiliary_failure_rows": 2,
+  "checkpoint_files": 390,
+  "checkpoint_bytes": 872713,
+  "raw_trajectory_files_local": 390,
+  "raw_trajectory_bytes_local": 761064850,
+  "selected_trajectory_sample_csv": {
+    "exists": true,
+    "bytes": 849909
+  },
+  "resume_bundle": {
+    "exists": true,
+    "bytes": 800907
+  },
+  "publication_figures": [
+    "figure_1_effective_potential.pdf",
+    "figure_1_effective_potential.png",
+    "figure_1_effective_potential.svg",
+    "figure_2_matched_trajectories.pdf",
+    "figure_2_matched_trajectories.png",
+    "figure_2_matched_trajectories.svg",
+    "figure_3_verified_confinement_map.pdf",
+    "figure_3_verified_confinement_map.png",
+    "figure_3_verified_confinement_map.svg",
+    "figure_4_rotating_minus_standing.pdf",
+    "figure_4_rotating_minus_standing.png",
+    "figure_4_rotating_minus_standing.svg",
+    "figure_5_matched_pseudopotential.pdf",
+    "figure_5_matched_pseudopotential.png",
+    "figure_5_matched_pseudopotential.svg",
+    "figure_6_long_horizon_envelope.pdf",
+    "figure_6_long_horizon_envelope.png",
+    "figure_6_long_horizon_envelope.svg",
+    "figure_7_high_energy_confinement.pdf",
+    "figure_7_high_energy_confinement.png",
+    "figure_7_high_energy_confinement.svg"
+  ],
+  "report_exists": true,
+  "analysis_summary_counts": {
+    "completed_unique_job_horizons": 392,
+    "matched_equal_peak_pairs": 177,
+    "matched_pseudopotential_pairs": 24,
+    "verified_frontier_pairs": 24,
+    "selected_10000_RF_runs": 6,
+    "selected_trajectory_samples": 4318,
+    "long_horizon_envelope_segments": 70,
+    "statuses": {
+      "retained": 378,
+      "escaped": 14
+    },
+    "auxiliary_failures": 2
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "hard_budget_s": 7200,
+  "first_rf_integration_start_utc": "2026-11-09T13:45:50Z",
+  "deadline_utc": "2026-11-09T15:45:50Z",
+  "attempts": [
+    {
+      "kind": "aborted_runner_preflight",
+      "result_used": false,
+      "reason": "First draft passed RF-period counts as seconds; integration was interrupted immediately after detecting the units bug. No trajectory outcome was retained. The hard budget clock was not reset."
+    },
+    {
+      "kind": "evaluator_microbenchmark",
+      "rf_integration": false,
+      "calls": 50000,
+      "legacy_field_s": 6.147233300025915,
+      "precomputed_derivative_s": 1.7494833000237122,
+      "speedup": 3.513,
+      "equivalence": "within 1e-12 relative"
+    },
+    {
+      "kind": "windows_spawn_stdin_failure",
+      "result_used": false,
+      "jobs": 2,
+      "reason": "Two ProcessPool workers launched from an inline stdin script could not initialize on Windows; recorded separately as auxiliary failures. Reproducible file-based runner resumed both jobs from the 1000-period atomic checkpoints and completed 10000 periods."
+    }
+  ],
+  "corrected_pilot": {
+    "jobs": 48,
+    "workers": 4,
+    "wall_s": 380.42634390003514,
+    "throughput_per_min": 7.570453590434055
+  },
+  "peak_worker_working_set_bytes_observed": 76378112,
+  "blas_threads_per_worker": 1,
+  "gpu": "not used",
+  "completed_campaign": {
+    "successful_unique_job_horizons": 392,
+    "retained": 378,
+    "escaped": 14,
+    "auxiliary_process_failures": 2,
+    "auxiliary_failures_are_trajectories": false,
+    "first_rf_integration_utc": "2026-11-09T13:45:50Z",
+    "last_rf_integration_completed_utc": "2026-11-09T15:13:03Z",
+    "wall_elapsed_to_last_integration_minutes": 87.2167,
+    "hard_budget_minutes": 120,
+    "new_rf_integrations_stopped_after_last_completion": true,
+    "workers_benchmark": {
+      "4_workers_pilot_trajectories_per_min": 7.57045,
+      "6_workers_short_benchmark_trajectories_per_min": 9.17006
+    },
+    "high_energy_long_runs": 2,
+    "selected_10000_period_runs_total": 6,
+    "field_crosscheck": "8 h50/h35 matched selected jobs; all classifications agree, max-radius difference <=0.043 micrometre"
+  }
+}

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="100%" height="100%" fill="white"/>
+<text x="600" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#111" transform="rotate(0 600 42)">Paired dynamics at matched leading pseudopotential strength</text>
+<line x1="120.00" y1="700.00" x2="1140.00" y2="700.00" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="705.0" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 705.0)">-0.47</text>
+<line x1="120.00" y1="625.62" x2="1140.00" y2="625.62" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="630.625" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 630.625)">-0.35</text>
+<line x1="120.00" y1="551.25" x2="1140.00" y2="551.25" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="556.25" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 556.25)">-0.24</text>
+<line x1="120.00" y1="476.88" x2="1140.00" y2="476.88" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="481.875" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 481.875)">-0.12</text>
+<line x1="120.00" y1="402.50" x2="1140.00" y2="402.50" stroke="#555" stroke-width="2"/>
+<text x="110" y="407.5" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 407.5)">0.00</text>
+<line x1="120.00" y1="328.12" x2="1140.00" y2="328.12" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="333.125" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 333.125)">0.12</text>
+<line x1="120.00" y1="253.75" x2="1140.00" y2="253.75" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="258.75" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 258.75)">0.24</text>
+<line x1="120.00" y1="179.38" x2="1140.00" y2="179.38" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="184.37500000000003" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 184.37500000000003)">0.35</text>
+<line x1="120.00" y1="105.00" x2="1140.00" y2="105.00" stroke="#dddddd" stroke-width="1"/>
+<text x="110" y="110.0" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#444" transform="rotate(0 110 110.0)">0.47</text>
+<line x1="120.00" y1="105.00" x2="120.00" y2="700.00" stroke="#eeeeee" stroke-width="1"/>
+<text x="120.0" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#333" transform="rotate(0 120.0 725)">0.5</text>
+<line x1="324.00" y1="105.00" x2="324.00" y2="700.00" stroke="#eeeeee" stroke-width="1"/>
+<text x="324.0" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#333" transform="rotate(0 324.0 725)">1</text>
+<line x1="732.00" y1="105.00" x2="732.00" y2="700.00" stroke="#eeeeee" stroke-width="1"/>
+<text x="732.0" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#333" transform="rotate(0 732.0 725)">2</text>
+<line x1="1140.00" y1="105.00" x2="1140.00" y2="700.00" stroke="#eeeeee" stroke-width="1"/>
+<text x="1140.0" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#333" transform="rotate(0 1140.0 725)">3</text>
+<circle cx="328.00" cy="414.34" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="736.00" cy="471.75" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1144.00" cy="589.07" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="320.00" cy="411.14" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="320.00" cy="383.03" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="320.00" cy="406.05" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="328.00" cy="442.29" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="328.00" cy="409.20" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="320.00" cy="432.39" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="328.00" cy="379.72" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="728.00" cy="469.58" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="728.00" cy="179.27" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="736.00" cy="700.00" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="728.00" cy="471.55" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="736.00" cy="473.78" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1136.00" cy="590.65" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="728.00" cy="694.56" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1136.00" cy="374.42" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="736.00" cy="180.46" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1136.00" cy="579.42" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1144.00" cy="577.69" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1136.00" cy="406.99" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1144.00" cy="414.07" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<circle cx="1144.00" cy="372.29" r="6.00" fill="#009E73" stroke="#009E73" stroke-width="1"/>
+<line x1="120.00" y1="105.00" x2="120.00" y2="700.00" stroke="#111" stroke-width="2"/>
+<line x1="120.00" y1="700.00" x2="1140.00" y2="700.00" stroke="#111" stroke-width="2"/>
+<text x="35" y="402.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#111" transform="rotate(-90 35 402.5)">Δ maximum radius (mm)</text>
+<text x="630.0" y="772" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#111" transform="rotate(0 630.0 772)">Initial radius (mm)</text>
+<text x="600" y="755" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="normal" fill="#444" transform="rotate(0 600 755)">Rotating 250 V versus standing 353.55 V; same initial E=10 meV, phase, azimuth and velocity sign.</text>
+<text x="600" y="780" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="normal" fill="#444" transform="rotate(0 600 780)">Reference match at r=0.5 mm; points are the 24 directly paired deterministic launches.</text>
+</svg>

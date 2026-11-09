@@ -1,0 +1,64 @@
+{
+  "study": "V3 finite-time RF confinement search",
+  "source_project": "three-phase-12-electrode-trap",
+  "fields": {
+    "h35": "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json",
+    "h50": "outputs/abc_validation/direct_fem_validation/v2/h50_P4/diagnostic_N48.json",
+    "normalization": "potential quadratures at U0=1 V; every full-RF field is multiplied by voltage_V in run_v3.py",
+    "field_domain_m": 0.008,
+    "fem_recomputed": false
+  },
+  "particle": {
+    "mz_Th": 100000,
+    "charge_state": 1,
+    "mass_kg": 1.66053906660e-22,
+    "charge_C": 1.602176634e-19,
+    "q_over_m_C_kg": 964.8533215665328
+  },
+  "geometry": {
+    "aperture_radius_m": 0.008,
+    "electrode_angles_rad": "theta_j=j*pi/6",
+    "standing_coefficients": "cos(4*theta_j), repeating [1,-1/2,-1/2]",
+    "standing_RF_quadrature": "N48 sine quadrature only",
+    "rotating_RF_quadratures": "N48 cosine and sine quadratures"
+  },
+  "launches": {
+    "initial_radii_mm": [0.5, 1, 2, 3],
+    "energy_shells_meV": [3.75, 5, 10, 20, 50, 100, 200, 400, 1000, 2000, 3000],
+    "energy_radius_grid_note": "Adaptive/compact grid, not full Cartesian: 3.75-100 meV at 0.5-3 mm (10 meV pilot at 1-3 mm); 200/400 meV at 1-2 mm; 1-3 eV exploratory boundary launches at 1-2 mm.",
+    "phase_and_azimuth_grid": "regular deterministic launch states; explicitly recorded per job",
+    "kinetic_energy_conversion": "speed=sqrt(2*E_eV*e/m_physical); m/z uses Thomson and charge_state=1",
+    "velocity_directions": ["tangent +/-", "radial +/-", "oblique +/-"],
+    "main_horizon_RF_periods": [300, 1000],
+    "selected_long_horizons_RF_periods": [3000, 10000]
+  },
+  "protocols": [
+    {"name": "equal_peak_voltage", "rotating_V": 250, "standing_V": 250, "frequency_Hz": 100000},
+    {"name": "weak_equal_peak", "rotating_V": 250, "standing_V": 250, "frequency_Hz": 200000},
+    {"name": "strong_equal_peak", "rotating_V": 500, "standing_V": 500, "frequency_Hz": 100000},
+    {"name": "matched_leading_pseudopotential_at_0p5mm", "rotating_V": 250, "standing_V": 353.5533905932738, "frequency_Hz": 100000}
+  ],
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-9,
+    "atol": [2e-13, 2e-13, 2e-11, 2e-11],
+    "atol_units": ["m", "m", "m/s", "m/s"],
+    "max_step_RF_fraction": 0.02,
+    "event": "terminal outward crossing of r=8 mm",
+    "strict_validation": {"rtol": 2e-11, "max_step_RF_fraction": 0.01}
+  },
+  "compute": {
+    "workers": 4,
+    "BLAS_threads_per_worker": 1,
+    "hard_new_RF_wall_budget_s": 7200,
+    "first_integration_start_utc": "stored in integration_deadline.json",
+    "checkpoint": "append-only trajectory_checkpoint.jsonl plus per-job atomic checkpoints",
+    "GPU_used": false
+  },
+  "interpretation": {
+    "retention": "finite-time 2D transverse survival inside 8 mm, not infinite-time stability or 3D transmission",
+    "RF_off": "exact analytical ballistic control at the identical physical horizon",
+    "effective_model_E": "diagnostic only; never classifies full-RF outcomes",
+    "legacy_V1_V2_voltage_scaling": "unit-voltage N48 was used without multiplying by the declared 250 V; actual field scale 1 V, pseudopotential factor 1/62500 of label"
+  }
+}

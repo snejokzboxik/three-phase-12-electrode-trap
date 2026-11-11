@@ -1,0 +1,697 @@
+{
+  "question": "Is the approximately 0.446-mm rotating RF effective-potential minimum after a +10-um radial displacement robust to mesh resolution and optimizer choice?",
+  "objective": "|E_cos|^2+|E_sin|^2 per squared electrode volt; proportional to the rotating pseudopotential for fixed q, m, frequency and voltage",
+  "methods": "81x81 deterministic Cartesian grid in r<=5 mm, then independent bounded Nelder-Mead, Powell and L-BFGS-B optimizations from three separated grid-minimum starts on each already-solved field",
+  "h35_best_radius_mm": 0.44581369961311423,
+  "h50_best_radius_mm": 0.4458076086585779,
+  "cross_resolution_radius_difference_mm": 6.090954536352999e-06,
+  "cross_resolution_objective_relative_difference": 8.928618950424949e-05,
+  "all_methods_positions_mm": [
+    {
+      "resolution": "h35",
+      "method": "Nelder-Mead",
+      "position_mm": [
+        -0.2365721346169561,
+        0.3778670134921926
+      ],
+      "radius_mm": 0.44581369961311423,
+      "E2": 0.004824763635859142,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "Powell",
+      "position_mm": [
+        -0.23657200024057265,
+        0.37786707844414463
+      ],
+      "radius_mm": 0.44581368335857396,
+      "E2": 0.004824763635863616,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "L-BFGS-B",
+      "position_mm": [
+        -0.23657723724186444,
+        0.3778619090324009
+      ],
+      "radius_mm": 0.445812080902485,
+      "E2": 0.004824763646351983,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "Nelder-Mead",
+      "position_mm": [
+        -0.2365681657956585,
+        -0.3778623034671731
+      ],
+      "radius_mm": 0.4458076013814033,
+      "E2": 0.004824826957296847,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "Powell",
+      "position_mm": [
+        -0.23657200024004013,
+        0.37786707844426015
+      ],
+      "radius_mm": 0.4458136833583893,
+      "E2": 0.004824763635863618,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "L-BFGS-B",
+      "position_mm": [
+        -0.23657306490733998,
+        -0.377867200018966
+      ],
+      "radius_mm": 0.44581435137266023,
+      "E2": 0.004824826967363356,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "Nelder-Mead",
+      "position_mm": [
+        0.4581129408913924,
+        1.3801575360716309e-06
+      ],
+      "radius_mm": 0.4581129408934714,
+      "E2": 0.00666631345530105,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "Powell",
+      "position_mm": [
+        -0.23657213367116817,
+        0.37786707568869826
+      ],
+      "radius_mm": 0.4458137518283363,
+      "E2": 0.004824763635859895,
+      "success": true
+    },
+    {
+      "resolution": "h35",
+      "method": "L-BFGS-B",
+      "position_mm": [
+        0.45810794194211474,
+        -3.6188550967378804e-06
+      ],
+      "radius_mm": 0.4581079419564084,
+      "E2": 0.00666631346562515,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "Nelder-Mead",
+      "position_mm": [
+        -0.23656492629324682,
+        0.3778643401880501
+      ],
+      "radius_mm": 0.4458076086585779,
+      "E2": 0.004824332851098838,
+      "success": false
+    },
+    {
+      "resolution": "h50",
+      "method": "Powell",
+      "position_mm": [
+        -0.23656903717718503,
+        -0.3778642838590537
+      ],
+      "radius_mm": 0.4458097423422416,
+      "E2": 0.004824364103474825,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "L-BFGS-B",
+      "position_mm": [
+        -0.23657002986494707,
+        0.3778592344678561
+      ],
+      "radius_mm": 0.44580598930805787,
+      "E2": 0.0048243328615889085,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "Nelder-Mead",
+      "position_mm": [
+        -0.23656916782413176,
+        -0.37786421889410593
+      ],
+      "radius_mm": 0.4458097566063971,
+      "E2": 0.004824364103470514,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "Powell",
+      "position_mm": [
+        -0.2365690371780099,
+        -0.3778642838590451
+      ],
+      "radius_mm": 0.44580974234267207,
+      "E2": 0.004824364103474825,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "L-BFGS-B",
+      "position_mm": [
+        -0.23657406967300643,
+        -0.3778691195075782
+      ],
+      "radius_mm": 0.44581651149220675,
+      "E2": 0.004824364113542372,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "Nelder-Mead",
+      "position_mm": [
+        0.4581139939294235,
+        -3.286722238989335e-06
+      ],
+      "radius_mm": 0.4581139939412137,
+      "E2": 0.006665750696387734,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "Powell",
+      "position_mm": [
+        -0.23656916816164844,
+        -0.3778642811630296
+      ],
+      "radius_mm": 0.4458098095640644,
+      "E2": 0.004824364103471259,
+      "success": true
+    },
+    {
+      "resolution": "h50",
+      "method": "L-BFGS-B",
+      "position_mm": [
+        0.45810938839034476,
+        -8.283987923074802e-06
+      ],
+      "radius_mm": 0.45810938846524446,
+      "E2": 0.006665750705947303,
+      "success": true
+    }
+  ],
+  "mirror_degeneracy_note": "The one-electrode radial pattern is reflection-symmetric about its radial axis; equal-radius minima on the two sides are physically expected and optimizer signs may differ.",
+  "validation_status": "validated",
+  "interpretation_limit": "A nonzero minimum of the 4-component quadrature field norm is an effective-potential minimum, not an exact RF null. It is the lowest location found by the disclosed grid and multi-start methods in r<=5 mm; the finite grid does not prove a mathematical global minimum.",
+  "per_resolution_results": [
+    {
+      "resolution": "h35",
+      "field_representation": {
+        "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um\\displaced_h35.msh",
+        "mesh_sha256": "d309595fb857c309d52a5d52f2f2d7a8e48d05d774bf009cb381457592ef0c1e",
+        "field_sha256": "92a64db5f5593b2f8f33a790c9f5f51662bde9257bbcfd8da10779e6099c7ca5",
+        "dofs": 5148393,
+        "element_count": 642516,
+        "local_reference_node_max_error_m": 4.9065389333867974e-18,
+        "element_nodal_reproduction_max_error": 2.4425300793907003e-14
+      },
+      "search_domain": "disk r<=5 mm",
+      "grid": {
+        "shape_requested": [
+          81,
+          81
+        ],
+        "disk_points": 5025,
+        "spacing_mm": 0.1250000000000001,
+        "best_points": [
+          {
+            "position_m": [
+              -0.0002500000000000002,
+              0.00037500000000000033
+            ],
+            "E2_V2_m2_per_V2": 0.0048643966999840655
+          },
+          {
+            "position_m": [
+              -0.0002500000000000002,
+              -0.00037500000000000033
+            ],
+            "E2_V2_m2_per_V2": 0.004864474460607929
+          },
+          {
+            "position_m": [
+              0.0004999999999999996,
+              0.0
+            ],
+            "E2_V2_m2_per_V2": 0.007090627955135613
+          },
+          {
+            "position_m": [
+              -0.0001250000000000001,
+              0.0001250000000000001
+            ],
+            "E2_V2_m2_per_V2": 0.009120649899955077
+          },
+          {
+            "position_m": [
+              -0.0001250000000000001,
+              -0.0001250000000000001
+            ],
+            "E2_V2_m2_per_V2": 0.009120707540520884
+          },
+          {
+            "position_m": [
+              0.0001250000000000001,
+              0.0
+            ],
+            "E2_V2_m2_per_V2": 0.010405837167197049
+          }
+        ],
+        "best_grid_radius_mm": 0.4506939094329991,
+        "minimum_grid_value": 0.0048643966999840655
+      },
+      "optimizer_results": [
+        {
+          "method": "Nelder-Mead",
+          "start_m": [
+            -0.0002500000000000002,
+            0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.0002365721346169561,
+            0.0003778670134921926
+          ],
+          "radius_mm": 0.44581369961311423,
+          "E2_min_V2_m2_per_V2": 0.004824763635859142,
+          "nfev": 106
+        },
+        {
+          "method": "Powell",
+          "start_m": [
+            -0.0002500000000000002,
+            0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.00023657200024057264,
+            0.0003778670784441446
+          ],
+          "radius_mm": 0.44581368335857396,
+          "E2_min_V2_m2_per_V2": 0.004824763635863616,
+          "nfev": 108
+        },
+        {
+          "method": "L-BFGS-B",
+          "start_m": [
+            -0.0002500000000000002,
+            0.00037500000000000033
+          ],
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "position_m": [
+            -0.00023657723724186444,
+            0.0003778619090324009
+          ],
+          "radius_mm": 0.445812080902485,
+          "E2_min_V2_m2_per_V2": 0.004824763646351983,
+          "nfev": 27
+        },
+        {
+          "method": "Nelder-Mead",
+          "start_m": [
+            -0.0002500000000000002,
+            -0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.0002365681657956585,
+            -0.00037786230346717307
+          ],
+          "radius_mm": 0.4458076013814033,
+          "E2_min_V2_m2_per_V2": 0.004824826957296847,
+          "nfev": 102
+        },
+        {
+          "method": "Powell",
+          "start_m": [
+            -0.0002500000000000002,
+            -0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.00023657200024004014,
+            0.00037786707844426014
+          ],
+          "radius_mm": 0.4458136833583893,
+          "E2_min_V2_m2_per_V2": 0.004824763635863618,
+          "nfev": 108
+        },
+        {
+          "method": "L-BFGS-B",
+          "start_m": [
+            -0.0002500000000000002,
+            -0.00037500000000000033
+          ],
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "position_m": [
+            -0.00023657306490734,
+            -0.000377867200018966
+          ],
+          "radius_mm": 0.44581435137266023,
+          "E2_min_V2_m2_per_V2": 0.004824826967363356,
+          "nfev": 30
+        },
+        {
+          "method": "Nelder-Mead",
+          "start_m": [
+            0.0004999999999999996,
+            0.0
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            0.00045811294089139235,
+            1.3801575360716309e-09
+          ],
+          "radius_mm": 0.4581129408934714,
+          "E2_min_V2_m2_per_V2": 0.00666631345530105,
+          "nfev": 118
+        },
+        {
+          "method": "Powell",
+          "start_m": [
+            0.0004999999999999996,
+            0.0
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.00023657213367116818,
+            0.00037786707568869825
+          ],
+          "radius_mm": 0.4458137518283363,
+          "E2_min_V2_m2_per_V2": 0.004824763635859895,
+          "nfev": 209
+        },
+        {
+          "method": "L-BFGS-B",
+          "start_m": [
+            0.0004999999999999996,
+            0.0
+          ],
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "position_m": [
+            0.0004581079419421147,
+            -3.6188550967378802e-09
+          ],
+          "radius_mm": 0.4581079419564084,
+          "E2_min_V2_m2_per_V2": 0.00666631346562515,
+          "nfev": 36
+        }
+      ],
+      "best_optimizer_result": {
+        "method": "Nelder-Mead",
+        "start_m": [
+          -0.0002500000000000002,
+          0.00037500000000000033
+        ],
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "position_m": [
+          -0.0002365721346169561,
+          0.0003778670134921926
+        ],
+        "radius_mm": 0.44581369961311423,
+        "E2_min_V2_m2_per_V2": 0.004824763635859142,
+        "nfev": 106
+      },
+      "value_at_origin_V2_m2_per_V2": 0.010038148586064916,
+      "minimum_over_all_methods_m": [
+        -0.0002365721346169561,
+        0.0003778670134921926
+      ],
+      "field_norm_at_best_per_volt_V_m_per_V": 0.06946051854009688,
+      "field_norm_at_best_for_250V_V_m": 17.36512963502422,
+      "field_norm_at_origin_per_volt_V_m_per_V": 0.10019056136216084,
+      "rotating_pseudopotential_minimum_eV_at_250V_100kHz": 1.842458132157972e-07,
+      "rotating_pseudopotential_at_origin_eV_at_250V_100kHz": 3.8333211510602807e-07,
+      "optimizer_radius_span_mm_including_secondary_local_minima": 0.01230533951206808,
+      "minimum_search_converged": true
+    },
+    {
+      "resolution": "h50",
+      "field_representation": {
+        "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um_h50\\displaced_h50.msh",
+        "mesh_sha256": "692cc9cd6bbce1895f8b7c1a5a608e3152312167aba6f6ab5fc741780994be94",
+        "field_sha256": "afaadbeb58e9867b3faf756eeaf42dc67f49f0c7470f3a879d69ee592598ba27",
+        "dofs": 3155745,
+        "element_count": 393678,
+        "local_reference_node_max_error_m": 4.9065389333867974e-18,
+        "element_nodal_reproduction_max_error": 2.2538488740919874e-14
+      },
+      "search_domain": "disk r<=5 mm",
+      "grid": {
+        "shape_requested": [
+          81,
+          81
+        ],
+        "disk_points": 5025,
+        "spacing_mm": 0.1250000000000001,
+        "best_points": [
+          {
+            "position_m": [
+              -0.0002500000000000002,
+              0.00037500000000000033
+            ],
+            "E2_V2_m2_per_V2": 0.004863990227252639
+          },
+          {
+            "position_m": [
+              -0.0002500000000000002,
+              -0.00037500000000000033
+            ],
+            "E2_V2_m2_per_V2": 0.0048640017740137625
+          },
+          {
+            "position_m": [
+              0.0004999999999999996,
+              0.0
+            ],
+            "E2_V2_m2_per_V2": 0.007090018084284993
+          },
+          {
+            "position_m": [
+              -0.0001250000000000001,
+              -0.0001250000000000001
+            ],
+            "E2_V2_m2_per_V2": 0.009119862766487394
+          },
+          {
+            "position_m": [
+              -0.0001250000000000001,
+              0.0001250000000000001
+            ],
+            "E2_V2_m2_per_V2": 0.009119916192798136
+          },
+          {
+            "position_m": [
+              0.0001250000000000001,
+              0.0
+            ],
+            "E2_V2_m2_per_V2": 0.0104048933529942
+          }
+        ],
+        "best_grid_radius_mm": 0.4506939094329991,
+        "minimum_grid_value": 0.004863990227252639
+      },
+      "optimizer_results": [
+        {
+          "method": "Nelder-Mead",
+          "start_m": [
+            -0.0002500000000000002,
+            0.00037500000000000033
+          ],
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "position_m": [
+            -0.00023656492629324684,
+            0.0003778643401880501
+          ],
+          "radius_mm": 0.4458076086585779,
+          "E2_min_V2_m2_per_V2": 0.004824332851098838,
+          "nfev": 4000
+        },
+        {
+          "method": "Powell",
+          "start_m": [
+            -0.0002500000000000002,
+            0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.00023656903717718503,
+            -0.00037786428385905367
+          ],
+          "radius_mm": 0.4458097423422416,
+          "E2_min_V2_m2_per_V2": 0.004824364103474825,
+          "nfev": 108
+        },
+        {
+          "method": "L-BFGS-B",
+          "start_m": [
+            -0.0002500000000000002,
+            0.00037500000000000033
+          ],
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "position_m": [
+            -0.00023657002986494707,
+            0.0003778592344678561
+          ],
+          "radius_mm": 0.44580598930805787,
+          "E2_min_V2_m2_per_V2": 0.0048243328615889085,
+          "nfev": 33
+        },
+        {
+          "method": "Nelder-Mead",
+          "start_m": [
+            -0.0002500000000000002,
+            -0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.00023656916782413177,
+            -0.0003778642188941059
+          ],
+          "radius_mm": 0.4458097566063971,
+          "E2_min_V2_m2_per_V2": 0.004824364103470514,
+          "nfev": 104
+        },
+        {
+          "method": "Powell",
+          "start_m": [
+            -0.0002500000000000002,
+            -0.00037500000000000033
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.0002365690371780099,
+            -0.0003778642838590451
+          ],
+          "radius_mm": 0.44580974234267207,
+          "E2_min_V2_m2_per_V2": 0.004824364103474825,
+          "nfev": 108
+        },
+        {
+          "method": "L-BFGS-B",
+          "start_m": [
+            -0.0002500000000000002,
+            -0.00037500000000000033
+          ],
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "position_m": [
+            -0.00023657406967300643,
+            -0.0003778691195075782
+          ],
+          "radius_mm": 0.44581651149220675,
+          "E2_min_V2_m2_per_V2": 0.004824364113542372,
+          "nfev": 30
+        },
+        {
+          "method": "Nelder-Mead",
+          "start_m": [
+            0.0004999999999999996,
+            0.0
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            0.0004581139939294235,
+            -3.286722238989335e-09
+          ],
+          "radius_mm": 0.4581139939412137,
+          "E2_min_V2_m2_per_V2": 0.006665750696387734,
+          "nfev": 117
+        },
+        {
+          "method": "Powell",
+          "start_m": [
+            0.0004999999999999996,
+            0.0
+          ],
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "position_m": [
+            -0.00023656916816164843,
+            -0.0003778642811630296
+          ],
+          "radius_mm": 0.4458098095640644,
+          "E2_min_V2_m2_per_V2": 0.004824364103471259,
+          "nfev": 202
+        },
+        {
+          "method": "L-BFGS-B",
+          "start_m": [
+            0.0004999999999999996,
+            0.0
+          ],
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "position_m": [
+            0.0004581093883903448,
+            -8.283987923074801e-09
+          ],
+          "radius_mm": 0.45810938846524446,
+          "E2_min_V2_m2_per_V2": 0.006665750705947303,
+          "nfev": 57
+        }
+      ],
+      "best_optimizer_result": {
+        "method": "Nelder-Mead",
+        "start_m": [
+          -0.0002500000000000002,
+          0.00037500000000000033
+        ],
+        "success": false,
+        "message": "Maximum number of function evaluations has been exceeded.",
+        "position_m": [
+          -0.00023656492629324684,
+          0.0003778643401880501
+        ],
+        "radius_mm": 0.4458076086585779,
+        "E2_min_V2_m2_per_V2": 0.004824332851098838,
+        "nfev": 4000
+      },
+      "value_at_origin_V2_m2_per_V2": 0.010037278578079433,
+      "minimum_over_all_methods_m": [
+        -0.00023656492629324684,
+        0.0003778643401880501
+      ],
+      "field_norm_at_best_per_volt_V_m_per_V": 0.06945741753836546,
+      "field_norm_at_best_for_250V_V_m": 17.364354384591365,
+      "field_norm_at_origin_per_volt_V_m_per_V": 0.10018621950188276,
+      "rotating_pseudopotential_minimum_eV_at_250V_100kHz": 1.8422936260920305e-07,
+      "rotating_pseudopotential_at_origin_eV_at_250V_100kHz": 3.8329889164869685e-07,
+      "optimizer_radius_span_mm_including_secondary_local_minima": 0.012308004633155845,
+      "minimum_search_converged": true
+    }
+  ],
+  "wall_seconds": 28.29065150000679
+}

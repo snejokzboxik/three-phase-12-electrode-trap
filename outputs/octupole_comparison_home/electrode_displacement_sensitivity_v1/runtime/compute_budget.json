@@ -1,0 +1,7 @@
+{
+  "start_utc": "2026-11-11T17:26:59Z",
+  "hard_deadline_utc": "2026-11-11T19:26:59Z",
+  "maximum_new_numerical_wall_seconds": 7200,
+  "scope": "all newly generated displaced meshes, FEM solves, field diagnostics, and new RF trajectories in this pilot",
+  "first_operation": "full-domain asymmetric h35 P4 FEM benchmark"
+}

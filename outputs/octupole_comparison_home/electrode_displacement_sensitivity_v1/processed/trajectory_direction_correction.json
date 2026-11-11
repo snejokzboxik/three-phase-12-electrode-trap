@@ -1,0 +1,18 @@
+{
+  "issue": "The first high-energy negative-direction batch was incorrectly initialized with a positive tangential velocity because initial_state() overwrote its direction argument.",
+  "affected_requested_cases": [
+    "nominal / 3.5 eV / azimuth pi/8 / RF phase 0 / requested tangential sign -1 / standing",
+    "nominal / 3.5 eV / azimuth pi/8 / RF phase 0 / requested tangential sign -1 / rotating"
+  ],
+  "actual_initial_tangential_sign": 1,
+  "actual_standing_escape_periods": 29.26814219603339,
+  "rotating_partial_checkpoint_periods": 800,
+  "disposition": "Preserved in the trajectory folders and marked excluded_from_science=true. These states are excluded from all combined summaries and interpretations.",
+  "correction": "Removed the direction override, added a direct sign-projection check, and changed the run-key suffix for corrected signed cases to avoid reusing the invalid checkpoints.",
+  "corrected_sign_test": {
+    "requested_sign": -1,
+    "measured_tangential_velocity_m_s": -82.18256050383032,
+    "metadata_sign": -1,
+    "passed": true
+  }
+}

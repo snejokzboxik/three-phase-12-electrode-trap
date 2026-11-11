@@ -1,0 +1,184 @@
+{
+  "nominal_field": {
+    "source_mesh": "outputs\\meshes\\gmsh_35um\\trap.msh",
+    "source_mesh_sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "source_sector_solution": "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz",
+    "source_sector_solution_sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "degree": 4,
+    "elements": 647484,
+    "max_sector_mapping_center_error_m": 5.439456160360122e-15,
+    "representation": "validated nominal h35 P4 sector FEM coefficients mapped onto the exact twelve-copy full nominal mesh; not N48"
+  },
+  "cases": [
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um\\field_diagnostics.json",
+      "solver_iterations": [
+        74,
+        74
+      ],
+      "gradient_check_max_relative_error": 2.5837829401267805e-11,
+      "minimum_position_mm": [
+        -0.23657213400293595,
+        0.3778670144722684
+      ]
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        75,
+        74
+      ],
+      "gradient_check_max_relative_error": 3.039354588814062e-11,
+      "minimum_position_mm": [
+        -0.23656916693688568,
+        -0.37786421916759955
+      ]
+    },
+    {
+      "pattern": "radial_in_10um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_in_10um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        73,
+        74
+      ],
+      "gradient_check_max_relative_error": 2.446611571824873e-11,
+      "minimum_position_mm": [
+        -0.44220977160442504,
+        -1.0459283451591308e-06
+      ]
+    },
+    {
+      "pattern": "tangential_plus_10um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\tangential_plus_10um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        73,
+        74
+      ],
+      "gradient_check_max_relative_error": 2.8540950064611712e-11,
+      "minimum_position_mm": [
+        -0.010444149468304945,
+        -0.3273758608898824
+      ]
+    },
+    {
+      "pattern": "tangential_minus_10um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\tangential_minus_10um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        73,
+        72
+      ],
+      "gradient_check_max_relative_error": 2.5879813566312576e-11,
+      "minimum_position_mm": [
+        -0.010432537752869411,
+        0.32738068694000927
+      ]
+    },
+    {
+      "pattern": "radial_out_25um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_25um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        73,
+        72
+      ],
+      "gradient_check_max_relative_error": 2.972154892254878e-11,
+      "minimum_position_mm": [
+        -0.3253028150979885,
+        0.506746054399195
+      ]
+    },
+    {
+      "pattern": "radial_out_50um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_50um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        72,
+        71
+      ],
+      "gradient_check_max_relative_error": 2.267989811617321e-11,
+      "minimum_position_mm": [
+        -0.4142629136259898,
+        0.6307102399993679
+      ]
+    },
+    {
+      "pattern": "radial_out_100um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_100um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        73,
+        72
+      ],
+      "gradient_check_max_relative_error": 3.577988209982157e-11,
+      "minimum_position_mm": [
+        -0.5273182533916676,
+        -0.7819094817131121
+      ]
+    },
+    {
+      "pattern": "symmetric_out_25um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\symmetric_out_25um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        72,
+        72
+      ],
+      "gradient_check_max_relative_error": 2.4699445016919397e-11,
+      "minimum_position_mm": [
+        0.0017569740909905674,
+        0.004718107144289556
+      ]
+    },
+    {
+      "pattern": "asymmetric_opposed_pair_25um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\asymmetric_opposed_pair_25um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        74,
+        73
+      ],
+      "gradient_check_max_relative_error": 2.6026905349611055e-11,
+      "minimum_position_mm": [
+        -0.37794766039914485,
+        -0.6710555265883656
+      ]
+    },
+    {
+      "pattern": "random_seed_11_25um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\random_seed_11_25um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        74,
+        73
+      ],
+      "gradient_check_max_relative_error": 2.7543922941208544e-11,
+      "minimum_position_mm": [
+        -0.04407251862250316,
+        -0.8801304898475859
+      ]
+    },
+    {
+      "pattern": "random_seed_29_100um",
+      "resolution": "h50",
+      "field_diagnostics": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\random_seed_29_100um_h50\\field_diagnostics.json",
+      "solver_iterations": [
+        73,
+        73
+      ],
+      "gradient_check_max_relative_error": 4.108782879197271e-11,
+      "minimum_position_mm": [
+        0.8594856531195862,
+        -1.1641277498107216
+      ]
+    }
+  ],
+  "field_metrics_csv": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\processed\\field_sensitivity.csv",
+  "harmonics_csv": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\processed\\azimuthal_harmonics.csv"
+}

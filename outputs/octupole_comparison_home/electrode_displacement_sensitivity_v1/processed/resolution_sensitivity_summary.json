@@ -1,0 +1,8 @@
+{
+  "changed_geometry_comparison": "direct full-domain P4 h35 versus h50 for the same +10 um radial displacement of electrode 0",
+  "nominal_comparison": "existing FEM-derived N48 h35 versus h50 on nominal geometry only; N48 is never used to represent a displaced geometry",
+  "samples": "same 144 deterministic azimuth points on radii 0.5 to 7 mm; no angular interpolation",
+  "max_relative_L2_difference_changed_P4": 4.535262247701747e-05,
+  "max_relative_L2_difference_nominal_N48": 4.3243569188438345e-05,
+  "csv": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\processed\\resolution_sensitivity.csv"
+}

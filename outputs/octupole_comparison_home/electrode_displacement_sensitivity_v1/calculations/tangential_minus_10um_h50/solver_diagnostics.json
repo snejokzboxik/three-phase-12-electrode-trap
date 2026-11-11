@@ -1,0 +1,40 @@
+{
+  "pattern": "tangential_minus_10um",
+  "resolution_level": "h50",
+  "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\tangential_minus_10um_h50\\displaced_h50.msh",
+  "field_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\tangential_minus_10um_h50\\p4_coefficients.npz",
+  "mesh_sha256": "10b35455099588e354f88c7305fdbfcc87c8a731d1aa1dbfebb9d1f215bebaa5",
+  "field_sha256": "91e67a88def20d344f384706f1a73d5b16affcc283b92e2bba8458f4e7497eab",
+  "scikit_fem_version": "12.0.2",
+  "pyamg_version": "5.4.1",
+  "degree": 4,
+  "full_domain_without_symmetry_reduction": true,
+  "dofs": 3154241,
+  "free_dofs": 3141577,
+  "matrix_nonzeros": 73581165,
+  "amg_levels": 4,
+  "cg_iterations_real_imag": [
+    73,
+    72
+  ],
+  "relative_l2_residual_real_imag": [
+    9.09663735275534e-11,
+    7.583003479598062e-11
+  ],
+  "scaled_free_dof_inf_residual_real_imag": [
+    5.330798519029648e-12,
+    3.927924655751862e-12
+  ],
+  "rhs_l2_norm_real_imag": [
+    178.81489129613087,
+    177.48185173060014
+  ],
+  "assembly_seconds": 20.533171899995068,
+  "matrix_reduction_seconds": 1.1943872999981977,
+  "amg_setup_seconds": 20.642671699999482,
+  "solve_seconds": 213.83015889998933,
+  "total_solve_stage_seconds": 256.2003897999821,
+  "rss_bytes_after_solve": null,
+  "accepted": true,
+  "acceptance_basis": "full-domain P4 Galerkin field, explicit boundary coverage and topology checks, two complex components converged to residual criteria"
+}

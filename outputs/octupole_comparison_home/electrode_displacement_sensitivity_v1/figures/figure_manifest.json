@@ -1,0 +1,36 @@
+{
+  "renderer": "shared Pillow/ReportLab/SVG publication canvas",
+  "formats": [
+    "PDF",
+    "SVG",
+    "PNG"
+  ],
+  "png_dpi": 600,
+  "new_rf_integrations": 0,
+  "figures": [
+    {
+      "svg": "Fig1_field_perturbation_double.svg",
+      "pdf": "Fig1_field_perturbation_double.pdf",
+      "png": "Fig1_field_perturbation_double.png",
+      "width_mm": 178,
+      "height_mm": 118,
+      "png_dpi": 600
+    },
+    {
+      "svg": "Fig2_effective_minimum_validation_double.svg",
+      "pdf": "Fig2_effective_minimum_validation_double.pdf",
+      "png": "Fig2_effective_minimum_validation_double.png",
+      "width_mm": 178,
+      "height_mm": 118,
+      "png_dpi": 600
+    },
+    {
+      "svg": "Fig3_matched_negative_tangent_trajectories_double.svg",
+      "pdf": "Fig3_matched_negative_tangent_trajectories_double.pdf",
+      "png": "Fig3_matched_negative_tangent_trajectories_double.png",
+      "width_mm": 178,
+      "height_mm": 118,
+      "png_dpi": 600
+    }
+  ]
+}

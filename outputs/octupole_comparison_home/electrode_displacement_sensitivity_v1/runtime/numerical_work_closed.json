@@ -1,0 +1,11 @@
+{
+  "scope": "initial electrode-displacement sensitivity pilot and validation requested in the active study",
+  "new_parameter_sweeps_after_user_steering": 0,
+  "corrected_direction_standard_integrations": 2,
+  "tight_tolerance_direction_validation_integrations": 1,
+  "new_fem_solves_after_user_steering": 0,
+  "hard_deadline_utc": "2026-11-11T19:26:59Z",
+  "hard_budget_seconds": 7200,
+  "finalization_only_after_computations": true,
+  "computation_status": "closed; existing pilot results validated and frozen"
+}

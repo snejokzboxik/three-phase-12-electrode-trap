@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="118mm" viewBox="0 0 178 118">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="89" y="7" text-anchor="middle" dominant-baseline="middle" font-size="11pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Electrode displacement and field perturbation</tspan>
+</text>
+<text x="89" y="14" text-anchor="middle" dominant-baseline="middle" font-size="7pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Full-domain P4 fields; 144 deterministic azimuths per radius; markers show calculated shells</tspan>
+</text>
+<line x1="17" y1="29" x2="17" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="17" y1="91" x2="17" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="17" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="17" dy="0">0</tspan>
+</text>
+<line x1="27" y1="29" x2="27" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="27" y1="91" x2="27" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="27" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="27" dy="0">1</tspan>
+</text>
+<line x1="37" y1="29" x2="37" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="37" y1="91" x2="37" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="37" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="37" dy="0">2</tspan>
+</text>
+<line x1="47" y1="29" x2="47" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="47" y1="91" x2="47" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="47" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="47" dy="0">3</tspan>
+</text>
+<line x1="57" y1="29" x2="57" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="57" y1="91" x2="57" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="57" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="57" dy="0">4</tspan>
+</text>
+<line x1="67" y1="29" x2="67" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="67" y1="91" x2="67" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="67" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="67" dy="0">5</tspan>
+</text>
+<line x1="77" y1="29" x2="77" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="77" y1="91" x2="77" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="77" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="77" dy="0">6</tspan>
+</text>
+<line x1="87" y1="29" x2="87" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="87" y1="91" x2="87" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="87" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="87" dy="0">7</tspan>
+</text>
+<line x1="17" y1="91" x2="87" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="16.2" y1="91" x2="17" y2="91" stroke="#202830" stroke-width="0.24"/>
+<text x="15.5" y="91" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="15.5" dy="0">0</tspan>
+</text>
+<line x1="17" y1="78.6" x2="87" y2="78.6" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="16.2" y1="78.6" x2="17" y2="78.6" stroke="#202830" stroke-width="0.24"/>
+<text x="15.5" y="78.6" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="15.5" dy="0">25</tspan>
+</text>
+<line x1="17" y1="66.2" x2="87" y2="66.2" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="16.2" y1="66.2" x2="17" y2="66.2" stroke="#202830" stroke-width="0.24"/>
+<text x="15.5" y="66.2" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="15.5" dy="0">50</tspan>
+</text>
+<line x1="17" y1="53.8" x2="87" y2="53.8" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="16.2" y1="53.8" x2="17" y2="53.8" stroke="#202830" stroke-width="0.24"/>
+<text x="15.5" y="53.8" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="15.5" dy="0">75</tspan>
+</text>
+<line x1="17" y1="41.4" x2="87" y2="41.4" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="16.2" y1="41.4" x2="17" y2="41.4" stroke="#202830" stroke-width="0.24"/>
+<text x="15.5" y="41.4" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="15.5" dy="0">100</tspan>
+</text>
+<line x1="17" y1="29" x2="87" y2="29" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="16.2" y1="29" x2="17" y2="29" stroke="#202830" stroke-width="0.24"/>
+<text x="15.5" y="29" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="15.5" dy="0">125</tspan>
+</text>
+<line x1="17" y1="29" x2="17" y2="91" stroke="#202830" stroke-width="0.28"/>
+<line x1="17" y1="91" x2="87" y2="91" stroke="#202830" stroke-width="0.28"/>
+<text x="17" y="23" text-anchor="start" dominant-baseline="middle" font-size="8pt" font-weight="bold" fill="#202830">
+<tspan x="17" dy="0">A  Displacement direction at 10 µm</tspan>
+</text>
+<circle cx="22" cy="37.5064" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="27" cy="84.1908" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="37" cy="90.0841" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="47" cy="90.6925" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="57" cy="90.8445" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="67" cy="90.8983" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="77" cy="90.9195" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="87" cy="90.9256" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="22" cy="37.3287" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="27" cy="84.1682" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="37" cy="90.0811" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="47" cy="90.6917" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="57" cy="90.8444" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="67" cy="90.8988" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="77" cy="90.9203" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="87" cy="90.9267" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="22" cy="76.0837" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="27" cy="89.0826" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="37" cy="90.7314" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="47" cy="90.9031" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="57" cy="90.9452" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="67" cy="90.9581" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="77" cy="90.959" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="87" cy="90.9505" r="0.72" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<circle cx="22" cy="76.0835" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="27" cy="89.0826" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="37" cy="90.7314" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="47" cy="90.9031" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="57" cy="90.9452" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="67" cy="90.9581" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="77" cy="90.959" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<circle cx="87" cy="90.9505" r="0.72" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<text x="52" y="99" text-anchor="middle" dominant-baseline="middle" font-size="7pt" font-weight="normal" fill="#202830">
+<tspan x="52" dy="0">Radius r (mm)</tspan>
+</text>
+<text x="8" y="60" text-anchor="middle" dominant-baseline="middle" font-size="6.7pt" font-weight="normal" fill="#202830" transform="rotate(-90 8 60)">
+<tspan x="8" dy="0">RMS |ΔE| / |E₀| (%)</tspan>
+</text>
+<circle cx="17" cy="101" r="0.7" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<text x="19" y="101" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="19" dy="0">radial +10 µm</tspan>
+</text>
+<circle cx="53" cy="101" r="0.7" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<text x="55" y="101" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="55" dy="0">radial −10 µm</tspan>
+</text>
+<circle cx="17" cy="107" r="0.7" fill="#009E73" stroke="#009E73" stroke-width="0.18"/>
+<text x="19" y="107" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="19" dy="0">tangent +10 µm</tspan>
+</text>
+<circle cx="53" cy="107" r="0.7" fill="#CC79A7" stroke="#CC79A7" stroke-width="0.18"/>
+<text x="55" y="107" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="55" dy="0">tangent −10 µm</tspan>
+</text>
+<line x1="103" y1="29" x2="103" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="103" y1="91" x2="103" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="103" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="103" dy="0">0</tspan>
+</text>
+<line x1="113" y1="29" x2="113" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="113" y1="91" x2="113" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="113" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="113" dy="0">1</tspan>
+</text>
+<line x1="123" y1="29" x2="123" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="123" y1="91" x2="123" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="123" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="123" dy="0">2</tspan>
+</text>
+<line x1="133" y1="29" x2="133" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="133" y1="91" x2="133" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="133" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="133" dy="0">3</tspan>
+</text>
+<line x1="143" y1="29" x2="143" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="143" y1="91" x2="143" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="143" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="143" dy="0">4</tspan>
+</text>
+<line x1="153" y1="29" x2="153" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="153" y1="91" x2="153" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="153" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="153" dy="0">5</tspan>
+</text>
+<line x1="163" y1="29" x2="163" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="163" y1="91" x2="163" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="163" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="163" dy="0">6</tspan>
+</text>
+<line x1="173" y1="29" x2="173" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="173" y1="91" x2="173" y2="91.8" stroke="#202830" stroke-width="0.24"/>
+<text x="173" y="93.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="173" dy="0">7</tspan>
+</text>
+<line x1="103" y1="91" x2="173" y2="91" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="102.2" y1="91" x2="103" y2="91" stroke="#202830" stroke-width="0.24"/>
+<text x="101.5" y="91" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="101.5" dy="0">0</tspan>
+</text>
+<line x1="103" y1="78.6" x2="173" y2="78.6" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="102.2" y1="78.6" x2="103" y2="78.6" stroke="#202830" stroke-width="0.24"/>
+<text x="101.5" y="78.6" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="101.5" dy="0">25</tspan>
+</text>
+<line x1="103" y1="66.2" x2="173" y2="66.2" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="102.2" y1="66.2" x2="103" y2="66.2" stroke="#202830" stroke-width="0.24"/>
+<text x="101.5" y="66.2" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="101.5" dy="0">50</tspan>
+</text>
+<line x1="103" y1="53.8" x2="173" y2="53.8" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="102.2" y1="53.8" x2="103" y2="53.8" stroke="#202830" stroke-width="0.24"/>
+<text x="101.5" y="53.8" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="101.5" dy="0">75</tspan>
+</text>
+<line x1="103" y1="41.4" x2="173" y2="41.4" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="102.2" y1="41.4" x2="103" y2="41.4" stroke="#202830" stroke-width="0.24"/>
+<text x="101.5" y="41.4" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="101.5" dy="0">100</tspan>
+</text>
+<line x1="103" y1="29" x2="173" y2="29" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="102.2" y1="29" x2="103" y2="29" stroke="#202830" stroke-width="0.24"/>
+<text x="101.5" y="29" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="101.5" dy="0">125</tspan>
+</text>
+<line x1="103" y1="29" x2="103" y2="91" stroke="#202830" stroke-width="0.28"/>
+<line x1="103" y1="91" x2="173" y2="91" stroke="#202830" stroke-width="0.28"/>
+<text x="103" y="23" text-anchor="start" dominant-baseline="middle" font-size="8pt" font-weight="bold" fill="#202830">
+<tspan x="103" dy="0">B  Radial outward amplitude</tspan>
+</text>
+<circle cx="108" cy="37.5064" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="113" cy="84.1908" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="123" cy="90.0841" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="133" cy="90.6925" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="143" cy="90.8445" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="153" cy="90.8983" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="163" cy="90.9195" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="173" cy="90.9256" r="0.72" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<circle cx="113" cy="74.0196" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="123" cy="88.7161" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="133" cy="90.2334" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="143" cy="90.6126" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="153" cy="90.7472" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="163" cy="90.8003" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="173" cy="90.8157" r="0.72" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<circle cx="113" cy="57.181" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="123" cy="86.4515" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="133" cy="89.4735" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="143" cy="90.2288" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="153" cy="90.497" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="163" cy="90.6031" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="173" cy="90.6342" r="0.72" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<circle cx="123" cy="81.9796" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="133" cy="87.9732" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="143" cy="89.4713" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="153" cy="90.0034" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="163" cy="90.2143" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="173" cy="90.2772" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<text x="138" y="99" text-anchor="middle" dominant-baseline="middle" font-size="7pt" font-weight="normal" fill="#202830">
+<tspan x="138" dy="0">Radius r (mm)</tspan>
+</text>
+<text x="94" y="60" text-anchor="middle" dominant-baseline="middle" font-size="6.7pt" font-weight="normal" fill="#202830" transform="rotate(-90 94 60)">
+<tspan x="94" dy="0">RMS |ΔE| / |E₀| (%)</tspan>
+</text>
+<circle cx="103" cy="101" r="0.7" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<text x="105" y="101" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="105" dy="0">10 µm</tspan>
+</text>
+<circle cx="139" cy="101" r="0.7" fill="#56B4E9" stroke="#56B4E9" stroke-width="0.18"/>
+<text x="141" y="101" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="141" dy="0">25 µm</tspan>
+</text>
+<circle cx="103" cy="107" r="0.7" fill="#E69F00" stroke="#E69F00" stroke-width="0.18"/>
+<text x="105" y="107" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="105" dy="0">50 µm</tspan>
+</text>
+<circle cx="139" cy="107" r="0.7" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<text x="141" y="107" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="141" dy="0">100 µm</tspan>
+</text>
+<text x="89" y="115" text-anchor="middle" dominant-baseline="middle" font-size="6pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">RMS ratio is evaluated on each ring; no angular or radial interpolation is shown.</tspan>
+</text>
+</svg>

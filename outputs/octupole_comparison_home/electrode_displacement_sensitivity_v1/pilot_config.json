@@ -1,0 +1,68 @@
+{
+  "study": "Pilot field sensitivity to lateral electrode-center displacement",
+  "geometry": {
+    "electrode_count": 12,
+    "orbit_radius_m": 0.01,
+    "electrode_radius_m": 0.0015,
+    "outer_domain_radius_m": 0.025,
+    "electrode_phase_index": "ABCABCABCABC"
+  },
+  "mesh": {
+    "backend": "Gmsh OpenCASCADE full disk with 12 independently positioned circular holes",
+    "sector_or_periodic_reduction": false,
+    "resolution_m": 0.000035,
+    "fine_radius_m": 0.008,
+    "transition_radius_m": 0.014,
+    "outer_resolution_m": 0.000175,
+    "electrode_distance_min_m": 0.00007,
+    "electrode_distance_max_m": 0.002,
+    "gmsh_seed": 12345,
+    "solution_order": 4,
+    "intorder": 8
+  },
+  "electrostatics": {
+    "complex_pattern": "H electrode boundary values are 1, exp(-2 pi i/3), exp(-4 pi i/3) for phases A, B, C, respectively; outer boundary is 0",
+    "physical_potential": "U0 Im(H exp(i omega t))",
+    "solver": "P4 Galerkin Laplace problem, full asymmetric domain, pyamg smoothed-aggregation preconditioned conjugate gradients for real and imaginary parts",
+    "acceptance": {
+      "relative_l2_residual_max": 1e-9,
+      "scaled_free_dof_inf_residual_max": 1e-9,
+      "mesh_area_relative_error_max": 0.005,
+      "boundary_tag_coverage_exact": true,
+      "euler_characteristic": -11
+    }
+  },
+  "rf_comparison": {
+    "ion_mz_Th": 100000,
+    "charge_state": 1,
+    "frequency_Hz": 100000,
+    "voltage_V": 250,
+    "aperture_radius_m": 0.008,
+    "horizon_RF_periods": 1000,
+    "models": ["rotating", "standing"],
+    "standing_quadrature": "sine quadrature only, matching V4 definition",
+    "integration_method": "DOP853",
+    "rtol": 2e-9,
+    "max_step_RF_fraction": 0.02,
+    "retention_language": "finite-time survival through the stated horizon only"
+  },
+  "budget": {
+    "new_numerical_wall_seconds_max": 7200,
+    "deadline_guard_before_new_geometry_solve_s": 600,
+    "checkpoint": "each geometry mesh, solver stage, and completed field solve is fsync/atomic recorded"
+  },
+  "initial_patterns": {
+    "radial_out_10um": {"electrode_0_radial_m": 0.00001},
+    "radial_in_10um": {"electrode_0_radial_m": -0.00001},
+    "tangential_plus_10um": {"electrode_0_tangential_m": 0.00001},
+    "tangential_minus_10um": {"electrode_0_tangential_m": -0.00001},
+    "radial_out_25um": {"electrode_0_radial_m": 0.000025},
+    "radial_out_50um": {"electrode_0_radial_m": 0.00005},
+    "radial_out_100um": {"electrode_0_radial_m": 0.0001},
+    "symmetric_out_25um": {"all_electrodes_radial_m": 0.000025},
+    "asymmetric_opposed_pair_25um": {"electrode_0_radial_m": 0.000025, "electrode_6_radial_m": -0.000025},
+    "random_seed_11_25um": {"random_radial_seed": 11, "random_max_abs_m": 0.000025},
+    "random_seed_29_100um": {"random_radial_seed": 29, "random_max_abs_m": 0.0001}
+  },
+  "pattern_selection_note": "This list is a candidate set only. Launch the first full-domain P4 solve before selecting any follow-up geometries; do not execute the full list automatically."
+}

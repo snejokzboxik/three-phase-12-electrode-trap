@@ -1,0 +1,14 @@
+# Rendering dependencies (tested in the report/render environment)
+Pillow==12.2.0
+reportlab==4.5.1
+
+# Full-domain P4 field-solve dependencies used for the pilot; local build under .deps/
+gmsh==4.15.2
+meshio==5.3.5
+numpy==2.5.4
+pyamg==5.4.1
+scikit-fem==12.0.2
+scipy==1.18.1
+
+# Figure generation imports the shared publication canvas under:
+# outputs/octupole_comparison_home/publication_figures_v1/render_publication_figures.py

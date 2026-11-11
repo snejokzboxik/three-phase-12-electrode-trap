@@ -1,0 +1,94 @@
+{
+  "path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um\\displaced_h35.msh",
+  "vertices": 323316,
+  "triangles": 642516,
+  "mesh_facets": 965843,
+  "euler_characteristic": -11,
+  "area_m2": 0.0018786640416939122,
+  "relative_area_error": 4.45269369686585e-06,
+  "minimum_triangle_quality": 0.7222297443640725,
+  "edge_length_all_m": {
+    "min": 2.1545660662394185e-05,
+    "median": 3.5000000000076996e-05,
+    "max": 0.0002463978269750617
+  },
+  "edge_length_working_region_m": {
+    "median": 3.499999999999936e-05,
+    "p95": 3.5009312878099795e-05,
+    "max": 4.938238060255179e-05
+  },
+  "boundary_line_counts_by_physical_tag": {
+    "1": 898,
+    "10": 270,
+    "11": 270,
+    "12": 270,
+    "13": 270,
+    "14": 270,
+    "15": 270,
+    "16": 270,
+    "17": 270,
+    "18": 270,
+    "19": 270,
+    "20": 270,
+    "21": 270
+  },
+  "boundary_tag_coverage_exact": true,
+  "periodic_symmetry_constraints": false,
+  "phase_groups": [
+    "ABCABCABCABC"
+  ],
+  "offset_vectors_m": [
+    [
+      1e-05,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "geometry_order": 1,
+  "affine_triangles": true,
+  "gmsh_version": "4.15.2",
+  "mesh_sha256": "d309595fb857c309d52a5d52f2f2d7a8e48d05d774bf009cb381457592ef0c1e"
+}

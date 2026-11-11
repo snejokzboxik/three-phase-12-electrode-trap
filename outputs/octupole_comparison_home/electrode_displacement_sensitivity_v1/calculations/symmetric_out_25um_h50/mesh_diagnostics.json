@@ -1,0 +1,94 @@
+{
+  "path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\symmetric_out_25um_h50\\displaced_h50.msh",
+  "vertices": 198659,
+  "triangles": 394174,
+  "mesh_facets": 592844,
+  "euler_characteristic": -11,
+  "area_m2": 0.001878672009393153,
+  "relative_area_error": 2.115608566111149e-07,
+  "minimum_triangle_quality": 0.7324710230711147,
+  "edge_length_all_m": {
+    "min": 3.114518754345348e-05,
+    "median": 5.039925600684248e-05,
+    "max": 0.00023623077601001735
+  },
+  "edge_length_working_region_m": {
+    "median": 4.999999999999946e-05,
+    "p95": 5.0000000918019745e-05,
+    "max": 6.569553722442289e-05
+  },
+  "boundary_line_counts_by_physical_tag": {
+    "1": 898,
+    "10": 189,
+    "11": 189,
+    "12": 189,
+    "13": 189,
+    "14": 189,
+    "15": 189,
+    "16": 189,
+    "17": 189,
+    "18": 189,
+    "19": 189,
+    "20": 189,
+    "21": 189
+  },
+  "boundary_tag_coverage_exact": true,
+  "periodic_symmetry_constraints": false,
+  "phase_groups": [
+    "ABCABCABCABC"
+  ],
+  "offset_vectors_m": [
+    [
+      2.5e-05,
+      0.0
+    ],
+    [
+      2.165063509461097e-05,
+      1.2499999999999999e-05
+    ],
+    [
+      1.2500000000000004e-05,
+      2.1650635094610966e-05
+    ],
+    [
+      1.5308084989341916e-21,
+      2.5e-05
+    ],
+    [
+      -1.2499999999999996e-05,
+      2.165063509461097e-05
+    ],
+    [
+      -2.1650635094610963e-05,
+      1.2500000000000009e-05
+    ],
+    [
+      -2.5e-05,
+      3.061616997868383e-21
+    ],
+    [
+      -2.1650635094610973e-05,
+      -1.2499999999999994e-05
+    ],
+    [
+      -1.2500000000000012e-05,
+      -2.1650635094610963e-05
+    ],
+    [
+      -4.592425496802575e-21,
+      -2.5e-05
+    ],
+    [
+      1.2499999999999984e-05,
+      -2.1650635094610976e-05
+    ],
+    [
+      2.165063509461096e-05,
+      -1.2500000000000012e-05
+    ]
+  ],
+  "geometry_order": 1,
+  "affine_triangles": true,
+  "gmsh_version": "4.15.2",
+  "mesh_sha256": "5a368216a16fbbd139218318bf3fcbb0c2be41d7b822eb662a33619f0732b6a3"
+}

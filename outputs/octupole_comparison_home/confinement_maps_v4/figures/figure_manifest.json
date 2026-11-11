@@ -1,0 +1,22 @@
+{
+  "renderer": "Pillow drawing with ReportLab vector PDF and hand-authored SVG",
+  "png_dpi": 300,
+  "palette": {
+    "rotating": "#0072B2",
+    "standing": "#D55E00",
+    "retained": "#009E73",
+    "escaped": "#CC3311"
+  },
+  "formats": [
+    "PDF",
+    "SVG",
+    "PNG"
+  ],
+  "interpolation": "none; only actual calculated states plotted; transition bars connect adjacent calculated energies at the same launch",
+  "retention_fraction": "deterministic designed-grid fraction, not population probability",
+  "censoring": "survivors shown as right-censored at 1000 RF; not treated as escapes",
+  "V3_refreshed": [
+    "V3_retention_overview_rebuilt",
+    "V3_high_energy_pair_rebuilt"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "protocol": "matched_leading_pseudopotential_at_0p5mm",
+  "rotating_voltage_V": 250.0,
+  "standing_voltage_V": 353.5533905932738,
+  "paired_initial_conditions": 4,
+  "difference_classes": {
+    "both_retained": 1,
+    "rotating_only_retained": 3
+  },
+  "note": "separate normalization; matching leading term does not make complete multipole pseudopotentials identical"
+}

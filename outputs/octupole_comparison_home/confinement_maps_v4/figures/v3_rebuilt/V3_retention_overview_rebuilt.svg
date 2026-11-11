@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1100" viewBox="0 0 2100 1100">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1050" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="bold" fill="#111" transform="rotate(0 1050 60)">V3 confinement map rebuilt from its saved classifications</text>
+<line x1="341.88" y1="170.00" x2="341.88" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="341.88" y1="870.00" x2="341.88" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="341.875" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 341.875 909)">0.5</text>
+<line x1="463.75" y1="170.00" x2="463.75" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="463.75" y1="870.00" x2="463.75" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="463.75" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 463.75 909)">1</text>
+<line x1="707.50" y1="170.00" x2="707.50" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="707.50" y1="870.00" x2="707.50" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="707.5" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 707.5 909)">2</text>
+<line x1="951.25" y1="170.00" x2="951.25" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="951.25" y1="870.00" x2="951.25" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="951.25" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 951.25 909)">3</text>
+<line x1="220.00" y1="845.00" x2="1000.00" y2="845.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="845.00" x2="220.00" y2="845.00" stroke="#222" stroke-width="2"/>
+<text x="204" y="853.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 853.0)">0.5</text>
+<line x1="220.00" y1="720.00" x2="1000.00" y2="720.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="720.00" x2="220.00" y2="720.00" stroke="#222" stroke-width="2"/>
+<text x="204" y="728.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 728.0)">1</text>
+<line x1="220.00" y1="470.00" x2="1000.00" y2="470.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="470.00" x2="220.00" y2="470.00" stroke="#222" stroke-width="2"/>
+<text x="204" y="478.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 478.0)">2</text>
+<line x1="220.00" y1="220.00" x2="1000.00" y2="220.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="220.00" x2="220.00" y2="220.00" stroke="#222" stroke-width="2"/>
+<text x="204" y="228.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 228.0)">3</text>
+<line x1="220.00" y1="170.00" x2="220.00" y2="870.00" stroke="#222" stroke-width="2"/>
+<line x1="220.00" y1="870.00" x2="1000.00" y2="870.00" stroke="#222" stroke-width="2"/>
+<text x="610.0" y="142" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#222" transform="rotate(0 610.0 142)">Rotating</text>
+<text x="610.0" y="950" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(0 610.0 950)">Initial transverse energy (eV)</text>
+<text x="120" y="520.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(90 120 520.0)">Initial radius (mm)</text>
+<circle cx="463.75" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="463.75,710.00 453.75,730.00 473.75,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="707.50" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="707.50,710.00 697.50,730.00 717.50,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="951.25" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="951.25,710.00 941.25,730.00 961.25,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="463.75" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="463.75,460.00 453.75,480.00 473.75,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="707.50" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="707.50,460.00 697.50,480.00 717.50,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="951.25" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="951.25,460.00 941.25,480.00 961.25,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="463.75,710.00 453.75,730.00 473.75,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="463.75" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="707.50,710.00 697.50,730.00 717.50,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="707.50" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="951.25,710.00 941.25,730.00 961.25,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="951.25" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="463.75,460.00 453.75,480.00 473.75,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="463.75" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="707.50,460.00 697.50,480.00 717.50,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="707.50" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="951.25,460.00 941.25,480.00 961.25,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="951.25" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<line x1="1311.88" y1="170.00" x2="1311.88" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1311.88" y1="870.00" x2="1311.88" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="1311.875" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1311.875 909)">0.5</text>
+<line x1="1433.75" y1="170.00" x2="1433.75" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1433.75" y1="870.00" x2="1433.75" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="1433.75" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1433.75 909)">1</text>
+<line x1="1677.50" y1="170.00" x2="1677.50" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1677.50" y1="870.00" x2="1677.50" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="1677.5" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1677.5 909)">2</text>
+<line x1="1921.25" y1="170.00" x2="1921.25" y2="870.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1921.25" y1="870.00" x2="1921.25" y2="879.00" stroke="#222" stroke-width="2"/>
+<text x="1921.25" y="909" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1921.25 909)">3</text>
+<line x1="1190.00" y1="845.00" x2="1970.00" y2="845.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1181.00" y1="845.00" x2="1190.00" y2="845.00" stroke="#222" stroke-width="2"/>
+<text x="1174" y="853.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1174 853.0)">0.5</text>
+<line x1="1190.00" y1="720.00" x2="1970.00" y2="720.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1181.00" y1="720.00" x2="1190.00" y2="720.00" stroke="#222" stroke-width="2"/>
+<text x="1174" y="728.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1174 728.0)">1</text>
+<line x1="1190.00" y1="470.00" x2="1970.00" y2="470.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1181.00" y1="470.00" x2="1190.00" y2="470.00" stroke="#222" stroke-width="2"/>
+<text x="1174" y="478.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1174 478.0)">2</text>
+<line x1="1190.00" y1="220.00" x2="1970.00" y2="220.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1181.00" y1="220.00" x2="1190.00" y2="220.00" stroke="#222" stroke-width="2"/>
+<text x="1174" y="228.0" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1174 228.0)">3</text>
+<line x1="1190.00" y1="170.00" x2="1190.00" y2="870.00" stroke="#222" stroke-width="2"/>
+<line x1="1190.00" y1="870.00" x2="1970.00" y2="870.00" stroke="#222" stroke-width="2"/>
+<text x="1580.0" y="142" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#222" transform="rotate(0 1580.0 142)">Standing</text>
+<text x="1580.0" y="950" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(0 1580.0 950)">Initial transverse energy (eV)</text>
+<text x="1090" y="520.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(90 1090 520.0)">Initial radius (mm)</text>
+<polygon points="1433.75,710.00 1423.75,730.00 1443.75,730.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1433.75" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="1677.50,710.00 1667.50,730.00 1687.50,730.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1677.50" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1921.25" cy="720.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="1921.25,710.00 1911.25,730.00 1931.25,730.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<polygon points="1433.75,460.00 1423.75,480.00 1443.75,480.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1433.75" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="1677.50,460.00 1667.50,480.00 1687.50,480.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1677.50" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="1921.25,460.00 1911.25,480.00 1931.25,480.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1921.25" cy="470.00" r="10.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1433.75" cy="720.00" r="10.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<polygon points="1433.75,710.00 1423.75,730.00 1443.75,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1677.50" cy="720.00" r="10.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<polygon points="1677.50,710.00 1667.50,730.00 1687.50,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<polygon points="1921.25,710.00 1911.25,730.00 1931.25,730.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1921.25" cy="720.00" r="10.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<polygon points="1433.75,460.00 1423.75,480.00 1443.75,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1433.75" cy="470.00" r="10.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1677.50" cy="470.00" r="10.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<polygon points="1677.50,460.00 1667.50,480.00 1687.50,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1921.25" cy="470.00" r="10.00" fill="#CC3311" stroke="#CC3311" stroke-width="2"/>
+<polygon points="1921.25,460.00 1911.25,480.00 1931.25,480.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<text x="1050" y="1010" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1050 1010)">Every marker is a V3 calculated state. Green: survived 1000 RF; red: escaped. Shape: tangential velocity sign.</text>
+</svg>

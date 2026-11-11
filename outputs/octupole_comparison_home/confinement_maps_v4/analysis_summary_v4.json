@@ -1,0 +1,73 @@
+{
+  "protocol": "equal_peak_voltage only for the main map; matched strength analyzed separately",
+  "horizon_RF": 1000,
+  "equal_peak_trajectories_including_controls": 1052,
+  "main_unique_equal_peak_trajectories": 1044,
+  "matched_equal_peak_initial_conditions": 522,
+  "difference_classes": {
+    "rotating_only_retained": 394,
+    "both_retained": 128
+  },
+  "retention_shells_descriptive_counts_not_probabilities": {
+    "0.5": {
+      "rotating_retained": 48,
+      "standing_retained": 46,
+      "n_matched": 48
+    },
+    "0.625": {
+      "rotating_retained": 13,
+      "standing_retained": 4,
+      "n_matched": 13
+    },
+    "0.75": {
+      "rotating_retained": 48,
+      "standing_retained": 4,
+      "n_matched": 48
+    },
+    "0.875": {
+      "rotating_retained": 3,
+      "standing_retained": 0,
+      "n_matched": 3
+    },
+    "1.0": {
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "n_matched": 64
+    },
+    "1.5": {
+      "rotating_retained": 48,
+      "standing_retained": 0,
+      "n_matched": 48
+    },
+    "2.0": {
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "n_matched": 64
+    },
+    "2.5": {
+      "rotating_retained": 48,
+      "standing_retained": 0,
+      "n_matched": 48
+    },
+    "3.0": {
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "n_matched": 64
+    },
+    "3.5": {
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "n_matched": 64
+    },
+    "4.0": {
+      "rotating_retained": 58,
+      "standing_retained": 10,
+      "n_matched": 58
+    }
+  },
+  "status_definition": "retained through 1000 RF; escaped at first outward crossing of 8 mm",
+  "retained_cases_censored": "yes, at 1000 RF; no escape time assigned",
+  "new_rf_jobs_completed": 1024,
+  "source_v3_rows_reused": 48,
+  "no_fem_rebuild": true
+}

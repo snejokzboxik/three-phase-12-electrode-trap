@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1250" viewBox="0 0 2100 1250">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1050" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="45" font-weight="bold" fill="#111" transform="rotate(0 1050 70)">Retention fraction on identical designed ensembles</text>
+<line x1="338.75" y1="180.00" x2="338.75" y2="980.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="338.75" y1="980.00" x2="338.75" y2="989.00" stroke="#222" stroke-width="2"/>
+<text x="338.75" y="1019" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 338.75 1019)">0.5</text>
+<line x1="556.25" y1="180.00" x2="556.25" y2="980.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="556.25" y1="980.00" x2="556.25" y2="989.00" stroke="#222" stroke-width="2"/>
+<text x="556.25" y="1019" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 556.25 1019)">1</text>
+<line x1="991.25" y1="180.00" x2="991.25" y2="980.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="991.25" y1="980.00" x2="991.25" y2="989.00" stroke="#222" stroke-width="2"/>
+<text x="991.25" y="1019" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 991.25 1019)">2</text>
+<line x1="1426.25" y1="180.00" x2="1426.25" y2="980.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1426.25" y1="980.00" x2="1426.25" y2="989.00" stroke="#222" stroke-width="2"/>
+<text x="1426.25" y="1019" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1426.25 1019)">3</text>
+<line x1="1861.25" y1="180.00" x2="1861.25" y2="980.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1861.25" y1="980.00" x2="1861.25" y2="989.00" stroke="#222" stroke-width="2"/>
+<text x="1861.25" y="1019" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1861.25 1019)">4</text>
+<line x1="230.00" y1="956.47" x2="1970.00" y2="956.47" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="221.00" y1="956.47" x2="230.00" y2="956.47" stroke="#222" stroke-width="2"/>
+<text x="214" y="964.4705882352941" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 214 964.4705882352941)">0.0</text>
+<line x1="230.00" y1="838.82" x2="1970.00" y2="838.82" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="221.00" y1="838.82" x2="230.00" y2="838.82" stroke="#222" stroke-width="2"/>
+<text x="214" y="846.8235294117646" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 214 846.8235294117646)">0.2</text>
+<line x1="230.00" y1="721.18" x2="1970.00" y2="721.18" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="221.00" y1="721.18" x2="230.00" y2="721.18" stroke="#222" stroke-width="2"/>
+<text x="214" y="729.1764705882354" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 214 729.1764705882354)">0.4</text>
+<line x1="230.00" y1="603.53" x2="1970.00" y2="603.53" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="221.00" y1="603.53" x2="230.00" y2="603.53" stroke="#222" stroke-width="2"/>
+<text x="214" y="611.5294117647059" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 214 611.5294117647059)">0.6</text>
+<line x1="230.00" y1="485.88" x2="1970.00" y2="485.88" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="221.00" y1="485.88" x2="230.00" y2="485.88" stroke="#222" stroke-width="2"/>
+<text x="214" y="493.88235294117646" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 214 493.88235294117646)">0.8</text>
+<line x1="230.00" y1="368.24" x2="1970.00" y2="368.24" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="221.00" y1="368.24" x2="230.00" y2="368.24" stroke="#222" stroke-width="2"/>
+<text x="214" y="376.2352941176471" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 214 376.2352941176471)">1.0</text>
+<line x1="230.00" y1="180.00" x2="230.00" y2="980.00" stroke="#222" stroke-width="2"/>
+<line x1="230.00" y1="980.00" x2="1970.00" y2="980.00" stroke="#222" stroke-width="2"/>
+<text x="1100.0" y="1060" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(0 1100.0 1060)">Initial transverse energy (eV)</text>
+<text x="130" y="580.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(90 130 580.0)">Designed-grid retained fraction</text>
+<circle cx="323.52" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="323.525" y="274.11764705882365" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 323.525 274.11764705882365)">48/48</text>
+<circle cx="377.90" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="377.9" y="227.05882352941182" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 377.9 227.05882352941182)">13/13</text>
+<circle cx="432.27" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="432.275" y="274.11764705882365" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 432.275 274.11764705882365)">48/48</text>
+<circle cx="486.65" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="486.65" y="227.05882352941182" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 486.65 227.05882352941182)">3/3</text>
+<circle cx="541.02" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="541.025" y="274.11764705882365" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 541.025 274.11764705882365)">64/64</text>
+<circle cx="758.53" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="758.5250000000001" y="227.05882352941182" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 758.5250000000001 227.05882352941182)">48/48</text>
+<circle cx="976.03" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="976.0250000000001" y="274.11764705882365" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 976.0250000000001 274.11764705882365)">64/64</text>
+<circle cx="1193.53" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="1193.525" y="227.05882352941182" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 1193.525 227.05882352941182)">48/48</text>
+<circle cx="1411.02" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="1411.0249999999999" y="274.11764705882365" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 1411.0249999999999 274.11764705882365)">64/64</text>
+<circle cx="1628.52" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="1628.5249999999999" y="227.05882352941182" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 1628.5249999999999 227.05882352941182)">64/64</text>
+<circle cx="1846.02" cy="368.24" r="11.00" fill="#0072B2" stroke="#0072B2" stroke-width="2"/>
+<text x="1846.0249999999999" y="274.11764705882365" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#0072B2" transform="rotate(0 1846.0249999999999 274.11764705882365)">58/58</text>
+<circle cx="353.98" cy="392.75" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="353.975" y="463.33333333333326" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 353.975 463.33333333333326)">46/48</text>
+<circle cx="408.35" cy="775.48" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="408.35" y="722.5339366515838" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 408.35 722.5339366515838)">4/13</text>
+<circle cx="462.73" cy="907.45" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="462.725" y="854.5098039215686" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 462.725 854.5098039215686)">4/48</text>
+<circle cx="517.10" cy="956.47" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="517.1" y="903.5294117647059" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 517.1 903.5294117647059)">0/3</text>
+<circle cx="571.47" cy="809.41" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="571.4749999999999" y="756.4705882352941" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 571.4749999999999 756.4705882352941)">16/64</text>
+<circle cx="788.97" cy="956.47" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="788.9749999999999" y="903.5294117647059" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 788.9749999999999 903.5294117647059)">0/48</text>
+<circle cx="1006.48" cy="809.41" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="1006.475" y="756.4705882352941" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 1006.475 756.4705882352941)">16/64</text>
+<circle cx="1223.97" cy="956.47" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="1223.975" y="903.5294117647059" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 1223.975 903.5294117647059)">0/48</text>
+<circle cx="1441.48" cy="809.41" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="1441.4750000000001" y="756.4705882352941" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 1441.4750000000001 756.4705882352941)">16/64</text>
+<circle cx="1658.98" cy="809.41" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="1658.9750000000001" y="756.4705882352941" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 1658.9750000000001 756.4705882352941)">16/64</text>
+<circle cx="1876.48" cy="855.05" r="11.00" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
+<text x="1876.4750000000001" y="802.1095334685599" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#D55E00" transform="rotate(0 1876.4750000000001 802.1095334685599)">10/58</text>
+<line x1="1180.00" y1="1080.00" x2="1240.00" y2="1080.00" stroke="#0072B2" stroke-width="7"/>
+<text x="1260" y="1089" text-anchor="start" font-family="Arial,sans-serif" font-size="25" font-weight="normal" fill="#0072B2" transform="rotate(0 1260 1089)">Rotating 250 V</text>
+<line x1="1510.00" y1="1080.00" x2="1570.00" y2="1080.00" stroke="#D55E00" stroke-width="7"/>
+<text x="1590" y="1089" text-anchor="start" font-family="Arial,sans-serif" font-size="25" font-weight="normal" fill="#D55E00" transform="rotate(0 1590 1089)">Standing 250 V</text>
+<text x="1050" y="1135" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="normal" fill="#444" transform="rotate(0 1050 1135)">Calculated shells (eV): 0.5, 0.625, 0.75, 0.875, 1, 1.5, 2, 2.5, 3, 3.5, 4</text>
+<text x="1050" y="1200" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#444" transform="rotate(0 1050 1200)">Observation horizon: 1000 RF periods. Counts describe this deterministic matched grid, not a population probability.</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1300" viewBox="0 0 2400 1300">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1200" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="44" font-weight="bold" fill="#111" transform="rotate(0 1200 60)">High-energy differences under separate voltage normalizations</text>
+<line x1="336.25" y1="180.00" x2="336.25" y2="800.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="336.25" y1="800.00" x2="336.25" y2="809.00" stroke="#222" stroke-width="2"/>
+<text x="336.25" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 336.25 839)">1</text>
+<line x1="568.75" y1="180.00" x2="568.75" y2="800.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="568.75" y1="800.00" x2="568.75" y2="809.00" stroke="#222" stroke-width="2"/>
+<text x="568.75" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 568.75 839)">2</text>
+<line x1="1033.75" y1="180.00" x2="1033.75" y2="800.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1033.75" y1="800.00" x2="1033.75" y2="809.00" stroke="#222" stroke-width="2"/>
+<text x="1033.75" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1033.75 839)">4</text>
+<line x1="220.00" y1="711.43" x2="1150.00" y2="711.43" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="711.43" x2="220.00" y2="711.43" stroke="#222" stroke-width="2"/>
+<text x="204" y="719.4285714285714" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 719.4285714285714)">1</text>
+<line x1="220.00" y1="563.81" x2="1150.00" y2="563.81" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="563.81" x2="220.00" y2="563.81" stroke="#222" stroke-width="2"/>
+<text x="204" y="571.8095238095239" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 571.8095238095239)">2</text>
+<line x1="220.00" y1="416.19" x2="1150.00" y2="416.19" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="416.19" x2="220.00" y2="416.19" stroke="#222" stroke-width="2"/>
+<text x="204" y="424.1904761904762" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 424.1904761904762)">3</text>
+<line x1="220.00" y1="268.57" x2="1150.00" y2="268.57" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="211.00" y1="268.57" x2="220.00" y2="268.57" stroke="#222" stroke-width="2"/>
+<text x="204" y="276.57142857142856" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 204 276.57142857142856)">4</text>
+<line x1="220.00" y1="180.00" x2="220.00" y2="800.00" stroke="#222" stroke-width="2"/>
+<line x1="220.00" y1="800.00" x2="1150.00" y2="800.00" stroke="#222" stroke-width="2"/>
+<text x="685.0" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#222" transform="rotate(0 685.0 152)">Equal peak: 250 V / 250 V</text>
+<text x="685.0" y="880" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(0 685.0 880)">Initial transverse energy (eV)</text>
+<text x="120" y="490.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(90 120 490.0)">Selected matched start ID</text>
+<circle cx="336.25" cy="733.57" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="324.25" y="677.2857142857142" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<circle cx="568.75" cy="585.95" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="556.75" y="529.6666666666667" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<circle cx="568.75" cy="438.33" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="556.75" y="382.04761904761904" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1033.75" cy="290.71" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="1021.75" y="234.42857142857144" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<line x1="1496.25" y1="180.00" x2="1496.25" y2="800.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1496.25" y1="800.00" x2="1496.25" y2="809.00" stroke="#222" stroke-width="2"/>
+<text x="1496.25" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1496.25 839)">1</text>
+<line x1="1728.75" y1="180.00" x2="1728.75" y2="800.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1728.75" y1="800.00" x2="1728.75" y2="809.00" stroke="#222" stroke-width="2"/>
+<text x="1728.75" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 1728.75 839)">2</text>
+<line x1="2193.75" y1="180.00" x2="2193.75" y2="800.00" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="2193.75" y1="800.00" x2="2193.75" y2="809.00" stroke="#222" stroke-width="2"/>
+<text x="2193.75" y="839" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="normal" fill="#444" transform="rotate(0 2193.75 839)">4</text>
+<line x1="1380.00" y1="711.43" x2="2310.00" y2="711.43" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1371.00" y1="711.43" x2="1380.00" y2="711.43" stroke="#222" stroke-width="2"/>
+<text x="1364" y="719.4285714285714" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1364 719.4285714285714)">1</text>
+<line x1="1380.00" y1="563.81" x2="2310.00" y2="563.81" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1371.00" y1="563.81" x2="1380.00" y2="563.81" stroke="#222" stroke-width="2"/>
+<text x="1364" y="571.8095238095239" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1364 571.8095238095239)">2</text>
+<line x1="1380.00" y1="416.19" x2="2310.00" y2="416.19" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1371.00" y1="416.19" x2="1380.00" y2="416.19" stroke="#222" stroke-width="2"/>
+<text x="1364" y="424.1904761904762" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1364 424.1904761904762)">3</text>
+<line x1="1380.00" y1="268.57" x2="2310.00" y2="268.57" stroke="#e4e8eb" stroke-width="1"/>
+<line x1="1371.00" y1="268.57" x2="1380.00" y2="268.57" stroke="#222" stroke-width="2"/>
+<text x="1364" y="276.57142857142856" text-anchor="end" font-family="Arial,sans-serif" font-size="23" font-weight="normal" fill="#444" transform="rotate(0 1364 276.57142857142856)">4</text>
+<line x1="1380.00" y1="180.00" x2="1380.00" y2="800.00" stroke="#222" stroke-width="2"/>
+<line x1="1380.00" y1="800.00" x2="2310.00" y2="800.00" stroke="#222" stroke-width="2"/>
+<text x="1845.0" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#222" transform="rotate(0 1845.0 152)">Matched leading term: 250 V / 353.553 V</text>
+<text x="1845.0" y="880" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(0 1845.0 880)">Initial transverse energy (eV)</text>
+<text x="1280" y="490.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="normal" fill="#222" transform="rotate(90 1280 490.0)">Selected matched start ID</text>
+<circle cx="1496.25" cy="733.57" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="1484.25" y="677.2857142857142" width="24" height="24" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<circle cx="1728.75" cy="585.95" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="1716.75" y="529.6666666666667" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<circle cx="1728.75" cy="438.33" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="1716.75" y="382.04761904761904" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<circle cx="2193.75" cy="290.71" r="12.00" fill="#009E73" stroke="#009E73" stroke-width="2"/>
+<rect x="2181.75" y="234.42857142857144" width="24" height="24" fill="white" stroke="#CC3311" stroke-width="2"/>
+<text x="1200" y="990" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#444" transform="rotate(0 1200 990)">Filled = retained to 1000 RF; open = escaped. Marker circles = rotating; squares = standing. Rows are identical launch states in both panels.</text>
+<text x="1200" y="1060" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#444" transform="rotate(0 1200 1060)">The alternate protocol matches the leading pseudopotential term at r=0.5 mm only; full multipole pseudopotentials need not match.</text>
+</svg>

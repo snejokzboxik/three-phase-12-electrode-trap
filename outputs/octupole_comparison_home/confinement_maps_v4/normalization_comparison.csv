@@ -1,0 +1,9 @@
+﻿comparison,model,r0_mm,energy_eV,azimuth_rad,phase_rad,direction,equal_peak_voltage_V,matched_protocol_voltage_V,equal_peak_status,matched_protocol_status,equal_peak_max_radius_mm,matched_max_radius_mm,delta_max_radius_mm
+matched leading pseudopotential versus equal peak,standing,1.0,1.0,0.39269908169872414,0.0,-1.0,250.0,353.5533905932738,escaped,retained,7.9999999999999885,6.309858944516869,-1.690141055483119
+matched leading pseudopotential versus equal peak,standing,1.0,2.0,0.39269908169872414,0.0,-1.0,250.0,353.5533905932738,escaped,escaped,7.999999999999987,8.000000000000039,5.240252676230739e-14
+matched leading pseudopotential versus equal peak,standing,2.0,2.0,0.39269908169872414,0.0,-1.0,250.0,353.5533905932738,escaped,escaped,8.00000000000421,7.999999999997885,-6.324718526684592e-12
+matched leading pseudopotential versus equal peak,standing,1.0,4.0,0.39269908169872414,0.0,-1.0,250.0,353.5533905932738,escaped,escaped,7.9999999999999885,8.000000000000027,3.8191672047105385e-14
+matched leading pseudopotential versus equal peak,rotating,1.0,1.0,0.39269908169872414,0.0,-1.0,250.0,250.0,retained,retained,6.007794671656363,6.007794671656363,0.0
+matched leading pseudopotential versus equal peak,rotating,1.0,2.0,0.39269908169872414,0.0,-1.0,250.0,250.0,retained,retained,6.713670190466775,6.713670190466775,0.0
+matched leading pseudopotential versus equal peak,rotating,2.0,2.0,0.39269908169872414,0.0,-1.0,250.0,250.0,retained,retained,6.613736666594202,6.613736666594202,0.0
+matched leading pseudopotential versus equal peak,rotating,1.0,4.0,0.39269908169872414,0.0,-1.0,250.0,250.0,retained,retained,7.454820905576274,7.454820905576274,0.0

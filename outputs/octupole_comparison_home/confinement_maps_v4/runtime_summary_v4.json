@@ -1,0 +1,67 @@
+{
+  "start_utc": "2026-11-11T10:37:39Z",
+  "deadline_utc": "2026-11-11 12:37:39 UTC",
+  "end_utc": "2026-11-11 12:13:01 UTC",
+  "elapsed_minutes": 95.363,
+  "max_new_integration_minutes": 120,
+  "workers": 4,
+  "runtime_stages": [
+    {
+      "requested": 336,
+      "new_completed": 336,
+      "existing": 0,
+      "wall_s": 1704.5333558999992,
+      "throughput_trajectories_min": 11.82728393744564,
+      "workers": 4,
+      "seconds_until_deadline": 5495.435431718826,
+      "completed_utc": "2026-11-11T11:06:03Z"
+    },
+    {
+      "requested": 224,
+      "new_completed": 224,
+      "existing": 336,
+      "wall_s": 1420.8598243000015,
+      "throughput_trajectories_min": 9.45906115828683,
+      "workers": 4,
+      "seconds_until_deadline": 3981.4716889858246,
+      "completed_utc": "2026-11-11T11:31:17Z"
+    },
+    {
+      "requested": 404,
+      "new_completed": 404,
+      "existing": 560,
+      "wall_s": 1907.884681399999,
+      "throughput_trajectories_min": 12.705170398109951,
+      "workers": 4,
+      "seconds_until_deadline": 1948.446201324463,
+      "completed_utc": "2026-11-11T12:05:10Z"
+    },
+    {
+      "requested": 32,
+      "new_completed": 32,
+      "existing": 964,
+      "wall_s": 192.9041739999957,
+      "throughput_trajectories_min": 9.953128220559599,
+      "workers": 4,
+      "seconds_until_deadline": 1684.4687869548798,
+      "completed_utc": "2026-11-11T12:09:34Z"
+    },
+    {
+      "requested": 32,
+      "new_completed": 28,
+      "existing": 996,
+      "wall_s": 170.17015269999683,
+      "throughput_trajectories_min": 9.872471503146542,
+      "workers": 4,
+      "seconds_until_deadline": 1478.0826151371002,
+      "completed_utc": "2026-11-11T12:13:01Z"
+    }
+  ],
+  "new_completed": 1024,
+  "new_grid_integrations": 336,
+  "v3_reused_rows": 48,
+  "failed_or_paused_journal_rows": 0,
+  "round3_candidate_jobs_generated_not_all_submitted": 436,
+  "round3_boundary_jobs_submitted": 32,
+  "stopped_before_hard_deadline": true
+}

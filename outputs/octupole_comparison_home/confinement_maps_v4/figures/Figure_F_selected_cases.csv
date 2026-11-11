@@ -1,0 +1,5 @@
+﻿selected_start_id,energy_eV,r0_mm,azimuth_deg,phase_deg,tangential_direction,equal_peak_voltage_rotating_status,equal_peak_voltage_standing_status,matched_leading_pseudopotential_at_0p5mm_rotating_status,matched_leading_pseudopotential_at_0p5mm_standing_status
+1,1.0,1.0,22.5,0.0,-1,retained,escaped,retained,retained
+2,2.0,1.0,22.5,0.0,-1,retained,escaped,retained,escaped
+3,2.0,2.0,22.5,0.0,-1,retained,escaped,retained,escaped
+4,4.0,1.0,22.5,0.0,-1,retained,escaped,retained,escaped

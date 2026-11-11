@@ -1,0 +1,23 @@
+{
+  "DOP853 tolerance refinement": {
+    "n": 8,
+    "classification_agreements": 8,
+    "classification_disagreements": 0,
+    "max_abs_escape_time_delta_RF": 8.29913915367797e-12,
+    "max_abs_radius_delta_um": 1.9589663224905962e-08
+  },
+  "h35 versus h50 N48 field sensitivity": {
+    "n": 8,
+    "classification_agreements": 8,
+    "classification_disagreements": 0,
+    "max_abs_escape_time_delta_RF": 0.0035101957308256715,
+    "max_abs_radius_delta_um": 0.2720794838078078
+  },
+  "intra-RF output sampling sensitivity": {
+    "n": 8,
+    "classification_agreements": 8,
+    "classification_disagreements": 0,
+    "max_abs_escape_time_delta_RF": 0.0,
+    "max_abs_radius_delta_um": 25.91791057659787
+  }
+}

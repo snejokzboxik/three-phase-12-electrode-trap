@@ -1,0 +1,25 @@
+﻿check,model,r0_mm,energy_eV,azimuth_rad,phase_rad,direction,field,standard_status,refined_status,classification_agrees,standard_escape_RF,refined_escape_RF,escape_time_delta_RF,max_radius_delta_um,rms_radius_delta_um,sampling_standard_per_RF,sampling_refined_per_RF
+DOP853 tolerance refinement,standing,1.0,1.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,184.48768130525295,184.48768130524465,-8.29913915367797e-12,1.509903313490213e-11,,,
+DOP853 tolerance refinement,rotating,1.0,1.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,-1.6608936448392342e-10,,,
+DOP853 tolerance refinement,standing,1.0,2.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,14.581107741661256,14.581107741661205,-5.1514348342607263e-14,9.769962616701378e-12,,,
+DOP853 tolerance refinement,rotating,1.0,2.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,1.7847057165454316e-08,,,
+DOP853 tolerance refinement,standing,2.0,2.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,13.593079090657548,13.593079090652921,-4.6274095666376525e-12,-4.235722883549897e-09,,,
+DOP853 tolerance refinement,rotating,2.0,2.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,-1.9589663224905962e-08,,,
+DOP853 tolerance refinement,standing,1.0,4.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,9.488301652465351,9.488301652465351,0.0,1.1546319456101628e-11,,,
+DOP853 tolerance refinement,rotating,1.0,4.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,7.72715225139109e-11,,,
+h35 versus h50 N48 field sensitivity,standing,1.0,1.0,0.39269908169872414,0.0,-1.0,h35/h50,escaped,escaped,True,184.48768130525295,184.48417110952212,-0.0035101957308256715,9.769962616701378e-12,,,
+h35 versus h50 N48 field sensitivity,rotating,1.0,1.0,0.39269908169872414,0.0,-1.0,h35/h50,retained,retained,True,,,,0.05247621613779785,,,
+h35 versus h50 N48 field sensitivity,standing,1.0,2.0,0.39269908169872414,0.0,-1.0,h35/h50,escaped,escaped,True,14.581107741661256,14.581049299507667,-5.844215358941085e-05,2.6645352591003757e-12,,,
+h35 versus h50 N48 field sensitivity,rotating,1.0,2.0,0.39269908169872414,0.0,-1.0,h35/h50,retained,retained,True,,,,-0.2720794838078078,,,
+h35 versus h50 N48 field sensitivity,standing,2.0,2.0,0.39269908169872414,0.0,-1.0,h35/h50,escaped,escaped,True,13.593079090657548,13.59304690604693,-3.218461061926803e-05,2.3092638912203256e-11,,,
+h35 versus h50 N48 field sensitivity,rotating,2.0,2.0,0.39269908169872414,0.0,-1.0,h35/h50,retained,retained,True,,,,0.05069859570561164,,,
+h35 versus h50 N48 field sensitivity,standing,1.0,4.0,0.39269908169872414,0.0,-1.0,h35/h50,escaped,escaped,True,9.488301652465351,9.488286035154168,-1.5617311182936078e-05,0.0,,,
+h35 versus h50 N48 field sensitivity,rotating,1.0,4.0,0.39269908169872414,0.0,-1.0,h35/h50,retained,retained,True,,,,0.16219462126887407,,,
+intra-RF output sampling sensitivity,standing,1.0,1.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,184.48768130525295,184.48768130525295,0.0,0.0,-11.124590712766391,1,8
+intra-RF output sampling sensitivity,rotating,1.0,1.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,9.706657827099896,-1.5721171639380138,1,8
+intra-RF output sampling sensitivity,standing,1.0,2.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,14.581107741661256,14.581107741661256,0.0,0.0,-121.00682984012946,1,8
+intra-RF output sampling sensitivity,rotating,1.0,2.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,23.04068373577639,-3.119164560647647,1,8
+intra-RF output sampling sensitivity,standing,2.0,2.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,13.593079090657548,13.593079090657548,0.0,0.0,-142.66342278826994,1,8
+intra-RF output sampling sensitivity,rotating,2.0,2.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,11.102383418074346,5.901220669920271,1,8
+intra-RF output sampling sensitivity,standing,1.0,4.0,0.39269908169872414,0.0,-1.0,h35,escaped,escaped,True,9.488301652465351,9.488301652465351,0.0,0.0,-252.2350369019506,1,8
+intra-RF output sampling sensitivity,rotating,1.0,4.0,0.39269908169872414,0.0,-1.0,h35,retained,retained,True,,,,25.91791057659787,1.5622173712230847,1,8

@@ -1,0 +1,6 @@
+{
+  "start_unix_s": 1794514110.1310039,
+  "stop_submitting_unix_s": 1794514710.1310039,
+  "budget_min": 10,
+  "workers": 4
+}

@@ -1,0 +1,168 @@
+{
+  "completed": 30,
+  "expected": 34,
+  "models_gamma_cells": [
+    {
+      "model": "rotating",
+      "gamma_s_inv": 0.0,
+      "n_calculated": 4,
+      "n_escaped": 0,
+      "n_retained_censored": 4,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.7231;6.7216;6.7386;6.7241",
+      "final_radius_mm": "6.5008;6.0235;6.3829;6.3627",
+      "final_speed_m_s": "93.459;41.851;21.57;49.752"
+    },
+    {
+      "model": "rotating",
+      "gamma_s_inv": 10.0,
+      "n_calculated": 1,
+      "n_escaped": 0,
+      "n_retained_censored": 1,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.6884",
+      "final_radius_mm": "5.7293",
+      "final_speed_m_s": "77.507"
+    },
+    {
+      "model": "rotating",
+      "gamma_s_inv": 100.0,
+      "n_calculated": 4,
+      "n_escaped": 0,
+      "n_retained_censored": 4,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.6672;6.6594;6.6619;6.6827",
+      "final_radius_mm": "5.1343;4.4880;5.1946;4.6954",
+      "final_speed_m_s": "22.997;34.307;35.318;14.487"
+    },
+    {
+      "model": "rotating",
+      "gamma_s_inv": 1000.0,
+      "n_calculated": 4,
+      "n_escaped": 0,
+      "n_retained_censored": 4,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.5013;6.4649;6.4732;6.5096",
+      "final_radius_mm": "0.8239;0.7999;0.8274;0.8053",
+      "final_speed_m_s": "0.027726;0.11966;0.17398;0.039686"
+    },
+    {
+      "model": "rotating",
+      "gamma_s_inv": 3000.0,
+      "n_calculated": 4,
+      "n_escaped": 0,
+      "n_retained_censored": 4,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.0713;6.0651;6.0721;6.0826",
+      "final_radius_mm": "0.8897;0.8893;0.8898;0.8895",
+      "final_speed_m_s": "0.1636;0.13144;0.16479;0.15177"
+    },
+    {
+      "model": "standing",
+      "gamma_s_inv": 0.0,
+      "n_calculated": 3,
+      "n_escaped": 2,
+      "n_retained_censored": 1,
+      "escaped_launches": "early_escape_22p5deg;boundary_negative",
+      "escape_times_RF": "185.493167;989.623420",
+      "max_radius_mm": "6.4240;8.0000;8.0000",
+      "final_radius_mm": "1.3452;8.0000;8.0000",
+      "final_speed_m_s": "62.7;103.81;76.194"
+    },
+    {
+      "model": "standing",
+      "gamma_s_inv": 10.0,
+      "n_calculated": 1,
+      "n_escaped": 0,
+      "n_retained_censored": 1,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.4013",
+      "final_radius_mm": "2.0528",
+      "final_speed_m_s": "56.739"
+    },
+    {
+      "model": "standing",
+      "gamma_s_inv": 100.0,
+      "n_calculated": 3,
+      "n_escaped": 0,
+      "n_retained_censored": 3,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.3763;6.9766;6.4773",
+      "final_radius_mm": "1.0324;2.4670;4.5525",
+      "final_speed_m_s": "28.686;33.044;22.985"
+    },
+    {
+      "model": "standing",
+      "gamma_s_inv": 1000.0,
+      "n_calculated": 3,
+      "n_escaped": 0,
+      "n_retained_censored": 3,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "6.2415;6.2375;6.3034",
+      "final_radius_mm": "0.7202;0.6449;0.7404",
+      "final_speed_m_s": "0.091026;0.084789;0.17812"
+    },
+    {
+      "model": "standing",
+      "gamma_s_inv": 3000.0,
+      "n_calculated": 3,
+      "n_escaped": 0,
+      "n_retained_censored": 3,
+      "escaped_launches": "",
+      "escape_times_RF": "",
+      "max_radius_mm": "5.8881;5.8865;5.9507",
+      "final_radius_mm": "0.8872;0.8751;0.8869",
+      "final_speed_m_s": "0.17767;0.21401;0.19412"
+    }
+  ],
+  "h35_validation": [
+    {
+      "launch": "deep_0deg",
+      "model": "rotating",
+      "h35_outcome": "retained_to_horizon",
+      "h35_escape_time_RF": null,
+      "v8_reference_outcome": "retained",
+      "v8_escape_time_RF": null,
+      "classification_agrees": true,
+      "escape_time_difference_RF": null
+    },
+    {
+      "launch": "early_escape_22p5deg",
+      "model": "standing",
+      "h35_outcome": "escaped",
+      "h35_escape_time_RF": 185.4912740732622,
+      "v8_reference_outcome": "escaped",
+      "v8_escape_time_RF": 185.4912740732636,
+      "classification_agrees": true,
+      "escape_time_difference_RF": -1.4210854715202004e-12
+    },
+    {
+      "launch": "boundary_negative",
+      "model": "standing",
+      "h35_outcome": "escaped",
+      "h35_escape_time_RF": 988.6502980052564,
+      "v8_reference_outcome": "escaped",
+      "v8_escape_time_RF": 988.6502980083413,
+      "classification_agrees": true,
+      "escape_time_difference_RF": -3.084892341576051e-09
+    },
+    {
+      "launch": "boundary_positive",
+      "model": "standing",
+      "h35_outcome": "escaped",
+      "h35_escape_time_RF": 764.7846983877455,
+      "v8_reference_outcome": "escaped",
+      "v8_escape_time_RF": 764.7846983868853,
+      "classification_agrees": true,
+      "escape_time_difference_RF": 8.601546142017469e-10
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "launch": "deep_0deg",
+    "model": "rotating",
+    "h35_outcome": "retained_to_horizon",
+    "h35_escape_time_RF": null,
+    "v8_reference_outcome": "retained",
+    "v8_escape_time_RF": null,
+    "classification_agrees": true,
+    "escape_time_difference_RF": null
+  },
+  {
+    "launch": "early_escape_22p5deg",
+    "model": "standing",
+    "h35_outcome": "escaped",
+    "h35_escape_time_RF": 185.4912740732622,
+    "v8_reference_outcome": "escaped",
+    "v8_escape_time_RF": 185.4912740732636,
+    "classification_agrees": true,
+    "escape_time_difference_RF": -1.4210854715202004e-12
+  },
+  {
+    "launch": "boundary_negative",
+    "model": "standing",
+    "h35_outcome": "escaped",
+    "h35_escape_time_RF": 988.6502980052564,
+    "v8_reference_outcome": "escaped",
+    "v8_escape_time_RF": 988.6502980083413,
+    "classification_agrees": true,
+    "escape_time_difference_RF": -3.084892341576051e-09
+  },
+  {
+    "launch": "boundary_positive",
+    "model": "standing",
+    "h35_outcome": "escaped",
+    "h35_escape_time_RF": 764.7846983877455,
+    "v8_reference_outcome": "escaped",
+    "v8_escape_time_RF": 764.7846983868853,
+    "classification_agrees": true,
+    "escape_time_difference_RF": 8.601546142017469e-10
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "trajectory_records_exist": true,
+    "checkpoint_job_ids_unique": true,
+    "friction_energy_nonnegative": true,
+    "friction_dissipation_flag": true,
+    "energy_balance_relative_below_1e-8": true,
+    "retained_cases_right_censored": true,
+    "escaped_cases_have_first_passage": true,
+    "drag_only_velocity_matches_exponential": true,
+    "drag_only_dissipation_nonnegative": true,
+    "drag_only_mechanical_energy_balance": true,
+    "h35_gamma0_v8_classifications_agree": true,
+    "full_spectrum_sum_matches_minus_2gamma": "not_run",
+    "csv_export_exists": true,
+    "figures_exports_complete": true
+  },
+  "details": {
+    "drag_only": {
+      "v_numeric": 0.002820433242526638,
+      "v_exact": 0.0028204332425134505,
+      "dissipated_J": 3.2043532613956995e-19,
+      "expected_J": 3.2043532613953355e-19
+    },
+    "h35_gamma0_pairs": {
+      "n": 4,
+      "max_escape_time_delta_RF": 3.084892341576051e-09
+    }
+  },
+  "completed_trajectory_count": 30,
+  "expected_primary_job_count": 34,
+  "coverage_complete": false,
+  "status": "PASS"
+}

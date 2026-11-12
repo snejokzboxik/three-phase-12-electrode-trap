@@ -1,0 +1,30 @@
+{
+  "style": "compact white multipanel; Arial sans-serif; restrained teal/blue/orange palette; panel tags; no data interpolation",
+  "exports": "PDF, SVG, 600-dpi PNG",
+  "figures": [
+    {
+      "svg": "V9_Fig1_escape_time_vs_friction_double_column.svg",
+      "pdf": "V9_Fig1_escape_time_vs_friction_double_column.pdf",
+      "png": "V9_Fig1_escape_time_vs_friction_double_column.png",
+      "width_mm": 178,
+      "height_mm": 112,
+      "png_dpi": 600
+    },
+    {
+      "svg": "V9_Fig2_deep_launch_dynamics_double_column.svg",
+      "pdf": "V9_Fig2_deep_launch_dynamics_double_column.pdf",
+      "png": "V9_Fig2_deep_launch_dynamics_double_column.png",
+      "width_mm": 178,
+      "height_mm": 146,
+      "png_dpi": 600
+    },
+    {
+      "svg": "V9_Fig3_stroboscopic_phase_space_double_column.svg",
+      "pdf": "V9_Fig3_stroboscopic_phase_space_double_column.pdf",
+      "png": "V9_Fig3_stroboscopic_phase_space_double_column.png",
+      "width_mm": 178,
+      "height_mm": 102,
+      "png_dpi": 600
+    }
+  ]
+}

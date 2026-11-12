@@ -1,0 +1,13 @@
+job_id,launch_label,representation_v7,model,azimuth_deg,direction,v6_status,v7_status,status_agrees,v6_escape_time_RF,v7_escape_time_RF,delta_escape_time_v7_minus_v6_RF,v6_source
+98589a8ba88e917db99f,deep_az0_dplus,pure_m4,rotating,0.0,1,retained,retained,True,,,,new V6 integration
+beb9515b503c90f7eed0,deep_az0_dplus,pure_m4,standing,0.0,1,retained,retained,True,,,,new V6 integration
+789b68ca505293941a0d,deep_az0_dplus,full_N48,rotating,0.0,1,retained,retained,True,,,,new V6 integration
+639d250c2c24a544788a,deep_az0_dplus,full_N48,standing,0.0,1,retained,retained,True,,,,new V6 integration
+ab5f1a527fd96c0b479f,early_az22p5_dplus,pure_m4,rotating,22.5,1,retained,retained,True,,,,new V6 integration
+62ed1d1d9e62eb98bcaf,early_az22p5_dplus,pure_m4,standing,22.5,1,retained,retained,True,,,,new V6 integration
+306bef11a15ea507fdc4,early_az22p5_dplus,full_N48,standing,22.5,1,escaped,escaped,True,185.4912740732636,185.49127407330687,4.32578417530749e-11,new V6 integration
+5a62d477fdf7e929a9f5,early_az22p5_dplus,full_N48,rotating,22.5,1,retained,retained,True,,,,new V6 integration
+74362a73725968b02d83,early_az22p5_dplus,full_N48,standing,22.5,1,escaped,escaped,True,185.4912740732636,185.49127407332273,5.911715561524034e-11,new V6 integration
+27bc1e21bc04bef7bafd,early_az22p5_dplus,full_N48,rotating,22.5,1,retained,retained,True,,,,new V6 integration
+d41a9a353afa5ef05e42,early_az22p5_dplus,full_N48,standing,22.5,1,escaped,escaped,True,185.4912740732636,185.4931674673796,0.0018933941159957612,new V6 integration
+272ac540bec214027d1f,early_az22p5_dplus,full_N48,rotating,22.5,1,retained,retained,True,,,,new V6 integration

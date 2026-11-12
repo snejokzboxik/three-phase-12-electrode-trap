@@ -1,0 +1,82 @@
+{
+  "job": {
+    "stage": "targeted_high_order",
+    "launch_label": "boundary_dplus_escaped",
+    "representation": "full_N48_minus_m20",
+    "retained_harmonic_orders": "minus20",
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 10.283203125,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "25bf648c1b5500bcfcc6",
+    "field_resolution": "h35",
+    "validation_protocol": "targeted high-order ablation at previously escaped boundary starts"
+  },
+  "job_id": "25bf648c1b5500bcfcc6",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.565989009352166,
+  "rms_radius_mm": 4.379104740013202,
+  "initial_state": [
+    0.000983937413449219,
+    0.0001785137709389975,
+    -11.090020985425046,
+    61.12630138335677
+  ],
+  "verified_initial_vtheta_m_s": 62.12417634275831,
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 624005,
+  "wall_s": 41.40895630000159,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/25bf648c1b5500bcfcc6.npz",
+  "trace_samples": 8001,
+  "harmonic_orders": [
+    4,
+    8,
+    16,
+    28,
+    32,
+    40,
+    44
+  ],
+  "energy_work_closure_error_eV": -8.875178370004733e-12,
+  "hamiltonian_work_closure_error_eV": 9.002582013195592e-11,
+  "kinetic_work_by_mode_final_eV": {
+    "4": 0.20559724634490328,
+    "8": 0.27489520288185837,
+    "16": -0.003002263883235326,
+    "28": -8.897675461567711e-05,
+    "32": 6.384369839004688e-06,
+    "40": 2.589125541992971e-07,
+    "44": -4.07441339048199e-09
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": 0.20559724628706122,
+    "8": 0.2748952028381432,
+    "16": -0.003002263883205029,
+    "28": -8.897675461430419e-05,
+    "32": 6.3843698389717665e-06,
+    "40": 2.589125541922737e-07,
+    "44": -4.07441339038409e-09
+  }
+}

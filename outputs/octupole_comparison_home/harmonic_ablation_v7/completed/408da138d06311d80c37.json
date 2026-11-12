@@ -1,0 +1,74 @@
+{
+  "job": {
+    "stage": "targeted_high_order",
+    "launch_label": "boundary_dminus_escaped",
+    "representation": "m4_m8_m20",
+    "retained_harmonic_orders": [
+      4,
+      8,
+      20
+    ],
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 9.6240234375,
+    "phase_deg": 0.0,
+    "direction": -1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "408da138d06311d80c37",
+    "field_resolution": "h35",
+    "validation_protocol": "targeted high-order ablation at previously escaped boundary starts"
+  },
+  "job_id": "408da138d06311d80c37",
+  "status": "escaped",
+  "escape_time_RF": 828.574167843951,
+  "right_censored_at_RF": null,
+  "max_radius_mm": 8.00000000000282,
+  "rms_radius_mm": 4.593682581985336,
+  "initial_state": [
+    0.0009859260262543212,
+    0.00016718214843207293,
+    10.386053270555294,
+    -61.24984231593841
+  ],
+  "verified_initial_vtheta_m_s": -62.12417634275832,
+  "solver_status": "A termination event occurred.",
+  "nfev": 517040,
+  "wall_s": 29.612186800019117,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/408da138d06311d80c37.npz",
+  "trace_samples": 6630,
+  "harmonic_orders": [
+    4,
+    8,
+    20
+  ],
+  "energy_work_closure_error_eV": -6.401990049198503e-12,
+  "hamiltonian_work_closure_error_eV": 1.5868550917730317e-10,
+  "kinetic_work_by_mode_final_eV": {
+    "4": 1.2306259861754345,
+    "8": 1.6142541429208277,
+    "20": -0.16281980317353517
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": 80.785920145968,
+    "8": -18.544462618281177,
+    "20": -0.4894361343866942
+  }
+}

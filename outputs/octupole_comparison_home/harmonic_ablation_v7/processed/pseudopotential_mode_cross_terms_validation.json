@@ -1,0 +1,22 @@
+{
+  "radius_mm": 8.0,
+  "angular_samples": 1440,
+  "max_abs_total_reconstruction_error_eV": 1.7763568394002505e-14,
+  "max_relative_single_mode_self_term_mismatch_rotating_vs_standing": 3.8908917774297736e-07,
+  "single_mode_self_term_relative_mismatches": {
+    "m4_m8_m4": 1.3967526770968278e-14,
+    "m4_m8_m8": 4.3079700554304616e-13,
+    "full_N48_m4": 1.3967526770968278e-14,
+    "full_N48_m8": 4.3079700554304616e-13,
+    "full_N48_m16": 5.2843912798288226e-11,
+    "full_N48_m20": 2.2327526508889893e-11,
+    "full_N48_m28": 7.330881777661075e-10,
+    "full_N48_m32": 6.790150436938565e-10,
+    "full_N48_m40": 6.571519621966103e-09,
+    "full_N48_m44": 3.8908917774297736e-07
+  },
+  "full_rotating_m4_m8_cross_term_abs_max_eV": 1.6373743202473995e-12,
+  "full_standing_m4_m8_cross_term_min_eV": -7.374630204655295,
+  "full_standing_m4_m8_cross_term_max_eV": 7.374630204655291,
+  "interpretation": "Pseudopotential decomposition into mode self terms and pairwise quadrature dot products; static diagnostic, not a conserved-energy approximation proof."
+}

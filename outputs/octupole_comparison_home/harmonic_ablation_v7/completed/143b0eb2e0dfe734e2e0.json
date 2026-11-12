@@ -1,0 +1,72 @@
+{
+  "job": {
+    "stage": "boundary",
+    "launch_label": "boundary_dplus_retained",
+    "representation": "m4_m8_m16",
+    "retained_harmonic_orders": [
+      4,
+      8,
+      16
+    ],
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 10.26123046875,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "143b0eb2e0dfe734e2e0"
+  },
+  "job_id": "143b0eb2e0dfe734e2e0",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.566334935949348,
+  "rms_radius_mm": 4.377729181535927,
+  "initial_state": [
+    0.000984005800268158,
+    0.00017813642254918633,
+    -11.066578527513759,
+    61.13054985815605
+  ],
+  "verified_initial_vtheta_m_s": 62.12417634275831,
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 624005,
+  "wall_s": 33.03151950001484,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/143b0eb2e0dfe734e2e0.npz",
+  "trace_samples": 8001,
+  "harmonic_orders": [
+    4,
+    8,
+    16
+  ],
+  "energy_work_closure_error_eV": -8.868628054159444e-12,
+  "hamiltonian_work_closure_error_eV": 9.458761551783823e-11,
+  "kinetic_work_by_mode_final_eV": {
+    "4": 0.15216855315442424,
+    "8": 0.2641783561263371,
+    "16": -0.002762676836175222
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": 0.15216855309182198,
+    "8": 0.26417835608292145,
+    "16": -0.0027626768361430627
+  }
+}

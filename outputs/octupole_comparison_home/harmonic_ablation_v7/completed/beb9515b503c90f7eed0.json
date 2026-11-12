@@ -1,0 +1,64 @@
+{
+  "job": {
+    "stage": "pilot",
+    "launch_label": "deep_az0_dplus",
+    "representation": "pure_m4",
+    "retained_harmonic_orders": [
+      4
+    ],
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 0.0,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "beb9515b503c90f7eed0"
+  },
+  "job_id": "beb9515b503c90f7eed0",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.8515863380633455,
+  "rms_radius_mm": 4.470878381965755,
+  "initial_state": [
+    0.001,
+    0.0,
+    0.0,
+    62.12417634275831
+  ],
+  "verified_initial_vtheta_m_s": 62.12417634275831,
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 624005,
+  "wall_s": 26.91236040001968,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/beb9515b503c90f7eed0.npz",
+  "trace_samples": 8001,
+  "harmonic_orders": [
+    4
+  ],
+  "energy_work_closure_error_eV": -9.15090225817039e-12,
+  "hamiltonian_work_closure_error_eV": -1.356947887387605e-10,
+  "kinetic_work_by_mode_final_eV": {
+    "4": -1.4611790490628855
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": -1.4611790489132632
+  }
+}

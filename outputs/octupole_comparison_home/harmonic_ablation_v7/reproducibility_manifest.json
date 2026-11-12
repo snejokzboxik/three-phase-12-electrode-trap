@@ -1,0 +1,1236 @@
+{
+  "study": "V7 causal harmonic ablation and pseudopotential cross-term analysis",
+  "git_head_before_v7_commit": "60099ccd68654c517ecf662ffee7516bc3c85cd4",
+  "python": "3.12.10",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "Pillow": "12.2.0",
+    "reportlab": "4.5.1"
+  },
+  "trajectory_count": 95,
+  "trajectory_trace_count": 95,
+  "file_count": 244,
+  "files": [
+    {
+      "path": "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\diagnostic_N48.json",
+      "bytes": 6229,
+      "sha256": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c"
+    },
+    {
+      "path": "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\diagnostic_N48.json",
+      "bytes": 6210,
+      "sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\chaos_escape_v6\\processed\\trajectory_results_v6.csv",
+      "bytes": 249112,
+      "sha256": "47f6a23ed484f8bfd9efa67f8a4954634c2100d9d7e6d0fe42890e385ef50911"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\confinement_maps_v4\\run_v4.py",
+      "bytes": 35472,
+      "sha256": "734a68e395bac323be83ccf6db82936f4f2f5877932eb031c76cbe0d721682ac"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\analyze_pseudopotential_cross_terms.py",
+      "bytes": 7620,
+      "sha256": "cbe46c7603efa02e9d8510f8898e1cca9376843baa76468488330169d379d110"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\analyze_v7.py",
+      "bytes": 26683,
+      "sha256": "5d87a3d0b234207f41b62c971b52463e054ba2c50b6480c5cd9987458e278c29"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\build_reproducibility_manifest.py",
+      "bytes": 2910,
+      "sha256": "b25b6a3a30b14798e9405a73d1a4d89d4680cc55f8c01a0f3a28a81df6668040"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\060d08c6f042d0cd43c5.json",
+      "bytes": 2485,
+      "sha256": "d797574acfa2f28ae195cf19639142c032025a9a6b3cf614419a286e41a988d2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\0c0d0ea6bd194459462c.json",
+      "bytes": 2008,
+      "sha256": "039df88c0080ece1e3e0319150ea5966d84846fbbe5b25362e42ef8058a142cc"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\0dd2fb4c8a26667e0a9f.json",
+      "bytes": 2480,
+      "sha256": "9c5983629dd2eacdd3d0f4b5874bfee3d068e341bb62558bc74a510bb38a5afa"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\0f61913d9829f74c2da7.json",
+      "bytes": 2423,
+      "sha256": "c5236af4fed97cc9a1b46061c1c3853dddd0aec60a5cc3b04ef62e7e17df218e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\0fd1065cb2a6da4ed573.json",
+      "bytes": 2285,
+      "sha256": "b67df07f3904be1680ca60890aa798809b421735509e1c13acc76dd66e5ceb43"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\1145feb11c2680bfc7f0.json",
+      "bytes": 1822,
+      "sha256": "1b9037e4938f6df258d3f3ddaf8efa7f100e66aec9568753aad29c89cc92211a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\143b0eb2e0dfe734e2e0.json",
+      "bytes": 2006,
+      "sha256": "3c0c2dc3823405586c7e01db2e8296aff8aec019b43e96861ab1bd2baa8477d8"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\15bd19066fc7f5b6cb4f.json",
+      "bytes": 1913,
+      "sha256": "0f0e9b858293ac7e30081bd5a308eda699583a0aa7a9eefd46b2cd8b1737ef08"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\169f16260198bcb6c2dd.json",
+      "bytes": 2008,
+      "sha256": "49eec97a48649d74a568b560edec1d59d468262c455fc13f87de41988f356661"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\191d4442cd9a7ff3db79.json",
+      "bytes": 1833,
+      "sha256": "23628f6b086409d62354fc1ba679524079189444c110b4b4bd768e9054d93dc1"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\1bf84c37161f0e6d29e0.json",
+      "bytes": 2416,
+      "sha256": "b84d435255c87c0439e0fefd55c7e899dafe47877ae6206cdeff47cadfac198e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\1c1f633098c9d706c09b.json",
+      "bytes": 2219,
+      "sha256": "a03d40306e20401ff37426e1a9c9ecef26de59b2cf4164a6b66fa978159a73f5"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\1f108b7d10a00e4e78d3.json",
+      "bytes": 2303,
+      "sha256": "55729ad5789806119820f7c87042001b07d35d5fff48b875e2096911630d82e3"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\248f51d3780381339e4b.json",
+      "bytes": 2319,
+      "sha256": "b30c8e88f77ae9ab6b2338c9d7694b38db847223ea0f9340c52990f72063c945"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\25bf648c1b5500bcfcc6.json",
+      "bytes": 2433,
+      "sha256": "d0568f7e35d7f13c930f7230a1a2422f058f606c033f0d12afb79f70378e3065"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\272ac540bec214027d1f.json",
+      "bytes": 2459,
+      "sha256": "91d1cfb6486faf96aed6383999d0d381aeef308c3bf227b945c5e0bc308dfac4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\273d7169d5f9250b756b.json",
+      "bytes": 1918,
+      "sha256": "7013f111d19d04f18ac6aaf7910251883f8efdc5f090590f1683d49f7cbfec62"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\27bc1e21bc04bef7bafd.json",
+      "bytes": 2471,
+      "sha256": "9d0925c9154aea06393f9ec705e71185f6865f5ce9f85914b7af324a0628d45d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\2bba26d7d31d0e27c6d9.json",
+      "bytes": 1841,
+      "sha256": "30e1e3d444e2d9a4c272a181f722389f8b20456eb5d2358d1199bf93dcb7829b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\306bef11a15ea507fdc4.json",
+      "bytes": 2303,
+      "sha256": "c09778395fcdb0a2aee163037b8a83d8cde190189790044091c4298f9e91abf3"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\31dc6cc1cf8605d5e68f.json",
+      "bytes": 1905,
+      "sha256": "0ebe99e9e5a55cb344216246ba256bcc86a257d14829c3319778af64686d2115"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\37b59e39e98086b94e73.json",
+      "bytes": 2421,
+      "sha256": "d2c9a6659adcdcc98cebd4886417755fe93339c423c7582574ad679128f2d239"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\39325ef3db4721d83bb8.json",
+      "bytes": 2287,
+      "sha256": "458d9645162a84640eebb8475033dbe68d0e8bd88cec149cb03436d31e26981c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\3d00d6ed3b13ce361947.json",
+      "bytes": 2422,
+      "sha256": "11c95db5db4a3bcc6b5b85bb8a93d2bd0fccbb6ba1457ccb5b2c0c1260ca2506"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\3f85d1299c644bb4aa16.json",
+      "bytes": 2305,
+      "sha256": "d1ed66035903def21444ab7ec141da1ff1e0b6423a379ed18f60e8c2a802722b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\408da138d06311d80c37.json",
+      "bytes": 2112,
+      "sha256": "7f228153ccda68a92f56707c572b0d59bf6acb27a65775d2dc14127f34430429"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\427486dd3a258bb86869.json",
+      "bytes": 1824,
+      "sha256": "2be63baf61b7f94523e91a959bcd44463c6c7e8a47ecd0dfa7a50fdcfaa27cf8"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\468926c63ae4a37c4b8a.json",
+      "bytes": 1994,
+      "sha256": "4920cf822d863046e62364bd6b02343c727a29e4491be3c199ffd52419d15dc7"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\51aa875dc9e6c437c72b.json",
+      "bytes": 2470,
+      "sha256": "8fe5ac9c9b9079483f98201a38983a95b0f3b5a5fe1b2678abb4a51faaa66f75"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\5a62d477fdf7e929a9f5.json",
+      "bytes": 2329,
+      "sha256": "21c725cb50e7d691ce24a473942a8bf603a95e747f24712d5db508df950ae2b8"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\5b892fd95aa167447d1d.json",
+      "bytes": 2450,
+      "sha256": "4754fbbb18eb5c9e70655ab54253311d94e0dbbb4457d12d3beb77671da02a4c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\62ed1d1d9e62eb98bcaf.json",
+      "bytes": 1818,
+      "sha256": "22c7a2bc56bc3ed4f5c1558bbe636d09f0d3b1ed39ea803d145886eaacd214a4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\639d250c2c24a544788a.json",
+      "bytes": 2293,
+      "sha256": "d1ad5a0ca9f28b2f42ac32628d8aa1afe7ce059c42382291d59d264b95bbc1bf"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\63c080ab92777110b300.json",
+      "bytes": 2238,
+      "sha256": "473819e59bf4bddd7f51254dd01ce9518fee890309b53e81d269a59f16a0be61"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\67083d7100e994a64068.json",
+      "bytes": 1844,
+      "sha256": "c5021ec52514a160ff78ea42ace62f354151e60ce4d024bf03994e1b5f13f986"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\69544f6a322112187c35.json",
+      "bytes": 1838,
+      "sha256": "7d16b3faf4a01071e6fcbf1f9494ea0069d38d6c7ab67856523c22f2c5f362dc"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\69a5879675b9e638262d.json",
+      "bytes": 2458,
+      "sha256": "ddb1636cb7bc811e9d991075a745a174ea39bd457f06599c115bb53a38b70d48"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\69eb064ec852bea2a6eb.json",
+      "bytes": 1995,
+      "sha256": "4403190945fe1796af54eb87de43e77366220b0fd921ff41b949ceb33eecf194"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\74362a73725968b02d83.json",
+      "bytes": 2435,
+      "sha256": "fda3b6dfd104d147fd0f70e16ac59770bc230f2079ad9ac66c23da79a6470623"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\789b68ca505293941a0d.json",
+      "bytes": 2271,
+      "sha256": "6d16660607e3c7101a13f706d24f260c109c3a247891fe4f4a08d9d6bc89516f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\78a86e006ca4decbe62f.json",
+      "bytes": 2289,
+      "sha256": "848e85718b968b30263d090f5c802da6154fd82447f80250899a654047650607"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\7906a705b25459fe2e2b.json",
+      "bytes": 2461,
+      "sha256": "52c150b985313b07bebe773d414aebf83e56c9001d99bea238aac1776741982e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\7950aaa879aafecb8090.json",
+      "bytes": 1824,
+      "sha256": "df671199b6449ea30039b18966836435cdfae3277ff2f0ea9cae56cc1d2cc034"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\7a9b0748f44a344d5d65.json",
+      "bytes": 2199,
+      "sha256": "8ec018a2729a463d0d328e5a916bb849c3f937107ecc49fcf0a9694b58040a9a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\7bda63772fcb709606d4.json",
+      "bytes": 2352,
+      "sha256": "6007a15d9a6106b81936fc3a94d29d406d0691e631b276efed00e77614e325eb"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\7ffff626142a9ae7d44a.json",
+      "bytes": 1834,
+      "sha256": "4dec9d742340941ce759996ba1200a4f611237df208211888f414e2d5df8b633"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\840640a64792502ea76c.json",
+      "bytes": 2311,
+      "sha256": "e52ef478503b7eb6d139ffa921fef208eecd4f998cd6304638d875ad566e93b5"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\86a8b95f50763eb99567.json",
+      "bytes": 2462,
+      "sha256": "f96cb9c57c8002cb525b3515feaf9636bd6c9616af676af6206621e6463b0bd5"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\877a5cde61acfd1bb351.json",
+      "bytes": 2425,
+      "sha256": "a24775473aeed6f790657bedf9c8956bbcdb694cb599a80454522e4f2131b307"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\8b5785e129c54ec2687d.json",
+      "bytes": 2304,
+      "sha256": "aa5ad5b6c5aed7c40cac58c71909884feb3dbc7b98ce5ffeea429b3e9816c2da"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\91ea6309ee907eb9cd2b.json",
+      "bytes": 2420,
+      "sha256": "4d8737f7b45ffe0c7490dcbe0e652b2b51c1938f97b96632dad487351d4bda5f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\98589a8ba88e917db99f.json",
+      "bytes": 1749,
+      "sha256": "27c53dc80ac1a6aaafc37b26ace3cfe4458554abab820fc207dbfef0dd8661b6"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\9c9ed7b007dbbcd21d81.json",
+      "bytes": 2294,
+      "sha256": "f51d29f7b1154b4165cf9cbefe88b9ea98d6a57a26fe0ba15093b45634e1bf3f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\a383471f1be0597d430d.json",
+      "bytes": 2446,
+      "sha256": "8ca0b21f2efe329f1614b9731dfd4b5f7c6f6d1df562524cde578d0724d922ed"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\a3f058b200aa51b2f4d1.json",
+      "bytes": 2145,
+      "sha256": "1928362cfa669fc17f5ae4b763167d4202ecbab4f03ae175385f7079fc8357d0"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\a62470b88bb8febf1e0b.json",
+      "bytes": 2438,
+      "sha256": "1417957297f1598ad1be63862503fffe52ebaaeab8b87e717554cafa6a28abc7"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\a6698cc8241edd53820b.json",
+      "bytes": 1937,
+      "sha256": "55c45c03d9dce5100c4823f73e07a429888e79142512781d06b4371eb347bcb5"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\a6e8679331ce045d5d6e.json",
+      "bytes": 2432,
+      "sha256": "5c65d7d7f283e04116eb4e132c05a63e29275664060c2b86ef0d42a882c13b35"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\a7d14f9468b23c4ad668.json",
+      "bytes": 2350,
+      "sha256": "df7fda900a87cf7aa7270688d26fa463351dad118cb78636d06a5ceba4621683"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\ab5f1a527fd96c0b479f.json",
+      "bytes": 1806,
+      "sha256": "60010b8c845f890174c7e655822d5d003a4ef159dadf5bcf2e8bcd66d2b3d93b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\adcb7d4e0fbeec754495.json",
+      "bytes": 2001,
+      "sha256": "9dbf81f8fab660d017ea9040abd9e9ede488aec22d7f77eaecb0dcd63dd8dd39"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\b75331e6ad70d30cbf7e.json",
+      "bytes": 1990,
+      "sha256": "e440fcdbf2f73f54aff98a0b19473602e9dd9b7d373b76feda5a5b8d7c04a97c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\b7a6ed9977e7b684ea8d.json",
+      "bytes": 2352,
+      "sha256": "deb3a0fb70c1ec99d34a6270560034991cdaba500b8e56054d94002aa3096e70"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\bb5aa26fd8258e7b9958.json",
+      "bytes": 1902,
+      "sha256": "ce5259883aef990febdebdbc9a19b8dfe7d51a9972278db619af8c4a8a53c034"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\bc68329e86a2ab48f4a5.json",
+      "bytes": 1899,
+      "sha256": "adf91cf0b40280adbd1440047b61c74bd877eeeeba6e509b56f636c44333b382"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\bcaac8e122af3172ac43.json",
+      "bytes": 2350,
+      "sha256": "e863226f10eedea88c1c582f4ad3f0164554e5424a214d91ceba718778cb1250"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\beb9515b503c90f7eed0.json",
+      "bytes": 1764,
+      "sha256": "fad577f573e709afb25abd5e7dd3e3a1977d33357e30cb009207e3df72db482c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\bff68f3f0f8429ea0541.json",
+      "bytes": 2311,
+      "sha256": "258122c0c4cedb792ff61860372a1af2c41dc6d7c79a9b0d3df7a5c9da809ad0"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\c670d213cf7eaa8a755f.json",
+      "bytes": 1911,
+      "sha256": "54d58ca7b66d37d4f37b9ae7e5124fed4a477c9b716a53bdf35a72b28ef0063f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\c8e0ca76cdb5f4d23048.json",
+      "bytes": 1866,
+      "sha256": "e85df6e9ad3bfc8ddd7cb083937cb965f661c6a645a81bd634ffb85ad2cefc70"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\d0854ad940b873383493.json",
+      "bytes": 2291,
+      "sha256": "b683d6d5b24de36a2c7e7120484acfa3ebc6e79765dad892490de9aa7c8131e1"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\d41a9a353afa5ef05e42.json",
+      "bytes": 2419,
+      "sha256": "b5005cdeb50881584e0bf2587fc8909798da20cc1b102a2df1b96ea380331f89"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\d71581f64366d7ab48b4.json",
+      "bytes": 2432,
+      "sha256": "48b7da589b8a552bd81ecea0298e51d09a6d951b55ae291daef028905211044a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\d75bd97191d36f266947.json",
+      "bytes": 2465,
+      "sha256": "99a6ebf57c31bfe046cca2a771a8cf3d2ca775adc153dbf1b801f73c67b33dd1"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\d9000c206a24ed0638ce.json",
+      "bytes": 2237,
+      "sha256": "39d8cc008e04dd3e3c810f15d3acf32eb2b0ca2cc899f956efe5d9084db3a197"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\d947789327f2b80dce9c.json",
+      "bytes": 1993,
+      "sha256": "62291ab8251d7c3e21d5c92e47a20603a48eb9a28b69de0aa028d05d82f4a0b2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\daccca4c62262849d6db.json",
+      "bytes": 1913,
+      "sha256": "eb1fb93a5143a8d2611657bc2e492b4f9413dda3ea7706e34e76122f4ee2c015"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\dc1c938064137fc9b457.json",
+      "bytes": 2009,
+      "sha256": "67f9573cbae8cbc663983e75a0a250ed57d8d7d98640a823e0c8758071cd2712"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\dd6175e4bf9956ed97c6.json",
+      "bytes": 1918,
+      "sha256": "39b77f811947bec1ce51fc36e183f752ed342447fd05734a2c95b6371cbb90c2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\de6a22dd6812eb173601.json",
+      "bytes": 2442,
+      "sha256": "aa72e451d213f5f248235e71336971ebf4aea374702a7127c959e99ce9ba8704"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\e22484e5bfd3774d77b8.json",
+      "bytes": 1940,
+      "sha256": "68d11432b37b855e2d6286441bc9700b77505a6014970b4d6b80747a8a75ecf3"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\e4ed77705a51238e4691.json",
+      "bytes": 1827,
+      "sha256": "7ba7fc64b1b1bfb71a68c379f6ad75fd91e6602e39c6909cdf430f07cf64a89d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\e50ca07d46c0c0280018.json",
+      "bytes": 2268,
+      "sha256": "e80c7f456b3c50db2be81156f6aac376fbbaca1a9d7deca28fd68674e7d46d51"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\e6e35f7545b2855511a3.json",
+      "bytes": 2473,
+      "sha256": "02da6435098f4817d4ecf54a9ccab224c845e1f5676e66014c28f227dfd77df3"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\e9244dff8c5d795be8d1.json",
+      "bytes": 2346,
+      "sha256": "cd7cbbefcbe49a4c526cf3c080311aa82528f1c25ee2412ffa94dae5c1607b70"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\ed8793d984d2456a3868.json",
+      "bytes": 2412,
+      "sha256": "5d2eeea99f080f485e62a05d34ce8bcfc9c9643eafb85b247d54560d389c6cdf"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\ee496e20a5c03b951b34.json",
+      "bytes": 2369,
+      "sha256": "b6de8dc1b1648ed41777ae0eff8092f1580bcba75995a96f6d25ee6691986d12"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\ef13f5870d97a20b7c1e.json",
+      "bytes": 2416,
+      "sha256": "22110bfedb6bec9add28e47ead6f942b8c4e049593350ac6453a9fcf8cd41903"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\f26ad6468c41e2583424.json",
+      "bytes": 2449,
+      "sha256": "901e918f43cf6bae0323863d8790510c094759131a26751d3a3d0c78cb9e4662"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\f42daaf2f0a022929c6c.json",
+      "bytes": 1970,
+      "sha256": "4265e4944dfd671784d9779b950241d4cae659f715320c1f321cb83605a2f6d2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\f6a12390313e53c24401.json",
+      "bytes": 2422,
+      "sha256": "6e45b56917aeb6236499dda6acb1f665b396cd1c4121f0a8446f963a4aeae493"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\fb1c9f98d2051489b392.json",
+      "bytes": 2448,
+      "sha256": "23c93f4f232ba7a10f792f36c1d02a5c839099e0afe2f3f4d6a43f6511833b2c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\fd1fd55af6d39bfb5f4a.json",
+      "bytes": 1881,
+      "sha256": "9d9be6602f4ce32c61606304eb90449fded80d7b6999fb8113944dd51c946cc7"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\fe26b656ea14a4b9c9ca.json",
+      "bytes": 1824,
+      "sha256": "d7f0debe98525bf766b5c156d7a38d7a5d1b660e6495a822132cc97a80cc38da"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\completed\\fe362ca9360aaacbcf17.json",
+      "bytes": 1902,
+      "sha256": "18c64d6c8df65ea3899c545712afdd2118d42a6ba72aebb12a26f17b902f7f85"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\config_v7.json",
+      "bytes": 9461,
+      "sha256": "69f8a90de8e7496b5b405304ff191cc9a357652199ac601e7eeea8f71ff9480e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig1_harmonic_structure_and_effective_potential_double_column.pdf",
+      "bytes": 79523,
+      "sha256": "7f06d41f382a5bf193473ca25cb2e4ea7ec36bc939acf7fa33ad313f514ddddb"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig1_harmonic_structure_and_effective_potential_double_column.png",
+      "bytes": 307539,
+      "sha256": "e4ac1379dd99fa0c4dbca4953648bee5d2125a7c819ebe28fbc5a6a9b881f0dc"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig1_harmonic_structure_and_effective_potential_double_column.svg",
+      "bytes": 75545,
+      "sha256": "1fd4c49c7bcdd7efa373dca2b7fb9cf5f0e27dcfbee83d904bedd834de976e80"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig2_matched_trajectory_energy_and_work_double_column.pdf",
+      "bytes": 263455,
+      "sha256": "16179c4950907c1e9031a367efca1a2e17957e032f7dac2cc2a38d734fdbe527"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig2_matched_trajectory_energy_and_work_double_column.png",
+      "bytes": 432765,
+      "sha256": "1356b91ee7592f5cb0c399deb21729399f317f849a73e1fd52b18bbef826b769"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig2_matched_trajectory_energy_and_work_double_column.svg",
+      "bytes": 395942,
+      "sha256": "ddb30c0e944896014c00c94bd136f9d4240bc73a7cdbf7fa4478f72c0a061a4e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig3_boundary_sensitivity_and_harmonic_ablation_double_column.pdf",
+      "bytes": 120065,
+      "sha256": "01098dd7cb7229a98ce31c01675617efbbc9f54e2d15ee6eefb590334e58755e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig3_boundary_sensitivity_and_harmonic_ablation_double_column.png",
+      "bytes": 340897,
+      "sha256": "6f63394e0588a1eb4dd684a0858eda7eb15930d911ad6d02511746fb87ebdfbb"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig3_boundary_sensitivity_and_harmonic_ablation_double_column.svg",
+      "bytes": 129167,
+      "sha256": "ba0bc9b0f1f5930daffd1c97c3eceba5f8c2a78793bf1e3c6bdc97abfa4da6fe"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig4_stroboscopic_radial_phase_space_single_column.pdf",
+      "bytes": 99593,
+      "sha256": "07eeb6fb83d9a80cc73da01394440133087218168bdcb0f52157aa35e6d734af"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig4_stroboscopic_radial_phase_space_single_column.png",
+      "bytes": 151478,
+      "sha256": "1bc0bb9081bcaefb6cf425c25d52e9afc309ff1c8f837b4ca4e91eb2fffe3f4a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig4_stroboscopic_radial_phase_space_single_column.svg",
+      "bytes": 53160,
+      "sha256": "a52af44d3a0098129bb14fa9733c33fde698e9c5953c6ce93b63765dca665090"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig5_pseudopotential_cross_term_mechanism_double_column.pdf",
+      "bytes": 85635,
+      "sha256": "7a08a79849f1c05e8a34527813a67b38fac7cc7d120364a1bac14ea78a0862e2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig5_pseudopotential_cross_term_mechanism_double_column.png",
+      "bytes": 249967,
+      "sha256": "d17b3310c3481a9a0e781c75e555aab8a7f09334a44e5cf8f281dc935947770e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\Fig5_pseudopotential_cross_term_mechanism_double_column.svg",
+      "bytes": 101394,
+      "sha256": "76c028ef34cbca12dc5f9146bf5da9e6660ed2ec62f63645c5806817c51f8ed5"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\figures\\figure_manifest.json",
+      "bytes": 2023,
+      "sha256": "b729e7a6181e69d09f04b43fc9b8832c347b95831cc418e4a0f4436e93f0966d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\integration_deadline.json",
+      "bytes": 239,
+      "sha256": "120a494883c334d08f11c72051f9072ee272f16c4cd43f4e851aa8c617bb35a4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\ablation_trajectory_results.csv",
+      "bytes": 59285,
+      "sha256": "66b6c427aef6405d41fa7b0ddddb0f338885050aa30d241c48432801a8204503"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\adiabaticity_diagnostic.csv",
+      "bytes": 15819,
+      "sha256": "121a526397a2ce14f0f9f9ed6e8bd2c065753de88c223b83ef6c1e6b1e114e5e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\analysis_summary_v7.json",
+      "bytes": 1188,
+      "sha256": "4ff1e5e44c27ef00619e5b77305ab3e65d6f03c3e8b6da3a6b3fd72c6e31f02d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\effective_pseudopotential_angular_samples.csv",
+      "bytes": 2186752,
+      "sha256": "5d5e650d03b7e75ebab25e44184dc28af561d510df4c4250ceef712af4d94fcf"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\effective_pseudopotential_curves.npz",
+      "bytes": 1103950,
+      "sha256": "195601e3def72266040bd5765b548122d7f9084aec7b7920d7914555f53e01ce"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\effective_pseudopotential_radial_minima.csv",
+      "bytes": 412224,
+      "sha256": "eb62abcd96bda2b2072c576ed64959003d04b4a8cc479924205d6d103452351a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\effective_pseudopotential_summary.csv",
+      "bytes": 41251,
+      "sha256": "38c93fa420ef70011a167bd3c13838899c3155f39e7a12480259c3cbf3ccf090"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\h35_h50_pseudopotential_sensitivity.csv",
+      "bytes": 19102,
+      "sha256": "05fb7daf5ebe3ea9ca27e68535b00f66263fb336e6d433775e59554a1fa356e9"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\h35_h50_trajectory_comparison.csv",
+      "bytes": 911,
+      "sha256": "e3c01e8f24b08987fed9e8ad56dc78c5e4053e9c0ada0c4f402dcae323cb254c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\harmonic_field_validation.json",
+      "bytes": 5752,
+      "sha256": "bb7dfa5fbd66d7838636db47df5d7a1c2c15ff7fbbf1df66073a3ef2c3d5179f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\harmonic_work_by_trajectory.csv",
+      "bytes": 61702,
+      "sha256": "3371ff72149ad22ecc6e7a6ed3119a81a40bec0b45be5b6708ad98d38b3f6aaf"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\integral_diagnostics_v7.csv",
+      "bytes": 1106,
+      "sha256": "54b055cd2b8fc0310139d75f5e42e9a0a02e3dbd68f3a86d5145f75b3b273c9a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\poincare_sections.csv",
+      "bytes": 23671640,
+      "sha256": "26bf1354852a62bba5fb4e146425e3aa71e2631693532946db8242f203709a35"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\pseudopotential_interference_angular.csv",
+      "bytes": 1103866,
+      "sha256": "0f26594383b50533c7d901ba06274c397324fa79614524b32fefb8fbfd48bf94"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\pseudopotential_mode_cross_terms.csv",
+      "bytes": 19811,
+      "sha256": "cfe08e8783843b3b11f8db651cd7510c82fafcd9d5c9ac44381c93440c765aa3"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\pseudopotential_mode_cross_terms_validation.json",
+      "bytes": 1084,
+      "sha256": "7d04d52331216248735f3089543b53e8dcb6ee39e0adbd902acc39aa804b9b97"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\strict_tolerance_comparison.csv",
+      "bytes": 1211,
+      "sha256": "4f84c4196aa0012a4b1749bb4efaef588371b8a7a0599cf8977343860195022a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\trajectory_event_diagnostics.csv",
+      "bytes": 90467,
+      "sha256": "f325124a03fe8e07c6679661b412d3b8c023704cf1a2af98d15afeee95128d64"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\trajectory_pseudopotential_exposure.csv",
+      "bytes": 25312,
+      "sha256": "3fb8a039272bc328ea66b33a30b82e2b832ee72053f14b7c2e1cea44338053db"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\processed\\v6_reproduction.csv",
+      "bytes": 1648,
+      "sha256": "7ae1a9fe59d900253eb22df530327877c8713254e33fb37d38e302f4d6d0a419"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\render_v7_figures.py",
+      "bytes": 23239,
+      "sha256": "8fd70a7df77c5ba1060fc9b9266fa1562b933297170ef49ec083efb884193020"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\REPORT_RU.md",
+      "bytes": 40232,
+      "sha256": "e58d30c0b99bb7eba1bf6bdf2e00bc34b66e886b49bc357163f57ad380a6d51e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\reproduce_v7.ps1",
+      "bytes": 458,
+      "sha256": "14598ba75de90aa55def88533ea8aa3df88846f6834c1523060238b0f04d7e7f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\run_v7.py",
+      "bytes": 25557,
+      "sha256": "9626191f7c608b0bfcf5c28c123129bc8741d9d3a914954d8af99ef31b1ab53e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\run_v7_validation.py",
+      "bytes": 5870,
+      "sha256": "e488a3cf11d3882a30a506061cf998642cca7b8e5ca204114d780c6b78450a46"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\060d08c6f042d0cd43c5.npz",
+      "bytes": 1788646,
+      "sha256": "4beff53f018ceb63536cd6a07fe187093181995a16b2a1bb575c9e0d57f8f635"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\0c0d0ea6bd194459462c.npz",
+      "bytes": 1101670,
+      "sha256": "4d2ab6218e999b01f1433618d5c21e098dfc05c07e9161e602c2dfbe2bb47224"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\0dd2fb4c8a26667e0a9f.npz",
+      "bytes": 1783485,
+      "sha256": "b6ff0a9e4b8575feffe0261fbc45c691064f6ab6f7a5673e5fbc92bd36b1136b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\0f61913d9829f74c2da7.npz",
+      "bytes": 1502951,
+      "sha256": "a74a8f59827802c632da39d766eaaee3166cb0f185d4a78bef7496dd2484f0e7"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\0fd1065cb2a6da4ed573.npz",
+      "bytes": 1635274,
+      "sha256": "bd3e4837f544c5ff15773e1cc30da8562577707c09caa2b5af86add7e8b00040"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\1145feb11c2680bfc7f0.npz",
+      "bytes": 751491,
+      "sha256": "c4cd0610ddb94ecebfa50a442e57e39f621cf3feae4c0741c7c16fe738f07f8a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\143b0eb2e0dfe734e2e0.npz",
+      "bytes": 1102827,
+      "sha256": "da40f745487185cfb8abefdaf4138e5f4d56f392619a20ec1bdb80eefefd8ec6"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\15bd19066fc7f5b6cb4f.npz",
+      "bytes": 934367,
+      "sha256": "a7b7c4c2a2d2322bdfa0cc7f1bddcdcb47739a82eeb4d04df39efea30680af69"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\169f16260198bcb6c2dd.npz",
+      "bytes": 175184,
+      "sha256": "db6e48b5caa4adfe690647f738c524752b9be693f41c68345b25e40fdc7b572a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\191d4442cd9a7ff3db79.npz",
+      "bytes": 751748,
+      "sha256": "2000794c6acdc0823caaf38cfcb3eeca60f04c7bfcf7144d787089a1289257c2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\1bf84c37161f0e6d29e0.npz",
+      "bytes": 1231040,
+      "sha256": "d85d6a66b8a0e7673973e03d0526a6febb447d847ee6be21669b7d8df6aab3d7"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\1c1f633098c9d706c09b.npz",
+      "bytes": 1631603,
+      "sha256": "2664dc4762b851e39f2b980ea7f7e39aaffab245178bcf8f688365708d998e45"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\1f108b7d10a00e4e78d3.npz",
+      "bytes": 1633070,
+      "sha256": "51beab0123437c0d697de004c98a597944fb1694f63a61553d76dbffa4917885"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\248f51d3780381339e4b.npz",
+      "bytes": 1637483,
+      "sha256": "d83c553c35dca0b35155aea162f9c00be2386d9952627a04108f9f8c276f3108"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\25bf648c1b5500bcfcc6.npz",
+      "bytes": 1670193,
+      "sha256": "f2e44ae8ab54cd92d0805e080f37c11a1fbbd914d65862cf6b21447c9adf3260"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\272ac540bec214027d1f.npz",
+      "bytes": 1790701,
+      "sha256": "48723f7a4fd0156ba9720139c77b78e7b5ce835cb8f8edb8e50a6582b4f42eb4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\273d7169d5f9250b756b.npz",
+      "bytes": 934400,
+      "sha256": "7a5c177b8c582c339a201366799db41bc464daf6d46352293e8a410270637b48"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\27bc1e21bc04bef7bafd.npz",
+      "bytes": 1789526,
+      "sha256": "628b472ce90f7718a6a9c3251e65807988b81fd12cbad1358b1e2c0c45bf3dcf"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\2bba26d7d31d0e27c6d9.npz",
+      "bytes": 751552,
+      "sha256": "26422e62ddc7e8b9fb47334e9c59d44fcaf011ea37d2c23be684f4dbec775bce"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\306bef11a15ea507fdc4.npz",
+      "bytes": 356724,
+      "sha256": "d70d27ec8d681bdd62cc03b834436abf479c3cf88e46b42069d873636c4bd40d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\31dc6cc1cf8605d5e68f.npz",
+      "bytes": 936818,
+      "sha256": "21711527a5b21a02b10be8bfe5b1ddbb226290b13be637fef21fe448e497bf9d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\37b59e39e98086b94e73.npz",
+      "bytes": 1173092,
+      "sha256": "c7e760d10c513a74ce806bdac8287de9303babbe10b193cfcfbbe87e23a12395"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\39325ef3db4721d83bb8.npz",
+      "bytes": 1633060,
+      "sha256": "11483dbda42f47d989766923edbf2f90441067030f51432be6fb14a899d24df7"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\3d00d6ed3b13ce361947.npz",
+      "bytes": 1375972,
+      "sha256": "dca6c8f364ef4859cac0578e46865401401ced711e1623d501c6060181866da2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\3f85d1299c644bb4aa16.npz",
+      "bytes": 1638098,
+      "sha256": "9d4f81d49392b4ba861cd427a1b672626553118585d546fb5935178d207393bb"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\408da138d06311d80c37.npz",
+      "bytes": 910593,
+      "sha256": "12e4ad27ed92b614388c2bf844529ce139f8213d0b70189c0b809a77a5983d73"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\427486dd3a258bb86869.npz",
+      "bytes": 751370,
+      "sha256": "c79a7d3a9c311b64570f06211195bfe068b23a1e1366d7035691dcd0eb40c013"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\468926c63ae4a37c4b8a.npz",
+      "bytes": 1099783,
+      "sha256": "c5d102847ff0b39e6eba316c432b521c2a94df28f528bcca86ccb94c96085025"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\51aa875dc9e6c437c72b.npz",
+      "bytes": 1789989,
+      "sha256": "f5576a6d06529669db2e9ded3337304fecb631b1736b05dd1b54661bdda950f6"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\5a62d477fdf7e929a9f5.npz",
+      "bytes": 1790624,
+      "sha256": "1d3939ffa227a3b643539d57f0966f0a6c6d608d2beab3266838b07aa6e4b2a2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\5b892fd95aa167447d1d.npz",
+      "bytes": 1476723,
+      "sha256": "2618041256bbeeff1b50b1799cd579f0078b032144eed1bdb37898e3aea72c67"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\62ed1d1d9e62eb98bcaf.npz",
+      "bytes": 751679,
+      "sha256": "59ada04585dc47fa319eeaec9917bdf7fa87d4309067104625a8ee1c5709162f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\639d250c2c24a544788a.npz",
+      "bytes": 1798466,
+      "sha256": "5ec096f1e990f98d351ad50793ca1c0ed704f054484d3b65944972e4381c16ad"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\63c080ab92777110b300.npz",
+      "bytes": 1258860,
+      "sha256": "2a77cbc935b20934082f542cabf69865e9e612f5fbec89f9fcc12f2815e69f87"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\67083d7100e994a64068.npz",
+      "bytes": 933311,
+      "sha256": "a03778859c47439eeebec34d78262d0e30aba8fd9bc68cd6ddc5ecc92b751ea4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\69544f6a322112187c35.npz",
+      "bytes": 751586,
+      "sha256": "dc4ebf13ad6f47936a61eed01dd0ca6bce4c43dac4a59d7b2ee616c4e4919ee4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\69a5879675b9e638262d.npz",
+      "bytes": 1636501,
+      "sha256": "da2029f7df97ca763f5e2362a4c7ec630ebcc44bb152e9a1efeb9940dd1944f6"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\69eb064ec852bea2a6eb.npz",
+      "bytes": 1100565,
+      "sha256": "ff8e0daaa9c82191ee04cd7b8268f4fc5722a22bc6dff68c9ee13365d47ed257"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\74362a73725968b02d83.npz",
+      "bytes": 356548,
+      "sha256": "3561a9bc35998a1e134df551f2b89d2b532f22c4c0feb7dd43a044a7de5ea8b4"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\789b68ca505293941a0d.npz",
+      "bytes": 1783556,
+      "sha256": "9885f637c14967a0edbc1a8426f6ccdd676396839a9b379f7c5bb3d6e8a66ca1"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\78a86e006ca4decbe62f.npz",
+      "bytes": 1622085,
+      "sha256": "26e383a20fa49340f9a65ff772a70c320c3d82265eb3a5833fab1d12f5d6434f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\7906a705b25459fe2e2b.npz",
+      "bytes": 1713836,
+      "sha256": "2c92582498b238012ee61c36c7b06b8730815f1a73ee25b1a0e01e4f0097ba25"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\7950aaa879aafecb8090.npz",
+      "bytes": 751433,
+      "sha256": "726f9812e47a02c898103e8ea657f3de44e7a294b66006f57826af7f6b170fbb"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\7a9b0748f44a344d5d65.npz",
+      "bytes": 1032888,
+      "sha256": "8c9f454a24d18834b89f5a8e00755c446b3f48ef6b2de5b42d47839bd16ad7e9"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\7bda63772fcb709606d4.npz",
+      "bytes": 1785509,
+      "sha256": "58efd8e4869ee96435379afc089add32487208d6f55d92d1fb1ac19b8f56ddac"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\7ffff626142a9ae7d44a.npz",
+      "bytes": 751733,
+      "sha256": "625ab9e8e3b9bc8bab46d86069b42f467b94979f3c1a435195ca7cb77595ba8d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\840640a64792502ea76c.npz",
+      "bytes": 1632906,
+      "sha256": "6ffe14530aa241a76424c1be98f1a7e401b8060f0d8b361aec177dfc2e91d364"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\86a8b95f50763eb99567.npz",
+      "bytes": 1666458,
+      "sha256": "f8f3f9a8e96a2e2f3c9043c6c0b7f43ce07a74f0e837158624b070db8db1661b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\877a5cde61acfd1bb351.npz",
+      "bytes": 1637974,
+      "sha256": "eacb033b4b405e747d100262fab2a5d8dd4a9f395e68c9b5baa7c0e6f3e483b0"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\8b5785e129c54ec2687d.npz",
+      "bytes": 1638617,
+      "sha256": "36b671226a03521eecb3e9fdf0cf1036afab16ba07772678c2e78d37b2076a58"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\91ea6309ee907eb9cd2b.npz",
+      "bytes": 1513114,
+      "sha256": "11db2cd36668254ab3e12a90f5c39e4db529b76a857cdf046987499446496af1"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\98589a8ba88e917db99f.npz",
+      "bytes": 751435,
+      "sha256": "05ac66539fa560aee083b21ed60e16542fca3f62f46b779fa8358483d059db63"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\9c9ed7b007dbbcd21d81.npz",
+      "bytes": 1621437,
+      "sha256": "d806a1a0908db7d941d2e625501b2dbd6f46e20d4dc3adec02e1594dea640109"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\a383471f1be0597d430d.npz",
+      "bytes": 1632147,
+      "sha256": "8988321a24c090dd04e99e94132407a02b4a6b0f7d713ede5d49f0b82ddb32ca"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\a3f058b200aa51b2f4d1.npz",
+      "bytes": 1097485,
+      "sha256": "375b1653b2907b6a83c3477ed3b144b391ea135676e46ed0e99d3a31be3fbefe"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\a62470b88bb8febf1e0b.npz",
+      "bytes": 1637011,
+      "sha256": "432626eb671a37a9ffcfc5683de3ccb0dd1069681cc8126e8ac28d3f42087422"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\a6698cc8241edd53820b.npz",
+      "bytes": 1098485,
+      "sha256": "eaeed709aad2d98ba791b5f7496125dad0ba0513a80e0cea1f21951cfe1347ec"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\a6e8679331ce045d5d6e.npz",
+      "bytes": 1632963,
+      "sha256": "ac0040f01c0e7cdfe49c7955930f358e65a0fe1605e4cffd74d4b769e1308d9d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\a7d14f9468b23c4ad668.npz",
+      "bytes": 1790047,
+      "sha256": "1d47a7c91169e0e798f598a51c56b3c65ceea339c1dfc314320180c942b1bead"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\ab5f1a527fd96c0b479f.npz",
+      "bytes": 751353,
+      "sha256": "61f2dfe0de5c518686fa076610cd21bc6d3a62c971545f065f277bdb6e76a447"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\adcb7d4e0fbeec754495.npz",
+      "bytes": 1102718,
+      "sha256": "3d367acb852adfb64c1d4bcf4f7e3b48d51f2e1b1f5c3ed8185d9b72a5c3ca3c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\b75331e6ad70d30cbf7e.npz",
+      "bytes": 1099608,
+      "sha256": "e5edf494a718deac0d213bd00fae30036e6fe04b403be88fb188d46bca0eaa47"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\b7a6ed9977e7b684ea8d.npz",
+      "bytes": 1851294,
+      "sha256": "f5f377c91242b8d564e50dc6f536375006f764b197477865cde33c6bdaca2d2e"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\bb5aa26fd8258e7b9958.npz",
+      "bytes": 936745,
+      "sha256": "e64b9c1b5a8bb013826bcfc4838da38dafbdc51f8184d323537a820abd6ca46d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\bc68329e86a2ab48f4a5.npz",
+      "bytes": 936585,
+      "sha256": "5a73814339b7bd742e92ad3bf6e83eb34c1f1eed038daa2125f1f46b289f6d75"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\bcaac8e122af3172ac43.npz",
+      "bytes": 1784739,
+      "sha256": "aea430361f35b97e3fa91758757f2b7064c2c8a6e40394f912eecf1f05a537f9"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\beb9515b503c90f7eed0.npz",
+      "bytes": 751597,
+      "sha256": "7c3c4ce693ef69e724f36fef9ff15cf8bcb453867358598d9e9cd18bf0ab5656"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\bff68f3f0f8429ea0541.npz",
+      "bytes": 1332277,
+      "sha256": "17f2f60b7afa73fe7c9a72d743d5a790d3862c6921ee79d4ec6ff1d44c51a42c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\c670d213cf7eaa8a755f.npz",
+      "bytes": 934624,
+      "sha256": "1f84fcf7711162445bd46f8a547f3ad542610c0e3032b8bcdefea3c7ccf7bb42"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\c8e0ca76cdb5f4d23048.npz",
+      "bytes": 175205,
+      "sha256": "729b6f6dd96ef28ca51ac100ba74f7c471e34337e3a3a34d7a34376fa8fd0f7d"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\d0854ad940b873383493.npz",
+      "bytes": 1633032,
+      "sha256": "23cbd7dcba3ceb358453364d3136569dbe841a250024c70ea27e21c982b0a5ad"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\d41a9a353afa5ef05e42.npz",
+      "bytes": 356665,
+      "sha256": "a25274d8448f131cb21a0f3e3bdd3f196764e2aaf7c66014922e6f472a17e9d6"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\d71581f64366d7ab48b4.npz",
+      "bytes": 1634136,
+      "sha256": "afa26480641cbccaa6be0edfda85792e9e404dd3e93fdad6d0e12afb5bff8df3"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\d75bd97191d36f266947.npz",
+      "bytes": 1677170,
+      "sha256": "98acaaaa4bd0836b08d2ee22738542006edb997310409870885c17d4d5c0074a"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\d9000c206a24ed0638ce.npz",
+      "bytes": 1630859,
+      "sha256": "4aa6982cf4413cdd246041aa9bb0830c1234c8ec2b16f711160fffcad01af47b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\d947789327f2b80dce9c.npz",
+      "bytes": 1100603,
+      "sha256": "99472f5f6b846fdaae5219e351fe196b47c3c121275f1cfa405d5f649ede1a7b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\daccca4c62262849d6db.npz",
+      "bytes": 934573,
+      "sha256": "823cf2a75ed0374887cb19af6de1c211420c9abc81b0f16ab7dfa6510c16622b"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\dc1c938064137fc9b457.npz",
+      "bytes": 1101569,
+      "sha256": "b0fccdc708d42ccf10ed5c9ab7af5be597071e1037f6fa81da595a7564918942"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\dd6175e4bf9956ed97c6.npz",
+      "bytes": 1098288,
+      "sha256": "8d2e809326c31d2f429a59400a12cec51648997a5ed21f8bbbe1f880c29c5efd"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\de6a22dd6812eb173601.npz",
+      "bytes": 1696921,
+      "sha256": "3f44a6557c02cb4c1f604de47c4c69182431ce7d12c9e7564818679a5a8054af"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\e22484e5bfd3774d77b8.npz",
+      "bytes": 208043,
+      "sha256": "2aa6cc5a3ff617b702f415221400f061958ef729c746ab3445c7ed67cab27299"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\e4ed77705a51238e4691.npz",
+      "bytes": 751309,
+      "sha256": "04a5f862ed9d85932fa5c421e7241abbc134b4e7b3f351520fa07c20965f4af5"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\e50ca07d46c0c0280018.npz",
+      "bytes": 1631602,
+      "sha256": "4ee4a0e1e8fab138f58cceb0f8be69efc9968681d5bc9577f5f84a7e49bfa0b8"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\e6e35f7545b2855511a3.npz",
+      "bytes": 1784687,
+      "sha256": "98a1812b06ca90de8173c732833e15b34808d4f011b324ba5cbdcd86b994478f"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\e9244dff8c5d795be8d1.npz",
+      "bytes": 1789819,
+      "sha256": "de66befbfadde197688d7216e7e82b48e0ad7de2650fca9a4d98f90e8eaf70c0"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\ed8793d984d2456a3868.npz",
+      "bytes": 1234242,
+      "sha256": "998ce6949ca20ed8eab9a3fb6c51a09a7897727c306e7ae797bb4cd8b8d595b9"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\ee496e20a5c03b951b34.npz",
+      "bytes": 1828888,
+      "sha256": "d9dbd766d68bd2ab08850444bc7c0e218dcec264444fae70e2ec334bee45a9fb"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\ef13f5870d97a20b7c1e.npz",
+      "bytes": 1635162,
+      "sha256": "ec1285c6fd16ca8c0c854353e10259b936d3d6f65f2127425db6ce387e613be2"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\f26ad6468c41e2583424.npz",
+      "bytes": 1331340,
+      "sha256": "4430f3b5646be0043e8148f5a89206d3c7eac9f80883853749fd52aa9e824335"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\f42daaf2f0a022929c6c.npz",
+      "bytes": 1099579,
+      "sha256": "a8adfc99f6cafa1f49a4634ed63ac212f396d09c2e286e57cf799a645ac84555"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\f6a12390313e53c24401.npz",
+      "bytes": 1516057,
+      "sha256": "0847618b18c946f0c436ce3b79a37614feac27f1967ba90f81b05f0d771504a0"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\fb1c9f98d2051489b392.npz",
+      "bytes": 1663791,
+      "sha256": "1d851b52dc2376456ac1b2de6052f79c0512876e86184c6207e481efad4a4ece"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\fd1fd55af6d39bfb5f4a.npz",
+      "bytes": 936613,
+      "sha256": "77f856e9607aa9e7bb85dbab02e57f016c0fb398887cf6dc1c3e5bf6c94f2488"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\fe26b656ea14a4b9c9ca.npz",
+      "bytes": 936247,
+      "sha256": "babf90b6147b3a6911fbcb4efb4c5407a0b3919f702d60e292a7c5fe34448b6c"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\traces\\fe362ca9360aaacbcf17.npz",
+      "bytes": 936473,
+      "sha256": "0963af7c78b1c422ebd979278ddadca583925b86219682165e9e7bc2126cdfe8"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\harmonic_ablation_v7\\trajectory_checkpoint.jsonl",
+      "bytes": 163174,
+      "sha256": "289928d0f4f6d778a0da9126012b1d39c1a1b7be72325e4eb7201058409d7c53"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\matched_pseudopotential_v5\\processed\\matched_strength_balanced_pairs.csv",
+      "bytes": 112161,
+      "sha256": "e89d6d3a69bbce08a6b2d1aef6608bb91188562fa732fcc7a90b22163dde2218"
+    },
+    {
+      "path": "outputs\\octupole_comparison_home\\publication_figures_v1\\render_publication_figures.py",
+      "bytes": 38000,
+      "sha256": "7fd263e2743c76690f029df5550bf036f87de516b2bf1a13d8c983153a288a9a"
+    },
+    {
+      "path": "src\\three_phase_trap\\rf_reconstruction.py",
+      "bytes": 7176,
+      "sha256": "b4e2b60803e78af6734f6c6d19b0d04c99e6f793897d2ddb5d99be8524ca39b8"
+    }
+  ]
+}

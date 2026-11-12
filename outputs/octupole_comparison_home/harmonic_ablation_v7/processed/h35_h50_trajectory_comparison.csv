@@ -1,0 +1,10 @@
+launch_label,representation,model,h35_status,h50_status,classification_agrees,h35_escape_RF,h50_escape_RF,delta_h50_minus_h35_RF
+early_az22p5_dplus,full_N48,standing,escaped,escaped,True,185.49127407330687,185.4931674673796,0.0018933940727379195
+boundary_dminus_escaped,full_N48,standing,escaped,escaped,True,892.5809093191444,925.4192945145548,32.83838519541041
+early_az22p5_dplus,full_N48_minus_m8,standing,retained,retained,True,,,
+early_az22p5_dplus,full_N48,rotating,retained,retained,True,,,
+boundary_dminus_escaped,full_N48_minus_m8,standing,retained,retained,True,,,
+boundary_dplus_escaped,full_N48,standing,escaped,escaped,True,722.5818438968646,800.6179741025752,78.0361302057106
+boundary_dminus_escaped,full_N48,rotating,retained,retained,True,,,
+boundary_dplus_escaped,full_N48_minus_m8,standing,retained,retained,True,,,
+boundary_dplus_escaped,full_N48,rotating,retained,retained,True,,,

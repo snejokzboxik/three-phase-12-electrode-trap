@@ -1,0 +1,48 @@
+{
+  "figures": [
+    {
+      "svg": "Fig1_harmonic_structure_and_effective_potential_double_column.svg",
+      "pdf": "Fig1_harmonic_structure_and_effective_potential_double_column.pdf",
+      "png": "Fig1_harmonic_structure_and_effective_potential_double_column.png",
+      "width_mm": 178,
+      "height_mm": 153,
+      "png_dpi": 600
+    },
+    {
+      "svg": "Fig2_matched_trajectory_energy_and_work_double_column.svg",
+      "pdf": "Fig2_matched_trajectory_energy_and_work_double_column.pdf",
+      "png": "Fig2_matched_trajectory_energy_and_work_double_column.png",
+      "width_mm": 178,
+      "height_mm": 198,
+      "png_dpi": 600
+    },
+    {
+      "svg": "Fig3_boundary_sensitivity_and_harmonic_ablation_double_column.svg",
+      "pdf": "Fig3_boundary_sensitivity_and_harmonic_ablation_double_column.pdf",
+      "png": "Fig3_boundary_sensitivity_and_harmonic_ablation_double_column.png",
+      "width_mm": 178,
+      "height_mm": 157,
+      "png_dpi": 600
+    },
+    {
+      "svg": "Fig4_stroboscopic_radial_phase_space_single_column.svg",
+      "pdf": "Fig4_stroboscopic_radial_phase_space_single_column.pdf",
+      "png": "Fig4_stroboscopic_radial_phase_space_single_column.png",
+      "width_mm": 89,
+      "height_mm": 114,
+      "png_dpi": 600
+    },
+    {
+      "svg": "Fig5_pseudopotential_cross_term_mechanism_double_column.svg",
+      "pdf": "Fig5_pseudopotential_cross_term_mechanism_double_column.pdf",
+      "png": "Fig5_pseudopotential_cross_term_mechanism_double_column.png",
+      "width_mm": 178,
+      "height_mm": 151,
+      "png_dpi": 600
+    }
+  ],
+  "png_dpi": 600,
+  "source": "V7 checkpointed h35/h50 N48 trajectories, work integrals, and measured FEM-derived harmonic coefficients",
+  "interpolation": "No trajectory smoothing. Pseudopotential curves are direct evaluations at each listed radius and angular sample; lines only connect computed samples.",
+  "scope": "Selected deterministic starts; no probability or infinite-time claim."
+}

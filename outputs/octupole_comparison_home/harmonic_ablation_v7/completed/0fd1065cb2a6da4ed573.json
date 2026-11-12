@@ -1,0 +1,80 @@
+{
+  "job": {
+    "stage": "pilot",
+    "launch_label": "early_az22p5_dplus",
+    "representation": "full_N48_minus_m8",
+    "retained_harmonic_orders": "minus8",
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 22.5,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "0fd1065cb2a6da4ed573"
+  },
+  "job_id": "0fd1065cb2a6da4ed573",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.860557500538939,
+  "rms_radius_mm": 4.479068221489035,
+  "initial_state": [
+    0.0009238795325112868,
+    0.0003826834323650898,
+    -23.773893035700862,
+    57.39525499719629
+  ],
+  "verified_initial_vtheta_m_s": 62.12417634275831,
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 624005,
+  "wall_s": 39.11279019998619,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/0fd1065cb2a6da4ed573.npz",
+  "trace_samples": 8001,
+  "harmonic_orders": [
+    4,
+    16,
+    20,
+    28,
+    32,
+    40,
+    44
+  ],
+  "energy_work_closure_error_eV": -9.238387832510853e-12,
+  "hamiltonian_work_closure_error_eV": 1.1578293879210833e-11,
+  "kinetic_work_by_mode_final_eV": {
+    "4": 3.6586314239935627,
+    "16": -0.0003000349433268493,
+    "20": -0.006203969924456959,
+    "28": -4.448189901585493e-05,
+    "32": 4.173064072261573e-05,
+    "40": 1.319723031239851e-06,
+    "44": 2.445911051950326e-08
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": 3.658631423922875,
+    "16": -0.0003000349433164584,
+    "20": -0.006203969924329919,
+    "28": -4.448189901274577e-05,
+    "32": 4.1730640722116675e-05,
+    "40": 1.3197230312536204e-06,
+    "44": 2.445911051887296e-08
+  }
+}

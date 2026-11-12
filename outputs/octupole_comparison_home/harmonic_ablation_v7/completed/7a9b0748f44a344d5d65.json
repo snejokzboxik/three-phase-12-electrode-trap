@@ -1,0 +1,78 @@
+{
+  "job": {
+    "stage": "targeted_high_order",
+    "launch_label": "boundary_dplus_escaped",
+    "representation": "m4_m8_m16_m20",
+    "retained_harmonic_orders": [
+      4,
+      8,
+      16,
+      20
+    ],
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 10.283203125,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "7a9b0748f44a344d5d65",
+    "field_resolution": "h35",
+    "validation_protocol": "targeted high-order ablation at previously escaped boundary starts"
+  },
+  "job_id": "7a9b0748f44a344d5d65",
+  "status": "escaped",
+  "escape_time_RF": 815.4273268370756,
+  "right_censored_at_RF": null,
+  "max_radius_mm": 7.999999999995395,
+  "rms_radius_mm": 4.512270133986535,
+  "initial_state": [
+    0.000983937413449219,
+    0.0001785137709389975,
+    -11.090020985425046,
+    61.12630138335677
+  ],
+  "verified_initial_vtheta_m_s": 62.12417634275831,
+  "solver_status": "A termination event occurred.",
+  "nfev": 508841,
+  "wall_s": 31.430864699999802,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/7a9b0748f44a344d5d65.npz",
+  "trace_samples": 6525,
+  "harmonic_orders": [
+    4,
+    8,
+    16,
+    20
+  ],
+  "energy_work_closure_error_eV": -6.0818017288966075e-12,
+  "hamiltonian_work_closure_error_eV": 1.653148729019449e-10,
+  "kinetic_work_by_mode_final_eV": {
+    "4": 2.6435945029539156,
+    "8": -0.9662034482430545,
+    "16": -0.04731173380183455,
+    "20": 0.3353694470783109
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": -77.48186704345804,
+    "8": 21.35864341426959,
+    "16": 0.005834058198162297,
+    "20": 0.35775099592240706
+  }
+}

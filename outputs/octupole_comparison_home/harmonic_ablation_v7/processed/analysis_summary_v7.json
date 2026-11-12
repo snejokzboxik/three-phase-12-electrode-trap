@@ -1,0 +1,28 @@
+{
+  "study": "V7 harmonic ablation",
+  "checkpointed_trajectories": 95,
+  "escaped": 21,
+  "retained_right_censored_at_1000_RF": 74,
+  "all_initial_velocity_signs_verified": true,
+  "max_abs_kinetic_work_closure_error_eV": 9.694023361817017e-12,
+  "max_abs_hamiltonian_work_closure_error_eV": 2.630571316331043e-10,
+  "v6_reproduction_pairs": 12,
+  "v6_classifications_agree": 12,
+  "v6_max_abs_escape_time_delta_RF": 0.0018933941159957612,
+  "strict_h35_classification_agreements": 10,
+  "strict_h35_cases": 10,
+  "strict_h35_max_abs_escape_time_delta_RF": 8.726578926143702e-08,
+  "h35_h50_classification_agreements": 9,
+  "h35_h50_cases": 9,
+  "h35_h50_max_abs_escape_time_delta_RF": 78.0361302057106,
+  "pure_rotating_m4_jacobi_max_abs_drift_eV": 2.2992097115093202e-10,
+  "global_deadline": {
+    "start_unix_s": 1794502594.987239,
+    "deadline_unix_s": 1794506194.987239,
+    "budget_s": 3600,
+    "started_utc": "2026-11-12T16:56:34Z",
+    "start_rule": "created immediately before the first V7 RF integration",
+    "workers": 4
+  },
+  "interpretation_scope": "finite-time deterministic outcomes; adaptive/selected starts are not population samples"
+}

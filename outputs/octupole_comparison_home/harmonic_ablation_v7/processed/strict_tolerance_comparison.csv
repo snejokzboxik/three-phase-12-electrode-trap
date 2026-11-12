@@ -1,0 +1,11 @@
+launch_label,representation,model,standard_status,strict_status,classification_agrees,standard_escape_RF,strict_escape_RF,delta_strict_minus_standard_RF,strict_rtol,strict_max_step_RF_fraction
+early_az22p5_dplus,m4_m8,standing,escaped,escaped,True,184.38884409770077,184.38884409772055,1.978150976356119e-11,2e-11,0.01
+early_az22p5_dplus,full_N48,standing,escaped,escaped,True,185.49127407330687,185.49127407332273,1.5859313862165436e-11,2e-11,0.01
+early_az22p5_dplus,full_N48_minus_m8,standing,retained,retained,True,,,,2e-11,0.01
+early_az22p5_dplus,full_N48,rotating,retained,retained,True,,,,2e-11,0.01
+boundary_dminus_escaped,full_N48,standing,escaped,escaped,True,892.5809093191444,892.5809093756212,5.64767788091558e-08,2e-11,0.01
+boundary_dminus_escaped,full_N48_minus_m8,standing,retained,retained,True,,,,2e-11,0.01
+boundary_dplus_escaped,full_N48,standing,escaped,escaped,True,722.5818438968646,722.5818439841304,8.726578926143702e-08,2e-11,0.01
+boundary_dminus_escaped,full_N48,rotating,retained,retained,True,,,,2e-11,0.01
+boundary_dplus_escaped,full_N48_minus_m8,standing,retained,retained,True,,,,2e-11,0.01
+boundary_dplus_escaped,full_N48,rotating,retained,retained,True,,,,2e-11,0.01

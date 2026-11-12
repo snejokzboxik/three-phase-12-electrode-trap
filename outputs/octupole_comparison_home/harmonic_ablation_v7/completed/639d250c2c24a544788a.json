@@ -1,0 +1,83 @@
+{
+  "job": {
+    "stage": "pilot",
+    "launch_label": "deep_az0_dplus",
+    "representation": "full_N48",
+    "retained_harmonic_orders": null,
+    "model": "standing",
+    "field_source": "h35_N48_polynomial",
+    "normalization": "matched_leading_m4_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 0.0,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_definition": "tangential; signed v_theta verified",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "job_id": "639d250c2c24a544788a"
+  },
+  "job_id": "639d250c2c24a544788a",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.423666841627679,
+  "rms_radius_mm": 4.105385000148946,
+  "initial_state": [
+    0.001,
+    0.0,
+    0.0,
+    62.12417634275831
+  ],
+  "verified_initial_vtheta_m_s": 62.12417634275831,
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 624005,
+  "wall_s": 45.15198850000161,
+  "trace_file": "outputs/octupole_comparison_home/harmonic_ablation_v7/traces/639d250c2c24a544788a.npz",
+  "trace_samples": 8001,
+  "harmonic_orders": [
+    4,
+    8,
+    16,
+    20,
+    28,
+    32,
+    40,
+    44
+  ],
+  "energy_work_closure_error_eV": -8.298715881149832e-12,
+  "hamiltonian_work_closure_error_eV": -7.527021367303988e-11,
+  "kinetic_work_by_mode_final_eV": {
+    "4": 0.13615425990668342,
+    "8": -0.10017804864407992,
+    "16": 0.00017515264016462742,
+    "20": 0.0018351749216515567,
+    "28": -6.121874631506423e-05,
+    "32": 1.1056902935474935e-05,
+    "40": -8.252486717050982e-08,
+    "44": 1.6677717644187826e-09
+  },
+  "hamiltonian_work_by_mode_final_eV": {
+    "4": 0.13615425995260427,
+    "8": -0.10017804862315244,
+    "16": 0.00017515264019327297,
+    "20": 0.001835174921680502,
+    "28": -6.121874631468657e-05,
+    "32": 1.105690293538926e-05,
+    "40": -8.252486716998053e-08,
+    "44": 1.667771764404097e-09
+  }
+}

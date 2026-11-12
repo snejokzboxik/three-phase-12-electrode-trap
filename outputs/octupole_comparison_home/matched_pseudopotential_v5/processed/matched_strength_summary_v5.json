@@ -1,0 +1,95 @@
+{
+  "protocol": "matched_leading_pseudopotential_at_0p5mm",
+  "paired_initial_conditions": 192,
+  "rotating_voltage_V": 250.0,
+  "standing_voltage_V": 353.5533905932738,
+  "frequency_Hz": 100000.0,
+  "ion_mz_Th": 100000.0,
+  "horizon_RF": 1000,
+  "difference_classes": {
+    "both_retained": 92,
+    "rotating_only_retained": 100
+  },
+  "by_energy_eV": {
+    "1.0": {
+      "n": 64,
+      "rotating_retained": 64,
+      "standing_retained": 60,
+      "rotating_only_retained": 4,
+      "standing_only_retained": 0,
+      "both_retained": 60,
+      "both_escaped": 0
+    },
+    "2.0": {
+      "n": 64,
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "rotating_only_retained": 48,
+      "standing_only_retained": 0,
+      "both_retained": 16,
+      "both_escaped": 0
+    },
+    "3.0": {
+      "n": 64,
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "rotating_only_retained": 48,
+      "standing_only_retained": 0,
+      "both_retained": 16,
+      "both_escaped": 0
+    }
+  },
+  "by_phase_deg": {
+    "0": {
+      "n": 48,
+      "rotating_only_retained": 24,
+      "standing_only_retained": 0,
+      "both_retained": 24,
+      "both_escaped": 0
+    },
+    "90": {
+      "n": 48,
+      "rotating_only_retained": 24,
+      "standing_only_retained": 0,
+      "both_retained": 24,
+      "both_escaped": 0
+    },
+    "180": {
+      "n": 48,
+      "rotating_only_retained": 26,
+      "standing_only_retained": 0,
+      "both_retained": 22,
+      "both_escaped": 0
+    },
+    "270": {
+      "n": 48,
+      "rotating_only_retained": 26,
+      "standing_only_retained": 0,
+      "both_retained": 22,
+      "both_escaped": 0
+    }
+  },
+  "by_tangent_sign": {
+    "negative": {
+      "n": 96,
+      "both_retained": 46,
+      "rotating_only_retained": 50
+    },
+    "positive": {
+      "n": 96,
+      "both_retained": 46,
+      "rotating_only_retained": 50
+    }
+  },
+  "right_censoring": "survivors are right-censored at 1000 RF; only outward aperture crossings have event times",
+  "sampling": "stroboscopic radial RMS/envelopes use one value at each integer RF period for both arms; max radius retains the solver's event-inclusive maximum",
+  "interpretation": "descriptive balanced deterministic design; no population probability or permanent stability claim",
+  "numerical_protocol": {
+    "field": "h35",
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "max_step_RF_fraction": 0.02,
+    "rotating_reused_from": "V4 250 V, same h35 field and physical protocol",
+    "standing_new_integrations": 192
+  }
+}

@@ -1,0 +1,1 @@
+{"requested": 192, "journal_rows_written_this_run": 192, "complete_retained_or_escaped": 192, "paused": 0, "failures": [], "remaining_deadline_s": 13793.987946033478, "wall_s": 606.0098541000043, "workers": 4, "statuses": {"retained": 92, "escaped": 100}}

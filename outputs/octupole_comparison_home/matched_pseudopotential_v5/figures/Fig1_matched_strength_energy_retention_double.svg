@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="106mm" viewBox="0 0 178 106">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="89" y="6" text-anchor="middle" dominant-baseline="middle" font-size="10.8pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Finite-time retention at matched leading pseudopotential</tspan>
+</text>
+<text x="89" y="13" text-anchor="middle" dominant-baseline="middle" font-size="6.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">250 V rotating · 353.553 V standing · 100 kHz · 1000 RF periods · 8 mm aperture</tspan>
+</text>
+<text x="89" y="19" text-anchor="middle" dominant-baseline="middle" font-size="6.5pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Balanced deterministic grid; each energy shell has n = 64 paired starts</tspan>
+</text>
+<text x="19" y="25" text-anchor="start" dominant-baseline="middle" font-size="7.6pt" font-weight="bold" fill="#202830">
+<tspan x="19" dy="0">A  Rotating</tspan>
+</text>
+<line x1="25.5" y1="31" x2="25.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="25.5" y1="81" x2="25.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="25.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="25.5" dy="0">1</tspan>
+</text>
+<line x1="38.5" y1="31" x2="38.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="38.5" y1="81" x2="38.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="38.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="38.5" dy="0">2</tspan>
+</text>
+<line x1="51.5" y1="31" x2="51.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="51.5" y1="81" x2="51.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="51.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="51.5" dy="0">3</tspan>
+</text>
+<line x1="19" y1="81" x2="58" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="18.2" y1="81" x2="19" y2="81" stroke="#202830" stroke-width="0.24"/>
+<text x="17.5" y="81" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="17.5" dy="0">0</tspan>
+</text>
+<line x1="19" y1="68.5" x2="58" y2="68.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="18.2" y1="68.5" x2="19" y2="68.5" stroke="#202830" stroke-width="0.24"/>
+<text x="17.5" y="68.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="17.5" dy="0">0.25</tspan>
+</text>
+<line x1="19" y1="56" x2="58" y2="56" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="18.2" y1="56" x2="19" y2="56" stroke="#202830" stroke-width="0.24"/>
+<text x="17.5" y="56" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="17.5" dy="0">0.5</tspan>
+</text>
+<line x1="19" y1="43.5" x2="58" y2="43.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="18.2" y1="43.5" x2="19" y2="43.5" stroke="#202830" stroke-width="0.24"/>
+<text x="17.5" y="43.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="17.5" dy="0">0.75</tspan>
+</text>
+<line x1="19" y1="31" x2="58" y2="31" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="18.2" y1="31" x2="19" y2="31" stroke="#202830" stroke-width="0.24"/>
+<text x="17.5" y="31" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="17.5" dy="0">1</tspan>
+</text>
+<line x1="19" y1="31" x2="19" y2="81" stroke="#202830" stroke-width="0.28"/>
+<line x1="19" y1="81" x2="58" y2="81" stroke="#202830" stroke-width="0.28"/>
+<text x="38.5" y="91" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="38.5" dy="0">Initial transverse energy E⊥ (eV)</tspan>
+</text>
+<text x="8" y="56" text-anchor="middle" dominant-baseline="middle" font-size="5.9pt" font-weight="normal" fill="#202830" transform="rotate(-90 8 56)">
+<tspan x="8" dy="0">Calculated-grid retention fraction</tspan>
+</text>
+<rect x="21.3" y="31" width="8.4" height="50" fill="#0072B2" stroke="none" stroke-width="0.2"/>
+<text x="25.5" y="29" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="25.5" dy="0">64/64</tspan>
+</text>
+<rect x="34.3" y="31" width="8.4" height="50" fill="#0072B2" stroke="none" stroke-width="0.2"/>
+<text x="38.5" y="29" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="38.5" dy="0">64/64</tspan>
+</text>
+<rect x="47.3" y="31" width="8.4" height="50" fill="#0072B2" stroke="none" stroke-width="0.2"/>
+<text x="51.5" y="29" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="51.5" dy="0">64/64</tspan>
+</text>
+<text x="76" y="25" text-anchor="start" dominant-baseline="middle" font-size="7.6pt" font-weight="bold" fill="#202830">
+<tspan x="76" dy="0">B  Standing</tspan>
+</text>
+<line x1="82.5" y1="31" x2="82.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="82.5" y1="81" x2="82.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="82.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="82.5" dy="0">1</tspan>
+</text>
+<line x1="95.5" y1="31" x2="95.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="95.5" y1="81" x2="95.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="95.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="95.5" dy="0">2</tspan>
+</text>
+<line x1="108.5" y1="31" x2="108.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="108.5" y1="81" x2="108.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="108.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="108.5" dy="0">3</tspan>
+</text>
+<line x1="76" y1="81" x2="115" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="75.2" y1="81" x2="76" y2="81" stroke="#202830" stroke-width="0.24"/>
+<text x="74.5" y="81" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="74.5" dy="0">0</tspan>
+</text>
+<line x1="76" y1="68.5" x2="115" y2="68.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="75.2" y1="68.5" x2="76" y2="68.5" stroke="#202830" stroke-width="0.24"/>
+<text x="74.5" y="68.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="74.5" dy="0">0.25</tspan>
+</text>
+<line x1="76" y1="56" x2="115" y2="56" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="75.2" y1="56" x2="76" y2="56" stroke="#202830" stroke-width="0.24"/>
+<text x="74.5" y="56" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="74.5" dy="0">0.5</tspan>
+</text>
+<line x1="76" y1="43.5" x2="115" y2="43.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="75.2" y1="43.5" x2="76" y2="43.5" stroke="#202830" stroke-width="0.24"/>
+<text x="74.5" y="43.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="74.5" dy="0">0.75</tspan>
+</text>
+<line x1="76" y1="31" x2="115" y2="31" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="75.2" y1="31" x2="76" y2="31" stroke="#202830" stroke-width="0.24"/>
+<text x="74.5" y="31" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="74.5" dy="0">1</tspan>
+</text>
+<line x1="76" y1="31" x2="76" y2="81" stroke="#202830" stroke-width="0.28"/>
+<line x1="76" y1="81" x2="115" y2="81" stroke="#202830" stroke-width="0.28"/>
+<text x="95.5" y="91" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="95.5" dy="0">Initial transverse energy E⊥ (eV)</tspan>
+</text>
+<text x="65" y="56" text-anchor="middle" dominant-baseline="middle" font-size="5.9pt" font-weight="normal" fill="#202830" transform="rotate(-90 65 56)">
+<tspan x="65" dy="0">Calculated-grid retention fraction</tspan>
+</text>
+<rect x="78.3" y="34.125" width="8.4" height="46.875" fill="#D55E00" stroke="none" stroke-width="0.2"/>
+<text x="82.5" y="32.125" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="82.5" dy="0">60/64</tspan>
+</text>
+<rect x="91.3" y="68.5" width="8.4" height="12.5" fill="#D55E00" stroke="none" stroke-width="0.2"/>
+<text x="95.5" y="66.5" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="95.5" dy="0">16/64</tspan>
+</text>
+<rect x="104.3" y="68.5" width="8.4" height="12.5" fill="#D55E00" stroke="none" stroke-width="0.2"/>
+<text x="108.5" y="66.5" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="108.5" dy="0">16/64</tspan>
+</text>
+<text x="133" y="25" text-anchor="start" dominant-baseline="middle" font-size="7.6pt" font-weight="bold" fill="#202830">
+<tspan x="133" dy="0">C  Paired outcome counts</tspan>
+</text>
+<line x1="139.5" y1="31" x2="139.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="139.5" y1="81" x2="139.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="139.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="139.5" dy="0">1</tspan>
+</text>
+<line x1="152.5" y1="31" x2="152.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="152.5" y1="81" x2="152.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="152.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="152.5" dy="0">2</tspan>
+</text>
+<line x1="165.5" y1="31" x2="165.5" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="165.5" y1="81" x2="165.5" y2="81.8" stroke="#202830" stroke-width="0.24"/>
+<text x="165.5" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="165.5" dy="0">3</tspan>
+</text>
+<line x1="133" y1="81" x2="172" y2="81" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="132.2" y1="81" x2="133" y2="81" stroke="#202830" stroke-width="0.24"/>
+<text x="131.5" y="81" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="131.5" dy="0">0</tspan>
+</text>
+<line x1="133" y1="68.5" x2="172" y2="68.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="132.2" y1="68.5" x2="133" y2="68.5" stroke="#202830" stroke-width="0.24"/>
+<text x="131.5" y="68.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="131.5" dy="0">0.25</tspan>
+</text>
+<line x1="133" y1="56" x2="172" y2="56" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="132.2" y1="56" x2="133" y2="56" stroke="#202830" stroke-width="0.24"/>
+<text x="131.5" y="56" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="131.5" dy="0">0.5</tspan>
+</text>
+<line x1="133" y1="43.5" x2="172" y2="43.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="132.2" y1="43.5" x2="133" y2="43.5" stroke="#202830" stroke-width="0.24"/>
+<text x="131.5" y="43.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="131.5" dy="0">0.75</tspan>
+</text>
+<line x1="133" y1="31" x2="172" y2="31" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="132.2" y1="31" x2="133" y2="31" stroke="#202830" stroke-width="0.24"/>
+<text x="131.5" y="31" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="131.5" dy="0">1</tspan>
+</text>
+<line x1="133" y1="31" x2="133" y2="81" stroke="#202830" stroke-width="0.28"/>
+<line x1="133" y1="81" x2="172" y2="81" stroke="#202830" stroke-width="0.28"/>
+<text x="152.5" y="91" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="152.5" dy="0">Initial transverse energy E⊥ (eV)</tspan>
+</text>
+<text x="122" y="56" text-anchor="middle" dominant-baseline="middle" font-size="5.9pt" font-weight="normal" fill="#202830" transform="rotate(-90 122 56)">
+<tspan x="122" dy="0">Calculated-grid retention fraction</tspan>
+</text>
+<rect x="135.3" y="77.875" width="8.4" height="3.125" fill="#009E73" stroke="none" stroke-width="0.2"/>
+<text x="139.5" y="75.875" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#009E73">
+<tspan x="139.5" dy="0">R-only 4</tspan>
+</text>
+<rect x="148.3" y="43.5" width="8.4" height="37.5" fill="#009E73" stroke="none" stroke-width="0.2"/>
+<text x="152.5" y="41.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#009E73">
+<tspan x="152.5" dy="0">R-only 48</tspan>
+</text>
+<rect x="161.3" y="43.5" width="8.4" height="37.5" fill="#009E73" stroke="none" stroke-width="0.2"/>
+<text x="165.5" y="41.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#009E73">
+<tspan x="165.5" dy="0">R-only 48</tspan>
+</text>
+<text x="89" y="101" text-anchor="middle" dominant-baseline="middle" font-size="5.9pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Fractions summarize only the sampled grid; they are not population probabilities. Retained = no aperture crossing by 10 ms.</tspan>
+</text>
+</svg>

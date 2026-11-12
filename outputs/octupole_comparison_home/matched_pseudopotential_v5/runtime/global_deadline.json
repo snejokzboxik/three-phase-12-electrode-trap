@@ -1,0 +1,9 @@
+{
+  "started_unix_s": 1794461869.219865,
+  "deadline_unix_s": 1794476269.219865,
+  "budget_s": 14400,
+  "started_utc": "2026-11-12T05:37:49.219865+00:00",
+  "deadline_utc": "2026-11-12T09:37:49.219865+00:00",
+  "scope": "all V5 new RF integrations and numerical field diagnostics",
+  "first_integrations": "standing 353.5533905932738 V balanced grid"
+}

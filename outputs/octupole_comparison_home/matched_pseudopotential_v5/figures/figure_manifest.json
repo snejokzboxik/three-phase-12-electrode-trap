@@ -1,0 +1,56 @@
+{
+  "figures": [
+    {
+      "name": "Fig1_matched_strength_energy_retention",
+      "exports": {
+        "svg": "Fig1_matched_strength_energy_retention_double.svg",
+        "pdf": "Fig1_matched_strength_energy_retention_double.pdf",
+        "png": "Fig1_matched_strength_energy_retention_double.png",
+        "width_mm": 178,
+        "height_mm": 106,
+        "png_dpi": 600
+      },
+      "description": "Exact retention counts on the three calculated energy shells; no interpolation.",
+      "source": "processed/matched_strength_balanced_pairs.csv and checkpointed V4/V5 trajectory samples"
+    },
+    {
+      "name": "Fig2_matched_strength_phase_azimuth",
+      "exports": {
+        "svg": "Fig2_matched_strength_phase_azimuth_double.svg",
+        "pdf": "Fig2_matched_strength_phase_azimuth_double.pdf",
+        "png": "Fig2_matched_strength_phase_azimuth_double.png",
+        "width_mm": 178,
+        "height_mm": 151,
+        "png_dpi": 600
+      },
+      "description": "Discrete paired-outcome tiles; no interpolation or adaptive samples.",
+      "source": "processed/matched_strength_balanced_pairs.csv and checkpointed V4/V5 trajectory samples"
+    },
+    {
+      "name": "Fig3_matched_strength_representative_trajectory",
+      "exports": {
+        "svg": "Fig3_matched_strength_representative_trajectory_double.svg",
+        "pdf": "Fig3_matched_strength_representative_trajectory_double.pdf",
+        "png": "Fig3_matched_strength_representative_trajectory_double.png",
+        "width_mm": 178,
+        "height_mm": 113,
+        "png_dpi": 600
+      },
+      "description": "Exact saved xy samples and radius trace for a preregistered grid example.",
+      "source": "processed/matched_strength_balanced_pairs.csv and checkpointed V4/V5 trajectory samples"
+    },
+    {
+      "name": "Fig4_matched_strength_escape_and_orbit",
+      "exports": {
+        "svg": "Fig4_matched_strength_escape_and_orbit_double.svg",
+        "pdf": "Fig4_matched_strength_escape_and_orbit_double.pdf",
+        "png": "Fig4_matched_strength_escape_and_orbit_double.png",
+        "width_mm": 178,
+        "height_mm": 124,
+        "png_dpi": 600
+      },
+      "description": "Event/censoring marks and unsmoothed paired stroboscopic radial differences.",
+      "source": "processed/matched_strength_balanced_pairs.csv and checkpointed V4/V5 trajectory samples"
+    }
+  ]
+}

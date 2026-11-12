@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "paired_conditions": 192,
+  "standing_trajectory_jobs": 192,
+  "standing_status_counts": {
+    "retained": 92,
+    "escaped": 100
+  },
+  "paired_difference_counts": {
+    "both_retained": 92,
+    "rotating_only_retained": 100
+  },
+  "by_energy": {
+    "1": {
+      "n": 64,
+      "rotating_retained": 64,
+      "standing_retained": 60,
+      "rotating_only_retained": 4
+    },
+    "2": {
+      "n": 64,
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "rotating_only_retained": 48
+    },
+    "3": {
+      "n": 64,
+      "rotating_retained": 64,
+      "standing_retained": 16,
+      "rotating_only_retained": 48
+    }
+  },
+  "rotating_reuse": {
+    "V4_calculated": 168,
+    "V3_reused_under_V4_verified_protocol": 24,
+    "all_state_and_sign_checks_pass": true
+  },
+  "strict_tolerance": {
+    "n_trajectories": 6,
+    "classifications_preserved": true
+  },
+  "right_censoring": "retained statuses carry censor time 1000 RF and null escape; event statuses carry escape time and no censor timestamp",
+  "figure_exports": {
+    "PDF": 4,
+    "SVG": 4,
+    "PNG_600dpi": 4,
+    "svg_parse": "passed",
+    "pdf_signature": "passed"
+  },
+  "claims": "finite-time grid comparison only; no ensemble probabilities, full-pseudopotential equality, or infinite-time stability inference"
+}

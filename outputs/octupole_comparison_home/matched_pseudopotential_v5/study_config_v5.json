@@ -1,0 +1,58 @@
+{
+  "study": "V5 balanced matched-leading-pseudopotential comparison",
+  "normalization": "separate matched-leading-pseudopotential protocol at r_ref=0.5 mm; full multipole pseudopotentials need not be identical",
+  "field": "verified h35 N48 reconstruction",
+  "rotating_V": 250.0,
+  "standing_V": 353.5533905932738,
+  "frequency_Hz": 100000.0,
+  "ion_mz_Th": 100000.0,
+  "charge_state": 1,
+  "aperture_radius_mm": 8,
+  "horizon_RF": 1000,
+  "energies_eV": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "radii_mm": [
+    1.0,
+    2.0
+  ],
+  "phases_deg": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "azimuths_deg": [
+    0,
+    22.5,
+    45,
+    67.5
+  ],
+  "tangential_velocity_signs": [
+    -1,
+    1
+  ],
+  "balanced_initial_conditions": 192,
+  "standing_new_integrations": 192,
+  "rotating_reuse": {
+    "V4_calculated": 168,
+    "V3_reused_into_V4": 24,
+    "protocol": "DOP853 rtol=2e-9, max step T/50, full 250 V, same h35 field and horizon; only saved trace sampling differs"
+  },
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "max_step_RF_fraction": 0.02,
+    "saved_samples_per_RF": 1,
+    "aperture_event": "terminal outward crossing of r=8 mm"
+  },
+  "resources": {
+    "max_new_numerical_wall_s": 14400,
+    "workers": 4,
+    "checkpoint": "append-only fsync journal plus atomic 300-RF segments"
+  },
+  "direction_audit": "computed initial tangent projection agrees with recorded direction for all 192 reused states",
+  "dataset_interpretation": "descriptive deterministic grid; no population probabilities or infinite-time stability claims"
+}

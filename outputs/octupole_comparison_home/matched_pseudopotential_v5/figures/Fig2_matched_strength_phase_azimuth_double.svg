@@ -1,0 +1,607 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="151mm" viewBox="0 0 178 151">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="89" y="6" text-anchor="middle" dominant-baseline="middle" font-size="10.5pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Paired retention outcomes across RF phase and launch azimuth</tspan>
+</text>
+<text x="89" y="13" text-anchor="middle" dominant-baseline="middle" font-size="6.5pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Tiles show rotating-only survivors among the two launch radii (n = 2 per energy × phase × azimuth × direction tile)</tspan>
+</text>
+<text x="23" y="23" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="23" dy="0">E_perp = 1 eV · tangential sign -1</tspan>
+</text>
+<rect x="32" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="53.125" dy="0">0/2</tspan>
+</text>
+<rect x="60.5" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="67.375" dy="0">0/2</tspan>
+</text>
+<rect x="74.75" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="81.625" dy="0">0/2</tspan>
+</text>
+<rect x="32" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="53.125" dy="0">0/2</tspan>
+</text>
+<rect x="60.5" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="67.375" dy="0">0/2</tspan>
+</text>
+<rect x="74.75" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="81.625" dy="0">0/2</tspan>
+</text>
+<rect x="32" y="34" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="34" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="53.125" dy="0">0/2</tspan>
+</text>
+<rect x="60.5" y="34" width="13.75" height="5.5" fill="#8CCDB0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="67.375" dy="0">1/2</tspan>
+</text>
+<rect x="74.75" y="34" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="81.625" dy="0">0/2</tspan>
+</text>
+<rect x="32" y="28" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="28" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="53.125" dy="0">0/2</tspan>
+</text>
+<rect x="60.5" y="28" width="13.75" height="5.5" fill="#8CCDB0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="67.375" dy="0">1/2</tspan>
+</text>
+<rect x="74.75" y="28" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="81.625" dy="0">0/2</tspan>
+</text>
+<text x="26" y="40" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872" transform="rotate(-90 26 40)">
+<tspan x="26" dy="0">φ_RF (°)</tspan>
+</text>
+<text x="30.6" y="49" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">0</tspan>
+</text>
+<text x="30.6" y="43" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">90</tspan>
+</text>
+<text x="30.6" y="37" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">180</tspan>
+</text>
+<text x="30.6" y="31" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">270</tspan>
+</text>
+<text x="39.125" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="39.125" dy="0">0</tspan>
+</text>
+<text x="53.375" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="53.375" dy="0">22.5</tspan>
+</text>
+<text x="67.625" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="67.625" dy="0">45</tspan>
+</text>
+<text x="81.875" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="81.875" dy="0">67.5</tspan>
+</text>
+<text x="60.5" y="57.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="60.5" dy="0">Launch azimuth θ₀ (°)</tspan>
+</text>
+<text x="99" y="23" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="99" dy="0">E_perp = 1 eV · tangential sign +1</tspan>
+</text>
+<rect x="108" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="129.125" dy="0">0/2</tspan>
+</text>
+<rect x="136.5" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="143.375" dy="0">0/2</tspan>
+</text>
+<rect x="150.75" y="46" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="48.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="157.625" dy="0">0/2</tspan>
+</text>
+<rect x="108" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="129.125" dy="0">0/2</tspan>
+</text>
+<rect x="136.5" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="143.375" dy="0">0/2</tspan>
+</text>
+<rect x="150.75" y="40" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="42.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="157.625" dy="0">0/2</tspan>
+</text>
+<rect x="108" y="34" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="34" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="129.125" dy="0">0/2</tspan>
+</text>
+<rect x="136.5" y="34" width="13.75" height="5.5" fill="#8CCDB0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="143.375" dy="0">1/2</tspan>
+</text>
+<rect x="150.75" y="34" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="36.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="157.625" dy="0">0/2</tspan>
+</text>
+<rect x="108" y="28" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="28" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="129.125" dy="0">0/2</tspan>
+</text>
+<rect x="136.5" y="28" width="13.75" height="5.5" fill="#8CCDB0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="143.375" dy="0">1/2</tspan>
+</text>
+<rect x="150.75" y="28" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="30.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="157.625" dy="0">0/2</tspan>
+</text>
+<text x="102" y="40" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872" transform="rotate(-90 102 40)">
+<tspan x="102" dy="0">φ_RF (°)</tspan>
+</text>
+<text x="106.6" y="49" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">0</tspan>
+</text>
+<text x="106.6" y="43" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">90</tspan>
+</text>
+<text x="106.6" y="37" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">180</tspan>
+</text>
+<text x="106.6" y="31" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">270</tspan>
+</text>
+<text x="115.125" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="115.125" dy="0">0</tspan>
+</text>
+<text x="129.375" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="129.375" dy="0">22.5</tspan>
+</text>
+<text x="143.625" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="143.625" dy="0">45</tspan>
+</text>
+<text x="157.875" y="54" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="157.875" dy="0">67.5</tspan>
+</text>
+<text x="136.5" y="57.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="136.5" dy="0">Launch azimuth θ₀ (°)</tspan>
+</text>
+<text x="23" y="59" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="23" dy="0">E_perp = 2 eV · tangential sign -1</tspan>
+</text>
+<rect x="32" y="82" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="82" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="82" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="82" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<rect x="32" y="76" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="76" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="76" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="76" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<rect x="32" y="70" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="70" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="70" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="70" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<rect x="32" y="64" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="64" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="64" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="64" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<text x="26" y="76" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872" transform="rotate(-90 26 76)">
+<tspan x="26" dy="0">φ_RF (°)</tspan>
+</text>
+<text x="30.6" y="85" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">0</tspan>
+</text>
+<text x="30.6" y="79" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">90</tspan>
+</text>
+<text x="30.6" y="73" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">180</tspan>
+</text>
+<text x="30.6" y="67" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">270</tspan>
+</text>
+<text x="39.125" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="39.125" dy="0">0</tspan>
+</text>
+<text x="53.375" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="53.375" dy="0">22.5</tspan>
+</text>
+<text x="67.625" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="67.625" dy="0">45</tspan>
+</text>
+<text x="81.875" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="81.875" dy="0">67.5</tspan>
+</text>
+<text x="60.5" y="93.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="60.5" dy="0">Launch azimuth θ₀ (°)</tspan>
+</text>
+<text x="99" y="59" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="99" dy="0">E_perp = 2 eV · tangential sign +1</tspan>
+</text>
+<rect x="108" y="82" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="82" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="82" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="82" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="84.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<rect x="108" y="76" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="76" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="76" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="76" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="78.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<rect x="108" y="70" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="70" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="70" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="70" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="72.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<rect x="108" y="64" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="64" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="64" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="64" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="66.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<text x="102" y="76" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872" transform="rotate(-90 102 76)">
+<tspan x="102" dy="0">φ_RF (°)</tspan>
+</text>
+<text x="106.6" y="85" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">0</tspan>
+</text>
+<text x="106.6" y="79" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">90</tspan>
+</text>
+<text x="106.6" y="73" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">180</tspan>
+</text>
+<text x="106.6" y="67" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">270</tspan>
+</text>
+<text x="115.125" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="115.125" dy="0">0</tspan>
+</text>
+<text x="129.375" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="129.375" dy="0">22.5</tspan>
+</text>
+<text x="143.625" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="143.625" dy="0">45</tspan>
+</text>
+<text x="157.875" y="90" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="157.875" dy="0">67.5</tspan>
+</text>
+<text x="136.5" y="93.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="136.5" dy="0">Launch azimuth θ₀ (°)</tspan>
+</text>
+<text x="23" y="95" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="23" dy="0">E_perp = 3 eV · tangential sign -1</tspan>
+</text>
+<rect x="32" y="118" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="118" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="118" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="118" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<rect x="32" y="112" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="112" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="112" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="112" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<rect x="32" y="106" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="106" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="106" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="106" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<rect x="32" y="100" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="38.875" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="38.875" dy="0">0/2</tspan>
+</text>
+<rect x="46.25" y="100" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="53.125" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="53.125" dy="0">2/2</tspan>
+</text>
+<rect x="60.5" y="100" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="67.375" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="67.375" dy="0">2/2</tspan>
+</text>
+<rect x="74.75" y="100" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="81.625" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="81.625" dy="0">2/2</tspan>
+</text>
+<text x="26" y="112" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872" transform="rotate(-90 26 112)">
+<tspan x="26" dy="0">φ_RF (°)</tspan>
+</text>
+<text x="30.6" y="121" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">0</tspan>
+</text>
+<text x="30.6" y="115" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">90</tspan>
+</text>
+<text x="30.6" y="109" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">180</tspan>
+</text>
+<text x="30.6" y="103" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="30.6" dy="0">270</tspan>
+</text>
+<text x="39.125" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="39.125" dy="0">0</tspan>
+</text>
+<text x="53.375" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="53.375" dy="0">22.5</tspan>
+</text>
+<text x="67.625" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="67.625" dy="0">45</tspan>
+</text>
+<text x="81.875" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="81.875" dy="0">67.5</tspan>
+</text>
+<text x="60.5" y="129.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="60.5" dy="0">Launch azimuth θ₀ (°)</tspan>
+</text>
+<text x="99" y="95" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="99" dy="0">E_perp = 3 eV · tangential sign +1</tspan>
+</text>
+<rect x="108" y="118" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="118" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="118" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="118" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="120.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<rect x="108" y="112" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="112" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="112" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="112" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="114.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<rect x="108" y="106" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="106" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="106" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="106" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="108.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<rect x="108" y="100" width="13.75" height="5.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="114.875" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#202830">
+<tspan x="114.875" dy="0">0/2</tspan>
+</text>
+<rect x="122.25" y="100" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="129.125" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="129.125" dy="0">2/2</tspan>
+</text>
+<rect x="136.5" y="100" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="143.375" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="143.375" dy="0">2/2</tspan>
+</text>
+<rect x="150.75" y="100" width="13.75" height="5.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.18"/>
+<text x="157.625" y="102.75" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="bold" fill="#FFFFFF">
+<tspan x="157.625" dy="0">2/2</tspan>
+</text>
+<text x="102" y="112" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872" transform="rotate(-90 102 112)">
+<tspan x="102" dy="0">φ_RF (°)</tspan>
+</text>
+<text x="106.6" y="121" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">0</tspan>
+</text>
+<text x="106.6" y="115" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">90</tspan>
+</text>
+<text x="106.6" y="109" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">180</tspan>
+</text>
+<text x="106.6" y="103" text-anchor="end" dominant-baseline="middle" font-size="5pt" font-weight="normal" fill="#5D6872">
+<tspan x="106.6" dy="0">270</tspan>
+</text>
+<text x="115.125" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="115.125" dy="0">0</tspan>
+</text>
+<text x="129.375" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="129.375" dy="0">22.5</tspan>
+</text>
+<text x="143.625" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="143.625" dy="0">45</tspan>
+</text>
+<text x="157.875" y="126" text-anchor="middle" dominant-baseline="middle" font-size="4.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="157.875" dy="0">67.5</tspan>
+</text>
+<text x="136.5" y="129.5" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="136.5" dy="0">Launch azimuth θ₀ (°)</tspan>
+</text>
+<text x="10" y="148" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="10" dy="0">Key: tile count = rotating retained / standing escaped; remaining paired starts retained in both models.</tspan>
+</text>
+<rect x="134" y="146" width="6" height="2.5" fill="#E8EDF0" stroke="#FFFFFF" stroke-width="0.15"/>
+<text x="143" y="147.3" text-anchor="start" dominant-baseline="middle" font-size="5.6pt" font-weight="normal" fill="#202830">
+<tspan x="143" dy="0">0/2</tspan>
+</text>
+<rect x="146" y="146" width="6" height="2.5" fill="#8CCDB0" stroke="#FFFFFF" stroke-width="0.15"/>
+<text x="155" y="147.3" text-anchor="start" dominant-baseline="middle" font-size="5.6pt" font-weight="normal" fill="#202830">
+<tspan x="155" dy="0">1/2</tspan>
+</text>
+<rect x="158" y="146" width="6" height="2.5" fill="#009E73" stroke="#FFFFFF" stroke-width="0.15"/>
+<text x="167" y="147.3" text-anchor="start" dominant-baseline="middle" font-size="5.6pt" font-weight="normal" fill="#202830">
+<tspan x="167" dy="0">2/2</tspan>
+</text>
+</svg>

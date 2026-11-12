@@ -1,0 +1,22 @@
+{
+  "source_counts": {
+    "V3 reused": 24,
+    "V4 calculated": 168
+  },
+  "balanced_rows": 192,
+  "status_counts": {
+    "retained": 192
+  },
+  "all_initial_state_reconstructions_pass": true,
+  "all_tangential_sign_checks_pass": true,
+  "all_source_traces_exist": true,
+  "solver_tolerances_match": true,
+  "saved_sampling_rates": {
+    "8": 24,
+    "1": 168
+  },
+  "source_files": {
+    "V4_main_grid": "outputs/octupole_comparison_home/confinement_maps_v4/equal_peak_main_grid.csv",
+    "V4_study_config": "outputs/octupole_comparison_home/confinement_maps_v4/study_config_v4.json"
+  }
+}

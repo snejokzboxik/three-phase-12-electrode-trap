@@ -1,0 +1,36 @@
+{
+  "protocol": "DOP853 rtol=2e-11, max step T/100, same h35 N48 fields and exact matched starts; 3 prespecified energy/phase cases, both models",
+  "completed_strict_trajectories": 6,
+  "all_selected_classifications_preserved": true,
+  "cases": [
+    {
+      "condition_id": "E1_r1_phase180_az45_dirp",
+      "standard_pair_class": "rotating_only_retained",
+      "standard_standing_escape_time_RF": 318.96533985170214,
+      "strict_rotating_status": "retained",
+      "strict_standing_status": "escaped",
+      "strict_standing_escape_time_RF": 318.9653398520082,
+      "classification_preserved": true
+    },
+    {
+      "condition_id": "E2_r1_phase0_az22_dirp",
+      "standard_pair_class": "rotating_only_retained",
+      "standard_standing_escape_time_RF": 185.4912740732636,
+      "strict_rotating_status": "retained",
+      "strict_standing_status": "escaped",
+      "strict_standing_escape_time_RF": 185.4912740732791,
+      "classification_preserved": true
+    },
+    {
+      "condition_id": "E3_r1_phase90_az22_dirp",
+      "standard_pair_class": "rotating_only_retained",
+      "standard_standing_escape_time_RF": 128.56768976291224,
+      "strict_rotating_status": "retained",
+      "strict_standing_status": "escaped",
+      "strict_standing_escape_time_RF": 128.5676897636342,
+      "classification_preserved": true
+    }
+  ],
+  "right_censoring": "strict survivors are right-censored at 1000 RF; escaped statuses use outward aperture first passage",
+  "limitation": "three representative deterministic cases validate numerical robustness, not the entire 192-condition grid"
+}

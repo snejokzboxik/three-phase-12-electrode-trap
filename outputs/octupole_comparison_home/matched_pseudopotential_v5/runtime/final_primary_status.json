@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "pairs": 192,
+  "classes": {
+    "both_retained": 92,
+    "rotating_only_retained": 100
+  },
+  "finalized_utc": "2026-11-12T05:48:03.106097+00:00"
+}

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="113mm" viewBox="0 0 178 113">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="89" y="6" text-anchor="middle" dominant-baseline="middle" font-size="10.5pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Effective-potential minimum displacement under radial electrode motion</tspan>
+</text>
+<text x="89" y="13" text-anchor="middle" dominant-baseline="middle" font-size="6.5pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Four existing h50 field solutions; the 10 µm point also has an independent h35 check</tspan>
+</text>
+<line x1="36.6667" y1="27" x2="36.6667" y2="92" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="36.6667" y1="92" x2="36.6667" y2="92.8" stroke="#202830" stroke-width="0.24"/>
+<text x="36.6667" y="94.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="36.6667" dy="0">10</tspan>
+</text>
+<line x1="79.1136" y1="27" x2="79.1136" y2="92" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="79.1136" y1="92" x2="79.1136" y2="92.8" stroke="#202830" stroke-width="0.24"/>
+<text x="79.1136" y="94.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="79.1136" dy="0">25</tspan>
+</text>
+<line x1="111.223" y1="27" x2="111.223" y2="92" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="111.223" y1="92" x2="111.223" y2="92.8" stroke="#202830" stroke-width="0.24"/>
+<text x="111.223" y="94.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="111.223" dy="0">50</tspan>
+</text>
+<line x1="143.333" y1="27" x2="143.333" y2="92" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="143.333" y1="92" x2="143.333" y2="92.8" stroke="#202830" stroke-width="0.24"/>
+<text x="143.333" y="94.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="143.333" dy="0">100</tspan>
+</text>
+<line x1="26" y1="92" x2="154" y2="92" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="25.2" y1="92" x2="26" y2="92" stroke="#202830" stroke-width="0.24"/>
+<text x="24.5" y="92" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="24.5" dy="0">0.3</tspan>
+</text>
+<line x1="26" y1="78.5113" x2="154" y2="78.5113" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="25.2" y1="78.5113" x2="26" y2="78.5113" stroke="#202830" stroke-width="0.24"/>
+<text x="24.5" y="78.5113" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="24.5" dy="0">0.4</tspan>
+</text>
+<line x1="26" y1="59.5" x2="154" y2="59.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="25.2" y1="59.5" x2="26" y2="59.5" stroke="#202830" stroke-width="0.24"/>
+<text x="24.5" y="59.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="24.5" dy="0">0.6</tspan>
+</text>
+<line x1="26" y1="46.0113" x2="154" y2="46.0113" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="25.2" y1="46.0113" x2="26" y2="46.0113" stroke="#202830" stroke-width="0.24"/>
+<text x="24.5" y="46.0113" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="24.5" dy="0">0.8</tspan>
+</text>
+<line x1="26" y1="35.5486" x2="154" y2="35.5486" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="25.2" y1="35.5486" x2="26" y2="35.5486" stroke="#202830" stroke-width="0.24"/>
+<text x="24.5" y="35.5486" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="24.5" dy="0">1</tspan>
+</text>
+<line x1="26" y1="27" x2="26" y2="92" stroke="#202830" stroke-width="0.28"/>
+<line x1="26" y1="92" x2="154" y2="92" stroke="#202830" stroke-width="0.28"/>
+<circle cx="36.6667" cy="73.4276" r="1.15" fill="#0072B2" stroke="#0072B2" stroke-width="0.22"/>
+<circle cx="79.1136" cy="59.3304" r="1.15" fill="#009E73" stroke="#009E73" stroke-width="0.22"/>
+<circle cx="111.223" cy="48.7511" r="1.15" fill="#E69F00" stroke="#E69F00" stroke-width="0.22"/>
+<circle cx="143.333" cy="38.2952" r="1.15" fill="#D55E00" stroke="#D55E00" stroke-width="0.22"/>
+<polyline points="36.6667,73.4276 79.1136,59.1067 111.223,48.2734 143.333,37.44" fill="none" stroke="#5D6872" stroke-width="0.3" stroke-dasharray="1.2,0.8"/>
+<polygon points="35.8667,72.627 37.4667,72.627 37.4667,74.227 35.8667,74.227" fill="#FFFFFF" stroke="#202830" stroke-width="0.22"/>
+<polygon points="36.6667,72.4676 35.8267,74.2276 37.5067,74.2276" fill="#FFFFFF" stroke="#202830" stroke-width="0.22"/>
+<text x="90" y="101" text-anchor="middle" dominant-baseline="middle" font-size="6.1pt" font-weight="normal" fill="#202830">
+<tspan x="90" dy="0">Electrode-center displacement Δ (µm; logarithmic scale)</tspan>
+</text>
+<text x="16" y="59.5" text-anchor="middle" dominant-baseline="middle" font-size="6.1pt" font-weight="normal" fill="#202830" transform="rotate(-90 16 59.5)">
+<tspan x="16" dy="0">Radius of located minimum r_min (mm)</tspan>
+</text>
+<circle cx="122" cy="25" r="0.55" fill="#5D6872" stroke="#5D6872" stroke-width="0.18"/>
+<text x="124" y="25" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="124" dy="0">Δ^(1/3) guide</tspan>
+</text>
+<polygon points="121.45,30.45 122.55,30.45 122.55,31.55 121.45,31.55" fill="#202830" stroke="#202830" stroke-width="0.18"/>
+<text x="124" y="31" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="124" dy="0">h35 / h50, Δ = 10 µm</tspan>
+</text>
+<text x="89" y="109" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Log–log fit to the four h50 radial-out points: exponent 0.326; guide is normalized at 10 µm. No data are interpolated.</tspan>
+</text>
+</svg>

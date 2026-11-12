@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="111mm" viewBox="0 0 178 111">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="89" y="6" text-anchor="middle" dominant-baseline="middle" font-size="10.6pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Symmetry-breaking dipole and nominal octupole harmonics</tspan>
+</text>
+<text x="89" y="13" text-anchor="middle" dominant-baseline="middle" font-size="6.4pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Complex-potential Fourier magnitudes on deterministic rings; radial-out displacement, h50</tspan>
+</text>
+<text x="18" y="23" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="18" dy="0">A  m = 1 · induced dipole</tspan>
+</text>
+<line x1="29.75" y1="31" x2="29.75" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="29.75" y1="79" x2="29.75" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="29.75" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="29.75" dy="0">0.5</tspan>
+</text>
+<line x1="45.5833" y1="31" x2="45.5833" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="45.5833" y1="79" x2="45.5833" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="45.5833" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="45.5833" dy="0">1</tspan>
+</text>
+<line x1="61.4167" y1="31" x2="61.4167" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="61.4167" y1="79" x2="61.4167" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="61.4167" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="61.4167" dy="0">1.5</tspan>
+</text>
+<line x1="77.25" y1="31" x2="77.25" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="77.25" y1="79" x2="77.25" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="77.25" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="77.25" dy="0">2</tspan>
+</text>
+<line x1="25" y1="79" x2="82" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="24.2" y1="79" x2="25" y2="79" stroke="#202830" stroke-width="0.24"/>
+<text x="23.5" y="79" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="23.5" dy="0">10⁻⁹</tspan>
+</text>
+<line x1="25" y1="60.8903" x2="82" y2="60.8903" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="24.2" y1="60.8903" x2="25" y2="60.8903" stroke="#202830" stroke-width="0.24"/>
+<text x="23.5" y="60.8903" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="23.5" dy="0">10⁻⁷</tspan>
+</text>
+<line x1="25" y1="42.7806" x2="82" y2="42.7806" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="24.2" y1="42.7806" x2="25" y2="42.7806" stroke="#202830" stroke-width="0.24"/>
+<text x="23.5" y="42.7806" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="23.5" dy="0">10⁻⁵</tspan>
+</text>
+<line x1="25" y1="33.7258" x2="82" y2="33.7258" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="24.2" y1="33.7258" x2="25" y2="33.7258" stroke="#202830" stroke-width="0.24"/>
+<text x="23.5" y="33.7258" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="23.5" dy="0">10⁻⁴</tspan>
+</text>
+<line x1="25" y1="31" x2="25" y2="79" stroke="#202830" stroke-width="0.28"/>
+<line x1="25" y1="79" x2="82" y2="79" stroke="#202830" stroke-width="0.28"/>
+<circle cx="29.75" cy="39.0349" r="0.95" fill="#0072B2" stroke="#0072B2" stroke-width="0.28"/>
+<circle cx="45.5833" cy="36.3091" r="0.95" fill="#0072B2" stroke="#0072B2" stroke-width="0.28"/>
+<circle cx="77.25" cy="33.5833" r="0.95" fill="#0072B2" stroke="#0072B2" stroke-width="0.28"/>
+<text x="56" y="83" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="normal" fill="#0072B2">
+<tspan x="56" dy="0">measured radial exponent = 1.000</tspan>
+</text>
+<text x="53.5" y="86" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="53.5" dy="0">Radius r (mm)</tspan>
+</text>
+<text x="17" y="55" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="normal" fill="#202830" transform="rotate(-90 17 55)">
+<tspan x="17" dy="0">|H_m| (V/V)</tspan>
+</text>
+<text x="98" y="23" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="98" dy="0">B  m = 4 · nominal octupole</tspan>
+</text>
+<line x1="109.75" y1="31" x2="109.75" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="109.75" y1="79" x2="109.75" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="109.75" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="109.75" dy="0">0.5</tspan>
+</text>
+<line x1="125.583" y1="31" x2="125.583" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="125.583" y1="79" x2="125.583" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="125.583" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="125.583" dy="0">1</tspan>
+</text>
+<line x1="141.417" y1="31" x2="141.417" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="141.417" y1="79" x2="141.417" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="141.417" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="141.417" dy="0">1.5</tspan>
+</text>
+<line x1="157.25" y1="31" x2="157.25" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="157.25" y1="79" x2="157.25" y2="79.8" stroke="#202830" stroke-width="0.24"/>
+<text x="157.25" y="81.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="157.25" dy="0">2</tspan>
+</text>
+<line x1="105" y1="79" x2="162" y2="79" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="104.2" y1="79" x2="105" y2="79" stroke="#202830" stroke-width="0.24"/>
+<text x="103.5" y="79" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="103.5" dy="0">10⁻⁹</tspan>
+</text>
+<line x1="105" y1="60.8903" x2="162" y2="60.8903" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="104.2" y1="60.8903" x2="105" y2="60.8903" stroke="#202830" stroke-width="0.24"/>
+<text x="103.5" y="60.8903" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="103.5" dy="0">10⁻⁷</tspan>
+</text>
+<line x1="105" y1="42.7806" x2="162" y2="42.7806" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="104.2" y1="42.7806" x2="105" y2="42.7806" stroke="#202830" stroke-width="0.24"/>
+<text x="103.5" y="42.7806" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="103.5" dy="0">10⁻⁵</tspan>
+</text>
+<line x1="105" y1="33.7258" x2="162" y2="33.7258" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="104.2" y1="33.7258" x2="105" y2="33.7258" stroke="#202830" stroke-width="0.24"/>
+<text x="103.5" y="33.7258" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="103.5" dy="0">10⁻⁴</tspan>
+</text>
+<line x1="105" y1="31" x2="105" y2="79" stroke="#202830" stroke-width="0.28"/>
+<line x1="105" y1="79" x2="162" y2="79" stroke="#202830" stroke-width="0.28"/>
+<circle cx="109.75" cy="73.0887" r="0.95" fill="#D55E00" stroke="#D55E00" stroke-width="0.28"/>
+<circle cx="125.583" cy="62.1886" r="0.95" fill="#D55E00" stroke="#D55E00" stroke-width="0.28"/>
+<circle cx="157.25" cy="51.286" r="0.95" fill="#D55E00" stroke="#D55E00" stroke-width="0.28"/>
+<text x="136" y="83" text-anchor="middle" dominant-baseline="middle" font-size="5.6pt" font-weight="normal" fill="#D55E00">
+<tspan x="136" dy="0">measured radial exponent = 3.999</tspan>
+</text>
+<text x="133.5" y="86" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="133.5" dy="0">Radius r (mm)</tspan>
+</text>
+<text x="97" y="55" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="normal" fill="#202830" transform="rotate(-90 97 55)">
+<tspan x="97" dy="0">|H_m| (V/V)</tspan>
+</text>
+<text x="89" y="101" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">In the local harmonic expansion, Φ₁ ∝ r gives an approximately constant dipolar field; Φ₄ ∝ r⁴ gives E₄ ∝ r³.</tspan>
+</text>
+<text x="89" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">At r = 0.5, 1 and 2 mm, the m = 1 to m = 4 electric-field amplitude ratio is about 1.44×10³, 1.80×10² and 22.5.</tspan>
+</text>
+</svg>

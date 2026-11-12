@@ -1,0 +1,82 @@
+{
+  "figures": [
+    {
+      "name": "Fig1_displacement_minimum_scaling_v5",
+      "exports": {
+        "svg": "Fig1_displacement_minimum_scaling_v5_double.svg",
+        "pdf": "Fig1_displacement_minimum_scaling_v5_double.pdf",
+        "png": "Fig1_displacement_minimum_scaling_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 113,
+        "png_dpi": 600
+      },
+      "description": "Located effective-minimum radius and a sampled cubic-root scaling guide.",
+      "source": "existing displacement pilot P4 field and processed CSV/JSON data"
+    },
+    {
+      "name": "Fig2_symmetry_breaking_harmonics_v5",
+      "exports": {
+        "svg": "Fig2_symmetry_breaking_harmonics_v5_double.svg",
+        "pdf": "Fig2_symmetry_breaking_harmonics_v5_double.pdf",
+        "png": "Fig2_symmetry_breaking_harmonics_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 111,
+        "png_dpi": 600
+      },
+      "description": "Measured m=1 and m=4 complex-potential harmonics on three sampled radii.",
+      "source": "existing displacement pilot P4 field and processed CSV/JSON data"
+    },
+    {
+      "name": "Fig3_stationary_points_and_curvature_v5",
+      "exports": {
+        "svg": "Fig3_stationary_points_and_curvature_v5_double.svg",
+        "pdf": "Fig3_stationary_points_and_curvature_v5_double.pdf",
+        "png": "Fig3_stationary_points_and_curvature_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 122,
+        "png_dpi": 600
+      },
+      "description": "Mirror-related minima, a higher local minimum, saddle candidates and finite-difference curvature checks.",
+      "source": "existing displacement pilot P4 field and processed CSV/JSON data"
+    },
+    {
+      "name": "Fig1_displacement_minimum_scaling_v5",
+      "exports": {
+        "svg": "Fig1_displacement_minimum_scaling_v5_double.svg",
+        "pdf": "Fig1_displacement_minimum_scaling_v5_double.pdf",
+        "png": "Fig1_displacement_minimum_scaling_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 113,
+        "png_dpi": 600
+      },
+      "description": "Located effective-minimum radius and a sampled cubic-root scaling guide.",
+      "source": "existing displacement pilot P4 field and processed CSV/JSON data"
+    },
+    {
+      "name": "Fig2_symmetry_breaking_harmonics_v5",
+      "exports": {
+        "svg": "Fig2_symmetry_breaking_harmonics_v5_double.svg",
+        "pdf": "Fig2_symmetry_breaking_harmonics_v5_double.pdf",
+        "png": "Fig2_symmetry_breaking_harmonics_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 111,
+        "png_dpi": 600
+      },
+      "description": "Measured m=1 and m=4 complex-potential harmonics on three sampled radii.",
+      "source": "existing displacement pilot P4 field and processed CSV/JSON data"
+    },
+    {
+      "name": "Fig3_stationary_points_and_curvature_v5",
+      "exports": {
+        "svg": "Fig3_stationary_points_and_curvature_v5_double.svg",
+        "pdf": "Fig3_stationary_points_and_curvature_v5_double.pdf",
+        "png": "Fig3_stationary_points_and_curvature_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 122,
+        "png_dpi": 600
+      },
+      "description": "Mirror-related minima, a higher local minimum, saddle candidates and finite-difference curvature checks.",
+      "source": "existing displacement pilot P4 field and processed CSV/JSON data"
+    }
+  ]
+}

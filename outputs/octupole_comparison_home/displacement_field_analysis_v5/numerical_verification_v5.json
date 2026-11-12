@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "existing_geometry_count": 11,
+  "existing_solved_P4_field_count": 12,
+  "new_FEM_solves": 0,
+  "new_RF_integrations": 0,
+  "minimum_scaling_exponent": 0.32551808585684877,
+  "harmonic_radial_exponents": {
+    "1": 0.9999998160345647,
+    "4": 3.9993522576086806
+  },
+  "h35_h50_minimum_delta_nm": 0.006090954536352999,
+  "finite_difference_saddles": {
+    "count": 4,
+    "all_hessian_signatures_pass": true,
+    "barrier_mesh_difference_under_1pct": true
+  },
+  "curvature_minima_signs": "positive at global minimum for 25/50/100 um stencils on both h35/h50",
+  "figure_exports": {
+    "PDF": 3,
+    "SVG": 3,
+    "PNG_600dpi": 3,
+    "svg_parse": "passed",
+    "pdf_signature": "passed"
+  },
+  "claim_limits": "descriptive four-point exponent; finite-domain stationary search; local effective-potential barriers do not equal aperture escape thresholds or fabrication tolerances"
+}

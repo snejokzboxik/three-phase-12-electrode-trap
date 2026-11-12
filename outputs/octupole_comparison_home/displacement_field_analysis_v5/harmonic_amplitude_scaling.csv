@@ -1,0 +1,7 @@
+radius_mm,azimuthal_mode_m,amplitude_scaling_exponent_vs_displacement,fit_r_squared,coefficient_at_10um_V_per_V,coefficient_at_100um_V_per_V,radial_displacement_samples_um,interpretation
+0.5,1,0.9934086170527607,0.999994939673041,2.5922309687325704e-05,0.0002552064506286496,10;25;50;100,m=1 is the leading symmetry-breaking dipolar potential term; m=4 is the nominal leading octupolar potential term
+0.5,4,0.9914993556828803,0.9999931219952893,4.496015837172703e-09,4.405874246984984e-08,10;25;50;100,m=4 octupolar potential term
+1.0,1,0.993408812497754,0.9999949393766104,5.1844595081332125e-05,0.0005104129183478063,10;25;50;100,m=1 is the leading symmetry-breaking dipolar potential term; m=4 is the nominal leading octupolar potential term
+1.0,4,0.9917907404143452,0.9999924862422566,7.18818742679422e-08,7.049810835328877e-07,10;25;50;100,m=4 octupolar potential term
+2.0,1,0.9934088912963315,0.9999949395009564,0.00010368921230541412,0.0010208260954483737,10;25;50;100,m=1 is the leading symmetry-breaking dipolar potential term; m=4 is the nominal leading octupolar potential term
+2.0,4,0.991839718245267,0.9999923180024093,1.149946982295753e-06,1.127934402796269e-05,10;25;50;100,m=4 octupolar potential term

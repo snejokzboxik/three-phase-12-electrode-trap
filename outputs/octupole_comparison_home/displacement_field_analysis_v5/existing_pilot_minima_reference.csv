@@ -1,0 +1,12 @@
+pattern,resolution,reported_x_mm,reported_y_mm,reported_radius_mm,scope
+radial_out_10um,h50,-0.23656916693688568,-0.37786421916759955,0.4458097563673902,previously reported search point; not a newly established global minimum
+radial_in_10um,h50,-0.44220977160442504,-1.0459283451591308e-06,0.442209771605662,previously reported search point; not a newly established global minimum
+tangential_plus_10um,h50,-0.010444149468304945,-0.3273758608898824,0.32754241641581006,previously reported search point; not a newly established global minimum
+tangential_minus_10um,h50,-0.010432537752869411,0.32738068694000927,0.3275468699671505,previously reported search point; not a newly established global minimum
+radial_out_25um,h50,-0.3253028150979885,0.506746054399195,0.6021739658602221,previously reported search point; not a newly established global minimum
+radial_out_50um,h50,-0.4142629136259898,0.6307102399993679,0.7545920543220387,previously reported search point; not a newly established global minimum
+radial_out_100um,h50,-0.5273182533916676,-0.7819094817131121,0.9431049665614675,previously reported search point; not a newly established global minimum
+symmetric_out_25um,h50,0.0017569740909905674,0.004718107144289556,0.005034629378753542,previously reported search point; not a newly established global minimum
+asymmetric_opposed_pair_25um,h50,-0.37794766039914485,-0.6710555265883656,0.7701687826483076,previously reported search point; not a newly established global minimum
+random_seed_11_25um,h50,-0.04407251862250316,-0.8801304898475859,0.8812332642706371,previously reported search point; not a newly established global minimum
+random_seed_29_100um,h50,0.8594856531195862,-1.1641277498107216,1.4470345558409363,previously reported search point; not a newly established global minimum

@@ -1,0 +1,1843 @@
+{
+  "field_sources": [
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um_h50\\displaced_h50.msh",
+      "mesh_sha256": "692cc9cd6bbce1895f8b7c1a5a608e3152312167aba6f6ab5fc741780994be94",
+      "field_sha256": "afaadbeb58e9867b3faf756eeaf42dc67f49f0c7470f3a879d69ee592598ba27",
+      "dofs": 3155745,
+      "element_count": 393678,
+      "local_reference_node_max_error_m": 4.9065389333867974e-18,
+      "element_nodal_reproduction_max_error": 2.2538488740919874e-14
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um\\displaced_h35.msh",
+      "mesh_sha256": "d309595fb857c309d52a5d52f2f2d7a8e48d05d774bf009cb381457592ef0c1e",
+      "field_sha256": "92a64db5f5593b2f8f33a790c9f5f51662bde9257bbcfd8da10779e6099c7ca5",
+      "dofs": 5148393,
+      "element_count": 642516,
+      "local_reference_node_max_error_m": 4.9065389333867974e-18,
+      "element_nodal_reproduction_max_error": 2.4425300793907003e-14
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um_h50\\displaced_h50.msh",
+      "mesh_sha256": "692cc9cd6bbce1895f8b7c1a5a608e3152312167aba6f6ab5fc741780994be94",
+      "field_sha256": "afaadbeb58e9867b3faf756eeaf42dc67f49f0c7470f3a879d69ee592598ba27",
+      "dofs": 3155745,
+      "element_count": 393678,
+      "local_reference_node_max_error_m": 4.9065389333867974e-18,
+      "element_nodal_reproduction_max_error": 2.2538488740919874e-14
+    },
+    {
+      "pattern": "radial_out_25um",
+      "resolution": "h50",
+      "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_25um_h50\\displaced_h50.msh",
+      "mesh_sha256": "44496a068401b40f348fa41512418a40cae24c164141988da86bfb3de01f1a4b",
+      "field_sha256": "053cd6ec37452087b5f39db3d8084e60fe197a35c7b27e8a5154550b708d0c02",
+      "dofs": 3155921,
+      "element_count": 393700,
+      "local_reference_node_max_error_m": 4.9065389333867974e-18,
+      "element_nodal_reproduction_max_error": 2.7200464103316335e-14
+    },
+    {
+      "pattern": "radial_out_50um",
+      "resolution": "h50",
+      "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_50um_h50\\displaced_h50.msh",
+      "mesh_sha256": "643b0567efa512af5bba16c9fcd4315b679fa9a0a2aef293d00cd999eda427c2",
+      "field_sha256": "22b6f9d3c327451ed9c8f8e157df3ca8c97f072c34629bf6532d0c70143b7ba3",
+      "dofs": 3155857,
+      "element_count": 393692,
+      "local_reference_node_max_error_m": 4.9065389333867974e-18,
+      "element_nodal_reproduction_max_error": 2.342859239425952e-14
+    },
+    {
+      "pattern": "radial_out_100um",
+      "resolution": "h50",
+      "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_100um_h50\\displaced_h50.msh",
+      "mesh_sha256": "5836ca01ec36953d9b71e3d6b861a9a6293e917569d3326a0439f8f7f2031b70",
+      "field_sha256": "d88e4f00445e7d45c5e2cb8e7699375441e9d929826ddd96b2066ac921e757df",
+      "dofs": 3159409,
+      "element_count": 394136,
+      "local_reference_node_max_error_m": 4.9065389333867974e-18,
+      "element_nodal_reproduction_max_error": 2.4313884997366066e-14
+    }
+  ],
+  "FEM_meshes_rebuilt": false,
+  "RF_integrations_performed": false,
+  "curvature_method": "Finite differences of |E_cos|^2+|E_sin|^2 converted to rotating pseudopotential energy at 250 V, 100 kHz; several spatial steps expose local mesh sensitivity.",
+  "curvature_records": 36,
+  "curvature_results": [
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.00023656916700000001,
+        -0.000377864219
+      ],
+      "step_um": 25,
+      "U_eff_eV": 1.8423055606013016e-07,
+      "gradient_norm_eV_per_m": 2.1577990702907444e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.592627829048694e-05,
+          3.7652689021564495e-07
+        ],
+        [
+          3.7652689021564495e-07,
+          1.556324341080479e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.53267643434572e-05,
+        1.6162757357834533e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.00023656916700000001,
+        -0.000377864219
+      ],
+      "step_um": 50,
+      "U_eff_eV": 1.8423055606013016e-07,
+      "gradient_norm_eV_per_m": 8.658872685301103e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.602536769937708e-05,
+          5.492279627292312e-07
+        ],
+        [
+          5.492279627292312e-07,
+          1.5751113259108694e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.532215282742081e-05,
+        1.6454328131064965e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.00023656916700000001,
+        -0.000377864219
+      ],
+      "step_um": 100,
+      "U_eff_eV": 1.8423055606013016e-07,
+      "gradient_norm_eV_per_m": 0.0003506423118372834,
+      "hessian_eV_per_mm2": [
+        [
+          1.6424896035627583e-05,
+          1.2382520777588602e-06
+        ],
+        [
+          1.2382520777588602e-06,
+          1.6506252694023547e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5226654296967891e-05,
+        1.770449443268324e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.00023656916700000001,
+        -0.000377864219
+      ],
+      "step_um": 200,
+      "U_eff_eV": 1.8423055606013016e-07,
+      "gradient_norm_eV_per_m": 0.0014710192306008956,
+      "hessian_eV_per_mm2": [
+        [
+          1.8071048849603968e-05,
+          3.9955242698512325e-06
+        ],
+        [
+          3.9955242698512325e-06,
+          1.957689956791083e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.4758127336649873e-05,
+        2.2889821080864927e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.00023656916700000001,
+        0.000377864219
+      ],
+      "step_um": 25,
+      "U_eff_eV": 1.8422936275201416e-07,
+      "gradient_norm_eV_per_m": 2.1601014065309944e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.59263101498762e-05,
+          -3.7676207014542776e-07
+        ],
+        [
+          -3.7676207014542776e-07,
+          1.5562734750815038e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5326196709802573e-05,
+        1.6162848190888665e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.00023656916700000001,
+        0.000377864219
+      ],
+      "step_um": 50,
+      "U_eff_eV": 1.8422936275201416e-07,
+      "gradient_norm_eV_per_m": 8.661358876883327e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.6025579482311874e-05,
+          -5.490451115996875e-07
+        ],
+        [
+          -5.490451115996875e-07,
+          1.5750956813483217e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.532231325823746e-05,
+        1.645422303755763e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.00023656916700000001,
+        0.000377864219
+      ],
+      "step_um": 100,
+      "U_eff_eV": 1.8422936275201416e-07,
+      "gradient_norm_eV_per_m": 0.0003506463787972196,
+      "hessian_eV_per_mm2": [
+        [
+          1.642510616421314e-05,
+          -1.2384774410531766e-06
+        ],
+        [
+          -1.2384774410531766e-06,
+          1.650641365529881e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5226615406873327e-05,
+        1.770490441263862e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.00023656916700000001,
+        0.000377864219
+      ],
+      "step_um": 200,
+      "U_eff_eV": 1.8422936275201416e-07,
+      "gradient_norm_eV_per_m": 0.0014710134658848662,
+      "hessian_eV_per_mm2": [
+        [
+          1.8071391963276557e-05,
+          -3.995609511453214e-06
+        ],
+        [
+          -3.995609511453214e-06,
+          1.9576878591518004e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.4758238344988779e-05,
+        2.289003220980578e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 25,
+      "U_eff_eV": 2.5454856474902524e-07,
+      "gradient_norm_eV_per_m": 2.2056531017958477e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.5349691287474714e-05,
+          1.925532965513173e-10
+        ],
+        [
+          1.925532965513173e-10,
+          1.6295917402618803e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5349691248290878e-05,
+        1.6295917441802642e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 50,
+      "U_eff_eV": 2.5454856474902524e-07,
+      "gradient_norm_eV_per_m": 8.86744880953835e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.5597392919909133e-05,
+          4.505858635111646e-11
+        ],
+        [
+          4.505858635111646e-11,
+          1.6350002080272834e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5597392917211483e-05,
+        1.6350002082970482e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 100,
+      "U_eff_eV": 2.5454856474902524e-07,
+      "gradient_norm_eV_per_m": 0.0003592317092561688,
+      "hessian_eV_per_mm2": [
+        [
+          1.6592442783748787e-05,
+          1.5669620570068243e-10
+        ],
+        [
+          1.5669620570068243e-10,
+          1.6567390664728624e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.6567389684662213e-05,
+        1.6592443763815197e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h50",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 200,
+      "U_eff_eV": 2.5454856474902524e-07,
+      "gradient_norm_eV_per_m": 0.0015072757143146601,
+      "hessian_eV_per_mm2": [
+        [
+          2.0617490868318356e-05,
+          1.477242513683169e-10
+        ],
+        [
+          1.477242513683169e-10,
+          1.7482846145388398e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.7482846138426702e-05,
+        2.0617490875280052e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.0002365721346169561,
+        0.0003778670134921926
+      ],
+      "step_um": 25,
+      "U_eff_eV": 1.842458132157972e-07,
+      "gradient_norm_eV_per_m": 2.1623955873155757e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.5929908791784078e-05,
+          -3.769697896582098e-07
+        ],
+        [
+          -3.769697896582098e-07,
+          1.5563650735684843e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.532768256351791e-05,
+        1.6165876963951014e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.0002365721346169561,
+        0.0003778670134921926
+      ],
+      "step_um": 50,
+      "U_eff_eV": 1.842458132157972e-07,
+      "gradient_norm_eV_per_m": 8.665627901854765e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.6028293481537947e-05,
+          -5.493157029203972e-07
+        ],
+        [
+          -5.493157029203972e-07,
+          1.5751906233889057e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5323667850195687e-05,
+        1.6456531865231317e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.0002365721346169561,
+        0.0003778670134921926
+      ],
+      "step_um": 100,
+      "U_eff_eV": 1.842458132157972e-07,
+      "gradient_norm_eV_per_m": 0.0003507368072810081,
+      "hessian_eV_per_mm2": [
+        [
+          1.642684640599232e-05,
+          -1.238706002741926e-06
+        ],
+        [
+          -1.238706002741926e-06,
+          1.6508011110811325e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5228058156622048e-05,
+        1.7706799360181603e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_branch_1",
+      "position_mm": [
+        -0.0002365721346169561,
+        0.0003778670134921926
+      ],
+      "step_um": 200,
+      "U_eff_eV": 1.842458132157972e-07,
+      "gradient_norm_eV_per_m": 0.0014712219407104564,
+      "hessian_eV_per_mm2": [
+        [
+          1.807318292470077e-05,
+          -3.996154919509747e-06
+        ],
+        [
+          -3.996154919509747e-06,
+          1.9579069865299005e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.4759656425826617e-05,
+        2.2892596364173153e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.0002365721346169561,
+        -0.0003778670134921926
+      ],
+      "step_um": 25,
+      "U_eff_eV": 1.8424823160844273e-07,
+      "gradient_norm_eV_per_m": 2.16717803631279e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.592763261987747e-05,
+          3.775795951272995e-07
+        ],
+        [
+          3.775795951272995e-07,
+          1.5562943765168237e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5325984196782557e-05,
+        1.616459218826315e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.0002365721346169561,
+        -0.0003778670134921926
+      ],
+      "step_um": 50,
+      "U_eff_eV": 1.8424823160844273e-07,
+      "gradient_norm_eV_per_m": 8.667666092248868e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.6026962456142584e-05,
+          5.497271510153349e-07
+        ],
+        [
+          5.497271510153349e-07,
+          1.57516075116341e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5322579569294697e-05,
+        1.6455990398481987e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.0002365721346169561,
+        -0.0003778670134921926
+      ],
+      "step_um": 100,
+      "U_eff_eV": 1.8424823160844273e-07,
+      "gradient_norm_eV_per_m": 0.00035073562742347436,
+      "hessian_eV_per_mm2": [
+        [
+          1.6426635723615658e-05,
+          1.238662360209921e-06
+        ],
+        [
+          1.238662360209921e-06,
+          1.6507826992274303e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.522790394029966e-05,
+        1.7706558775590298e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "global_minimum_mirror",
+      "position_mm": [
+        -0.0002365721346169561,
+        -0.0003778670134921926
+      ],
+      "step_um": 200,
+      "U_eff_eV": 1.8424823160844273e-07,
+      "gradient_norm_eV_per_m": 0.00147120429951052,
+      "hessian_eV_per_mm2": [
+        [
+          1.8073111683988285e-05,
+          3.9961352391034754e-06
+        ],
+        [
+          3.9961352391034754e-06,
+          1.95788663052131e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.4759550615129102e-05,
+        2.2892427374072282e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 25,
+      "U_eff_eV": 2.5457005499464063e-07,
+      "gradient_norm_eV_per_m": 2.2053960863096483e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.535226381197938e-05,
+          2.432446230860876e-10
+        ],
+        [
+          2.432446230860876e-10,
+          1.629836206334259e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.5352263749440482e-05,
+        1.629836212588149e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 50,
+      "U_eff_eV": 2.5457005499464063e-07,
+      "gradient_norm_eV_per_m": 8.86622760581531e-05,
+      "hessian_eV_per_mm2": [
+        [
+          1.5600068101759617e-05,
+          -5.7566411233887306e-11
+        ],
+        [
+          -5.7566411233887306e-11,
+          1.6352046499895075e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.560006809735272e-05,
+        1.6352046504301974e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 100,
+      "U_eff_eV": 2.5457005499464063e-07,
+      "gradient_norm_eV_per_m": 0.00035925804685492467,
+      "hessian_eV_per_mm2": [
+        [
+          1.6594290613377178e-05,
+          2.9614191318547937e-11
+        ],
+        [
+          2.9614191318547937e-11,
+          1.65689664548727e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.6568966420241774e-05,
+        1.6594290648008103e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_10um",
+      "resolution": "h35",
+      "stationary_candidate": "secondary_local_minimum",
+      "position_mm": [
+        0.00045811,
+        0.0
+      ],
+      "step_um": 200,
+      "U_eff_eV": 2.5457005499464063e-07,
+      "gradient_norm_eV_per_m": 0.0015074116996347756,
+      "hessian_eV_per_mm2": [
+        [
+          2.0619324719665413e-05,
+          3.5434187362178525e-11
+        ],
+        [
+          3.5434187362178525e-11,
+          1.74843519919641e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        1.7484351991563593e-05,
+        2.061932472006592e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_25um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0003253028150979885,
+        0.000506746054399195
+      ],
+      "step_um": 25,
+      "U_eff_eV": 1.0997415262342058e-06,
+      "gradient_norm_eV_per_m": 5.340613769079417e-05,
+      "hessian_eV_per_mm2": [
+        [
+          5.385765731810456e-05,
+          -1.5107652519214563e-06
+        ],
+        [
+          -1.5107652519214563e-06,
+          5.215155819661695e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        5.126964228234446e-05,
+        5.4739573232377045e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_25um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0003253028150979885,
+        0.000506746054399195
+      ],
+      "step_um": 50,
+      "U_eff_eV": 1.0997415262342058e-06,
+      "gradient_norm_eV_per_m": 0.00021403634692240364,
+      "hessian_eV_per_mm2": [
+        [
+          5.40408698900895e-05,
+          -1.8293309697697518e-06
+        ],
+        [
+          -1.8293309697697518e-06,
+          5.249215592284684e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        5.1280038508183144e-05,
+        5.525298730475319e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_25um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0003253028150979885,
+        0.000506746054399195
+      ],
+      "step_um": 100,
+      "U_eff_eV": 1.0997415262342058e-06,
+      "gradient_norm_eV_per_m": 0.0008620261477948894,
+      "hessian_eV_per_mm2": [
+        [
+          5.4775877573575674e-05,
+          -3.1034182552532417e-06
+        ],
+        [
+          -3.1034182552532417e-06,
+          5.386021255320441e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        5.118103765593593e-05,
+        5.745505247084415e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_25um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0003253028150979885,
+        0.000506746054399195
+      ],
+      "step_um": 200,
+      "U_eff_eV": 1.0997415262342058e-06,
+      "gradient_norm_eV_per_m": 0.0035407686246170613,
+      "hessian_eV_per_mm2": [
+        [
+          5.776185120799583e-05,
+          -8.200230488270659e-06
+        ],
+        [
+          -8.200230488270659e-06,
+          5.938218332343411e-05
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        5.033186258865679e-05,
+        6.681217194277315e-05
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_50um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.00041426291362598984,
+        0.000630710239999368
+      ],
+      "step_um": 25,
+      "U_eff_eV": 4.186607464398147e-06,
+      "gradient_norm_eV_per_m": 0.00010564226479149396,
+      "hessian_eV_per_mm2": [
+        [
+          0.00013493262217236152,
+          -4.423586663600128e-06
+        ],
+        [
+          -4.423586663600128e-06,
+          0.00012961555754296373
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.000127113090628959,
+        0.00013743508908636623
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_50um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.00041426291362598984,
+        0.000630710239999368
+      ],
+      "step_um": 50,
+      "U_eff_eV": 4.186607464398147e-06,
+      "gradient_norm_eV_per_m": 0.0004230920765950515,
+      "hessian_eV_per_mm2": [
+        [
+          0.00013522805632118368,
+          -4.931143771813103e-06
+        ],
+        [
+          -4.931143771813103e-06,
+          0.0001301468279613064
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.00012714028978083556,
+        0.00013823459450165452
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_50um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.00041426291362598984,
+        0.000630710239999368
+      ],
+      "step_um": 100,
+      "U_eff_eV": 4.186607464398147e-06,
+      "gradient_norm_eV_per_m": 0.0016994008191758502,
+      "hessian_eV_per_mm2": [
+        [
+          0.00013639581907552218,
+          -6.956810734199122e-06
+        ],
+        [
+          -6.956810734199122e-06,
+          0.00013228397721643637
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.00012708565618282415,
+        0.0001415941401091344
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_50um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.00041426291362598984,
+        0.000630710239999368
+      ],
+      "step_um": 200,
+      "U_eff_eV": 4.186607464398147e-06,
+      "gradient_norm_eV_per_m": 0.006913186073832305,
+      "hessian_eV_per_mm2": [
+        [
+          0.00014110082657107907,
+          -1.5057266377724933e-05
+        ],
+        [
+          -1.5057266377724933e-05,
+          0.00014087485259672375
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.000125930149295247,
+        0.0001560455298725558
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_100um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0005273182533916676,
+        -0.0007819094817131121
+      ],
+      "step_um": 25,
+      "U_eff_eV": 1.5628539094899408e-05,
+      "gradient_norm_eV_per_m": 0.00020757738547818442,
+      "hessian_eV_per_mm2": [
+        [
+          0.0003358928039715569,
+          1.2965951954486414e-05
+        ],
+        [
+          1.2965951954486414e-05,
+          0.0003196842307388892
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.0003124981487643179,
+        0.0003430788859461281
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_100um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0005273182533916676,
+        -0.0007819094817131121
+      ],
+      "step_um": 50,
+      "U_eff_eV": 1.5628539094899408e-05,
+      "gradient_norm_eV_per_m": 0.0008306530381646126,
+      "hessian_eV_per_mm2": [
+        [
+          0.0003363535229506076,
+          1.376926445840008e-05
+        ],
+        [
+          1.376926445840008e-05,
+          0.00032051302715311594
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.00031254859782810473,
+        0.00034431795227561884
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_100um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0005273182533916676,
+        -0.0007819094817131121
+      ],
+      "step_um": 100,
+      "U_eff_eV": 1.5628539094899408e-05,
+      "gradient_norm_eV_per_m": 0.0033313278501211053,
+      "hessian_eV_per_mm2": [
+        [
+          0.0003381935692341876,
+          1.697777544719736e-05
+        ],
+        [
+          1.697777544719736e-05,
+          0.00032382745745525055
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.00031257573233037857,
+        0.0003494452943590596
+      ],
+      "positive_curvature_in_both_directions": true
+    },
+    {
+      "pattern": "radial_out_100um",
+      "resolution": "h50",
+      "stationary_candidate": "reported_h50_minimum",
+      "position_mm": [
+        -0.0005273182533916676,
+        -0.0007819094817131121
+      ],
+      "step_um": 200,
+      "U_eff_eV": 1.5628539094899408e-05,
+      "gradient_norm_eV_per_m": 0.013469654845129261,
+      "hessian_eV_per_mm2": [
+        [
+          0.0003456074615366602,
+          2.9807149214398003e-05
+        ],
+        [
+          2.9807149214398003e-05,
+          0.000337127662105228
+        ]
+      ],
+      "curvature_eigenvalues_eV_per_mm2": [
+        0.0003112603717513159,
+        0.00037147475189057227
+      ],
+      "positive_curvature_in_both_directions": true
+    }
+  ],
+  "barrier_method": "Discrete minimax paths on existing P4-derived effective-potential samples; repeated at 50 and 25 um grid spacing.",
+  "barrier_estimates": [
+    {
+      "resolution": "h50",
+      "pair": "mirror-related global minima",
+      "grid_spacing_mm": 0.05,
+      "grid_shape": [
+        49,
+        49
+      ],
+      "domain": "disk r<=1.2 mm",
+      "start_grid_mm": [
+        -0.2499999999999991,
+        0.40000000000000147
+      ],
+      "target_grid_mm": [
+        -0.2499999999999991,
+        -0.39999999999999925
+      ],
+      "minimax_ridge_candidate_mm": [
+        -0.09999999999999898,
+        1.1102230246251565e-15
+      ],
+      "minimax_path_peak_eV": 3.7075600075950063e-07,
+      "start_grid_value_eV": 1.90187422359565e-07,
+      "target_grid_value_eV": 1.901882629515571e-07,
+      "barrier_above_higher_endpoint_eV": 1.8056773780794352e-07,
+      "grid_path_points": 19,
+      "status": "discrete grid minimax ridge; not a verified stationary saddle"
+    },
+    {
+      "resolution": "h50",
+      "pair": "global minimum to secondary local minimum",
+      "grid_spacing_mm": 0.05,
+      "grid_shape": [
+        49,
+        49
+      ],
+      "domain": "disk r<=1.2 mm",
+      "start_grid_mm": [
+        -0.2499999999999991,
+        0.40000000000000147
+      ],
+      "target_grid_mm": [
+        0.4500000000000015,
+        1.1102230246251565e-15
+      ],
+      "minimax_ridge_candidate_mm": [
+        0.1000000000000012,
+        1.1102230246251565e-15
+      ],
+      "minimax_path_peak_eV": 3.96638825540701e-07,
+      "start_grid_value_eV": 1.90187422359565e-07,
+      "target_grid_value_eV": 2.550327105057478e-07,
+      "barrier_above_higher_endpoint_eV": 1.4160611503495318e-07,
+      "grid_path_points": 17,
+      "status": "discrete grid minimax ridge; not a verified stationary saddle"
+    },
+    {
+      "resolution": "h50",
+      "pair": "mirror-related global minima",
+      "grid_spacing_mm": 0.025,
+      "grid_shape": [
+        97,
+        97
+      ],
+      "domain": "disk r<=1.2 mm",
+      "start_grid_mm": [
+        -0.22500000000000342,
+        0.37499999999999445
+      ],
+      "target_grid_mm": [
+        -0.22500000000000342,
+        -0.3750000000000029
+      ],
+      "minimax_ridge_candidate_mm": [
+        -0.12500000000000377,
+        -4.218847493575595e-15
+      ],
+      "minimax_path_peak_eV": 3.704556527083742e-07,
+      "start_grid_value_eV": 1.8532609695492613e-07,
+      "target_grid_value_eV": 1.8532801608037536e-07,
+      "barrier_above_higher_endpoint_eV": 1.8512763662799882e-07,
+      "grid_path_points": 38,
+      "status": "discrete grid minimax ridge; not a verified stationary saddle"
+    },
+    {
+      "resolution": "h50",
+      "pair": "global minimum to secondary local minimum",
+      "grid_spacing_mm": 0.025,
+      "grid_shape": [
+        97,
+        97
+      ],
+      "domain": "disk r<=1.2 mm",
+      "start_grid_mm": [
+        -0.22500000000000342,
+        0.37499999999999445
+      ],
+      "target_grid_mm": [
+        0.4499999999999942,
+        -4.218847493575595e-15
+      ],
+      "minimax_ridge_candidate_mm": [
+        0.12499999999999534,
+        -4.218847493575595e-15
+      ],
+      "minimax_path_peak_eV": 3.973371924373431e-07,
+      "start_grid_value_eV": 1.8532609695492613e-07,
+      "target_grid_value_eV": 2.5503271050574877e-07,
+      "barrier_above_higher_endpoint_eV": 1.423044819315943e-07,
+      "grid_path_points": 33,
+      "status": "discrete grid minimax ridge; not a verified stationary saddle"
+    },
+    {
+      "resolution": "h50",
+      "pair": "mirror-minimum connecting ridge",
+      "method": "finite-difference gradient root from grid minimax ridge",
+      "root_success": true,
+      "stationary_candidate_mm": [
+        -0.11705509815193396,
+        -5.67418593767816e-06
+      ],
+      "gradient_norm_eV_per_mm": 2.9236827174612136e-19,
+      "U_saddle_candidate_eV": 3.703655847994512e-07,
+      "curvature_checks": [
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 10,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 3.123260904255828e-07,
+          "hessian_eV_per_mm2": [
+            [
+              2.814583619955126e-06,
+              -1.1238112487936475e-09
+            ],
+            [
+              -1.1238112487936475e-09,
+              -2.730759250954236e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7307594787042053e-06,
+            2.814583847705096e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 25,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 2.5271950238470986e-06,
+          "hessian_eV_per_mm2": [
+            [
+              2.817410826375642e-06,
+              -4.225381549352912e-10
+            ],
+            [
+              -4.225381549352912e-10,
+              -2.728083930919603e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.728083963114835e-06,
+            2.8174108585708745e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 50,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 1.0498813746222443e-05,
+          "hessian_eV_per_mm2": [
+            [
+              2.830515796847119e-06,
+              -3.551438760754255e-10
+            ],
+            [
+              -3.551438760754255e-10,
+              -2.721156429241118e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7211564519598895e-06,
+            2.8305158195658906e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 100,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 4.3468828591600326e-05,
+          "hessian_eV_per_mm2": [
+            [
+              2.888720487374129e-06,
+              -2.0280265072852382e-10
+            ],
+            [
+              -2.0280265072852382e-10,
+              -2.6914347401811003e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.6914347475516685e-06,
+            2.8887204947446974e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        }
+      ],
+      "saddle_signature_seen": true,
+      "status": "candidate saddle only; finite-element interelement derivative regularity is limited"
+    },
+    {
+      "resolution": "h50",
+      "pair": "global-to-secondary connecting ridge",
+      "method": "finite-difference gradient root from grid minimax ridge",
+      "root_success": true,
+      "stationary_candidate_mm": [
+        0.1231307524738154,
+        -8.869350566354238e-06
+      ],
+      "gradient_norm_eV_per_mm": 5.918822653883155e-20,
+      "U_saddle_candidate_eV": 3.9734191489433184e-07,
+      "curvature_checks": [
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 10,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 2.671339790830781e-07,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7844044004849766e-06,
+              -3.598274747235253e-11
+            ],
+            [
+              -3.598274747235253e-11,
+              2.8905211572615457e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7844044007131304e-06,
+            2.8905211574897e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 25,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 2.1049315912866274e-06,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7825655841713975e-06,
+              1.8661153089170903e-10
+            ],
+            [
+              1.8661153089170903e-10,
+              2.8926592919376084e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.782565590307518e-06,
+            2.8926592980737285e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 50,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 8.605359178897756e-06,
+          "hessian_eV_per_mm2": [
+            [
+              -2.76880872823911e-06,
+              -1.4654314235465124e-10
+            ],
+            [
+              -1.4654314235465124e-10,
+              2.899689849362458e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7688087320275726e-06,
+            2.89968985315092e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 100,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 3.350757545068884e-05,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7053761059141645e-06,
+              -1.4744246847041455e-10
+            ],
+            [
+              -1.4744246847041455e-10,
+              2.929986471532792e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7053761097718194e-06,
+            2.929986475390446e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        }
+      ],
+      "saddle_signature_seen": true,
+      "status": "candidate saddle only; finite-element interelement derivative regularity is limited"
+    }
+  ],
+  "stationary_saddle_refinements": [
+    {
+      "resolution": "h35",
+      "pair": "mirror-minimum connecting ridge",
+      "root_success": true,
+      "stationary_candidate_mm": [
+        -0.11704117874292028,
+        -3.1596912670476174e-06
+      ],
+      "gradient_norm_eV_per_mm": 1.183764530776631e-20,
+      "U_saddle_candidate_eV": 3.70395390900971e-07,
+      "U_global_minimum_eV": 1.842458132157972e-07,
+      "U_secondary_minimum_eV": null,
+      "barrier_above_higher_endpoint_eV": 1.8614957768517378e-07,
+      "curvature_checks": [
+        {
+          "position_mm": [
+            -0.00011704117874292028,
+            -3.1596912670476174e-09
+          ],
+          "step_um": 10,
+          "U_eff_eV": 3.70395390900971e-07,
+          "gradient_norm_eV_per_m": 3.1442331914870283e-07,
+          "hessian_eV_per_mm2": [
+            [
+              2.8113761230703658e-06,
+              -7.209996466762969e-10
+            ],
+            [
+              -7.209996466762969e-10,
+              -2.730492610137695e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.730492703940076e-06,
+            2.8113762168727463e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011704117874292028,
+            -3.1596912670476174e-09
+          ],
+          "step_um": 25,
+          "U_eff_eV": 3.70395390900971e-07,
+          "gradient_norm_eV_per_m": 2.5172672825878296e-06,
+          "hessian_eV_per_mm2": [
+            [
+              2.814803873538784e-06,
+              3.7772387754540955e-10
+            ],
+            [
+              3.7772387754540955e-10,
+              -2.727067430665543e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.727067456410516e-06,
+            2.814803899283757e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011704117874292028,
+            -3.1596912670476174e-09
+          ],
+          "step_um": 50,
+          "U_eff_eV": 3.70395390900971e-07,
+          "gradient_norm_eV_per_m": 1.045285252992818e-05,
+          "hessian_eV_per_mm2": [
+            [
+              2.8296146236770493e-06,
+              -1.242795988682695e-10
+            ],
+            [
+              -1.242795988682695e-10,
+              -2.7202794229377905e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7202794257208016e-06,
+            2.8296146264600607e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011704117874292028,
+            -3.1596912670476174e-09
+          ],
+          "step_um": 100,
+          "U_eff_eV": 3.70395390900971e-07,
+          "gradient_norm_eV_per_m": 4.342581503747706e-05,
+          "hessian_eV_per_mm2": [
+            [
+              2.888829772146678e-06,
+              2.366342555800421e-11
+            ],
+            [
+              2.366342555800421e-11,
+              -2.690763802705617e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.690763802805976e-06,
+            2.8888297722470352e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        }
+      ],
+      "saddle_signature_seen": true
+    },
+    {
+      "resolution": "h35",
+      "pair": "global-to-secondary connecting ridge",
+      "root_success": true,
+      "stationary_candidate_mm": [
+        0.12314426309436534,
+        9.65022077863662e-07
+      ],
+      "gradient_norm_eV_per_mm": 3.743392130574644e-20,
+      "U_saddle_candidate_eV": 3.9737790087480063e-07,
+      "U_global_minimum_eV": 1.842458132157972e-07,
+      "U_secondary_minimum_eV": 2.5457005499464063e-07,
+      "barrier_above_higher_endpoint_eV": 1.4280784588016e-07,
+      "curvature_checks": [
+        {
+          "position_mm": [
+            0.00012314426309436533,
+            9.65022077863662e-10
+          ],
+          "step_um": 10,
+          "U_eff_eV": 3.9737790087480063e-07,
+          "gradient_norm_eV_per_m": 2.640804248096805e-07,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7885515408215096e-06,
+              3.3196416935484873e-10
+            ],
+            [
+              3.3196416935484873e-10,
+              2.889647293752123e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.788551560229109e-06,
+            2.889647313159723e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.00012314426309436533,
+            9.65022077863662e-10
+          ],
+          "step_um": 25,
+          "U_eff_eV": 3.9737790087480063e-07,
+          "gradient_norm_eV_per_m": 2.1154113082140046e-06,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7851961922406063e-06,
+              3.560142305766929e-10
+            ],
+            [
+              3.560142305766929e-10,
+              2.8923030345530736e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7851962145648957e-06,
+            2.892303056877362e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.00012314426309436533,
+            9.65022077863662e-10
+          ],
+          "step_um": 50,
+          "U_eff_eV": 3.9737790087480063e-07,
+          "gradient_norm_eV_per_m": 8.641550771601035e-06,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7699764945511074e-06,
+              5.4141703944403e-10
+            ],
+            [
+              5.4141703944403e-10,
+              2.8989091734883865e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7699765462601077e-06,
+            2.8989092251973856e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.00012314426309436533,
+            9.65022077863662e-10
+          ],
+          "step_um": 100,
+          "U_eff_eV": 3.9737790087480063e-07,
+          "gradient_norm_eV_per_m": 3.356123122157338e-05,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7061076029564116e-06,
+              6.535346083251438e-11
+            ],
+            [
+              6.535346083251438e-11,
+              2.9298208602053802e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.706107603714242e-06,
+            2.9298208609632096e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        }
+      ],
+      "saddle_signature_seen": true
+    },
+    {
+      "resolution": "h50",
+      "pair": "mirror-minimum connecting ridge",
+      "root_success": true,
+      "stationary_candidate_mm": [
+        -0.11705509815193396,
+        -5.67418593767816e-06
+      ],
+      "gradient_norm_eV_per_mm": 2.9236827174612136e-19,
+      "U_saddle_candidate_eV": 3.703655847994512e-07,
+      "U_global_minimum_eV": 1.8422936260920305e-07,
+      "U_secondary_minimum_eV": null,
+      "barrier_above_higher_endpoint_eV": 1.8613622219024816e-07,
+      "curvature_checks": [
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 10,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 3.123260904255828e-07,
+          "hessian_eV_per_mm2": [
+            [
+              2.814583619955126e-06,
+              -1.1238112487936475e-09
+            ],
+            [
+              -1.1238112487936475e-09,
+              -2.730759250954236e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7307594787042053e-06,
+            2.814583847705096e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 25,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 2.5271950238470986e-06,
+          "hessian_eV_per_mm2": [
+            [
+              2.817410826375642e-06,
+              -4.225381549352912e-10
+            ],
+            [
+              -4.225381549352912e-10,
+              -2.728083930919603e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.728083963114835e-06,
+            2.8174108585708745e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 50,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 1.0498813746222443e-05,
+          "hessian_eV_per_mm2": [
+            [
+              2.830515796847119e-06,
+              -3.551438760754255e-10
+            ],
+            [
+              -3.551438760754255e-10,
+              -2.721156429241118e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7211564519598895e-06,
+            2.8305158195658906e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            -0.00011705509815193396,
+            -5.67418593767816e-09
+          ],
+          "step_um": 100,
+          "U_eff_eV": 3.703655847994512e-07,
+          "gradient_norm_eV_per_m": 4.3468828591600326e-05,
+          "hessian_eV_per_mm2": [
+            [
+              2.888720487374129e-06,
+              -2.0280265072852382e-10
+            ],
+            [
+              -2.0280265072852382e-10,
+              -2.6914347401811003e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.6914347475516685e-06,
+            2.8887204947446974e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        }
+      ],
+      "saddle_signature_seen": true
+    },
+    {
+      "resolution": "h50",
+      "pair": "global-to-secondary connecting ridge",
+      "root_success": true,
+      "stationary_candidate_mm": [
+        0.1231307524738154,
+        -8.869350566354238e-06
+      ],
+      "gradient_norm_eV_per_mm": 5.918822653883155e-20,
+      "U_saddle_candidate_eV": 3.9734191489433184e-07,
+      "U_global_minimum_eV": 1.8422936260920305e-07,
+      "U_secondary_minimum_eV": 2.5454856474902524e-07,
+      "barrier_above_higher_endpoint_eV": 1.427933501453066e-07,
+      "curvature_checks": [
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 10,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 2.671339790830781e-07,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7844044004849766e-06,
+              -3.598274747235253e-11
+            ],
+            [
+              -3.598274747235253e-11,
+              2.8905211572615457e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7844044007131304e-06,
+            2.8905211574897e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 25,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 2.1049315912866274e-06,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7825655841713975e-06,
+              1.8661153089170903e-10
+            ],
+            [
+              1.8661153089170903e-10,
+              2.8926592919376084e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.782565590307518e-06,
+            2.8926592980737285e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 50,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 8.605359178897756e-06,
+          "hessian_eV_per_mm2": [
+            [
+              -2.76880872823911e-06,
+              -1.4654314235465124e-10
+            ],
+            [
+              -1.4654314235465124e-10,
+              2.899689849362458e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7688087320275726e-06,
+            2.89968985315092e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        },
+        {
+          "position_mm": [
+            0.0001231307524738154,
+            -8.869350566354239e-09
+          ],
+          "step_um": 100,
+          "U_eff_eV": 3.9734191489433184e-07,
+          "gradient_norm_eV_per_m": 3.350757545068884e-05,
+          "hessian_eV_per_mm2": [
+            [
+              -2.7053761059141645e-06,
+              -1.4744246847041455e-10
+            ],
+            [
+              -1.4744246847041455e-10,
+              2.929986471532792e-06
+            ]
+          ],
+          "curvature_eigenvalues_eV_per_mm2": [
+            -2.7053761097718194e-06,
+            2.929986475390446e-06
+          ],
+          "positive_curvature_in_both_directions": false
+        }
+      ],
+      "saddle_signature_seen": true
+    }
+  ],
+  "stationary_point_caveat": "P4 FEM potential is continuous, while its elementwise gradient and the squared field may have interelement jumps. The reported finite-difference Hessians characterize scale-dependent local curvature and do not prove C2 stationarity. Grid minimax ridges are not accepted as saddles without an independent stationary-point refinement.",
+  "wall_seconds": 64.6584792000067
+}

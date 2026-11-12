@@ -1,0 +1,61 @@
+{
+  "job": {
+    "stage": "phase_space",
+    "representation": "N48",
+    "model": "standing",
+    "field": "h35_N48",
+    "normalization": "matched_leading_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 10.283203125,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_kind": "tangent",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "sampling_design": "targeted_stroboscopic_and_tangent",
+    "diagnostic_label": "N48_boundary_standing",
+    "job_id": "56b8c6d21ee90bc05264"
+  },
+  "job_id": "56b8c6d21ee90bc05264",
+  "status": "escaped",
+  "escape_time_RF": 722.581843869773,
+  "right_censored_at_RF": null,
+  "finite_time_lyapunov_per_RF": 0.01356013234439027,
+  "finite_time_lyapunov_per_s": 1356.013234439027,
+  "tangent_position_scale_m": 0.001,
+  "tangent_velocity_scale_m_s": 62.12417634275831,
+  "tangent_renormalization_interval_RF": 10,
+  "log_growth_sum": 9.79830543252767,
+  "tangent_jacobian_validation_relative_error": 4.165285759880931e-11,
+  "instantaneous_H_Lz": {
+    "H_range_eV": [
+      -132.46273729327396,
+      215.9749891349544
+    ],
+    "H_peak_to_peak_eV": 348.43772642822836,
+    "Lz_range_kg_m2_s": [
+      -1.0742210876653284e-22,
+      1.0896253178078922e-22
+    ],
+    "Lz_peak_to_peak_kg_m2_s": 2.163846405473221e-22,
+    "H_start_eV": 1.9692654673189012,
+    "H_end_eV": 215.9749891349544,
+    "Lz_start_kg_m2_s": 1.0315962179749769e-23,
+    "Lz_end_kg_m2_s": -3.088529966124147e-23
+  },
+  "wall_s": 73.94231350001064
+}

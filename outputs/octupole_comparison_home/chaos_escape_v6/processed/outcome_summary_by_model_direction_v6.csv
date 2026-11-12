@@ -1,0 +1,9 @@
+representation,model,direction,phase_deg,unique_azimuths_0_to_22p5,balanced_grid_states,grid_retained,grid_escaped,minimum_sampled_escape_RF
+N48,rotating,-1,0.0,68,65,65,0,
+N48,rotating,1,0.0,68,65,65,0,
+N48,standing,-1,0.0,72,65,28,37,64.3737628269011
+N48,standing,1,0.0,72,65,30,35,183.52709179463304
+pure_m4,rotating,-1,0.0,65,65,65,0,
+pure_m4,rotating,1,0.0,65,65,65,0,
+pure_m4,standing,-1,0.0,65,65,65,0,
+pure_m4,standing,1,0.0,65,65,65,0,

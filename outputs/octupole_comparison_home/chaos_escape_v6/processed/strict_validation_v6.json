@@ -1,0 +1,86 @@
+{
+  "requested_tight_jobs": 4,
+  "completed_tight_jobs": 4,
+  "classification_agreements": 4,
+  "classification_disagreements": [],
+  "validation_protocol": {
+    "rtol": 2e-11,
+    "atol": [
+      2e-14,
+      2e-14,
+      2e-12,
+      2e-12
+    ],
+    "max_step_RF_fraction": 0.01
+  },
+  "results": [
+    {
+      "representation": "N48",
+      "model": "standing",
+      "azimuth_deg": 9.60205078125,
+      "direction": -1,
+      "standard_status": "retained",
+      "tight_status": "retained",
+      "classification_matches": true,
+      "standard_escape_time_RF": null,
+      "tight_escape_time_RF": null,
+      "escape_time_delta_RF": null,
+      "standard_rtol": 2e-09,
+      "tight_rtol": 2e-11,
+      "standard_max_step_RF_fraction": 0.02,
+      "tight_max_step_RF_fraction": 0.01,
+      "tight_nfev": 1203017
+    },
+    {
+      "representation": "N48",
+      "model": "standing",
+      "azimuth_deg": 9.6240234375,
+      "direction": -1,
+      "standard_status": "escaped",
+      "tight_status": "escaped",
+      "classification_matches": true,
+      "standard_escape_time_RF": 892.5809093123491,
+      "tight_escape_time_RF": 892.5809093680808,
+      "escape_time_delta_RF": 5.573167527472833e-08,
+      "standard_rtol": 2e-09,
+      "tight_rtol": 2e-11,
+      "standard_max_step_RF_fraction": 0.02,
+      "tight_max_step_RF_fraction": 0.01,
+      "tight_nfev": 1073792
+    },
+    {
+      "representation": "N48",
+      "model": "standing",
+      "azimuth_deg": 10.26123046875,
+      "direction": 1,
+      "standard_status": "retained",
+      "tight_status": "retained",
+      "classification_matches": true,
+      "standard_escape_time_RF": null,
+      "tight_escape_time_RF": null,
+      "escape_time_delta_RF": null,
+      "standard_rtol": 2e-09,
+      "tight_rtol": 2e-11,
+      "standard_max_step_RF_fraction": 0.02,
+      "tight_max_step_RF_fraction": 0.01,
+      "tight_nfev": 1203017
+    },
+    {
+      "representation": "N48",
+      "model": "standing",
+      "azimuth_deg": 10.283203125,
+      "direction": 1,
+      "standard_status": "escaped",
+      "tight_status": "escaped",
+      "classification_matches": true,
+      "standard_escape_time_RF": 722.5818438902988,
+      "tight_escape_time_RF": 722.5818439819752,
+      "escape_time_delta_RF": 9.167638381768484e-08,
+      "standard_rtol": 2e-09,
+      "tight_rtol": 2e-11,
+      "standard_max_step_RF_fraction": 0.02,
+      "tight_max_step_RF_fraction": 0.01,
+      "tight_nfev": 869282
+    }
+  ]
+}

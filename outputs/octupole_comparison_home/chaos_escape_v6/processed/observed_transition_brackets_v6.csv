@@ -1,0 +1,3 @@
+representation,model,direction,phase_deg,lower_azimuth_deg,lower_status,upper_azimuth_deg,upper_status,bracket_width_deg,interpretation
+N48,standing,-1,0.0,9.60205078125,retained,9.6240234375,escaped,0.02197265625,observed neighboring classifications; no continuous boundary asserted
+N48,standing,1,0.0,10.26123046875,retained,10.283203125,escaped,0.02197265625,observed neighboring classifications; no continuous boundary asserted

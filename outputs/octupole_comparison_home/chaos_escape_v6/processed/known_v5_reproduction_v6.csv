@@ -1,0 +1,9 @@
+azimuth_deg,direction,model,V5_status,V6_status,classification_match,V5_escape_time_RF,V6_escape_time_RF,escape_time_difference_RF,V5_solver_summary,V6_solver_summary
+0.0,-1,rotating,retained,retained,True,,,,V4 validated; source sampling harmonized at integer RF periods,The solver successfully reached the end of the integration interval.
+0.0,-1,standing,retained,retained,True,,,,DOP853 standard; rtol=2e-9; max step=T/50,The solver successfully reached the end of the integration interval.
+0.0,1,rotating,retained,retained,True,,,,V4 validated; source sampling harmonized at integer RF periods,The solver successfully reached the end of the integration interval.
+0.0,1,standing,retained,retained,True,,,,DOP853 standard; rtol=2e-9; max step=T/50,The solver successfully reached the end of the integration interval.
+22.5,-1,rotating,retained,retained,True,,,,V4 validated; source sampling harmonized at integer RF periods,The solver successfully reached the end of the integration interval.
+22.5,-1,standing,escaped,escaped,True,130.5377985291988,130.5377985291988,0.0,DOP853 standard; rtol=2e-9; max step=T/50,A termination event occurred.
+22.5,1,rotating,retained,retained,True,,,,V4 validated; source sampling harmonized at integer RF periods,The solver successfully reached the end of the integration interval.
+22.5,1,standing,escaped,escaped,True,185.4912740732636,185.4912740732636,0.0,DOP853 standard; rtol=2e-9; max step=T/50,A termination event occurred.

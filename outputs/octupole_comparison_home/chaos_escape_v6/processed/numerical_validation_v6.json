@@ -1,0 +1,35 @@
+{
+  "study": "V6 angular escape and phase-space diagnostics",
+  "checkpoint_rows_unique": 636,
+  "new_rf_trajectory_integrations": 620,
+  "reused_exact_V5_rows": 16,
+  "additional_tangent_diagnostic_integrations": 6,
+  "all_initial_tangential_velocity_signs_pass": true,
+  "V5_endpoint_reproduction_all_classifications_match": true,
+  "strict_boundary_rechecks": {
+    "n": 4,
+    "agreements": 4,
+    "disagreements": 0
+  },
+  "analytic_m4_checks": {
+    "matched_pseudopotential_ratio": 1.000000000000013,
+    "relative_harmonic_amplitude_mismatch": 1.319107012635243e-14,
+    "force_gradient_relative_error": 1.439703772273195e-10,
+    "helicity_relative_error": 1.7048897364373144e-13
+  },
+  "phase_space_tangent_jacobian_relative_error": 4.165285759880931e-11,
+  "compute_budget": {
+    "budget_s": 5400,
+    "first_integration_utc": "2026-11-12T13:32:48Z",
+    "last_main_checkpoint_elapsed_s": 5082.971,
+    "deadline_reserve_remaining_s": 317.029,
+    "workers": 4,
+    "new_FEM_solves": 0
+  },
+  "existing_V4_h35_h50_N48_check": {
+    "classifications_agreed": 8,
+    "n": 8,
+    "max_escape_time_delta_RF": 0.0035101957308256715
+  },
+  "classification_scope": "deterministic finite-time; retained cases right-censored at 1000 periods; no population probability or infinite-time claim"
+}

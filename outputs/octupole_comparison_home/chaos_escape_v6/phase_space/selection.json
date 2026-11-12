@@ -1,0 +1,195 @@
+{
+  "selection": {
+    "selected_conditions": [
+      [
+        "deep_rotating_jacobi",
+        "pure_m4",
+        "rotating",
+        0.0
+      ],
+      [
+        "N48_boundary_standing",
+        "N48",
+        "standing",
+        10.283203125
+      ],
+      [
+        "N48_early_escape_rotating",
+        "N48",
+        "rotating",
+        22.5
+      ],
+      [
+        "N48_early_escape_standing",
+        "N48",
+        "standing",
+        22.5
+      ],
+      [
+        "N48_late_escape_standing",
+        "N48",
+        "standing",
+        17.2265625
+      ]
+    ],
+    "selection_reason": "minimum set for Jacobi conservation and matched N48/pure-m4 escape comparison"
+  },
+  "jobs": [
+    {
+      "stage": "phase_space",
+      "representation": "pure_m4",
+      "model": "rotating",
+      "field": "measured_leading_m4",
+      "normalization": "matched_leading_pseudopotential",
+      "voltage_V": 250.0,
+      "frequency_Hz": 100000.0,
+      "mz_Th": 100000.0,
+      "charge_state": 1,
+      "energy_eV": 2.0,
+      "r0_mm": 1.0,
+      "azimuth_deg": 0.0,
+      "phase_deg": 0.0,
+      "direction": 1,
+      "velocity_kind": "tangent",
+      "horizon_RF": 1000,
+      "aperture_mm": 8.0,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ],
+      "max_step_RF_fraction": 0.02,
+      "samples_per_RF": 8,
+      "sampling_design": "targeted_stroboscopic_and_tangent",
+      "diagnostic_label": "deep_rotating_jacobi",
+      "job_id": "f94ba5e5abf0870d1681"
+    },
+    {
+      "stage": "phase_space",
+      "representation": "N48",
+      "model": "standing",
+      "field": "h35_N48",
+      "normalization": "matched_leading_pseudopotential",
+      "voltage_V": 353.5533905932738,
+      "frequency_Hz": 100000.0,
+      "mz_Th": 100000.0,
+      "charge_state": 1,
+      "energy_eV": 2.0,
+      "r0_mm": 1.0,
+      "azimuth_deg": 10.283203125,
+      "phase_deg": 0.0,
+      "direction": 1,
+      "velocity_kind": "tangent",
+      "horizon_RF": 1000,
+      "aperture_mm": 8.0,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ],
+      "max_step_RF_fraction": 0.02,
+      "samples_per_RF": 8,
+      "sampling_design": "targeted_stroboscopic_and_tangent",
+      "diagnostic_label": "N48_boundary_standing",
+      "job_id": "56b8c6d21ee90bc05264"
+    },
+    {
+      "stage": "phase_space",
+      "representation": "N48",
+      "model": "rotating",
+      "field": "h35_N48",
+      "normalization": "matched_leading_pseudopotential",
+      "voltage_V": 250.0,
+      "frequency_Hz": 100000.0,
+      "mz_Th": 100000.0,
+      "charge_state": 1,
+      "energy_eV": 2.0,
+      "r0_mm": 1.0,
+      "azimuth_deg": 22.5,
+      "phase_deg": 0.0,
+      "direction": 1,
+      "velocity_kind": "tangent",
+      "horizon_RF": 1000,
+      "aperture_mm": 8.0,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ],
+      "max_step_RF_fraction": 0.02,
+      "samples_per_RF": 8,
+      "sampling_design": "targeted_stroboscopic_and_tangent",
+      "diagnostic_label": "N48_early_escape_rotating",
+      "job_id": "50b7fd3b54ea73f85612"
+    },
+    {
+      "stage": "phase_space",
+      "representation": "N48",
+      "model": "standing",
+      "field": "h35_N48",
+      "normalization": "matched_leading_pseudopotential",
+      "voltage_V": 353.5533905932738,
+      "frequency_Hz": 100000.0,
+      "mz_Th": 100000.0,
+      "charge_state": 1,
+      "energy_eV": 2.0,
+      "r0_mm": 1.0,
+      "azimuth_deg": 22.5,
+      "phase_deg": 0.0,
+      "direction": 1,
+      "velocity_kind": "tangent",
+      "horizon_RF": 1000,
+      "aperture_mm": 8.0,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ],
+      "max_step_RF_fraction": 0.02,
+      "samples_per_RF": 8,
+      "sampling_design": "targeted_stroboscopic_and_tangent",
+      "diagnostic_label": "N48_early_escape_standing",
+      "job_id": "8170e887c30c4500a889"
+    },
+    {
+      "stage": "phase_space",
+      "representation": "N48",
+      "model": "standing",
+      "field": "h35_N48",
+      "normalization": "matched_leading_pseudopotential",
+      "voltage_V": 353.5533905932738,
+      "frequency_Hz": 100000.0,
+      "mz_Th": 100000.0,
+      "charge_state": 1,
+      "energy_eV": 2.0,
+      "r0_mm": 1.0,
+      "azimuth_deg": 17.2265625,
+      "phase_deg": 0.0,
+      "direction": 1,
+      "velocity_kind": "tangent",
+      "horizon_RF": 1000,
+      "aperture_mm": 8.0,
+      "rtol": 2e-09,
+      "atol": [
+        2e-13,
+        2e-13,
+        2e-11,
+        2e-11
+      ],
+      "max_step_RF_fraction": 0.02,
+      "samples_per_RF": 8,
+      "sampling_design": "targeted_stroboscopic_and_tangent",
+      "diagnostic_label": "N48_late_escape_standing",
+      "job_id": "4f7d586d50b3cfb981e8"
+    }
+  ],
+  "jacobian_validation_relative_error": 4.165285759880931e-11
+}

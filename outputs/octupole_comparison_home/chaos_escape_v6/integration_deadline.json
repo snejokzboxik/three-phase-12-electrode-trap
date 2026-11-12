@@ -1,0 +1,7 @@
+{
+  "start_unix_s": 1794490368.1978176,
+  "deadline_unix_s": 1794495768.1978176,
+  "budget_s": 5400,
+  "started_utc": "2026-11-12T13:32:48Z",
+  "start_rule": "created immediately before the first new V6 RF integration"
+}

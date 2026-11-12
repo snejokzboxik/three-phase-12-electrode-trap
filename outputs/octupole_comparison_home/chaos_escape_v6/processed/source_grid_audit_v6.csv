@@ -1,0 +1,33 @@
+source,energy_eV,r0_mm,azimuth_deg,model,n_states,radii_mm,retained,escaped,phases_deg,directions,normalization
+V4_equal_peak,2.0,1.0,0.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,0.0,standing,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,22.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,22.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,45.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,45.0,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,67.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,2.0,1.0,67.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,0.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,0.0,standing,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,22.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,22.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,45.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,45.0,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,67.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",equal peak
+V4_equal_peak,3.0,1.0,67.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",equal peak
+V5_matched_strength,2.0,1.0,0.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,0.0,standing,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,22.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,22.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,45.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,45.0,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,67.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,2.0,1.0,67.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,0.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,0.0,standing,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,22.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,22.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,45.0,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,45.0,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,67.5,rotating,16,"1,2",16,0,"0,90,180,270","-1,+1",matched leading pseudopotential
+V5_matched_strength,3.0,1.0,67.5,standing,16,"1,2",0,16,"0,90,180,270","-1,+1",matched leading pseudopotential

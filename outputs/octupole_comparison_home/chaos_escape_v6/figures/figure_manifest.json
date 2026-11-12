@@ -1,0 +1,19 @@
+{
+  "figures": [
+    "figure1_escape_time_by_azimuth_double_column.pdf",
+    "figure1_escape_time_by_azimuth_double_column.png",
+    "figure1_escape_time_by_azimuth_double_column.svg",
+    "figure2_paired_azimuth_phase_outcomes_double_column.pdf",
+    "figure2_paired_azimuth_phase_outcomes_double_column.png",
+    "figure2_paired_azimuth_phase_outcomes_double_column.svg",
+    "figure3_matched_xy_and_radial_motion_double_column.pdf",
+    "figure3_matched_xy_and_radial_motion_double_column.png",
+    "figure3_matched_xy_and_radial_motion_double_column.svg",
+    "figure4_jacobi_and_finite_time_dynamics_double_column.pdf",
+    "figure4_jacobi_and_finite_time_dynamics_double_column.png",
+    "figure4_jacobi_and_finite_time_dynamics_double_column.svg"
+  ],
+  "png_dpi": 600,
+  "source": "V6 checkpointed CSV/JSON and stroboscopic diagnostics",
+  "interpolation": "none; only observed states and samples are plotted"
+}

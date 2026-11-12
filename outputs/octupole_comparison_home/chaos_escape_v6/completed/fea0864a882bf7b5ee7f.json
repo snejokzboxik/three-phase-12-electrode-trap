@@ -1,0 +1,48 @@
+{
+  "job": {
+    "stage": "scan",
+    "representation": "pure_m4",
+    "model": "standing",
+    "field": "measured_leading_m4",
+    "normalization": "matched_leading_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 6.328125,
+    "phase_deg": 0.0,
+    "direction": -1,
+    "velocity_kind": "tangent",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "sampling_design": "balanced_65_point_azimuth_scan",
+    "job_id": "fea0864a882bf7b5ee7f"
+  },
+  "job_id": "fea0864a882bf7b5ee7f",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.84770193190451,
+  "rms_radius_mm": 4.467209284000312,
+  "initial_state": [
+    0.0009939069700023561,
+    0.00011022220729388306,
+    6.847463842813252,
+    -61.74565187272296
+  ],
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 624005,
+  "wall_s": 25.403958599985344,
+  "samples_per_RF_source": 8
+}

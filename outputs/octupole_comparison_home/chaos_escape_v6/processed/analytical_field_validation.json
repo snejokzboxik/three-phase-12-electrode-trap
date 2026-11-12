@@ -1,0 +1,253 @@
+{
+  "passed": true,
+  "field_source": "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\diagnostic_N48.json",
+  "reference_radius_m": 0.008,
+  "m4_cosine_coefficient": [
+    -1.9530974060266715e-11,
+    0.5413596632303368
+  ],
+  "m4_sine_coefficient": [
+    0.5413596632303439,
+    1.9462410849602207e-11
+  ],
+  "m4_amplitude_V_m4_per_electrode_V": 132167886.53084478,
+  "relative_rotating_vs_standing_m4_amplitude_mismatch": 1.319107012635243e-14,
+  "matched_pseudopotential_ratio_standing_over_rotating": 1.0000000000000264,
+  "numerical_time_averaged_pseudopotential_ratio_standing_over_rotating": 1.000000000000013,
+  "time_average_E2_rotating_per_test_position_V2_m2": [
+    2643.5592666069056,
+    2643.559266606905,
+    2643.559266606906
+  ],
+  "time_average_E2_standing_per_test_position_V2_m2": [
+    2643.5592666069406,
+    2643.5592666069397,
+    2643.5592666069406
+  ],
+  "rotating_pattern_helicity_test_relative_error": 1.7048897364373144e-13,
+  "max_analytical_field_gradient_relative_error": 1.439703772273195e-10,
+  "measured_h35_N48_spatial_harmonics": [
+    {
+      "spatial_order_m": 4,
+      "normalized_rotating_potential_coefficient": 0.7655981778620786,
+      "normalized_standing_potential_coefficient": 0.5413596632303439,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 1.0,
+          "standing_field_relative_to_m4": 1.0
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 1.0,
+          "standing_field_relative_to_m4": 1.0
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 1.0,
+          "standing_field_relative_to_m4": 1.0
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 1.0,
+          "standing_field_relative_to_m4": 1.0
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 1.0,
+          "standing_field_relative_to_m4": 1.0
+        }
+      }
+    },
+    {
+      "spatial_order_m": 8,
+      "normalized_rotating_potential_coefficient": 0.25224221483135567,
+      "normalized_standing_potential_coefficient": 0.17836218060880388,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 1.0054649710681106e-05,
+          "standing_field_relative_to_m4": 1.00546497106832e-05
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 0.0001608743953708977,
+          "standing_field_relative_to_m4": 0.0001608743953709312
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 0.0025739903259343632,
+          "standing_field_relative_to_m4": 0.0025739903259348993
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 0.04118384521494981,
+          "standing_field_relative_to_m4": 0.04118384521495839
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 0.658941523439197,
+          "standing_field_relative_to_m4": 0.6589415234393342
+        }
+      }
+    },
+    {
+      "spatial_order_m": 16,
+      "normalized_rotating_potential_coefficient": 0.0016661334632245735,
+      "normalized_standing_potential_coefficient": 0.001178134270239051,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 3.0926380530500925e-17,
+          "standing_field_relative_to_m4": 3.092638053131784e-17
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 1.266744546529318e-13,
+          "standing_field_relative_to_m4": 1.2667445465627787e-13
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 5.188585662584086e-10,
+          "standing_field_relative_to_m4": 5.188585662721142e-10
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 2.1252446873944416e-06,
+          "standing_field_relative_to_m4": 2.1252446874505796e-06
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 0.008705002239567633,
+          "standing_field_relative_to_m4": 0.008705002239797574
+        }
+      }
+    },
+    {
+      "spatial_order_m": 20,
+      "normalized_rotating_potential_coefficient": 0.007892322956605576,
+      "normalized_standing_potential_coefficient": 0.005580715081867765,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 2.7941790951631857e-21,
+          "standing_field_relative_to_m4": 2.7941790951319743e-21
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 1.8311932118061454e-16,
+          "standing_field_relative_to_m4": 1.8311932117856907e-16
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 1.2000907832892754e-11,
+          "standing_field_relative_to_m4": 1.2000907832758702e-11
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 7.864914957364595e-07,
+          "standing_field_relative_to_m4": 7.864914957276743e-07
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 0.05154350666458461,
+          "standing_field_relative_to_m4": 0.051543506664008865
+        }
+      }
+    },
+    {
+      "spatial_order_m": 28,
+      "normalized_rotating_potential_coefficient": 0.0005586515798723458,
+      "normalized_standing_potential_coefficient": 0.0003950263205931083,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 6.447013749428161e-32,
+          "standing_field_relative_to_m4": 6.447013751791231e-32
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 1.0816294222912613e-24,
+          "standing_field_relative_to_m4": 1.0816294226877187e-24
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 1.8146730449735706e-17,
+          "standing_field_relative_to_m4": 1.8146730456387157e-17
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 3.044516164489931e-10,
+          "standing_field_relative_to_m4": 3.044516165605859e-10
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 0.00510785053071391,
+          "standing_field_relative_to_m4": 0.005107850532586127
+        }
+      }
+    },
+    {
+      "spatial_order_m": 32,
+      "normalized_rotating_potential_coefficient": 0.00023914741856264482,
+      "normalized_standing_potential_coefficient": 0.00016910276142631533,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 4.812771898897372e-37,
+          "standing_field_relative_to_m4": 4.812771900531309e-37
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 1.291918619304502e-28,
+          "standing_field_relative_to_m4": 1.2919186197431086e-28
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 3.467967636878944e-20,
+          "standing_field_relative_to_m4": 3.46796763805632e-20
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 9.309254739988417e-12,
+          "standing_field_relative_to_m4": 9.309254743148911e-12
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 0.0024989340411489523,
+          "standing_field_relative_to_m4": 0.002498934041997341
+        }
+      }
+    },
+    {
+      "spatial_order_m": 40,
+      "normalized_rotating_potential_coefficient": 5.49210397625633e-05,
+      "normalized_standing_potential_coefficient": 3.88350397735271e-05,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 3.2167586978668715e-47,
+          "standing_field_relative_to_m4": 3.2167587084363436e-47
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 2.2105397450338813e-36,
+          "standing_field_relative_to_m4": 2.2105397522971672e-36
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 1.5190713458285918e-25,
+          "standing_field_relative_to_m4": 1.5190713508198838e-25
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 1.0438978800999212e-14,
+          "standing_field_relative_to_m4": 1.043897883529911e-14
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 0.0007173611608628625,
+          "standing_field_relative_to_m4": 0.0007173611632199336
+        }
+      }
+    },
+    {
+      "spatial_order_m": 44,
+      "normalized_rotating_potential_coefficient": 1.2400308923852789e-06,
+      "normalized_standing_potential_coefficient": 8.768344234697784e-07,
+      "field_contribution_ratios_by_radius_mm": {
+        "0.5": {
+          "rotating_combined_field_relative_to_m4": 1.2190597505151098e-53,
+          "standing_field_relative_to_m4": 1.2190599876765554e-53
+        },
+        "1.0": {
+          "rotating_combined_field_relative_to_m4": 1.3403703706450728e-41,
+          "standing_field_relative_to_m4": 1.34037063140684e-41
+        },
+        "2.0": {
+          "rotating_combined_field_relative_to_m4": 1.4737528080506845e-29,
+          "standing_field_relative_to_m4": 1.4737530947612795e-29
+        },
+        "4.0": {
+          "rotating_combined_field_relative_to_m4": 1.620408348919259e-17,
+          "standing_field_relative_to_m4": 1.620408664160892e-17
+        },
+        "8.0": {
+          "rotating_combined_field_relative_to_m4": 1.781657821382035e-05,
+          "standing_field_relative_to_m4": 1.781658167993876e-05
+        }
+      }
+    }
+  ],
+  "phase_convention": {
+    "lambda": "Omega*t + initial_RF_phase",
+    "rotating_potential_per_applied_V": "A4*r^4*sin(lambda - 4*theta)",
+    "standing_potential_per_applied_V": "A4*r^4*cos(4*theta)*sin(lambda)",
+    "equivalent_requested_forms": "rotating cos(4theta-Omega*t+pi/2); standing cos(4theta)cos(Omega*t-pi/2) at phase zero"
+  }
+}

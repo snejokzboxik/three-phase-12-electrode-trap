@@ -1,0 +1,133 @@
+{
+  "source_grid_rows": 32,
+  "v6_checkpointed_unique_jobs": 636,
+  "v6_direction_audit_rows": 636,
+  "all_v6_tangential_signs_pass": true,
+  "known_v5_reproduction_rows": 8,
+  "known_v5_all_classifications_match": true,
+  "observed_phase_zero_transitions": [
+    {
+      "representation": "N48",
+      "model": "standing",
+      "direction": -1,
+      "phase_deg": 0.0,
+      "lower_azimuth_deg": 9.60205078125,
+      "lower_status": "retained",
+      "upper_azimuth_deg": 9.6240234375,
+      "upper_status": "escaped",
+      "bracket_width_deg": 0.02197265625,
+      "interpretation": "observed neighboring classifications; no continuous boundary asserted"
+    },
+    {
+      "representation": "N48",
+      "model": "standing",
+      "direction": 1,
+      "phase_deg": 0.0,
+      "lower_azimuth_deg": 10.26123046875,
+      "lower_status": "retained",
+      "upper_azimuth_deg": 10.283203125,
+      "upper_status": "escaped",
+      "bracket_width_deg": 0.02197265625,
+      "interpretation": "observed neighboring classifications; no continuous boundary asserted"
+    }
+  ],
+  "outcome_summary": [
+    {
+      "representation": "N48",
+      "model": "rotating",
+      "direction": -1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 68,
+      "balanced_grid_states": 65,
+      "grid_retained": 65,
+      "grid_escaped": 0,
+      "minimum_sampled_escape_RF": null
+    },
+    {
+      "representation": "N48",
+      "model": "rotating",
+      "direction": 1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 68,
+      "balanced_grid_states": 65,
+      "grid_retained": 65,
+      "grid_escaped": 0,
+      "minimum_sampled_escape_RF": null
+    },
+    {
+      "representation": "N48",
+      "model": "standing",
+      "direction": -1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 72,
+      "balanced_grid_states": 65,
+      "grid_retained": 28,
+      "grid_escaped": 37,
+      "minimum_sampled_escape_RF": 64.3737628269011
+    },
+    {
+      "representation": "N48",
+      "model": "standing",
+      "direction": 1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 72,
+      "balanced_grid_states": 65,
+      "grid_retained": 30,
+      "grid_escaped": 35,
+      "minimum_sampled_escape_RF": 183.52709179463304
+    },
+    {
+      "representation": "pure_m4",
+      "model": "rotating",
+      "direction": -1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 65,
+      "balanced_grid_states": 65,
+      "grid_retained": 65,
+      "grid_escaped": 0,
+      "minimum_sampled_escape_RF": null
+    },
+    {
+      "representation": "pure_m4",
+      "model": "rotating",
+      "direction": 1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 65,
+      "balanced_grid_states": 65,
+      "grid_retained": 65,
+      "grid_escaped": 0,
+      "minimum_sampled_escape_RF": null
+    },
+    {
+      "representation": "pure_m4",
+      "model": "standing",
+      "direction": -1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 65,
+      "balanced_grid_states": 65,
+      "grid_retained": 65,
+      "grid_escaped": 0,
+      "minimum_sampled_escape_RF": null
+    },
+    {
+      "representation": "pure_m4",
+      "model": "standing",
+      "direction": 1,
+      "phase_deg": 0.0,
+      "unique_azimuths_0_to_22p5": 65,
+      "balanced_grid_states": 65,
+      "grid_retained": 65,
+      "grid_escaped": 0,
+      "minimum_sampled_escape_RF": null
+    }
+  ],
+  "compute_elapsed_s": 4478.667573213577,
+  "deadline": {
+    "start_unix_s": 1794490368.1978176,
+    "deadline_unix_s": 1794495768.1978176,
+    "budget_s": 5400,
+    "started_utc": "2026-11-12T13:32:48Z",
+    "start_rule": "created immediately before the first new V6 RF integration"
+  },
+  "classification_interpretation": "1000-RF survivors are right-censored finite-time observations, not permanent stability"
+}

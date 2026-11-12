@@ -1,0 +1,88 @@
+{
+  "study": "V6 azimuth-dependent escape and rotating-frame dynamics",
+  "scientific_scope": "deterministic finite-time transverse dynamics; no inference of infinite-time stability or population probabilities",
+  "source_studies": {
+    "V4_report": "outputs/octupole_comparison_home/confinement_maps_v4/\u041e\u0422\u0427\u0401\u0422_V4_RU.md",
+    "V4_runner": "outputs/octupole_comparison_home/confinement_maps_v4/run_v4.py",
+    "V4_pairs": "outputs/octupole_comparison_home/confinement_maps_v4/matched_pairs_equal_peak.csv",
+    "V5_report": "outputs/octupole_comparison_home/matched_pseudopotential_v5/REPORT_RU.md",
+    "V5_pairs": "outputs/octupole_comparison_home/matched_pseudopotential_v5/processed/matched_strength_balanced_pairs.csv",
+    "field_h35": "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\diagnostic_N48.json",
+    "field_h50": "outputs/abc_validation/direct_fem_validation/v2/h50_P4/diagnostic_N48.json"
+  },
+  "ion": {
+    "charge_state": 1,
+    "mz_Th": 100000.0,
+    "mass_kg": 1.6605390666e-22
+  },
+  "rf": {
+    "frequency_Hz": 100000.0,
+    "omega_rad_s": 628318.5307179586,
+    "rotating_voltage_V": 250.0,
+    "standing_voltage_V": 353.5533905932738,
+    "normalization": "matched measured leading m=4 pseudopotential; other harmonics not matched"
+  },
+  "initial_conditions": {
+    "energy_eV": 2.0,
+    "radius_mm": 1.0,
+    "aperture_mm": 8.0,
+    "horizon_RF": 1000,
+    "primary_azimuth_grid_deg": {
+      "start": 0,
+      "end": 22.5,
+      "samples": 65
+    },
+    "directions": [
+      -1,
+      1
+    ],
+    "pilot_offsets_deg": [
+      -5,
+      -1,
+      -0.1,
+      0,
+      0.1,
+      1,
+      5,
+      11.25,
+      22.5
+    ],
+    "phase_check_deg": [
+      90,
+      180
+    ]
+  },
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "radial_output_samples_per_RF": 8,
+    "escape_event": "first terminal outward crossing of r=8 mm"
+  },
+  "analytical_control": {
+    "potential_order": 4,
+    "amplitude_calibration": "complex m=4 coefficient in h35 N48 potential quadratures",
+    "rotating_potential_per_V": "A4*r^4*sin(Omega*t + phi - 4*theta)",
+    "standing_potential_per_V": "A4*r^4*cos(4*theta)*sin(Omega*t + phi)"
+  },
+  "compute_budget": {
+    "max_elapsed_wall_s": 5400,
+    "workers": 4,
+    "deadline_file": "integration_deadline.json",
+    "checkpoint": "atomic per-trajectory JSON plus fsync JSONL journal",
+    "no_new_fem_or_mesh_calculation": true
+  },
+  "run_commands": [
+    "python run_v6.py --stage validate",
+    "python run_v6.py --stage pilot --workers 4",
+    "python run_v6.py --stage scan --workers 4",
+    "python run_v6.py --stage refine --workers 4",
+    "python run_v6.py --stage phase-check --workers 4"
+  ]
+}

@@ -1,0 +1,5 @@
+representation,model,azimuth_deg,direction,standard_status,tight_status,classification_matches,standard_escape_time_RF,tight_escape_time_RF,escape_time_delta_RF,standard_rtol,tight_rtol,standard_max_step_RF_fraction,tight_max_step_RF_fraction,tight_nfev
+N48,standing,9.60205078125,-1,retained,retained,True,,,,2e-09,2e-11,0.02,0.01,1203017
+N48,standing,9.6240234375,-1,escaped,escaped,True,892.5809093123491,892.5809093680808,5.573167527472833e-08,2e-09,2e-11,0.02,0.01,1073792
+N48,standing,10.26123046875,1,retained,retained,True,,,,2e-09,2e-11,0.02,0.01,1203017
+N48,standing,10.283203125,1,escaped,escaped,True,722.5818438902988,722.5818439819752,9.167638381768484e-08,2e-09,2e-11,0.02,0.01,869282

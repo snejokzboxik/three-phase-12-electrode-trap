@@ -1,0 +1,49 @@
+{
+  "job": {
+    "stage": "phase-check",
+    "representation": "N48",
+    "model": "standing",
+    "field": "h35_N48",
+    "normalization": "matched_leading_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 22.5,
+    "phase_deg": 180.0,
+    "direction": -1,
+    "velocity_kind": "tangent",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 8,
+    "sampling_design": "selected_phase_robustness_scan",
+    "job_id": "8eb845141f67bb6172af"
+  },
+  "job_id": "8eb845141f67bb6172af",
+  "status": "escaped",
+  "escape_time_RF": 51.92846219186196,
+  "right_censored_at_RF": null,
+  "max_radius_mm": 7.999999999994513,
+  "rms_radius_mm": null,
+  "initial_state": [
+    0.0009238795325112868,
+    0.0003826834323650898,
+    23.773893035700862,
+    -57.39525499719629
+  ],
+  "solver_status": "reused_exact_v5_h35_n48_record",
+  "source": "matched_strength_balanced_pairs.csv",
+  "samples_per_RF_source": 1,
+  "nfev": null,
+  "wall_s": 0.0
+}

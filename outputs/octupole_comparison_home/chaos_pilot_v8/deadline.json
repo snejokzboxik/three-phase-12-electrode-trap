@@ -1,0 +1,8 @@
+{
+  "start_unix_s": 1794509940.0,
+  "deadline_unix_s": 1794512640.0,
+  "integration_submission_stop_unix_s": 1794512040.0,
+  "budget_min": 45,
+  "hard_user_limit_min": 50,
+  "clock_origin_note": "Set to beginning of V8 task turn, before the first repository audit; total deadline includes analysis, report, and commit."
+}

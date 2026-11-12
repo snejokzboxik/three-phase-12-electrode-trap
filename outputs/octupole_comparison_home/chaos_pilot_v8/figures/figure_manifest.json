@@ -1,0 +1,42 @@
+[
+  {
+    "svg": "V8_Fig1_azimuth_phase_outcomes_double_column.svg",
+    "pdf": "V8_Fig1_azimuth_phase_outcomes_double_column.pdf",
+    "png": "V8_Fig1_azimuth_phase_outcomes_double_column.png",
+    "width_mm": 178,
+    "height_mm": 110,
+    "png_dpi": 600
+  },
+  {
+    "svg": "V8_Fig2_escape_times_double_column.svg",
+    "pdf": "V8_Fig2_escape_times_double_column.pdf",
+    "png": "V8_Fig2_escape_times_double_column.png",
+    "width_mm": 178,
+    "height_mm": 103,
+    "png_dpi": 600
+  },
+  {
+    "svg": "V8_Fig3_initial_condition_sensitivity_single_column.svg",
+    "pdf": "V8_Fig3_initial_condition_sensitivity_single_column.pdf",
+    "png": "V8_Fig3_initial_condition_sensitivity_single_column.png",
+    "width_mm": 100,
+    "height_mm": 91,
+    "png_dpi": 600
+  },
+  {
+    "svg": "V8_Fig4_FTLE_and_stroboscopic_double_column.svg",
+    "pdf": "V8_Fig4_FTLE_and_stroboscopic_double_column.pdf",
+    "png": "V8_Fig4_FTLE_and_stroboscopic_double_column.png",
+    "width_mm": 178,
+    "height_mm": 104,
+    "png_dpi": 600
+  },
+  {
+    "svg": "V8_Fig5_field_resolution_sensitivity_double_column.svg",
+    "pdf": "V8_Fig5_field_resolution_sensitivity_double_column.pdf",
+    "png": "V8_Fig5_field_resolution_sensitivity_double_column.png",
+    "width_mm": 178,
+    "height_mm": 100,
+    "png_dpi": 600
+  }
+]

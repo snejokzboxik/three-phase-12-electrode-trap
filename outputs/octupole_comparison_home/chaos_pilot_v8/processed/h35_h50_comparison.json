@@ -1,0 +1,42 @@
+[
+  {
+    "theta0_deg": 9.609875,
+    "phase_deg": 0.0,
+    "direction": -1,
+    "h35_status": "retained",
+    "h35_escape_time_RF": null,
+    "h50_status": "retained",
+    "h50_escape_time_RF": null,
+    "classification_agrees": true
+  },
+  {
+    "theta0_deg": 10.2597,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "h35_status": "escaped",
+    "h35_escape_time_RF": 815.446458892625,
+    "h50_status": "escaped",
+    "h50_escape_time_RF": 813.6004637958905,
+    "classification_agrees": true
+  },
+  {
+    "theta0_deg": 10.26123046875,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "h35_status": "retained",
+    "h35_escape_time_RF": null,
+    "h50_status": "escaped",
+    "h50_escape_time_RF": 815.3848616874863,
+    "classification_agrees": false
+  },
+  {
+    "theta0_deg": 9.613,
+    "phase_deg": 0.0,
+    "direction": -1,
+    "h35_status": "escaped",
+    "h35_escape_time_RF": 988.6502980083413,
+    "h50_status": "escaped",
+    "h50_escape_time_RF": 989.6234209111194,
+    "classification_agrees": true
+  }
+]

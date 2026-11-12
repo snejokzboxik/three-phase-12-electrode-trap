@@ -1,0 +1,49 @@
+{
+  "job": {
+    "stage": "map",
+    "representation": "N48",
+    "model": "standing",
+    "field": "h35_N48",
+    "normalization": "matched_leading_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 9.5,
+    "phase_deg": 0.0,
+    "direction": 1,
+    "velocity_kind": "tangent",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 1,
+    "sampling_design": "v8_map",
+    "job_id": "7a485f6908f4fff5bd19"
+  },
+  "job_id": "7a485f6908f4fff5bd19",
+  "status": "retained",
+  "escape_time_RF": null,
+  "right_censored_at_RF": 1000,
+  "max_radius_mm": 6.507194435779279,
+  "rms_radius_mm": 4.332651291940346,
+  "initial_state": [
+    0.0009862856015372314,
+    0.00016504760586067766,
+    -10.25344657143881,
+    61.27218063422242
+  ],
+  "solver_status": "The solver successfully reached the end of the integration interval.",
+  "nfev": 603005,
+  "wall_s": 24.343831900012447,
+  "samples_per_RF_source": 1,
+  "source": "new_v8"
+}

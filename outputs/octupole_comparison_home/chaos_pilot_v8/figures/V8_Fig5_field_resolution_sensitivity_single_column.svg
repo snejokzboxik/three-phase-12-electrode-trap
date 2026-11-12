@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128mm" height="74mm" viewBox="0 0 128 74">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="8" y="8" text-anchor="start" dominant-baseline="middle" font-size="8.5pt" font-weight="bold" fill="#202830">
+<tspan x="8" dy="0">E  Resolution sensitivity of narrow angular outcomes</tspan>
+</text>
+<line x1="28" y1="19" x2="28" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="28" y1="58" x2="28" y2="58.8" stroke="#202830" stroke-width="0.24"/>
+<text x="28" y="60.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="28" dy="0">9.6080</tspan>
+</text>
+<line x1="52" y1="19" x2="52" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="52" y1="58" x2="52" y2="58.8" stroke="#202830" stroke-width="0.24"/>
+<text x="52" y="60.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="52" dy="0">9.6114</tspan>
+</text>
+<line x1="76" y1="19" x2="76" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="76" y1="58" x2="76" y2="58.8" stroke="#202830" stroke-width="0.24"/>
+<text x="76" y="60.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="76" dy="0">9.6149</tspan>
+</text>
+<line x1="28" y1="48.25" x2="76" y2="48.25" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="27.2" y1="48.25" x2="28" y2="48.25" stroke="#202830" stroke-width="0.24"/>
+<text x="26.5" y="48.25" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="26.5" dy="0">h35</tspan>
+</text>
+<line x1="28" y1="28.75" x2="76" y2="28.75" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="27.2" y1="28.75" x2="28" y2="28.75" stroke="#202830" stroke-width="0.24"/>
+<text x="26.5" y="28.75" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="26.5" dy="0">h50</tspan>
+</text>
+<line x1="28" y1="19" x2="28" y2="58" stroke="#202830" stroke-width="0.28"/>
+<line x1="28" y1="58" x2="76" y2="58" stroke="#202830" stroke-width="0.28"/>
+<circle cx="41.2396" cy="48.25" r="0.85" fill="#177E89" stroke="#177E89" stroke-width="0.22"/>
+<polygon points="40.3396,27.85 42.1396,27.85 42.1396,29.65 40.3396,29.65" fill="#177E89" stroke="#177E89" stroke-width="0.22"/>
+<line x1="41.2396" y1="48.25" x2="41.2396" y2="28.75" stroke="#D9E0E5" stroke-width="0.35" stroke-dasharray="0.7,0.5"/>
+<circle cx="62.7604" cy="48.25" r="0.85" fill="#D1495B" stroke="#D1495B" stroke-width="0.22"/>
+<polygon points="61.8604,27.85 63.6604,27.85 63.6604,29.65 61.8604,29.65" fill="#D1495B" stroke="#D1495B" stroke-width="0.22"/>
+<line x1="62.7604" y1="48.25" x2="62.7604" y2="28.75" stroke="#D9E0E5" stroke-width="0.35" stroke-dasharray="0.7,0.5"/>
+<text x="52" y="66" text-anchor="middle" dominant-baseline="middle" font-size="6.8pt" font-weight="normal" fill="#202830">
+<tspan x="52" dy="0">Initial azimuth θ₀ (deg)</tspan>
+</text>
+<text x="29" y="16" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="29" dy="0">vθ &lt; 0</tspan>
+</text>
+<line x1="90" y1="19" x2="90" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="90" y1="58" x2="90" y2="58.8" stroke="#202830" stroke-width="0.24"/>
+<text x="90" y="60.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="90" dy="0">10.2581</tspan>
+</text>
+<line x1="114" y1="19" x2="114" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="114" y1="58" x2="114" y2="58.8" stroke="#202830" stroke-width="0.24"/>
+<text x="114" y="60.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="114" dy="0">10.2605</tspan>
+</text>
+<line x1="138" y1="19" x2="138" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="138" y1="58" x2="138" y2="58.8" stroke="#202830" stroke-width="0.24"/>
+<text x="138" y="60.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="138" dy="0">10.2629</tspan>
+</text>
+<line x1="90" y1="48.25" x2="138" y2="48.25" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="89.2" y1="48.25" x2="90" y2="48.25" stroke="#202830" stroke-width="0.24"/>
+<text x="88.5" y="48.25" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="88.5" dy="0">h35</tspan>
+</text>
+<line x1="90" y1="28.75" x2="138" y2="28.75" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="89.2" y1="28.75" x2="90" y2="28.75" stroke="#202830" stroke-width="0.24"/>
+<text x="88.5" y="28.75" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="88.5" dy="0">h50</tspan>
+</text>
+<line x1="90" y1="19" x2="90" y2="58" stroke="#202830" stroke-width="0.28"/>
+<line x1="90" y1="58" x2="138" y2="58" stroke="#202830" stroke-width="0.28"/>
+<circle cx="106.35" cy="48.25" r="0.85" fill="#D1495B" stroke="#D1495B" stroke-width="0.22"/>
+<polygon points="105.45,27.85 107.25,27.85 107.25,29.65 105.45,29.65" fill="#D1495B" stroke="#D1495B" stroke-width="0.22"/>
+<line x1="106.35" y1="48.25" x2="106.35" y2="28.75" stroke="#D9E0E5" stroke-width="0.35" stroke-dasharray="0.7,0.5"/>
+<circle cx="121.65" cy="48.25" r="0.85" fill="#177E89" stroke="#177E89" stroke-width="0.22"/>
+<polygon points="120.75,27.85 122.55,27.85 122.55,29.65 120.75,29.65" fill="#D1495B" stroke="#D1495B" stroke-width="0.22"/>
+<line x1="121.65" y1="48.25" x2="121.65" y2="28.75" stroke="#D9E0E5" stroke-width="0.35" stroke-dasharray="0.7,0.5"/>
+<text x="114" y="66" text-anchor="middle" dominant-baseline="middle" font-size="6.8pt" font-weight="normal" fill="#202830">
+<tspan x="114" dy="0">Initial azimuth θ₀ (deg)</tspan>
+</text>
+<text x="91" y="16" text-anchor="start" dominant-baseline="middle" font-size="7pt" font-weight="bold" fill="#202830">
+<tspan x="91" dy="0">vθ &gt; 0</tspan>
+</text>
+<circle cx="27" cy="72" r="0.7" fill="#177E89" stroke="#177E89" stroke-width="0.28"/>
+<text x="29.4" y="72" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="29.4" dy="0">retained</tspan>
+</text>
+<circle cx="54" cy="72" r="0.7" fill="#D1495B" stroke="#D1495B" stroke-width="0.28"/>
+<text x="56.4" y="72" text-anchor="start" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#202830">
+<tspan x="56.4" dy="0">escaped</tspan>
+</text>
+<text x="84" y="72" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#5D6872">
+<tspan x="84" dy="0">Rows: h35 (lower), h50 (upper); vertical links pair identical launches.</tspan>
+</text>
+</svg>

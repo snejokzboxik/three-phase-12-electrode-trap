@@ -1,0 +1,130 @@
+[
+  {
+    "phase_deg": 0.0,
+    "vtheta_sign": -1,
+    "n": 35,
+    "retained": 15,
+    "escaped": 20,
+    "minimum_escape_RF": 259.5187243296452
+  },
+  {
+    "phase_deg": 0.0,
+    "vtheta_sign": 1,
+    "n": 35,
+    "retained": 18,
+    "escaped": 17,
+    "minimum_escape_RF": 376.4422736758225
+  },
+  {
+    "phase_deg": 45.0,
+    "vtheta_sign": -1,
+    "n": 2,
+    "retained": 0,
+    "escaped": 2,
+    "minimum_escape_RF": 598.4700078946264
+  },
+  {
+    "phase_deg": 45.0,
+    "vtheta_sign": 1,
+    "n": 2,
+    "retained": 1,
+    "escaped": 1,
+    "minimum_escape_RF": 621.3776209485565
+  },
+  {
+    "phase_deg": 90.0,
+    "vtheta_sign": -1,
+    "n": 12,
+    "retained": 5,
+    "escaped": 7,
+    "minimum_escape_RF": 258.21804524141663
+  },
+  {
+    "phase_deg": 90.0,
+    "vtheta_sign": 1,
+    "n": 12,
+    "retained": 5,
+    "escaped": 7,
+    "minimum_escape_RF": 377.3302393207627
+  },
+  {
+    "phase_deg": 135.0,
+    "vtheta_sign": -1,
+    "n": 2,
+    "retained": 1,
+    "escaped": 1,
+    "minimum_escape_RF": 554.1716825027031
+  },
+  {
+    "phase_deg": 135.0,
+    "vtheta_sign": 1,
+    "n": 1,
+    "retained": 0,
+    "escaped": 1,
+    "minimum_escape_RF": 719.1769279052462
+  },
+  {
+    "phase_deg": 180.0,
+    "vtheta_sign": -1,
+    "n": 12,
+    "retained": 6,
+    "escaped": 6,
+    "minimum_escape_RF": 257.23199697208304
+  },
+  {
+    "phase_deg": 180.0,
+    "vtheta_sign": 1,
+    "n": 12,
+    "retained": 5,
+    "escaped": 7,
+    "minimum_escape_RF": 380.0810955289778
+  },
+  {
+    "phase_deg": 225.0,
+    "vtheta_sign": -1,
+    "n": 1,
+    "retained": 1,
+    "escaped": 0,
+    "minimum_escape_RF": null
+  },
+  {
+    "phase_deg": 225.0,
+    "vtheta_sign": 1,
+    "n": 2,
+    "retained": 1,
+    "escaped": 1,
+    "minimum_escape_RF": 668.7308000831536
+  },
+  {
+    "phase_deg": 270.0,
+    "vtheta_sign": -1,
+    "n": 10,
+    "retained": 6,
+    "escaped": 4,
+    "minimum_escape_RF": 259.695392410769
+  },
+  {
+    "phase_deg": 270.0,
+    "vtheta_sign": 1,
+    "n": 10,
+    "retained": 6,
+    "escaped": 4,
+    "minimum_escape_RF": 378.7210310436692
+  },
+  {
+    "phase_deg": 315.0,
+    "vtheta_sign": -1,
+    "n": 2,
+    "retained": 1,
+    "escaped": 1,
+    "minimum_escape_RF": 717.6145613132105
+  },
+  {
+    "phase_deg": 315.0,
+    "vtheta_sign": 1,
+    "n": 2,
+    "retained": 2,
+    "escaped": 0,
+    "minimum_escape_RF": null
+  }
+]

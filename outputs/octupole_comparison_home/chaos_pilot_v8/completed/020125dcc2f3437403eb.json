@@ -1,0 +1,49 @@
+{
+  "job": {
+    "stage": "sensitivity",
+    "representation": "N48",
+    "model": "standing",
+    "field": "h35_N48",
+    "normalization": "matched_leading_pseudopotential",
+    "voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "energy_eV": 2.0,
+    "r0_mm": 1.0,
+    "azimuth_deg": 9.812999999999999,
+    "phase_deg": 0.0,
+    "direction": -1,
+    "velocity_kind": "tangent",
+    "horizon_RF": 1000,
+    "aperture_mm": 8.0,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "samples_per_RF": 1,
+    "sampling_design": "v8_sensitivity",
+    "job_id": "020125dcc2f3437403eb"
+  },
+  "job_id": "020125dcc2f3437403eb",
+  "status": "escaped",
+  "escape_time_RF": 646.479392702558,
+  "right_censored_at_RF": null,
+  "max_radius_mm": 8.000000000000004,
+  "rms_radius_mm": 4.475599515498657,
+  "initial_state": [
+    0.0009853692538089307,
+    0.0001704330767428405,
+    10.588014514211082,
+    -61.21525328635819
+  ],
+  "solver_status": "A termination event occurred.",
+  "nfev": 389834,
+  "wall_s": 15.09541390000959,
+  "samples_per_RF_source": 1,
+  "source": "new_v8"
+}

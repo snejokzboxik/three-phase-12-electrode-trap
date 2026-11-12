@@ -1,0 +1,88 @@
+{
+  "study": "V8 budgeted chaos pilot",
+  "source_revision": "5efe74a6c00627962dfd4c7fc8b082340190b148",
+  "field": "validated h35 N48 and calibrated leading m4 from V6",
+  "ion": {
+    "charge_state": 1,
+    "mz_Th": 100000,
+    "frequency_Hz": 100000
+  },
+  "initial_state": {
+    "energy_eV": 2,
+    "radius_mm": 1,
+    "aperture_mm": 8,
+    "velocity": "signed tangential; same V6 definition"
+  },
+  "normalization": {
+    "rotating_voltage_V": 250,
+    "standing_voltage_V": 353.5533905932738,
+    "matched_leading_pseudopotential": true
+  },
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF_fraction": 0.02,
+    "horizon_RF": 1000,
+    "escape": "first outward crossing r=8 mm"
+  },
+  "map": {
+    "azimuth_deg": [
+      8,
+      9,
+      9.5,
+      9.60205,
+      9.62402,
+      10,
+      10.26123,
+      10.2832,
+      11,
+      12
+    ],
+    "RF_phase_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "directions": [
+      -1,
+      1
+    ],
+    "design": "sparse local pilot; exact prior V6 starts reused; actual samples only"
+  },
+  "sensitivity": {
+    "perturbations_deg": [
+      0.2,
+      0.05,
+      0.0125,
+      0.003125
+    ],
+    "metric": "Euclidean distance in (theta, RF phase), both angles expressed in radians",
+    "purpose": "local sensitivity pilot only; no exponent fit unless sample support warrants"
+  },
+  "tangent": {
+    "state_space": [
+      "x",
+      "y",
+      "vx",
+      "vy"
+    ],
+    "position_scale_m": 0.001,
+    "velocity_scale": "initial speed at 2 eV",
+    "renormalization_interval_RF": 10,
+    "extended_horizon_RF": 3000
+  },
+  "resources": {
+    "worker_limit": 4,
+    "integration_submission_stop_min": 35,
+    "target_total_budget_min": 45,
+    "absolute_user_limit_min": 50,
+    "no_new_FEM": true
+  }
+}

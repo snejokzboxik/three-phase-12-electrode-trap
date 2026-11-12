@@ -1,0 +1,241 @@
+{
+  "metric": "sqrt((delta_theta_rad)^2+(delta_phi_RF_rad)^2)",
+  "pairs": [
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "center",
+      "delta_deg": 0.0,
+      "job_id": "b49080c564b47d2234f8"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.2,
+      "sign": -1,
+      "job_id": "1ccaba043ec1bfcc881f"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.2,
+      "sign": 1,
+      "job_id": "020125dcc2f3437403eb"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.2,
+      "sign": -1,
+      "job_id": "b176b04e88d4b514aa59"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.2,
+      "sign": 1,
+      "job_id": "43fc8dd25dfe92f6b638"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.05,
+      "sign": -1,
+      "job_id": "dc1762e9de10fe01927c"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.05,
+      "sign": 1,
+      "job_id": "444035fcb98cf9ad518f"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.05,
+      "sign": -1,
+      "job_id": "fe531649fa571ade64a6"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.05,
+      "sign": 1,
+      "job_id": "01da8274d996fb61c724"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.0125,
+      "sign": -1,
+      "job_id": "5f9e1fd6f762c570d18d"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.0125,
+      "sign": 1,
+      "job_id": "b84e2dd4e6d7586c5358"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.0125,
+      "sign": -1,
+      "job_id": "3e5df29d7cca1660a49c"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.0125,
+      "sign": 1,
+      "job_id": "cfcfab20a4958487ddc4"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.003125,
+      "sign": -1,
+      "job_id": "2e5f5ebd3cf121ac34b2"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "azimuth",
+      "delta_deg": 0.003125,
+      "sign": 1,
+      "job_id": "50da1597506cb3241640"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.003125,
+      "sign": -1,
+      "job_id": "14d49f46fcebbe71e4ee"
+    },
+    {
+      "label": "theta_boundary_vtheta_negative",
+      "kind": "phase",
+      "delta_deg": 0.003125,
+      "sign": 1,
+      "job_id": "a094048d655ddf8c30c3"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "center",
+      "delta_deg": 0.0,
+      "job_id": "ebde2aeb10037769d66a"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.2,
+      "sign": -1,
+      "job_id": "0256a280a709e50af52e"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.2,
+      "sign": 1,
+      "job_id": "237441bc3f856bfafea5"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.2,
+      "sign": -1,
+      "job_id": "8c361a43b8320a7e9919"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.2,
+      "sign": 1,
+      "job_id": "3c9387cc9316bb9acf1a"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.05,
+      "sign": -1,
+      "job_id": "8a71471fcb767cd91298"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.05,
+      "sign": 1,
+      "job_id": "5f91387e9cf6eaca9d83"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.05,
+      "sign": -1,
+      "job_id": "afa64caa688386c2f274"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.05,
+      "sign": 1,
+      "job_id": "ccbb99394fd757a7d660"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.0125,
+      "sign": -1,
+      "job_id": "c070c028835bbcdf6d55"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.0125,
+      "sign": 1,
+      "job_id": "010cb27ed7a44d542256"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.0125,
+      "sign": -1,
+      "job_id": "b31787275787afc35855"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.0125,
+      "sign": 1,
+      "job_id": "75c1be85cc32e495fb4a"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.003125,
+      "sign": -1,
+      "job_id": "df6952c19531bb293f5a"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "azimuth",
+      "delta_deg": 0.003125,
+      "sign": 1,
+      "job_id": "c45fd77660f2beda7699"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.003125,
+      "sign": -1,
+      "job_id": "39e5fafb18116e9ca5ae"
+    },
+    {
+      "label": "theta_boundary_vtheta_positive",
+      "kind": "phase",
+      "delta_deg": 0.003125,
+      "sign": 1,
+      "job_id": "b3df650bdf951696f7b8"
+    }
+  ]
+}

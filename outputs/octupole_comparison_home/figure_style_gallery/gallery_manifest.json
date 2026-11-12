@@ -1,0 +1,173 @@
+{
+  "source": "V4 equal-peak matched data only",
+  "source_checksums": {
+    "equal_peak_main_grid.csv": {
+      "sha256": "6c5ff591b770b89dca26424e46289f7326734f765c745bbfb337e0ee9c78e393",
+      "bytes": 1272624
+    },
+    "matched_pairs_equal_peak.csv": {
+      "sha256": "fd612290d482c3881e2e11d4f3710be88d302bbc9aa032da0a2b1f3299dd8043",
+      "bytes": 132643
+    }
+  },
+  "styles": {
+    "A": {
+      "name": "APS / Physical Review",
+      "outputs": [
+        {
+          "svg": "Fig1_energy_finite_time_confinement_single.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_single.pdf",
+          "png": "Fig1_energy_finite_time_confinement_single.png",
+          "width_mm": 89,
+          "height_mm": 236,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig1_energy_finite_time_confinement_double.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_double.pdf",
+          "png": "Fig1_energy_finite_time_confinement_double.png",
+          "width_mm": 178,
+          "height_mm": 112,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_single.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_single.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_single.png",
+          "width_mm": 89,
+          "height_mm": 236,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_double.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_double.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_double.png",
+          "width_mm": 178,
+          "height_mm": 132,
+          "png_dpi": 600
+        }
+      ],
+      "preview": "STYLE_A_PREVIEW.png"
+    },
+    "B": {
+      "name": "Nature-style contemporary",
+      "outputs": [
+        {
+          "svg": "Fig1_energy_finite_time_confinement_single.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_single.pdf",
+          "png": "Fig1_energy_finite_time_confinement_single.png",
+          "width_mm": 89,
+          "height_mm": 222,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig1_energy_finite_time_confinement_double.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_double.pdf",
+          "png": "Fig1_energy_finite_time_confinement_double.png",
+          "width_mm": 178,
+          "height_mm": 126,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_single.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_single.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_single.png",
+          "width_mm": 89,
+          "height_mm": 220,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_double.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_double.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_double.png",
+          "width_mm": 178,
+          "height_mm": 126,
+          "png_dpi": 600
+        }
+      ],
+      "preview": "STYLE_B_PREVIEW.png"
+    },
+    "C": {
+      "name": "Classical monochrome",
+      "outputs": [
+        {
+          "svg": "Fig1_energy_finite_time_confinement_single.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_single.pdf",
+          "png": "Fig1_energy_finite_time_confinement_single.png",
+          "width_mm": 89,
+          "height_mm": 126,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig1_energy_finite_time_confinement_double.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_double.pdf",
+          "png": "Fig1_energy_finite_time_confinement_double.png",
+          "width_mm": 178,
+          "height_mm": 128,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_single.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_single.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_single.png",
+          "width_mm": 89,
+          "height_mm": 208,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_double.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_double.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_double.png",
+          "width_mm": 178,
+          "height_mm": 112,
+          "png_dpi": 600
+        }
+      ],
+      "preview": "STYLE_C_PREVIEW.png"
+    },
+    "D": {
+      "name": "Modern editorial scientific",
+      "outputs": [
+        {
+          "svg": "Fig1_energy_finite_time_confinement_single.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_single.pdf",
+          "png": "Fig1_energy_finite_time_confinement_single.png",
+          "width_mm": 89,
+          "height_mm": 206,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig1_energy_finite_time_confinement_double.svg",
+          "pdf": "Fig1_energy_finite_time_confinement_double.pdf",
+          "png": "Fig1_energy_finite_time_confinement_double.png",
+          "width_mm": 178,
+          "height_mm": 145,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_single.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_single.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_single.png",
+          "width_mm": 89,
+          "height_mm": 220,
+          "png_dpi": 600
+        },
+        {
+          "svg": "Fig3_matched_trajectories_and_radius_double.svg",
+          "pdf": "Fig3_matched_trajectories_and_radius_double.pdf",
+          "png": "Fig3_matched_trajectories_and_radius_double.png",
+          "width_mm": 178,
+          "height_mm": 126,
+          "png_dpi": 600
+        }
+      ],
+      "preview": "STYLE_D_PREVIEW.png"
+    }
+  },
+  "matplotlib": "unavailable; Pillow + ReportLab vector renderer used",
+  "integration_performed": false,
+  "interpolation_or_smoothing": false,
+  "right_censoring": "retained trajectories remain right-censored at 1000 RF; escape times use first passage",
+  "content": "Identical V4 energy-shell outcomes and validated matched trajectory pair; chart composition varies by style",
+  "population_claims": "none; descriptive fractions over the designed deterministic grid"
+}

@@ -1,0 +1,150 @@
+{
+  "source_protocol": "V4 equal_peak_voltage, h35 N48 field",
+  "source_checksums": {
+    "equal_peak_main_grid.csv": {
+      "sha256": "6c5ff591b770b89dca26424e46289f7326734f765c745bbfb337e0ee9c78e393",
+      "bytes": 1272624
+    },
+    "matched_pairs_equal_peak.csv": {
+      "sha256": "fd612290d482c3881e2e11d4f3710be88d302bbc9aa032da0a2b1f3299dd8043",
+      "bytes": 132643
+    }
+  },
+  "ion": {
+    "mz_Th": 100000,
+    "charge_state": 1
+  },
+  "rf": {
+    "frequency_Hz": 100000,
+    "rotating_voltage_V": 250,
+    "standing_voltage_V": 250,
+    "horizon_RF": 1000
+  },
+  "aperture_radius_mm": 8,
+  "energy_shells_eV": [
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "matched_counts_by_energy": {
+    "0.5": 48,
+    "0.625": 13,
+    "0.75": 48,
+    "0.875": 3,
+    "1": 64,
+    "1.5": 48,
+    "2": 64,
+    "2.5": 48,
+    "3": 64,
+    "3.5": 64,
+    "4": 58
+  },
+  "balanced_energies_eV": [
+    1,
+    2,
+    3
+  ],
+  "adaptive_energy_samples": "all other shells; no outcomes interpolated",
+  "retention": "survival through 1000 RF periods; right-censored",
+  "representative_trace": {
+    "energy_eV": 1,
+    "r0_mm": 1,
+    "azimuth_deg": 45,
+    "phase_deg": 0,
+    "direction": "positive tangential",
+    "rotating": "retained through 1000 RF",
+    "standing": "first passage at 21.309 RF (rounded 21.31)"
+  },
+  "rendering": {
+    "formats": [
+      "SVG",
+      "PDF",
+      "PNG"
+    ],
+    "png_dpi": 600,
+    "layouts": {
+      "single_column_mm": 89,
+      "double_column_mm": 178
+    },
+    "backend": "Pillow and ReportLab; Matplotlib unavailable"
+  },
+  "styles": {
+    "A": {
+      "name": "APS / Physical Review",
+      "family": "Times New Roman, serif",
+      "colors": {
+        "ROT": "#145A8D",
+        "STAND": "#B33C2E",
+        "ADVANTAGE": "#246B57",
+        "STAND_ONLY": "#8A4D79",
+        "BOTH": "#59636D",
+        "BOTH_ESCAPE": "#BE9A38",
+        "INK": "#181A1B",
+        "MUTED": "#555D63",
+        "GRID": "#D6D9DB",
+        "PALE": "#F7F7F5"
+      },
+      "line_width_scale": 1.0
+    },
+    "B": {
+      "name": "Nature-style contemporary",
+      "family": "Arial, Helvetica, sans-serif",
+      "colors": {
+        "ROT": "#007F86",
+        "STAND": "#D04A35",
+        "ADVANTAGE": "#287B5A",
+        "STAND_ONLY": "#8D5D91",
+        "BOTH": "#4C5B64",
+        "BOTH_ESCAPE": "#D09B32",
+        "INK": "#1D2A32",
+        "MUTED": "#53616A",
+        "GRID": "#E1E6E8",
+        "PALE": "#F4F7F8"
+      },
+      "line_width_scale": 1.12
+    },
+    "C": {
+      "name": "Classical monochrome",
+      "family": "Cambria, serif",
+      "colors": {
+        "ROT": "#111111",
+        "STAND": "#585858",
+        "ADVANTAGE": "#222222",
+        "STAND_ONLY": "#666666",
+        "BOTH": "#858585",
+        "BOTH_ESCAPE": "#B0B0B0",
+        "INK": "#111111",
+        "MUTED": "#4C4C4C",
+        "GRID": "#DDDDDD",
+        "PALE": "#FAFAFA"
+      },
+      "line_width_scale": 1.18
+    },
+    "D": {
+      "name": "Modern editorial scientific",
+      "family": "Georgia, serif",
+      "colors": {
+        "ROT": "#536F7C",
+        "STAND": "#B66A59",
+        "ADVANTAGE": "#557C69",
+        "STAND_ONLY": "#82748E",
+        "BOTH": "#58646A",
+        "BOTH_ESCAPE": "#AD9150",
+        "INK": "#29343A",
+        "MUTED": "#647078",
+        "GRID": "#E8E6E0",
+        "PALE": "#F7F6F2"
+      },
+      "line_width_scale": 1.25
+    }
+  },
+  "scientific_claims": "descriptive deterministic samples; no population probability or permanent-stability inference"
+}

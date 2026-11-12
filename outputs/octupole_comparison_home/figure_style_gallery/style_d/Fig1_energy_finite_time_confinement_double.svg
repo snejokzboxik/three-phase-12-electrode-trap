@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="145mm" viewBox="0 0 178 145">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Georgia, serif;fill:#29343A}</style>
+<text x="89" y="7" text-anchor="middle" dominant-baseline="middle" font-size="10.5pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Retention envelope across computed energy shells</tspan>
+</text>
+<text x="89" y="14" text-anchor="middle" dominant-baseline="middle" font-size="6.5pt" font-weight="normal" fill="#647078">
+<tspan x="89" dy="0">A paired coordinate view of the deterministic 1000-period launches</tspan>
+</text>
+<line x1="22" y1="24" x2="22" y2="107" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="22" y1="107" x2="22" y2="107.8" stroke="#29343A" stroke-width="0.3"/>
+<text x="22" y="109.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="22" dy="0">0</tspan>
+</text>
+<line x1="47.9259" y1="24" x2="47.9259" y2="107" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="47.9259" y1="107" x2="47.9259" y2="107.8" stroke="#29343A" stroke-width="0.3"/>
+<text x="47.9259" y="109.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="47.9259" dy="0">0.25</tspan>
+</text>
+<line x1="73.8519" y1="24" x2="73.8519" y2="107" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="73.8519" y1="107" x2="73.8519" y2="107.8" stroke="#29343A" stroke-width="0.3"/>
+<text x="73.8519" y="109.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="73.8519" dy="0">0.5</tspan>
+</text>
+<line x1="99.7778" y1="24" x2="99.7778" y2="107" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="99.7778" y1="107" x2="99.7778" y2="107.8" stroke="#29343A" stroke-width="0.3"/>
+<text x="99.7778" y="109.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="99.7778" dy="0">0.75</tspan>
+</text>
+<line x1="125.704" y1="24" x2="125.704" y2="107" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="125.704" y1="107" x2="125.704" y2="107.8" stroke="#29343A" stroke-width="0.3"/>
+<text x="125.704" y="109.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="125.704" dy="0">1</tspan>
+</text>
+<line x1="22" y1="104.13" x2="134" y2="104.13" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="21.2" y1="104.13" x2="22" y2="104.13" stroke="#29343A" stroke-width="0.3"/>
+<text x="20.5" y="104.13" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="20.5" dy="0">0.5</tspan>
+</text>
+<line x1="22" y1="93.0931" x2="134" y2="93.0931" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="21.2" y1="93.0931" x2="22" y2="93.0931" stroke="#29343A" stroke-width="0.3"/>
+<text x="20.5" y="93.0931" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="20.5" dy="0">1</tspan>
+</text>
+<line x1="22" y1="71.0186" x2="134" y2="71.0186" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="21.2" y1="71.0186" x2="22" y2="71.0186" stroke="#29343A" stroke-width="0.3"/>
+<text x="20.5" y="71.0186" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="20.5" dy="0">2</tspan>
+</text>
+<line x1="22" y1="48.9441" x2="134" y2="48.9441" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="21.2" y1="48.9441" x2="22" y2="48.9441" stroke="#29343A" stroke-width="0.3"/>
+<text x="20.5" y="48.9441" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="20.5" dy="0">3</tspan>
+</text>
+<line x1="22" y1="26.8697" x2="134" y2="26.8697" stroke="#E8E6E0" stroke-width="0.2"/>
+<line x1="21.2" y1="26.8697" x2="22" y2="26.8697" stroke="#29343A" stroke-width="0.3"/>
+<text x="20.5" y="26.8697" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#647078">
+<tspan x="20.5" dy="0">4</tspan>
+</text>
+<line x1="22" y1="24" x2="22" y2="107" stroke="#29343A" stroke-width="0.35"/>
+<line x1="22" y1="107" x2="134" y2="107" stroke="#29343A" stroke-width="0.35"/>
+<text x="15" y="19" text-anchor="start" dominant-baseline="middle" font-size="7.5pt" font-weight="bold" fill="#202830">
+<tspan x="15" dy="0">A  Connected markers are paired outcomes</tspan>
+</text>
+<line x1="125.704" y1="104.13" x2="121.383" y2="104.13" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="104.13" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="120.183,102.93 122.583,102.93 122.583,105.33 120.183,105.33" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="104.13" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=48</tspan>
+</text>
+<line x1="125.704" y1="101.371" x2="53.9088" y2="101.371" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="101.371" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="52.7088,100.171 55.1088,100.171 55.1088,102.571 52.7088,102.571" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="101.371" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=13</tspan>
+</text>
+<line x1="125.704" y1="98.6117" x2="30.642" y2="98.6117" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="98.6117" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="29.442,97.4117 31.842,97.4117 31.842,99.8117 29.442,99.8117" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="98.6117" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=48</tspan>
+</text>
+<line x1="125.704" y1="95.8524" x2="22" y2="95.8524" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="95.8524" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="20.8,94.6524 23.2,94.6524 23.2,97.0524 20.8,97.0524" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="95.8524" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=3</tspan>
+</text>
+<line x1="125.704" y1="93.0931" x2="47.9259" y2="93.0931" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="93.0931" r="1.25" fill="#536F7C" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="46.7259,91.8931 49.1259,91.8931 49.1259,94.2931 46.7259,94.2931" fill="#B66A59" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="93.0931" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=64</tspan>
+</text>
+<line x1="125.704" y1="82.0559" x2="22" y2="82.0559" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="82.0559" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="20.8,80.8559 23.2,80.8559 23.2,83.2559 20.8,83.2559" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="82.0559" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=48</tspan>
+</text>
+<line x1="125.704" y1="71.0186" x2="47.9259" y2="71.0186" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="71.0186" r="1.25" fill="#536F7C" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="46.7259,69.8186 49.1259,69.8186 49.1259,72.2186 46.7259,72.2186" fill="#B66A59" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="71.0186" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=64</tspan>
+</text>
+<line x1="125.704" y1="59.9814" x2="22" y2="59.9814" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="59.9814" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="20.8,58.7814 23.2,58.7814 23.2,61.1814 20.8,61.1814" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="59.9814" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=48</tspan>
+</text>
+<line x1="125.704" y1="48.9441" x2="47.9259" y2="48.9441" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="48.9441" r="1.25" fill="#536F7C" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="46.7259,47.7441 49.1259,47.7441 49.1259,50.1441 46.7259,50.1441" fill="#B66A59" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="48.9441" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=64</tspan>
+</text>
+<line x1="125.704" y1="37.9069" x2="47.9259" y2="37.9069" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="37.9069" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="46.7259,36.7069 49.1259,36.7069 49.1259,39.1069 46.7259,39.1069" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="37.9069" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=64</tspan>
+</text>
+<line x1="125.704" y1="26.8697" x2="39.8799" y2="26.8697" stroke="#E8E6E0" stroke-width="0.625"/>
+<circle cx="125.704" cy="26.8697" r="1.25" fill="#FFFFFF" stroke="#536F7C" stroke-width="0.28"/>
+<polygon points="38.6799,25.6697 41.0799,25.6697 41.0799,28.0697 38.6799,28.0697" fill="#FFFFFF" stroke="#B66A59" stroke-width="0.28"/>
+<text x="140" y="26.8697" text-anchor="start" dominant-baseline="middle" font-size="5.2pt" font-weight="normal" fill="#647078">
+<tspan x="140" dy="0">n=58</tspan>
+</text>
+<text x="78" y="115" text-anchor="middle" dominant-baseline="middle" font-size="6.6pt" font-weight="normal" fill="#202830">
+<tspan x="78" dy="0">Retained fraction</tspan>
+</text>
+<text x="14" y="65.5" text-anchor="middle" dominant-baseline="middle" font-size="6.7pt" font-weight="normal" fill="#202830" transform="rotate(-90 14 65.5)">
+<tspan x="14" dy="0">Initial transverse energy E_perp (eV)</tspan>
+</text>
+<circle cx="27" cy="126" r="0.85" fill="#536F7C" stroke="#536F7C" stroke-width="0.28"/>
+<text x="29.4" y="126" text-anchor="start" dominant-baseline="middle" font-size="6pt" font-weight="normal" fill="#29343A">
+<tspan x="29.4" dy="0">Rotating</tspan>
+</text>
+<polygon points="57.15,125.15 58.85,125.15 58.85,126.85 57.15,126.85" fill="#B66A59" stroke="#B66A59" stroke-width="0.28"/>
+<text x="60.4" y="126" text-anchor="start" dominant-baseline="middle" font-size="6pt" font-weight="normal" fill="#29343A">
+<tspan x="60.4" dy="0">Standing</tspan>
+</text>
+<circle cx="92" cy="126" r="0.8" fill="#29343A" stroke="#29343A" stroke-width="0.28"/>
+<text x="94.4" y="126" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#29343A">
+<tspan x="94.4" dy="0">Filled: balanced</tspan>
+</text>
+<circle cx="135" cy="126" r="0.8" fill="#FFFFFF" stroke="#29343A" stroke-width="0.28"/>
+<text x="137.4" y="126" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#29343A">
+<tspan x="137.4" dy="0">Open: adaptive</tspan>
+</text>
+<text x="89" y="140" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="normal" fill="#647078">
+<tspan x="89" dy="0">Energy coordinates retain their numerical spacing; no shell is interpolated.</tspan>
+</text>
+</svg>

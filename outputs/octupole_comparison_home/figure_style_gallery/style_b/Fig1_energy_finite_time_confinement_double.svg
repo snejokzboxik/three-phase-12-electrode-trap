@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="126mm" viewBox="0 0 178 126">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial, Helvetica, sans-serif;fill:#1D2A32}</style>
+<text x="89" y="7" text-anchor="middle" dominant-baseline="middle" font-size="10.8pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Finite-time retention across the calculated energy shells</tspan>
+</text>
+<text x="89" y="14" text-anchor="middle" dominant-baseline="middle" font-size="6.7pt" font-weight="normal" fill="#53616A">
+<tspan x="89" dy="0">100 kTh ion · 100 kHz · 250 V peak per model · 1000 RF periods · 8 mm aperture</tspan>
+</text>
+<line x1="25.0426" y1="25" x2="25.0426" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="25.0426" y1="81" x2="25.0426" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="25.0426" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="25.0426" dy="0">0.5</tspan>
+</text>
+<line x1="36.7447" y1="25" x2="36.7447" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="36.7447" y1="81" x2="36.7447" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="36.7447" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="36.7447" dy="0">1</tspan>
+</text>
+<line x1="60.1489" y1="25" x2="60.1489" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="60.1489" y1="81" x2="60.1489" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="60.1489" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="60.1489" dy="0">2</tspan>
+</text>
+<line x1="83.5532" y1="25" x2="83.5532" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="83.5532" y1="81" x2="83.5532" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="83.5532" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="83.5532" dy="0">3</tspan>
+</text>
+<line x1="106.957" y1="25" x2="106.957" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="106.957" y1="81" x2="106.957" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="106.957" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="106.957" dy="0">4</tspan>
+</text>
+<line x1="22" y1="81" x2="110" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="21.2" y1="81" x2="22" y2="81" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="20.5" y="81" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="20.5" dy="0">0</tspan>
+</text>
+<line x1="22" y1="68.037" x2="110" y2="68.037" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="21.2" y1="68.037" x2="22" y2="68.037" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="20.5" y="68.037" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="20.5" dy="0">0.25</tspan>
+</text>
+<line x1="22" y1="55.0741" x2="110" y2="55.0741" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="21.2" y1="55.0741" x2="22" y2="55.0741" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="20.5" y="55.0741" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="20.5" dy="0">0.5</tspan>
+</text>
+<line x1="22" y1="42.1111" x2="110" y2="42.1111" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="21.2" y1="42.1111" x2="22" y2="42.1111" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="20.5" y="42.1111" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="20.5" dy="0">0.75</tspan>
+</text>
+<line x1="22" y1="29.1481" x2="110" y2="29.1481" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="21.2" y1="29.1481" x2="22" y2="29.1481" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="20.5" y="29.1481" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="20.5" dy="0">1</tspan>
+</text>
+<line x1="22" y1="25" x2="22" y2="81" stroke="#1D2A32" stroke-width="0.3136"/>
+<line x1="22" y1="81" x2="110" y2="81" stroke="#1D2A32" stroke-width="0.3136"/>
+<line x1="129.314" y1="25" x2="129.314" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="129.314" y1="81" x2="129.314" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="129.314" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="129.314" dy="0">0.5</tspan>
+</text>
+<line x1="144.473" y1="25" x2="144.473" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="144.473" y1="81" x2="144.473" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="144.473" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="144.473" dy="0">2</tspan>
+</text>
+<line x1="164.686" y1="25" x2="164.686" y2="81" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="164.686" y1="81" x2="164.686" y2="81.8" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="164.686" y="83.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="164.686" dy="0">4</tspan>
+</text>
+<line x1="128" y1="79.6854" x2="166" y2="79.6854" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="127.2" y1="79.6854" x2="128" y2="79.6854" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="126.5" y="79.6854" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="126.5" dy="0">-1</tspan>
+</text>
+<line x1="128" y1="66.5399" x2="166" y2="66.5399" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="127.2" y1="66.5399" x2="128" y2="66.5399" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="126.5" y="66.5399" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="126.5" dy="0">-0.5</tspan>
+</text>
+<line x1="128" y1="53.3944" x2="166" y2="53.3944" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="127.2" y1="53.3944" x2="128" y2="53.3944" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="126.5" y="53.3944" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="126.5" dy="0">0</tspan>
+</text>
+<line x1="128" y1="40.2488" x2="166" y2="40.2488" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="127.2" y1="40.2488" x2="128" y2="40.2488" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="126.5" y="40.2488" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="126.5" dy="0">0.5</tspan>
+</text>
+<line x1="128" y1="27.1033" x2="166" y2="27.1033" stroke="#E1E6E8" stroke-width="0.1792"/>
+<line x1="127.2" y1="27.1033" x2="128" y2="27.1033" stroke="#1D2A32" stroke-width="0.2688"/>
+<text x="126.5" y="27.1033" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#53616A">
+<tspan x="126.5" dy="0">1</tspan>
+</text>
+<line x1="128" y1="25" x2="128" y2="81" stroke="#1D2A32" stroke-width="0.3136"/>
+<line x1="128" y1="81" x2="166" y2="81" stroke="#1D2A32" stroke-width="0.3136"/>
+<text x="15" y="20" text-anchor="start" dominant-baseline="middle" font-size="7.6pt" font-weight="bold" fill="#202830">
+<tspan x="15" dy="0">A  Model retention</tspan>
+</text>
+<text x="121" y="20" text-anchor="start" dominant-baseline="middle" font-size="7.6pt" font-weight="bold" fill="#202830">
+<tspan x="121" dy="0">B  Paired Δ</tspan>
+</text>
+<circle cx="25.0426" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="25.0426,30.0486 23.9401,32.3586 26.1451,32.3586" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="129.314" cy="52.2989" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="27.9681" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="27.9681,63.7856 26.8656,66.0956 29.0706,66.0956" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="130.577" cy="35.1928" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="30.8936" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="30.8936,75.419 29.7911,77.729 31.9961,77.729" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="131.84" cy="29.2942" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="33.8191" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="33.8191,79.74 32.7166,82.05 34.9216,82.05" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="133.104" cy="27.1033" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="36.7447" cy="29.1481" r="1.05" fill="#007F86" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="36.7447,66.777 35.6422,69.087 37.8472,69.087" fill="#D04A35" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="134.367" cy="33.6761" r="1.05" fill="#287B5A" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="48.4468" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="48.4468,79.74 47.3443,82.05 49.5493,82.05" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="139.42" cy="27.1033" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="60.1489" cy="29.1481" r="1.05" fill="#007F86" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="60.1489,66.777 59.0464,69.087 61.2514,69.087" fill="#D04A35" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="144.473" cy="33.6761" r="1.05" fill="#287B5A" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="71.8511" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="71.8511,79.74 70.7486,82.05 72.9536,82.05" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="149.527" cy="27.1033" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="83.5532" cy="29.1481" r="1.05" fill="#007F86" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="83.5532,66.777 82.4507,69.087 84.6557,69.087" fill="#D04A35" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="154.58" cy="33.6761" r="1.05" fill="#287B5A" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="95.2553" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="95.2553,66.777 94.1528,69.087 96.3578,69.087" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="159.633" cy="33.6761" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<circle cx="106.957" cy="29.1481" r="1.05" fill="#FFFFFF" stroke="#007F86" stroke-width="0.28"/>
+<polygon points="106.957,70.8 105.855,73.11 108.06,73.11" fill="#FFFFFF" stroke="#D04A35" stroke-width="0.28"/>
+<circle cx="164.686" cy="31.6362" r="1.05" fill="#FFFFFF" stroke="#287B5A" stroke-width="0.28"/>
+<text x="16" y="53" text-anchor="middle" dominant-baseline="middle" font-size="6.8pt" font-weight="normal" fill="#202830" transform="rotate(-90 16 53)">
+<tspan x="16" dy="0">Retained fraction</tspan>
+</text>
+<text x="66" y="85" text-anchor="middle" dominant-baseline="middle" font-size="6.6pt" font-weight="normal" fill="#202830">
+<tspan x="66" dy="0">Initial transverse energy E_perp (eV)</tspan>
+</text>
+<text x="120" y="53" text-anchor="middle" dominant-baseline="middle" font-size="6.1pt" font-weight="normal" fill="#202830" transform="rotate(-90 120 53)">
+<tspan x="120" dy="0">Rotating − standing</tspan>
+</text>
+<text x="147" y="85" text-anchor="middle" dominant-baseline="middle" font-size="6.4pt" font-weight="normal" fill="#202830">
+<tspan x="147" dy="0">E_perp (eV)</tspan>
+</text>
+<circle cx="28" cy="96" r="0.8" fill="#007F86" stroke="#007F86" stroke-width="0.28"/>
+<text x="30.4" y="96" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#1D2A32">
+<tspan x="30.4" dy="0">Rotating</tspan>
+</text>
+<polygon points="52,95.04 51.16,96.8 52.84,96.8" fill="#D04A35" stroke="#D04A35" stroke-width="0.28"/>
+<text x="54.4" y="96" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#1D2A32">
+<tspan x="54.4" dy="0">Standing</tspan>
+</text>
+<circle cx="80" cy="96" r="0.8" fill="#1D2A32" stroke="#1D2A32" stroke-width="0.28"/>
+<text x="82.4" y="96" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#1D2A32">
+<tspan x="82.4" dy="0">Filled: balanced</tspan>
+</text>
+<circle cx="121" cy="96" r="0.8" fill="#FFFFFF" stroke="#1D2A32" stroke-width="0.28"/>
+<text x="123.4" y="96" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#1D2A32">
+<tspan x="123.4" dy="0">Open: adaptive</tspan>
+</text>
+<text x="18" y="108" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#53616A">
+<tspan x="18" dy="0">n matched</tspan>
+</text>
+<text x="40" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="40" dy="0">0.5</tspan>
+</text>
+<text x="40" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="40" dy="0">48</tspan>
+</text>
+<text x="52" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="52" dy="0">0.625</tspan>
+</text>
+<text x="52" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="52" dy="0">13</tspan>
+</text>
+<text x="64" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="64" dy="0">0.75</tspan>
+</text>
+<text x="64" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="64" dy="0">48</tspan>
+</text>
+<text x="76" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="76" dy="0">0.875</tspan>
+</text>
+<text x="76" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="76" dy="0">3</tspan>
+</text>
+<text x="88" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="88" dy="0">1</tspan>
+</text>
+<text x="88" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="88" dy="0">64</tspan>
+</text>
+<text x="100" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="100" dy="0">1.5</tspan>
+</text>
+<text x="100" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="100" dy="0">48</tspan>
+</text>
+<text x="112" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="112" dy="0">2</tspan>
+</text>
+<text x="112" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="112" dy="0">64</tspan>
+</text>
+<text x="124" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="124" dy="0">2.5</tspan>
+</text>
+<text x="124" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="124" dy="0">48</tspan>
+</text>
+<text x="136" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="136" dy="0">3</tspan>
+</text>
+<text x="136" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="136" dy="0">64</tspan>
+</text>
+<text x="148" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="148" dy="0">3.5</tspan>
+</text>
+<text x="148" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="148" dy="0">64</tspan>
+</text>
+<text x="160" y="107" text-anchor="middle" dominant-baseline="middle" font-size="5.1pt" font-weight="normal" fill="#53616A">
+<tspan x="160" dy="0">4</tspan>
+</text>
+<text x="160" y="113" text-anchor="middle" dominant-baseline="middle" font-size="5.7pt" font-weight="bold" fill="#202830">
+<tspan x="160" dy="0">58</tspan>
+</text>
+<text x="89" y="122" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#53616A">
+<tspan x="89" dy="0">Points show computed shells only; filled markers denote the balanced 1, 2, 3 eV grid.</tspan>
+</text>
+</svg>

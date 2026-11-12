@@ -1,0 +1,13 @@
+{
+  "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um_h50\\displaced_h50.msh",
+  "mesh_sha256": "692cc9cd6bbce1895f8b7c1a5a608e3152312167aba6f6ab5fc741780994be94",
+  "field_sha256": "afaadbeb58e9867b3faf756eeaf42dc67f49f0c7470f3a879d69ee592598ba27",
+  "dofs": 3155745,
+  "element_count": 393678,
+  "local_reference_node_max_error_m": 4.9065389333867974e-18,
+  "element_nodal_reproduction_max_error": 2.2538488740919874e-14,
+  "resolution": "h50",
+  "geometry": "radial_out_10um",
+  "representation": "existing full-asymmetry P4 FEM solution on displaced h50 mesh",
+  "field_load_wall_seconds": 8.732184499996947
+}

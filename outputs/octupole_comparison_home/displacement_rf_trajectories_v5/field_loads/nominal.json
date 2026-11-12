@@ -1,0 +1,12 @@
+{
+  "source_mesh": "outputs\\meshes\\gmsh_50um\\trap.msh",
+  "source_mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+  "source_sector_solution": "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz",
+  "source_sector_solution_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+  "degree": 4,
+  "elements": 319956,
+  "max_sector_mapping_center_error_m": 5.260900092699444e-15,
+  "representation": "validated nominal h50 P4 sector FEM coefficients mapped onto the exact twelve-copy full nominal h50 mesh; not N48",
+  "resolution": "h50",
+  "field_load_wall_seconds": 2.857682100002421
+}

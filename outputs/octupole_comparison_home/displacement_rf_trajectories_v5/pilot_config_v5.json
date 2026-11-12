@@ -1,0 +1,26 @@
+{
+  "study": "targeted matched RF trajectory sensitivity on existing full-domain P4 electrode-displacement fields",
+  "initial_condition_source": "V4 equal-peak h35 boundary pair; rotating survived 1000 RF periods and standing escaped at 882.757 RF periods",
+  "initial_condition": {
+    "energy_eV": 0.75,
+    "r0_mm": 1.0,
+    "azimuth_deg": 67.5,
+    "rf_phase_deg": 270.0,
+    "tangential_direction": -1
+  },
+  "ion": {"mz_Th": 100000.0, "charge_state": 1},
+  "rf": {"frequency_Hz": 100000.0, "rotating_voltage_V": 250.0, "standing_voltage_V": 250.0},
+  "aperture_radius_mm": 8.0,
+  "horizon_RF_periods": 1000,
+  "field_resolution": "h50 full-domain P4 FEM",
+  "geometries": ["nominal", "radial_out_10um", "radial_out_25um", "radial_out_50um", "radial_out_100um"],
+  "models": ["rotating", "standing"],
+  "solver": {"method": "DOP853", "rtol": 2e-9, "atol_position_m": 2e-13, "atol_velocity_m_s": 2e-11, "max_step_RF_fraction": 0.02, "samples_per_RF": 8, "checkpoint_segment_RF": 100},
+  "global_deadline_source": "../matched_pseudopotential_v5/integration_deadline.json",
+  "limits": [
+    "a retained trajectory is right-censored at 1000 RF periods and is not a permanent-stability claim",
+    "finite deterministic examples do not establish a fabrication tolerance",
+    "N48 symmetry-restricted fields are not used for displaced geometries",
+    "P4 h50 fields are reused; no FEM meshes or field solutions are rebuilt"
+  ]
+}

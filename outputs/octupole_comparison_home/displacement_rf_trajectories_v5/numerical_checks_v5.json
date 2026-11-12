@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "standard_trajectory_count": 10,
+  "tight_repeat_count": 3,
+  "new_FEM_solves": 0,
+  "new_field_reconstructions": 0,
+  "new_trajectory_integrations": 13,
+  "all_initial_conditions_match_V4_exactly": true,
+  "direction_sign": "negative tangential/CW, verified",
+  "all_standard_pair_classifications": "rotating retained through horizon; standing escaped",
+  "tight_repeat_classifications_all_agree": true,
+  "maximum_tight_time_difference_RF": 0.0020007499025496145,
+  "P4_resolution": "h50 for all compared geometries; full-asymmetry displaced fields",
+  "V4_reference_field": "h35 N48; retained separately as a reference and not used as a displaced-field representation",
+  "right_censoring": "1000-RF rotating survivors are right-censored, not labelled escapes",
+  "permanent_stability_claim": false,
+  "fabrication_tolerance_claim": false,
+  "integration_wall_seconds_standard": 1229.1284000000742,
+  "integration_wall_seconds_tight_repeats": 515.672865200002,
+  "global_budget_started_utc": "2026-11-12T05:37:49.219865+00:00",
+  "global_deadline_unix_s": 1794476269.219865,
+  "resources_at_last_checkpoint": {
+    "system_available_RAM_GiB": 8.484790802001953,
+    "system_memory_load_percent": 46,
+    "process_working_set_GiB": 0.3724403381347656,
+    "process_peak_working_set_GiB": 2.789775848388672,
+    "process_private_bytes_GiB": 0.38494110107421875,
+    "free_disk_GiB": 405.3803901672363
+  },
+  "figure_exports": {
+    "count": 4,
+    "formats": [
+      "PDF",
+      "SVG",
+      "PNG 600 dpi"
+    ]
+  },
+  "limitations": [
+    "one selected deterministic launch",
+    "field gradients are elementwise P4 finite-element gradients",
+    "no trajectory population inference",
+    "no fabrication-tolerance inference"
+  ]
+}

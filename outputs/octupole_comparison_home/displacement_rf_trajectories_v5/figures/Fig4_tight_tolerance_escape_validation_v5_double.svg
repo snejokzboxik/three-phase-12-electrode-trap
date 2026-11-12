@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="105mm" viewBox="0 0 178 105">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Cambria,serif;fill:#202830}</style>
+<text x="89" y="6" text-anchor="middle" dominant-baseline="middle" font-size="10.1pt" font-weight="bold" fill="#202830">
+<tspan x="89" dy="0">Numerical refinement of selected first-passage times</tspan>
+</text>
+<text x="89" y="13" text-anchor="middle" dominant-baseline="middle" font-size="6.1pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">Same h50 P4 FEM fields and launch · DOP853 rtol = 2×10⁻⁹ vs 2×10⁻¹¹; max step T/50 vs T/100</tspan>
+</text>
+<text x="16" y="22" text-anchor="start" dominant-baseline="middle" font-size="6.8pt" font-weight="bold" fill="#202830">
+<tspan x="16" dy="0">A  Standard and tighter first crossings</tspan>
+</text>
+<line x1="35.7143" y1="29" x2="35.7143" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="35.7143" y1="87" x2="35.7143" y2="87.8" stroke="#202830" stroke-width="0.24"/>
+<text x="35.7143" y="89.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="35.7143" dy="0">nominal</tspan>
+</text>
+<line x1="57.5" y1="29" x2="57.5" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="57.5" y1="87" x2="57.5" y2="87.8" stroke="#202830" stroke-width="0.24"/>
+<text x="57.5" y="89.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="57.5" dy="0">10 µm</tspan>
+</text>
+<line x1="79.2857" y1="29" x2="79.2857" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="79.2857" y1="87" x2="79.2857" y2="87.8" stroke="#202830" stroke-width="0.24"/>
+<text x="79.2857" y="89.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="79.2857" dy="0">100 µm</tspan>
+</text>
+<line x1="27" y1="87" x2="88" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="26.2" y1="87" x2="27" y2="87" stroke="#202830" stroke-width="0.24"/>
+<text x="25.5" y="87" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="25.5" dy="0">300</tspan>
+</text>
+<line x1="27" y1="72.5" x2="88" y2="72.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="26.2" y1="72.5" x2="27" y2="72.5" stroke="#202830" stroke-width="0.24"/>
+<text x="25.5" y="72.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="25.5" dy="0">400</tspan>
+</text>
+<line x1="27" y1="58" x2="88" y2="58" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="26.2" y1="58" x2="27" y2="58" stroke="#202830" stroke-width="0.24"/>
+<text x="25.5" y="58" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="25.5" dy="0">500</tspan>
+</text>
+<line x1="27" y1="43.5" x2="88" y2="43.5" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="26.2" y1="43.5" x2="27" y2="43.5" stroke="#202830" stroke-width="0.24"/>
+<text x="25.5" y="43.5" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="25.5" dy="0">600</tspan>
+</text>
+<line x1="27" y1="29" x2="88" y2="29" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="26.2" y1="29" x2="27" y2="29" stroke="#202830" stroke-width="0.24"/>
+<text x="25.5" y="29" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="25.5" dy="0">700</tspan>
+</text>
+<line x1="27" y1="29" x2="27" y2="87" stroke="#202830" stroke-width="0.28"/>
+<line x1="27" y1="87" x2="88" y2="87" stroke="#202830" stroke-width="0.28"/>
+<text x="57.5" y="96" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="57.5" dy="0">Geometry</tspan>
+</text>
+<text x="20" y="58" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#202830" transform="rotate(-90 20 58)">
+<tspan x="20" dy="0">Escape time (RF periods)</tspan>
+</text>
+<circle cx="34.0804" cy="38.1697" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<polygon points="37.3482,37.306 36.5922,38.89 38.1042,38.89" fill="#FFFFFF" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="55.8661" cy="70.0682" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<polygon points="59.1339,69.2042 58.3779,70.7882 59.8899,70.7882" fill="#FFFFFF" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="77.6518" cy="61.6489" r="0.72" fill="#D55E00" stroke="#D55E00" stroke-width="0.18"/>
+<polygon points="80.9196,60.7849 80.1636,62.3689 81.6756,62.3689" fill="#FFFFFF" stroke="#D55E00" stroke-width="0.18"/>
+<circle cx="49" cy="18" r="0.6" fill="#D55E00" stroke="#D55E00" stroke-width="0.2"/>
+<text x="51" y="18" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="51" dy="0">standard</tspan>
+</text>
+<polygon points="72,17.28 71.37,18.6 72.63,18.6" fill="#FFFFFF" stroke="#D55E00" stroke-width="0.2"/>
+<text x="74" y="18" text-anchor="start" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="74" dy="0">tight</tspan>
+</text>
+<text x="103" y="22" text-anchor="start" dominant-baseline="middle" font-size="6.8pt" font-weight="bold" fill="#202830">
+<tspan x="103" dy="0">B  Tight − standard</tspan>
+</text>
+<line x1="119.857" y1="29" x2="119.857" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="119.857" y1="87" x2="119.857" y2="87.8" stroke="#202830" stroke-width="0.24"/>
+<text x="119.857" y="89.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="119.857" dy="0">nominal</tspan>
+</text>
+<line x1="137" y1="29" x2="137" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="137" y1="87" x2="137" y2="87.8" stroke="#202830" stroke-width="0.24"/>
+<text x="137" y="89.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="137" dy="0">10 µm</tspan>
+</text>
+<line x1="154.143" y1="29" x2="154.143" y2="87" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="154.143" y1="87" x2="154.143" y2="87.8" stroke="#202830" stroke-width="0.24"/>
+<text x="154.143" y="89.6" text-anchor="middle" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="154.143" dy="0">100 µm</tspan>
+</text>
+<line x1="113" y1="77.6452" x2="161" y2="77.6452" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="112.2" y1="77.6452" x2="113" y2="77.6452" stroke="#202830" stroke-width="0.24"/>
+<text x="111.5" y="77.6452" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="111.5" dy="0">-0.0020</tspan>
+</text>
+<line x1="113" y1="40.2258" x2="161" y2="40.2258" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="112.2" y1="40.2258" x2="113" y2="40.2258" stroke="#202830" stroke-width="0.24"/>
+<text x="111.5" y="40.2258" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="111.5" dy="0">0.0000</tspan>
+</text>
+<line x1="113" y1="30.871" x2="161" y2="30.871" stroke="#D9E0E5" stroke-width="0.16"/>
+<line x1="112.2" y1="30.871" x2="113" y2="30.871" stroke="#202830" stroke-width="0.24"/>
+<text x="111.5" y="30.871" text-anchor="end" dominant-baseline="middle" font-size="6.2pt" font-weight="normal" fill="#5D6872">
+<tspan x="111.5" dy="0">0.0005</tspan>
+</text>
+<line x1="113" y1="29" x2="113" y2="87" stroke="#202830" stroke-width="0.28"/>
+<line x1="113" y1="87" x2="161" y2="87" stroke="#202830" stroke-width="0.28"/>
+<text x="137" y="96" text-anchor="middle" dominant-baseline="middle" font-size="5.8pt" font-weight="normal" fill="#202830">
+<tspan x="137" dy="0">Geometry</tspan>
+</text>
+<text x="105" y="58" text-anchor="middle" dominant-baseline="middle" font-size="5.4pt" font-weight="normal" fill="#202830" transform="rotate(-90 105 58)">
+<tspan x="105" dy="0">Δ escape time (RF periods)</tspan>
+</text>
+<line x1="114.714" y1="40.2258" x2="159.286" y2="40.2258" stroke="#202830" stroke-width="0.25" stroke-dasharray="1,0.6"/>
+<circle cx="119.857" cy="77.6592" r="0.78" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<text x="119.857" y="74.4592" text-anchor="middle" dominant-baseline="middle" font-size="4.9pt" font-weight="normal" fill="#5D6872">
+<tspan x="119.857" dy="0">-0.002</tspan>
+</text>
+<circle cx="137" cy="40.2971" r="0.78" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<text x="137" y="37.0971" text-anchor="middle" dominant-baseline="middle" font-size="4.9pt" font-weight="normal" fill="#5D6872">
+<tspan x="137" dy="0">-3.8e-06</tspan>
+</text>
+<circle cx="154.143" cy="38.4835" r="0.78" fill="#0072B2" stroke="#0072B2" stroke-width="0.18"/>
+<text x="154.143" y="35.2835" text-anchor="middle" dominant-baseline="middle" font-size="4.9pt" font-weight="normal" fill="#5D6872">
+<tspan x="154.143" dy="0">+9.3e-05</tspan>
+</text>
+<text x="89" y="101" text-anchor="middle" dominant-baseline="middle" font-size="5.5pt" font-weight="normal" fill="#5D6872">
+<tspan x="89" dy="0">All three classifications agree; maximum absolute time shift is below 0.0021 RF periods. This controls solver tolerance on fixed fields, not FEM mesh error.</tspan>
+</text>
+</svg>

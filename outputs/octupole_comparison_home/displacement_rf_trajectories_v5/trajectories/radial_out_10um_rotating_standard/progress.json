@@ -1,0 +1,67 @@
+{
+  "key": "radial_out_10um_rotating_standard",
+  "geometry": "radial_out_10um",
+  "model": "rotating",
+  "tight": false,
+  "initial_state": [
+    0.00038268343236508984,
+    0.0009238795325112868,
+    35.14727210001431,
+    -14.558476784243425
+  ],
+  "initial_conditions": {
+    "energy_eV": 0.75,
+    "r0_mm": 1.0,
+    "azimuth_deg": 67.5,
+    "rf_phase_deg": 270.0,
+    "tangential_direction": -1,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "frequency_Hz": 100000.0,
+    "voltage_V": 250.0,
+    "x0_m": 0.00038268343236508984,
+    "y0_m": 0.0009238795325112868,
+    "vx0_m_s": 35.14727210001431,
+    "vy0_m_s": -14.558476784243425,
+    "speed_m_s": 38.043133182609964,
+    "verified_tangential_sign": -1
+  },
+  "rtol": 2e-09,
+  "atol": [
+    2e-13,
+    2e-13,
+    2e-11,
+    2e-11
+  ],
+  "max_step_s": 2.0000000000000002e-07,
+  "time_s": 0.01,
+  "rf_period": 1000.0,
+  "state": [
+    -0.0011073562645930362,
+    -0.00028932678676493783,
+    9.186391816848479,
+    37.14296185133102
+  ],
+  "next_segment": 10,
+  "nfev": 624110,
+  "segment_wall_seconds": 17.06397050002124,
+  "integration_wall_seconds": 170.92053000006126,
+  "complete": true,
+  "status": "retained_through_horizon",
+  "escape_time_s": null,
+  "escape_time_RF": null,
+  "right_censor_time_RF": 1000,
+  "field_representation": {
+    "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_10um_h50\\displaced_h50.msh",
+    "mesh_sha256": "692cc9cd6bbce1895f8b7c1a5a608e3152312167aba6f6ab5fc741780994be94",
+    "field_sha256": "afaadbeb58e9867b3faf756eeaf42dc67f49f0c7470f3a879d69ee592598ba27",
+    "dofs": 3155745,
+    "element_count": 393678,
+    "local_reference_node_max_error_m": 4.9065389333867974e-18,
+    "element_nodal_reproduction_max_error": 2.2538488740919874e-14,
+    "resolution": "h50",
+    "geometry": "radial_out_10um",
+    "representation": "existing full-asymmetry P4 FEM solution on displaced h50 mesh",
+    "field_load_wall_seconds": 8.620677300001262
+  }
+}

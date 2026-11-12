@@ -1,0 +1,56 @@
+{
+  "figures": [
+    {
+      "name": "Fig1_displacement_retention_escape_v5",
+      "exports": {
+        "svg": "Fig1_displacement_retention_escape_v5_double.svg",
+        "pdf": "Fig1_displacement_retention_escape_v5_double.pdf",
+        "png": "Fig1_displacement_retention_escape_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 131,
+        "png_dpi": 600
+      },
+      "description": "Matched retention outcomes and first-passage times for the same deterministic launch across five h50 P4 geometries; V4 N48 is shown as a separate reference.",
+      "data": "processed V5 trajectories and exact V4 paired reference; deterministic single-start examples"
+    },
+    {
+      "name": "Fig2_radial_motion_selected_geometries_v5",
+      "exports": {
+        "svg": "Fig2_radial_motion_selected_geometries_v5_double.svg",
+        "pdf": "Fig2_radial_motion_selected_geometries_v5_double.pdf",
+        "png": "Fig2_radial_motion_selected_geometries_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 112,
+        "png_dpi": 600
+      },
+      "description": "Direct sampled radial motion on nominal, 10 \u00b5m and 100 \u00b5m h50 P4 fields; 25/50 \u00b5m first-passage times are in Fig. 1.",
+      "data": "processed V5 trajectories and exact V4 paired reference; deterministic single-start examples"
+    },
+    {
+      "name": "Fig3_xy_orbits_nominal_and_100um_v5",
+      "exports": {
+        "svg": "Fig3_xy_orbits_nominal_and_100um_v5_double.svg",
+        "pdf": "Fig3_xy_orbits_nominal_and_100um_v5_double.pdf",
+        "png": "Fig3_xy_orbits_nominal_and_100um_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 112,
+        "png_dpi": 600
+      },
+      "description": "Matched initial x\u2013y trajectories during the first 100 RF periods for nominal and 100 \u00b5m radial-out h50 P4 geometries.",
+      "data": "processed V5 trajectories and exact V4 paired reference; deterministic single-start examples"
+    },
+    {
+      "name": "Fig4_tight_tolerance_escape_validation_v5",
+      "exports": {
+        "svg": "Fig4_tight_tolerance_escape_validation_v5_double.svg",
+        "pdf": "Fig4_tight_tolerance_escape_validation_v5_double.pdf",
+        "png": "Fig4_tight_tolerance_escape_validation_v5_double.png",
+        "width_mm": 178,
+        "height_mm": 105,
+        "png_dpi": 600
+      },
+      "description": "Standard/tighter DOP853 escape-time comparison for three selected standing-field cases.",
+      "data": "processed V5 trajectories and exact V4 paired reference; deterministic single-start examples"
+    }
+  ]
+}

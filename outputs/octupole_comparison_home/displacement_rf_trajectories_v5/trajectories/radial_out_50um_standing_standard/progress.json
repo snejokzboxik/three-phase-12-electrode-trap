@@ -1,0 +1,67 @@
+{
+  "key": "radial_out_50um_standing_standard",
+  "geometry": "radial_out_50um",
+  "model": "standing",
+  "tight": false,
+  "initial_state": [
+    0.00038268343236508984,
+    0.0009238795325112868,
+    35.14727210001431,
+    -14.558476784243425
+  ],
+  "initial_conditions": {
+    "energy_eV": 0.75,
+    "r0_mm": 1.0,
+    "azimuth_deg": 67.5,
+    "rf_phase_deg": 270.0,
+    "tangential_direction": -1,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "frequency_Hz": 100000.0,
+    "voltage_V": 250.0,
+    "x0_m": 0.00038268343236508984,
+    "y0_m": 0.0009238795325112868,
+    "vx0_m_s": 35.14727210001431,
+    "vy0_m_s": -14.558476784243425,
+    "speed_m_s": 38.043133182609964,
+    "verified_tangential_sign": -1
+  },
+  "rtol": 2e-09,
+  "atol": [
+    2e-13,
+    2e-13,
+    2e-11,
+    2e-11
+  ],
+  "max_step_s": 2.0000000000000002e-07,
+  "time_s": 0.00332901863027547,
+  "rf_period": 332.901863027547,
+  "state": [
+    0.006168024392305281,
+    -0.005094651616736652,
+    30.371489407348523,
+    -33.341514578276
+  ],
+  "next_segment": 4,
+  "nfev": 207776,
+  "segment_wall_seconds": 5.613306899991585,
+  "integration_wall_seconds": 56.7071099000168,
+  "complete": true,
+  "status": "escaped",
+  "escape_time_s": 0.00332901863027547,
+  "escape_time_RF": 332.901863027547,
+  "right_censor_time_RF": null,
+  "field_representation": {
+    "mesh_path": "outputs\\octupole_comparison_home\\electrode_displacement_sensitivity_v1\\calculations\\radial_out_50um_h50\\displaced_h50.msh",
+    "mesh_sha256": "643b0567efa512af5bba16c9fcd4315b679fa9a0a2aef293d00cd999eda427c2",
+    "field_sha256": "22b6f9d3c327451ed9c8f8e157df3ca8c97f072c34629bf6532d0c70143b7ba3",
+    "dofs": 3155857,
+    "element_count": 393692,
+    "local_reference_node_max_error_m": 4.9065389333867974e-18,
+    "element_nodal_reproduction_max_error": 2.342859239425952e-14,
+    "resolution": "h50",
+    "geometry": "radial_out_50um",
+    "representation": "existing full-asymmetry P4 FEM solution on displaced h50 mesh",
+    "field_load_wall_seconds": 8.771965399995679
+  }
+}

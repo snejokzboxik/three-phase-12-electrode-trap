@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "selected_cases": [
+    {
+      "geometry": "nominal",
+      "standard_status": "escaped",
+      "tight_status": "escaped",
+      "standard_escape_time_RF": 636.7606622151847,
+      "tight_escape_time_RF": 636.7586614652821,
+      "escape_time_difference_RF": -0.0020007499025496145,
+      "same_classification": true,
+      "standard_max_radius_mm": 7.99999999999998,
+      "tight_max_radius_mm": 8.000000000000018,
+      "max_radius_difference_mm": 3.8191672047105385e-14
+    },
+    {
+      "geometry": "radial_out_100um",
+      "standard_status": "escaped",
+      "tight_status": "escaped",
+      "standard_escape_time_RF": 416.77115860363284,
+      "tight_escape_time_RF": 416.7711547954465,
+      "escape_time_difference_RF": -3.808186363585264e-06,
+      "same_classification": true,
+      "standard_max_radius_mm": 8.000000000000114,
+      "tight_max_radius_mm": 7.999999999999991,
+      "max_radius_difference_mm": -1.2256862191861728e-13
+    },
+    {
+      "geometry": "radial_out_10um",
+      "standard_status": "escaped",
+      "tight_status": "escaped",
+      "standard_escape_time_RF": 474.8350637412492,
+      "tight_escape_time_RF": 474.8351568670178,
+      "escape_time_difference_RF": 9.312576861475463e-05,
+      "same_classification": true,
+      "standard_max_radius_mm": 8.000000000002492,
+      "tight_max_radius_mm": 7.999999999999978,
+      "max_radius_difference_mm": -2.5144331061710545e-12
+    }
+  ],
+  "protocol": "same h50 P4 FEM field and same physical initial state; DOP853 rtol 2e-11 and maximum step T/100",
+  "interpretation": "agreement validates integration-tolerance sensitivity only; it does not remove spatial FEM discretization uncertainty"
+}

@@ -1,0 +1,9 @@
+{
+  "rotating_status": "retained",
+  "rotating_escape_time_RF": null,
+  "rotating_right_censor_RF": 1000,
+  "standing_status": "escaped",
+  "standing_escape_time_RF": 882.7570104978275,
+  "standing_right_censor_RF": null,
+  "field_resolution": "h35 N48 V4 reference"
+}

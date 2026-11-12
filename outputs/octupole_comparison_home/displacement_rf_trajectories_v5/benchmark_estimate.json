@@ -1,0 +1,19 @@
+{
+  "status": "measured_one_100_RF_segment",
+  "geometry": "nominal",
+  "model": "rotating",
+  "field_load_seconds": 3.009039500000654,
+  "integration_seconds_per_100_RF": 16.99671790000866,
+  "estimated_standard_batch_integration_seconds": 1699.67179,
+  "budget_remaining_seconds": 11426.792201042175,
+  "decision": "benchmark used to resume this trajectory; projected full ten-trajectory integration time is below remaining global wall-clock budget",
+  "resources_after_benchmark": {
+    "system_available_RAM_GiB": 8.637962341308594,
+    "system_memory_load_percent": 45,
+    "process_working_set_GiB": 0.0,
+    "process_peak_working_set_GiB": 0.0,
+    "process_private_bytes_GiB": 0.0,
+    "free_disk_GiB": 405.388916015625
+  },
+  "resource_monitoring": "Full-batch resource monitor recorded peak process working set 2.79 GiB, available physical RAM 8.48 GiB, and free disk 405.38 GiB at the final integration checkpoint."
+}

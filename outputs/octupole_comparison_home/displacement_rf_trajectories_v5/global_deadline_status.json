@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-11-12T05:37:49.219865+00:00",
+  "deadline_unix_s": 1794476269.219865,
+  "checked_utc": "2026-11-12T07:00:02+00:00",
+  "remaining_seconds": 9466.237690448761,
+  "minimum_to_start_segment_seconds": 180,
+  "resources": {
+    "system_available_RAM_GiB": 8.484790802001953,
+    "system_memory_load_percent": 46,
+    "process_working_set_GiB": 0.3724403381347656,
+    "process_peak_working_set_GiB": 2.789775848388672,
+    "process_private_bytes_GiB": 0.38494110107421875,
+    "free_disk_GiB": 405.3803901672363
+  }
+}

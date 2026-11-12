@@ -1,0 +1,66 @@
+{
+  "key": "nominal_rotating_standard",
+  "geometry": "nominal",
+  "model": "rotating",
+  "tight": false,
+  "initial_state": [
+    0.00038268343236508984,
+    0.0009238795325112868,
+    35.14727210001431,
+    -14.558476784243425
+  ],
+  "initial_conditions": {
+    "energy_eV": 0.75,
+    "r0_mm": 1.0,
+    "azimuth_deg": 67.5,
+    "rf_phase_deg": 270.0,
+    "tangential_direction": -1,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "frequency_Hz": 100000.0,
+    "voltage_V": 250.0,
+    "x0_m": 0.00038268343236508984,
+    "y0_m": 0.0009238795325112868,
+    "vx0_m_s": 35.14727210001431,
+    "vy0_m_s": -14.558476784243425,
+    "speed_m_s": 38.043133182609964,
+    "verified_tangential_sign": -1
+  },
+  "rtol": 2e-09,
+  "atol": [
+    2e-13,
+    2e-13,
+    2e-11,
+    2e-11
+  ],
+  "max_step_s": 2.0000000000000002e-07,
+  "time_s": 0.01,
+  "rf_period": 1000.0,
+  "state": [
+    -0.0010807094573851376,
+    -0.00023755138527019535,
+    8.899305025180656,
+    37.20399220346139
+  ],
+  "next_segment": 10,
+  "nfev": 624110,
+  "segment_wall_seconds": 17.06001639997703,
+  "integration_wall_seconds": 170.7174975000089,
+  "complete": true,
+  "status": "retained_through_horizon",
+  "escape_time_s": null,
+  "escape_time_RF": null,
+  "right_censor_time_RF": 1000,
+  "field_representation": {
+    "source_mesh": "outputs\\meshes\\gmsh_50um\\trap.msh",
+    "source_mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "source_sector_solution": "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz",
+    "source_sector_solution_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "degree": 4,
+    "elements": 319956,
+    "max_sector_mapping_center_error_m": 5.260900092699444e-15,
+    "representation": "validated nominal h50 P4 sector FEM coefficients mapped onto the exact twelve-copy full nominal h50 mesh; not N48",
+    "resolution": "h50",
+    "field_load_wall_seconds": 2.8210059000120964
+  }
+}

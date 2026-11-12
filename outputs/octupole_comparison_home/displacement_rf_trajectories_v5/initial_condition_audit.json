@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "initial_conditions": {
+    "energy_eV": 0.75,
+    "r0_mm": 1.0,
+    "azimuth_deg": 67.5,
+    "rf_phase_deg": 270.0,
+    "tangential_direction": -1,
+    "mz_Th": 100000.0,
+    "charge_state": 1,
+    "frequency_Hz": 100000.0,
+    "voltage_V": 250.0,
+    "x0_m": 0.00038268343236508984,
+    "y0_m": 0.0009238795325112868,
+    "vx0_m_s": 35.14727210001431,
+    "vy0_m_s": -14.558476784243425,
+    "speed_m_s": 38.043133182609964,
+    "verified_tangential_sign": -1
+  },
+  "V4_reference_initial_state": [
+    0.00038268343236508984,
+    0.0009238795325112868,
+    35.14727210001431,
+    -14.558476784243425
+  ],
+  "max_component_difference": 0.0,
+  "V4_reference_model": "standing",
+  "V4_reference_escape_time_RF": 882.7570104978275,
+  "V4_reference_classification": "rotating retained through 1000 RF; standing escaped",
+  "direction": "negative tangential (clockwise)",
+  "direction_sign_audit": "passed"
+}

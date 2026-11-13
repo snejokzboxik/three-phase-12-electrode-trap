@@ -63,6 +63,11 @@
     {"label":"positive_escaped","azimuth_deg":10.283203125,"direction":1,"phase_deg":0.0,"x_m":0.000983937413449219,"y_m":0.0001785137709389975,"vx_m_s":-11.090020985425046,"vy_m_s":61.12630138335677},
     {"label":"v8_phase_sensitive_dplus","azimuth_deg":10.272215234375,"direction":1,"phase_deg":45.0,"x_m":0.0009839716298106628,"y_m":0.0001783250731886805,"vx_m_s":-11.078298293108869,"vy_m_s":61.12842704662891}
   ],
+  "parameter_robustness": [
+    {"label":"robust_E1_r1_az22p5_dplus","azimuth_deg":22.5,"direction":1,"phase_deg":0.0,"initial_energy_eV":1.0,"initial_radius_m":0.001,"purpose":"single-point energy sensitivity of an early standing-field escape"},
+    {"label":"robust_E3_r1_az22p5_dplus","azimuth_deg":22.5,"direction":1,"phase_deg":0.0,"initial_energy_eV":3.0,"initial_radius_m":0.001,"purpose":"single-point energy sensitivity of an early standing-field escape"},
+    {"label":"robust_E2_r2_az22p5_dplus","azimuth_deg":22.5,"direction":1,"phase_deg":0.0,"initial_energy_eV":2.0,"initial_radius_m":0.002,"purpose":"single-point launch-radius sensitivity of an early standing-field escape"}
+  ],
   "initial_rf_phases_deg": [0.0, 45.0, 90.0, 180.0, 315.0],
   "phase_expansion_policy": "phase 0 pilot first; add phase points only for early/transition cases and any direct-field disagreement",
   "pilot_cases": ["deep_az0_dplus", "early_az22p5_dplus"],

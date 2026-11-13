@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "figure_count": 7,
+  "figures": [
+    {
+      "stem": "fig01_harmonic_cross_structure",
+      "png_px": [
+        4256,
+        1282
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 26103,
+      "svg_bytes": 75998
+    },
+    {
+      "stem": "fig02_matched_native_p4_trajectories",
+      "png_px": [
+        3273,
+        1469
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 38992,
+      "svg_bytes": 68531
+    },
+    {
+      "stem": "fig03_energy_and_rf_work",
+      "png_px": [
+        2377,
+        2143
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 29894,
+      "svg_bytes": 124962
+    },
+    {
+      "stem": "fig04_mesh_and_rf_phase_validation",
+      "png_px": [
+        3887,
+        1522
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 20009,
+      "svg_bytes": 37099
+    },
+    {
+      "stem": "fig05_phase_control_causal_check",
+      "png_px": [
+        4155,
+        1590
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 20419,
+      "svg_bytes": 40363
+    },
+    {
+      "stem": "fig06_radial_velocity_and_angular_momentum",
+      "png_px": [
+        2364,
+        2129
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 29428,
+      "svg_bytes": 115061
+    },
+    {
+      "stem": "fig07_parameter_robustness_pilot",
+      "png_px": [
+        1925,
+        1521
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "pdf_bytes": 19797,
+      "svg_bytes": 22402
+    }
+  ]
+}

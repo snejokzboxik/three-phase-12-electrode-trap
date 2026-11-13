@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "case_count": 3,
+  "trajectory_count": 6,
+  "validation": "matched physical launch states, saved h50 native P4 fields, protocol, finite-time outcomes and censoring metadata",
+  "checks": [
+    {
+      "launch_label": "robust_E1_r1_az22p5_dplus",
+      "matched_initial_state_verified": true,
+      "rotating_status": "retained_to_horizon",
+      "standing_status": "retained_to_horizon",
+      "rotating_escape_time_rf": null,
+      "standing_escape_time_rf": null,
+      "mesh_um": 50,
+      "finite_horizon_rf": 1000
+    },
+    {
+      "launch_label": "robust_E3_r1_az22p5_dplus",
+      "matched_initial_state_verified": true,
+      "rotating_status": "retained_to_horizon",
+      "standing_status": "escaped",
+      "rotating_escape_time_rf": null,
+      "standing_escape_time_rf": 87.69244444665038,
+      "mesh_um": 50,
+      "finite_horizon_rf": 1000
+    },
+    {
+      "launch_label": "robust_E2_r2_az22p5_dplus",
+      "matched_initial_state_verified": true,
+      "rotating_status": "retained_to_horizon",
+      "standing_status": "escaped",
+      "rotating_escape_time_rf": null,
+      "standing_escape_time_rf": 41.61426736765448,
+      "mesh_um": 50,
+      "finite_horizon_rf": 1000
+    }
+  ]
+}

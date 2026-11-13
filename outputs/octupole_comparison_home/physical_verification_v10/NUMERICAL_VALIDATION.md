@@ -26,6 +26,10 @@ An earlier sparse-output diagnostic with only 8 points per RF cycle had multi-eV
 
 For h35/h50 P4, classifications of the four sampled late boundary starts agree, but escape times differ by up to about 165 periods. One h35 N48 point disagrees in class with its direct P4 counterpart. Integration-tolerance refinement cannot cure this spatial representation sensitivity. Late transition locations and precise escape-time ordering remain uncertain.
 
+## Energy/radius pilot reproducibility
+
+`validate_parameter_robustness.py` passed for all three matched pairs (six trajectories). It checks exact equality of the paired launch vectors, h50 saved-P4 provenance, voltage/frequency and solver protocol, presence of each compressed trajectory, and consistency of escape versus right-censored metadata. The validation summary is `processed/parameter_robustness_validation.json`; the plotted data table is `processed/parameter_robustness_summary.csv`. This confirms the recorded runs and pairing, not convergence of every new trajectory under a tighter solver or alternate FEM mesh.
+
 ## Reproduction
 
-The compact reproduction sequence is in `reproduce_v10.ps1`. `make_publication_figures.py` rebuilds the figures from the archived CSV/JSON/NPZ data. `run_native_p4.py` and `phase_structure_control.py` reproduce their corresponding numerical stages when the matching saved FEM artifacts and Python dependencies are present. They do not create or regenerate FEM data.
+The compact reproduction sequence is in `reproduce_v10.ps1`. `make_publication_figures.py` rebuilds the figures from the archived CSV/JSON/NPZ data. `run_native_p4.py` and `phase_structure_control.py` reproduce their corresponding numerical stages when the matching saved FEM artifacts and Python dependencies are present. `reproduce_v10.ps1 -Mode robustness` replays the three added paired h50 cases and runs their validation. These scripts load saved FEM artifacts; they do not create or regenerate FEM data.

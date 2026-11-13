@@ -1,0 +1,7 @@
+mesh_um,model,launch_label,energy_eV,initial_radius_mm,azimuth_deg,direction,phase_deg,status,escape_time_rf,horizon_rf,max_radius_mm,rms_radius_mm,rtol,steps_per_rf_period,timeseries_file
+50,rotating,robust_E1_r1_az22p5_dplus,1.0,1.0,22.5,1,0.0,retained_to_horizon,,1000,6.007812545771614,3.957369752826712,2e-09,200,50um_rotating_robust_E1_r1_az22p5_dplus_0deg_1000rf.npz
+50,standing,robust_E1_r1_az22p5_dplus,1.0,1.0,22.5,1,0.0,retained_to_horizon,,1000,6.166505899676315,3.9293111973403807,2e-09,200,50um_standing_robust_E1_r1_az22p5_dplus_0deg_1000rf.npz
+50,rotating,robust_E3_r1_az22p5_dplus,3.0,1.0,22.5,1,0.0,retained_to_horizon,,1000,7.137903098375643,4.529926910413772,2e-09,200,50um_rotating_robust_E3_r1_az22p5_dplus_0deg_1000rf.npz
+50,standing,robust_E3_r1_az22p5_dplus,3.0,1.0,22.5,1,0.0,escaped,87.69244444665038,1000,7.9999999999999964,5.3386531645759385,2e-09,200,50um_standing_robust_E3_r1_az22p5_dplus_0deg_1000rf.npz
+50,rotating,robust_E2_r2_az22p5_dplus,2.0,2.0,22.5,1,0.0,retained_to_horizon,,1000,6.665407232253407,4.656554693908042,2e-09,200,50um_rotating_robust_E2_r2_az22p5_dplus_0deg_1000rf.npz
+50,standing,robust_E2_r2_az22p5_dplus,2.0,2.0,22.5,1,0.0,escaped,41.61426736765448,1000,7.999999999999998,5.391539226286914,2e-09,200,50um_standing_robust_E2_r2_az22p5_dplus_0deg_1000rf.npz

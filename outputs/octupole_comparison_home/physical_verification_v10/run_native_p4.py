@@ -80,9 +80,13 @@ def load_field(mesh_um):
 
 def launch_state(entry):
     az = math.radians(float(entry["azimuth_deg"]))
-    speed = float(ION["initial_speed_m_s"])
+    if "initial_energy_eV" in entry:
+        speed = math.sqrt(2.0*float(entry["initial_energy_eV"])*E/M)
+    else:
+        # Preserve the exact V7 launch speed for the original matched starts.
+        speed = float(ION["initial_speed_m_s"])
     direction = int(entry["direction"])
-    radius = float(CONFIG["ion"]["initial_radius_m"])
+    radius = float(entry.get("initial_radius_m", CONFIG["ion"]["initial_radius_m"]))
     return np.array([radius*math.cos(az), radius*math.sin(az),
                      -direction*speed*math.sin(az), direction*speed*math.cos(az)])
 
@@ -173,6 +177,7 @@ def main():
     ap.add_argument("--tag", default="", help="suffix for a distinct numerical-protocol rerun")
     args = ap.parse_args()
     launches = {v["label"]: v for v in CONFIG["initial_conditions_v7"]}
+    launches.update({v["label"]: v for v in CONFIG.get("parameter_robustness", [])})
     for label in args.launches:
         if label not in launches:
             raise ValueError(f"Unknown V7 launch label: {label}")
@@ -207,8 +212,9 @@ def main():
                    "model": model, "launch_label": label, "azimuth_deg": float(entry["azimuth_deg"]),
                    "direction": int(entry["direction"]), "phase_deg": args.phase_deg,
                    "voltage_V": voltage, "frequency_Hz": F,
-                   "mass_kg": M, "charge_C": Q, "initial_energy_eV": float(ION["initial_kinetic_energy_eV"]),
-                   "initial_radius_m": float(ION["initial_radius_m"]),
+                   "mass_kg": M, "charge_C": Q,
+                   "initial_energy_eV": float(entry.get("initial_energy_eV", ION["initial_kinetic_energy_eV"])),
+                   "initial_radius_m": float(entry.get("initial_radius_m", ION["initial_radius_m"])),
                    "initial_state_SI": launch_state(entry).tolist(),
                    "horizon_rf": args.horizon_rf, "aperture_radius_m": APER,
                    "normalization": "matched leading m=4 pseudopotential only",

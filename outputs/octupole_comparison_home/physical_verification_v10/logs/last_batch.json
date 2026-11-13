@@ -1,35 +1,33 @@
 {
-  "mesh_um": 35,
+  "mesh_um": 50,
   "launches": [
-    "early_az22p5_dplus",
-    "negative_escaped",
-    "positive_retained",
-    "positive_escaped"
+    "robust_E1_r1_az22p5_dplus",
+    "robust_E3_r1_az22p5_dplus",
+    "robust_E2_r2_az22p5_dplus"
   ],
-  "requested_workers": 4,
+  "requested_workers": 1,
   "workers_started": 1,
   "initial_memory": {
-    "available_gib": 8.361736297607422,
+    "available_gib": 8.71713638305664,
     "total_gib": 15.95145034790039,
-    "load_percent": 47
+    "load_percent": 45
   },
-  "memory_rule": "reserve >=5 GiB, budget 2.25 GiB per native-P4 process",
+  "memory_rule": "reserve >=5 GiB, budget 1.5 GiB per native-P4 process",
   "horizon_rf": 1000,
   "steps_per_rf_period": 200,
   "rtol": 2e-09,
   "chunk_rf": 50,
   "status": "complete",
-  "started_local": "2026-11-13T08:44:10+0300",
+  "started_local": "2026-11-13T10:23:19+0300",
   "exit_codes": {
-    "early_az22p5_dplus": 0,
-    "negative_escaped": 0,
-    "positive_retained": 0,
-    "positive_escaped": 0
+    "robust_E1_r1_az22p5_dplus": 0,
+    "robust_E3_r1_az22p5_dplus": 0,
+    "robust_E2_r2_az22p5_dplus": 0
   },
   "final_memory": {
-    "available_gib": 8.45498275756836,
+    "available_gib": 8.522502899169922,
     "total_gib": 15.95145034790039,
     "load_percent": 46
   },
-  "finished_local": "2026-11-13T09:07:02+0300"
+  "finished_local": "2026-11-13T10:35:31+0300"
 }

@@ -29,6 +29,12 @@ All four matched late boundary outcomes in h35 and h50 direct P4 have the same c
 
 The local N48-to-P4 field errors along saved direct P4 paths are small: approximately `3.7–4.1e-9` relative RMS for rotating retained paths and `2.7–4.9e-6` for standing escaped paths. This pathwise comparison is not a bound on long-time trajectory error: a slightly perturbed path may sample a different region near the escape boundary.
 
+## Limited energy/radius pilot
+
+Three additional matched h50 native-P4 launch conditions were evaluated without a new FEM solve: `1 eV, r₀=1 mm`; `3 eV, r₀=1 mm`; and `2 eV, r₀=2 mm`, all at `θ₀=22.5°`, `φ_RF=0°`, positive tangential velocity. Both fields retain the 1-eV case to the 1000-period horizon. At 3 eV the standing trajectory exits at `87.6924` periods while the rotating trajectory survives to the horizon. At 2 eV and 2-mm launch radius, the standing trajectory exits at `41.6100` periods while the rotating trajectory survives. The exact pair records and trajectories are stored under `data/native_p4/` and summarized in `processed/parameter_robustness_summary.csv`.
+
+This is a targeted robustness check at three starts, not a resolved energy/radius boundary or an estimate over an initial-condition distribution. It supports persistence of the sampled difference in two conditions and shows that it is absent at the sampled 1-eV condition.
+
 ## What this establishes
 
 For the sampled starts, the direct native P4 FEM calculation supports the finite-time rotating-versus-standing classification difference and closely reproduces the early 22.5° standing escape time across h35/h50 and N48/P4. It does not establish continuous-field convergence at late escape boundaries or a universal confinement advantage.

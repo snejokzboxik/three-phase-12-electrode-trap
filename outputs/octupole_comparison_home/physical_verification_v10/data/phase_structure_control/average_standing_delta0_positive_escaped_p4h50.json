@@ -1,0 +1,21 @@
+{
+  "model": "leading pseudopotential m4+m8",
+  "temporal_model": "standing",
+  "delta_m8_deg": 0.0,
+  "launch": "positive_escaped",
+  "initial_state_SI": [
+    0.000983937413449219,
+    0.0001785137709389975,
+    -11.090020985425046,
+    61.12630138335677
+  ],
+  "status": "retained_to_horizon",
+  "escape_time_s": null,
+  "escape_time_rf": null,
+  "maximum_sampled_radius_m": 0.006580344076847421,
+  "nfev": 150017,
+  "rtol": 2e-09,
+  "max_step_s": 1.0000000000000002e-06,
+  "timeseries_file": "average_standing_delta0_positive_escaped_p4h50.npz",
+  "initial_condition_caveat": "same laboratory (x,y,vx,vy) as full RF; not phase-averaged guiding-center data"
+}

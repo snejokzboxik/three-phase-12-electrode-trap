@@ -236,8 +236,9 @@ def run_checks(directory, candidates, workers, *, horizon=1000, segment=25, dry_
                     kernel_sha256={name: sha(ROOT / "src/three_phase_trap" / name) for name in modules})
     if dry_run:
         return settings
-    directory.mkdir(parents=True, exist_ok=True)
-    with run_lock(directory):
+    checkpoints = directory / "checkpoints"
+    checkpoints.mkdir(parents=True, exist_ok=True)
+    with run_lock(checkpoints):
         config = directory / "config.json"
         if config.exists():
             if read_json(config) != settings:

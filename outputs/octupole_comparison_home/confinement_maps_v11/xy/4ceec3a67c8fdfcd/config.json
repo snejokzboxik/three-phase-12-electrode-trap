@@ -1,0 +1,34 @@
+{
+  "grid": 21,
+  "phase_deg": 0.0,
+  "protocol": "equal",
+  "reference_radius_mm": null,
+  "mesh_um": 50,
+  "horizon_RF": 1000,
+  "segment_RF": 100,
+  "frequency_Hz": 100000.0,
+  "mass_kg": 1.6605390666e-22,
+  "charge_C": 1.602176634e-19,
+  "aperture_m": 0.008,
+  "voltage_V": {
+    "A": 250.0,
+    "B": 250.0,
+    "C": 250.0
+  },
+  "field_sha256": {
+    "A": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+    "B": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+    "C": "d545a2771c8a8a8f3b3e354351cd4763c3b13260c15e8b0406a9cfb8106ed1da"
+  },
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "atol_SI": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ],
+    "max_step_RF": 0.02
+  }
+}

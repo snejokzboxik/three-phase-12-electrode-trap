@@ -1,0 +1,21 @@
+{
+  "mesh_um": 50,
+  "method": "direct native P4, audited element crossings",
+  "initial_state_SI": [
+    0.00375,
+    -0.006,
+    0.0,
+    0.0
+  ],
+  "phase_deg": 0.0,
+  "voltage_V": 250.0,
+  "escape_RF": 25.569292713305707,
+  "final_state_SI": [
+    -0.0001024560016624245,
+    -0.007999343896078188,
+    34.653955434442175,
+    -181.66186969886002
+  ],
+  "max_radius_m": 0.008,
+  "nfev": 34711
+}

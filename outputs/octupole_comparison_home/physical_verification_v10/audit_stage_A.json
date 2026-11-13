@@ -1,0 +1,92 @@
+{
+  "source_commit": "7ca4c3068267cb3967f825a4d93991eb3807c03e",
+  "source_hashes": {
+    "h35_mesh": {
+      "path": "outputs/meshes/gmsh_35um/trap.msh",
+      "sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf"
+    },
+    "h50_mesh": {
+      "path": "outputs/meshes/gmsh_50um/trap.msh",
+      "sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284"
+    },
+    "h35_p4": {
+      "path": "outputs/abc_validation/direct_fem_validation/v2/h35_P4/sector_solution.npz",
+      "sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d"
+    },
+    "h50_p4": {
+      "path": "outputs/abc_validation/direct_fem_validation/v2/h50_P4/sector_solution.npz",
+      "sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872"
+    },
+    "h35_n48": {
+      "path": "outputs/abc_validation/direct_fem_validation/v2/h35_P4/diagnostic_N48.json",
+      "sha256": "8c6da443d96162e2374feab869a824a50edd724afb8fc5ba018fe4b7d60a709c"
+    },
+    "h50_n48": {
+      "path": "outputs/abc_validation/direct_fem_validation/v2/h50_P4/diagnostic_N48.json",
+      "sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1"
+    },
+    "v7_config": {
+      "path": "outputs/octupole_comparison_home/harmonic_ablation_v7/config_v7.json",
+      "sha256": "69f8a90de8e7496b5b405304ff191cc9a357652199ac601e7eeea8f71ff9480e"
+    },
+    "v7_integrator": {
+      "path": "outputs/octupole_comparison_home/harmonic_ablation_v7/run_v7.py",
+      "sha256": "9626191f7c608b0bfcf5c28c123129bc8741d9d3a914954d8af99ef31b1ab53e"
+    },
+    "v7_records": {
+      "path": "outputs/octupole_comparison_home/harmonic_ablation_v7/processed/ablation_trajectory_results.csv",
+      "sha256": "66b6c427aef6405d41fa7b0ddddb0f338885050aa30d241c48432801a8204503"
+    },
+    "direct_fem_source": {
+      "path": "src/three_phase_trap/direct_fem.py",
+      "sha256": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708"
+    },
+    "direct_dynamics_source": {
+      "path": "src/three_phase_trap/direct_fem_dynamics.py",
+      "sha256": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b"
+    }
+  },
+  "config_mesh_and_solution_hashes_match": true,
+  "mismatches": {},
+  "V7_launch_conditions_verified": {
+    "deep_az0_dplus": {
+      "source_status": "retained",
+      "source_escape_RF": null,
+      "source_field": "h35_N48_polynomial",
+      "state_matches": true
+    },
+    "early_az22p5_dplus": {
+      "source_status": "retained",
+      "source_escape_RF": null,
+      "source_field": "h35_N48_polynomial",
+      "state_matches": true
+    },
+    "negative_retained": {
+      "source_status": "retained",
+      "source_escape_RF": null,
+      "source_field": "h35_N48_polynomial",
+      "state_matches": true
+    },
+    "negative_escaped": {
+      "source_status": "retained",
+      "source_escape_RF": null,
+      "source_field": "h35_N48_polynomial",
+      "state_matches": true
+    },
+    "positive_retained": {
+      "source_status": "retained",
+      "source_escape_RF": null,
+      "source_field": "h35_N48_polynomial",
+      "state_matches": true
+    },
+    "positive_escaped": {
+      "source_status": "retained",
+      "source_escape_RF": null,
+      "source_field": "h35_N48_polynomial",
+      "state_matches": true
+    }
+  },
+  "V7_full_N48_rows_read": 95,
+  "new_FEM_solves": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,85 @@
+{
+  "study": "V10 independent physical and numerical verification of V7 mechanism",
+  "source_commit": "7ca4c3068267cb3967f825a4d93991eb3807c03e",
+  "unit_system": "SI; coordinates in m; velocities in m/s; time in s; potential in V",
+  "geometry": {
+    "electrode_count": 12,
+    "electrode_center_radius_m": 0.01,
+    "electrode_radius_m": 0.0015,
+    "outer_boundary_radius_m": 0.025,
+    "aperture_radius_m": 0.008,
+    "dimension": 2,
+    "axial_fields_included": false,
+    "space_charge_included": false,
+    "geometry_boundary_order": 1
+  },
+  "fem": {
+    "native_order": 4,
+    "mesh_versions_um": [50, 35],
+    "mesh_artifacts": {
+      "h50_msh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+      "h50_p4_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+      "h35_msh_sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+      "h35_p4_sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d"
+    },
+    "existing_fem_solutions_reused": true,
+    "new_fem_solves": 0,
+    "new_meshes": 0
+  },
+  "electrode_drive": {
+    "groups": "ABCABCABCABC",
+    "group_phase_law": "A=sin(Omega*t+phase); B=sin(Omega*t+phase-2*pi/3); C=sin(Omega*t+phase+2*pi/3)",
+    "complex_spatial_field": "H=Phi_A+exp(-2*pi*i/3)*Phi_B+exp(2*pi*i/3)*Phi_C",
+    "rotating_potential": "U_rot*Im(H*exp(i*(Omega*t+phase)))",
+    "standing_potential": "U_stand*Re(H)*sin(Omega*t+phase)",
+    "normalization_protocol": "match leading m=4 pseudopotential only",
+    "rotating_voltage_V": 250.0,
+    "standing_voltage_V": 353.5533905932738,
+    "frequency_Hz": 100000.0,
+    "frequency_angular_rad_s": 628318.5307179586,
+    "phase_zero_definition": "global RF phase at t=0; coordinate system unchanged"
+  },
+  "ion": {
+    "charge_state": 1,
+    "charge_C": 1.602176634e-19,
+    "mass_to_charge_Th": 100000.0,
+    "mass_kg": 1.6605390666e-22,
+    "initial_kinetic_energy_eV": 2.0,
+    "initial_radius_m": 0.001,
+    "initial_speed_m_s": 62.12417634275831,
+    "velocity_construction": "v=signed_speed*(-sin(theta),cos(theta)); sign is tangential direction"
+  },
+  "horizon": {
+    "primary_rf_periods": 1000,
+    "retention_definition": "no outward crossing of aperture radius by end of horizon; finite-time right censoring",
+    "escape_definition": "first outward crossing of r=8 mm"
+  },
+  "initial_conditions_v7": [
+    {"label":"deep_az0_dplus","azimuth_deg":0.0,"direction":1,"phase_deg":0.0,"x_m":0.001,"y_m":0.0,"vx_m_s":0.0,"vy_m_s":62.12417634275831},
+    {"label":"early_az22p5_dplus","azimuth_deg":22.5,"direction":1,"phase_deg":0.0,"x_m":0.0009238795325112868,"y_m":0.0003826834323650898,"vx_m_s":-23.773893035700862,"vy_m_s":57.39525499719629},
+    {"label":"negative_retained","azimuth_deg":9.60205078125,"direction":-1,"phase_deg":0.0,"x_m":0.0009859900673043303,"y_m":0.00016680403825208374,"vx_m_s":10.362563487056653,"vy_m_s":-61.253820813422344},
+    {"label":"negative_escaped","azimuth_deg":9.6240234375,"direction":-1,"phase_deg":0.0,"x_m":0.0009859260262543212,"y_m":0.00016718214843207293,"vx_m_s":10.386053270555294,"vy_m_s":-61.24984231593841},
+    {"label":"positive_retained","azimuth_deg":10.26123046875,"direction":1,"phase_deg":0.0,"x_m":0.000984005800268158,"y_m":0.00017813642254918633,"vx_m_s":-11.066578527513759,"vy_m_s":61.13054985815605},
+    {"label":"positive_escaped","azimuth_deg":10.283203125,"direction":1,"phase_deg":0.0,"x_m":0.000983937413449219,"y_m":0.0001785137709389975,"vx_m_s":-11.090020985425046,"vy_m_s":61.12630138335677}
+  ],
+  "initial_rf_phases_deg": [0.0, 45.0, 90.0, 180.0, 315.0],
+  "phase_expansion_policy": "phase 0 pilot first; add phase points only for early/transition cases and any direct-field disagreement",
+  "pilot_cases": ["deep_az0_dplus", "early_az22p5_dplus"],
+  "integration": {
+    "method": "DOP853",
+    "initial_steps_per_rf_period": 100,
+    "initial_rtol": 2e-11,
+    "initial_atol": [2e-15,2e-15,2e-13,2e-13],
+    "output_samples_per_rf_period": 64,
+    "max_steps_per_rf_period": 200,
+    "checkpoint_policy": "atomically checkpoint every completed integration and retain samples through first aperture exit"
+  },
+  "study_stages": [
+    "A_audit_and_field_validation",
+    "B_native_P4_trajectory_validation",
+    "C_analytic_cross_term_derivation_and_field_average",
+    "D_controlled_interharmonic_phase_test",
+    "E_limited_robustness_and_literature_review",
+    "F_publication_package_and_readiness"
+  ]
+}

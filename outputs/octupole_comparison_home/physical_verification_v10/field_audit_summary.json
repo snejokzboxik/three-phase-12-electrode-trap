@@ -1,0 +1,249 @@
+{
+  "scope": "reanalysis of saved native P4 FEM field samples; no FEM solve or trajectory run",
+  "h35_sector_solution_sha256": "da90df98f9db31b5b7d84397bdc060991ddda5b6d685a3c0889e5ee36b493872",
+  "h50_sector_solution_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+  "same_points_across_meshes": true,
+  "samples_per_ring_included": 513,
+  "rings_mm": [
+    0.025,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    6.0,
+    7.0,
+    8.0
+  ],
+  "direct_P4_m4_coefficients": {
+    "h35_r0.025mm": {
+      "C4_complex_per_V_per_m4": [
+        132167886.52537194,
+        0.02054934099284317
+      ],
+      "C4_magnitude_per_V_per_m4": 132167886.52537194
+    },
+    "h35_r0.05mm": {
+      "C4_complex_per_V_per_m4": [
+        132167886.52768841,
+        0.007685534318027263
+      ],
+      "C4_magnitude_per_V_per_m4": 132167886.52768841
+    },
+    "h35_r0.1mm": {
+      "C4_complex_per_V_per_m4": [
+        132167886.52758336,
+        0.0006606694671360434
+      ],
+      "C4_magnitude_per_V_per_m4": 132167886.52758336
+    },
+    "h35_r0.25mm": {
+      "C4_complex_per_V_per_m4": [
+        132167886.44897173,
+        -0.0003027035629788708
+      ],
+      "C4_magnitude_per_V_per_m4": 132167886.44897173
+    },
+    "h35_r0.5mm": {
+      "C4_complex_per_V_per_m4": [
+        132167885.23333736,
+        0.04525756861874365
+      ],
+      "C4_magnitude_per_V_per_m4": 132167885.23333736
+    },
+    "h35_r1mm": {
+      "C4_complex_per_V_per_m4": [
+        132167865.78136383,
+        0.7914607848361628
+      ],
+      "C4_magnitude_per_V_per_m4": 132167865.78136383
+    },
+    "h35_r2mm": {
+      "C4_complex_per_V_per_m4": [
+        132167554.54909371,
+        12.736537614165567
+      ],
+      "C4_magnitude_per_V_per_m4": 132167554.54909432
+    },
+    "h35_r4mm": {
+      "C4_complex_per_V_per_m4": [
+        132162574.65607516,
+        203.85248996952382
+      ],
+      "C4_magnitude_per_V_per_m4": 132162574.65623239
+    },
+    "h35_r6mm": {
+      "C4_complex_per_V_per_m4": [
+        132140951.85522138,
+        1033.412411592737
+      ],
+      "C4_magnitude_per_V_per_m4": 132140951.8592623
+    },
+    "h35_r7mm": {
+      "C4_complex_per_V_per_m4": [
+        132117648.1630214,
+        1932.5377212537428
+      ],
+      "C4_magnitude_per_V_per_m4": 132117648.1771554
+    },
+    "h35_r8mm": {
+      "C4_complex_per_V_per_m4": [
+        132079812.93906742,
+        3470.0262386954523
+      ],
+      "C4_magnitude_per_V_per_m4": 132079812.98465002
+    },
+    "h50_r0.025mm": {
+      "C4_complex_per_V_per_m4": [
+        132162980.93076093,
+        -0.00044089847521309615
+      ],
+      "C4_magnitude_per_V_per_m4": 132162980.93076093
+    },
+    "h50_r0.05mm": {
+      "C4_complex_per_V_per_m4": [
+        132162980.93703829,
+        -0.010689497395487153
+      ],
+      "C4_magnitude_per_V_per_m4": 132162980.93703829
+    },
+    "h50_r0.1mm": {
+      "C4_complex_per_V_per_m4": [
+        132162980.94093055,
+        -0.017356681505698204
+      ],
+      "C4_magnitude_per_V_per_m4": 132162980.94093055
+    },
+    "h50_r0.25mm": {
+      "C4_complex_per_V_per_m4": [
+        132162980.86226737,
+        -0.017733235291015306
+      ],
+      "C4_magnitude_per_V_per_m4": 132162980.86226737
+    },
+    "h50_r0.5mm": {
+      "C4_complex_per_V_per_m4": [
+        132162979.64627086,
+        0.027362746546649816
+      ],
+      "C4_magnitude_per_V_per_m4": 132162979.64627086
+    },
+    "h50_r1mm": {
+      "C4_complex_per_V_per_m4": [
+        132162960.19579524,
+        0.7734194489319494
+      ],
+      "C4_magnitude_per_V_per_m4": 132162960.19579524
+    },
+    "h50_r2mm": {
+      "C4_complex_per_V_per_m4": [
+        132162648.98581423,
+        12.717588379728
+      ],
+      "C4_magnitude_per_V_per_m4": 132162648.98581484
+    },
+    "h50_r4mm": {
+      "C4_complex_per_V_per_m4": [
+        132157669.44988053,
+        203.81980766856645
+      ],
+      "C4_magnitude_per_V_per_m4": 132157669.45003769
+    },
+    "h50_r6mm": {
+      "C4_complex_per_V_per_m4": [
+        132136048.18027459,
+        1033.3195457369568
+      ],
+      "C4_magnitude_per_V_per_m4": 132136048.18431494
+    },
+    "h50_r7mm": {
+      "C4_complex_per_V_per_m4": [
+        132112746.04395199,
+        1932.3770802338895
+      ],
+      "C4_magnitude_per_V_per_m4": 132112746.05808417
+    },
+    "h50_r8mm": {
+      "C4_complex_per_V_per_m4": [
+        132074912.89637601,
+        3469.7420212980055
+      ],
+      "C4_magnitude_per_V_per_m4": 132074912.94195284
+    }
+  },
+  "h35_h50_field_sensitivity": [
+    {
+      "radius_mm": 0.025,
+      "h50_minus_h35_relative_rms_field": 3.7116364112993196e-05,
+      "field_rms_h50_V_per_m_per_250V": 0.0020650465770985387,
+      "field_rms_h35_V_per_m_per_250V": 0.0020651232269641665
+    },
+    {
+      "radius_mm": 0.05,
+      "h50_minus_h35_relative_rms_field": 3.7116351408558816e-05,
+      "field_rms_h50_V_per_m_per_250V": 0.016520372617367114,
+      "field_rms_h35_V_per_m_per_250V": 0.016520985816082266
+    },
+    {
+      "radius_mm": 0.1,
+      "h50_minus_h35_relative_rms_field": 3.7116369810307724e-05,
+      "field_rms_h50_V_per_m_per_250V": 0.13216298094000142,
+      "field_rms_h35_V_per_m_per_250V": 0.13216788653215492
+    },
+    {
+      "radius_mm": 0.25,
+      "h50_minus_h35_relative_rms_field": 3.71163005274494e-05,
+      "field_rms_h50_V_per_m_per_250V": 2.0650465772884012,
+      "field_rms_h35_V_per_m_per_250V": 2.065123227022719
+    },
+    {
+      "radius_mm": 0.5,
+      "h50_minus_h35_relative_rms_field": 3.7116304160369954e-05,
+      "field_rms_h50_V_per_m_per_250V": 16.520372619073235,
+      "field_rms_h35_V_per_m_per_250V": 16.52098581700779
+    },
+    {
+      "radius_mm": 1.0,
+      "h50_minus_h35_relative_rms_field": 3.7116297504157935e-05,
+      "field_rms_h50_V_per_m_per_250V": 132.16298265757612,
+      "field_rms_h35_V_per_m_per_250V": 132.1678882401801
+    },
+    {
+      "radius_mm": 2.0,
+      "h50_minus_h35_relative_rms_field": 3.7116667573648266e-05,
+      "field_rms_h50_V_per_m_per_250V": 1057.3073498399187,
+      "field_rms_h35_V_per_m_per_250V": 1057.3465949086876
+    },
+    {
+      "radius_mm": 4.0,
+      "h50_minus_h35_relative_rms_field": 3.720228773990103e-05,
+      "field_rms_h50_V_per_m_per_250V": 8465.60045532111,
+      "field_rms_h35_V_per_m_per_250V": 8465.915175822147
+    },
+    {
+      "radius_mm": 6.0,
+      "h50_minus_h35_relative_rms_field": 3.91767665143491e-05,
+      "field_rms_h50_V_per_m_per_250V": 29161.031682179328,
+      "field_rms_h35_V_per_m_per_250V": 29162.15615702141
+    },
+    {
+      "radius_mm": 7.0,
+      "h50_minus_h35_relative_rms_field": 4.3243517931981746e-05,
+      "field_rms_h50_V_per_m_per_250V": 48596.69098974714,
+      "field_rms_h35_V_per_m_per_250V": 48598.71321402726
+    },
+    {
+      "radius_mm": 8.0,
+      "h50_minus_h35_relative_rms_field": 5.072417647100884e-05,
+      "field_rms_h50_V_per_m_per_250V": 81114.5958304963,
+      "field_rms_h35_V_per_m_per_250V": 81118.45128398645
+    }
+  ],
+  "not_yet_verified": [
+    "trajectory-weighted field error",
+    "aperture escape classification",
+    "full RF phase robustness"
+  ]
+}

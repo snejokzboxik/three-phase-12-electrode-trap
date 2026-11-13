@@ -1,0 +1,19 @@
+{
+  "python": "3.12.10 (MSC v.1943, AMD64)",
+  "platform": "Windows 11 x64 workstation",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.2",
+    "scikit-fem": "12.0.2",
+    "meshio": "5.3.5"
+  },
+  "blas_thread_limits": {
+    "OPENBLAS_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1
+  },
+  "hardware": "AMD Ryzen 5 2600, 16 GB RAM; FEM trajectories run memory-aware with one worker for h35 and two for h50",
+  "note": "The installed Python packages were placed in a local temporary dependency directory; reproduce_v10.ps1 expects that folder at %LOCALAPPDATA%\\Temp\\v10deps, or set PYTHONPATH to an equivalent environment. No GPU computation was used."
+}

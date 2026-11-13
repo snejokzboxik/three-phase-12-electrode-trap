@@ -1,0 +1,21 @@
+launch_label,azimuth_deg,velocity_direction_sign,rf_phase_deg,model,mesh_um,initial_energy_eV,voltage_V,native_P4_status,native_P4_escape_time_RF,native_P4_horizon_RF,N48_status,N48_escape_time_RF,N48_field_source,N48_rtol,comparison_note
+early_az22p5_dplus,22.5,1,0.0,rotating,35,2.0,250.0,retained_to_horizon,,1000,retained,,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+early_az22p5_dplus,22.5,1,0.0,standing,35,2.0,353.5533905932738,escaped,185.49130684796577,1000,escaped,185.49127407330687,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+negative_escaped,9.6240234375,-1,0.0,rotating,35,2.0,250.0,retained_to_horizon,,1000,retained,,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+negative_escaped,9.6240234375,-1,0.0,standing,35,2.0,353.5533905932738,escaped,892.5819928377451,1000,escaped,892.5809093191444,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+positive_escaped,10.283203125,1,0.0,rotating,35,2.0,250.0,retained_to_horizon,,1000,retained,,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+positive_escaped,10.283203125,1,0.0,standing,35,2.0,353.5533905932738,escaped,722.5833076162842,1000,escaped,722.5818438968646,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+positive_retained,10.26123046875,1,0.0,rotating,35,2.0,250.0,retained_to_horizon,,1000,retained,,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+positive_retained,10.26123046875,1,0.0,standing,35,2.0,353.5533905932738,escaped,980.5851880429544,1000,retained,,h35_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+deep_az0_dplus,0.0,1,0.0,rotating,50,2.0,250.0,retained_to_horizon,,1000,,,,,finite-time status only; retained cases are right-censored
+deep_az0_dplus,0.0,1,0.0,standing,50,2.0,353.5533905932738,retained_to_horizon,,1000,,,,,finite-time status only; retained cases are right-censored
+early_az22p5_dplus,22.5,1,0.0,rotating,50,2.0,250.0,retained_to_horizon,,1000,retained,,h50_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+early_az22p5_dplus,22.5,1,0.0,standing,50,2.0,353.5533905932738,escaped,185.4932002543185,1000,escaped,185.4931674673796,h50_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+negative_escaped,9.6240234375,-1,0.0,rotating,50,2.0,250.0,retained_to_horizon,,1000,retained,,h50_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+negative_escaped,9.6240234375,-1,0.0,standing,50,2.0,353.5533905932738,escaped,925.4086375591066,1000,escaped,925.4192945145548,h50_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+negative_retained,9.60205078125,-1,0.0,rotating,50,2.0,250.0,retained_to_horizon,,1000,,,,,finite-time status only; retained cases are right-censored
+negative_retained,9.60205078125,-1,0.0,standing,50,2.0,353.5533905932738,retained_to_horizon,,1000,,,,,finite-time status only; retained cases are right-censored
+positive_escaped,10.283203125,1,0.0,rotating,50,2.0,250.0,retained_to_horizon,,1000,retained,,h50_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+positive_escaped,10.283203125,1,0.0,standing,50,2.0,353.5533905932738,escaped,800.6034788744788,1000,escaped,800.6179741025752,h50_N48_polynomial,2e-09,finite-time status only; retained cases are right-censored
+positive_retained,10.26123046875,1,0.0,rotating,50,2.0,250.0,retained_to_horizon,,1000,,,,,finite-time status only; retained cases are right-censored
+positive_retained,10.26123046875,1,0.0,standing,50,2.0,353.5533905932738,escaped,815.3823119919404,1000,,,,,finite-time status only; retained cases are right-censored

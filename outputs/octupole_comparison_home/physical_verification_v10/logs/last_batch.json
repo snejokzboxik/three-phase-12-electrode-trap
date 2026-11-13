@@ -1,0 +1,35 @@
+{
+  "mesh_um": 35,
+  "launches": [
+    "early_az22p5_dplus",
+    "negative_escaped",
+    "positive_retained",
+    "positive_escaped"
+  ],
+  "requested_workers": 4,
+  "workers_started": 1,
+  "initial_memory": {
+    "available_gib": 8.361736297607422,
+    "total_gib": 15.95145034790039,
+    "load_percent": 47
+  },
+  "memory_rule": "reserve >=5 GiB, budget 2.25 GiB per native-P4 process",
+  "horizon_rf": 1000,
+  "steps_per_rf_period": 200,
+  "rtol": 2e-09,
+  "chunk_rf": 50,
+  "status": "complete",
+  "started_local": "2026-11-13T08:44:10+0300",
+  "exit_codes": {
+    "early_az22p5_dplus": 0,
+    "negative_escaped": 0,
+    "positive_retained": 0,
+    "positive_escaped": 0
+  },
+  "final_memory": {
+    "available_gib": 8.45498275756836,
+    "total_gib": 15.95145034790039,
+    "load_percent": 46
+  },
+  "finished_local": "2026-11-13T09:07:02+0300"
+}

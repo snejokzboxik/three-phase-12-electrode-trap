@@ -1,0 +1,34 @@
+{
+  "50": {
+    "mesh_um": 50,
+    "mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "solution_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "samples": 32,
+    "phase_samples_rad": [
+      0.371,
+      1.913,
+      4.202
+    ],
+    "max_complex_gradient_relative_error": 4.085964591889995e-11,
+    "max_phase_superposition_relative_error": 6.372681827753457e-11,
+    "gradient_test": "central finite difference of the native P4 potential, with both probes kept inside one element",
+    "phase_test": "independent evaluation of Im(H exp(i lambda)) and Re(H) sin(lambda), differentiated consistently",
+    "validation": "P4 native potential gradient and rotating/standing phase superposition; no harmonic surrogate"
+  },
+  "35": {
+    "mesh_um": 35,
+    "mesh_sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "solution_sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "samples": 32,
+    "phase_samples_rad": [
+      0.371,
+      1.913,
+      4.202
+    ],
+    "max_complex_gradient_relative_error": 4.5057898347715897e-11,
+    "max_phase_superposition_relative_error": 4.682487791148345e-11,
+    "gradient_test": "central finite difference of the native P4 potential, with both probes kept inside one element",
+    "phase_test": "independent evaluation of Im(H exp(i lambda)) and Re(H) sin(lambda), differentiated consistently",
+    "validation": "P4 native potential gradient and rotating/standing phase superposition; no harmonic surrogate"
+  }
+}

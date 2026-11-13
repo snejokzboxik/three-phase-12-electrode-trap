@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.tmp
+*.checkpoint.*
+# Retained local-only output from an intermediate sparse trapezoid diagnostic.
+# The accepted final energy/work table is the gzip-compressed Simpson version.
+processed/p4_energy_and_motion_timeseries.csv

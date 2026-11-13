@@ -1,0 +1,47 @@
+{
+  "matched_records": 20,
+  "comparison": "native P4 integration versus corresponding h35/h50 N48 full-field integration",
+  "normalization": "rotating 250 V; standing 353.5533905932738 V; leading m=4 only",
+  "finite_time_horizon_RF": 1000,
+  "new_FEM_solves": 0,
+  "new_N48_integrations": 0,
+  "summary": [
+    {
+      "mesh_um": 35,
+      "model": "rotating",
+      "matched_starts": 4,
+      "retained_to_1000RF": 4,
+      "escaped_by_1000RF": 0,
+      "N48_rows_matched": 4,
+      "classification_disagreements": 0
+    },
+    {
+      "mesh_um": 35,
+      "model": "standing",
+      "matched_starts": 4,
+      "retained_to_1000RF": 0,
+      "escaped_by_1000RF": 4,
+      "N48_rows_matched": 4,
+      "classification_disagreements": 1
+    },
+    {
+      "mesh_um": 50,
+      "model": "rotating",
+      "matched_starts": 6,
+      "retained_to_1000RF": 6,
+      "escaped_by_1000RF": 0,
+      "N48_rows_matched": 3,
+      "classification_disagreements": 0
+    },
+    {
+      "mesh_um": 50,
+      "model": "standing",
+      "matched_starts": 6,
+      "retained_to_1000RF": 2,
+      "escaped_by_1000RF": 4,
+      "N48_rows_matched": 3,
+      "classification_disagreements": 0
+    }
+  ],
+  "note": "Different exit times near the boundary indicate numerical/field-representation sensitivity and are not permanent-stability claims."
+}

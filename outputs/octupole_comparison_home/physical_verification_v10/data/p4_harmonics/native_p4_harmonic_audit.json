@@ -1,0 +1,190 @@
+{
+  "50": {
+    "mesh_um": 50,
+    "mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "p4_solution_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "samples_per_ring": 4096,
+    "potential_mode_coefficients_at_aperture": {
+      "4": {
+        "dominant_signed_l": -4,
+        "complex_coefficient_V_per_V_m_order": [
+          132162980.94333714,
+          -0.022822284085817313
+        ],
+        "magnitude_V_per_V_m_order": 132162980.94333714,
+        "opposite_sign_magnitude": 1.54520420328352e-05
+      },
+      "8": {
+        "dominant_signed_l": 8,
+        "complex_coefficient_V_per_V_m_order": [
+          1.063045153781237e+16,
+          3670917.94914539
+        ],
+        "magnitude_V_per_V_m_order": 1.063045153781237e+16,
+        "opposite_sign_magnitude": 2423.506271458535
+      },
+      "16": {
+        "dominant_signed_l": -16,
+        "complex_coefficient_V_per_V_m_order": [
+          4.189814636296383e+30,
+          -1.2337558039782478e+23
+        ],
+        "magnitude_V_per_V_m_order": 4.189814636296385e+30,
+        "opposite_sign_magnitude": 5.0104884918930833e+20
+      },
+      "20": {
+        "dominant_signed_l": 20,
+        "complex_coefficient_V_per_V_m_order": [
+          4.840329625021577e+39,
+          2.357410339416505e+31
+        ],
+        "magnitude_V_per_V_m_order": 4.840329625021577e+39,
+        "opposite_sign_magnitude": 2.066109155445345e+28
+      },
+      "28": {
+        "dominant_signed_l": -28,
+        "complex_coefficient_V_per_V_m_order": [
+          -2.0415968049840494e+55,
+          -8.507167800944533e+47
+        ],
+        "magnitude_V_per_V_m_order": 2.0415968049840513e+55,
+        "opposite_sign_magnitude": 5.325075642031931e+45
+      },
+      "32": {
+        "dominant_signed_l": 32,
+        "complex_coefficient_V_per_V_m_order": [
+          2.1347110555046195e+63,
+          1.634488438656401e+56
+        ],
+        "magnitude_V_per_V_m_order": 2.1347110555046257e+63,
+        "opposite_sign_magnitude": 6.343765715819412e+53
+      },
+      "40": {
+        "dominant_signed_l": -40,
+        "complex_coefficient_V_per_V_m_order": [
+          -2.9210606084696598e+79,
+          -1.4627640622501808e+72
+        ],
+        "magnitude_V_per_V_m_order": 2.9210606084696634e+79,
+        "opposite_sign_magnitude": 4.955829443288554e+70
+      },
+      "44": {
+        "dominant_signed_l": 44,
+        "complex_coefficient_V_per_V_m_order": [
+          -1.6024652476238516e+86,
+          4.200323930710027e+80
+        ],
+        "magnitude_V_per_V_m_order": 1.6024652476293564e+86,
+        "opposite_sign_magnitude": 7.633584766411132e+78
+      }
+    },
+    "m4_standing_vs_rotating_self_term_relative_rms_difference": 1.755528840691588e-16,
+    "rotating_m4_m8_cross_abs_max_eV": 5.557017208409563e-16,
+    "standing_m4_m8_cross_min_eV": -7.373827313526903,
+    "standing_m4_m8_cross_max_eV": 7.373827313526902,
+    "all_mode_gradient_reconstruction_relative_rms_residual_at_8mm": 5.348998526702665e-05,
+    "direct_P4_rotating_pseudopotential_eV_range": [
+      7.530278595713221,
+      8.470966109756612
+    ],
+    "direct_P4_standing_pseudopotential_eV_range": [
+      0.7951236965520919,
+      16.471658620376893
+    ],
+    "scope": "native P4 sample and Fourier projection; no N48 fit used to derive these values"
+  },
+  "35": {
+    "mesh_um": 35,
+    "mesh_sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "p4_solution_sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "samples_per_ring": 4096,
+    "potential_mode_coefficients_at_aperture": {
+      "4": {
+        "dominant_signed_l": -4,
+        "complex_coefficient_V_per_V_m_order": [
+          132167886.53107391,
+          -0.004769441200715061
+        ],
+        "magnitude_V_per_V_m_order": 132167886.53107391,
+        "opposite_sign_magnitude": 6.904492693778232e-07
+      },
+      "8": {
+        "dominant_signed_l": 8,
+        "complex_coefficient_V_per_V_m_order": [
+          1.0631214416559402e+16,
+          766618.2791371123
+        ],
+        "magnitude_V_per_V_m_order": 1.0631214416559402e+16,
+        "opposite_sign_magnitude": 862.979259133664
+      },
+      "16": {
+        "dominant_signed_l": -16,
+        "complex_coefficient_V_per_V_m_order": [
+          4.185573737321678e+30,
+          9.151079396297888e+22
+        ],
+        "magnitude_V_per_V_m_order": 4.185573737321679e+30,
+        "opposite_sign_magnitude": 5.855218733049512e+19
+      },
+      "20": {
+        "dominant_signed_l": 20,
+        "complex_coefficient_V_per_V_m_order": [
+          4.8404987326824093e+39,
+          -1.3916016379608654e+31
+        ],
+        "magnitude_V_per_V_m_order": 4.8404987326824093e+39,
+        "opposite_sign_magnitude": 1.2884338450703548e+28
+      },
+      "28": {
+        "dominant_signed_l": -28,
+        "complex_coefficient_V_per_V_m_order": [
+          -2.042238211306059e+55,
+          4.422700874037909e+47
+        ],
+        "magnitude_V_per_V_m_order": 2.0422382113060595e+55,
+        "opposite_sign_magnitude": 2.513616148478551e+44
+      },
+      "32": {
+        "dominant_signed_l": 32,
+        "complex_coefficient_V_per_V_m_order": [
+          2.1343769178224945e+63,
+          -8.474815340628553e+55
+        ],
+        "magnitude_V_per_V_m_order": 2.134376917822496e+63,
+        "opposite_sign_magnitude": 7.437509708088105e+52
+      },
+      "40": {
+        "dominant_signed_l": -40,
+        "complex_coefficient_V_per_V_m_order": [
+          -2.921623662216717e+79,
+          2.0353464891998963e+72
+        ],
+        "magnitude_V_per_V_m_order": 2.9216236622167238e+79,
+        "opposite_sign_magnitude": 1.6766238507414894e+70
+      },
+      "44": {
+        "dominant_signed_l": 44,
+        "complex_coefficient_V_per_V_m_order": [
+          -1.6104901229452362e+86,
+          -4.2373935210795175e+80
+        ],
+        "magnitude_V_per_V_m_order": 1.6104901229508108e+86,
+        "opposite_sign_magnitude": 1.37533551548179e+78
+      }
+    },
+    "m4_standing_vs_rotating_self_term_relative_rms_difference": 2.2254034110997887e-16,
+    "rotating_m4_m8_cross_abs_max_eV": 5.557017208409563e-16,
+    "standing_m4_m8_cross_min_eV": -7.374630204673285,
+    "standing_m4_m8_cross_max_eV": 7.374630204673286,
+    "all_mode_gradient_reconstruction_relative_rms_residual_at_8mm": 5.3493868466827124e-05,
+    "direct_P4_rotating_pseudopotential_eV_range": [
+      7.531077940179832,
+      8.471651783951092
+    ],
+    "direct_P4_standing_pseudopotential_eV_range": [
+      0.7951207209657613,
+      16.473101491474
+    ],
+    "scope": "native P4 sample and Fourier projection; no N48 fit used to derive these values"
+  }
+}

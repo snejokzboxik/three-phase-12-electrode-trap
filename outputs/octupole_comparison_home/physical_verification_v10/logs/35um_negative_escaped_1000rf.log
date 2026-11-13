@@ -1,0 +1,95 @@
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+
+{
+  "field_loaded": {
+    "mesh_um": 35,
+    "mesh_sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "sector_solution_sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "element_degree": 4,
+    "full_mesh_triangles": 647484,
+    "mapping_error_m": 5.439456160360122e-15,
+    "loaded_saved_p4_solution": true,
+    "new_fem_solve": false
+  },
+  "start_time": "2026-11-13T08:48:36+0300"
+}
+starting 35um_rotating_negative_escaped_0deg_1000rf
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.00022741400081908972, "steps": 5000, "crossings": 867, "elapsed_s": 4.354881700011902}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0004546245707018227, "steps": 10000, "crossings": 1742, "elapsed_s": 8.655411899992032}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0007274508462015726, "steps": 5000, "crossings": 867, "elapsed_s": 4.2658414999896195}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0009550601888989899, "steps": 10000, "crossings": 1742, "elapsed_s": 8.53082769998582}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0012278663019526536, "steps": 5000, "crossings": 866, "elapsed_s": 4.272584200021811}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.001455282345540944, "steps": 10000, "crossings": 1744, "elapsed_s": 8.574799499998335}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0017282208394292949, "steps": 5000, "crossings": 866, "elapsed_s": 4.279784400016069}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0019565466432644486, "steps": 10000, "crossings": 1737, "elapsed_s": 8.54271810001228}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.002227767056473174, "steps": 5000, "crossings": 875, "elapsed_s": 4.304438699997263}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0024548773428002767, "steps": 10000, "crossings": 1745, "elapsed_s": 8.594128600001568}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0027274730925252156, "steps": 5000, "crossings": 872, "elapsed_s": 4.270498399971984}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0029549867128630144, "steps": 10000, "crossings": 1746, "elapsed_s": 8.540260099980514}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.003227181021659071, "steps": 5000, "crossings": 866, "elapsed_s": 4.278405399993062}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.003455084683819837, "steps": 10000, "crossings": 1739, "elapsed_s": 8.537445199996}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.003727226896914043, "steps": 5000, "crossings": 874, "elapsed_s": 4.317936900013592}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.003955578642534413, "steps": 10000, "crossings": 1761, "elapsed_s": 8.688859399990179}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.004227412491476242, "steps": 5000, "crossings": 875, "elapsed_s": 4.455221799988067}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.004454417838284805, "steps": 10000, "crossings": 1759, "elapsed_s": 8.756637299986323}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.0047276021051103016, "steps": 5000, "crossings": 875, "elapsed_s": 4.300437900004908}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.004955283482523738, "steps": 10000, "crossings": 1754, "elapsed_s": 8.573964999988675}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.005228056657742029, "steps": 5000, "crossings": 873, "elapsed_s": 4.28980140000931}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.005455242078488175, "steps": 10000, "crossings": 1760, "elapsed_s": 8.571594599983655}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.005726537986018004, "steps": 5000, "crossings": 878, "elapsed_s": 4.280624499981059}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.005954470193580459, "steps": 10000, "crossings": 1756, "elapsed_s": 8.561764599988237}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.006227804623518229, "steps": 5000, "crossings": 878, "elapsed_s": 4.273060600011377}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.006455141217412699, "steps": 10000, "crossings": 1759, "elapsed_s": 8.541455700004008}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.006727803724139458, "steps": 5000, "crossings": 870, "elapsed_s": 4.257808599999407}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.006955351626030317, "steps": 10000, "crossings": 1742, "elapsed_s": 8.515955099981511}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.007228479102003411, "steps": 5000, "crossings": 884, "elapsed_s": 4.292758800002048}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.007456367833955396, "steps": 10000, "crossings": 1760, "elapsed_s": 8.571068499993999}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.00772850485125729, "steps": 5000, "crossings": 869, "elapsed_s": 4.280529000010574}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.007956246265855118, "steps": 10000, "crossings": 1758, "elapsed_s": 8.545462500012945}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.00822843748592263, "steps": 5000, "crossings": 870, "elapsed_s": 4.322260099987034}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.008456475900334135, "steps": 10000, "crossings": 1749, "elapsed_s": 8.62966909998795}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.008727425809333215, "steps": 5000, "crossings": 866, "elapsed_s": 4.366822800016962}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.008954870717453883, "steps": 10000, "crossings": 1749, "elapsed_s": 8.663657199998852}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.009228677723838702, "steps": 5000, "crossings": 869, "elapsed_s": 4.316222499997821}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.00945545337225306, "steps": 10000, "crossings": 1760, "elapsed_s": 8.692664700007299}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.009727268544867457, "steps": 5000, "crossings": 874, "elapsed_s": 4.306859500007704}
+{"job": "35um_rotating_negative_escaped_0deg_1000rf", "time_s": 0.009954909057522018, "steps": 10000, "crossings": 1751, "elapsed_s": 8.633857499982696}
+{"completed": "35um_rotating_negative_escaped_0deg_1000rf", "status": "retained_to_horizon", "escape_time_rf": null, "wall_seconds": 188.843396100041}
+starting 35um_standing_negative_escaped_0deg_1000rf
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.00022843153624654518, "steps": 5000, "crossings": 878, "elapsed_s": 4.0744116000132635}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0004566767415367595, "steps": 10000, "crossings": 1739, "elapsed_s": 8.10729220000212}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0007276948147072066, "steps": 5000, "crossings": 882, "elapsed_s": 4.039283899997827}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0009555212866768586, "steps": 10000, "crossings": 1742, "elapsed_s": 8.08495300001232}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.001227681856444663, "steps": 5000, "crossings": 877, "elapsed_s": 4.01847579999594}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.001456559968225253, "steps": 10000, "crossings": 1736, "elapsed_s": 8.057174199988367}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0017273252460668941, "steps": 5000, "crossings": 876, "elapsed_s": 4.036669399996754}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.001954677705323732, "steps": 10000, "crossings": 1756, "elapsed_s": 8.065851899998961}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.002226888710378358, "steps": 5000, "crossings": 882, "elapsed_s": 4.0347437000018544}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.002454691187032788, "steps": 10000, "crossings": 1760, "elapsed_s": 8.160886800003937}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0027270481309020467, "steps": 5000, "crossings": 887, "elapsed_s": 4.079448099975707}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0029554958587183866, "steps": 10000, "crossings": 1758, "elapsed_s": 8.070103799982462}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.003227738504633538, "steps": 5000, "crossings": 886, "elapsed_s": 4.068490600009682}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0034555796474641134, "steps": 10000, "crossings": 1772, "elapsed_s": 8.148030600015773}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.003728409686587832, "steps": 5000, "crossings": 877, "elapsed_s": 4.026561500009848}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.003955687215913201, "steps": 10000, "crossings": 1763, "elapsed_s": 8.028232700016815}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0042276407755609145, "steps": 5000, "crossings": 889, "elapsed_s": 4.051618500001496}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.004454874385068107, "steps": 10000, "crossings": 1780, "elapsed_s": 8.072256599989487}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.00472709167916254, "steps": 5000, "crossings": 888, "elapsed_s": 4.102743499999633}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.004955309009312486, "steps": 10000, "crossings": 1766, "elapsed_s": 8.147694399987813}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.005227711598771145, "steps": 5000, "crossings": 885, "elapsed_s": 4.07319880000432}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.005454698038215576, "steps": 10000, "crossings": 1778, "elapsed_s": 8.115286699990975}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.005727620566304258, "steps": 5000, "crossings": 886, "elapsed_s": 4.025464000005741}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.005954785128894492, "steps": 10000, "crossings": 1768, "elapsed_s": 8.053492000006372}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.006226728255796478, "steps": 5000, "crossings": 883, "elapsed_s": 4.0544507000013255}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.00645324108421995, "steps": 10000, "crossings": 1776, "elapsed_s": 8.107925399992382}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.006727137044425815, "steps": 5000, "crossings": 883, "elapsed_s": 4.086220299999695}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.006954732790041177, "steps": 10000, "crossings": 1763, "elapsed_s": 8.129906199988909}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.007228080911766844, "steps": 5000, "crossings": 883, "elapsed_s": 4.17554339999333}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0074548844648366025, "steps": 10000, "crossings": 1773, "elapsed_s": 8.238248400011798}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.0077268866634025895, "steps": 5000, "crossings": 882, "elapsed_s": 4.17408689999138}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.007954412746527691, "steps": 10000, "crossings": 1763, "elapsed_s": 8.221952399995644}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.00822757497580124, "steps": 5000, "crossings": 884, "elapsed_s": 4.100583899999037}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.008454330576532835, "steps": 10000, "crossings": 1765, "elapsed_s": 8.43302749999566}
+{"job": "35um_standing_negative_escaped_0deg_1000rf", "time_s": 0.008726993027592831, "steps": 5000, "crossings": 873, "elapsed_s": 4.036949700006517}
+{"completed": "35um_standing_negative_escaped_0deg_1000rf", "status": "escaped", "escape_time_rf": 892.5819928377451, "wall_seconds": 159.44912579999072}

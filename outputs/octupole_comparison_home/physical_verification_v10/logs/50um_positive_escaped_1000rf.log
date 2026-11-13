@@ -1,0 +1,92 @@
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+
+{
+  "field_loaded": {
+    "mesh_um": 50,
+    "mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "sector_solution_sha256": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "element_degree": 4,
+    "full_mesh_triangles": 319956,
+    "mapping_error_m": 5.260900092699444e-15,
+    "loaded_saved_p4_solution": true,
+    "new_fem_solve": false
+  },
+  "start_time": "2026-11-13T08:38:01+0300"
+}
+starting 50um_rotating_positive_escaped_0deg_1000rf
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.00023436934934162242, "steps": 5000, "crossings": 614, "elapsed_s": 4.137582800001837}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0004679637504887823, "steps": 10000, "crossings": 1242, "elapsed_s": 8.283947299991269}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0007341095200823969, "steps": 5000, "crossings": 626, "elapsed_s": 4.1411905999993905}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.000967820567127886, "steps": 10000, "crossings": 1259, "elapsed_s": 8.258092400006717}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0012337584394735673, "steps": 5000, "crossings": 630, "elapsed_s": 4.249425699992571}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0014684140075675106, "steps": 10000, "crossings": 1252, "elapsed_s": 8.372731100011151}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0017334036633507557, "steps": 5000, "crossings": 640, "elapsed_s": 4.2180793000152335}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0019674873612616876, "steps": 10000, "crossings": 1274, "elapsed_s": 8.538987900014035}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0022343196915580806, "steps": 5000, "crossings": 627, "elapsed_s": 4.163144799997099}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.002467716526306854, "steps": 10000, "crossings": 1257, "elapsed_s": 8.327776499994798}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.002733915763185245, "steps": 5000, "crossings": 621, "elapsed_s": 4.085276199999498}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.002968204102566396, "steps": 10000, "crossings": 1243, "elapsed_s": 8.290976199990837}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.00323381498048734, "steps": 5000, "crossings": 633, "elapsed_s": 4.115397999994457}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.003467639535492521, "steps": 10000, "crossings": 1267, "elapsed_s": 8.365825400018366}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0037341386227841044, "steps": 5000, "crossings": 636, "elapsed_s": 4.129659600002924}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.003968061220470243, "steps": 10000, "crossings": 1267, "elapsed_s": 8.39698839999619}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.004234199367090272, "steps": 5000, "crossings": 633, "elapsed_s": 4.167682300001616}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.004468049692692586, "steps": 10000, "crossings": 1266, "elapsed_s": 8.311929300019983}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.004733867648144223, "steps": 5000, "crossings": 631, "elapsed_s": 4.132963299984112}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.004968066369818343, "steps": 10000, "crossings": 1260, "elapsed_s": 8.302369299985003}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.005233462489561314, "steps": 5000, "crossings": 628, "elapsed_s": 4.143115499988198}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.0054679478950428835, "steps": 10000, "crossings": 1253, "elapsed_s": 8.3295290999813}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.00573282847129127, "steps": 5000, "crossings": 644, "elapsed_s": 4.346067600010429}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.00596638635611052, "steps": 10000, "crossings": 1281, "elapsed_s": 8.471376400004374}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.006234000957130139, "steps": 5000, "crossings": 626, "elapsed_s": 4.101922600006219}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.006468562804007623, "steps": 10000, "crossings": 1253, "elapsed_s": 8.176586599991424}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.006734518330382149, "steps": 5000, "crossings": 634, "elapsed_s": 4.149029599997448}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.006968262673712208, "steps": 10000, "crossings": 1278, "elapsed_s": 8.286458399990806}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.007234427670981578, "steps": 5000, "crossings": 623, "elapsed_s": 4.11791830000584}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.007468885999249085, "steps": 10000, "crossings": 1259, "elapsed_s": 8.226820900017628}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.007733926386540902, "steps": 5000, "crossings": 629, "elapsed_s": 4.08886670001084}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.007968108015402977, "steps": 10000, "crossings": 1271, "elapsed_s": 8.213511200010544}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.008233632521575397, "steps": 5000, "crossings": 640, "elapsed_s": 4.094007299980149}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.008467646115365096, "steps": 10000, "crossings": 1270, "elapsed_s": 8.341283899993869}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.008732897353823226, "steps": 5000, "crossings": 642, "elapsed_s": 4.235343700012891}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.008967557544021511, "steps": 10000, "crossings": 1262, "elapsed_s": 8.4081268000009}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.00923426005838272, "steps": 5000, "crossings": 639, "elapsed_s": 4.191803200024879}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.009468343324152936, "steps": 10000, "crossings": 1270, "elapsed_s": 8.406923200003803}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.009733812461032405, "steps": 5000, "crossings": 630, "elapsed_s": 4.194821800017962}
+{"job": "50um_rotating_positive_escaped_0deg_1000rf", "time_s": 0.00996788185724682, "steps": 10000, "crossings": 1262, "elapsed_s": 8.30929269999615}
+{"completed": "50um_rotating_positive_escaped_0deg_1000rf", "status": "retained_to_horizon", "escape_time_rf": null, "wall_seconds": 178.15840149999713}
+starting 50um_standing_positive_escaped_0deg_1000rf
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.00023459970489593068, "steps": 5000, "crossings": 609, "elapsed_s": 3.849854200001573}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.00046837552429441776, "steps": 10000, "crossings": 1249, "elapsed_s": 7.711526500002947}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0007343113948853215, "steps": 5000, "crossings": 613, "elapsed_s": 3.884805999987293}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0009681944693404396, "steps": 10000, "crossings": 1245, "elapsed_s": 7.780556699988665}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0012344167548313798, "steps": 5000, "crossings": 619, "elapsed_s": 3.942163100000471}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0014681026322625355, "steps": 10000, "crossings": 1267, "elapsed_s": 7.87438409999595}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0017340854431841459, "steps": 5000, "crossings": 617, "elapsed_s": 3.7978294999920763}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.001967865161790232, "steps": 10000, "crossings": 1253, "elapsed_s": 7.660732599993935}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.002233885546876024, "steps": 5000, "crossings": 625, "elapsed_s": 3.8559187999926507}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.002467757248975365, "steps": 10000, "crossings": 1267, "elapsed_s": 7.701883999980055}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0027340056917913714, "steps": 5000, "crossings": 633, "elapsed_s": 3.8729498999891803}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0029680390890150163, "steps": 10000, "crossings": 1274, "elapsed_s": 7.777056299994001}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0032340394907373164, "steps": 5000, "crossings": 645, "elapsed_s": 3.864528200007044}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0034683525542931397, "steps": 10000, "crossings": 1286, "elapsed_s": 7.7347085000074}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0037341312299607674, "steps": 5000, "crossings": 638, "elapsed_s": 3.886705200013239}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.003967576665160228, "steps": 10000, "crossings": 1278, "elapsed_s": 7.745670800009975}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.004234403730083027, "steps": 5000, "crossings": 633, "elapsed_s": 3.8509489000134636}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.004468420764116368, "steps": 10000, "crossings": 1265, "elapsed_s": 7.675558699993417}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.004733514294058718, "steps": 5000, "crossings": 644, "elapsed_s": 4.031169099995168}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.004966952039634011, "steps": 10000, "crossings": 1281, "elapsed_s": 7.995595000014873}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.00523401223345786, "steps": 5000, "crossings": 632, "elapsed_s": 3.9067614999949}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0054675898277233214, "steps": 10000, "crossings": 1272, "elapsed_s": 7.827340099989669}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.005733532616327744, "steps": 5000, "crossings": 646, "elapsed_s": 3.9223742999893147}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.005967186229352553, "steps": 10000, "crossings": 1283, "elapsed_s": 7.9901097000110894}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.006233406086534781, "steps": 5000, "crossings": 637, "elapsed_s": 3.9885724000050686}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.006467453459214491, "steps": 10000, "crossings": 1272, "elapsed_s": 7.951261600013822}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.006733916265225505, "steps": 5000, "crossings": 642, "elapsed_s": 3.996657099982258}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.006968468566886277, "steps": 10000, "crossings": 1276, "elapsed_s": 8.077874699985841}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.007234200803245972, "steps": 5000, "crossings": 621, "elapsed_s": 3.971027600025991}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.0074686651989397355, "steps": 10000, "crossings": 1255, "elapsed_s": 8.108485200005816}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.007733938841188431, "steps": 5000, "crossings": 625, "elapsed_s": 4.101846800011117}
+{"job": "50um_standing_positive_escaped_0deg_1000rf", "time_s": 0.007968113410469203, "steps": 10000, "crossings": 1259, "elapsed_s": 8.020611200015992}
+{"completed": "50um_standing_positive_escaped_0deg_1000rf", "status": "escaped", "escape_time_rf": 800.6034788744788, "wall_seconds": 134.3150706999586}

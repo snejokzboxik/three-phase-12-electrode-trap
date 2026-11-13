@@ -1,0 +1,67 @@
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+
+{
+  "field_loaded": {
+    "mesh_um": 35,
+    "mesh_sha256": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "sector_solution_sha256": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "element_degree": 4,
+    "full_mesh_triangles": 647484,
+    "mapping_error_m": 5.439456160360122e-15,
+    "loaded_saved_p4_solution": true,
+    "new_fem_solve": false
+  },
+  "start_time": "2026-11-13T08:44:26+0300"
+}
+starting 35um_rotating_early_az22p5_dplus_0deg_1000rf
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.00022764505586512796, "steps": 5000, "crossings": 877, "elapsed_s": 4.298780699988129}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0004551455778291156, "steps": 10000, "crossings": 1758, "elapsed_s": 8.604273300006753}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0007273151418332963, "steps": 5000, "crossings": 874, "elapsed_s": 4.299222500005271}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0009544631346410938, "steps": 10000, "crossings": 1764, "elapsed_s": 8.629733100009616}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0012275661476992812, "steps": 5000, "crossings": 873, "elapsed_s": 4.319535799993901}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0014548243476955889, "steps": 10000, "crossings": 1746, "elapsed_s": 8.6093661999912}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0017272539554698471, "steps": 5000, "crossings": 878, "elapsed_s": 4.394547199975932}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0019550761576644384, "steps": 10000, "crossings": 1744, "elapsed_s": 8.707769199972972}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.002227688860339154, "steps": 5000, "crossings": 882, "elapsed_s": 4.285354399995413}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0024548379948281327, "steps": 10000, "crossings": 1751, "elapsed_s": 8.723365399986506}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0027275738248956627, "steps": 5000, "crossings": 883, "elapsed_s": 4.287964499992086}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0029545628896526766, "steps": 10000, "crossings": 1771, "elapsed_s": 8.64342979999492}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.003227876218026674, "steps": 5000, "crossings": 868, "elapsed_s": 4.29956429998856}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.003455700891362114, "steps": 10000, "crossings": 1758, "elapsed_s": 8.60899489998701}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0037274821631413328, "steps": 5000, "crossings": 874, "elapsed_s": 4.286643899977207}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.003955563158790293, "steps": 10000, "crossings": 1750, "elapsed_s": 8.612248999997973}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.004227315443638581, "steps": 5000, "crossings": 885, "elapsed_s": 4.541223600012017}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.004454192252514163, "steps": 10000, "crossings": 1737, "elapsed_s": 8.903865000000224}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.004727088476334534, "steps": 5000, "crossings": 892, "elapsed_s": 4.330176699993899}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0049538703525573045, "steps": 10000, "crossings": 1779, "elapsed_s": 8.711066299991217}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.005227785649857645, "steps": 5000, "crossings": 871, "elapsed_s": 4.70034010001109}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.005454236223486711, "steps": 10000, "crossings": 1756, "elapsed_s": 9.026416900014738}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0057271649696878655, "steps": 5000, "crossings": 872, "elapsed_s": 4.289357900008326}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.005954276688421993, "steps": 10000, "crossings": 1754, "elapsed_s": 8.538507699995534}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.006226907291522067, "steps": 5000, "crossings": 884, "elapsed_s": 4.563496699993266}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.006455163635775198, "steps": 10000, "crossings": 1751, "elapsed_s": 9.132130899990443}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.006726906699276666, "steps": 5000, "crossings": 888, "elapsed_s": 4.314730299985968}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.006954015765648357, "steps": 10000, "crossings": 1767, "elapsed_s": 8.600976799993077}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.007227152898913782, "steps": 5000, "crossings": 874, "elapsed_s": 4.261660099989967}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.007453777321001218, "steps": 10000, "crossings": 1765, "elapsed_s": 8.607228900014888}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.007728003262707289, "steps": 5000, "crossings": 869, "elapsed_s": 4.2731443000084255}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.007955141353832214, "steps": 10000, "crossings": 1751, "elapsed_s": 8.545040800003335}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.008227733021504086, "steps": 5000, "crossings": 882, "elapsed_s": 4.315168000000995}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.008455214054319761, "steps": 10000, "crossings": 1752, "elapsed_s": 8.584059200016782}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.008726827298322843, "steps": 5000, "crossings": 895, "elapsed_s": 4.276145000010729}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.008954830205423373, "steps": 10000, "crossings": 1761, "elapsed_s": 8.53038710000692}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.009227117010285165, "steps": 5000, "crossings": 890, "elapsed_s": 4.41565820001415}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.009454283658819557, "steps": 10000, "crossings": 1778, "elapsed_s": 8.676598599995486}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.009727080979193987, "steps": 5000, "crossings": 872, "elapsed_s": 4.269085299980361}
+{"job": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "time_s": 0.00995476913778702, "steps": 10000, "crossings": 1763, "elapsed_s": 8.655372099980013}
+{"completed": "35um_rotating_early_az22p5_dplus_0deg_1000rf", "status": "retained_to_horizon", "escape_time_rf": null, "wall_seconds": 190.7731137999508}
+starting 35um_standing_early_az22p5_dplus_0deg_1000rf
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.00022776443638173414, "steps": 5000, "crossings": 884, "elapsed_s": 4.091365200001746}
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0004546446566568677, "steps": 10000, "crossings": 1769, "elapsed_s": 8.159900300001027}
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0007279470277932224, "steps": 5000, "crossings": 860, "elapsed_s": 4.15661900001578}
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0009548691831407558, "steps": 10000, "crossings": 1754, "elapsed_s": 8.2395383999974}
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0012277705572618326, "steps": 5000, "crossings": 880, "elapsed_s": 4.0548756000061985}
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0014548630992205869, "steps": 10000, "crossings": 1760, "elapsed_s": 8.199663999985205}
+{"job": "35um_standing_early_az22p5_dplus_0deg_1000rf", "time_s": 0.0017281148683330905, "steps": 5000, "crossings": 864, "elapsed_s": 3.9810115000000224}
+{"completed": "35um_standing_early_az22p5_dplus_0deg_1000rf", "status": "escaped", "escape_time_rf": 185.49130684796577, "wall_seconds": 33.29512870000326}

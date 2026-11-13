@@ -60,7 +60,8 @@
     {"label":"negative_retained","azimuth_deg":9.60205078125,"direction":-1,"phase_deg":0.0,"x_m":0.0009859900673043303,"y_m":0.00016680403825208374,"vx_m_s":10.362563487056653,"vy_m_s":-61.253820813422344},
     {"label":"negative_escaped","azimuth_deg":9.6240234375,"direction":-1,"phase_deg":0.0,"x_m":0.0009859260262543212,"y_m":0.00016718214843207293,"vx_m_s":10.386053270555294,"vy_m_s":-61.24984231593841},
     {"label":"positive_retained","azimuth_deg":10.26123046875,"direction":1,"phase_deg":0.0,"x_m":0.000984005800268158,"y_m":0.00017813642254918633,"vx_m_s":-11.066578527513759,"vy_m_s":61.13054985815605},
-    {"label":"positive_escaped","azimuth_deg":10.283203125,"direction":1,"phase_deg":0.0,"x_m":0.000983937413449219,"y_m":0.0001785137709389975,"vx_m_s":-11.090020985425046,"vy_m_s":61.12630138335677}
+    {"label":"positive_escaped","azimuth_deg":10.283203125,"direction":1,"phase_deg":0.0,"x_m":0.000983937413449219,"y_m":0.0001785137709389975,"vx_m_s":-11.090020985425046,"vy_m_s":61.12630138335677},
+    {"label":"v8_phase_sensitive_dplus","azimuth_deg":10.272215234375,"direction":1,"phase_deg":45.0,"x_m":0.0009839716298106628,"y_m":0.0001783250731886805,"vx_m_s":-11.078298293108869,"vy_m_s":61.12842704662891}
   ],
   "initial_rf_phases_deg": [0.0, 45.0, 90.0, 180.0, 315.0],
   "phase_expansion_policy": "phase 0 pilot first; add phase points only for early/transition cases and any direct-field disagreement",

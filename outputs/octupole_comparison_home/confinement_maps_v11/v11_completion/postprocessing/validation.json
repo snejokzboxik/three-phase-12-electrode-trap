@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "baseline",
+    "kind": "xy",
+    "directory": "outputs/octupole_comparison_home/confinement_maps_v11/xy/4ceec3a67c8fdfcd",
+    "initial": 915,
+    "retained": 751,
+    "escaped": 164,
+    "numerical_error": 0,
+    "allow_numerical_errors": false
+  },
+  {
+    "stage": "baseline",
+    "kind": "xy",
+    "directory": "outputs/octupole_comparison_home/confinement_maps_v11/xy/7c854b0d1f8f059f",
+    "initial": 915,
+    "retained": 795,
+    "escaped": 120,
+    "numerical_error": 0,
+    "allow_numerical_errors": false
+  },
+  {
+    "stage": "phase90",
+    "kind": "xy",
+    "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase90_21",
+    "initial": 915,
+    "retained": 871,
+    "escaped": 44,
+    "numerical_error": 0,
+    "allow_numerical_errors": false
+  }
+]

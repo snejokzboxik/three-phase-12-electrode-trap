@@ -1,0 +1,39 @@
+{
+  "archives": [
+    {
+      "archive": "checkpoints_v11.zip",
+      "status": "verified",
+      "sha256": "d8b021e1924eb781c0925d739942bb07c45a09d1fac378254a143bedaac139c6",
+      "members": 7937
+    },
+    {
+      "archive": "checkpoints_phase45.zip",
+      "status": "verified",
+      "sha256": "bec76699bd94031308cf99d4620990c250f576c5a76c2bf10cbe8aadc6f76e37",
+      "members": 8086
+    }
+  ],
+  "sources": [
+    {
+      "path": "xy/4ceec3a67c8fdfcd",
+      "mesh_um": 50,
+      "phase_deg": 0.0,
+      "verified_states": 915,
+      "segment_rows": 7770
+    },
+    {
+      "path": "xy/7c854b0d1f8f059f",
+      "mesh_um": 50,
+      "phase_deg": 45.0,
+      "verified_states": 915,
+      "segment_rows": 8086
+    },
+    {
+      "path": "numerical_checks/h35_edge_equal_phase0",
+      "mesh_um": 35,
+      "phase_deg": 0.0,
+      "verified_states": 48,
+      "segment_rows": 164
+    }
+  ]
+}

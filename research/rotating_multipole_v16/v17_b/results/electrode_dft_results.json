@@ -1,0 +1,65 @@
+{
+  "status": "ANALYTIC_DFT_AND_WAVEFORM_CHECK_ONLY",
+  "N": 12,
+  "angles_rad": [
+    0.0,
+    0.5235987755982988,
+    1.0471975511965976,
+    1.5707963267948966,
+    2.0943951023931953,
+    2.6179938779914944,
+    3.141592653589793,
+    3.665191429188092,
+    4.1887902047863905,
+    4.71238898038469,
+    5.235987755982989,
+    5.759586531581287
+  ],
+  "complex_mode_results": {
+    "3": {
+      "dominant_dft_index": 3,
+      "amplitude": 1.0,
+      "signed_aliases": "m+12k",
+      "examples": [
+        3,
+        -9
+      ],
+      "max_other_dft_amplitude": 2.120612160420306e-16
+    },
+    "4": {
+      "dominant_dft_index": 4,
+      "amplitude": 1.0,
+      "signed_aliases": "m+12k",
+      "examples": [
+        4,
+        -8
+      ],
+      "max_other_dft_amplitude": 3.1455361616843557e-16
+    }
+  },
+  "waveform_example": {
+    "harmonics": [
+      {
+        "m": 3,
+        "amplitude_V": 150.0,
+        "omega": 1.0,
+        "delta": 0.2
+      },
+      {
+        "m": 4,
+        "amplitude_V": 100.0,
+        "omega": 1.0,
+        "delta": -0.4
+      }
+    ],
+    "sampled_peak_abs_V": 249.82490789243653,
+    "conservative_bound_V": 250.0,
+    "limit_V": 250,
+    "passes_sampled_bound": true
+  },
+  "limitations": [
+    "This is terminal-voltage synthesis only; not a field map or electrode transfer calibration.",
+    "Actual multipole coefficients, cross-harmonic contamination and phase lag require the electrode CAD, circuit response and FEM.",
+    "Signed aliasing means m=4 on 12 samples is indistinguishable from m=-8 at the electrode samples."
+  ]
+}

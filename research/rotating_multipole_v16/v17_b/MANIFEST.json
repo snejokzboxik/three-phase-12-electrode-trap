@@ -1,0 +1,227 @@
+{
+  "project": "V17B controlled synchronization and localization of electric multipoles",
+  "status": "PARTIAL",
+  "created_utc": "2026-11-18",
+  "completed": [
+    "signed charge moment expansion and direct sum check",
+    "RO3 neutral dipole exact centered lock",
+    "full 6D local Jacobian and independent DOP853 monodromy",
+    "1000-RF small-neighborhood basin pilot",
+    "12-electrode DFT alias check and terminal waveform bound"
+  ],
+  "not_run": [
+    "adaptive Arnold tongues and nonlinear continuation",
+    "standing-field and two-direction basin maps",
+    "physical calibration of new multipole geometry",
+    "FEM",
+    "3D rigid-body dynamics",
+    "broad physical parameterization and applications validation"
+  ],
+  "github": {
+    "status": "PUSH_BLOCKED_AUTH",
+    "local_snapshot_commit": "0b6a66577edf5dc51709171c4faeaa748446c6aa",
+    "branch": "research/v17b"
+  },
+  "files": [
+    {
+      "path": "__init__.py",
+      "bytes": 90,
+      "sha256": "990ffcdd22ab9a900a4beb51a6ca186b3457f9b9deadb04d895fa15b915d02c4"
+    },
+    {
+      "path": "analyze.py",
+      "bytes": 8749,
+      "sha256": "f26d25291aff59a51899e5ffca843fdb960ad4f7fbd94594bef47c17489da136"
+    },
+    {
+      "path": "ARNOLD_TONGUES_RU.md",
+      "bytes": 1594,
+      "sha256": "01d38cdc3fe5c62f4f33f919db7c83d76823f60651c67f9ee54c8e32dce133ef"
+    },
+    {
+      "path": "basin_pilot.py",
+      "bytes": 4732,
+      "sha256": "e42089fc3ecc761599d1b8eee8e5606ca083503dc12f687952ab3d394812333f"
+    },
+    {
+      "path": "build_reports.py",
+      "bytes": 46752,
+      "sha256": "cc0c7e9f5d38a3c5bad9c3453575021d5aaf247694d85a49822dd9c9db289282"
+    },
+    {
+      "path": "CENTRAL_LOCALIZATION_RU.md",
+      "bytes": 2363,
+      "sha256": "ae14fcce38bf1cb85a2b440005fa6c602d252ae5790655954157d8af4382a01a"
+    },
+    {
+      "path": "CHARGE_MOMENT_THEORY_RU.md",
+      "bytes": 3495,
+      "sha256": "88549a597e94a60e20c273059cc755c79a354d1456af8119c6b9f2ffb723343e"
+    },
+    {
+      "path": "DIPOLE_DYNAMICS_RU.md",
+      "bytes": 3562,
+      "sha256": "4bc9ea778e1663d234ce6760370f1be0436f183e0b02ced87a0d46df2ddd19d1"
+    },
+    {
+      "path": "ELECTRODE_PHASE_SYNTHESIS_RU.md",
+      "bytes": 1707,
+      "sha256": "7813900f0c9d592416e6804bf9623328b20fb8f72c53506f49bf35a256e75b66"
+    },
+    {
+      "path": "electrode_synthesis.py",
+      "bytes": 2511,
+      "sha256": "cb0375bdf2a25a0a6eb9e45e06d04a31ebdf71b816ba5879572f6279da2ff55a"
+    },
+    {
+      "path": "FEM_VALIDATION_RU.md",
+      "bytes": 1253,
+      "sha256": "9809f9a1e89487b836335db763a429165c50664a3f027791885d0ae45fa4d8f4"
+    },
+    {
+      "path": "figures/basin_local_pilot.png",
+      "bytes": 51828,
+      "sha256": "aee2bce7e0b2906b27481a2c9bd4694c500e9beaa67aefc9fef3edc94014e4ba"
+    },
+    {
+      "path": "figures/electrode_dft_alias.png",
+      "bytes": 41122,
+      "sha256": "fa7cf3ef594ce6f8aa7983f74f89988d5c727c9f582caaac3ba4b4172320489b"
+    },
+    {
+      "path": "figures/full_6d_spectrum.png",
+      "bytes": 36871,
+      "sha256": "29e6d209293f0ce222dd3cbc92fc46a2015884358380d1e5c908dd7806402a04"
+    },
+    {
+      "path": "figures/joint_stability_map.png",
+      "bytes": 39486,
+      "sha256": "8000e9b28ff9dc5c72f5671e8be66fe75c1a6c300245f33f4929bfd427ac3caf"
+    },
+    {
+      "path": "figures/multipole_selection_rules.png",
+      "bytes": 33481,
+      "sha256": "f675e1becd666e6a51157531c7a332382119012d71fc87d2beaf30970588beac"
+    },
+    {
+      "path": "figures/rotational_locking_thresholds.png",
+      "bytes": 59230,
+      "sha256": "a607e17df09fc47b8bfe6a54987cd5a571c69508c72c30b31ef079a791c8356b"
+    },
+    {
+      "path": "figures/size_scaling.png",
+      "bytes": 96614,
+      "sha256": "b037be822ff45885605087254a6761b61a8caace1d23de89c8250c8e76bb8109"
+    },
+    {
+      "path": "FREQUENCY_CONTROL_RU.md",
+      "bytes": 1801,
+      "sha256": "2b555b0b358bd48d5ab047d69a894efee525629ecad8397250637b560fde0a09"
+    },
+    {
+      "path": "GITHUB_PUBLICATION_RU.md",
+      "bytes": 1864,
+      "sha256": "c8cf91fe1eb58dc2a06772b23851a3972a1e06097e1a860aa43a8e4fb8874234"
+    },
+    {
+      "path": "HANDOFF_TO_V17A.md",
+      "bytes": 1901,
+      "sha256": "f8326df5ea665e5941c3e9cd5fd9cb1a85a9928cfda3171cdc255d2df37bc393"
+    },
+    {
+      "path": "LITERATURE_REVIEW_RU.md",
+      "bytes": 7211,
+      "sha256": "514f17a4d890ec12576f6b129dd7bddef020a2ef75a628f6f89f8b3552e09526"
+    },
+    {
+      "path": "model.py",
+      "bytes": 6309,
+      "sha256": "f47c92263095d3bc3f9a2928c89e12d0e434c47e7c8c6df5115822266aa21f06"
+    },
+    {
+      "path": "NOVELTY_ASSESSMENT_RU.md",
+      "bytes": 2587,
+      "sha256": "b090dcae03060571a15710156ee4523d587628b9ec89bc5a8067b0813f460549"
+    },
+    {
+      "path": "NUMERICAL_VALIDATION_RU.md",
+      "bytes": 1873,
+      "sha256": "d157d0fcf4ae8887ea742f6c4fd423010e661658dc8fa089302ac2a44376ccd6"
+    },
+    {
+      "path": "PHYSICAL_REALIZABILITY_RU.md",
+      "bytes": 2674,
+      "sha256": "0b2f5213413ca11534769c994befc08401a0ead85025b75c3ce7ab024ca4b83b"
+    },
+    {
+      "path": "plot_basin_pilot.py",
+      "bytes": 1090,
+      "sha256": "1620db2b72257a8ddb48d94de2251109841441720aeb55a24f6917c75d18ba64"
+    },
+    {
+      "path": "POTENTIAL_APPLICATIONS_RU.md",
+      "bytes": 1219,
+      "sha256": "87df7dca9086eeab3108db39d1e6bda9fb6359af37dd9ae90904c5699f1b92a4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1833,
+      "sha256": "bf87b9519370fcb428320a7e2a27624396925c96ba88dbd24e0e3fba9a9dfce8"
+    },
+    {
+      "path": "REPORT_RU.md",
+      "bytes": 5013,
+      "sha256": "83d6e482e8b0984cf3dab3ee4a34713a25413d94466ef2b44ccead65d0912150"
+    },
+    {
+      "path": "results/basin_local_checkpoint.json",
+      "bytes": 4553,
+      "sha256": "e655b145a90a36fee916632eab220bcef288039d1ec727a1801081dc026ee37a"
+    },
+    {
+      "path": "results/basin_local_summary.json",
+      "bytes": 4593,
+      "sha256": "e025c5bdf27e4a5564a081a232e078da0625a192ab8b68edaad010405c10bf5c"
+    },
+    {
+      "path": "results/basin_pilot_checkpoint.json",
+      "bytes": 1102,
+      "sha256": "63323394f080bb5a4896335371be295dd5b6a7703ad60af41894109f4968618b"
+    },
+    {
+      "path": "results/central_ro3_results.json",
+      "bytes": 4641,
+      "sha256": "3aa4094b8c1b9d821110a3728f78605db5ecb2c0f4f19c414125a823fae74518"
+    },
+    {
+      "path": "results/electrode_dft_results.json",
+      "bytes": 1636,
+      "sha256": "fa951175955fe35c4cedf61a7997772fe30558a2dae40380dcbb33434d8e0ce9"
+    },
+    {
+      "path": "ROTATIONAL_SWITCHING_RU.md",
+      "bytes": 1597,
+      "sha256": "0b806d853524c35766ee1d2572a20663d186a9c1da6a2c018475b41b2e99ea2c"
+    },
+    {
+      "path": "SYNCHRONIZATION_MAPS_RU.md",
+      "bytes": 2130,
+      "sha256": "6fb42fd0af2db5f9c78aae0db4fc32491ca85c57a57724e395af1ebd5994ed85"
+    },
+    {
+      "path": "tests/test_dynamics.py",
+      "bytes": 1150,
+      "sha256": "b62d786e70c452a244fa5a4a1eb96ae2b03827b369cff7b74345d0014f1c2af8"
+    },
+    {
+      "path": "tests/test_moments.py",
+      "bytes": 607,
+      "sha256": "fcfbe654dad59df157b5c04076e44ec815e896645c1a3c4bc2278a0f03026183"
+    },
+    {
+      "path": "THREE_DIMENSIONAL_DYNAMICS_RU.md",
+      "bytes": 855,
+      "sha256": "7e26ac4c5521fc84b4af4bbc7534b67550da738de2029d29dbd382019d8d22d2"
+    }
+  ]
+}

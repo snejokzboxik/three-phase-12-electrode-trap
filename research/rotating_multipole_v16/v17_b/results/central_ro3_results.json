@@ -1,0 +1,203 @@
+{
+  "status": "COMPLETED_ANALYTIC_SLICE; broader V17B work PARTIAL",
+  "normalization": {
+    "q_ref": 2.0,
+    "moments_definition": "C_j=sum(q_i/q_ref)*(s_i/R)^j",
+    "C0": "0j",
+    "charge_sum": 0.0
+  },
+  "model": {
+    "field": "pure travelling RO3 (hexapole), V=kappa Re[z^3 exp(-i omega t)]",
+    "charges": [
+      [
+        1.0,
+        0.1
+      ],
+      [
+        -1.0,
+        -0.1
+      ]
+    ],
+    "a_over_R": 0.1,
+    "ell_over_R": 0.2,
+    "kappa": 0.03,
+    "omega": 1.0,
+    "inertia": 0.003333333333333334,
+    "gamma_trans": 0.05,
+    "gamma_rot": 0.02
+  },
+  "moments": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0010000000000000002,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      1.0000000000000006e-05,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      1.0000000000000007e-07,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "exact_sync": {
+    "exists": true,
+    "omega_frame": 0.3333333333333333,
+    "phase": 0.9640329112475025,
+    "phase_eff": 2.8920987337425075,
+    "lab_spin": 0.3333333333333333,
+    "gamma_rot_critical": 0.081,
+    "rot_stiffness": 0.07849203781276161,
+    "inertia": 0.003333333333333334,
+    "c_m_abs": 0.0010000000000000002
+  },
+  "b_abs": 0.009,
+  "omega_frame": 0.3333333333333333,
+  "jacobian_eigenvalues": [
+    [
+      -0.02499999999999774,
+      0.34246869024175114
+    ],
+    [
+      -0.02499999999999774,
+      -0.34246869024175114
+    ],
+    [
+      -0.025000000000002222,
+      0.322005308071655
+    ],
+    [
+      -0.025000000000002222,
+      -0.322005308071655
+    ],
+    [
+      -0.01,
+      0.2799857814474899
+    ],
+    [
+      -0.01,
+      -0.2799857814474899
+    ]
+  ],
+  "max_real_part": -0.01,
+  "monodromy_period": 18.84955592153876,
+  "monodromy_endpoint_residual": 1.9895196601282805e-13,
+  "monodromy_multipliers": [
+    [
+      0.6149964839170377,
+      0.1069600960406815
+    ],
+    [
+      0.6149964839170377,
+      -0.1069600960406815
+    ],
+    [
+      0.6100517883141199,
+      0.1322798282055414
+    ],
+    [
+      0.6100517883141199,
+      -0.1322798282055414
+    ],
+    [
+      0.4435865608048455,
+      0.6993948305553134
+    ],
+    [
+      0.4435865608048455,
+      -0.6993948305553134
+    ]
+  ],
+  "monodromy_vs_exp_sT_max_matching_error": 2.9189791467935356e-14,
+  "validation": {
+    "multipole_direct_sum_max_abs_error": 6.938893903907228e-18,
+    "gradient_fd_max_abs_error": 5.049575395408429e-14,
+    "hessian_fd_max_abs_error": 2.040046340949335e-12
+  },
+  "order_parity_controls": [
+    {
+      "m": 1,
+      "C_m_minus_1_abs": 0.0,
+      "C_m_abs": 0.1,
+      "C_m_minus_2_abs": 0.0,
+      "center_force_zero": true,
+      "center_quadratic_localization": false
+    },
+    {
+      "m": 2,
+      "C_m_minus_1_abs": 0.1,
+      "C_m_abs": 0.0,
+      "C_m_minus_2_abs": 0.0,
+      "center_force_zero": false,
+      "center_quadratic_localization": false
+    },
+    {
+      "m": 3,
+      "C_m_minus_1_abs": 0.0,
+      "C_m_abs": 0.0010000000000000002,
+      "C_m_minus_2_abs": 0.1,
+      "center_force_zero": true,
+      "center_quadratic_localization": true
+    },
+    {
+      "m": 4,
+      "C_m_minus_1_abs": 0.0010000000000000002,
+      "C_m_abs": 0.0,
+      "C_m_minus_2_abs": 0.0,
+      "center_force_zero": false,
+      "center_quadratic_localization": false
+    },
+    {
+      "m": 5,
+      "C_m_minus_1_abs": 0.0,
+      "C_m_abs": 1.0000000000000006e-05,
+      "C_m_minus_2_abs": 0.0010000000000000002,
+      "center_force_zero": true,
+      "center_quadratic_localization": true
+    }
+  ],
+  "analytic_boundaries": {
+    "rot_lock_gamma_rot_critical": 0.081,
+    "com_boundary": "2|b| < omega_f*sqrt(omega_f^2+gamma_trans^2), for gamma_trans>0",
+    "com_zero_drag": "2|b| < omega_f^2",
+    "b": 0.009,
+    "omega_f": 0.3333333333333333,
+    "gamma_trans_at_COM_boundary": 0.0,
+    "map_example": {
+      "kappa3": 0.25,
+      "rot_lock_gamma_rot_critical": 0.675,
+      "b": 0.07500000000000001,
+      "gamma_trans_boundary": 0.3023059524536177
+    }
+  },
+  "limitations": [
+    "2D rigid-body point-charge multipole model only",
+    "ideal harmonic field; no electrode geometry, voltage calibration, FEM, gas-specific drag or thermal noise",
+    "one 1000-RF small-neighborhood pilot and one broad non-locking start; no basin-size map, RO/SO comparison or adaptive Arnold tongue survey",
+    "not a novelty claim"
+  ]
+}

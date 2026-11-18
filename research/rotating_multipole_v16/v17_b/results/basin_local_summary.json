@@ -1,0 +1,153 @@
+{
+  "status": "PILOT_1000_RF",
+  "n": 6,
+  "captured": 6,
+  "escaped": 0,
+  "not_captured": 0,
+  "failed": 0,
+  "capture_fraction": 1.0,
+  "wilson95": [
+    0.6096657120978346,
+    1.0
+  ],
+  "independent_seeds": [
+    17017,
+    29011,
+    48391
+  ],
+  "checkpoint": "C:\\Users\\snejochek\\Documents\\ChatGPT\\12electrodes\\rotating_multipole_v16\\v17_b\\results\\basin_local_checkpoint.json",
+  "trajectories": [
+    {
+      "id": "17017-0",
+      "seed": 17017,
+      "initial_index": 0,
+      "initial_time": 4.35664210338535,
+      "initial_state": [
+        0.001936856745139652,
+        -0.00025343038155940974,
+        -0.001225593817113394,
+        0.003733023825143675,
+        2.406058738322124,
+        0.33383818523142794
+      ],
+      "status": "CAPTURED",
+      "mean_spin_last5rf": 0.33333333333341986,
+      "lock_phase_slope": -3.1296924816694943e-16,
+      "lock_phase_wrapped_std": 5.266668111414478e-13,
+      "com_max_last5rf": 3.506064851453615e-69,
+      "body_clearance_min_last5rf": 0.9,
+      "nfev": 188747,
+      "wall_seconds": 12.135886192321777
+    },
+    {
+      "id": "17017-1",
+      "seed": 17017,
+      "initial_index": 1,
+      "initial_time": 3.895272924518051,
+      "initial_state": [
+        -0.0008526367261127363,
+        0.006475455791113751,
+        -0.0009794819025639402,
+        -0.0027493951525045103,
+        2.2265906129221955,
+        0.3178779168260451
+      ],
+      "status": "CAPTURED",
+      "mean_spin_last5rf": 0.3333333333338503,
+      "lock_phase_slope": 4.977704988515446e-16,
+      "lock_phase_wrapped_std": 4.5472470363232985e-13,
+      "com_max_last5rf": 3.1081008579681685e-69,
+      "body_clearance_min_last5rf": 0.9,
+      "nfev": 188747,
+      "wall_seconds": 10.07320761680603
+    },
+    {
+      "id": "29011-0",
+      "seed": 29011,
+      "initial_index": 0,
+      "initial_time": 0.8454332485355188,
+      "initial_state": [
+        -0.004385339132155688,
+        -0.005995927566808197,
+        -0.004469763780479672,
+        -0.0026452969612839085,
+        1.3092604486284083,
+        0.3445774128852248
+      ],
+      "status": "CAPTURED",
+      "mean_spin_last5rf": 0.33333333333333254,
+      "lock_phase_slope": 5.010364691199529e-16,
+      "lock_phase_wrapped_std": 4.5472470363232985e-13,
+      "com_max_last5rf": 3.6348088371790003e-69,
+      "body_clearance_min_last5rf": 0.9,
+      "nfev": 188747,
+      "wall_seconds": 10.021174430847168
+    },
+    {
+      "id": "29011-1",
+      "seed": 29011,
+      "initial_index": 1,
+      "initial_time": 3.1305345610488695,
+      "initial_state": [
+        -0.006956947970684637,
+        0.008811857245392773,
+        0.0015867172419432654,
+        -0.0035840699253578646,
+        2.0647091363614214,
+        0.3166890857097433
+      ],
+      "status": "CAPTURED",
+      "mean_spin_last5rf": 0.3333333333334196,
+      "lock_phase_slope": 4.874950164974235e-16,
+      "lock_phase_wrapped_std": 5.250185545978568e-13,
+      "com_max_last5rf": 3.327172169872964e-69,
+      "body_clearance_min_last5rf": 0.9,
+      "nfev": 188747,
+      "wall_seconds": 10.308077573776245
+    },
+    {
+      "id": "48391-0",
+      "seed": 48391,
+      "initial_index": 0,
+      "initial_time": 1.3661666951335933,
+      "initial_state": [
+        0.002985811446115578,
+        -0.0020486277387825307,
+        0.00330226971785673,
+        0.004313842110399761,
+        1.4429059946672416,
+        0.3143410352535157
+      ],
+      "status": "CAPTURED",
+      "mean_spin_last5rf": 0.3333333333338506,
+      "lock_phase_slope": 3.7044674245737975e-16,
+      "lock_phase_wrapped_std": 4.582908868034169e-13,
+      "com_max_last5rf": 3.7318765932292794e-69,
+      "body_clearance_min_last5rf": 0.9,
+      "nfev": 188747,
+      "wall_seconds": 10.696313381195068
+    },
+    {
+      "id": "48391-1",
+      "seed": 48391,
+      "initial_index": 1,
+      "initial_time": 0.2048598038859874,
+      "initial_state": [
+        0.009853792137286996,
+        0.009453168459087747,
+        -0.001151570898602846,
+        -0.0024345804547360075,
+        0.9468190594113319,
+        0.33206021099121064
+      ],
+      "status": "CAPTURED",
+      "mean_spin_last5rf": 0.33333333333384346,
+      "lock_phase_slope": 5.027725956810735e-16,
+      "lock_phase_wrapped_std": 4.5472470363232985e-13,
+      "com_max_last5rf": 2.580427207981612e-69,
+      "body_clearance_min_last5rf": 0.9,
+      "nfev": 188747,
+      "wall_seconds": 10.105391025543213
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "a_over_R": 0.1,
+    "ell_over_R": 0.2,
+    "kappa3": 0.03,
+    "omega": 1.0,
+    "gamma_trans": 0.05,
+    "gamma_rot": 0.02,
+    "inertia": 0.003333333333333334,
+    "rf_periods": 1000,
+    "rtol": 1e-09,
+    "atol": 1e-11,
+    "max_step": 0.15,
+    "seeds": [
+      17017,
+      29011,
+      48391
+    ],
+    "per_seed": 8
+  },
+  "trajectories": [
+    {
+      "id": "17017-0",
+      "seed": 17017,
+      "initial_index": 0,
+      "initial_time": 4.35664210338535,
+      "initial_state": [
+        0.00968428372569826,
+        -0.001267151907797047,
+        -0.007353562902680362,
+        0.02239814295086205,
+        2.348325563128207,
+        0.33711972256904316
+      ],
+      "status": "NOT_CAPTURED",
+      "mean_spin_last5rf": 0.0010872122318937047,
+      "lock_phase_slope": -0.997043062702351,
+      "lock_phase_wrapped_std": 1.8248029648808857,
+      "com_max_last5rf": 1.8119530396507338e-08,
+      "body_clearance_min_last5rf": 0.8999999818804696,
+      "nfev": 503300,
+      "wall_seconds": 27.634201049804688
+    }
+  ]
+}

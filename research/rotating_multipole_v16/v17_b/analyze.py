@@ -63,6 +63,10 @@ for m in range(1,6):
     cquad=C[m-2] if m>=2 else 0j
     orders.append({"m":m,"C_m_minus_1_abs":float(abs(cprev)),"C_m_abs":float(abs(cm)),
                    "C_m_minus_2_abs":float(abs(cquad)),"center_force_zero":bool(abs(cprev)<1e-14),
+                   "center_force_amplitude":float(m*kappa*abs(cprev)),
+                   "rotational_torque_amplitude":float(m*kappa*abs(cm)),
+                   "quadratic_COM_coefficient_abs":float(math.comb(m,2)*kappa*abs(cquad)) if m>=2 else 0.0,
+                   "centered_orientation_lock_possible":bool(abs(cprev)<1e-14 and abs(cm)>1e-14),
                    "center_quadratic_localization":bool(abs(cquad)>1e-14)})
 fig,ax=plt.subplots(figsize=(7.2,4.8))
 xx=np.arange(1,6); width=.34

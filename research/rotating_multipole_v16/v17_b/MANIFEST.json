@@ -6,12 +6,13 @@
     "signed charge moment expansion and direct sum check",
     "RO3 neutral dipole exact centered lock",
     "full 6D local Jacobian and independent DOP853 monodromy",
-    "1000-RF small-neighborhood basin pilot",
+    "1000-RF RO3 and SO3 local basin pilots",
+    "SO3 shooting, both directions, full Floquet monodromy and step-convergence check",
     "12-electrode DFT alias check and terminal waveform bound"
   ],
   "not_run": [
     "adaptive Arnold tongues and nonlinear continuation",
-    "standing-field and two-direction basin maps",
+    "SO4 standing octupole, switching and broad basin-size comparison",
     "physical calibration of new multipole geometry",
     "FEM",
     "3D rigid-body dynamics",
@@ -30,13 +31,13 @@
     },
     {
       "path": "analyze.py",
-      "bytes": 8749,
-      "sha256": "f26d25291aff59a51899e5ffca843fdb960ad4f7fbd94594bef47c17489da136"
+      "bytes": 9099,
+      "sha256": "f9356101754b7449d88385a0f8765c209603363a336dc79e6f7764b8c8981767"
     },
     {
       "path": "ARNOLD_TONGUES_RU.md",
-      "bytes": 1594,
-      "sha256": "01d38cdc3fe5c62f4f33f919db7c83d76823f60651c67f9ee54c8e32dce133ef"
+      "bytes": 1950,
+      "sha256": "652f4a5dc50f349a19753379a21f4e1a144a0338590459a2a455b8a99b3ae0b9"
     },
     {
       "path": "basin_pilot.py",
@@ -45,8 +46,8 @@
     },
     {
       "path": "build_reports.py",
-      "bytes": 46752,
-      "sha256": "cc0c7e9f5d38a3c5bad9c3453575021d5aaf247694d85a49822dd9c9db289282"
+      "bytes": 52050,
+      "sha256": "35b9f06cd114cd05d04438e3c18036122b0a262610bcb4884743a4b05df4e0ca"
     },
     {
       "path": "CENTRAL_LOCALIZATION_RU.md",
@@ -60,8 +61,8 @@
     },
     {
       "path": "DIPOLE_DYNAMICS_RU.md",
-      "bytes": 3562,
-      "sha256": "4bc9ea778e1663d234ce6760370f1be0436f183e0b02ced87a0d46df2ddd19d1"
+      "bytes": 4067,
+      "sha256": "90ea4effe6b557a24a9898e7bf29703278357ccc9204f31bbfb247900a667d47"
     },
     {
       "path": "ELECTRODE_PHASE_SYNTHESIS_RU.md",
@@ -82,6 +83,11 @@
       "path": "figures/basin_local_pilot.png",
       "bytes": 51828,
       "sha256": "aee2bce7e0b2906b27481a2c9bd4694c500e9beaa67aefc9fef3edc94014e4ba"
+    },
+    {
+      "path": "figures/basin_pilot_compare.png",
+      "bytes": 98133,
+      "sha256": "34e5816eee2407c01919813e6c53839ab538e55eb0cfc05188e2d221e28325d0"
     },
     {
       "path": "figures/electrode_dft_alias.png",
@@ -112,6 +118,11 @@
       "path": "figures/size_scaling.png",
       "bytes": 96614,
       "sha256": "b037be822ff45885605087254a6761b61a8caace1d23de89c8250c8e76bb8109"
+    },
+    {
+      "path": "figures/standing_so_locking.png",
+      "bytes": 153929,
+      "sha256": "7f4b181304a6139a517a8e58456c9a80d78a9d54afcb2da23fdf215077eb29ff"
     },
     {
       "path": "FREQUENCY_CONTROL_RU.md",
@@ -145,8 +156,8 @@
     },
     {
       "path": "NUMERICAL_VALIDATION_RU.md",
-      "bytes": 1873,
-      "sha256": "d157d0fcf4ae8887ea742f6c4fd423010e661658dc8fa089302ac2a44376ccd6"
+      "bytes": 2042,
+      "sha256": "3daac64b4ad8a8cd9e9e6290b4e747e06351c856c4469d9b379d35b125c09a1f"
     },
     {
       "path": "PHYSICAL_REALIZABILITY_RU.md",
@@ -155,8 +166,13 @@
     },
     {
       "path": "plot_basin_pilot.py",
-      "bytes": 1090,
-      "sha256": "1620db2b72257a8ddb48d94de2251109841441720aeb55a24f6917c75d18ba64"
+      "bytes": 3011,
+      "sha256": "832c4a56fcaa18399ff3540cb9cbc0a867a336295b44737d96b33e0ea3689865"
+    },
+    {
+      "path": "plot_standing.py",
+      "bytes": 1757,
+      "sha256": "2e0d7fd8809c2b921f0e77f0f87c91b109af78d6267a6adabb66d87a87533fa0"
     },
     {
       "path": "POTENTIAL_APPLICATIONS_RU.md",
@@ -165,13 +181,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1833,
-      "sha256": "bf87b9519370fcb428320a7e2a27624396925c96ba88dbd24e0e3fba9a9dfce8"
+      "bytes": 2170,
+      "sha256": "5c210bed57c863a77765c5b1919bc250ef8451af8b96c514add7a6f904153677"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 5013,
-      "sha256": "83d6e482e8b0984cf3dab3ee4a34713a25413d94466ef2b44ccead65d0912150"
+      "bytes": 5788,
+      "sha256": "c1235d0fa9987f878a77872eaa9ab575a3cd7ead7edb13e5ff7083381201ac8d"
     },
     {
       "path": "results/basin_local_checkpoint.json",
@@ -190,8 +206,8 @@
     },
     {
       "path": "results/central_ro3_results.json",
-      "bytes": 4641,
-      "sha256": "3aa4094b8c1b9d821110a3728f78605db5ecb2c0f4f19c414125a823fae74518"
+      "bytes": 5608,
+      "sha256": "0184f4c1574d1bd2a03e83631f9ea326cd545a093ca1f18bcfb1a8463d29b204"
     },
     {
       "path": "results/electrode_dft_results.json",
@@ -199,9 +215,39 @@
       "sha256": "fa951175955fe35c4cedf61a7997772fe30558a2dae40380dcbb33434d8e0ce9"
     },
     {
+      "path": "results/standing_basin_checkpoint.json",
+      "bytes": 9014,
+      "sha256": "5303e634e9c95b4e3671a6fd3557941b88227cd9ff05e5eb8d3c106e67b92cd0"
+    },
+    {
+      "path": "results/standing_basin_summary.json",
+      "bytes": 9275,
+      "sha256": "96b4cae52987351aa033305ae957703ab7c7d05820da0fd5446c5ea78e63f139"
+    },
+    {
+      "path": "results/standing_ro3_results.json",
+      "bytes": 5487,
+      "sha256": "e0dc25b92ab2aa38c4f1f9d90080683dc03b8dd474739a5579ec9f77ef6361d0"
+    },
+    {
       "path": "ROTATIONAL_SWITCHING_RU.md",
-      "bytes": 1597,
-      "sha256": "0b806d853524c35766ee1d2572a20663d186a9c1da6a2c018475b41b2e99ea2c"
+      "bytes": 2157,
+      "sha256": "14e1f143a3e39a8e52b3cd66f98748ee9cff04c5079233229cacd8e8c24a4b97"
+    },
+    {
+      "path": "standing_basin.py",
+      "bytes": 4830,
+      "sha256": "c17a612e98996f585d18f7f67eb93a13b42658836179e6d081bddb6d04ee2f7b"
+    },
+    {
+      "path": "standing_lock.py",
+      "bytes": 4507,
+      "sha256": "9a3fa6b76d4da26452b48aec48ad81df3288da83c395fbdd93479a80444f059c"
+    },
+    {
+      "path": "STANDING_WAVE_DYNAMICS_RU.md",
+      "bytes": 2806,
+      "sha256": "adaf0ff198d4f3f77f32fe3d47737c7547f720b9373676c67f8d3809a2b49df3"
     },
     {
       "path": "SYNCHRONIZATION_MAPS_RU.md",

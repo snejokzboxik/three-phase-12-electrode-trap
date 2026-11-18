@@ -145,6 +145,10 @@
       "C_m_abs": 0.1,
       "C_m_minus_2_abs": 0.0,
       "center_force_zero": true,
+      "center_force_amplitude": 0.0,
+      "rotational_torque_amplitude": 0.003,
+      "quadratic_COM_coefficient_abs": 0.0,
+      "centered_orientation_lock_possible": true,
       "center_quadratic_localization": false
     },
     {
@@ -153,6 +157,10 @@
       "C_m_abs": 0.0,
       "C_m_minus_2_abs": 0.0,
       "center_force_zero": false,
+      "center_force_amplitude": 0.006,
+      "rotational_torque_amplitude": 0.0,
+      "quadratic_COM_coefficient_abs": 0.0,
+      "centered_orientation_lock_possible": false,
       "center_quadratic_localization": false
     },
     {
@@ -161,6 +169,10 @@
       "C_m_abs": 0.0010000000000000002,
       "C_m_minus_2_abs": 0.1,
       "center_force_zero": true,
+      "center_force_amplitude": 0.0,
+      "rotational_torque_amplitude": 9.000000000000002e-05,
+      "quadratic_COM_coefficient_abs": 0.009,
+      "centered_orientation_lock_possible": true,
       "center_quadratic_localization": true
     },
     {
@@ -169,6 +181,10 @@
       "C_m_abs": 0.0,
       "C_m_minus_2_abs": 0.0,
       "center_force_zero": false,
+      "center_force_amplitude": 0.00012000000000000003,
+      "rotational_torque_amplitude": 0.0,
+      "quadratic_COM_coefficient_abs": 0.0,
+      "centered_orientation_lock_possible": false,
       "center_quadratic_localization": false
     },
     {
@@ -177,6 +193,10 @@
       "C_m_abs": 1.0000000000000006e-05,
       "C_m_minus_2_abs": 0.0010000000000000002,
       "center_force_zero": true,
+      "center_force_amplitude": 0.0,
+      "rotational_torque_amplitude": 1.5000000000000009e-06,
+      "quadratic_COM_coefficient_abs": 0.0003000000000000001,
+      "centered_orientation_lock_possible": true,
       "center_quadratic_localization": true
     }
   ],

@@ -24,7 +24,12 @@ class ChargeMoments:
 
 
 def charge_moments(charges, positions, max_order: int, *, R: float = 1.0) -> ChargeMoments:
-    """Complex moments C_j=sum(q_i/q_ref)*(s_i/R)^j from body-fixed charges."""
+    """Complex moments from body-fixed charge sites relative to the center of mass.
+
+    ``positions`` must be supplied relative to the mechanical COM; this module
+    does not infer the COM from the charge distribution. ``q_ref=sum(abs(q))``
+    keeps neutral charge profiles well-defined.
+    """
     q = np.asarray(charges, dtype=float)
     s = np.asarray(positions, dtype=complex)
     if q.ndim != 1 or s.shape != q.shape or not len(q):

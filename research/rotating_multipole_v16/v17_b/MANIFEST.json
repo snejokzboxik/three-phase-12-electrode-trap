@@ -46,8 +46,8 @@
     },
     {
       "path": "build_reports.py",
-      "bytes": 52050,
-      "sha256": "35b9f06cd114cd05d04438e3c18036122b0a262610bcb4884743a4b05df4e0ca"
+      "bytes": 52244,
+      "sha256": "08d3eacb84244327c34f85dafa47419e7b26af20a3779142a5a9dbbdc8386a80"
     },
     {
       "path": "CENTRAL_LOCALIZATION_RU.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "CHARGE_MOMENT_THEORY_RU.md",
-      "bytes": 3495,
-      "sha256": "88549a597e94a60e20c273059cc755c79a354d1456af8119c6b9f2ffb723343e"
+      "bytes": 3689,
+      "sha256": "5e81ff9d6355dad0f43dd7667e23f777c07a0e7136c6b3cef388c05e31cce37f"
     },
     {
       "path": "DIPOLE_DYNAMICS_RU.md",
@@ -146,8 +146,8 @@
     },
     {
       "path": "model.py",
-      "bytes": 6309,
-      "sha256": "f47c92263095d3bc3f9a2928c89e12d0e434c47e7c8c6df5115822266aa21f06"
+      "bytes": 6528,
+      "sha256": "63c2d3652907bd35ef1a889e6c8a6b033e0c1701170dce7840d9d0cfdc3b2f0e"
     },
     {
       "path": "NOVELTY_ASSESSMENT_RU.md",

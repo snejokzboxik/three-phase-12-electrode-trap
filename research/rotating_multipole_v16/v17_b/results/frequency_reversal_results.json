@@ -1,0 +1,105 @@
+{
+  "status": "COMPLETED_FULL_6D_DIRECTION_REVERSAL_SLICE",
+  "model": {
+    "field": "pure RO3",
+    "particle": "finite neutral dipole (+q,-q)",
+    "a_over_R": 0.1,
+    "ell_over_R": 0.2,
+    "q_ref": 2.0,
+    "C1": 0.1,
+    "C3": 0.0010000000000000002,
+    "kappa3": 0.03,
+    "gamma_trans": 0.05,
+    "gamma_rot": 0.02,
+    "inertia": 0.003333333333333334
+  },
+  "initial_state": {
+    "x_over_R": 0.001,
+    "y_over_R": 0.0,
+    "psi": 1.0059400266769862,
+    "spin": 0.16666666666666666,
+    "field_omega": 0.5
+  },
+  "protocol": {
+    "field_omega_start": 0.5,
+    "field_omega_target": -0.5,
+    "final_hold_rf_periods": 1000,
+    "local_joint_COM_stability_requires": "|Omega|>0.388767482"
+  },
+  "rows": [
+    {
+      "ramp_duration": 20.0,
+      "ramp_rate": -0.05,
+      "status": "REVERSED_AND_CAPTURED",
+      "target_spin": -0.16666666666666666,
+      "mean_spin_last30rf": -0.16666666666665725,
+      "max_abs_final_phase_error": 6.061373625243505e-12,
+      "max_abs_quasistatic_phase_error_during_ramp": 0.6745977188014187,
+      "phase_branch_changes_over_protocol": 0,
+      "max_abs_final_spin_error": 5.092870569711749e-13,
+      "max_com_radius_entire_sampled_trajectory": 0.001,
+      "body_clearance_min_entire_sampled_trajectory": 0.899,
+      "branch_exists_during_ramp": true,
+      "time_instantaneous_COM_band_unstable": 15.55069928623894,
+      "nfev": 377651,
+      "tolerance": {
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "max_step": 0.5,
+        "output_spacing_max": 0.25
+      },
+      "final_state": [
+        -1.29814499351507e-140,
+        5.253967361003299e-140,
+        -2.1586690664411648e-141,
+        -2.2485369225955026e-141,
+        -2093.306647317478,
+        -0.16666666666668317
+      ]
+    },
+    {
+      "ramp_duration": 40.0,
+      "ramp_rate": -0.025,
+      "status": "REVERSED_AND_CAPTURED",
+      "target_spin": -0.16666666666666666,
+      "mean_spin_last30rf": -0.16666666666665125,
+      "max_abs_final_phase_error": 6.061373625243505e-12,
+      "max_abs_quasistatic_phase_error_during_ramp": 0.3108223488924944,
+      "phase_branch_changes_over_protocol": 0,
+      "max_abs_final_spin_error": 3.519962099574059e-13,
+      "max_com_radius_entire_sampled_trajectory": 0.00275625191361821,
+      "body_clearance_min_entire_sampled_trajectory": 0.8972437480863819,
+      "branch_exists_during_ramp": true,
+      "time_instantaneous_COM_band_unstable": 31.10139857247788,
+      "nfev": 378251,
+      "tolerance": {
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "max_step": 0.5,
+        "output_spacing_max": 0.25
+      },
+      "final_state": [
+        -5.416400205421267e-140,
+        -7.328209474421346e-140,
+        -4.548180056674235e-141,
+        1.095352812885318e-140,
+        -2093.3066473174777,
+        -0.16666666666638066
+      ]
+    },
+    {
+      "ramp_duration": 80.0,
+      "ramp_rate": -0.0125,
+      "status": "ESCAPED_APERTURE",
+      "escape_time": 234.45915841315244,
+      "com_radius_at_escape": 0.9,
+      "body_radius_at_escape": 1.0,
+      "nfev": 7181
+    }
+  ],
+  "limits": [
+    "one radial COM perturbation, one initial phase and three linear ramp durations",
+    "fixed dimensionless coefficients; no physical RF recalibration",
+    "ideal harmonics; no FEM or 3D tilt"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETED_FULL_6D_FREQUENCY_RAMP",
+  "model": {
+    "field": "pure RO3 with chirped phase",
+    "particle": "finite neutral dipole (+q,-q)",
+    "q_ref": 2.0,
+    "a_over_R": 0.1,
+    "ell_over_R": 0.2,
+    "C1": 0.1,
+    "C3": 0.0010000000000000002,
+    "kappa3": 0.03,
+    "gamma_trans": 0.05,
+    "gamma_rot": 0.02,
+    "inertia": 0.003333333333333334,
+    "aperture_radius_over_R": 1.0
+  },
+  "protocol": {
+    "start_omega": 0.4,
+    "target_omega": 3.5,
+    "start_spin": 0.0,
+    "target_spin": 1.1666666666666667,
+    "prehold_rf_periods": 1500,
+    "linear_ramp_rf_periods_at_start": 1000,
+    "final_hold_rf_periods": 500,
+    "ramp_rate": 0.00019735212943395022,
+    "initial_state": [
+      0.0001,
+      0.0,
+      0.0,
+      0.0,
+      1.0471975511965976,
+      0.0
+    ]
+  },
+  "analytic_limits": {
+    "COM_lower_frequency_bound": 0.3887674821559735,
+    "rotational_lock_upper_frequency_bound": 4.05,
+    "frequency_status": "both endpoints lie inside the fixed-dimensionless-coefficient joint local-stability band"
+  },
+  "integration": {
+    "method": "DOP853",
+    "rtol": 2e-09,
+    "atol": 2e-11,
+    "max_step": 0.5,
+    "nfev": 1205042,
+    "samples": 160672,
+    "t_final": 40167.506070898075,
+    "aperture_event": false
+  },
+  "outcome": {
+    "captured_at_target": true,
+    "mean_spin_last30rf": 1.1666666720081107,
+    "final_state": [
+      -3.844e-321,
+      -7.6e-322,
+      5e-324,
+      -1.5e-323,
+      14399.665675365666,
+      1.166666626521096
+    ],
+    "target_spin": 1.1666666666666667,
+    "max_abs_final_phase_error": 9.878543414387764e-07,
+    "max_abs_final_spin_error": 6.686949927114938e-08,
+    "max_com_radius_over_trajectory": 0.0001,
+    "max_com_radius_prehold": 0.0001,
+    "max_com_radius_ramp": 1.0836310056059605e-260,
+    "max_com_radius_final_hold": 4.55e-321,
+    "body_clearance_min": 0.8999,
+    "max_abs_resonance_phase_error_during_ramp": 0.004813837003084576,
+    "phase_branch_changes_during_ramp": 0,
+    "spin_error_rms_during_ramp": 2.2504390789807815e-05
+  },
+  "limits": [
+    "dimensionless mathematical control only; kappa and drag were held fixed while omega changed",
+    "ideal harmonic field; no calibrated electrode voltages, gas model, FEM, noise, or 3D tilt"
+  ]
+}

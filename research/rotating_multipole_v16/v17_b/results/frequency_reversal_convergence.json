@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETED_DOP853_STEP_REFINEMENT",
+  "coarse": {
+    "rtol": 2e-09,
+    "atol": 2e-11,
+    "max_step": 0.5,
+    "classification": "REVERSED_AND_CAPTURED"
+  },
+  "fine": {
+    "rtol": 3e-10,
+    "atol": 3e-12,
+    "max_step": 0.25,
+    "classification": "REVERSED_AND_CAPTURED",
+    "nfev": 755231
+  },
+  "max_abs_final_state_difference": 9.094947017729282e-13,
+  "final_state_difference_components": [
+    -9.103874560930751e-147,
+    -8.932454553778259e-148,
+    -1.9059798974105612e-148,
+    4.852859223146596e-148,
+    9.094947017729282e-13,
+    -3.4600100562443004e-13
+  ],
+  "fine_max_com_radius": 0.001,
+  "fine_final_phase_error": 1.0608847134108146e-11,
+  "fine_final_spin_error": 4.3584580389222083e-13,
+  "fine_phase_branch_changes": 0
+}

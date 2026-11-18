@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETED_DOP853_STEP_REFINEMENT",
+  "reference": {
+    "rtol": 2e-09,
+    "atol": 2e-11,
+    "max_step": 0.5
+  },
+  "refined": {
+    "rtol": 3e-10,
+    "atol": 3e-12,
+    "max_step": 0.25,
+    "nfev": 1958057
+  },
+  "max_abs_final_state_difference": 1.2732925824820995e-11,
+  "final_state_difference_components": [
+    -5.14e-322,
+    3.943e-321,
+    6.4e-323,
+    4.4e-323,
+    1.2732925824820995e-11,
+    6.084022174945858e-13
+  ],
+  "refined_outcome": {
+    "mean_spin_last30rf": 1.1666666708205276,
+    "target_spin": 1.1666666666666667,
+    "max_abs_phase_error_last30rf": 9.171077772762715e-07,
+    "max_abs_spin_error_last30rf": 6.687500797575296e-08,
+    "max_com_radius_over_trajectory": 0.0001,
+    "minimum_body_clearance": 0.8999
+  }
+}

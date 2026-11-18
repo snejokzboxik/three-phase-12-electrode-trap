@@ -8,7 +8,11 @@
     "full 6D local Jacobian and independent DOP853 monodromy",
     "1000-RF RO3 and SO3 local basin pilots",
     "SO3 shooting, both directions, full Floquet monodromy and step-convergence check",
-    "12-electrode DFT alias check and terminal waveform bound"
+    "12-electrode DFT alias check and terminal waveform bound",
+    "RO3 zero-spin startup phase-grid scan through 10000 RF",
+    "full 6D frequency ramp from rest, with DOP853 step refinement",
+    "full 6D positive-to-negative field rotation reversal and step refinement",
+    "one-dimensional full 6D COM perturbation slice at the RO3 startup point"
   ],
   "not_run": [
     "adaptive Arnold tongues and nonlinear continuation",
@@ -36,8 +40,8 @@
     },
     {
       "path": "ARNOLD_TONGUES_RU.md",
-      "bytes": 1950,
-      "sha256": "652f4a5dc50f349a19753379a21f4e1a144a0338590459a2a455b8a99b3ae0b9"
+      "bytes": 2905,
+      "sha256": "7abc551e2132259d23681dcc47ab62054da0257086952869c19eadec7677761e"
     },
     {
       "path": "basin_pilot.py",
@@ -95,6 +99,16 @@
       "sha256": "fa7cf3ef594ce6f8aa7983f74f89988d5c727c9f582caaac3ba4b4172320489b"
     },
     {
+      "path": "figures/frequency_ramp_6d.png",
+      "bytes": 100232,
+      "sha256": "1a0886d982326b7bf362fe27b8f040ca97126c845d5b784ab90b574cf1bc38d1"
+    },
+    {
+      "path": "figures/frequency_reversal_6d.png",
+      "bytes": 101331,
+      "sha256": "ae9f2c0f6b8d0fdffd48451c781c6fc78a2366f987ad0072233b9914922cf9bc"
+    },
+    {
       "path": "figures/full_6d_spectrum.png",
       "bytes": 36871,
       "sha256": "29e6d209293f0ce222dd3cbc92fc46a2015884358380d1e5c908dd7806402a04"
@@ -125,19 +139,44 @@
       "sha256": "7f4b181304a6139a517a8e58456c9a80d78a9d54afcb2da23fdf215077eb29ff"
     },
     {
+      "path": "figures/startup_capture_frequency.png",
+      "bytes": 129080,
+      "sha256": "27b36c0c1d4c894dae6567ceddeb9e172f2065aa774d36fb1909a32879bbae3d"
+    },
+    {
       "path": "FREQUENCY_CONTROL_RU.md",
-      "bytes": 1801,
-      "sha256": "2b555b0b358bd48d5ab047d69a894efee525629ecad8397250637b560fde0a09"
+      "bytes": 11382,
+      "sha256": "47b0d225dd864350b85b1c0623204b6a7af4b927d902343b1fee1f656d724a67"
+    },
+    {
+      "path": "frequency_ramp.py",
+      "bytes": 8188,
+      "sha256": "cfc29ddda83dd3525a7bbaac1bf9e73628ef839d288b523c55aa3cb5e0210768"
+    },
+    {
+      "path": "frequency_ramp_convergence.py",
+      "bytes": 2547,
+      "sha256": "dfb0d4d49afba70ae305784206e86294b86cc5a0ee652566b8a14963f9a69e8b"
+    },
+    {
+      "path": "frequency_reversal.py",
+      "bytes": 7960,
+      "sha256": "0017aa9589b5c652d8b642ed5788b468ec9e1079ed2a00829aa5741b58211e92"
+    },
+    {
+      "path": "frequency_reversal_convergence.py",
+      "bytes": 1762,
+      "sha256": "701b1e5d4cc589d2cdfeae18ba3a0312dd3d0d78d17c6452fedfa65f92c68f85"
     },
     {
       "path": "GITHUB_PUBLICATION_RU.md",
-      "bytes": 1864,
-      "sha256": "c8cf91fe1eb58dc2a06772b23851a3972a1e06097e1a860aa43a8e4fb8874234"
+      "bytes": 2292,
+      "sha256": "5d5ee0470e70cf2be3fce60924af29cedfc219470fd3188d48e6045e48448be0"
     },
     {
       "path": "HANDOFF_TO_V17A.md",
-      "bytes": 1901,
-      "sha256": "f8326df5ea665e5941c3e9cd5fd9cb1a85a9928cfda3171cdc255d2df37bc393"
+      "bytes": 4929,
+      "sha256": "937c8085e6faf46dacc5f9b03ab530c65b90c38980ebd70661fe8380462dd37f"
     },
     {
       "path": "LITERATURE_REVIEW_RU.md",
@@ -151,13 +190,13 @@
     },
     {
       "path": "NOVELTY_ASSESSMENT_RU.md",
-      "bytes": 2587,
-      "sha256": "b090dcae03060571a15710156ee4523d587628b9ec89bc5a8067b0813f460549"
+      "bytes": 3596,
+      "sha256": "19b288e0f7ac901ca1b383f2487fc8174b8f2409dad8c106e2538183d1d25aca"
     },
     {
       "path": "NUMERICAL_VALIDATION_RU.md",
-      "bytes": 2042,
-      "sha256": "3daac64b4ad8a8cd9e9e6290b4e747e06351c856c4469d9b379d35b125c09a1f"
+      "bytes": 4295,
+      "sha256": "548bbb0bad86769af2d93c2ad029ac1230adc7078a235ec74d56dc9c81fe2396"
     },
     {
       "path": "PHYSICAL_REALIZABILITY_RU.md",
@@ -175,19 +214,29 @@
       "sha256": "2e0d7fd8809c2b921f0e77f0f87c91b109af78d6267a6adabb66d87a87533fa0"
     },
     {
+      "path": "plot_startup_capture.py",
+      "bytes": 2491,
+      "sha256": "a556519758267e44bce119d64460e24d967f6d3375cd89797241d8630be07844"
+    },
+    {
       "path": "POTENTIAL_APPLICATIONS_RU.md",
       "bytes": 1219,
       "sha256": "87df7dca9086eeab3108db39d1e6bda9fb6359af37dd9ae90904c5699f1b92a4"
     },
     {
       "path": "README.md",
-      "bytes": 2170,
-      "sha256": "5c210bed57c863a77765c5b1919bc250ef8451af8b96c514add7a6f904153677"
+      "bytes": 2998,
+      "sha256": "7dcda1cc35b7c3fcac2d23d4d5bad07488380723c7c3c8a516b8958cfcc7f461"
+    },
+    {
+      "path": "refresh_manifest.py",
+      "bytes": 1411,
+      "sha256": "d8201cb49158cb2236bf201ff9d1776c93d7a6defd3fd084e1136c97308304b6"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 5788,
-      "sha256": "c1235d0fa9987f878a77872eaa9ab575a3cd7ead7edb13e5ff7083381201ac8d"
+      "bytes": 9914,
+      "sha256": "3c3de8aebb65a35cb16e0c1c654af3a431c221c8d33d906b7876de4f5e587265"
     },
     {
       "path": "results/basin_local_checkpoint.json",
@@ -215,6 +264,26 @@
       "sha256": "fa951175955fe35c4cedf61a7997772fe30558a2dae40380dcbb33434d8e0ce9"
     },
     {
+      "path": "results/frequency_ramp_convergence.json",
+      "bytes": 793,
+      "sha256": "937a80d960f3ae46b271c1f115ee5acc22604f2843b60eb903c71c575066b321"
+    },
+    {
+      "path": "results/frequency_ramp_results.json",
+      "bytes": 2335,
+      "sha256": "cc9e77c6185910542534a53faaae4230faa8652481d28c4b9b1a3ec4bf0ef4a0"
+    },
+    {
+      "path": "results/frequency_reversal_convergence.json",
+      "bytes": 790,
+      "sha256": "e17f5bdecb354767f3f6788c7b43ed6c85a0e6f7236a0f4a5d7d03a8630aa71e"
+    },
+    {
+      "path": "results/frequency_reversal_results.json",
+      "bytes": 3384,
+      "sha256": "1f067590facff092ae79cb8c36672d0937b83051e228f3db654fd327bc471b5b"
+    },
+    {
       "path": "results/standing_basin_checkpoint.json",
       "bytes": 9014,
       "sha256": "5303e634e9c95b4e3671a6fd3557941b88227cd9ff05e5eb8d3c106e67b92cd0"
@@ -228,6 +297,31 @@
       "path": "results/standing_ro3_results.json",
       "bytes": 5487,
       "sha256": "e0dc25b92ab2aa38c4f1f9d90080683dc03b8dd474739a5579ec9f77ef6361d0"
+    },
+    {
+      "path": "results/startup_capture.csv",
+      "bytes": 1369,
+      "sha256": "6cdd267f1d15eb12ede140ed459287cf439d2328dcbfa13c083a603d595590ab"
+    },
+    {
+      "path": "results/startup_capture_long_horizon.json",
+      "bytes": 44589,
+      "sha256": "ba97964310af188d0e2cc8b6cd61a256161f4b9a130b961d131911a4295102f3"
+    },
+    {
+      "path": "results/startup_capture_refinement.json",
+      "bytes": 100284,
+      "sha256": "e6a67f340e403b6797b41c6f6d35995a1785e1ab0e9ee246fab78491a30396b3"
+    },
+    {
+      "path": "results/startup_capture_results.json",
+      "bytes": 181127,
+      "sha256": "511b30468a11b388af8aabc76da07469d014e4a91df35ba7d92d2faa2e8ddcee"
+    },
+    {
+      "path": "results/startup_com_slice.json",
+      "bytes": 3171,
+      "sha256": "f673d03b7855d497237e12bc54b87b1526efc21832e288c454b409d85c859f45"
     },
     {
       "path": "ROTATIONAL_SWITCHING_RU.md",
@@ -250,9 +344,29 @@
       "sha256": "adaf0ff198d4f3f77f32fe3d47737c7547f720b9373676c67f8d3809a2b49df3"
     },
     {
+      "path": "startup_capture.py",
+      "bytes": 13390,
+      "sha256": "348ca40c7c2ea505143293c5ca737d9096d625849bc1503733964abe47fcd354"
+    },
+    {
+      "path": "startup_capture_long_horizon.py",
+      "bytes": 1867,
+      "sha256": "9a38a2b06a065b6cd6d6f9edd6bab7d94a38da20f8c6987cc53dfbd1f21febe2"
+    },
+    {
+      "path": "startup_capture_refinement.py",
+      "bytes": 2743,
+      "sha256": "7105caf9ef155bee92e2ac60f205dac5b719ca8a6e5b626168deacd7b6beb75f"
+    },
+    {
+      "path": "startup_com_slice.py",
+      "bytes": 1409,
+      "sha256": "2c9d326673c6274d5fee390d4a94d1537fef427dc35e53c8be5bff904eb32476"
+    },
+    {
       "path": "SYNCHRONIZATION_MAPS_RU.md",
-      "bytes": 2130,
-      "sha256": "6fb42fd0af2db5f9c78aae0db4fc32491ca85c57a57724e395af1ebd5994ed85"
+      "bytes": 2949,
+      "sha256": "c282db2ae5e6346c3d939c3a391c5ec1e43597af3dc8a71ffe516f9ca7b5a2b3"
     },
     {
       "path": "tests/test_dynamics.py",

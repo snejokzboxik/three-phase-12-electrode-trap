@@ -1,0 +1,104 @@
+{
+  "status": "COMPLETED_1D_COM_PERTURBATION_SLICE",
+  "field": "RO3, omega=0.5, kappa3=0.03",
+  "initial_orientation": "pi/3",
+  "initial_spin": 0.0,
+  "initial_velocity_rule": "vx=0.25*d, vy=0; x=d, y=-0.75*d",
+  "horizon_rf": 1000,
+  "rows": [
+    {
+      "omega": 0.5,
+      "com_offset_parameter": 0.001,
+      "initial_state": [
+        0.001,
+        -0.00075,
+        0.00025,
+        0.0,
+        1.0471975511965976,
+        0.0
+      ],
+      "rf_periods": 1000,
+      "status": "CAPTURED_6D",
+      "mean_spin_last30rf": 0.16666666666672028,
+      "target_spin": 0.16666666666666666,
+      "max_abs_phase_error_last30rf": 8.129052986305396e-12,
+      "max_spin_error_last30rf": 6.765421556309548e-13,
+      "max_com_radius_last30rf": 1.6135698372020575e-133,
+      "body_clearance_min_last30rf": 0.9,
+      "max_com_radius_all": 0.01867803548843879,
+      "body_clearance_min_all": 0.8813219645115612,
+      "nfev": 377012,
+      "tolerance": {
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "max_step": 0.5
+      }
+    },
+    {
+      "omega": 0.5,
+      "com_offset_parameter": 0.001546875,
+      "initial_state": [
+        0.001546875,
+        -0.0011601562500000002,
+        0.00038671875,
+        0.0,
+        1.0471975511965976,
+        0.0
+      ],
+      "rf_periods": 1000,
+      "status": "CAPTURED_6D",
+      "mean_spin_last30rf": 0.16666666666667998,
+      "target_spin": 0.16666666666666666,
+      "max_abs_phase_error_last30rf": 7.219558284532468e-12,
+      "max_spin_error_last30rf": 4.3498538104813633e-13,
+      "max_com_radius_last30rf": 1.231093300908057e-131,
+      "body_clearance_min_last30rf": 0.9,
+      "max_com_radius_all": 0.03662905852491241,
+      "body_clearance_min_all": 0.8633709414750876,
+      "nfev": 377012,
+      "tolerance": {
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "max_step": 0.5
+      }
+    },
+    {
+      "omega": 0.5,
+      "com_offset_parameter": 0.0015625,
+      "status": "ESCAPED_APERTURE",
+      "escape_time": 330.77892003509874,
+      "com_radius_at_escape": 0.8999999999999985,
+      "body_radius_at_escape": 0.9999999999999984,
+      "nfev": 10052
+    },
+    {
+      "omega": 0.5,
+      "com_offset_parameter": 0.0035,
+      "initial_state": [
+        0.0035,
+        -0.002625,
+        0.000875,
+        0.0,
+        1.0471975511965976,
+        0.0
+      ],
+      "rf_periods": 1000,
+      "status": "NOT_CAPTURED_6D",
+      "mean_spin_last30rf": 0.010015525952718152,
+      "target_spin": 0.16666666666666666,
+      "max_abs_phase_error_last30rf": 3.1415560254108836,
+      "max_spin_error_last30rf": 0.21742085117793347,
+      "max_com_radius_last30rf": 5.687505704745693e-35,
+      "body_clearance_min_last30rf": 0.9,
+      "max_com_radius_all": 0.09700491706793847,
+      "body_clearance_min_all": 0.8029950829320616,
+      "nfev": 377090,
+      "tolerance": {
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "max_step": 0.5
+      }
+    }
+  ],
+  "interpretation": "A single radial slice in the chosen COM position/velocity direction; not a multidimensional basin volume."
+}

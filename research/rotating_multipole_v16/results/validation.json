@@ -1,0 +1,42 @@
+{
+  "timestamp_local": "2026-11-17 21:40:36 +0300",
+  "host": "Ninkear",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10",
+  "logical_cpus": 12,
+  "memory": {
+    "total_gib": 15.4246826171875,
+    "available_gib": 3.1781158447265625,
+    "load_pct": 79
+  },
+  "integrator": "DOP853 reference; vectorized classical RK4 scout",
+  "checks": {
+    "RO_J_max_abs_drift": 1.6529847965667671e-18,
+    "J_relative_range": 1.0561116097847873e-12,
+    "ensemble_256x30rf_s": 1.9682082000072114,
+    "ensemble_bounded_fraction": 1.0,
+    "stationary_rstar": 0.38686528786885804,
+    "stationary_eigenvalues": [
+      [
+        0.0,
+        0.5
+      ],
+      [
+        -0.0,
+        -0.5
+      ],
+      [
+        0.3535533905932738,
+        0.0
+      ],
+      [
+        -0.3535533905932738,
+        -0.0
+      ]
+    ],
+    "centered_rod_force_norm": 0.0,
+    "centered_rod_torque": 2.05654396661246e-05,
+    "centered_rod_potential": 8.577086813638271e-06
+  },
+  "elapsed_s": 11.432810100028291
+}

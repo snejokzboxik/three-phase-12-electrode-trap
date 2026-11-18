@@ -1,0 +1,312 @@
+{
+  "normalization": "kappa4=(Q/M)c4 V/(Omega^2 R^2); gamma=physical damping/Omega",
+  "status": "SCENARIO_ONLY; c4 is not validated for either new geometry",
+  "scenarios": [
+    {
+      "name": "silica_microrod_uniform",
+      "geometry": {
+        "length_m": 1.5e-05,
+        "diameter_m": 4e-06,
+        "density_kg_m3": 2200.0,
+        "mass_kg": 4.146902302738527e-13,
+        "charge_e": 1000,
+        "charge_C": 1.602176634e-16,
+        "Q_over_M_C_kg": 0.00038635504698096123,
+        "moment_of_inertia_kg_m2": 8.190132047908592e-24,
+        "profile": "uniform"
+      },
+      "environment": {
+        "pressure_mbar": 0.002,
+        "temperature_K": 300.0,
+        "gas": "air",
+        "mean_speed_m_s": 468.28582362061337,
+        "gas_density_kg_m3": 2.322459175917844e-06,
+        "drag_model": "beta_trans=rho_g*vbar*L*d; zeta_rot=beta_trans*L^2/12"
+      },
+      "field": {
+        "R_m_options": [
+          0.008,
+          5e-05
+        ],
+        "RF_Hz": 100000.0,
+        "Vmax_V": 250.0,
+        "c4_scenario_only": 0.5413395699439
+      },
+      "apertures": {
+        "R_0.008_m": {
+          "ell": 0.001875,
+          "kappa4_if_c4_ref_transferred": 2.069458212767681e-09,
+          "mu2": 2.9296875e-07,
+          "mu4": 1.5449523925781247e-13,
+          "mu2_factor": 1.0,
+          "mu4_factor": 1.0,
+          "gamma_trans_s-1": 0.1573571734209982,
+          "gamma_rot_s-1": 0.1493897216022135,
+          "gamma_rot_critical_s-1": 1.0415604671074024e-08,
+          "rot_drag_to_lock_threshold": 14342875.552592274,
+          "pressure_critical_mbar_linear_drag": 1.3944205209523192e-10,
+          "c4_required_for_kappa4_0p1": 26158516.591640454,
+          "kappa4_required_at_current_drag": 0.029681981607016874,
+          "COM_quadratic_b": 3.6377195146306896e-15,
+          "RO_lock_possible_at_reference_drag": false,
+          "sync_solution": {
+            "exists": false
+          }
+        },
+        "R_5e-05_m": {
+          "ell": 0.3,
+          "kappa4_if_c4_ref_transferred": 5.2978130246852644e-05,
+          "mu2": 0.0075,
+          "mu4": 0.00010125,
+          "mu2_factor": 1.0,
+          "mu4_factor": 1.0,
+          "gamma_trans_s-1": 0.1573571734209982,
+          "gamma_rot_s-1": 0.1493897216022135,
+          "gamma_rot_critical_s-1": 6.825970677235074,
+          "rot_drag_to_lock_threshold": 0.021885491260669358,
+          "pressure_critical_mbar_linear_drag": 0.0913847432611312,
+          "c4_required_for_kappa4_0p1": 1021.8170543609552,
+          "kappa4_required_at_current_drag": 1.1594524065240966e-06,
+          "COM_quadratic_b": 2.3840158611083688e-06,
+          "RO_lock_possible_at_reference_drag": true,
+          "sync_solution": {
+            "phase": 0.7799263537132282,
+            "critical_gamma_rot_dimless": 1.0863869746822945e-05,
+            "eigenvalues_rotating_frame": [
+              [
+                -1.252210558091993e-07,
+                0.25000953505951273
+              ],
+              [
+                -1.252210558091993e-07,
+                -0.25000953505951273
+              ],
+              [
+                -1.2522066396986054e-07,
+                0.24999046457674137
+              ],
+              [
+                -1.2522066396986054e-07,
+                -0.24999046457674137
+              ],
+              [
+                -1.1888056320057186e-07,
+                0.0032956437400824237
+              ],
+              [
+                -1.1888056320057186e-07,
+                -0.0032956437400824237
+              ]
+            ],
+            "max_trans_decay_time_s": 12.709958408318492,
+            "rot_decay_time_s": 13.387801908657996
+          }
+        }
+      }
+    },
+    {
+      "name": "silica_nanostring_uniform",
+      "geometry": {
+        "length_m": 5e-07,
+        "diameter_m": 5e-08,
+        "density_kg_m3": 2200.0,
+        "mass_kg": 2.1598449493429825e-18,
+        "charge_e": 10,
+        "charge_C": 1.602176634e-18,
+        "Q_over_M_C_kg": 0.7418016902034457,
+        "moment_of_inertia_kg_m2": 4.5334245551313636e-32,
+        "profile": "uniform"
+      },
+      "environment": {
+        "pressure_mbar": 0.002,
+        "temperature_K": 300.0,
+        "gas": "air",
+        "mean_speed_m_s": 468.28582362061337,
+        "gas_density_kg_m3": 2.322459175917844e-06,
+        "drag_model": "beta_trans=rho_g*vbar*L*d; zeta_rot=beta_trans*L^2/12"
+      },
+      "field": {
+        "R_m_options": [
+          0.008,
+          5e-05
+        ],
+        "RF_Hz": 100000.0,
+        "Vmax_V": 250.0,
+        "c4_scenario_only": 0.5413395699439
+      },
+      "apertures": {
+        "R_0.008_m": {
+          "ell": 6.25e-05,
+          "kappa4_if_c4_ref_transferred": 3.973359768513949e-06,
+          "mu2": 3.255208333333333e-10,
+          "mu4": 1.9073486328125003e-19,
+          "mu2_factor": 1.0,
+          "mu4_factor": 1.0,
+          "gamma_trans_s-1": 12.588573873679856,
+          "gamma_rot_s-1": 12.494862405637575,
+          "gamma_rot_critical_s-1": 2.3230790059862284e-08,
+          "rot_drag_to_lock_threshold": 537857833.2222097,
+          "pressure_critical_mbar_linear_drag": 3.718454722539522e-12,
+          "c4_required_for_kappa4_0p1": 13624.2273914794,
+          "kappa4_required_at_current_drag": 2137.102675705213,
+          "COM_quadratic_b": 7.760468297878806e-15,
+          "RO_lock_possible_at_reference_drag": false,
+          "sync_solution": {
+            "exists": false
+          }
+        },
+        "R_5e-05_m": {
+          "ell": 0.009999999999999998,
+          "kappa4_if_c4_ref_transferred": 0.10171801007395709,
+          "mu2": 8.33333333333333e-06,
+          "mu4": 1.2499999999999993e-10,
+          "mu2_factor": 1.0,
+          "mu4_factor": 1.0,
+          "gamma_trans_s-1": 12.588573873679856,
+          "gamma_rot_s-1": 12.494862405637575,
+          "gamma_rot_critical_s-1": 15.224530573631332,
+          "rot_drag_to_lock_threshold": 0.8207059222751009,
+          "pressure_critical_mbar_linear_drag": 0.0024369264869634985,
+          "c4_required_for_kappa4_0p1": 0.5321963824796642,
+          "kappa4_required_at_current_drag": 0.08348057326973496,
+          "COM_quadratic_b": 5.085900503697852e-06,
+          "RO_lock_possible_at_reference_drag": true,
+          "sync_solution": {
+            "phase": 0.5447367992292826,
+            "critical_gamma_rot_dimless": 2.4230592970471156e-05,
+            "eigenvalues_rotating_frame": [
+              [
+                -1.001766866716089e-05,
+                0.2500177053417719
+              ],
+              [
+                -1.001766866716089e-05,
+                -0.2500177053417719
+              ],
+              [
+                -1.001766891758904e-05,
+                0.24998229300277902
+              ],
+              [
+                -1.001766891758904e-05,
+                -0.24998229300277902
+              ],
+              [
+                -9.943095575551552e-06,
+                0.003720762143145506
+              ],
+              [
+                -9.943095575551552e-06,
+                -0.003720762143145506
+              ]
+            ],
+            "max_trans_decay_time_s": 0.15887423349668592,
+            "rot_decay_time_s": 0.16006578824730536
+          }
+        }
+      }
+    },
+    {
+      "name": "silica_microrod_even_nonuniform_charge",
+      "geometry": {
+        "length_m": 1.5e-05,
+        "diameter_m": 4e-06,
+        "density_kg_m3": 2200.0,
+        "mass_kg": 4.146902302738527e-13,
+        "charge_e": 1000,
+        "charge_C": 1.602176634e-16,
+        "Q_over_M_C_kg": 0.00038635504698096123,
+        "moment_of_inertia_kg_m2": 8.190132047908592e-24,
+        "profile": "symmetric_end_weighted"
+      },
+      "environment": {
+        "pressure_mbar": 0.002,
+        "temperature_K": 300.0,
+        "gas": "air",
+        "mean_speed_m_s": 468.28582362061337,
+        "gas_density_kg_m3": 2.322459175917844e-06,
+        "drag_model": "beta_trans=rho_g*vbar*L*d; zeta_rot=beta_trans*L^2/12"
+      },
+      "field": {
+        "R_m_options": [
+          0.008,
+          5e-05
+        ],
+        "RF_Hz": 100000.0,
+        "Vmax_V": 250.0,
+        "c4_scenario_only": 0.5413395699439
+      },
+      "apertures": {
+        "R_0.008_m": {
+          "ell": 0.001875,
+          "kappa4_if_c4_ref_transferred": 2.069458212767681e-09,
+          "mu2": 3.5546874999999996e-07,
+          "mu4": 2.0157950265066958e-13,
+          "mu2_factor": 1.2133333333333334,
+          "mu4_factor": 1.3047619047619046,
+          "gamma_trans_s-1": 0.1573571734209982,
+          "gamma_rot_s-1": 0.1493897216022135,
+          "gamma_rot_critical_s-1": 1.3589884189877533e-08,
+          "rot_drag_to_lock_threshold": 10992714.839578021,
+          "pressure_critical_mbar_linear_drag": 1.819386774956835e-10,
+          "c4_required_for_kappa4_0p1": 26158516.591640454,
+          "kappa4_required_at_current_drag": 0.0227489640053779,
+          "COM_quadratic_b": 4.41376634441857e-15,
+          "RO_lock_possible_at_reference_drag": false,
+          "sync_solution": {
+            "exists": false
+          }
+        },
+        "R_5e-05_m": {
+          "ell": 0.3,
+          "kappa4_if_c4_ref_transferred": 5.2978130246852644e-05,
+          "mu2": 0.0091,
+          "mu4": 0.00013210714285714282,
+          "mu2_factor": 1.2133333333333334,
+          "mu4_factor": 1.3047619047619046,
+          "gamma_trans_s-1": 0.1573571734209982,
+          "gamma_rot_s-1": 0.1493897216022135,
+          "gamma_rot_critical_s-1": 8.906266502678141,
+          "rot_drag_to_lock_threshold": 0.016773551696133454,
+          "pressure_critical_mbar_linear_drag": 0.11923533168357116,
+          "c4_required_for_kappa4_0p1": 1021.8170543609552,
+          "kappa4_required_at_current_drag": 8.886314064600742e-07,
+          "COM_quadratic_b": 2.8926059114781543e-06,
+          "RO_lock_possible_at_reference_drag": true,
+          "sync_solution": {
+            "phase": 0.7812045788121429,
+            "critical_gamma_rot_dimless": 1.4174763383949936e-05,
+            "eigenvalues_rotating_frame": [
+              [
+                -1.2522089343214304e-07,
+                0.2500115694773379
+              ],
+              [
+                -1.2522089343214304e-07,
+                -0.2500115694773379
+              ],
+              [
+                -1.2522082633997789e-07,
+                0.24998842998716292
+              ],
+              [
+                -1.2522082633997789e-07,
+                -0.24998842998716292
+              ],
+              [
+                -1.1888056320057194e-07,
+                0.003764673847794473
+              ],
+              [
+                -1.1888056320057194e-07,
+                -0.003764673847794473
+              ]
+            ],
+            "max_trans_decay_time_s": 12.709941927693835,
+            "rot_decay_time_s": 13.387801908657988
+          }
+        }
+      }
+    }
+  ]
+}

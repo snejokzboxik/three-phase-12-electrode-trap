@@ -1,0 +1,13 @@
+{
+  "schema": "v16.1-basin-manifest-v1",
+  "sha256": {
+    "basin_rotational.py": "4177f39ca86e94925efbbcda3ac2e769c7428ef1824a3410c0bfb3e6a4cd4e70",
+    "basin_rotational_checkpoint.json": "b69846fe17e64cf802097961da696ece3ba5712e7adb4ed17ed2a0d65fa1b1ff",
+    "basin_rotational.json": "15f5fe31ac8769108cf9f818bc13d68bcf06fe898fc5b9978710d20f793de624"
+  },
+  "seeds": [
+    1701,
+    4813
+  ],
+  "checkpoint": "basin_rotational_checkpoint.json"
+}

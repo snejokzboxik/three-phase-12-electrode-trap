@@ -1,0 +1,68 @@
+{
+  "result_rows": 382,
+  "stages": [
+    {
+      "stage": "conservative",
+      "tasks": 54,
+      "starts": 3456,
+      "bounded": 26,
+      "fast_exit": 3402,
+      "slow_exit": 28,
+      "bounded_fraction": 0.007523148148148148
+    },
+    {
+      "stage": "conservative_cold",
+      "tasks": 36,
+      "starts": 2304,
+      "bounded": 788,
+      "fast_exit": 1283,
+      "slow_exit": 233,
+      "bounded_fraction": 0.3420138888888889
+    },
+    {
+      "stage": "conservative_replicate",
+      "tasks": 36,
+      "starts": 2304,
+      "bounded": 1208,
+      "fast_exit": 813,
+      "slow_exit": 283,
+      "bounded_fraction": 0.5243055555555556
+    },
+    {
+      "stage": "dissipative",
+      "tasks": 126,
+      "starts": 4032,
+      "bounded": 40,
+      "fast_exit": 3966,
+      "slow_exit": 26,
+      "bounded_fraction": 0.00992063492063492
+    },
+    {
+      "stage": "dissipative_paired",
+      "tasks": 126,
+      "starts": 4032,
+      "bounded": 1461,
+      "fast_exit": 2301,
+      "slow_exit": 270,
+      "bounded_fraction": 0.36235119047619047
+    },
+    {
+      "stage": "pilot",
+      "tasks": 4,
+      "starts": 128,
+      "bounded": 2,
+      "fast_exit": 126,
+      "slow_exit": 0,
+      "bounded_fraction": 0.015625
+    }
+  ],
+  "independent_replicate_groups": 18,
+  "paired_damping_cases": 126,
+  "files": [
+    "case_summary.csv",
+    "stage_summary.csv",
+    "independent_replicate_summary.csv",
+    "paired_damping_summary.csv"
+  ],
+  "warning": "QMC fractions are conditional on the explicitly defined initial-state distributions; between-scramble SD is the replication diagnostic, not an IID binomial confidence interval."
+}

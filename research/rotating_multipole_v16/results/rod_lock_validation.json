@@ -1,0 +1,52 @@
+{
+  "timestamp_local": "2026-11-17 21:46:10 +0300",
+  "model": "uniform 2-D rigid charged rod, point-charge quadrature, pure RO",
+  "physical_scope": "dimensionless mechanism; only kappa<=0.1615 maps below 250 V under the legacy c4 normalization, but rod mass/charge are not yet tied to a specified material",
+  "normalization": "lambda=gamma/(2*pi*100 kHz)",
+  "analytic_threshold": "lambda_c=2.4*abs(kappa)*(L/R)^2",
+  "confirmations": [
+    {
+      "case": "locked full-rod integration",
+      "kappa": 0.1044,
+      "L_over_R": 0.2,
+      "gamma_s-1": 3000.0,
+      "lambda": 0.004774648292756861,
+      "rf_horizon": 400,
+      "initial_phases": [
+        0.6012599051101135,
+        0.7212599051101136
+      ],
+      "predicted_stable_phase_mod_pi_over_2": 0.6612599051101136,
+      "final_phase_errors": [
+        -0.00020547561393802205,
+        9.170170790251397e-05
+      ],
+      "between_start_final_phase_distance": 0.000297177321840536,
+      "between_start_final_spin_distance": 7.596098546908125e-05,
+      "max_center_radius": 3.779777421325775e-17,
+      "final_spin_values": [
+        0.2500360823543855,
+        0.24996012136891643
+      ],
+      "predicted_two_rf_multipliers": [
+        "(0.3703382321703824+0.8970028580652153j)",
+        "(0.3703382321703824-0.8970028580652153j)"
+      ],
+      "criterion": "same rotating-frame lock reached from two nearby starts; center invariant under symmetric charge distribution"
+    },
+    {
+      "case": "above-threshold no-lock control",
+      "kappa": 0.1044,
+      "L_over_R": 0.2,
+      "gamma_s-1": 10000.0,
+      "lambda": 0.015915494309189534,
+      "rf_horizon": 120,
+      "predicted_equilibrium_exists": false,
+      "gamma_threshold_s-1": 6297.259642267669,
+      "rotating_phase_span_rad": 170.07988301718584,
+      "final_spin": 0.0022632740616314847,
+      "max_center_radius": 7.06822698234836e-18,
+      "interpretation": "no fixed locked phase exists above the analytic torque-balance threshold; this short run checks the finite-size equations, not a long-time attractor"
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "schema": "v16.1-rotational-basin-v1",
+  "parameters": {
+    "kappa4": 0.1044,
+    "ell": 0.2,
+    "gamma_rot": 0.003,
+    "N_RF": 1000,
+    "seeds": [
+      1701,
+      4813
+    ]
+  },
+  "completed": [
+    {
+      "field": "RO",
+      "seed": 1701,
+      "n": 256,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "initial_psi": "uniform [0,pi)",
+      "initial_spin": "uniform [-0.8,0.8]",
+      "initial_rf_phase": "uniform [0,2pi)",
+      "classification_average_last_rf": 30,
+      "lock_mean_spin_tolerance": 0.015,
+      "counts": {
+        "lock_plus_quarter": 22,
+        "other": 234
+      }
+    },
+    {
+      "field": "RO",
+      "seed": 4813,
+      "n": 256,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "initial_psi": "uniform [0,pi)",
+      "initial_spin": "uniform [-0.8,0.8]",
+      "initial_rf_phase": "uniform [0,2pi)",
+      "classification_average_last_rf": 30,
+      "lock_mean_spin_tolerance": 0.015,
+      "counts": {
+        "lock_plus_quarter": 18,
+        "other": 238
+      }
+    },
+    {
+      "field": "SO",
+      "seed": 1701,
+      "n": 256,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "initial_psi": "uniform [0,pi)",
+      "initial_spin": "uniform [-0.8,0.8]",
+      "initial_rf_phase": "uniform [0,2pi)",
+      "classification_average_last_rf": 30,
+      "lock_mean_spin_tolerance": 0.015,
+      "counts": {
+        "libration": 242,
+        "lock_minus_quarter": 5,
+        "lock_plus_quarter": 9
+      }
+    },
+    {
+      "field": "SO",
+      "seed": 4813,
+      "n": 256,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "initial_psi": "uniform [0,pi)",
+      "initial_spin": "uniform [-0.8,0.8]",
+      "initial_rf_phase": "uniform [0,2pi)",
+      "classification_average_last_rf": 30,
+      "lock_mean_spin_tolerance": 0.015,
+      "counts": {
+        "libration": 235,
+        "lock_minus_quarter": 11,
+        "lock_plus_quarter": 10
+      }
+    }
+  ],
+  "full_6d_completed": [
+    {
+      "field": "RO",
+      "seed": 1701,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "other": 64
+      },
+      "capture_time_definition": "first 30-RF stroboscopic window meeting spin/phase criteria for five consecutive RF periods",
+      "capture_time_rf": {
+        "plus": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "minus": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "max_center_radius_R": 0.36059681683902717
+    },
+    {
+      "field": "RO",
+      "seed": 4813,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "lock_plus_quarter": 2,
+        "other": 62
+      },
+      "capture_time_definition": "first 30-RF stroboscopic window meeting spin/phase criteria for five consecutive RF periods",
+      "capture_time_rf": {
+        "plus": {
+          "n": 2,
+          "median": 181.5,
+          "min": 131.0,
+          "max": 232.0
+        },
+        "minus": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "max_center_radius_R": 0.38572025304240737
+    },
+    {
+      "field": "SO",
+      "seed": 1701,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "libration": 39,
+        "lock_minus_quarter": 2,
+        "lock_plus_quarter": 1,
+        "other": 22
+      },
+      "capture_time_definition": "first 30-RF stroboscopic window meeting spin/phase criteria for five consecutive RF periods",
+      "capture_time_rf": {
+        "plus": {
+          "n": 1,
+          "median": 205.0,
+          "min": 205.0,
+          "max": 205.0
+        },
+        "minus": {
+          "n": 2,
+          "median": 189.0,
+          "min": 147.0,
+          "max": 231.0
+        }
+      },
+      "max_center_radius_R": 0.37101634261814403
+    },
+    {
+      "field": "SO",
+      "seed": 4813,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "libration": 39,
+        "lock_minus_quarter": 2,
+        "other": 23
+      },
+      "capture_time_definition": "first 30-RF stroboscopic window meeting spin/phase criteria for five consecutive RF periods",
+      "capture_time_rf": {
+        "plus": {
+          "n": 0,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "minus": {
+          "n": 2,
+          "median": 198.5,
+          "min": 190.0,
+          "max": 207.0
+        }
+      },
+      "max_center_radius_R": 0.3939964871991242
+    }
+  ],
+  "full_6d_scope": "initial COM displacement, velocity, orientation, spin, and RF phase randomized; early stop on body/aperture exit",
+  "time_refinement_subset": [
+    {
+      "field": "RO",
+      "n": 64,
+      "seed": 1701,
+      "counts_128": {
+        "lock_plus_quarter": 6,
+        "other": 58
+      },
+      "counts_256": {
+        "lock_plus_quarter": 6,
+        "other": 58
+      },
+      "same_classification_counts": true,
+      "same_individual_classifications": true
+    },
+    {
+      "field": "SO",
+      "n": 64,
+      "seed": 1701,
+      "counts_128": {
+        "libration": 61,
+        "lock_plus_quarter": 3
+      },
+      "counts_256": {
+        "libration": 61,
+        "lock_plus_quarter": 3
+      },
+      "same_classification_counts": true,
+      "same_individual_classifications": true
+    }
+  ],
+  "scope_limit": "angular projection has large N; full six-state basin uses smaller N=64 independent starts per field and seed",
+  "full_6d_batches": [
+    {
+      "field": "RO",
+      "seed": 1701,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "other": 64
+      },
+      "max_center_radius_R": 0.36059681683902717
+    },
+    {
+      "field": "RO",
+      "seed": 4813,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "lock_plus_quarter": 2,
+        "other": 62
+      },
+      "max_center_radius_R": 0.38572025304240737
+    },
+    {
+      "field": "SO",
+      "seed": 1701,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "libration": 39,
+        "lock_minus_quarter": 2,
+        "lock_plus_quarter": 1,
+        "other": 22
+      },
+      "max_center_radius_R": 0.37101634261814403
+    },
+    {
+      "field": "SO",
+      "seed": 4813,
+      "n": 64,
+      "horizon_rf": 1000,
+      "steps_per_rf": 128,
+      "COM_initial": "uniform disk radius 0.15R",
+      "velocity_initial": "independent uniform [-0.02,0.02] in normalized units",
+      "orientation_initial": "uniform [0,pi)",
+      "spin_initial": "uniform [-0.8,0.8]",
+      "RF_phase_initial": "uniform [0,2pi)",
+      "rod_clearance": "center radius + ell/2 < 1",
+      "capture_window_rf": 30,
+      "relative_phase_span_rad_tolerance": 0.15,
+      "counts": {
+        "libration": 39,
+        "lock_minus_quarter": 2,
+        "other": 23
+      },
+      "max_center_radius_R": 0.3939964871991242
+    }
+  ]
+}

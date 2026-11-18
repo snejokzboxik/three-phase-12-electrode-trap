@@ -1,0 +1,8 @@
+results/*.tmp
+results/*.lock
+results/process*.log
+results/process.json
+results/runner.lock
+__pycache__/
+.pytest_cache/
+*.pyc

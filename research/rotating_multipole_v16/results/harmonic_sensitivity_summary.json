@@ -1,0 +1,421 @@
+{
+  "status": "COMPLETED",
+  "created_local": "2026-11-17 23:53:14 +0300",
+  "cases": 42,
+  "seeds": [
+    6128,
+    16128
+  ],
+  "epsilon_values": {
+    "8": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "10": [
+      0.1,
+      0.3
+    ]
+  },
+  "phase_values_rad": {
+    "8": [
+      0.0,
+      0.7853981633974483,
+      1.5707963267948966,
+      2.356194490192345
+    ],
+    "10": [
+      0.0,
+      0.7853981633974483,
+      1.5707963267948966,
+      2.356194490192345
+    ]
+  },
+  "n": 64,
+  "horizon_rf": 300,
+  "steps_per_rf": 96,
+  "field_model": "V_m=kappa4*Re[z^4 exp(-i*tau)]+kappa_m*Re[z^m exp(-i*(m*tau/4-delta_m))], m=8 or 10",
+  "force_ratio": "|grad V_m|/|grad V_4|=(m/4)*|kappa_m/kappa4|*(r/R)^(m-4)",
+  "warning": "Order-8 and order-10 amplitudes/phases are assumed perturbations, not measured or FEM-fitted values.",
+  "files": [
+    "harmonic_sensitivity.jsonl",
+    "harmonic_sensitivity_summary.json",
+    "../figures/harmonic_sensitivity.png"
+  ],
+  "validated_rows": 42,
+  "baseline_fractions_by_seed": {
+    "6128": 0.15625,
+    "16128": 0.125
+  },
+  "results_by_order_amplitude_phase": [
+    {
+      "order": 8,
+      "epsilon": 0.03,
+      "relative_phase_rad": 0.0,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.03,
+      "relative_phase_rad": 0.7853981633974483,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.03,
+      "relative_phase_rad": 1.5707963267948966,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.03,
+      "relative_phase_rad": 2.356194490192345,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.1,
+      "relative_phase_rad": 0.0,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.1,
+      "relative_phase_rad": 0.7853981633974483,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.1,
+      "relative_phase_rad": 1.5707963267948966,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.1,
+      "relative_phase_rad": 2.356194490192345,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.3,
+      "relative_phase_rad": 0.0,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.3,
+      "relative_phase_rad": 0.7853981633974483,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.3,
+      "relative_phase_rad": 1.5707963267948966,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 8,
+      "epsilon": 0.3,
+      "relative_phase_rad": 2.356194490192345,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.1,
+      "relative_phase_rad": 0.0,
+      "scramble_fractions": [
+        0.15625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.140625,
+      "scramble_sd": 0.02209708691207961,
+      "mean_lost_from_same_seed_baseline": 0.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.1,
+      "relative_phase_rad": 0.7853981633974483,
+      "scramble_fractions": [
+        0.15625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.140625,
+      "scramble_sd": 0.02209708691207961,
+      "mean_lost_from_same_seed_baseline": 0.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.1,
+      "relative_phase_rad": 1.5707963267948966,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.1,
+      "relative_phase_rad": 2.356194490192345,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.3,
+      "relative_phase_rad": 0.0,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.3,
+      "relative_phase_rad": 0.7853981633974483,
+      "scramble_fractions": [
+        0.125,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.125,
+      "scramble_sd": 0.0,
+      "mean_lost_from_same_seed_baseline": 1.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.3,
+      "relative_phase_rad": 1.5707963267948966,
+      "scramble_fractions": [
+        0.15625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.140625,
+      "scramble_sd": 0.02209708691207961,
+      "mean_lost_from_same_seed_baseline": 0.0,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    },
+    {
+      "order": 10,
+      "epsilon": 0.3,
+      "relative_phase_rad": 2.356194490192345,
+      "scramble_fractions": [
+        0.140625,
+        0.125
+      ],
+      "mean_bounded_fraction": 0.1328125,
+      "scramble_sd": 0.011048543456039806,
+      "mean_lost_from_same_seed_baseline": 0.5,
+      "mean_gained_vs_same_seed_baseline": 0.0,
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "n_scrambles": 2
+    }
+  ],
+  "phase_averages_by_order_amplitude": [
+    {
+      "order": 8,
+      "epsilon": 0.03,
+      "phase_mean_bounded_fraction": 0.126953125,
+      "phase_range_bounded_fraction": [
+        0.125,
+        0.1328125
+      ],
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "mean_lost_from_baseline_per_seed": 0.875,
+      "mean_gained_vs_baseline_per_seed": 0.0,
+      "phase_cases": 4
+    },
+    {
+      "order": 8,
+      "epsilon": 0.1,
+      "phase_mean_bounded_fraction": 0.12890625,
+      "phase_range_bounded_fraction": [
+        0.125,
+        0.1328125
+      ],
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "mean_lost_from_baseline_per_seed": 0.75,
+      "mean_gained_vs_baseline_per_seed": 0.0,
+      "phase_cases": 4
+    },
+    {
+      "order": 8,
+      "epsilon": 0.3,
+      "phase_mean_bounded_fraction": 0.130859375,
+      "phase_range_bounded_fraction": [
+        0.125,
+        0.1328125
+      ],
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "mean_lost_from_baseline_per_seed": 0.625,
+      "mean_gained_vs_baseline_per_seed": 0.0,
+      "phase_cases": 4
+    },
+    {
+      "order": 10,
+      "epsilon": 0.1,
+      "phase_mean_bounded_fraction": 0.134765625,
+      "phase_range_bounded_fraction": [
+        0.125,
+        0.140625
+      ],
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "mean_lost_from_baseline_per_seed": 0.375,
+      "mean_gained_vs_baseline_per_seed": 0.0,
+      "phase_cases": 4
+    },
+    {
+      "order": 10,
+      "epsilon": 0.3,
+      "phase_mean_bounded_fraction": 0.1328125,
+      "phase_range_bounded_fraction": [
+        0.125,
+        0.140625
+      ],
+      "mean_same_seed_baseline_fraction": 0.140625,
+      "mean_lost_from_baseline_per_seed": 0.5,
+      "mean_gained_vs_baseline_per_seed": 0.0,
+      "phase_cases": 4
+    }
+  ],
+  "replication_note": "Two independent scrambled Sobol sets; SD is descriptive with only two scrambles.",
+  "interpretation": "Finite-time survivor sensitivity, conditional on the stated initial-state law; not a stability boundary or chaos diagnosis."
+}

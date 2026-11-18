@@ -1,0 +1,372 @@
+{
+  "scenario_A_same_RF_frequency": {
+    "kappa2": 0.005,
+    "kappa4": 0.1044,
+    "omega2": 1.0,
+    "omega4": 1.0,
+    "frame_rates": {
+      "quadrupole": 0.5,
+      "octupole": 0.25
+    },
+    "common_autonomous_rotating_frame": false,
+    "meaning": "periodically forced competition; stable Floquet locks are checked by shooting",
+    "branches_by_target_spin": [
+      {
+        "orbit": {
+          "phase": 0.0745525056890998,
+          "spin": 0.49766081697464565,
+          "direction": 1,
+          "target_spin": 0.5,
+          "period": 6.283185307179586,
+          "shooting_residual": 1.6653345369377348e-16
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 0.7937601132407707,
+              "imag": 0.3167768515479674
+            },
+            {
+              "real": 0.7937601132407707,
+              "imag": -0.3167768515479674
+            },
+            {
+              "real": 0.5554735129109867,
+              "imag": 0.0
+            },
+            {
+              "real": 1.3149190268694106,
+              "imag": 0.0
+            },
+            {
+              "real": 0.40939773003838353,
+              "imag": 0.0
+            },
+            {
+              "real": 2.3970015316890994,
+              "imag": 0.0
+            }
+          ],
+          "closure_residual": 3.885780586188048e-16,
+          "max_multiplier_modulus": 2.3970015316890994
+        }
+      },
+      {
+        "orbit": {
+          "phase": 1.4962585923605491,
+          "spin": 0.497561979527525,
+          "direction": 1,
+          "target_spin": 0.5,
+          "period": 6.283185307179586,
+          "shooting_residual": 4.529709940470639e-14
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 1.314943591581552,
+              "imag": 0.0
+            },
+            {
+              "real": 0.555463136004299,
+              "imag": 0.0
+            },
+            {
+              "real": 0.7937670097420092,
+              "imag": 0.3167595701693544
+            },
+            {
+              "real": 0.7937670097420092,
+              "imag": -0.3167595701693544
+            },
+            {
+              "real": 0.6284554181364495,
+              "imag": 0.7657485053116222
+            },
+            {
+              "real": 0.6284554181364495,
+              "imag": -0.7657485053116222
+            }
+          ],
+          "closure_residual": 4.973799150320701e-14,
+          "max_multiplier_modulus": 1.314943591581552
+        }
+      },
+      {
+        "orbit": {
+          "phase": 0.07071362241219033,
+          "spin": 0.2686643915506222,
+          "direction": 1,
+          "target_spin": 0.25,
+          "period": 12.566370614359172,
+          "shooting_residual": 3.1663560662309465e-13
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 0.9992526342233097,
+              "imag": 0.0
+            },
+            {
+              "real": 0.906682413108581,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5338871000382891,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5883957639169685,
+              "imag": 0.0
+            },
+            {
+              "real": 3.35764787549475,
+              "imag": 0.0
+            },
+            {
+              "real": 0.2868087092828566,
+              "imag": 0.0
+            }
+          ],
+          "closure_residual": 3.2240876635114546e-13,
+          "max_multiplier_modulus": 3.35764787549475
+        }
+      },
+      {
+        "orbit": {
+          "phase": 0.6682971517536613,
+          "spin": 0.2536719980451565,
+          "direction": 1,
+          "target_spin": 0.25,
+          "period": 12.566370614359172,
+          "shooting_residual": 8.881784197001252e-16
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 0.9995191914303588,
+              "imag": 0.0
+            },
+            {
+              "real": 0.9020968864492336,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5337447201265396,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5913866892845394,
+              "imag": 0.0
+            },
+            {
+              "real": 0.3266072021109042,
+              "imag": 0.9253812127584295
+            },
+            {
+              "real": 0.3266072021109042,
+              "imag": -0.9253812127584295
+            }
+          ],
+          "closure_residual": 1.3322676295501878e-15,
+          "max_multiplier_modulus": 0.9995191914303588
+        }
+      },
+      {
+        "orbit": {
+          "phase": 1.6527568168346043,
+          "spin": 0.23060491144538584,
+          "direction": 1,
+          "target_spin": 0.25,
+          "period": 12.566370614359172,
+          "shooting_residual": 8.881784197001252e-16
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 0.5883957639170584,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5338871000382304,
+              "imag": 0.0
+            },
+            {
+              "real": 0.9066824131084427,
+              "imag": 0.0
+            },
+            {
+              "real": 0.9992526342234203,
+              "imag": 0.0
+            },
+            {
+              "real": 0.2868087092827647,
+              "imag": 0.0
+            },
+            {
+              "real": 3.3576478754958226,
+              "imag": 0.0
+            }
+          ],
+          "closure_residual": 1.9539925233402755e-14,
+          "max_multiplier_modulus": 3.3576478754958226
+        }
+      },
+      {
+        "orbit": {
+          "phase": 2.3210271163204355,
+          "spin": 0.24712019134267707,
+          "direction": 1,
+          "target_spin": 0.25,
+          "period": 12.566370614359172,
+          "shooting_residual": 5.404565683875262e-13
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 0.9020968864493021,
+              "imag": 0.0
+            },
+            {
+              "real": 0.9995191914303116,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5913866892844957,
+              "imag": 0.0
+            },
+            {
+              "real": 0.5337447201265652,
+              "imag": 0.0
+            },
+            {
+              "real": 0.3266072021107371,
+              "imag": 0.9253812127584881
+            },
+            {
+              "real": 0.3266072021107371,
+              "imag": -0.9253812127584881
+            }
+          ],
+          "closure_residual": 5.46229728115577e-13,
+          "max_multiplier_modulus": 0.9995191914303116
+        }
+      }
+    ]
+  },
+  "scenario_B_same_spatial_frame_rate": {
+    "kappa2": -0.12,
+    "kappa4": 10.0,
+    "omega2": 1.0,
+    "omega4": 2.0,
+    "common_frame_rate": 0.5,
+    "common_frame_conserved_quantity": "H - omega_frame*L_z (zero damping)",
+    "gamma_trans": 0.05,
+    "gamma_rot": 0.003,
+    "delta2": 1.5707963267948966,
+    "delta4": 0.0,
+    "quadrupole_to_octupole_coefficient_ratio": 0.012,
+    "branches": [
+      {
+        "orbit": {
+          "phase": 0.7822730209638379,
+          "spin": 0.5000000000000001,
+          "direction": 1,
+          "target_spin": 0.5,
+          "period": 6.283185307179586,
+          "shooting_residual": 4.440892098500626e-15
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": 0.275336240740349,
+              "imag": 0.8090689992723888
+            },
+            {
+              "real": 0.275336240740349,
+              "imag": -0.8090689992723888
+            },
+            {
+              "real": 0.5517848424123843,
+              "imag": 0.6526378618595379
+            },
+            {
+              "real": 0.5517848424123843,
+              "imag": -0.6526378618595379
+            },
+            {
+              "real": -0.3485787445534493,
+              "imag": 0.9272647112974732
+            },
+            {
+              "real": -0.3485787445534493,
+              "imag": -0.9272647112974732
+            }
+          ],
+          "closure_residual": 4.440892098500626e-15,
+          "max_multiplier_modulus": 0.9906194960589283,
+          "effective_COM_quadratic_abs": 0.08000585967546259,
+          "COM_coefficient_complex": [
+            0.0012500488343264147,
+            0.07999609340662586
+          ],
+          "rotational_stiffness": 0.4799343699638645,
+          "angularly_stable": true,
+          "COM_stability_condition": true,
+          "pure_RO4_COM_coefficient": 0.20000000000000004,
+          "pure_RO4_no_drag_COM_stable": false
+        }
+      },
+      {
+        "orbit": {
+          "phase": 2.3551528212651043,
+          "spin": 0.49999999999999595,
+          "direction": 1,
+          "target_spin": 0.5,
+          "period": 6.283185307179586,
+          "shooting_residual": 4.9404924595819466e-15
+        },
+        "floquet": {
+          "multipliers": [
+            {
+              "real": -43.26973679991954,
+              "imag": 0.0
+            },
+            {
+              "real": -0.016880220335658454,
+              "imag": 0.0
+            },
+            {
+              "real": -0.8000465426372514,
+              "imag": 0.30054653660096253
+            },
+            {
+              "real": -0.8000465426372514,
+              "imag": -0.30054653660096253
+            },
+            {
+              "real": 0.30614693233608004,
+              "imag": 0.9421258099602472
+            },
+            {
+              "real": 0.30614693233608004,
+              "imag": -0.9421258099602472
+            }
+          ],
+          "closure_residual": 1.509903313490213e-14,
+          "max_multiplier_modulus": 43.26973679991954,
+          "effective_COM_quadratic_abs": 0.31999983723889436,
+          "COM_coefficient_complex": [
+            -0.00041666726948619135,
+            -0.3199995659704954
+          ],
+          "rotational_stiffness": 1.4399906249717427,
+          "angularly_stable": true,
+          "COM_stability_condition": false,
+          "pure_RO4_COM_coefficient": 0.20000000000000004,
+          "pure_RO4_no_drag_COM_stable": false
+        }
+      }
+    ],
+    "notes": "Selected phase puts the synchronized body near the stable pure-octupole phase; COM coefficient is the vector sum of Q2 and finite-size RO4 terms."
+  }
+}

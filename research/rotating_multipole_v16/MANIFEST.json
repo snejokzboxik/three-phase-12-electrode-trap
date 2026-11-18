@@ -1,0 +1,32 @@
+{
+  "project": "V16 rotating multipole nonlinear dynamics",
+  "snapshot_date_local": "2026-11-18",
+  "timezone": "Europe/Moscow",
+  "snapshot_status": "PARTIAL",
+  "status_vocabulary": ["COMPLETED", "PARTIAL", "NOT_RUN", "FAILED_VALIDATION"],
+  "blocks": {
+    "environment_audit": {"status": "COMPLETED", "evidence": "NUMERICAL_VALIDATION_RU.md; results/validation.json"},
+    "models_A_to_D_and_analytic_derivatives": {"status": "COMPLETED", "evidence": "10 passing pytest checks; analytic derivatives also cover co-rotating m=8 and m=10 terms"},
+    "pure_RO_invariant_and_equilibria": {"status": "COMPLETED", "evidence": "80 RF DOP853 invariant check; Coriolis-coupled saddle-centre spectrum"},
+    "conservative_RO_SO_ensemble_screens": {"status": "PARTIAL", "evidence": "382 tasks across broad, cold, independent, dissipative and paired screens; finite-time fractions only; see results/summary.json and results/progress.json"},
+    "conservative_independent_replicates": {"status": "COMPLETED", "evidence": "18 physical parameter groups, 2 independent scrambled Sobol sets per group, n=64 each, 300 RF; results/independent_replicate_summary.csv"},
+    "dissipative_point_particle_screens": {"status": "PARTIAL", "evidence": "Independent and matched-start finite-horizon screens at gamma=0..10000 s^-1; no attractor continuation or basin proof"},
+    "high_accuracy_orbit_confirmation": {"status": "COMPLETED", "evidence": "12 selected trajectories reached 1000 RF with DOP853, rtol=2e-11; results/candidate_confirmations.json"},
+    "long_QR_Lyapunov_extension": {"status": "COMPLETED", "evidence": "Two selected candidates extended to 1000 RF and the highest initial estimate to 10000 RF; finite-time exponents decay toward zero; results/lyapunov_extensions.json and results/lyapunov_10000rf.json"},
+    "higher_harmonic_sensitivity_without_FEM": {"status": "COMPLETED", "evidence": "42 matched 300-RF ensembles for m=8,10 plus 12 step-refinement runs at 96/192 steps per RF; assumed amplitudes only; results/harmonic_sensitivity_summary.json and results/harmonic_step_refinement.json"},
+    "centered_symmetric_rod_rotational_locking": {"status": "COMPLETED", "evidence": "Analytic phase-lock threshold and 400 RF full-model integration; results/rod_lock_validation.json"},
+    "finite_size_charge_profiles": {"status": "COMPLETED", "evidence": "22 full-horizon tests across uniform, symmetric-quadrupolar and dipolar profiles, three lengths and both handednesses; results/rod_distribution_coupling.json"},
+    "off_center_translation_rotation_coupling": {"status": "COMPLETED", "evidence": "Asymmetric charge-centroid coupling and symmetric controls; 120 RF; results/rod_distribution_coupling.json"},
+    "thermal_noise": {"status": "NOT_RUN", "evidence": "FDT model documented; no stochastic trajectory"},
+    "three_dimensional_precession": {"status": "NOT_RUN", "evidence": "No 3D rigid-body model"},
+    "polarizability": {"status": "NOT_RUN", "evidence": "No material response parameters"},
+    "FEM_h50_h35": {"status": "NOT_RUN", "evidence": "Expected basis arrays absent; metadata and required hashes documented in FEM_VALIDATION_RU.md"},
+    "literature_assessment": {"status": "PARTIAL", "evidence": "Priority references verified; search is not exhaustive and novelty is not established"},
+    "physical_realizability_of_rod": {"status": "NOT_RUN", "evidence": "Mass, cross-section, density, charge and gas regime not jointly specified"},
+    "independent_process_detachment": {"status": "PARTIAL", "evidence": "Managed Windows sandbox did not permit a surviving detached process; all requested compute queues completed in managed sessions and results remain checkpointed"}
+  },
+  "completed_main_search_tasks": 382,
+  "verified_result_rows_sha256": 382,
+  "main_search_status": "QUEUE_COMPLETE",
+  "active_long_run": null
+}
